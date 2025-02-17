@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/27eda1fd4d0b4ea38523fd7d044fb1fe/artifacts
+end_time: 1739815160671
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 27eda1fd4d0b4ea38523fd7d044fb1fe
+run_name: secretive-grouse-544
+run_uuid: 27eda1fd4d0b4ea38523fd7d044fb1fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739805026666
+status: 3
+tags: []
+user_id: unknown

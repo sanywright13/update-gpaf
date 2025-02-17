@@ -479,7 +479,7 @@ class StructuredFeatureVisualizer:
 def extract_features_and_labels(encoder: torch.nn.Module,
                               data_loader: DataLoader,
                               device: torch.device) -> Tuple[torch.Tensor, torch.Tensor]:
-    model="gpaf"
+    model="moon"
     features_list = []
     labels_list = []
 

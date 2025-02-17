@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/97febed471d1452c8ca54c1d49f9782b/artifacts
+end_time: 1739815161651
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 97febed471d1452c8ca54c1d49f9782b
+run_name: righteous-ape-365
+run_uuid: 97febed471d1452c8ca54c1d49f9782b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739805473074
+status: 3
+tags: []
+user_id: unknown

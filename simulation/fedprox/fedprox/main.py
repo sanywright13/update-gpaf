@@ -25,7 +25,7 @@ import os
 import subprocess
 #from fedprox.mlflowtracker import setup_tracking
 from fedprox.features_visualization import StructuredFeatureVisualizer
-from fedprox.strategy import FedAVGWithEval
+from fedprox.strategy import FedAVGWithEval ,MOONStrategy
 from fedprox.models import get_model
 #from fedprox.models import Generator
 FitConfig = Dict[str, Union[bool, float]]
@@ -40,6 +40,7 @@ import numpy as np
 from typing import List
 from torch.utils.data import DataLoader
 strategy="moon"
+# approach gpaf : global generator with non domain and non contrastive loss
  # Create or get experiment
 experiment_name = "fedgpaf_Fed_FL38"
 experiment = mlflow.get_experiment_by_name(experiment_name)
@@ -174,14 +175,15 @@ def get_server_fn(mlflow=None):
 
     elif strategy =="moon":
       print(f'strategy of method {strategy}')
-      strategyi = server.MOONStrategy(
-        experiment_name,
-        fraction_fit=1.0,  # Ensure all clients participate in training
-        #fraction_evaluate=1.0,
-        min_fit_clients=3,  # Set minimum number of clients for training
-        min_evaluate_clients=2,
-        #on_fit_config_fn=fit_config_fn,
-     
+      strategyi = MOONStrategy(
+        fraction_fit=1.0,  # Train with 50% of available clients
+      fraction_evaluate=0.5,  # Evaluate with all available clients
+      min_fit_clients=3,
+      min_evaluate_clients=2,
+      min_available_clients=3,
+      evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,  # Add this
+
+      
       )
     else: 
       print(f'strategy of method {strategy}')
@@ -222,7 +224,7 @@ def main(cfg: DictConfig) -> None:
     trainloaders, valloaders, testloader=data_load(cfg)
     # Print data distribution before visualization
    
-        
+     
     visualize_intensity_distributions(trainloaders, cfg.num_clients) 
     visualize_class_domain_shift(trainloaders)    # Visualize label distributions
     visualizer = LabelDistributionVisualizer(

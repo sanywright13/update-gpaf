@@ -99,12 +99,12 @@ def load_datasets(  # pylint: disable=too-many-arguments
       trainloaders = []
       valloaders = []
       
-   
+      num_workers=2
      
       for i,trainset in enumerate(trainset):
         
-        trainloaders.append(DataLoader(trainset, batch_size=batch_size, shuffle=True ,drop_last=True ))
-        valloaders.append(DataLoader(valsets[i], batch_size=batch_size,drop_last=True  # This will drop the incomplete last batch
+        trainloaders.append(DataLoader(trainset, batch_size=batch_size, shuffle=True ,drop_last=True ,num_workers=num_workers))
+        valloaders.append(DataLoader(valsets[i], batch_size=batch_size,drop_last=True ,num_workers=num_workers # This will drop the incomplete last batch
 ))
     
       testloaders=DataLoader(testset, batch_size=batch_size)

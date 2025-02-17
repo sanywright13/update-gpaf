@@ -479,18 +479,24 @@ class StructuredFeatureVisualizer:
 def extract_features_and_labels(encoder: torch.nn.Module,
                               data_loader: DataLoader,
                               device: torch.device) -> Tuple[torch.Tensor, torch.Tensor]:
-   
+    model="gpaf"
     features_list = []
     labels_list = []
-    encoder.eval()  # Set encoder to evaluation mode
 
+    encoder.eval()  # Set encoder to evaluation mode
+      
     with torch.no_grad():  # No need to track gradients
         for batch_idx, (images, labels) in enumerate(data_loader):
             # Move images to device and ensure they're float
             images = images.to(device).float()
 
             # Get features from encoder
-            features = encoder(images)
+            if model =="moon":
+
+              features ,x ,y = encoder(images)
+            else:
+
+                features  = encoder(images)
 
             # Store features and labels
             features_list.append(features.cpu())  # Move features back to CPU
@@ -524,4 +530,3 @@ def extract_features(encoder: torch.nn.Module,
         return None
 
     return torch.cat(features_list, dim=0)
-

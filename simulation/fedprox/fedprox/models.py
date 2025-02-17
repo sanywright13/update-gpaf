@@ -739,7 +739,7 @@ def train_one_epoch_gpaf(encoder,classifier,discriminator,trainloader, DEVICE,cl
             lambda_confusion = 1.0
             lambda_contrast = 0.9
             loss = lambda_confusion * confusion_loss + lambda_contrast * contrast_loss
-            loss += loss * labels.size(0)
+            
             
             
             #loss_sumi += loss_sum.item()
@@ -769,7 +769,7 @@ def train_one_epoch_gpaf(encoder,classifier,discriminator,trainloader, DEVICE,cl
           
              # Accumulate loss
             epoch_loss += total_loss.item()
-            
+            loss += loss * labels.size(0)
             # Compute accuracy
             _, predicted = torch.max(logits.data, 1)
             total += labels.size(0)
@@ -861,6 +861,14 @@ def init_net(output_dim, device="cpu"):
 
     return net
 
+def init_net(output_dim, device="cpu"):
+   
+    n_classes=2
+    net = ModelMOON(output_dim, n_classes)
+    
+
+    return net
+
 def train_moon(
     net,
     global_net,
@@ -871,6 +879,7 @@ def train_moon(
     mu,
     temperature,
     device="cpu",
+    client_id=None
 ):
     """Training function for MOON."""
     net.to(device)
@@ -884,12 +893,13 @@ def train_moon(
         weight_decay=1e-5,
     )
 
-    criterion = nn.CrossEntropyLoss().cuda()
+    criterion = torch.nn.CrossEntropyLoss()
+    
 
     previous_net.eval()
     for param in previous_net.parameters():
         param.requires_grad = False
-    previous_net.cuda()
+    previous_net
 
     cnt = 0
     cos = torch.nn.CosineSimilarity(dim=-1)
@@ -900,7 +910,10 @@ def train_moon(
         epoch_loss2_collector = []
         for _, (x, target) in enumerate(train_dataloader):
             x, target = x.to(device), target.to(device)
-
+            if len(target.shape) == 1:
+                target = target.unsqueeze(1)
+            else:
+                  target=target.squeeze(1)
             optimizer.zero_grad()
             x.requires_grad = False
             target.requires_grad = False
@@ -923,7 +936,7 @@ def train_moon(
 
             previous_net.to("cpu")
             logits /= temperature
-            labels = torch.zeros(x.size(0)).cuda().long()
+            labels = torch.zeros(x.size(0)).long()
             # compute the model-contrastive loss (Line 17 of Algorithm 1)
             loss2 = mu * criterion(logits, labels)
             # compute the cross-entropy loss (Line 13 of Algorithm 1)
@@ -950,11 +963,19 @@ def train_moon(
     previous_net.to("cpu")
     train_acc, _ = compute_accuracy(net, train_dataloader, device=device)
 
-    print(">> Training accuracy: %f" % train_acc)
+    print(f">> Training accuracy: %f of client : {client_id}" % train_acc)
     net.to("cpu")
     global_net.to("cpu")
     print(" ** Training complete **")
     return net
+    
+def test_moon(net, test_dataloader, device="cpu"):
+    """Test function."""
+    net.to(device)
+    test_acc, loss = compute_accuracy(net, test_dataloader, device=device)
+    print(">> Test accuracy: %f" % test_acc)
+    net.to("cpu")
+    return test_acc, loss
 
 def compute_accuracy(model, dataloader, device="cpu", multiloader=False):
     """Compute accuracy."""
@@ -966,17 +987,15 @@ def compute_accuracy(model, dataloader, device="cpu", multiloader=False):
     true_labels_list, pred_labels_list = np.array([]), np.array([])
 
     correct, total = 0, 0
-    if device == "cpu":
-        criterion = nn.CrossEntropyLoss()
-    elif "cuda" in device.type:
-        criterion = nn.CrossEntropyLoss().cuda()
+    
+    criterion = torch.nn.CrossEntropyLoss()
+   
     loss_collector = []
     if multiloader:
         for loader in dataloader:
             with torch.no_grad():
                 for _, (x, target) in enumerate(loader):
-                    if device != "cpu":
-                        x, target = x.cuda(), target.to(dtype=torch.int64).cuda()
+                  
                     _, _, out = model(x)
                     if len(target) == 1:
                         loss = criterion(out, target)
@@ -987,13 +1006,14 @@ def compute_accuracy(model, dataloader, device="cpu", multiloader=False):
                     total += x.data.size()[0]
                     correct += (pred_label == target.data).sum().item()
 
-                    if device == "cpu":
-                        pred_labels_list = np.append(
-                            pred_labels_list, pred_label.numpy()
+                   
+                    pred_labels_list = np.append(
+                    pred_labels_list, pred_label.numpy()
                         )
-                        true_labels_list = np.append(
+                    true_labels_list = np.append(
                             true_labels_list, target.data.numpy()
                         )
+                    '''
                     else:
                         pred_labels_list = np.append(
                             pred_labels_list, pred_label.cpu().numpy()
@@ -1001,13 +1021,17 @@ def compute_accuracy(model, dataloader, device="cpu", multiloader=False):
                         true_labels_list = np.append(
                             true_labels_list, target.data.cpu().numpy()
                         )
+                    '''
         avg_loss = sum(loss_collector) / len(loss_collector)
     else:
         with torch.no_grad():
             for _, (x, target) in enumerate(dataloader):
                 # print("x:",x)
-                if device != "cpu":
-                    x, target = x.cuda(), target.to(dtype=torch.int64).cuda()
+                if len(target.shape) == 1:
+                  target = target.unsqueeze(1)
+                else:
+                  target=target.squeeze(1)
+
                 _, _, out = model(x)
                 loss = criterion(out, target)
                 _, pred_label = torch.max(out.data, 1)
@@ -1015,9 +1039,10 @@ def compute_accuracy(model, dataloader, device="cpu", multiloader=False):
                 total += x.data.size()[0]
                 correct += (pred_label == target.data).sum().item()
 
-                if device == "cpu":
-                    pred_labels_list = np.append(pred_labels_list, pred_label.numpy())
-                    true_labels_list = np.append(true_labels_list, target.data.numpy())
+               
+                pred_labels_list = np.append(pred_labels_list, pred_label.numpy())
+                true_labels_list = np.append(true_labels_list, target.data.numpy())
+                '''
                 else:
                     pred_labels_list = np.append(
                         pred_labels_list, pred_label.cpu().numpy()
@@ -1025,6 +1050,7 @@ def compute_accuracy(model, dataloader, device="cpu", multiloader=False):
                     true_labels_list = np.append(
                         true_labels_list, target.data.cpu().numpy()
                     )
+                '''
             avg_loss = sum(loss_collector) / len(loss_collector)
 
     if was_training:

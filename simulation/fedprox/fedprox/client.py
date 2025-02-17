@@ -30,7 +30,7 @@ from flwr.common import (
     parameters_to_ndarrays,
 )
 import os
-from fedprox.models import train_gpaf,test_gpaf,Encoder,Classifier,Discriminator,GlobalGenerator,GradientReversalLayer,LocalDiscriminator,train_moon,init_net
+from fedprox.models import train_gpaf,test_gpaf,Encoder,Classifier,Discriminator,GlobalGenerator,GradientReversalLayer,LocalDiscriminator,init_net,train_moon,test_moon
 from fedprox.dataset_preparation import compute_label_counts, compute_label_distribution
 from fedprox.features_visualization import extract_features_and_labels,StructuredFeatureVisualizer
 class FederatedClient(fl.client.NumPyClient):
@@ -307,6 +307,7 @@ class FederatedClient(fl.client.NumPyClient):
     )
 
 
+
 def gen_client_fn(
     num_clients: int,
     num_rounds: int,
@@ -350,25 +351,28 @@ cfg=None
         hidden_dim = 128
         latent_dim = 64
         num_classes = 2  
+        num_epochs=35
         
-        encoder = Encoder(latent_dim).to(device)
-        classifier = Classifier(latent_dim=64, num_classes=2).to(device)
-        #print(f' clqssifier intiliation {classifier}')
-        discriminator = Discriminator(latent_dim=64).to(device)
-        # Note: each client gets a different trainloader/valloader, so each client
-        # will train and evaluate on their own unique data
-        trainloader = trainloaders[int(cid)]
-        # Initialize the feature visualizer for all clients
-        feature_visualizer = StructuredFeatureVisualizer(
+               
+        if strategy=="gpaf":
+          
+          
+          encoder = Encoder(latent_dim).to(device)
+          classifier = Classifier(latent_dim=64, num_classes=2).to(device)
+          #print(f' clqssifier intiliation {classifier}')
+          discriminator = Discriminator(latent_dim=64).to(device)
+          # Note: each client gets a different trainloader/valloader, so each client
+          # will train and evaluate on their own unique data
+          trainloader = trainloaders[int(cid)]
+          # Initialize the feature visualizer for all clients
+          feature_visualizer = StructuredFeatureVisualizer(
         num_clients=num_clients,  # total number of clients
 num_classes=num_classes,
 save_dir="feature_visualizations"
           )
-        #print(f'  ffghf {trainloader}')
-        valloader = valloaders[int(cid)]
-        num_epochs=35
-        
-        if strategy=="gpaf":
+          #print(f'  ffghf {trainloader}')
+          valloader = valloaders[int(cid)]
+          print(f'client gdgdj ffghf {valloader}')
           numpy_client =  FederatedClient(
             encoder,
             classifier,
@@ -402,12 +406,14 @@ save_dir="feature_visualizations"
 
         else:
           # Load model
-    
+          trainloader = trainloaders[int(cid)]
+          valloader = valloaders[int(cid)]
           numpy_client = FlowerClient(
             model, trainloader, valloader,num_epochs,
            cid,run_id,mlflow)
 
         return numpy_client.to_client()
+      
     return client_fn
 
 
@@ -485,10 +491,10 @@ class FlowerClient(NumPyClient):
           # In client:
           features_serialized = base64.b64encode(pickle.dumps(features_np)).decode('utf-8')
           labels_serialized = base64.b64encode(pickle.dumps(labels_np)).decode('utf-8')
-          print(f"Client {self.client_id} sending features shape: {features_np.shape}")
-          print(f"Client {self.client_id} sending labels shape: {labels_np.shape}")
+          #print(f"Client {self.client_id} sending features shape: {features_np.shape}")
+          #print(f"Client {self.client_id} sending labels shape: {labels_np.shape}")
          
-          print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
+          #print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
           return float(loss), len(self.valloader), {"accuracy": float(accuracy),
          "features": features_serialized,
             "labels": labels_serialized,
@@ -505,6 +511,7 @@ class FlowerClient(NumPyClient):
         for batch in trainloader:
 
             images, labels = batch
+            labels=labels.long()
             #print(f'labels shape hh {labels.shape}')
             
             # Remove any squeeze operation since labels are already 1D
@@ -579,6 +586,7 @@ class MOONFlowerClient(fl.client.NumPyClient):
         self.mu = mu  # pylint: disable=invalid-name
         self.temperature = temperature
         self.model_dir="moon"
+        self.client_id=net_id
         #self.model_dir = model_dir
         #self.alg = alg
 
@@ -597,7 +605,7 @@ class MOONFlowerClient(fl.client.NumPyClient):
     ) -> Tuple[NDArrays, int, Dict]:
         """Implement distributed fit function for a given client."""
         self.set_parameters(parameters)
-
+        print(f'model output :{self.output_dim}')
         prev_net = init_net(self.output_dim)
       
         if not os.path.exists(os.path.join(self.model_dir, str(self.net_id))):
@@ -621,7 +629,9 @@ class MOONFlowerClient(fl.client.NumPyClient):
                 self.learning_rate,
                 self.mu,
                 self.temperature,
-                self.device)
+                self.device,
+                self.client_id
+                )
         
         
         if not os.path.exists(os.path.join(self.model_dir, str(self.net_id))):
@@ -648,6 +658,8 @@ class MOONFlowerClient(fl.client.NumPyClient):
          self.valloader,
           self.device
            )
+        accuracy , loss = test_moon(self.net, self.valloader, device="cpu")
+
         #visualize all clients features per class
         features_np = val_features.detach().cpu().numpy()
         labels_np = val_labels.detach().cpu().numpy().reshape(-1)  # Ensure 1D array

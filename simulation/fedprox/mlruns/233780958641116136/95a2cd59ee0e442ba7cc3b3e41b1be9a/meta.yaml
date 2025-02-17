@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/95a2cd59ee0e442ba7cc3b3e41b1be9a/artifacts
+end_time: 1739802599789
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 95a2cd59ee0e442ba7cc3b3e41b1be9a
+run_name: fun-asp-98
+run_uuid: 95a2cd59ee0e442ba7cc3b3e41b1be9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739801929731
+status: 3
+tags: []
+user_id: unknown

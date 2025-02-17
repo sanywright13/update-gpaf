@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/6fdb9f2d11644c2287d86d799c030063/artifacts
+end_time: 1739803594731
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 6fdb9f2d11644c2287d86d799c030063
+run_name: welcoming-swan-733
+run_uuid: 6fdb9f2d11644c2287d86d799c030063
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739803594616
+status: 3
+tags: []
+user_id: unknown

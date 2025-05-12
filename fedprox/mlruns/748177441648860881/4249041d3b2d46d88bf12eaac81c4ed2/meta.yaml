@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/4249041d3b2d46d88bf12eaac81c4ed2/artifacts
+end_time: 1742256839443
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 4249041d3b2d46d88bf12eaac81c4ed2
+run_name: incongruous-bat-204
+run_uuid: 4249041d3b2d46d88bf12eaac81c4ed2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256839320
+status: 3
+tags: []
+user_id: unknown

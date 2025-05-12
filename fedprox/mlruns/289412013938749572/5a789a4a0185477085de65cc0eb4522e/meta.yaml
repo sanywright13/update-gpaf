@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5a789a4a0185477085de65cc0eb4522e/artifacts
+end_time: 1746011655272
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5a789a4a0185477085de65cc0eb4522e
+run_name: abrasive-bug-529
+run_uuid: 5a789a4a0185477085de65cc0eb4522e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011655232
+status: 4
+tags: []
+user_id: unknown

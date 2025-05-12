@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/78bf4645d9ae4d2db86925964c8136ab/artifacts
+end_time: 1740078796192
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 78bf4645d9ae4d2db86925964c8136ab
+run_name: exultant-mouse-508
+run_uuid: 78bf4645d9ae4d2db86925964c8136ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078796050
+status: 3
+tags: []
+user_id: unknown

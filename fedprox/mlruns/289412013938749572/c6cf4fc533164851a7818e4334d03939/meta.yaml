@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c6cf4fc533164851a7818e4334d03939/artifacts
+end_time: 1746018339808
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c6cf4fc533164851a7818e4334d03939
+run_name: blushing-eel-656
+run_uuid: c6cf4fc533164851a7818e4334d03939
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018339392
+status: 3
+tags: []
+user_id: unknown

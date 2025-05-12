@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0f39e2e7b6e545d8a5be0f16c0948d3e/artifacts
+end_time: 1746011610812
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0f39e2e7b6e545d8a5be0f16c0948d3e
+run_name: kindly-snail-756
+run_uuid: 0f39e2e7b6e545d8a5be0f16c0948d3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011610771
+status: 4
+tags: []
+user_id: unknown

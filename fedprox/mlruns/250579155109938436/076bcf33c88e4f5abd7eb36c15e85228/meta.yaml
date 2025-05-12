@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/076bcf33c88e4f5abd7eb36c15e85228/artifacts
+end_time: 1738240687476
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 076bcf33c88e4f5abd7eb36c15e85228
+run_name: resilient-elk-585
+run_uuid: 076bcf33c88e4f5abd7eb36c15e85228
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240687416
+status: 4
+tags: []
+user_id: unknown

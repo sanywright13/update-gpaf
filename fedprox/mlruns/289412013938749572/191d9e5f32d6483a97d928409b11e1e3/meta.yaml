@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/191d9e5f32d6483a97d928409b11e1e3/artifacts
+end_time: 1746013438419
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 191d9e5f32d6483a97d928409b11e1e3
+run_name: zealous-calf-649
+run_uuid: 191d9e5f32d6483a97d928409b11e1e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013438373
+status: 4
+tags: []
+user_id: unknown

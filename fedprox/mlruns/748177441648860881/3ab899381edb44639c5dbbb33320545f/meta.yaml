@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/3ab899381edb44639c5dbbb33320545f/artifacts
+end_time: 1743210147875
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 3ab899381edb44639c5dbbb33320545f
+run_name: brawny-crab-697
+run_uuid: 3ab899381edb44639c5dbbb33320545f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743210129092
+status: 3
+tags: []
+user_id: unknown

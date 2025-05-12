@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/da2f7500d595482f81ebd53742a71faa/artifacts
+end_time: 1737466666865
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: da2f7500d595482f81ebd53742a71faa
+run_name: incongruous-moose-73
+run_uuid: da2f7500d595482f81ebd53742a71faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737466666825
+status: 3
+tags: []
+user_id: unknown

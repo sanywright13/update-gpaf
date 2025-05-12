@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/a16b520d49ad43cfbadb3a611a47e88c/artifacts
+end_time: 1738005527306
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: a16b520d49ad43cfbadb3a611a47e88c
+run_name: youthful-pug-456
+run_uuid: a16b520d49ad43cfbadb3a611a47e88c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005527105
+status: 3
+tags: []
+user_id: unknown

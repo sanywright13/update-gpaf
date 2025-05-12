@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/717d4a3e12fe47c3b6011be45bf0412e/artifacts
+end_time: 1746019384344
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 717d4a3e12fe47c3b6011be45bf0412e
+run_name: flawless-eel-977
+run_uuid: 717d4a3e12fe47c3b6011be45bf0412e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019384263
+status: 4
+tags: []
+user_id: unknown

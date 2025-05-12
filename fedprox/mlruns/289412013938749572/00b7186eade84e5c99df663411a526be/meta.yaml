@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/00b7186eade84e5c99df663411a526be/artifacts
+end_time: 1746023759644
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 00b7186eade84e5c99df663411a526be
+run_name: selective-wolf-346
+run_uuid: 00b7186eade84e5c99df663411a526be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023759555
+status: 4
+tags: []
+user_id: unknown

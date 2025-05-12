@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0cb1f86601294d1db4cca29ccf0ad2cd/artifacts
+end_time: 1746011652232
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0cb1f86601294d1db4cca29ccf0ad2cd
+run_name: masked-pug-370
+run_uuid: 0cb1f86601294d1db4cca29ccf0ad2cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011652188
+status: 4
+tags: []
+user_id: unknown

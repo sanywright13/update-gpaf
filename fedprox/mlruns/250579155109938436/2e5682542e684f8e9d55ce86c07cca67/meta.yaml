@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2e5682542e684f8e9d55ce86c07cca67/artifacts
+end_time: 1738241735413
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2e5682542e684f8e9d55ce86c07cca67
+run_name: invincible-lamb-661
+run_uuid: 2e5682542e684f8e9d55ce86c07cca67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738241735368
+status: 3
+tags: []
+user_id: unknown

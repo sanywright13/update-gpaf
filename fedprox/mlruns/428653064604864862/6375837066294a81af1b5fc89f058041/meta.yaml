@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/6375837066294a81af1b5fc89f058041/artifacts
+end_time: 1737567644894
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 6375837066294a81af1b5fc89f058041
+run_name: learned-crane-76
+run_uuid: 6375837066294a81af1b5fc89f058041
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737567644870
+status: 3
+tags: []
+user_id: unknown

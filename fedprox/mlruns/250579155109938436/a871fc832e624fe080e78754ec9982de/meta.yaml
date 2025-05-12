@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/a871fc832e624fe080e78754ec9982de/artifacts
+end_time: 1738251704894
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: a871fc832e624fe080e78754ec9982de
+run_name: learned-shark-764
+run_uuid: a871fc832e624fe080e78754ec9982de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738251696613
+status: 3
+tags: []
+user_id: unknown

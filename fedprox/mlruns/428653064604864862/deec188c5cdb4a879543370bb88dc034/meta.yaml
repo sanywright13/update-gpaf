@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/deec188c5cdb4a879543370bb88dc034/artifacts
+end_time: 1737566810994
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: deec188c5cdb4a879543370bb88dc034
+run_name: delicate-mole-818
+run_uuid: deec188c5cdb4a879543370bb88dc034
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566806013
+status: 3
+tags: []
+user_id: unknown

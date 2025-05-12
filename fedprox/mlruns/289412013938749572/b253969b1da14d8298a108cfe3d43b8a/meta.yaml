@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b253969b1da14d8298a108cfe3d43b8a/artifacts
+end_time: 1746011654894
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b253969b1da14d8298a108cfe3d43b8a
+run_name: aged-swan-393
+run_uuid: b253969b1da14d8298a108cfe3d43b8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011654849
+status: 4
+tags: []
+user_id: unknown

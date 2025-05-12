@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/eafaa2737e5546cb9444386d0e6a0a0a/artifacts
+end_time: 1746023758377
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: eafaa2737e5546cb9444386d0e6a0a0a
+run_name: nimble-ram-660
+run_uuid: eafaa2737e5546cb9444386d0e6a0a0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023757934
+status: 3
+tags: []
+user_id: unknown

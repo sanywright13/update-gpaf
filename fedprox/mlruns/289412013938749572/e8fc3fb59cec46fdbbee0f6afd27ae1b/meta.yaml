@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e8fc3fb59cec46fdbbee0f6afd27ae1b/artifacts
+end_time: 1746013375445
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e8fc3fb59cec46fdbbee0f6afd27ae1b
+run_name: bedecked-cow-867
+run_uuid: e8fc3fb59cec46fdbbee0f6afd27ae1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013375398
+status: 4
+tags: []
+user_id: unknown

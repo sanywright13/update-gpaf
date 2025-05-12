@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/52a7d65d9b0c40a5b7e746252beb263f/artifacts
+end_time: 1746023713458
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 52a7d65d9b0c40a5b7e746252beb263f
+run_name: spiffy-moose-800
+run_uuid: 52a7d65d9b0c40a5b7e746252beb263f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023713031
+status: 3
+tags: []
+user_id: unknown

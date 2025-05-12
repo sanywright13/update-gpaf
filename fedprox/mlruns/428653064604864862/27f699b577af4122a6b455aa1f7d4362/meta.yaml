@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/27f699b577af4122a6b455aa1f7d4362/artifacts
+end_time: 1737563718728
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 27f699b577af4122a6b455aa1f7d4362
+run_name: able-flea-955
+run_uuid: 27f699b577af4122a6b455aa1f7d4362
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563718683
+status: 3
+tags: []
+user_id: unknown

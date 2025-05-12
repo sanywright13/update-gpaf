@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2ba229d026494dbf9820df23bfe69568/artifacts
+end_time: 1738151857072
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2ba229d026494dbf9820df23bfe69568
+run_name: clumsy-mare-199
+run_uuid: 2ba229d026494dbf9820df23bfe69568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738151608449
+status: 3
+tags: []
+user_id: unknown

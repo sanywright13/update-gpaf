@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/beacd530ca2c4f60a939353725ae343a/artifacts
+end_time: 1746023764492
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: beacd530ca2c4f60a939353725ae343a
+run_name: skittish-whale-975
+run_uuid: beacd530ca2c4f60a939353725ae343a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023764392
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/69a2655c834d4aacaec3d0208dd775a0/artifacts
+end_time: 1737639077099
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 69a2655c834d4aacaec3d0208dd775a0
+run_name: thoughtful-skink-334
+run_uuid: 69a2655c834d4aacaec3d0208dd775a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737639050167
+status: 3
+tags: []
+user_id: unknown

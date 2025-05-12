@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/bdd82a45588e432da4dc6f588b64b688/artifacts
+end_time: 1736889012288
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: bdd82a45588e432da4dc6f588b64b688
+run_name: popular-newt-568
+run_uuid: bdd82a45588e432da4dc6f588b64b688
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889012254
+status: 3
+tags: []
+user_id: unknown

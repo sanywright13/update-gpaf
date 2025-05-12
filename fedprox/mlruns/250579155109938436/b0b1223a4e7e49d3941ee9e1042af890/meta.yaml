@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/b0b1223a4e7e49d3941ee9e1042af890/artifacts
+end_time: 1738180513429
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: b0b1223a4e7e49d3941ee9e1042af890
+run_name: thundering-quail-421
+run_uuid: b0b1223a4e7e49d3941ee9e1042af890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738180485077
+status: 3
+tags: []
+user_id: unknown

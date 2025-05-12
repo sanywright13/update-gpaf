@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/11277289db4f4d80be74d309c728bc53/artifacts
+end_time: 1737991606158
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 11277289db4f4d80be74d309c728bc53
+run_name: silent-worm-830
+run_uuid: 11277289db4f4d80be74d309c728bc53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737991568319
+status: 3
+tags: []
+user_id: unknown

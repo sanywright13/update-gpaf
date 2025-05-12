@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/424f4958bb4e40df9edefd61486e22d0/artifacts
+end_time: 1744670114537
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 424f4958bb4e40df9edefd61486e22d0
+run_name: delightful-koi-115
+run_uuid: 424f4958bb4e40df9edefd61486e22d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744670072523
+status: 3
+tags: []
+user_id: unknown

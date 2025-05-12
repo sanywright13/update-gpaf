@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5676d2adbce1468e87937281961f9120/artifacts
+end_time: 1746013375999
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5676d2adbce1468e87937281961f9120
+run_name: likeable-worm-514
+run_uuid: 5676d2adbce1468e87937281961f9120
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013375954
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/52767301d9524805ba304e8ef67ea02c/artifacts
+end_time: 1737637600887
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 52767301d9524805ba304e8ef67ea02c
+run_name: respected-crane-666
+run_uuid: 52767301d9524805ba304e8ef67ea02c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737637444536
+status: 3
+tags: []
+user_id: unknown

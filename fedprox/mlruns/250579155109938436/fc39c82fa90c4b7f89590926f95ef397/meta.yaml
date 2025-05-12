@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/fc39c82fa90c4b7f89590926f95ef397/artifacts
+end_time: 1738258777295
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: fc39c82fa90c4b7f89590926f95ef397
+run_name: useful-shark-789
+run_uuid: fc39c82fa90c4b7f89590926f95ef397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258767929
+status: 3
+tags: []
+user_id: unknown

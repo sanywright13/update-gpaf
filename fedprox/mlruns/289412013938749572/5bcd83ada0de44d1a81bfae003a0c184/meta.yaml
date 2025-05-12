@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5bcd83ada0de44d1a81bfae003a0c184/artifacts
+end_time: 1746013395824
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5bcd83ada0de44d1a81bfae003a0c184
+run_name: sassy-crow-82
+run_uuid: 5bcd83ada0de44d1a81bfae003a0c184
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013395782
+status: 4
+tags: []
+user_id: unknown

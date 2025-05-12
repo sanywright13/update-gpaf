@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/a3cd35def72c47ecab993be743774686/artifacts
+end_time: 1738249760440
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: a3cd35def72c47ecab993be743774686
+run_name: handsome-ox-606
+run_uuid: a3cd35def72c47ecab993be743774686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738249760386
+status: 3
+tags: []
+user_id: unknown

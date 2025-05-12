@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/273708892742210222/7fb58f24324c4e9c963391b2618ba44d/artifacts
+end_time: 1737121546993
+entry_point_name: ''
+experiment_id: '273708892742210222'
+lifecycle_stage: active
+run_id: 7fb58f24324c4e9c963391b2618ba44d
+run_name: luminous-sheep-401
+run_uuid: 7fb58f24324c4e9c963391b2618ba44d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737121546303
+status: 3
+tags: []
+user_id: unknown

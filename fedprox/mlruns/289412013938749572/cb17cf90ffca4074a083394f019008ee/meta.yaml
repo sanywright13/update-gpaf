@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cb17cf90ffca4074a083394f019008ee/artifacts
+end_time: 1746011632768
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cb17cf90ffca4074a083394f019008ee
+run_name: mercurial-cow-684
+run_uuid: cb17cf90ffca4074a083394f019008ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011632724
+status: 4
+tags: []
+user_id: unknown

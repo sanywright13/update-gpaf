@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3c992ae522c7462698d309463422b73b/artifacts
+end_time: 1746011657512
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3c992ae522c7462698d309463422b73b
+run_name: shivering-kit-236
+run_uuid: 3c992ae522c7462698d309463422b73b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011657468
+status: 4
+tags: []
+user_id: unknown

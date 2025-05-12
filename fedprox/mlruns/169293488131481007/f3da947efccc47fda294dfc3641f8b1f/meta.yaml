@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/f3da947efccc47fda294dfc3641f8b1f/artifacts
+end_time: 1737382488922
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: f3da947efccc47fda294dfc3641f8b1f
+run_name: intrigued-fly-565
+run_uuid: f3da947efccc47fda294dfc3641f8b1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382488875
+status: 3
+tags: []
+user_id: unknown

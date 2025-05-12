@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d18e079eae9f4b0ab94b20ae16f8d7e8/artifacts
+end_time: 1738278718576
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d18e079eae9f4b0ab94b20ae16f8d7e8
+run_name: unequaled-eel-294
+run_uuid: d18e079eae9f4b0ab94b20ae16f8d7e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738278718499
+status: 3
+tags: []
+user_id: unknown

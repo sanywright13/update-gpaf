@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/82feda3018954afab90843c3a77dbec6/artifacts
+end_time: 1746013367274
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 82feda3018954afab90843c3a77dbec6
+run_name: chill-mouse-539
+run_uuid: 82feda3018954afab90843c3a77dbec6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013367233
+status: 4
+tags: []
+user_id: unknown

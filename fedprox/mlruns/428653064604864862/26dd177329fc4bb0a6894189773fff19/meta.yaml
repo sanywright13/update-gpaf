@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/26dd177329fc4bb0a6894189773fff19/artifacts
+end_time: 1737551341270
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 26dd177329fc4bb0a6894189773fff19
+run_name: spiffy-grub-759
+run_uuid: 26dd177329fc4bb0a6894189773fff19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737551341242
+status: 3
+tags: []
+user_id: unknown

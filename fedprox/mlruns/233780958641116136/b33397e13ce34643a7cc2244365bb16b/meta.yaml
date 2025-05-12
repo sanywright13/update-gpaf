@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/b33397e13ce34643a7cc2244365bb16b/artifacts
+end_time: 1738862375903
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: b33397e13ce34643a7cc2244365bb16b
+run_name: vaunted-croc-656
+run_uuid: b33397e13ce34643a7cc2244365bb16b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862375873
+status: 4
+tags: []
+user_id: unknown

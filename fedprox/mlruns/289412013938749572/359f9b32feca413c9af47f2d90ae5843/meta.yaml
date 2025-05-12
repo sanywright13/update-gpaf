@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/359f9b32feca413c9af47f2d90ae5843/artifacts
+end_time: 1746013359933
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 359f9b32feca413c9af47f2d90ae5843
+run_name: bald-fish-796
+run_uuid: 359f9b32feca413c9af47f2d90ae5843
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013359888
+status: 4
+tags: []
+user_id: unknown

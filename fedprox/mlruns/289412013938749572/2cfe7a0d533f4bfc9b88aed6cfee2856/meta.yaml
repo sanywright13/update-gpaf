@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2cfe7a0d533f4bfc9b88aed6cfee2856/artifacts
+end_time: 1746017712090
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2cfe7a0d533f4bfc9b88aed6cfee2856
+run_name: peaceful-snipe-93
+run_uuid: 2cfe7a0d533f4bfc9b88aed6cfee2856
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017711985
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/029be688ef0b46989e88ef7b82e5fe82/artifacts
+end_time: 1744575932470
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 029be688ef0b46989e88ef7b82e5fe82
+run_name: bold-elk-282
+run_uuid: 029be688ef0b46989e88ef7b82e5fe82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744575932335
+status: 3
+tags: []
+user_id: unknown

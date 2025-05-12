@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5d68dde8a5e342cb9785c78daa48af86/artifacts
+end_time: 1742344940953
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5d68dde8a5e342cb9785c78daa48af86
+run_name: caring-whale-857
+run_uuid: 5d68dde8a5e342cb9785c78daa48af86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344940754
+status: 4
+tags: []
+user_id: unknown

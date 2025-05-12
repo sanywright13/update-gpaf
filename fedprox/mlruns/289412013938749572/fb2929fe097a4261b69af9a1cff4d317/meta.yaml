@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fb2929fe097a4261b69af9a1cff4d317/artifacts
+end_time: 1746018876331
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fb2929fe097a4261b69af9a1cff4d317
+run_name: efficient-kite-870
+run_uuid: fb2929fe097a4261b69af9a1cff4d317
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018876244
+status: 4
+tags: []
+user_id: unknown

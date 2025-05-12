@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/583563997509513971/5fb1524333ad4fad8767fb08c82c6cf2/artifacts
+end_time: 1744732737441
+entry_point_name: ''
+experiment_id: '583563997509513971'
+lifecycle_stage: active
+run_id: 5fb1524333ad4fad8767fb08c82c6cf2
+run_name: victorious-slug-279
+run_uuid: 5fb1524333ad4fad8767fb08c82c6cf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744728597987
+status: 3
+tags: []
+user_id: unknown

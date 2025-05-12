@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bb62d00de8744f1895884ccf3bdd31f4/artifacts
+end_time: 1746011582964
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bb62d00de8744f1895884ccf3bdd31f4
+run_name: useful-stoat-402
+run_uuid: bb62d00de8744f1895884ccf3bdd31f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011582925
+status: 4
+tags: []
+user_id: unknown

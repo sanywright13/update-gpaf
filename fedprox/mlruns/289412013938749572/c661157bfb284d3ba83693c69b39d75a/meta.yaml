@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c661157bfb284d3ba83693c69b39d75a/artifacts
+end_time: 1746023718895
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c661157bfb284d3ba83693c69b39d75a
+run_name: nebulous-hawk-693
+run_uuid: c661157bfb284d3ba83693c69b39d75a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023718784
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/f710007ead454e88ac911b66d30bd8e3/artifacts
+end_time: 1736889417665
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: f710007ead454e88ac911b66d30bd8e3
+run_name: beautiful-bat-28
+run_uuid: f710007ead454e88ac911b66d30bd8e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889353616
+status: 3
+tags: []
+user_id: unknown

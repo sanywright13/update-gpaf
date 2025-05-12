@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c97d253d48414e93953057f4b4f6a22e/artifacts
+end_time: 1746023786294
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c97d253d48414e93953057f4b4f6a22e
+run_name: casual-gnat-342
+run_uuid: c97d253d48414e93953057f4b4f6a22e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023786193
+status: 4
+tags: []
+user_id: unknown

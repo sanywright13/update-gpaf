@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7f54ec96c7e349d983ea9c60066d3cee/artifacts
+end_time: 1746023724736
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7f54ec96c7e349d983ea9c60066d3cee
+run_name: welcoming-shoat-385
+run_uuid: 7f54ec96c7e349d983ea9c60066d3cee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023724637
+status: 4
+tags: []
+user_id: unknown

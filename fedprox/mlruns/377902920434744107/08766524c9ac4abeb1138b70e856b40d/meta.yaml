@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/377902920434744107/08766524c9ac4abeb1138b70e856b40d/artifacts
+end_time: 1737756985877
+entry_point_name: ''
+experiment_id: '377902920434744107'
+lifecycle_stage: active
+run_id: 08766524c9ac4abeb1138b70e856b40d
+run_name: chill-foal-486
+run_uuid: 08766524c9ac4abeb1138b70e856b40d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737756364593
+status: 3
+tags: []
+user_id: unknown

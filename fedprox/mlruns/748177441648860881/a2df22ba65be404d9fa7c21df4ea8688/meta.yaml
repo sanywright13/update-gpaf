@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a2df22ba65be404d9fa7c21df4ea8688/artifacts
+end_time: 1742399703313
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a2df22ba65be404d9fa7c21df4ea8688
+run_name: thoughtful-ape-496
+run_uuid: a2df22ba65be404d9fa7c21df4ea8688
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742399702940
+status: 3
+tags: []
+user_id: unknown

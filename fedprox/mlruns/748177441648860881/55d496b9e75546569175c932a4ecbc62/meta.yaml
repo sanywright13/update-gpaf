@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/55d496b9e75546569175c932a4ecbc62/artifacts
+end_time: 1744626679286
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 55d496b9e75546569175c932a4ecbc62
+run_name: wise-owl-45
+run_uuid: 55d496b9e75546569175c932a4ecbc62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744626643068
+status: 3
+tags: []
+user_id: unknown

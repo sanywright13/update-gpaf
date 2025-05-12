@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c3c24017c229474ea0c2e6df091e4251/artifacts
+end_time: 1746013405409
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c3c24017c229474ea0c2e6df091e4251
+run_name: rebellious-stork-748
+run_uuid: c3c24017c229474ea0c2e6df091e4251
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013405364
+status: 4
+tags: []
+user_id: unknown

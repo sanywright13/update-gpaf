@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/12972dd909a5417496b856ce825c97eb/artifacts
+end_time: 1746021778757
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 12972dd909a5417496b856ce825c97eb
+run_name: clumsy-boar-599
+run_uuid: 12972dd909a5417496b856ce825c97eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021778664
+status: 4
+tags: []
+user_id: unknown

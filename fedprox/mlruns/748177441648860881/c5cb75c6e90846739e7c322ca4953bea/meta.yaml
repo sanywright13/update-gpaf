@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c5cb75c6e90846739e7c322ca4953bea/artifacts
+end_time: 1744576936399
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c5cb75c6e90846739e7c322ca4953bea
+run_name: brawny-conch-557
+run_uuid: c5cb75c6e90846739e7c322ca4953bea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576857245
+status: 3
+tags: []
+user_id: unknown

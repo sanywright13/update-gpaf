@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f8eda635a0304d268bd04d7aa72702e7/artifacts
+end_time: 1746018960391
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f8eda635a0304d268bd04d7aa72702e7
+run_name: nervous-pug-135
+run_uuid: f8eda635a0304d268bd04d7aa72702e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018960310
+status: 4
+tags: []
+user_id: unknown

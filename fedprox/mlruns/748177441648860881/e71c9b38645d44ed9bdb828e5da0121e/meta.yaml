@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e71c9b38645d44ed9bdb828e5da0121e/artifacts
+end_time: 1744668333962
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e71c9b38645d44ed9bdb828e5da0121e
+run_name: merciful-rook-119
+run_uuid: e71c9b38645d44ed9bdb828e5da0121e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744668291775
+status: 3
+tags: []
+user_id: unknown

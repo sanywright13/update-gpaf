@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/87268da119964656857111ff400cbbee/artifacts
+end_time: 1738005551544
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 87268da119964656857111ff400cbbee
+run_name: lyrical-lamb-631
+run_uuid: 87268da119964656857111ff400cbbee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005551329
+status: 3
+tags: []
+user_id: unknown

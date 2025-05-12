@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d6889a31c1504cec97df4f3f17401c63/artifacts
+end_time: 1746018788935
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d6889a31c1504cec97df4f3f17401c63
+run_name: wise-gnat-767
+run_uuid: d6889a31c1504cec97df4f3f17401c63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018788850
+status: 4
+tags: []
+user_id: unknown

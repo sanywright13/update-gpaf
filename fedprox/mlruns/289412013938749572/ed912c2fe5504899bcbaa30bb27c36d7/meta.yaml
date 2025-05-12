@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ed912c2fe5504899bcbaa30bb27c36d7/artifacts
+end_time: 1746018510324
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ed912c2fe5504899bcbaa30bb27c36d7
+run_name: salty-elk-183
+run_uuid: ed912c2fe5504899bcbaa30bb27c36d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018510242
+status: 4
+tags: []
+user_id: unknown

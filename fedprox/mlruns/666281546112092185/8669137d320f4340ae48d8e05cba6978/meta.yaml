@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/8669137d320f4340ae48d8e05cba6978/artifacts
+end_time: 1737469825364
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 8669137d320f4340ae48d8e05cba6978
+run_name: selective-lark-534
+run_uuid: 8669137d320f4340ae48d8e05cba6978
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469825324
+status: 4
+tags: []
+user_id: unknown

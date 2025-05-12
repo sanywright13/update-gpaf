@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/70113b0e17e247bf9a491772f4ed0065/artifacts
+end_time: 1743682331716
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 70113b0e17e247bf9a491772f4ed0065
+run_name: mercurial-perch-336
+run_uuid: 70113b0e17e247bf9a491772f4ed0065
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743682331344
+status: 3
+tags: []
+user_id: unknown

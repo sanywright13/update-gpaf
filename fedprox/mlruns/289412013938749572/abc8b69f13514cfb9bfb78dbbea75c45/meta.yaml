@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/abc8b69f13514cfb9bfb78dbbea75c45/artifacts
+end_time: 1746017599991
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: abc8b69f13514cfb9bfb78dbbea75c45
+run_name: righteous-goat-986
+run_uuid: abc8b69f13514cfb9bfb78dbbea75c45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017599592
+status: 3
+tags: []
+user_id: unknown

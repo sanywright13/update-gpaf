@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ddae97dfe353471a80673119476d2c7a/artifacts
+end_time: 1740080292689
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ddae97dfe353471a80673119476d2c7a
+run_name: resilient-ant-888
+run_uuid: ddae97dfe353471a80673119476d2c7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080292443
+status: 3
+tags: []
+user_id: unknown

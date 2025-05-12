@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/60a4788584d14d3e94f5715844388092/artifacts
+end_time: 1746018593217
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 60a4788584d14d3e94f5715844388092
+run_name: capricious-roo-588
+run_uuid: 60a4788584d14d3e94f5715844388092
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018592772
+status: 3
+tags: []
+user_id: unknown

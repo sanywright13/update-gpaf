@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a51eb3d9db83420a8a29f8dca02a7b27/artifacts
+end_time: 1740078387495
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a51eb3d9db83420a8a29f8dca02a7b27
+run_name: secretive-moose-698
+run_uuid: a51eb3d9db83420a8a29f8dca02a7b27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078387248
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/c99c3f1eeb324d59aa6a0aada7c5a09c/artifacts
+end_time: 1737297050902
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: c99c3f1eeb324d59aa6a0aada7c5a09c
+run_name: dashing-skink-4
+run_uuid: c99c3f1eeb324d59aa6a0aada7c5a09c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297050880
+status: 3
+tags: []
+user_id: unknown

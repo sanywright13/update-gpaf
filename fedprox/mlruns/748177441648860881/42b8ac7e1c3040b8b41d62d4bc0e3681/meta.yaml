@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/42b8ac7e1c3040b8b41d62d4bc0e3681/artifacts
+end_time: 1744576473887
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 42b8ac7e1c3040b8b41d62d4bc0e3681
+run_name: stately-bug-548
+run_uuid: 42b8ac7e1c3040b8b41d62d4bc0e3681
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576473752
+status: 3
+tags: []
+user_id: unknown

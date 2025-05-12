@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/58bdf491b5864c25982aecdae00eeb65/artifacts
+end_time: 1746018081696
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 58bdf491b5864c25982aecdae00eeb65
+run_name: nosy-shark-496
+run_uuid: 58bdf491b5864c25982aecdae00eeb65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018081301
+status: 3
+tags: []
+user_id: unknown

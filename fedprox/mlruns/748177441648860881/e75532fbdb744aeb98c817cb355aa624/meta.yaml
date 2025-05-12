@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e75532fbdb744aeb98c817cb355aa624/artifacts
+end_time: 1739994903454
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e75532fbdb744aeb98c817cb355aa624
+run_name: learned-frog-635
+run_uuid: e75532fbdb744aeb98c817cb355aa624
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739985825735
+status: 3
+tags: []
+user_id: unknown

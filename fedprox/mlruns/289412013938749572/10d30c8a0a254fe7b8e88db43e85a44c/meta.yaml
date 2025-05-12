@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/10d30c8a0a254fe7b8e88db43e85a44c/artifacts
+end_time: 1746013439386
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 10d30c8a0a254fe7b8e88db43e85a44c
+run_name: judicious-swan-505
+run_uuid: 10d30c8a0a254fe7b8e88db43e85a44c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013439336
+status: 4
+tags: []
+user_id: unknown

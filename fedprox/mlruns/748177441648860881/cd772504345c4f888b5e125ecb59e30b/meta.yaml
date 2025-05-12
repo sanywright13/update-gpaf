@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/cd772504345c4f888b5e125ecb59e30b/artifacts
+end_time: 1743210121216
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: cd772504345c4f888b5e125ecb59e30b
+run_name: industrious-rook-966
+run_uuid: cd772504345c4f888b5e125ecb59e30b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743210120595
+status: 3
+tags: []
+user_id: unknown

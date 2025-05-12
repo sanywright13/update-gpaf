@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0d086be1d1f54d8a8d55e71a6b616d99/artifacts
+end_time: 1746023755138
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0d086be1d1f54d8a8d55e71a6b616d99
+run_name: thoughtful-hog-85
+run_uuid: 0d086be1d1f54d8a8d55e71a6b616d99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023754705
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/b0600d85ffff4d28bd6517a3630b8b08/artifacts
+end_time: 1744468162722
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: b0600d85ffff4d28bd6517a3630b8b08
+run_name: peaceful-zebra-967
+run_uuid: b0600d85ffff4d28bd6517a3630b8b08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744467966885
+status: 3
+tags: []
+user_id: unknown

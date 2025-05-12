@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/4122780970cb4474925c829253e941bf/artifacts
+end_time: 1743209343106
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 4122780970cb4474925c829253e941bf
+run_name: spiffy-shad-122
+run_uuid: 4122780970cb4474925c829253e941bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743209321882
+status: 3
+tags: []
+user_id: unknown

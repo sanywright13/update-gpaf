@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/855ca66fa7c647688ab2a62ec4baeddf/artifacts
+end_time: 1746013364772
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 855ca66fa7c647688ab2a62ec4baeddf
+run_name: illustrious-slug-545
+run_uuid: 855ca66fa7c647688ab2a62ec4baeddf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013364723
+status: 4
+tags: []
+user_id: unknown

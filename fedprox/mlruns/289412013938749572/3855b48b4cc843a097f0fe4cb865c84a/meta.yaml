@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3855b48b4cc843a097f0fe4cb865c84a/artifacts
+end_time: 1746023790603
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3855b48b4cc843a097f0fe4cb865c84a
+run_name: marvelous-shrimp-274
+run_uuid: 3855b48b4cc843a097f0fe4cb865c84a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023790504
+status: 4
+tags: []
+user_id: unknown

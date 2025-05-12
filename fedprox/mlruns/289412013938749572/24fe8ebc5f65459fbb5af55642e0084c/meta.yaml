@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/24fe8ebc5f65459fbb5af55642e0084c/artifacts
+end_time: 1746013417717
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 24fe8ebc5f65459fbb5af55642e0084c
+run_name: bustling-cow-235
+run_uuid: 24fe8ebc5f65459fbb5af55642e0084c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013417674
+status: 4
+tags: []
+user_id: unknown

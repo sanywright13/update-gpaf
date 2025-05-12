@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a65f9625300e4842aa8a36a512374791/artifacts
+end_time: 1746011609532
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a65f9625300e4842aa8a36a512374791
+run_name: bedecked-colt-6
+run_uuid: a65f9625300e4842aa8a36a512374791
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011609491
+status: 4
+tags: []
+user_id: unknown

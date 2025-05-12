@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a7bc8cf1147749929e8dbdb1a4bde226/artifacts
+end_time: 1746013405409
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a7bc8cf1147749929e8dbdb1a4bde226
+run_name: dashing-panda-334
+run_uuid: a7bc8cf1147749929e8dbdb1a4bde226
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013405362
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0d6302cb0c6946ac90d8c3400c08fe86/artifacts
+end_time: 1744624482088
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0d6302cb0c6946ac90d8c3400c08fe86
+run_name: awesome-auk-857
+run_uuid: 0d6302cb0c6946ac90d8c3400c08fe86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744624441415
+status: 3
+tags: []
+user_id: unknown

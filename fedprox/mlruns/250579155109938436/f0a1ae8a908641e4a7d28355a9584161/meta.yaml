@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/f0a1ae8a908641e4a7d28355a9584161/artifacts
+end_time: 1738270873289
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: f0a1ae8a908641e4a7d28355a9584161
+run_name: enthused-mare-551
+run_uuid: f0a1ae8a908641e4a7d28355a9584161
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738270873223
+status: 3
+tags: []
+user_id: unknown

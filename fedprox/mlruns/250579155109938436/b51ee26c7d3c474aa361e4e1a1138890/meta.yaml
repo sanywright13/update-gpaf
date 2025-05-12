@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/b51ee26c7d3c474aa361e4e1a1138890/artifacts
+end_time: 1738241051327
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: b51ee26c7d3c474aa361e4e1a1138890
+run_name: wistful-foal-602
+run_uuid: b51ee26c7d3c474aa361e4e1a1138890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738241041794
+status: 3
+tags: []
+user_id: unknown

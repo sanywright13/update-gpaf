@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ee7ad3f28db549b1b99cb0c7ed3f726a/artifacts
+end_time: 1746018706076
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ee7ad3f28db549b1b99cb0c7ed3f726a
+run_name: rare-turtle-867
+run_uuid: ee7ad3f28db549b1b99cb0c7ed3f726a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018705994
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/6cd53904f01945e9b63d6cc6451c5077/artifacts
+end_time: 1737633523018
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 6cd53904f01945e9b63d6cc6451c5077
+run_name: learned-hound-339
+run_uuid: 6cd53904f01945e9b63d6cc6451c5077
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737633522989
+status: 3
+tags: []
+user_id: unknown

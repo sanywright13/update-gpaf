@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a6755287d7774fe68130e47997d2747d/artifacts
+end_time: 1746013390504
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a6755287d7774fe68130e47997d2747d
+run_name: monumental-hare-134
+run_uuid: a6755287d7774fe68130e47997d2747d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013390461
+status: 4
+tags: []
+user_id: unknown

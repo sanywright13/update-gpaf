@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/393910574498468140/3359a376cf254d4b9bc06a94da9f3644/artifacts
+end_time: 1738280947546
+entry_point_name: ''
+experiment_id: '393910574498468140'
+lifecycle_stage: active
+run_id: 3359a376cf254d4b9bc06a94da9f3644
+run_name: mercurial-zebra-140
+run_uuid: 3359a376cf254d4b9bc06a94da9f3644
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738280417974
+status: 3
+tags: []
+user_id: unknown

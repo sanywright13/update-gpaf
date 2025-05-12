@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1ce63655f2ea4d18917a57f5072944d2/artifacts
+end_time: 1737563716542
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1ce63655f2ea4d18917a57f5072944d2
+run_name: defiant-hog-535
+run_uuid: 1ce63655f2ea4d18917a57f5072944d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563716519
+status: 3
+tags: []
+user_id: unknown

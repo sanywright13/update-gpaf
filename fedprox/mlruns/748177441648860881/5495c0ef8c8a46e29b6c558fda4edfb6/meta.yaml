@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5495c0ef8c8a46e29b6c558fda4edfb6/artifacts
+end_time: 1742256902290
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5495c0ef8c8a46e29b6c558fda4edfb6
+run_name: nosy-boar-812
+run_uuid: 5495c0ef8c8a46e29b6c558fda4edfb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256902175
+status: 3
+tags: []
+user_id: unknown

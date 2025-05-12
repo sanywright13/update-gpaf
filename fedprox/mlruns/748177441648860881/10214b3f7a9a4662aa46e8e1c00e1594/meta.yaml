@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/10214b3f7a9a4662aa46e8e1c00e1594/artifacts
+end_time: 1740080035044
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 10214b3f7a9a4662aa46e8e1c00e1594
+run_name: peaceful-gull-711
+run_uuid: 10214b3f7a9a4662aa46e8e1c00e1594
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080004697
+status: 3
+tags: []
+user_id: unknown

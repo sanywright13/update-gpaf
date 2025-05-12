@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/7570c3efc529416abfe46293d50181fe/artifacts
+end_time: 1742256892311
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 7570c3efc529416abfe46293d50181fe
+run_name: classy-zebra-988
+run_uuid: 7570c3efc529416abfe46293d50181fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256892259
+status: 3
+tags: []
+user_id: unknown

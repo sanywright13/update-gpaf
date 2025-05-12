@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/59b89124b46749ec9af74ca10051a3aa/artifacts
+end_time: 1742391345773
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 59b89124b46749ec9af74ca10051a3aa
+run_name: indecisive-yak-559
+run_uuid: 59b89124b46749ec9af74ca10051a3aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742391327094
+status: 3
+tags: []
+user_id: unknown

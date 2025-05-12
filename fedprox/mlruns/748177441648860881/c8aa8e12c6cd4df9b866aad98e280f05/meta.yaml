@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c8aa8e12c6cd4df9b866aad98e280f05/artifacts
+end_time: 1744626922944
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c8aa8e12c6cd4df9b866aad98e280f05
+run_name: delightful-horse-64
+run_uuid: c8aa8e12c6cd4df9b866aad98e280f05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744626854797
+status: 3
+tags: []
+user_id: unknown

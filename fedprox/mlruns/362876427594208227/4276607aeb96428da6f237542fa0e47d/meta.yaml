@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/4276607aeb96428da6f237542fa0e47d/artifacts
+end_time: 1737991292638
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 4276607aeb96428da6f237542fa0e47d
+run_name: abrasive-pig-360
+run_uuid: 4276607aeb96428da6f237542fa0e47d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737991261453
+status: 3
+tags: []
+user_id: unknown

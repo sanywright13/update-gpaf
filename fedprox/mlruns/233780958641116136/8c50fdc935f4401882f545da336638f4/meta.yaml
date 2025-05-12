@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/8c50fdc935f4401882f545da336638f4/artifacts
+end_time: 1738862385139
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 8c50fdc935f4401882f545da336638f4
+run_name: abrasive-wolf-93
+run_uuid: 8c50fdc935f4401882f545da336638f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862385103
+status: 4
+tags: []
+user_id: unknown

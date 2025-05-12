@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c5160d6afcca4beca11669cd6516fd83/artifacts
+end_time: 1737667575544
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c5160d6afcca4beca11669cd6516fd83
+run_name: nervous-squirrel-754
+run_uuid: c5160d6afcca4beca11669cd6516fd83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737667575445
+status: 3
+tags: []
+user_id: unknown

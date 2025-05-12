@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6e13092a873e438181125b41555e82c9/artifacts
+end_time: 1743679727957
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6e13092a873e438181125b41555e82c9
+run_name: peaceful-penguin-409
+run_uuid: 6e13092a873e438181125b41555e82c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743679626231
+status: 3
+tags: []
+user_id: unknown

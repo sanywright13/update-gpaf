@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/01f3ec22414949d48f16759f2529f91b/artifacts
+end_time: 1746018026789
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 01f3ec22414949d48f16759f2529f91b
+run_name: powerful-bear-47
+run_uuid: 01f3ec22414949d48f16759f2529f91b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018026371
+status: 3
+tags: []
+user_id: unknown

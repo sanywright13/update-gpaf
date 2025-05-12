@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/5e79fb6fca9245c0a8f4964f945a6c28/artifacts
+end_time: 1737907053045
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 5e79fb6fca9245c0a8f4964f945a6c28
+run_name: classy-crow-986
+run_uuid: 5e79fb6fca9245c0a8f4964f945a6c28
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737906967293
+status: 3
+tags: []
+user_id: unknown

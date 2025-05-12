@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f010d796259b4d4b8a07029c373d495a/artifacts
+end_time: 1746011601299
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f010d796259b4d4b8a07029c373d495a
+run_name: righteous-grouse-216
+run_uuid: f010d796259b4d4b8a07029c373d495a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011601258
+status: 4
+tags: []
+user_id: unknown

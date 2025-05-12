@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/38249654fd624cd7a7bad7de1b0b5249/artifacts
+end_time: 1746013385579
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 38249654fd624cd7a7bad7de1b0b5249
+run_name: unruly-shad-104
+run_uuid: 38249654fd624cd7a7bad7de1b0b5249
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013385533
+status: 4
+tags: []
+user_id: unknown

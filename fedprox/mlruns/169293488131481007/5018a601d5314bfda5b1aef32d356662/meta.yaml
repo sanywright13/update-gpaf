@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/5018a601d5314bfda5b1aef32d356662/artifacts
+end_time: 1737468467280
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 5018a601d5314bfda5b1aef32d356662
+run_name: intrigued-chimp-644
+run_uuid: 5018a601d5314bfda5b1aef32d356662
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737468467233
+status: 3
+tags: []
+user_id: unknown

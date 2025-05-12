@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/89ec9099d28247f38c0fad6c58f47d75/artifacts
+end_time: 1746019045644
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 89ec9099d28247f38c0fad6c58f47d75
+run_name: bustling-bear-390
+run_uuid: 89ec9099d28247f38c0fad6c58f47d75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019045559
+status: 4
+tags: []
+user_id: unknown

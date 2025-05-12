@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/45057cf6ba99423d88dd8d5ed5d52244/artifacts
+end_time: 1738249277559
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 45057cf6ba99423d88dd8d5ed5d52244
+run_name: sneaky-horse-885
+run_uuid: 45057cf6ba99423d88dd8d5ed5d52244
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738249277508
+status: 3
+tags: []
+user_id: unknown

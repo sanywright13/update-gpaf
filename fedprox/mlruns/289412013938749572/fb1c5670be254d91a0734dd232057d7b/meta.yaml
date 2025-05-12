@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fb1c5670be254d91a0734dd232057d7b/artifacts
+end_time: 1746023725045
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fb1c5670be254d91a0734dd232057d7b
+run_name: enthused-mouse-775
+run_uuid: fb1c5670be254d91a0734dd232057d7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023724640
+status: 3
+tags: []
+user_id: unknown

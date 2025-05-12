@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/208cf1ed2ded4dcc8747945a8544bcc9/artifacts
+end_time: 1742256858635
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 208cf1ed2ded4dcc8747945a8544bcc9
+run_name: whimsical-ox-459
+run_uuid: 208cf1ed2ded4dcc8747945a8544bcc9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256858522
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/53c9d6f3d9374949890ab0879f65cc3c/artifacts
+end_time: 1739976685221
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 53c9d6f3d9374949890ab0879f65cc3c
+run_name: popular-hound-753
+run_uuid: 53c9d6f3d9374949890ab0879f65cc3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739976583902
+status: 3
+tags: []
+user_id: unknown

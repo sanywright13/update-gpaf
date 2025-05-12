@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cafa0a28b1914f8a8780d4f1e16d505c/artifacts
+end_time: 1746013427814
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cafa0a28b1914f8a8780d4f1e16d505c
+run_name: indecisive-cat-55
+run_uuid: cafa0a28b1914f8a8780d4f1e16d505c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013427764
+status: 4
+tags: []
+user_id: unknown

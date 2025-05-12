@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8334fdb1a39245f7a43b2f67ff4b897e/artifacts
+end_time: 1746011660861
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8334fdb1a39245f7a43b2f67ff4b897e
+run_name: secretive-stoat-825
+run_uuid: 8334fdb1a39245f7a43b2f67ff4b897e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011660816
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/780442e24a6f49fe9d9577487f36aa04/artifacts
+end_time: 1746023783279
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 780442e24a6f49fe9d9577487f36aa04
+run_name: gregarious-snail-656
+run_uuid: 780442e24a6f49fe9d9577487f36aa04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023782878
+status: 3
+tags: []
+user_id: unknown

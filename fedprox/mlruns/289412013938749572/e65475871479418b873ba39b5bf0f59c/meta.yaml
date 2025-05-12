@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e65475871479418b873ba39b5bf0f59c/artifacts
+end_time: 1746023741320
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e65475871479418b873ba39b5bf0f59c
+run_name: marvelous-vole-511
+run_uuid: e65475871479418b873ba39b5bf0f59c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023740905
+status: 3
+tags: []
+user_id: unknown

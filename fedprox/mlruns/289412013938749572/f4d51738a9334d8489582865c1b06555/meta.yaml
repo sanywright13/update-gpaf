@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f4d51738a9334d8489582865c1b06555/artifacts
+end_time: 1746023742598
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f4d51738a9334d8489582865c1b06555
+run_name: handsome-dolphin-845
+run_uuid: f4d51738a9334d8489582865c1b06555
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023742500
+status: 4
+tags: []
+user_id: unknown

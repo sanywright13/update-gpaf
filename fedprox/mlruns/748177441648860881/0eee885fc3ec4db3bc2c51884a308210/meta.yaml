@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0eee885fc3ec4db3bc2c51884a308210/artifacts
+end_time: 1744670673742
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0eee885fc3ec4db3bc2c51884a308210
+run_name: angry-whale-638
+run_uuid: 0eee885fc3ec4db3bc2c51884a308210
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744670662050
+status: 3
+tags: []
+user_id: unknown

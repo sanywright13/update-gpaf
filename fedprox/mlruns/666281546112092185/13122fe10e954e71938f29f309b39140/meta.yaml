@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/13122fe10e954e71938f29f309b39140/artifacts
+end_time: 1737469820541
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 13122fe10e954e71938f29f309b39140
+run_name: receptive-kit-212
+run_uuid: 13122fe10e954e71938f29f309b39140
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469820513
+status: 4
+tags: []
+user_id: unknown

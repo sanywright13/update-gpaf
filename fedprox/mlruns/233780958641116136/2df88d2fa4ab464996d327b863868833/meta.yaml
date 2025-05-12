@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/2df88d2fa4ab464996d327b863868833/artifacts
+end_time: 1738862948280
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 2df88d2fa4ab464996d327b863868833
+run_name: thundering-finch-807
+run_uuid: 2df88d2fa4ab464996d327b863868833
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862948215
+status: 4
+tags: []
+user_id: unknown

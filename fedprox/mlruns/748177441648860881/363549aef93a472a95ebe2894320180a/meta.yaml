@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/363549aef93a472a95ebe2894320180a/artifacts
+end_time: 1743213483771
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 363549aef93a472a95ebe2894320180a
+run_name: able-bird-38
+run_uuid: 363549aef93a472a95ebe2894320180a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743213483170
+status: 3
+tags: []
+user_id: unknown

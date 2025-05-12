@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/9daf3a2868ff4627a63589a137adba81/artifacts
+end_time: 1736888376560
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 9daf3a2868ff4627a63589a137adba81
+run_name: aged-hare-479
+run_uuid: 9daf3a2868ff4627a63589a137adba81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888376507
+status: 3
+tags: []
+user_id: unknown

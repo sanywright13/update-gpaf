@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2cd5b19e80d14c96a4cd803175ecab5f/artifacts
+end_time: 1743634770515
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2cd5b19e80d14c96a4cd803175ecab5f
+run_name: carefree-goat-359
+run_uuid: 2cd5b19e80d14c96a4cd803175ecab5f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743634755215
+status: 3
+tags: []
+user_id: unknown

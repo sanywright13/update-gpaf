@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8a02dfeeb3594e6982d1d6cf4127d0ae/artifacts
+end_time: 1746013382037
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8a02dfeeb3594e6982d1d6cf4127d0ae
+run_name: rogue-mink-997
+run_uuid: 8a02dfeeb3594e6982d1d6cf4127d0ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013381996
+status: 4
+tags: []
+user_id: unknown

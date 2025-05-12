@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/04dc4a06f24a4c1f9c44e6700aec1be4/artifacts
+end_time: 1743211257275
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 04dc4a06f24a4c1f9c44e6700aec1be4
+run_name: kindly-penguin-203
+run_uuid: 04dc4a06f24a4c1f9c44e6700aec1be4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743211229163
+status: 3
+tags: []
+user_id: unknown

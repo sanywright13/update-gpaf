@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/045a00ab4f184d36acdf7bd1e6bd8593/artifacts
+end_time: 1744623712031
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 045a00ab4f184d36acdf7bd1e6bd8593
+run_name: angry-dove-858
+run_uuid: 045a00ab4f184d36acdf7bd1e6bd8593
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744623711888
+status: 3
+tags: []
+user_id: unknown

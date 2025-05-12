@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ade72c9a520f4394832b2d2676cf4a15/artifacts
+end_time: 1746011613275
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ade72c9a520f4394832b2d2676cf4a15
+run_name: zealous-yak-914
+run_uuid: ade72c9a520f4394832b2d2676cf4a15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011613233
+status: 4
+tags: []
+user_id: unknown

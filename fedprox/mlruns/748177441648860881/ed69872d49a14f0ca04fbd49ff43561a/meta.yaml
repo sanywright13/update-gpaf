@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ed69872d49a14f0ca04fbd49ff43561a/artifacts
+end_time: 1739973682433
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ed69872d49a14f0ca04fbd49ff43561a
+run_name: fun-shoat-971
+run_uuid: ed69872d49a14f0ca04fbd49ff43561a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739973493951
+status: 3
+tags: []
+user_id: unknown

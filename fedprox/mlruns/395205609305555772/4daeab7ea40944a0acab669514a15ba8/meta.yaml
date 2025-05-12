@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/4daeab7ea40944a0acab669514a15ba8/artifacts
+end_time: 1736888386992
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 4daeab7ea40944a0acab669514a15ba8
+run_name: upbeat-mare-142
+run_uuid: 4daeab7ea40944a0acab669514a15ba8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888386947
+status: 3
+tags: []
+user_id: unknown

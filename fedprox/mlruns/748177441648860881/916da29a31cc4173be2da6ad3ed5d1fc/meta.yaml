@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/916da29a31cc4173be2da6ad3ed5d1fc/artifacts
+end_time: 1743375966187
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 916da29a31cc4173be2da6ad3ed5d1fc
+run_name: shivering-lamb-320
+run_uuid: 916da29a31cc4173be2da6ad3ed5d1fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743375965645
+status: 3
+tags: []
+user_id: unknown

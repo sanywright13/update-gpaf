@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/269f123806fe4a709d5749a3cdc1d949/artifacts
+end_time: 1737562751673
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 269f123806fe4a709d5749a3cdc1d949
+run_name: exultant-newt-928
+run_uuid: 269f123806fe4a709d5749a3cdc1d949
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737562751649
+status: 3
+tags: []
+user_id: unknown

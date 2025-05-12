@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/49370d66711f49e2a495b9d9077692b3/artifacts
+end_time: 1737625706151
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 49370d66711f49e2a495b9d9077692b3
+run_name: shivering-kite-959
+run_uuid: 49370d66711f49e2a495b9d9077692b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737625701371
+status: 3
+tags: []
+user_id: unknown

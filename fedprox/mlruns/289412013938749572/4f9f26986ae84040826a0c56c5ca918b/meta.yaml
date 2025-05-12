@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4f9f26986ae84040826a0c56c5ca918b/artifacts
+end_time: 1746013449156
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4f9f26986ae84040826a0c56c5ca918b
+run_name: thundering-snake-929
+run_uuid: 4f9f26986ae84040826a0c56c5ca918b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013449105
+status: 4
+tags: []
+user_id: unknown

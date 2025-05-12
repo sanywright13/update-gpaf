@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0c12fc9038cc4e31b57e94973efefbf2/artifacts
+end_time: 1744483969444
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0c12fc9038cc4e31b57e94973efefbf2
+run_name: legendary-bass-441
+run_uuid: 0c12fc9038cc4e31b57e94973efefbf2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483968808
+status: 3
+tags: []
+user_id: unknown

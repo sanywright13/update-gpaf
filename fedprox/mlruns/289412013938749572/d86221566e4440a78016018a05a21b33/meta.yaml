@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d86221566e4440a78016018a05a21b33/artifacts
+end_time: 1746018167669
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d86221566e4440a78016018a05a21b33
+run_name: mercurial-wren-557
+run_uuid: d86221566e4440a78016018a05a21b33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018167280
+status: 3
+tags: []
+user_id: unknown

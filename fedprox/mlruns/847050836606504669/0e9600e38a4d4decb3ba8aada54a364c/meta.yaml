@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/847050836606504669/0e9600e38a4d4decb3ba8aada54a364c/artifacts
+end_time: 1737483914971
+entry_point_name: ''
+experiment_id: '847050836606504669'
+lifecycle_stage: active
+run_id: 0e9600e38a4d4decb3ba8aada54a364c
+run_name: intrigued-turtle-75
+run_uuid: 0e9600e38a4d4decb3ba8aada54a364c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737483409746
+status: 3
+tags: []
+user_id: unknown

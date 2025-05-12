@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f351feba1194416580b17f829048ba0a/artifacts
+end_time: 1746011575101
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f351feba1194416580b17f829048ba0a
+run_name: unique-crow-687
+run_uuid: f351feba1194416580b17f829048ba0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011575061
+status: 4
+tags: []
+user_id: unknown

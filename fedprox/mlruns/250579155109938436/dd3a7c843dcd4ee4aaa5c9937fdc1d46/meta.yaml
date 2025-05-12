@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/dd3a7c843dcd4ee4aaa5c9937fdc1d46/artifacts
+end_time: 1738248705951
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: dd3a7c843dcd4ee4aaa5c9937fdc1d46
+run_name: vaunted-skunk-49
+run_uuid: dd3a7c843dcd4ee4aaa5c9937fdc1d46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738248705849
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/0b5ed1aabdcf428098a8478d7eccf72a/artifacts
+end_time: 1737625702470
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 0b5ed1aabdcf428098a8478d7eccf72a
+run_name: luminous-yak-1000
+run_uuid: 0b5ed1aabdcf428098a8478d7eccf72a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737625702440
+status: 3
+tags: []
+user_id: unknown

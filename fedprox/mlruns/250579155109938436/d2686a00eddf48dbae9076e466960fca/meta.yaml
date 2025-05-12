@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d2686a00eddf48dbae9076e466960fca/artifacts
+end_time: 1738158640244
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d2686a00eddf48dbae9076e466960fca
+run_name: kindly-shad-358
+run_uuid: d2686a00eddf48dbae9076e466960fca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158640018
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/accdf250374d44589aab227fa90c62ec/artifacts
+end_time: 1738240688147
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: accdf250374d44589aab227fa90c62ec
+run_name: abundant-slug-928
+run_uuid: accdf250374d44589aab227fa90c62ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240688075
+status: 4
+tags: []
+user_id: unknown

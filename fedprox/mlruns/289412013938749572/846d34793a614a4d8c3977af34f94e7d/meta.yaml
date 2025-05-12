@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/846d34793a614a4d8c3977af34f94e7d/artifacts
+end_time: 1746011621374
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 846d34793a614a4d8c3977af34f94e7d
+run_name: glamorous-ape-525
+run_uuid: 846d34793a614a4d8c3977af34f94e7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011621332
+status: 4
+tags: []
+user_id: unknown

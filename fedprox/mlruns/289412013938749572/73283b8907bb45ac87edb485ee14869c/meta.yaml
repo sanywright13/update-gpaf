@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/73283b8907bb45ac87edb485ee14869c/artifacts
+end_time: 1746011609539
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 73283b8907bb45ac87edb485ee14869c
+run_name: thundering-tern-996
+run_uuid: 73283b8907bb45ac87edb485ee14869c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011609498
+status: 4
+tags: []
+user_id: unknown

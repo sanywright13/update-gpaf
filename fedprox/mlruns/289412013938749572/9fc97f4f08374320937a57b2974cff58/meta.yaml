@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9fc97f4f08374320937a57b2974cff58/artifacts
+end_time: 1746013371977
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9fc97f4f08374320937a57b2974cff58
+run_name: nebulous-mare-114
+run_uuid: 9fc97f4f08374320937a57b2974cff58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013371933
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2c766a00a1fc43a48902f1f8a2094050/artifacts
+end_time: 1743213374105
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2c766a00a1fc43a48902f1f8a2094050
+run_name: puzzled-smelt-522
+run_uuid: 2c766a00a1fc43a48902f1f8a2094050
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743213373758
+status: 3
+tags: []
+user_id: unknown

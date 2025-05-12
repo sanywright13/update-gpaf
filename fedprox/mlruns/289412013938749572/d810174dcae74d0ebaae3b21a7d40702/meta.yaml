@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d810174dcae74d0ebaae3b21a7d40702/artifacts
+end_time: 1746011647596
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d810174dcae74d0ebaae3b21a7d40702
+run_name: selective-whale-733
+run_uuid: d810174dcae74d0ebaae3b21a7d40702
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011647557
+status: 4
+tags: []
+user_id: unknown

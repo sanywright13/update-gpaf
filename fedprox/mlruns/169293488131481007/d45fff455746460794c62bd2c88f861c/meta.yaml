@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/d45fff455746460794c62bd2c88f861c/artifacts
+end_time: 1737468693968
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: d45fff455746460794c62bd2c88f861c
+run_name: clumsy-robin-861
+run_uuid: d45fff455746460794c62bd2c88f861c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737468693895
+status: 3
+tags: []
+user_id: unknown

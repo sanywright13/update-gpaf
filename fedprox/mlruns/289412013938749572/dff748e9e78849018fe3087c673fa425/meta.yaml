@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dff748e9e78849018fe3087c673fa425/artifacts
+end_time: 1746013432249
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dff748e9e78849018fe3087c673fa425
+run_name: bold-skink-681
+run_uuid: dff748e9e78849018fe3087c673fa425
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013432203
+status: 4
+tags: []
+user_id: unknown

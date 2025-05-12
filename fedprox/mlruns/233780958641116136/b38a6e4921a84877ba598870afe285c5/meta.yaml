@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/b38a6e4921a84877ba598870afe285c5/artifacts
+end_time: 1738866600415
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: b38a6e4921a84877ba598870afe285c5
+run_name: upset-stork-535
+run_uuid: b38a6e4921a84877ba598870afe285c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738866513684
+status: 3
+tags: []
+user_id: unknown

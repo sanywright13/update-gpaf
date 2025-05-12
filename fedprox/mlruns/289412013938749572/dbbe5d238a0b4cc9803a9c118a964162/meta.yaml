@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dbbe5d238a0b4cc9803a9c118a964162/artifacts
+end_time: 1746018167686
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dbbe5d238a0b4cc9803a9c118a964162
+run_name: bemused-wolf-598
+run_uuid: dbbe5d238a0b4cc9803a9c118a964162
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018167279
+status: 3
+tags: []
+user_id: unknown

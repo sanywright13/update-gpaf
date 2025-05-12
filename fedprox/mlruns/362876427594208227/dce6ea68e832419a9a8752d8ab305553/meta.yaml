@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/dce6ea68e832419a9a8752d8ab305553/artifacts
+end_time: 1738005303313
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: dce6ea68e832419a9a8752d8ab305553
+run_name: funny-turtle-604
+run_uuid: dce6ea68e832419a9a8752d8ab305553
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005303114
+status: 3
+tags: []
+user_id: unknown

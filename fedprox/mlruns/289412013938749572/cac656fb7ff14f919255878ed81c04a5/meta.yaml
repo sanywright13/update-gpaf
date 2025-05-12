@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cac656fb7ff14f919255878ed81c04a5/artifacts
+end_time: 1746011576971
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cac656fb7ff14f919255878ed81c04a5
+run_name: debonair-snipe-823
+run_uuid: cac656fb7ff14f919255878ed81c04a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011576932
+status: 4
+tags: []
+user_id: unknown

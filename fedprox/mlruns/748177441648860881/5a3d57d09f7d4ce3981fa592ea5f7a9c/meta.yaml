@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5a3d57d09f7d4ce3981fa592ea5f7a9c/artifacts
+end_time: 1744564715641
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5a3d57d09f7d4ce3981fa592ea5f7a9c
+run_name: monumental-wolf-789
+run_uuid: 5a3d57d09f7d4ce3981fa592ea5f7a9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744564705567
+status: 3
+tags: []
+user_id: unknown

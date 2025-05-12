@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/58892d88948d4263a08a442f20e9b3ff/artifacts
+end_time: 1737587529850
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 58892d88948d4263a08a442f20e9b3ff
+run_name: clumsy-sloth-26
+run_uuid: 58892d88948d4263a08a442f20e9b3ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737587524491
+status: 3
+tags: []
+user_id: unknown

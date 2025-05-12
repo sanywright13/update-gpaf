@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a32a54ad75ba4251b49b13e488765053/artifacts
+end_time: 1744478809726
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a32a54ad75ba4251b49b13e488765053
+run_name: sneaky-gnu-451
+run_uuid: a32a54ad75ba4251b49b13e488765053
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744477458262
+status: 3
+tags: []
+user_id: unknown

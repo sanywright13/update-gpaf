@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/4e2fb48e00924d95aec5e09dfdad3a4f/artifacts
+end_time: 1737050046747
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 4e2fb48e00924d95aec5e09dfdad3a4f
+run_name: fortunate-rook-949
+run_uuid: 4e2fb48e00924d95aec5e09dfdad3a4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737050041892
+status: 3
+tags: []
+user_id: unknown

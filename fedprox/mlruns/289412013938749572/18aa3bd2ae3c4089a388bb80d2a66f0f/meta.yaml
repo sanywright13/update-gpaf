@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/18aa3bd2ae3c4089a388bb80d2a66f0f/artifacts
+end_time: 1746011622802
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 18aa3bd2ae3c4089a388bb80d2a66f0f
+run_name: suave-worm-156
+run_uuid: 18aa3bd2ae3c4089a388bb80d2a66f0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011622764
+status: 4
+tags: []
+user_id: unknown

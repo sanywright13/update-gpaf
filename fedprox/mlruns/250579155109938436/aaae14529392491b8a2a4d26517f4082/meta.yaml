@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/aaae14529392491b8a2a4d26517f4082/artifacts
+end_time: 1738277917199
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: aaae14529392491b8a2a4d26517f4082
+run_name: clumsy-snake-822
+run_uuid: aaae14529392491b8a2a4d26517f4082
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738277910813
+status: 3
+tags: []
+user_id: unknown

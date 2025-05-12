@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/714ecda677cf408685a6f9ca44c1cf40/artifacts
+end_time: 1738862387876
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 714ecda677cf408685a6f9ca44c1cf40
+run_name: resilient-asp-407
+run_uuid: 714ecda677cf408685a6f9ca44c1cf40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862387850
+status: 4
+tags: []
+user_id: unknown

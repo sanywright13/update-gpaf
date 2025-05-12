@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/0ce85e559f484c158ce9b166e3310da1/artifacts
+end_time: 1737637599928
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 0ce85e559f484c158ce9b166e3310da1
+run_name: unequaled-gull-617
+run_uuid: 0ce85e559f484c158ce9b166e3310da1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737637321499
+status: 3
+tags: []
+user_id: unknown

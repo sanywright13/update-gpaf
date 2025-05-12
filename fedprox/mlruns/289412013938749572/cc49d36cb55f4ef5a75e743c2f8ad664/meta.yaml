@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cc49d36cb55f4ef5a75e743c2f8ad664/artifacts
+end_time: 1746023757235
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cc49d36cb55f4ef5a75e743c2f8ad664
+run_name: charming-crow-380
+run_uuid: cc49d36cb55f4ef5a75e743c2f8ad664
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023757138
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/78deb2e4bb1e4ff8a4a86e005a533af1/artifacts
+end_time: 1737049945515
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 78deb2e4bb1e4ff8a4a86e005a533af1
+run_name: salty-bear-29
+run_uuid: 78deb2e4bb1e4ff8a4a86e005a533af1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737049945005
+status: 3
+tags: []
+user_id: unknown

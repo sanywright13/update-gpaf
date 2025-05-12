@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/0204603cdbdf4b569c69d5d0618c747f/artifacts
+end_time: 1738277917009
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 0204603cdbdf4b569c69d5d0618c747f
+run_name: crawling-fawn-687
+run_uuid: 0204603cdbdf4b569c69d5d0618c747f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738277916953
+status: 3
+tags: []
+user_id: unknown

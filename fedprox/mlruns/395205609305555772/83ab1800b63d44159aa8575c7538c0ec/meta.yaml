@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/83ab1800b63d44159aa8575c7538c0ec/artifacts
+end_time: 1736889006806
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 83ab1800b63d44159aa8575c7538c0ec
+run_name: popular-auk-167
+run_uuid: 83ab1800b63d44159aa8575c7538c0ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889006765
+status: 3
+tags: []
+user_id: unknown

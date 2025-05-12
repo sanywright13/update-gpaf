@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c82eb0d2ef9d4333a92b557598d821a7/artifacts
+end_time: 1738274135036
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c82eb0d2ef9d4333a92b557598d821a7
+run_name: nimble-kite-804
+run_uuid: c82eb0d2ef9d4333a92b557598d821a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738274134827
+status: 3
+tags: []
+user_id: unknown

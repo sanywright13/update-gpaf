@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/88801393f74942efad3007f6db4aecc7/artifacts
+end_time: 1737456811367
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 88801393f74942efad3007f6db4aecc7
+run_name: bittersweet-gnu-515
+run_uuid: 88801393f74942efad3007f6db4aecc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737456776024
+status: 3
+tags: []
+user_id: unknown

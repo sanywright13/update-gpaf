@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8224c58ecfef4654938235b3b7cf1377/artifacts
+end_time: 1746023798990
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8224c58ecfef4654938235b3b7cf1377
+run_name: charming-slug-840
+run_uuid: 8224c58ecfef4654938235b3b7cf1377
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023798891
+status: 4
+tags: []
+user_id: unknown

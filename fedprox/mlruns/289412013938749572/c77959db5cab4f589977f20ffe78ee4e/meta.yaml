@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c77959db5cab4f589977f20ffe78ee4e/artifacts
+end_time: 1746013446516
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c77959db5cab4f589977f20ffe78ee4e
+run_name: blushing-sponge-804
+run_uuid: c77959db5cab4f589977f20ffe78ee4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013446470
+status: 4
+tags: []
+user_id: unknown

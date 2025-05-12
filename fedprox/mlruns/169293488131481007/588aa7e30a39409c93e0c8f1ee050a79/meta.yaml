@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/588aa7e30a39409c93e0c8f1ee050a79/artifacts
+end_time: 1737388099609
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 588aa7e30a39409c93e0c8f1ee050a79
+run_name: flawless-fish-812
+run_uuid: 588aa7e30a39409c93e0c8f1ee050a79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737387965984
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0ddf830613a74a6abd48ef8f71d3b57f/artifacts
+end_time: 1740078884991
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0ddf830613a74a6abd48ef8f71d3b57f
+run_name: zealous-wren-306
+run_uuid: 0ddf830613a74a6abd48ef8f71d3b57f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078794607
+status: 3
+tags: []
+user_id: unknown

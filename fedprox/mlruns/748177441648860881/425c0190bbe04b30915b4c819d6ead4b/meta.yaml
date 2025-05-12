@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/425c0190bbe04b30915b4c819d6ead4b/artifacts
+end_time: 1744626924318
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 425c0190bbe04b30915b4c819d6ead4b
+run_name: unique-trout-335
+run_uuid: 425c0190bbe04b30915b4c819d6ead4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744626912868
+status: 3
+tags: []
+user_id: unknown

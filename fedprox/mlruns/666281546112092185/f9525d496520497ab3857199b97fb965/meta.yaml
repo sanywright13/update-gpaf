@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/f9525d496520497ab3857199b97fb965/artifacts
+end_time: 1737469821225
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: f9525d496520497ab3857199b97fb965
+run_name: silent-wasp-651
+run_uuid: f9525d496520497ab3857199b97fb965
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469821194
+status: 4
+tags: []
+user_id: unknown

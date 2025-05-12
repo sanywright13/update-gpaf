@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/79474c136aa947989eec009c3089794e/artifacts
+end_time: 1738241038069
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 79474c136aa947989eec009c3089794e
+run_name: nosy-ape-433
+run_uuid: 79474c136aa947989eec009c3089794e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738241037983
+status: 3
+tags: []
+user_id: unknown

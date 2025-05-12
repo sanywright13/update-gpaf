@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b1d92393bcc44b5f96bb10b0e8038fdf/artifacts
+end_time: 1746023781564
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b1d92393bcc44b5f96bb10b0e8038fdf
+run_name: abundant-sponge-281
+run_uuid: b1d92393bcc44b5f96bb10b0e8038fdf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023781161
+status: 3
+tags: []
+user_id: unknown

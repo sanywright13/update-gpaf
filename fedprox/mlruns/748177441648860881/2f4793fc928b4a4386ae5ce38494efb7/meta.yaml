@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2f4793fc928b4a4386ae5ce38494efb7/artifacts
+end_time: 1740079253716
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2f4793fc928b4a4386ae5ce38494efb7
+run_name: resilient-cow-748
+run_uuid: 2f4793fc928b4a4386ae5ce38494efb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740079244184
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d07e0fd8fb634b5c8cd65b1e7d247109/artifacts
+end_time: 1743679272748
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d07e0fd8fb634b5c8cd65b1e7d247109
+run_name: chill-ox-827
+run_uuid: d07e0fd8fb634b5c8cd65b1e7d247109
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743679239948
+status: 3
+tags: []
+user_id: unknown

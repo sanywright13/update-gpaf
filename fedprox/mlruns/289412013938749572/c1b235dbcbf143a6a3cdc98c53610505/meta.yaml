@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c1b235dbcbf143a6a3cdc98c53610505/artifacts
+end_time: 1746011632754
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c1b235dbcbf143a6a3cdc98c53610505
+run_name: loud-stoat-429
+run_uuid: c1b235dbcbf143a6a3cdc98c53610505
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011632717
+status: 4
+tags: []
+user_id: unknown

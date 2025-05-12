@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/218391b039dc4e33b66ec12f84a64596/artifacts
+end_time: 1738005298218
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 218391b039dc4e33b66ec12f84a64596
+run_name: inquisitive-lynx-484
+run_uuid: 218391b039dc4e33b66ec12f84a64596
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005298033
+status: 3
+tags: []
+user_id: unknown

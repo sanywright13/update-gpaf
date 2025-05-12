@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fed393f649c64aaf8b493f21b0d8098c/artifacts
+end_time: 1746018990021
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fed393f649c64aaf8b493f21b0d8098c
+run_name: useful-carp-125
+run_uuid: fed393f649c64aaf8b493f21b0d8098c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018989937
+status: 4
+tags: []
+user_id: unknown

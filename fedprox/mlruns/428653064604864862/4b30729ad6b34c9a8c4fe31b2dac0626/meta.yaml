@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/4b30729ad6b34c9a8c4fe31b2dac0626/artifacts
+end_time: 1737563083005
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 4b30729ad6b34c9a8c4fe31b2dac0626
+run_name: burly-skunk-165
+run_uuid: 4b30729ad6b34c9a8c4fe31b2dac0626
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563082980
+status: 3
+tags: []
+user_id: unknown

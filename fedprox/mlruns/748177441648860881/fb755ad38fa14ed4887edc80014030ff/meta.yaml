@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/fb755ad38fa14ed4887edc80014030ff/artifacts
+end_time: 1744624804985
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: fb755ad38fa14ed4887edc80014030ff
+run_name: defiant-fox-209
+run_uuid: fb755ad38fa14ed4887edc80014030ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744624736200
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/431e7cf6a5854313a2aeb3a59b22ad27/artifacts
+end_time: 1746019357113
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 431e7cf6a5854313a2aeb3a59b22ad27
+run_name: abundant-moth-432
+run_uuid: 431e7cf6a5854313a2aeb3a59b22ad27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019356638
+status: 3
+tags: []
+user_id: unknown

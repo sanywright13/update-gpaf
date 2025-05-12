@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6848b75bfb6e41ef8e927df33d95f085/artifacts
+end_time: 1746011602961
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6848b75bfb6e41ef8e927df33d95f085
+run_name: wistful-slug-504
+run_uuid: 6848b75bfb6e41ef8e927df33d95f085
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011602920
+status: 4
+tags: []
+user_id: unknown

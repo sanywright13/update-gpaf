@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/21a8e0e1c027483aaf635d76e342ec4e/artifacts
+end_time: 1746023750161
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 21a8e0e1c027483aaf635d76e342ec4e
+run_name: righteous-owl-825
+run_uuid: 21a8e0e1c027483aaf635d76e342ec4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023749748
+status: 3
+tags: []
+user_id: unknown

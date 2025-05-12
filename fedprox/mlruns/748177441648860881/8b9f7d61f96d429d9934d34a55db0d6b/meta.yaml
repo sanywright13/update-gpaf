@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/8b9f7d61f96d429d9934d34a55db0d6b/artifacts
+end_time: 1744483966507
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 8b9f7d61f96d429d9934d34a55db0d6b
+run_name: youthful-frog-731
+run_uuid: 8b9f7d61f96d429d9934d34a55db0d6b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483965933
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6587dd77737e44d0aa8d8c31644c9bfa/artifacts
+end_time: 1742397386514
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6587dd77737e44d0aa8d8c31644c9bfa
+run_name: classy-robin-387
+run_uuid: 6587dd77737e44d0aa8d8c31644c9bfa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742397262476
+status: 3
+tags: []
+user_id: unknown

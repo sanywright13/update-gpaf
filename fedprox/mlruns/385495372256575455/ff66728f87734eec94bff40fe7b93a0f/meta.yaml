@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/ff66728f87734eec94bff40fe7b93a0f/artifacts
+end_time: 1737481135855
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: ff66728f87734eec94bff40fe7b93a0f
+run_name: blushing-dolphin-983
+run_uuid: ff66728f87734eec94bff40fe7b93a0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737480552847
+status: 3
+tags: []
+user_id: unknown

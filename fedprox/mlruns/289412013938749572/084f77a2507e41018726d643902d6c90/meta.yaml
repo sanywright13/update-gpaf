@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/084f77a2507e41018726d643902d6c90/artifacts
+end_time: 1746023720801
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 084f77a2507e41018726d643902d6c90
+run_name: blushing-mare-943
+run_uuid: 084f77a2507e41018726d643902d6c90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023720395
+status: 3
+tags: []
+user_id: unknown

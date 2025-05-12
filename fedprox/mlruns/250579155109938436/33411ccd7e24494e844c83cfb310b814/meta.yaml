@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/33411ccd7e24494e844c83cfb310b814/artifacts
+end_time: 1738240688932
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 33411ccd7e24494e844c83cfb310b814
+run_name: bright-fish-384
+run_uuid: 33411ccd7e24494e844c83cfb310b814
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240688869
+status: 4
+tags: []
+user_id: unknown

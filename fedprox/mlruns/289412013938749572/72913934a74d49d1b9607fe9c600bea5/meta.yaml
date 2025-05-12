@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/72913934a74d49d1b9607fe9c600bea5/artifacts
+end_time: 1746018849324
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 72913934a74d49d1b9607fe9c600bea5
+run_name: marvelous-dove-764
+run_uuid: 72913934a74d49d1b9607fe9c600bea5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018848904
+status: 3
+tags: []
+user_id: unknown

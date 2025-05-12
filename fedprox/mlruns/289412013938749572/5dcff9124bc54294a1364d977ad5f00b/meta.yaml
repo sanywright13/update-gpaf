@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5dcff9124bc54294a1364d977ad5f00b/artifacts
+end_time: 1746013447034
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5dcff9124bc54294a1364d977ad5f00b
+run_name: tasteful-panda-583
+run_uuid: 5dcff9124bc54294a1364d977ad5f00b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013446981
+status: 4
+tags: []
+user_id: unknown

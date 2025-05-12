@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a3b0476805944830a1c574373fa1f995/artifacts
+end_time: 1746011638338
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a3b0476805944830a1c574373fa1f995
+run_name: clumsy-lark-467
+run_uuid: a3b0476805944830a1c574373fa1f995
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011638295
+status: 4
+tags: []
+user_id: unknown

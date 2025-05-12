@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/faa567c419554321870c5be29ea16113/artifacts
+end_time: 1736888375291
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: faa567c419554321870c5be29ea16113
+run_name: unruly-kit-315
+run_uuid: faa567c419554321870c5be29ea16113
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888375236
+status: 3
+tags: []
+user_id: unknown

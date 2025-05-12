@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/362502e161eb451889cbb61e7c469e11/artifacts
+end_time: 1743375716535
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 362502e161eb451889cbb61e7c469e11
+run_name: fearless-sheep-887
+run_uuid: 362502e161eb451889cbb61e7c469e11
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743375716207
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/797cd4010d5d482c91d5650a37e8f66b/artifacts
+end_time: 1746023793843
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 797cd4010d5d482c91d5650a37e8f66b
+run_name: dapper-worm-85
+run_uuid: 797cd4010d5d482c91d5650a37e8f66b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023793743
+status: 4
+tags: []
+user_id: unknown

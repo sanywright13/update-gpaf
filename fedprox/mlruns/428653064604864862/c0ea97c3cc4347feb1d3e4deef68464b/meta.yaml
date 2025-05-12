@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c0ea97c3cc4347feb1d3e4deef68464b/artifacts
+end_time: 1737550125978
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c0ea97c3cc4347feb1d3e4deef68464b
+run_name: adaptable-worm-92
+run_uuid: c0ea97c3cc4347feb1d3e4deef68464b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737550125956
+status: 3
+tags: []
+user_id: unknown

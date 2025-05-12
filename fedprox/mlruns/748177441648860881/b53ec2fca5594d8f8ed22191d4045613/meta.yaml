@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/b53ec2fca5594d8f8ed22191d4045613/artifacts
+end_time: 1742256853435
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: b53ec2fca5594d8f8ed22191d4045613
+run_name: gaudy-newt-485
+run_uuid: b53ec2fca5594d8f8ed22191d4045613
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256853275
+status: 3
+tags: []
+user_id: unknown

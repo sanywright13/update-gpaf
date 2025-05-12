@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/fb56073d0ae54eefb3919b916477a571/artifacts
+end_time: 1737576422619
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: fb56073d0ae54eefb3919b916477a571
+run_name: victorious-midge-117
+run_uuid: fb56073d0ae54eefb3919b916477a571
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737576422594
+status: 3
+tags: []
+user_id: unknown

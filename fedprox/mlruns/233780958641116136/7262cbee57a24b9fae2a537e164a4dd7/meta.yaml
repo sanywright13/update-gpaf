@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/7262cbee57a24b9fae2a537e164a4dd7/artifacts
+end_time: 1738862378060
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 7262cbee57a24b9fae2a537e164a4dd7
+run_name: gifted-elk-401
+run_uuid: 7262cbee57a24b9fae2a537e164a4dd7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862378021
+status: 4
+tags: []
+user_id: unknown

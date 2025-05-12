@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/344bad53f30d446385827103396c697a/artifacts
+end_time: 1738862382607
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 344bad53f30d446385827103396c697a
+run_name: intelligent-zebra-10
+run_uuid: 344bad53f30d446385827103396c697a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862382546
+status: 4
+tags: []
+user_id: unknown

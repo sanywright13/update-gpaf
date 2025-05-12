@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2a32c1c841c44631a605c67acecf5654/artifacts
+end_time: 1746013358827
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2a32c1c841c44631a605c67acecf5654
+run_name: abundant-whale-103
+run_uuid: 2a32c1c841c44631a605c67acecf5654
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013358781
+status: 4
+tags: []
+user_id: unknown

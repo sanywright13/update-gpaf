@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/ff55c9f2e2f442fdb6c28e162f00e3fd/artifacts
+end_time: 1737626026078
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: ff55c9f2e2f442fdb6c28e162f00e3fd
+run_name: placid-ox-373
+run_uuid: ff55c9f2e2f442fdb6c28e162f00e3fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737626026046
+status: 3
+tags: []
+user_id: unknown

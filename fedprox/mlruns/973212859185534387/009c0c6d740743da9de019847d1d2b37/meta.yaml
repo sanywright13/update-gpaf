@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/973212859185534387/009c0c6d740743da9de019847d1d2b37/artifacts
+end_time: 1737471458361
+entry_point_name: ''
+experiment_id: '973212859185534387'
+lifecycle_stage: active
+run_id: 009c0c6d740743da9de019847d1d2b37
+run_name: rebellious-shad-691
+run_uuid: 009c0c6d740743da9de019847d1d2b37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737471458327
+status: 3
+tags: []
+user_id: unknown

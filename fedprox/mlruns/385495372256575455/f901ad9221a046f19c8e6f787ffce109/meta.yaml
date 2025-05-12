@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/f901ad9221a046f19c8e6f787ffce109/artifacts
+end_time: 1737478725800
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: f901ad9221a046f19c8e6f787ffce109
+run_name: languid-loon-153
+run_uuid: f901ad9221a046f19c8e6f787ffce109
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737478725777
+status: 3
+tags: []
+user_id: unknown

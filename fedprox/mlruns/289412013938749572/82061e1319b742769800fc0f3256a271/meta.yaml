@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/82061e1319b742769800fc0f3256a271/artifacts
+end_time: 1746013417343
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 82061e1319b742769800fc0f3256a271
+run_name: peaceful-cub-872
+run_uuid: 82061e1319b742769800fc0f3256a271
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013417294
+status: 4
+tags: []
+user_id: unknown

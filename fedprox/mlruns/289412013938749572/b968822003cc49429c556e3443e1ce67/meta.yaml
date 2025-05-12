@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b968822003cc49429c556e3443e1ce67/artifacts
+end_time: 1746019242394
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b968822003cc49429c556e3443e1ce67
+run_name: rebellious-squid-47
+run_uuid: b968822003cc49429c556e3443e1ce67
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019241947
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/26400cd68b9c46898ba285f1b89ddf7f/artifacts
+end_time: 1746011574542
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 26400cd68b9c46898ba285f1b89ddf7f
+run_name: selective-snipe-323
+run_uuid: 26400cd68b9c46898ba285f1b89ddf7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011574502
+status: 4
+tags: []
+user_id: unknown

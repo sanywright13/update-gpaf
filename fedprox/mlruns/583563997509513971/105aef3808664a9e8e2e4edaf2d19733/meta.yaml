@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/583563997509513971/105aef3808664a9e8e2e4edaf2d19733/artifacts
+end_time: 1744727789857
+entry_point_name: ''
+experiment_id: '583563997509513971'
+lifecycle_stage: active
+run_id: 105aef3808664a9e8e2e4edaf2d19733
+run_name: caring-auk-672
+run_uuid: 105aef3808664a9e8e2e4edaf2d19733
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744727789543
+status: 3
+tags: []
+user_id: unknown

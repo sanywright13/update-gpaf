@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/7bcf2b159bb3437f811581ab971e2e7a/artifacts
+end_time: 1744562228537
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 7bcf2b159bb3437f811581ab971e2e7a
+run_name: sneaky-sow-882
+run_uuid: 7bcf2b159bb3437f811581ab971e2e7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744560460890
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/8a9d5e933eb74ab4a142b42f736cdae4/artifacts
+end_time: 1737563720433
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 8a9d5e933eb74ab4a142b42f736cdae4
+run_name: smiling-stoat-625
+run_uuid: 8a9d5e933eb74ab4a142b42f736cdae4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563720380
+status: 3
+tags: []
+user_id: unknown

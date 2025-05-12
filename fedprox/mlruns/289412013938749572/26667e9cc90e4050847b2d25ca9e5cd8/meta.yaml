@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/26667e9cc90e4050847b2d25ca9e5cd8/artifacts
+end_time: 1746011605763
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 26667e9cc90e4050847b2d25ca9e5cd8
+run_name: monumental-crane-262
+run_uuid: 26667e9cc90e4050847b2d25ca9e5cd8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011605727
+status: 4
+tags: []
+user_id: unknown

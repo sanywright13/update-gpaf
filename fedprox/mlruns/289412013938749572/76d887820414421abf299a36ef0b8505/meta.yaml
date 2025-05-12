@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/76d887820414421abf299a36ef0b8505/artifacts
+end_time: 1746013443167
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 76d887820414421abf299a36ef0b8505
+run_name: rare-shrew-496
+run_uuid: 76d887820414421abf299a36ef0b8505
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013443118
+status: 4
+tags: []
+user_id: unknown

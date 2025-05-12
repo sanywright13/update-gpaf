@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bfc147a2d8e144b7b52ba943b312014c/artifacts
+end_time: 1746023754331
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bfc147a2d8e144b7b52ba943b312014c
+run_name: luminous-slug-221
+run_uuid: bfc147a2d8e144b7b52ba943b312014c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023753908
+status: 3
+tags: []
+user_id: unknown

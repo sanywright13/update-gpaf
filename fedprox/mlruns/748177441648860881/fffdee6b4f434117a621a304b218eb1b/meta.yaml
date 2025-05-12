@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/fffdee6b4f434117a621a304b218eb1b/artifacts
+end_time: 1742342212147
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: fffdee6b4f434117a621a304b218eb1b
+run_name: crawling-deer-198
+run_uuid: fffdee6b4f434117a621a304b218eb1b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742342195188
+status: 3
+tags: []
+user_id: unknown

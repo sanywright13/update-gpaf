@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/157bdc4ae81e4ed4a579df4a1f301dc3/artifacts
+end_time: 1746013359926
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 157bdc4ae81e4ed4a579df4a1f301dc3
+run_name: melodic-mole-196
+run_uuid: 157bdc4ae81e4ed4a579df4a1f301dc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013359885
+status: 4
+tags: []
+user_id: unknown

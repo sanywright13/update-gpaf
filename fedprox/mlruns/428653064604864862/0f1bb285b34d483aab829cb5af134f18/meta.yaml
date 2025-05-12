@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/0f1bb285b34d483aab829cb5af134f18/artifacts
+end_time: 1737563973944
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 0f1bb285b34d483aab829cb5af134f18
+run_name: victorious-horse-769
+run_uuid: 0f1bb285b34d483aab829cb5af134f18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563973919
+status: 3
+tags: []
+user_id: unknown

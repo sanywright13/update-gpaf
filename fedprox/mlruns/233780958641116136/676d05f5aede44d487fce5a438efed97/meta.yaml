@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/676d05f5aede44d487fce5a438efed97/artifacts
+end_time: 1738862950239
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 676d05f5aede44d487fce5a438efed97
+run_name: efficient-lamb-761
+run_uuid: 676d05f5aede44d487fce5a438efed97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862950205
+status: 4
+tags: []
+user_id: unknown

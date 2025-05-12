@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bfa00bd8911b4250b24be1088fc2852c/artifacts
+end_time: 1746013451640
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bfa00bd8911b4250b24be1088fc2852c
+run_name: delightful-whale-153
+run_uuid: bfa00bd8911b4250b24be1088fc2852c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013451595
+status: 4
+tags: []
+user_id: unknown

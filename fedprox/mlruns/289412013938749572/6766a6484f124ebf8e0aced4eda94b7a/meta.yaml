@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6766a6484f124ebf8e0aced4eda94b7a/artifacts
+end_time: 1746011573258
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6766a6484f124ebf8e0aced4eda94b7a
+run_name: kindly-ram-919
+run_uuid: 6766a6484f124ebf8e0aced4eda94b7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011573217
+status: 4
+tags: []
+user_id: unknown

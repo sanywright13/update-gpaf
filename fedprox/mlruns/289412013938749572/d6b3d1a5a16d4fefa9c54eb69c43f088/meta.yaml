@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d6b3d1a5a16d4fefa9c54eb69c43f088/artifacts
+end_time: 1746018194206
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d6b3d1a5a16d4fefa9c54eb69c43f088
+run_name: powerful-swan-614
+run_uuid: d6b3d1a5a16d4fefa9c54eb69c43f088
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018194127
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5e9715bdc42a4e7b8363dd07b9172eda/artifacts
+end_time: 1746013393467
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5e9715bdc42a4e7b8363dd07b9172eda
+run_name: sassy-dove-791
+run_uuid: 5e9715bdc42a4e7b8363dd07b9172eda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013393421
+status: 4
+tags: []
+user_id: unknown

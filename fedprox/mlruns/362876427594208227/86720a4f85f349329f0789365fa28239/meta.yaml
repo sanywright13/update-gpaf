@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/86720a4f85f349329f0789365fa28239/artifacts
+end_time: 1738005996047
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 86720a4f85f349329f0789365fa28239
+run_name: redolent-goose-408
+run_uuid: 86720a4f85f349329f0789365fa28239
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005995900
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/94ddebfd64624db6b051d6d77736e902/artifacts
+end_time: 1746017543674
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 94ddebfd64624db6b051d6d77736e902
+run_name: omniscient-foal-94
+run_uuid: 94ddebfd64624db6b051d6d77736e902
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017543593
+status: 4
+tags: []
+user_id: unknown

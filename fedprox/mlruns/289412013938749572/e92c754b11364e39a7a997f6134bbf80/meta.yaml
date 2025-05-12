@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e92c754b11364e39a7a997f6134bbf80/artifacts
+end_time: 1746018250812
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e92c754b11364e39a7a997f6134bbf80
+run_name: thoughtful-worm-852
+run_uuid: e92c754b11364e39a7a997f6134bbf80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018250426
+status: 3
+tags: []
+user_id: unknown

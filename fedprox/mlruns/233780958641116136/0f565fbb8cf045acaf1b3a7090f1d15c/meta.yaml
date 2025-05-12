@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/0f565fbb8cf045acaf1b3a7090f1d15c/artifacts
+end_time: 1738862951341
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 0f565fbb8cf045acaf1b3a7090f1d15c
+run_name: defiant-zebra-278
+run_uuid: 0f565fbb8cf045acaf1b3a7090f1d15c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862951316
+status: 4
+tags: []
+user_id: unknown

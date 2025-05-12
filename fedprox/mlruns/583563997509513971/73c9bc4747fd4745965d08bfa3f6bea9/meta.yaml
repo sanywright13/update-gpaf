@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/583563997509513971/73c9bc4747fd4745965d08bfa3f6bea9/artifacts
+end_time: 1744732054484
+entry_point_name: ''
+experiment_id: '583563997509513971'
+lifecycle_stage: active
+run_id: 73c9bc4747fd4745965d08bfa3f6bea9
+run_name: painted-duck-404
+run_uuid: 73c9bc4747fd4745965d08bfa3f6bea9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744727930343
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/0747619498d849b2b27b055f0de09a66/artifacts
+end_time: 1736888384935
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 0747619498d849b2b27b055f0de09a66
+run_name: fortunate-smelt-473
+run_uuid: 0747619498d849b2b27b055f0de09a66
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888384895
+status: 3
+tags: []
+user_id: unknown

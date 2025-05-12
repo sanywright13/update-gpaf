@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3a6eb1ee29da429ab85b7ce4f7531617/artifacts
+end_time: 1746013375424
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3a6eb1ee29da429ab85b7ce4f7531617
+run_name: lyrical-vole-701
+run_uuid: 3a6eb1ee29da429ab85b7ce4f7531617
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013375383
+status: 4
+tags: []
+user_id: unknown

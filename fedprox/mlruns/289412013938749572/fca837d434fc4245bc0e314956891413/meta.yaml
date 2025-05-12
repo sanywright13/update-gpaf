@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fca837d434fc4245bc0e314956891413/artifacts
+end_time: 1746011620938
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fca837d434fc4245bc0e314956891413
+run_name: agreeable-cub-658
+run_uuid: fca837d434fc4245bc0e314956891413
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011620900
+status: 4
+tags: []
+user_id: unknown

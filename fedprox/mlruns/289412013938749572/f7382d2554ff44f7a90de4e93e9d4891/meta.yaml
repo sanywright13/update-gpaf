@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f7382d2554ff44f7a90de4e93e9d4891/artifacts
+end_time: 1746018479549
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f7382d2554ff44f7a90de4e93e9d4891
+run_name: whimsical-eel-153
+run_uuid: f7382d2554ff44f7a90de4e93e9d4891
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018479461
+status: 4
+tags: []
+user_id: unknown

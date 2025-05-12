@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/6332c770b86a4b1989825d2f9e19cd80/artifacts
+end_time: 1737117423169
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 6332c770b86a4b1989825d2f9e19cd80
+run_name: stylish-worm-453
+run_uuid: 6332c770b86a4b1989825d2f9e19cd80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117423145
+status: 3
+tags: []
+user_id: unknown

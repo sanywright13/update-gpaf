@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1941e12570754ea88b303dc3d7878265/artifacts
+end_time: 1746019130688
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1941e12570754ea88b303dc3d7878265
+run_name: tasteful-grouse-86
+run_uuid: 1941e12570754ea88b303dc3d7878265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019130271
+status: 3
+tags: []
+user_id: unknown

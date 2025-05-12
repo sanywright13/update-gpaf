@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/cfbf28da271a491e9222826f739404ca/artifacts
+end_time: 1738008183251
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: cfbf28da271a491e9222826f739404ca
+run_name: debonair-dove-335
+run_uuid: cfbf28da271a491e9222826f739404ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738008183023
+status: 3
+tags: []
+user_id: unknown

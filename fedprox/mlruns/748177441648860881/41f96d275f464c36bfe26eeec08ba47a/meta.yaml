@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/41f96d275f464c36bfe26eeec08ba47a/artifacts
+end_time: 1744554281139
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 41f96d275f464c36bfe26eeec08ba47a
+run_name: funny-squid-139
+run_uuid: 41f96d275f464c36bfe26eeec08ba47a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744552530528
+status: 3
+tags: []
+user_id: unknown

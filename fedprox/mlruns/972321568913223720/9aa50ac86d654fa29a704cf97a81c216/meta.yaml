@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/9aa50ac86d654fa29a704cf97a81c216/artifacts
+end_time: 1737115207439
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 9aa50ac86d654fa29a704cf97a81c216
+run_name: wistful-ant-814
+run_uuid: 9aa50ac86d654fa29a704cf97a81c216
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737115207416
+status: 3
+tags: []
+user_id: unknown

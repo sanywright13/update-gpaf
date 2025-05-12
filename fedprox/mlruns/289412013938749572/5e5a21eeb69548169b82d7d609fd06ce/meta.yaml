@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5e5a21eeb69548169b82d7d609fd06ce/artifacts
+end_time: 1746011635113
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5e5a21eeb69548169b82d7d609fd06ce
+run_name: delightful-rat-644
+run_uuid: 5e5a21eeb69548169b82d7d609fd06ce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011635070
+status: 4
+tags: []
+user_id: unknown

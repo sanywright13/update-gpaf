@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f40705b8c6b946c8b2407c0c754d5300/artifacts
+end_time: 1746013443460
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f40705b8c6b946c8b2407c0c754d5300
+run_name: redolent-fawn-870
+run_uuid: f40705b8c6b946c8b2407c0c754d5300
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013443414
+status: 4
+tags: []
+user_id: unknown

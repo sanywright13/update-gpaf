@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/150696440801508308/ff0f8c23ca35438399799ac5b51dec52/artifacts
+end_time: 1745332492820
+entry_point_name: ''
+experiment_id: '150696440801508308'
+lifecycle_stage: active
+run_id: ff0f8c23ca35438399799ac5b51dec52
+run_name: abundant-fish-92
+run_uuid: ff0f8c23ca35438399799ac5b51dec52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745323884523
+status: 3
+tags: []
+user_id: unknown

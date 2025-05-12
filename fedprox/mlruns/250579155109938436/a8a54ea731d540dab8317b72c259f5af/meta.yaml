@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/a8a54ea731d540dab8317b72c259f5af/artifacts
+end_time: 1738240687954
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: a8a54ea731d540dab8317b72c259f5af
+run_name: vaunted-fowl-930
+run_uuid: a8a54ea731d540dab8317b72c259f5af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240687893
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/407aa8f67dc042878c411fa5b112344b/artifacts
+end_time: 1737587164208
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 407aa8f67dc042878c411fa5b112344b
+run_name: calm-mole-196
+run_uuid: 407aa8f67dc042878c411fa5b112344b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737587164185
+status: 3
+tags: []
+user_id: unknown

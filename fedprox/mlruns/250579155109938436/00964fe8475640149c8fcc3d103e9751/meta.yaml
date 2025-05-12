@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/00964fe8475640149c8fcc3d103e9751/artifacts
+end_time: 1738279577219
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 00964fe8475640149c8fcc3d103e9751
+run_name: salty-bee-740
+run_uuid: 00964fe8475640149c8fcc3d103e9751
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738279566131
+status: 3
+tags: []
+user_id: unknown

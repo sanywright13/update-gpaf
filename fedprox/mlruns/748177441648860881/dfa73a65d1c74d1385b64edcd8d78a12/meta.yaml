@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/dfa73a65d1c74d1385b64edcd8d78a12/artifacts
+end_time: 1739977207732
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: dfa73a65d1c74d1385b64edcd8d78a12
+run_name: unleashed-crab-407
+run_uuid: dfa73a65d1c74d1385b64edcd8d78a12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739977096774
+status: 3
+tags: []
+user_id: unknown

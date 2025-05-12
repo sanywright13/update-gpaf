@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/acf81752dc474617b8ac6c1499f522d3/artifacts
+end_time: 1746011580770
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: acf81752dc474617b8ac6c1499f522d3
+run_name: capricious-ram-499
+run_uuid: acf81752dc474617b8ac6c1499f522d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011580730
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/fb977122c11f490c99601c6013faf98f/artifacts
+end_time: 1738862946305
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: fb977122c11f490c99601c6013faf98f
+run_name: mercurial-mare-504
+run_uuid: fb977122c11f490c99601c6013faf98f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862946247
+status: 4
+tags: []
+user_id: unknown

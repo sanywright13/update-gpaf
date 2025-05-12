@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/3e85f4dd7d794c8aa1d17a87a7d331fc/artifacts
+end_time: 1744673071514
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 3e85f4dd7d794c8aa1d17a87a7d331fc
+run_name: spiffy-lamb-361
+run_uuid: 3e85f4dd7d794c8aa1d17a87a7d331fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744671615009
+status: 3
+tags: []
+user_id: unknown

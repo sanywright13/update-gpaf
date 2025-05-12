@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/38d0b245c46044c7a5edb6d8f3e95bb6/artifacts
+end_time: 1746011658309
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 38d0b245c46044c7a5edb6d8f3e95bb6
+run_name: enchanting-shad-799
+run_uuid: 38d0b245c46044c7a5edb6d8f3e95bb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011658265
+status: 4
+tags: []
+user_id: unknown

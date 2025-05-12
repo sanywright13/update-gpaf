@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d5762792dfb549ae83c2a34ae6ff090e/artifacts
+end_time: 1746017740750
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d5762792dfb549ae83c2a34ae6ff090e
+run_name: intrigued-ape-956
+run_uuid: d5762792dfb549ae83c2a34ae6ff090e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017740351
+status: 3
+tags: []
+user_id: unknown

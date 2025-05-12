@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/e68f43ca809c4ef5817e35a6a085b0e8/artifacts
+end_time: 1738862380124
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: e68f43ca809c4ef5817e35a6a085b0e8
+run_name: agreeable-snail-129
+run_uuid: e68f43ca809c4ef5817e35a6a085b0e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862380085
+status: 4
+tags: []
+user_id: unknown

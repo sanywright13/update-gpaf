@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/cc7df34fd7dc4b79b8fead81bdc63397/artifacts
+end_time: 1736888379232
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: cc7df34fd7dc4b79b8fead81bdc63397
+run_name: shivering-ape-373
+run_uuid: cc7df34fd7dc4b79b8fead81bdc63397
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888379208
+status: 3
+tags: []
+user_id: unknown

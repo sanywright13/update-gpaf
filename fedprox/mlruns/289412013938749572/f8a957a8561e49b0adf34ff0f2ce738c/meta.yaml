@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f8a957a8561e49b0adf34ff0f2ce738c/artifacts
+end_time: 1746011639840
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f8a957a8561e49b0adf34ff0f2ce738c
+run_name: industrious-koi-226
+run_uuid: f8a957a8561e49b0adf34ff0f2ce738c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011639796
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c3abf629d3e644c5b1b540a215a54618/artifacts
+end_time: 1746011597596
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c3abf629d3e644c5b1b540a215a54618
+run_name: skittish-snail-556
+run_uuid: c3abf629d3e644c5b1b540a215a54618
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011597555
+status: 4
+tags: []
+user_id: unknown

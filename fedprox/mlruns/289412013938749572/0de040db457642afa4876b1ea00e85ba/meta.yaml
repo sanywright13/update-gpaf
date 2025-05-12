@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0de040db457642afa4876b1ea00e85ba/artifacts
+end_time: 1746023798180
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0de040db457642afa4876b1ea00e85ba
+run_name: invincible-chimp-730
+run_uuid: 0de040db457642afa4876b1ea00e85ba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023798089
+status: 4
+tags: []
+user_id: unknown

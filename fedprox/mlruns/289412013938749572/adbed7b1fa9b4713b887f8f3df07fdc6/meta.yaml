@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/adbed7b1fa9b4713b887f8f3df07fdc6/artifacts
+end_time: 1746013390512
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: adbed7b1fa9b4713b887f8f3df07fdc6
+run_name: nosy-kit-925
+run_uuid: adbed7b1fa9b4713b887f8f3df07fdc6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013390460
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c376695a45de4b3f8c4131e4d76ce3d6/artifacts
+end_time: 1746013383001
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c376695a45de4b3f8c4131e4d76ce3d6
+run_name: charming-carp-82
+run_uuid: c376695a45de4b3f8c4131e4d76ce3d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013382951
+status: 4
+tags: []
+user_id: unknown

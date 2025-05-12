@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c35a0df61055443eb97a6666b92ee4de/artifacts
+end_time: 1737582914996
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c35a0df61055443eb97a6666b92ee4de
+run_name: skittish-grouse-448
+run_uuid: c35a0df61055443eb97a6666b92ee4de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737582914971
+status: 3
+tags: []
+user_id: unknown

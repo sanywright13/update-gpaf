@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0673df6ab0a340adbfabf2ae34f57e07/artifacts
+end_time: 1746023796817
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0673df6ab0a340adbfabf2ae34f57e07
+run_name: traveling-crab-523
+run_uuid: 0673df6ab0a340adbfabf2ae34f57e07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023796398
+status: 3
+tags: []
+user_id: unknown

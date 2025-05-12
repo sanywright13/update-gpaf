@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5213be41cd44405cbee0fabe99dd71cc/artifacts
+end_time: 1746018649473
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5213be41cd44405cbee0fabe99dd71cc
+run_name: luxuriant-cow-528
+run_uuid: 5213be41cd44405cbee0fabe99dd71cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018649049
+status: 3
+tags: []
+user_id: unknown

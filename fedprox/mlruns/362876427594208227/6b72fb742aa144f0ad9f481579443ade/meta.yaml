@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/6b72fb742aa144f0ad9f481579443ade/artifacts
+end_time: 1738005316335
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 6b72fb742aa144f0ad9f481579443ade
+run_name: peaceful-rook-73
+run_uuid: 6b72fb742aa144f0ad9f481579443ade
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005316155
+status: 3
+tags: []
+user_id: unknown

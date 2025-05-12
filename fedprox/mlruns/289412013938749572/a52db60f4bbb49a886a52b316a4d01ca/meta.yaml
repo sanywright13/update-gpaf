@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a52db60f4bbb49a886a52b316a4d01ca/artifacts
+end_time: 1746013416764
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a52db60f4bbb49a886a52b316a4d01ca
+run_name: wistful-zebra-866
+run_uuid: a52db60f4bbb49a886a52b316a4d01ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013416720
+status: 4
+tags: []
+user_id: unknown

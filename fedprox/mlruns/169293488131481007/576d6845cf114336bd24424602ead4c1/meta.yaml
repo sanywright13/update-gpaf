@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/576d6845cf114336bd24424602ead4c1/artifacts
+end_time: 1737388753915
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 576d6845cf114336bd24424602ead4c1
+run_name: vaunted-panda-942
+run_uuid: 576d6845cf114336bd24424602ead4c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737388733302
+status: 3
+tags: []
+user_id: unknown

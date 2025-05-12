@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/390c7590744d44b6b01fdae3b3ac5a75/artifacts
+end_time: 1746011614166
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 390c7590744d44b6b01fdae3b3ac5a75
+run_name: capable-rat-446
+run_uuid: 390c7590744d44b6b01fdae3b3ac5a75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011614123
+status: 4
+tags: []
+user_id: unknown

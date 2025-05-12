@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/886eafff064c4242b28d19bf0fd62fce/artifacts
+end_time: 1737566810099
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 886eafff064c4242b28d19bf0fd62fce
+run_name: intelligent-bee-808
+run_uuid: 886eafff064c4242b28d19bf0fd62fce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566810059
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2e56ff406a744fcda4f03cdb3af7439b/artifacts
+end_time: 1744487012881
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2e56ff406a744fcda4f03cdb3af7439b
+run_name: debonair-bat-766
+run_uuid: 2e56ff406a744fcda4f03cdb3af7439b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744487011193
+status: 3
+tags: []
+user_id: unknown

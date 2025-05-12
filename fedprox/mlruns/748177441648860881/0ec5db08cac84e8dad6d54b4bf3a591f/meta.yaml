@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0ec5db08cac84e8dad6d54b4bf3a591f/artifacts
+end_time: 1744483945612
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0ec5db08cac84e8dad6d54b4bf3a591f
+run_name: redolent-crane-62
+run_uuid: 0ec5db08cac84e8dad6d54b4bf3a591f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483944805
+status: 3
+tags: []
+user_id: unknown

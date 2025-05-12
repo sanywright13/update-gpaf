@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2fb8136481874c2d854cee40ef10a30a/artifacts
+end_time: 1746013424690
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2fb8136481874c2d854cee40ef10a30a
+run_name: bright-bear-929
+run_uuid: 2fb8136481874c2d854cee40ef10a30a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013424641
+status: 4
+tags: []
+user_id: unknown

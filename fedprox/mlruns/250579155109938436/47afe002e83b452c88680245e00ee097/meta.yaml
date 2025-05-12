@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/47afe002e83b452c88680245e00ee097/artifacts
+end_time: 1738158886945
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 47afe002e83b452c88680245e00ee097
+run_name: delicate-robin-849
+run_uuid: 47afe002e83b452c88680245e00ee097
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158886617
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/897b2c613e1a43f28f73950db612a930/artifacts
+end_time: 1746018988699
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 897b2c613e1a43f28f73950db612a930
+run_name: chill-hare-816
+run_uuid: 897b2c613e1a43f28f73950db612a930
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018988619
+status: 4
+tags: []
+user_id: unknown

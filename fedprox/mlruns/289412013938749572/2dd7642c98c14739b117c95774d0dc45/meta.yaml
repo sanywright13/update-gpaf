@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2dd7642c98c14739b117c95774d0dc45/artifacts
+end_time: 1746011603904
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2dd7642c98c14739b117c95774d0dc45
+run_name: popular-robin-258
+run_uuid: 2dd7642c98c14739b117c95774d0dc45
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011603867
+status: 4
+tags: []
+user_id: unknown

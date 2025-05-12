@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8d93e3cc85f94c9dbd586d7f880b1112/artifacts
+end_time: 1746011642346
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8d93e3cc85f94c9dbd586d7f880b1112
+run_name: adaptable-stag-828
+run_uuid: 8d93e3cc85f94c9dbd586d7f880b1112
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011642303
+status: 4
+tags: []
+user_id: unknown

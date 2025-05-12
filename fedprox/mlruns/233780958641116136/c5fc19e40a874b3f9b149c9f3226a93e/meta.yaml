@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/c5fc19e40a874b3f9b149c9f3226a93e/artifacts
+end_time: 1738862386605
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: c5fc19e40a874b3f9b149c9f3226a93e
+run_name: rare-bat-12
+run_uuid: c5fc19e40a874b3f9b149c9f3226a93e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862386581
+status: 4
+tags: []
+user_id: unknown

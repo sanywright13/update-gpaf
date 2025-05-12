@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/af7d5ebeee7346edb58edaa58188dc04/artifacts
+end_time: 1746011620564
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: af7d5ebeee7346edb58edaa58188dc04
+run_name: beautiful-dog-681
+run_uuid: af7d5ebeee7346edb58edaa58188dc04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011620523
+status: 4
+tags: []
+user_id: unknown

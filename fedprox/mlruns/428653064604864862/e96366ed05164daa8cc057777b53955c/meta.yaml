@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/e96366ed05164daa8cc057777b53955c/artifacts
+end_time: 1737562662965
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: e96366ed05164daa8cc057777b53955c
+run_name: dapper-turtle-963
+run_uuid: e96366ed05164daa8cc057777b53955c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737562662936
+status: 3
+tags: []
+user_id: unknown

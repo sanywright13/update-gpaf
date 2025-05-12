@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d88bebb0faac49ae8e5d59c1a780fb99/artifacts
+end_time: 1743210680776
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d88bebb0faac49ae8e5d59c1a780fb99
+run_name: burly-penguin-141
+run_uuid: d88bebb0faac49ae8e5d59c1a780fb99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743210666243
+status: 3
+tags: []
+user_id: unknown

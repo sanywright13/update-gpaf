@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/580bbd8c840d433d9ff84fad79b65ec8/artifacts
+end_time: 1746023747543
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 580bbd8c840d433d9ff84fad79b65ec8
+run_name: caring-kit-780
+run_uuid: 580bbd8c840d433d9ff84fad79b65ec8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023747447
+status: 4
+tags: []
+user_id: unknown

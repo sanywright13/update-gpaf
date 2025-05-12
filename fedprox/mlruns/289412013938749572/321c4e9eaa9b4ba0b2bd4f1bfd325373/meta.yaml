@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/321c4e9eaa9b4ba0b2bd4f1bfd325373/artifacts
+end_time: 1746011589881
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 321c4e9eaa9b4ba0b2bd4f1bfd325373
+run_name: adorable-rook-474
+run_uuid: 321c4e9eaa9b4ba0b2bd4f1bfd325373
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011589841
+status: 4
+tags: []
+user_id: unknown

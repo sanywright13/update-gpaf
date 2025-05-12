@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d08a371b58bf4e0db81807b566458830/artifacts
+end_time: 1746013377189
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d08a371b58bf4e0db81807b566458830
+run_name: enchanting-panda-91
+run_uuid: d08a371b58bf4e0db81807b566458830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013377143
+status: 4
+tags: []
+user_id: unknown

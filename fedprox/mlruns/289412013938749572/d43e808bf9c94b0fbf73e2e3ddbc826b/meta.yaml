@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d43e808bf9c94b0fbf73e2e3ddbc826b/artifacts
+end_time: 1746019130337
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d43e808bf9c94b0fbf73e2e3ddbc826b
+run_name: inquisitive-flea-768
+run_uuid: d43e808bf9c94b0fbf73e2e3ddbc826b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019130255
+status: 4
+tags: []
+user_id: unknown

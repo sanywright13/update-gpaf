@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/010f8080ada544b3a3e6c328bb7fc5fd/artifacts
+end_time: 1744577295450
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 010f8080ada544b3a3e6c328bb7fc5fd
+run_name: auspicious-foal-176
+run_uuid: 010f8080ada544b3a3e6c328bb7fc5fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744577295310
+status: 3
+tags: []
+user_id: unknown

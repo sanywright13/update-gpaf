@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/576f7df55d9745cbbacd33c16f436cd9/artifacts
+end_time: 1746023717433
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 576f7df55d9745cbbacd33c16f436cd9
+run_name: kindly-ape-331
+run_uuid: 576f7df55d9745cbbacd33c16f436cd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023716985
+status: 3
+tags: []
+user_id: unknown

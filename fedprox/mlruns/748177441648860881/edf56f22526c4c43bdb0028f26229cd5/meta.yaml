@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/edf56f22526c4c43bdb0028f26229cd5/artifacts
+end_time: 1742256883912
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: edf56f22526c4c43bdb0028f26229cd5
+run_name: fearless-wasp-203
+run_uuid: edf56f22526c4c43bdb0028f26229cd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256883864
+status: 3
+tags: []
+user_id: unknown

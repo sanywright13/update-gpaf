@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/23eec6a64e7c465e82448c280fb8ca49/artifacts
+end_time: 1744487006273
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 23eec6a64e7c465e82448c280fb8ca49
+run_name: adorable-whale-49
+run_uuid: 23eec6a64e7c465e82448c280fb8ca49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744487005838
+status: 3
+tags: []
+user_id: unknown

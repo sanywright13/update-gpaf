@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/5b28e93ee690486fa0775f0eefeeb6ef/artifacts
+end_time: 1738862386230
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 5b28e93ee690486fa0775f0eefeeb6ef
+run_name: fearless-mare-661
+run_uuid: 5b28e93ee690486fa0775f0eefeeb6ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862386206
+status: 4
+tags: []
+user_id: unknown

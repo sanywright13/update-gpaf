@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/4df6a59816224fa7a2329d58f185423d/artifacts
+end_time: 1737117584539
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 4df6a59816224fa7a2329d58f185423d
+run_name: youthful-snake-320
+run_uuid: 4df6a59816224fa7a2329d58f185423d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117584462
+status: 4
+tags: []
+user_id: unknown

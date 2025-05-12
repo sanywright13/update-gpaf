@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/7c5d71784ae645df873506ad12dd8db0/artifacts
+end_time: 1737117064051
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 7c5d71784ae645df873506ad12dd8db0
+run_name: casual-perch-113
+run_uuid: 7c5d71784ae645df873506ad12dd8db0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117064029
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/53b379c89f4941b6ba845a37e603a311/artifacts
+end_time: 1738249414755
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 53b379c89f4941b6ba845a37e603a311
+run_name: skillful-vole-209
+run_uuid: 53b379c89f4941b6ba845a37e603a311
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738249414708
+status: 3
+tags: []
+user_id: unknown

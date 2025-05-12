@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ea39fbd062364f9db0db041d4d392786/artifacts
+end_time: 1746013398563
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ea39fbd062364f9db0db041d4d392786
+run_name: big-lynx-971
+run_uuid: ea39fbd062364f9db0db041d4d392786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013398515
+status: 4
+tags: []
+user_id: unknown

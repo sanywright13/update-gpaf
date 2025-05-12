@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/00c127af03684952b7462865dde31446/artifacts
+end_time: 1737117586935
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 00c127af03684952b7462865dde31446
+run_name: incongruous-koi-466
+run_uuid: 00c127af03684952b7462865dde31446
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117586914
+status: 3
+tags: []
+user_id: unknown

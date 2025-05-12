@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cc199521829042a19abf46eb7578c491/artifacts
+end_time: 1746023796475
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cc199521829042a19abf46eb7578c491
+run_name: clumsy-robin-823
+run_uuid: cc199521829042a19abf46eb7578c491
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023796378
+status: 4
+tags: []
+user_id: unknown

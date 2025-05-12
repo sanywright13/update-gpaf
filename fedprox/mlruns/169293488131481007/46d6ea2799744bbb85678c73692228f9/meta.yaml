@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/46d6ea2799744bbb85678c73692228f9/artifacts
+end_time: 1737390085103
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 46d6ea2799744bbb85678c73692228f9
+run_name: aged-wolf-189
+run_uuid: 46d6ea2799744bbb85678c73692228f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737390063467
+status: 3
+tags: []
+user_id: unknown

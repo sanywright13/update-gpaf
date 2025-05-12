@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/cc99619cec704068a1eb6f4faa8b33c1/artifacts
+end_time: 1744566698277
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: cc99619cec704068a1eb6f4faa8b33c1
+run_name: bright-shad-220
+run_uuid: cc99619cec704068a1eb6f4faa8b33c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744564931864
+status: 3
+tags: []
+user_id: unknown

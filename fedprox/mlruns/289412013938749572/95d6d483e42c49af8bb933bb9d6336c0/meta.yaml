@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/95d6d483e42c49af8bb933bb9d6336c0/artifacts
+end_time: 1746023701521
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 95d6d483e42c49af8bb933bb9d6336c0
+run_name: suave-bass-436
+run_uuid: 95d6d483e42c49af8bb933bb9d6336c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023701105
+status: 3
+tags: []
+user_id: unknown

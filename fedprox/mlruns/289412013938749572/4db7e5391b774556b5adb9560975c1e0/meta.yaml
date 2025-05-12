@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4db7e5391b774556b5adb9560975c1e0/artifacts
+end_time: 1746017684262
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4db7e5391b774556b5adb9560975c1e0
+run_name: intelligent-mink-472
+run_uuid: 4db7e5391b774556b5adb9560975c1e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017683835
+status: 3
+tags: []
+user_id: unknown

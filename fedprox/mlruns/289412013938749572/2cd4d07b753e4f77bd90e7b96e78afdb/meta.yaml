@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2cd4d07b753e4f77bd90e7b96e78afdb/artifacts
+end_time: 1746011640837
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2cd4d07b753e4f77bd90e7b96e78afdb
+run_name: casual-koi-563
+run_uuid: 2cd4d07b753e4f77bd90e7b96e78afdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011640798
+status: 4
+tags: []
+user_id: unknown

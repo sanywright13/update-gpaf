@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/1237cd89e830491297f686ae56b8f83c/artifacts
+end_time: 1744468161068
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 1237cd89e830491297f686ae56b8f83c
+run_name: placid-moth-427
+run_uuid: 1237cd89e830491297f686ae56b8f83c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744467954037
+status: 3
+tags: []
+user_id: unknown

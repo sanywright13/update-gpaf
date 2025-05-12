@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/87b81a58314f4a35a14fb70ec61d61ca/artifacts
+end_time: 1746011584257
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 87b81a58314f4a35a14fb70ec61d61ca
+run_name: puzzled-swan-599
+run_uuid: 87b81a58314f4a35a14fb70ec61d61ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011584218
+status: 4
+tags: []
+user_id: unknown

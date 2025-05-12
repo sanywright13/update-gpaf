@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/06384d4b8a9940b78b5ed5f809f00177/artifacts
+end_time: 1738255839010
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 06384d4b8a9940b78b5ed5f809f00177
+run_name: unique-hare-27
+run_uuid: 06384d4b8a9940b78b5ed5f809f00177
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738255838933
+status: 3
+tags: []
+user_id: unknown

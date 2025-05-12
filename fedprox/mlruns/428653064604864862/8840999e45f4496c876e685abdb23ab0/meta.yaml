@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/8840999e45f4496c876e685abdb23ab0/artifacts
+end_time: 1737563175694
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 8840999e45f4496c876e685abdb23ab0
+run_name: shivering-bear-201
+run_uuid: 8840999e45f4496c876e685abdb23ab0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563171035
+status: 3
+tags: []
+user_id: unknown

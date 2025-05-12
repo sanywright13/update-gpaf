@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2bbef5352f8f4092af776e4583dcd070/artifacts
+end_time: 1743690051715
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2bbef5352f8f4092af776e4583dcd070
+run_name: mysterious-ape-462
+run_uuid: 2bbef5352f8f4092af776e4583dcd070
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743690043729
+status: 3
+tags: []
+user_id: unknown

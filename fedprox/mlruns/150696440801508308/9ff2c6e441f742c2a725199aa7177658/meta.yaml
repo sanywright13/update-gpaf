@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/150696440801508308/9ff2c6e441f742c2a725199aa7177658/artifacts
+end_time: 1745173382598
+entry_point_name: ''
+experiment_id: '150696440801508308'
+lifecycle_stage: active
+run_id: 9ff2c6e441f742c2a725199aa7177658
+run_name: fun-jay-680
+run_uuid: 9ff2c6e441f742c2a725199aa7177658
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745166294546
+status: 3
+tags: []
+user_id: unknown

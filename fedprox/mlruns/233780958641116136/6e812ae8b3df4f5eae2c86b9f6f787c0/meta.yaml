@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/6e812ae8b3df4f5eae2c86b9f6f787c0/artifacts
+end_time: 1738760890785
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 6e812ae8b3df4f5eae2c86b9f6f787c0
+run_name: capable-chimp-3
+run_uuid: 6e812ae8b3df4f5eae2c86b9f6f787c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738755990542
+status: 3
+tags: []
+user_id: unknown

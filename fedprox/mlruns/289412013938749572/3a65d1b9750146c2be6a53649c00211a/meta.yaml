@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3a65d1b9750146c2be6a53649c00211a/artifacts
+end_time: 1746021947192
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3a65d1b9750146c2be6a53649c00211a
+run_name: glamorous-elk-296
+run_uuid: 3a65d1b9750146c2be6a53649c00211a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021946745
+status: 3
+tags: []
+user_id: unknown

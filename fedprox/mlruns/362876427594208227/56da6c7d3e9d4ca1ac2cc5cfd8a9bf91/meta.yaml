@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/56da6c7d3e9d4ca1ac2cc5cfd8a9bf91/artifacts
+end_time: 1738005552629
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 56da6c7d3e9d4ca1ac2cc5cfd8a9bf91
+run_name: bright-quail-17
+run_uuid: 56da6c7d3e9d4ca1ac2cc5cfd8a9bf91
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005552427
+status: 3
+tags: []
+user_id: unknown

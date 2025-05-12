@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cf3a6172b88f4e879b3127a36efb3ccc/artifacts
+end_time: 1746011590692
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cf3a6172b88f4e879b3127a36efb3ccc
+run_name: spiffy-carp-575
+run_uuid: cf3a6172b88f4e879b3127a36efb3ccc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011590652
+status: 4
+tags: []
+user_id: unknown

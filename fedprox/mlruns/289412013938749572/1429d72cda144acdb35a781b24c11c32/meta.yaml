@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1429d72cda144acdb35a781b24c11c32/artifacts
+end_time: 1746011647027
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1429d72cda144acdb35a781b24c11c32
+run_name: nimble-hound-207
+run_uuid: 1429d72cda144acdb35a781b24c11c32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011646988
+status: 4
+tags: []
+user_id: unknown

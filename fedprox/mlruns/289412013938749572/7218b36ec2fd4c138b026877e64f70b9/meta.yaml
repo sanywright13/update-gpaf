@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7218b36ec2fd4c138b026877e64f70b9/artifacts
+end_time: 1746023714750
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7218b36ec2fd4c138b026877e64f70b9
+run_name: judicious-shrimp-324
+run_uuid: 7218b36ec2fd4c138b026877e64f70b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023714654
+status: 4
+tags: []
+user_id: unknown

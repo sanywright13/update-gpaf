@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f56812b8123c4686ba1a1789e4eb4b3c/artifacts
+end_time: 1746019018143
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f56812b8123c4686ba1a1789e4eb4b3c
+run_name: amazing-gnu-166
+run_uuid: f56812b8123c4686ba1a1789e4eb4b3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019018052
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e0b2055e5df94dd09e541e8d90a1585f/artifacts
+end_time: 1738158646877
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e0b2055e5df94dd09e541e8d90a1585f
+run_name: bright-zebra-45
+run_uuid: e0b2055e5df94dd09e541e8d90a1585f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158646600
+status: 3
+tags: []
+user_id: unknown

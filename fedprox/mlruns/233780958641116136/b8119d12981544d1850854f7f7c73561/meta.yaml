@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/b8119d12981544d1850854f7f7c73561/artifacts
+end_time: 1738700111628
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: b8119d12981544d1850854f7f7c73561
+run_name: victorious-hawk-906
+run_uuid: b8119d12981544d1850854f7f7c73561
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738700111446
+status: 3
+tags: []
+user_id: unknown

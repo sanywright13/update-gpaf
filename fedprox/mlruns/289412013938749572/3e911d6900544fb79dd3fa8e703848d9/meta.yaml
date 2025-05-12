@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3e911d6900544fb79dd3fa8e703848d9/artifacts
+end_time: 1746017909715
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3e911d6900544fb79dd3fa8e703848d9
+run_name: upbeat-swan-249
+run_uuid: 3e911d6900544fb79dd3fa8e703848d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017909273
+status: 3
+tags: []
+user_id: unknown

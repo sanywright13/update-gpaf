@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fda0605e07f74eef9db061a2c8a6034d/artifacts
+end_time: 1746013380547
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fda0605e07f74eef9db061a2c8a6034d
+run_name: bemused-trout-569
+run_uuid: fda0605e07f74eef9db061a2c8a6034d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013380504
+status: 4
+tags: []
+user_id: unknown

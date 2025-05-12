@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/6b17372b01da41dd9a81e71229774871/artifacts
+end_time: 1737117583749
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 6b17372b01da41dd9a81e71229774871
+run_name: bittersweet-crow-539
+run_uuid: 6b17372b01da41dd9a81e71229774871
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117583727
+status: 3
+tags: []
+user_id: unknown

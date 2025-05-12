@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c739d991d3d54358b4921aeb0829a01b/artifacts
+end_time: 1746018848981
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c739d991d3d54358b4921aeb0829a01b
+run_name: likeable-mink-917
+run_uuid: c739d991d3d54358b4921aeb0829a01b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018848898
+status: 4
+tags: []
+user_id: unknown

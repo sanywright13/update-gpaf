@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/701924e7132f465c90b3550838b984ed/artifacts
+end_time: 1746023732418
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 701924e7132f465c90b3550838b984ed
+run_name: adorable-penguin-152
+run_uuid: 701924e7132f465c90b3550838b984ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023732002
+status: 3
+tags: []
+user_id: unknown

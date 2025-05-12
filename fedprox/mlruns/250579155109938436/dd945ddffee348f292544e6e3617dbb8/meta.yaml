@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/dd945ddffee348f292544e6e3617dbb8/artifacts
+end_time: 1738157319455
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: dd945ddffee348f292544e6e3617dbb8
+run_name: merciful-snail-918
+run_uuid: dd945ddffee348f292544e6e3617dbb8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738157319226
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1b399775ac5243169ae88ca663b9e880/artifacts
+end_time: 1746023802526
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1b399775ac5243169ae88ca663b9e880
+run_name: ambitious-grouse-703
+run_uuid: 1b399775ac5243169ae88ca663b9e880
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023802424
+status: 4
+tags: []
+user_id: unknown

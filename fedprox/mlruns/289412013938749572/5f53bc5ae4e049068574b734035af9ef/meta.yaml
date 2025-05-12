@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5f53bc5ae4e049068574b734035af9ef/artifacts
+end_time: 1746023708889
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5f53bc5ae4e049068574b734035af9ef
+run_name: trusting-bear-557
+run_uuid: 5f53bc5ae4e049068574b734035af9ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023708796
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/efa1a3fc2c32432db744eccaa67aebde/artifacts
+end_time: 1746013357792
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: efa1a3fc2c32432db744eccaa67aebde
+run_name: honorable-bird-401
+run_uuid: efa1a3fc2c32432db744eccaa67aebde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013357747
+status: 4
+tags: []
+user_id: unknown

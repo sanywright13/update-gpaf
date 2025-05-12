@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/feb0c79326824b1890fddbf075ea7476/artifacts
+end_time: 1737388756464
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: feb0c79326824b1890fddbf075ea7476
+run_name: overjoyed-donkey-406
+run_uuid: feb0c79326824b1890fddbf075ea7476
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737388735583
+status: 3
+tags: []
+user_id: unknown

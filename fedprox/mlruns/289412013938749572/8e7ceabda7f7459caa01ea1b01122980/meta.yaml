@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8e7ceabda7f7459caa01ea1b01122980/artifacts
+end_time: 1746013427321
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8e7ceabda7f7459caa01ea1b01122980
+run_name: monumental-sheep-993
+run_uuid: 8e7ceabda7f7459caa01ea1b01122980
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013427270
+status: 4
+tags: []
+user_id: unknown

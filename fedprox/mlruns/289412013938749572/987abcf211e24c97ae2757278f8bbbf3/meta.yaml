@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/987abcf211e24c97ae2757278f8bbbf3/artifacts
+end_time: 1746023775459
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 987abcf211e24c97ae2757278f8bbbf3
+run_name: aged-goose-635
+run_uuid: 987abcf211e24c97ae2757278f8bbbf3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023775363
+status: 4
+tags: []
+user_id: unknown

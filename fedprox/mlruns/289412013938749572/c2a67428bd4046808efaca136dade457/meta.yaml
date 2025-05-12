@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c2a67428bd4046808efaca136dade457/artifacts
+end_time: 1746023778139
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c2a67428bd4046808efaca136dade457
+run_name: redolent-stoat-23
+run_uuid: c2a67428bd4046808efaca136dade457
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023777729
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/d18a2b2ee3fc43908bd07acb2cbe5356/artifacts
+end_time: 1737541580335
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: d18a2b2ee3fc43908bd07acb2cbe5356
+run_name: beautiful-calf-172
+run_uuid: d18a2b2ee3fc43908bd07acb2cbe5356
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737541579713
+status: 3
+tags: []
+user_id: unknown

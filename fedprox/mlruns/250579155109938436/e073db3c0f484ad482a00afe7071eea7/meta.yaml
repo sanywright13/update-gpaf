@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e073db3c0f484ad482a00afe7071eea7/artifacts
+end_time: 1738274141369
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e073db3c0f484ad482a00afe7071eea7
+run_name: resilient-dog-367
+run_uuid: e073db3c0f484ad482a00afe7071eea7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738274141296
+status: 3
+tags: []
+user_id: unknown

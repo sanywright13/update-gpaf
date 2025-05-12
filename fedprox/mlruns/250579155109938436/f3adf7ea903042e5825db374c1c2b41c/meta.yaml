@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/f3adf7ea903042e5825db374c1c2b41c/artifacts
+end_time: 1738155698237
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: f3adf7ea903042e5825db374c1c2b41c
+run_name: exultant-moth-269
+run_uuid: f3adf7ea903042e5825db374c1c2b41c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738155338533
+status: 3
+tags: []
+user_id: unknown

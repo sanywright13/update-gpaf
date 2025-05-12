@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/dc721e6a42da435eab82319649443353/artifacts
+end_time: 1737563172196
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: dc721e6a42da435eab82319649443353
+run_name: whimsical-fox-97
+run_uuid: dc721e6a42da435eab82319649443353
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563172173
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/baceac9ac1a247679a9bc6d3360b344f/artifacts
+end_time: 1736975425814
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: baceac9ac1a247679a9bc6d3360b344f
+run_name: traveling-shad-839
+run_uuid: baceac9ac1a247679a9bc6d3360b344f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736975397654
+status: 3
+tags: []
+user_id: unknown

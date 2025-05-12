@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/89086ad2ca5e47fda198be7d8460aab7/artifacts
+end_time: 1744469423814
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 89086ad2ca5e47fda198be7d8460aab7
+run_name: rebellious-carp-154
+run_uuid: 89086ad2ca5e47fda198be7d8460aab7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744469213359
+status: 3
+tags: []
+user_id: unknown

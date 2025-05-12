@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b61a21c80ead4a4c9a84789e47e72c6d/artifacts
+end_time: 1746011588515
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b61a21c80ead4a4c9a84789e47e72c6d
+run_name: nimble-mare-972
+run_uuid: b61a21c80ead4a4c9a84789e47e72c6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011588475
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/26e9b678b057406dae7081baaed7a4b5/artifacts
+end_time: 1737469821501
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 26e9b678b057406dae7081baaed7a4b5
+run_name: upset-crab-357
+run_uuid: 26e9b678b057406dae7081baaed7a4b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469821477
+status: 4
+tags: []
+user_id: unknown

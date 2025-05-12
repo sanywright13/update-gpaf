@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6d00ad453f664929be8fe7f481e40a04/artifacts
+end_time: 1742256902677
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6d00ad453f664929be8fe7f481e40a04
+run_name: victorious-smelt-768
+run_uuid: 6d00ad453f664929be8fe7f481e40a04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256902562
+status: 3
+tags: []
+user_id: unknown

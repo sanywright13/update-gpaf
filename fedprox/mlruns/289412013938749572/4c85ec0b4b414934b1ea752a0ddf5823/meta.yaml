@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4c85ec0b4b414934b1ea752a0ddf5823/artifacts
+end_time: 1746023750894
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4c85ec0b4b414934b1ea752a0ddf5823
+run_name: lyrical-sloth-455
+run_uuid: 4c85ec0b4b414934b1ea752a0ddf5823
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023750490
+status: 3
+tags: []
+user_id: unknown

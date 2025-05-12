@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d6742b83471046649168b0ad522f94ae/artifacts
+end_time: 1746013357324
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d6742b83471046649168b0ad522f94ae
+run_name: delightful-rook-688
+run_uuid: d6742b83471046649168b0ad522f94ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013357279
+status: 4
+tags: []
+user_id: unknown

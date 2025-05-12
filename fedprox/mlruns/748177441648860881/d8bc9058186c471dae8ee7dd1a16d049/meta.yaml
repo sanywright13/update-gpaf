@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d8bc9058186c471dae8ee7dd1a16d049/artifacts
+end_time: 1743375721404
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d8bc9058186c471dae8ee7dd1a16d049
+run_name: classy-newt-287
+run_uuid: d8bc9058186c471dae8ee7dd1a16d049
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743375721090
+status: 3
+tags: []
+user_id: unknown

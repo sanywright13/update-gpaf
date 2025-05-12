@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/33e21fee1cff4b599354b3d811771ffe/artifacts
+end_time: 1738863684807
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 33e21fee1cff4b599354b3d811771ffe
+run_name: secretive-fowl-245
+run_uuid: 33e21fee1cff4b599354b3d811771ffe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738863066193
+status: 3
+tags: []
+user_id: unknown

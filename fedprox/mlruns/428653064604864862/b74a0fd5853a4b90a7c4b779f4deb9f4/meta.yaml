@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/b74a0fd5853a4b90a7c4b779f4deb9f4/artifacts
+end_time: 1737563971092
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: b74a0fd5853a4b90a7c4b779f4deb9f4
+run_name: carefree-finch-276
+run_uuid: b74a0fd5853a4b90a7c4b779f4deb9f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563971067
+status: 3
+tags: []
+user_id: unknown

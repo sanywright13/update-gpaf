@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/a3289cd53247414ab5e14aaf66c8cb18/artifacts
+end_time: 1738158500661
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: a3289cd53247414ab5e14aaf66c8cb18
+run_name: nimble-elk-697
+run_uuid: a3289cd53247414ab5e14aaf66c8cb18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158500414
+status: 3
+tags: []
+user_id: unknown

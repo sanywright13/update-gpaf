@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1a3f39d9664746b196c9f56f9c27ad00/artifacts
+end_time: 1737563082757
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1a3f39d9664746b196c9f56f9c27ad00
+run_name: valuable-whale-371
+run_uuid: 1a3f39d9664746b196c9f56f9c27ad00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563082733
+status: 3
+tags: []
+user_id: unknown

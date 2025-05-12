@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/b62ff7a12ad84fab8bb956f4fa4b9104/artifacts
+end_time: 1736976577847
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: b62ff7a12ad84fab8bb956f4fa4b9104
+run_name: vaunted-steed-263
+run_uuid: b62ff7a12ad84fab8bb956f4fa4b9104
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736976313386
+status: 3
+tags: []
+user_id: unknown

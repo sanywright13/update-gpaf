@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1fb26530d30048569a7c183d90466477/artifacts
+end_time: 1746019356732
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1fb26530d30048569a7c183d90466477
+run_name: placid-colt-771
+run_uuid: 1fb26530d30048569a7c183d90466477
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019356651
+status: 4
+tags: []
+user_id: unknown

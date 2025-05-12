@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/f03ff7adba6c42918d746193325f0a1d/artifacts
+end_time: 1737469824037
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: f03ff7adba6c42918d746193325f0a1d
+run_name: glamorous-fly-828
+run_uuid: f03ff7adba6c42918d746193325f0a1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469823982
+status: 4
+tags: []
+user_id: unknown

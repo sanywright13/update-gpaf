@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/71a37e5df4b246838a5943197b5d1700/artifacts
+end_time: 1737586968354
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 71a37e5df4b246838a5943197b5d1700
+run_name: magnificent-dog-612
+run_uuid: 71a37e5df4b246838a5943197b5d1700
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737586968331
+status: 3
+tags: []
+user_id: unknown

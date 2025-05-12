@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c7dd73b1c0034979ba2e5330e98bc5aa/artifacts
+end_time: 1746011649907
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c7dd73b1c0034979ba2e5330e98bc5aa
+run_name: gentle-bass-393
+run_uuid: c7dd73b1c0034979ba2e5330e98bc5aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011649862
+status: 4
+tags: []
+user_id: unknown

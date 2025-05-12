@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/d27a26a04f454e22973e94c5839eb18d/artifacts
+end_time: 1738004031256
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: d27a26a04f454e22973e94c5839eb18d
+run_name: nervous-ram-156
+run_uuid: d27a26a04f454e22973e94c5839eb18d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738003991997
+status: 3
+tags: []
+user_id: unknown

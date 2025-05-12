@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/150696440801508308/8f6d556ff70c40cd91084476dd89cca8/artifacts
+end_time: 1745173384583
+entry_point_name: ''
+experiment_id: '150696440801508308'
+lifecycle_stage: active
+run_id: 8f6d556ff70c40cd91084476dd89cca8
+run_name: bouncy-ray-498
+run_uuid: 8f6d556ff70c40cd91084476dd89cca8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745166584188
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4842c3876206411a934f4d3aeeea3a29/artifacts
+end_time: 1746023696236
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4842c3876206411a934f4d3aeeea3a29
+run_name: selective-loon-101
+run_uuid: 4842c3876206411a934f4d3aeeea3a29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023695811
+status: 3
+tags: []
+user_id: unknown

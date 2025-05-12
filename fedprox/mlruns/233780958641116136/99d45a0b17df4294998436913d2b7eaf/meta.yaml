@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/99d45a0b17df4294998436913d2b7eaf/artifacts
+end_time: 1738862945309
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 99d45a0b17df4294998436913d2b7eaf
+run_name: fearless-sloth-113
+run_uuid: 99d45a0b17df4294998436913d2b7eaf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862945261
+status: 4
+tags: []
+user_id: unknown

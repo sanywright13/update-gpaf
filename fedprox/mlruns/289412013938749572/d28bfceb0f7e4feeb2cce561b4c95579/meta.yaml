@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d28bfceb0f7e4feeb2cce561b4c95579/artifacts
+end_time: 1746023707287
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d28bfceb0f7e4feeb2cce561b4c95579
+run_name: fortunate-crow-397
+run_uuid: d28bfceb0f7e4feeb2cce561b4c95579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023707187
+status: 4
+tags: []
+user_id: unknown

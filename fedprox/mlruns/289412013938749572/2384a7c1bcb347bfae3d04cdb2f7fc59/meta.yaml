@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2384a7c1bcb347bfae3d04cdb2f7fc59/artifacts
+end_time: 1746013381551
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2384a7c1bcb347bfae3d04cdb2f7fc59
+run_name: debonair-panda-566
+run_uuid: 2384a7c1bcb347bfae3d04cdb2f7fc59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013381509
+status: 4
+tags: []
+user_id: unknown

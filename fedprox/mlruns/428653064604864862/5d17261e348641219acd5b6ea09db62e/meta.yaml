@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/5d17261e348641219acd5b6ea09db62e/artifacts
+end_time: 1737663815936
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 5d17261e348641219acd5b6ea09db62e
+run_name: kindly-croc-356
+run_uuid: 5d17261e348641219acd5b6ea09db62e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737663815769
+status: 3
+tags: []
+user_id: unknown

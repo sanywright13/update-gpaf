@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ce7f03a5c0e849089a0a62b0beb7423b/artifacts
+end_time: 1746018509114
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ce7f03a5c0e849089a0a62b0beb7423b
+run_name: vaunted-bat-823
+run_uuid: ce7f03a5c0e849089a0a62b0beb7423b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018509035
+status: 4
+tags: []
+user_id: unknown

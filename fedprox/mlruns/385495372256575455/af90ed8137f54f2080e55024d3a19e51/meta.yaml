@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/af90ed8137f54f2080e55024d3a19e51/artifacts
+end_time: 1737479824706
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: af90ed8137f54f2080e55024d3a19e51
+run_name: industrious-dove-853
+run_uuid: af90ed8137f54f2080e55024d3a19e51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737479824673
+status: 3
+tags: []
+user_id: unknown

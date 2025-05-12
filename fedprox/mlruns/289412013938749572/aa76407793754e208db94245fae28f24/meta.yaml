@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aa76407793754e208db94245fae28f24/artifacts
+end_time: 1746011616479
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aa76407793754e208db94245fae28f24
+run_name: rare-pig-27
+run_uuid: aa76407793754e208db94245fae28f24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011616438
+status: 4
+tags: []
+user_id: unknown

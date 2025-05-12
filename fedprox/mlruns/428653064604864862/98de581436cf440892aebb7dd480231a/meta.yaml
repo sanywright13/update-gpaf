@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/98de581436cf440892aebb7dd480231a/artifacts
+end_time: 1737567063868
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 98de581436cf440892aebb7dd480231a
+run_name: languid-crab-142
+run_uuid: 98de581436cf440892aebb7dd480231a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737567063843
+status: 3
+tags: []
+user_id: unknown

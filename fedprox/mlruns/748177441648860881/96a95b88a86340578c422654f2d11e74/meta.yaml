@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/96a95b88a86340578c422654f2d11e74/artifacts
+end_time: 1744483935393
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 96a95b88a86340578c422654f2d11e74
+run_name: victorious-shark-246
+run_uuid: 96a95b88a86340578c422654f2d11e74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483934677
+status: 3
+tags: []
+user_id: unknown

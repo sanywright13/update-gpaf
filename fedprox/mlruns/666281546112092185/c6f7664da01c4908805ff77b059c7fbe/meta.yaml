@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/c6f7664da01c4908805ff77b059c7fbe/artifacts
+end_time: 1737469821415
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: c6f7664da01c4908805ff77b059c7fbe
+run_name: lyrical-stag-355
+run_uuid: c6f7664da01c4908805ff77b059c7fbe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469821391
+status: 4
+tags: []
+user_id: unknown

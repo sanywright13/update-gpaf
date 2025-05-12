@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/78e83ab8e7244263be48cc1b944ef7d4/artifacts
+end_time: 1746013442754
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 78e83ab8e7244263be48cc1b944ef7d4
+run_name: blushing-hog-689
+run_uuid: 78e83ab8e7244263be48cc1b944ef7d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013442703
+status: 4
+tags: []
+user_id: unknown

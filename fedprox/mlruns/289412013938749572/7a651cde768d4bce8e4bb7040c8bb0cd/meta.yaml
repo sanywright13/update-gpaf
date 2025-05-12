@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7a651cde768d4bce8e4bb7040c8bb0cd/artifacts
+end_time: 1746013384063
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7a651cde768d4bce8e4bb7040c8bb0cd
+run_name: serious-shoat-725
+run_uuid: 7a651cde768d4bce8e4bb7040c8bb0cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013384017
+status: 4
+tags: []
+user_id: unknown

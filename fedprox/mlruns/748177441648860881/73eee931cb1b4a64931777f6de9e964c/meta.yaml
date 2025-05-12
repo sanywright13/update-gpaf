@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/73eee931cb1b4a64931777f6de9e964c/artifacts
+end_time: 1739976365847
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 73eee931cb1b4a64931777f6de9e964c
+run_name: merciful-fish-624
+run_uuid: 73eee931cb1b4a64931777f6de9e964c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739976313635
+status: 3
+tags: []
+user_id: unknown

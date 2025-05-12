@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/75dff0df2020454aaeb6be47bf28ef83/artifacts
+end_time: 1746011583859
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 75dff0df2020454aaeb6be47bf28ef83
+run_name: trusting-mink-692
+run_uuid: 75dff0df2020454aaeb6be47bf28ef83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011583825
+status: 4
+tags: []
+user_id: unknown

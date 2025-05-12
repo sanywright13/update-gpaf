@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9a3c810b9ff04e99bb9fd86a20613272/artifacts
+end_time: 1746018280398
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9a3c810b9ff04e99bb9fd86a20613272
+run_name: popular-goose-246
+run_uuid: 9a3c810b9ff04e99bb9fd86a20613272
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018279996
+status: 3
+tags: []
+user_id: unknown

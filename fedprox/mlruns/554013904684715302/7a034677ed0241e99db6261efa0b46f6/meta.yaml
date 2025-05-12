@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/7a034677ed0241e99db6261efa0b46f6/artifacts
+end_time: 1737297049205
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: 7a034677ed0241e99db6261efa0b46f6
+run_name: sassy-grub-361
+run_uuid: 7a034677ed0241e99db6261efa0b46f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297049166
+status: 3
+tags: []
+user_id: unknown

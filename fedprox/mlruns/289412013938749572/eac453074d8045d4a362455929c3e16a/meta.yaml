@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/eac453074d8045d4a362455929c3e16a/artifacts
+end_time: 1746011589880
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: eac453074d8045d4a362455929c3e16a
+run_name: suave-stag-168
+run_uuid: eac453074d8045d4a362455929c3e16a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011589839
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/801a6c15977d440c8f6c89c9f403cda7/artifacts
+end_time: 1744576139223
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 801a6c15977d440c8f6c89c9f403cda7
+run_name: abrasive-hawk-795
+run_uuid: 801a6c15977d440c8f6c89c9f403cda7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576139086
+status: 3
+tags: []
+user_id: unknown

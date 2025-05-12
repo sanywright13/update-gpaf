@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1182581200a9443986df3f2ce92088dc/artifacts
+end_time: 1746019299121
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1182581200a9443986df3f2ce92088dc
+run_name: bouncy-ape-721
+run_uuid: 1182581200a9443986df3f2ce92088dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019298693
+status: 3
+tags: []
+user_id: unknown

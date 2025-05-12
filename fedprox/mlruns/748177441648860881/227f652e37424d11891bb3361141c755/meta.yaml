@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/227f652e37424d11891bb3361141c755/artifacts
+end_time: 1744483931777
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 227f652e37424d11891bb3361141c755
+run_name: nebulous-carp-279
+run_uuid: 227f652e37424d11891bb3361141c755
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483931107
+status: 3
+tags: []
+user_id: unknown

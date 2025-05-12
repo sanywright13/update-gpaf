@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/843a09b553a24d3db6fb82d9726d4db4/artifacts
+end_time: 1737391028023
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 843a09b553a24d3db6fb82d9726d4db4
+run_name: adaptable-sloth-664
+run_uuid: 843a09b553a24d3db6fb82d9726d4db4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737391027170
+status: 3
+tags: []
+user_id: unknown

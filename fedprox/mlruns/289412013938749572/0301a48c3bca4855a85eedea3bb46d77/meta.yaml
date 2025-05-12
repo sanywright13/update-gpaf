@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0301a48c3bca4855a85eedea3bb46d77/artifacts
+end_time: 1746023745416
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0301a48c3bca4855a85eedea3bb46d77
+run_name: polite-auk-952
+run_uuid: 0301a48c3bca4855a85eedea3bb46d77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023745007
+status: 3
+tags: []
+user_id: unknown

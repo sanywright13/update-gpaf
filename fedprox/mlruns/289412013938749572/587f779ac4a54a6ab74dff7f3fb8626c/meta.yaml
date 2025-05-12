@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/587f779ac4a54a6ab74dff7f3fb8626c/artifacts
+end_time: 1746013410867
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 587f779ac4a54a6ab74dff7f3fb8626c
+run_name: salty-squirrel-16
+run_uuid: 587f779ac4a54a6ab74dff7f3fb8626c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013410823
+status: 4
+tags: []
+user_id: unknown

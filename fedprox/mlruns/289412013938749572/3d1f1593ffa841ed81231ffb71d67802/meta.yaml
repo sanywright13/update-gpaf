@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3d1f1593ffa841ed81231ffb71d67802/artifacts
+end_time: 1746023730031
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3d1f1593ffa841ed81231ffb71d67802
+run_name: likeable-moose-926
+run_uuid: 3d1f1593ffa841ed81231ffb71d67802
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023729602
+status: 3
+tags: []
+user_id: unknown

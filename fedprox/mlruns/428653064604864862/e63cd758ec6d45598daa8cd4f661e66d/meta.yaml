@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/e63cd758ec6d45598daa8cd4f661e66d/artifacts
+end_time: 1737540319445
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: e63cd758ec6d45598daa8cd4f661e66d
+run_name: clumsy-pug-854
+run_uuid: e63cd758ec6d45598daa8cd4f661e66d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737540319409
+status: 3
+tags: []
+user_id: unknown

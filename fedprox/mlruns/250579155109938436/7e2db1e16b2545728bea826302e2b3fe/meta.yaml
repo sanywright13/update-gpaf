@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/7e2db1e16b2545728bea826302e2b3fe/artifacts
+end_time: 1738155700068
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 7e2db1e16b2545728bea826302e2b3fe
+run_name: gentle-duck-915
+run_uuid: 7e2db1e16b2545728bea826302e2b3fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738155451912
+status: 3
+tags: []
+user_id: unknown

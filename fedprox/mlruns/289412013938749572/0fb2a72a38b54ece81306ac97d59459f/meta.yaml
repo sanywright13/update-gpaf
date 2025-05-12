@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0fb2a72a38b54ece81306ac97d59459f/artifacts
+end_time: 1746013386591
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0fb2a72a38b54ece81306ac97d59459f
+run_name: rare-goose-156
+run_uuid: 0fb2a72a38b54ece81306ac97d59459f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013386543
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0d1315c2f1494fed8e56a12f120b0e56/artifacts
+end_time: 1744551911942
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0d1315c2f1494fed8e56a12f120b0e56
+run_name: clumsy-moth-142
+run_uuid: 0d1315c2f1494fed8e56a12f120b0e56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744551911605
+status: 4
+tags: []
+user_id: unknown

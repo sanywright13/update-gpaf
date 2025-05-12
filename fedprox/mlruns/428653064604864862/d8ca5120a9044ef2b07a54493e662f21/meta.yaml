@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/d8ca5120a9044ef2b07a54493e662f21/artifacts
+end_time: 1737563778513
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: d8ca5120a9044ef2b07a54493e662f21
+run_name: loud-moose-303
+run_uuid: d8ca5120a9044ef2b07a54493e662f21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563778474
+status: 3
+tags: []
+user_id: unknown

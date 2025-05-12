@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/bddf8d9fb30e4b3ebb5bfa47fdf89519/artifacts
+end_time: 1738786715981
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: bddf8d9fb30e4b3ebb5bfa47fdf89519
+run_name: unruly-wolf-590
+run_uuid: bddf8d9fb30e4b3ebb5bfa47fdf89519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738786715842
+status: 3
+tags: []
+user_id: unknown

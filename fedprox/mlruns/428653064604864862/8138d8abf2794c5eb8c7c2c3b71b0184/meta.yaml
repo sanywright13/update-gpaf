@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/8138d8abf2794c5eb8c7c2c3b71b0184/artifacts
+end_time: 1737668702100
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 8138d8abf2794c5eb8c7c2c3b71b0184
+run_name: placid-boar-31
+run_uuid: 8138d8abf2794c5eb8c7c2c3b71b0184
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737668701983
+status: 3
+tags: []
+user_id: unknown

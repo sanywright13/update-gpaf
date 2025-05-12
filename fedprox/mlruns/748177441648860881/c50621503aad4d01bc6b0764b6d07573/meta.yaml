@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c50621503aad4d01bc6b0764b6d07573/artifacts
+end_time: 1743677910020
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c50621503aad4d01bc6b0764b6d07573
+run_name: sassy-dolphin-372
+run_uuid: c50621503aad4d01bc6b0764b6d07573
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743677876375
+status: 3
+tags: []
+user_id: unknown

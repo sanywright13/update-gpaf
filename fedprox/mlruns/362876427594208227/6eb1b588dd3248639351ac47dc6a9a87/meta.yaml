@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/6eb1b588dd3248639351ac47dc6a9a87/artifacts
+end_time: 1738006745446
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 6eb1b588dd3248639351ac47dc6a9a87
+run_name: smiling-sponge-710
+run_uuid: 6eb1b588dd3248639351ac47dc6a9a87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738006666754
+status: 3
+tags: []
+user_id: unknown

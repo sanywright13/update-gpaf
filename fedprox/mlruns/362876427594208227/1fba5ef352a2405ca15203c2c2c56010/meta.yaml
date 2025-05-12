@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/1fba5ef352a2405ca15203c2c2c56010/artifacts
+end_time: 1738002364637
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 1fba5ef352a2405ca15203c2c2c56010
+run_name: luxuriant-fawn-412
+run_uuid: 1fba5ef352a2405ca15203c2c2c56010
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738002323514
+status: 3
+tags: []
+user_id: unknown

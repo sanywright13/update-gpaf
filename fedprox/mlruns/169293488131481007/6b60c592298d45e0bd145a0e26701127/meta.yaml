@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/6b60c592298d45e0bd145a0e26701127/artifacts
+end_time: 1737394220880
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 6b60c592298d45e0bd145a0e26701127
+run_name: mysterious-moth-886
+run_uuid: 6b60c592298d45e0bd145a0e26701127
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737394220852
+status: 3
+tags: []
+user_id: unknown

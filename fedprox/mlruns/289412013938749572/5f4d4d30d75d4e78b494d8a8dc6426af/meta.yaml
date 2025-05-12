@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5f4d4d30d75d4e78b494d8a8dc6426af/artifacts
+end_time: 1746013412650
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5f4d4d30d75d4e78b494d8a8dc6426af
+run_name: sedate-hog-427
+run_uuid: 5f4d4d30d75d4e78b494d8a8dc6426af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013412602
+status: 4
+tags: []
+user_id: unknown

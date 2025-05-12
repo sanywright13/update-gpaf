@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/f73edfb8301949ccaa4620526091b96f/artifacts
+end_time: 1737550527732
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: f73edfb8301949ccaa4620526091b96f
+run_name: defiant-flea-661
+run_uuid: f73edfb8301949ccaa4620526091b96f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737550527669
+status: 3
+tags: []
+user_id: unknown

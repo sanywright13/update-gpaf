@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bbc874e97fe24ac89a8face83b571dd3/artifacts
+end_time: 1746013438824
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bbc874e97fe24ac89a8face83b571dd3
+run_name: exultant-elk-942
+run_uuid: bbc874e97fe24ac89a8face83b571dd3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013438772
+status: 4
+tags: []
+user_id: unknown

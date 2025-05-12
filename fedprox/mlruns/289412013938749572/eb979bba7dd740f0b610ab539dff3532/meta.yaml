@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/eb979bba7dd740f0b610ab539dff3532/artifacts
+end_time: 1746023723437
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: eb979bba7dd740f0b610ab539dff3532
+run_name: defiant-sheep-182
+run_uuid: eb979bba7dd740f0b610ab539dff3532
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023723017
+status: 3
+tags: []
+user_id: unknown

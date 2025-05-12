@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/6dda10bb58c14594a553b63d27e1a3fc/artifacts
+end_time: 1738151023338
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 6dda10bb58c14594a553b63d27e1a3fc
+run_name: sneaky-bird-760
+run_uuid: 6dda10bb58c14594a553b63d27e1a3fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738151023194
+status: 3
+tags: []
+user_id: unknown

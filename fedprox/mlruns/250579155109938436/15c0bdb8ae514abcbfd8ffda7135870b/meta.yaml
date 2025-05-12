@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/15c0bdb8ae514abcbfd8ffda7135870b/artifacts
+end_time: 1738158499521
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 15c0bdb8ae514abcbfd8ffda7135870b
+run_name: sincere-bee-1000
+run_uuid: 15c0bdb8ae514abcbfd8ffda7135870b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158499248
+status: 3
+tags: []
+user_id: unknown

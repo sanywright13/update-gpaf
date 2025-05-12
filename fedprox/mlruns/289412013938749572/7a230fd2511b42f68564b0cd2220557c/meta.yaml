@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7a230fd2511b42f68564b0cd2220557c/artifacts
+end_time: 1746013384566
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7a230fd2511b42f68564b0cd2220557c
+run_name: industrious-bear-74
+run_uuid: 7a230fd2511b42f68564b0cd2220557c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013384523
+status: 4
+tags: []
+user_id: unknown

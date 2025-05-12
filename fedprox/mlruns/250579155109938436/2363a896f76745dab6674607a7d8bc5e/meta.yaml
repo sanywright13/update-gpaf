@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2363a896f76745dab6674607a7d8bc5e/artifacts
+end_time: 1738279213414
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2363a896f76745dab6674607a7d8bc5e
+run_name: abrasive-sheep-294
+run_uuid: 2363a896f76745dab6674607a7d8bc5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738279213359
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c455bcb1c6344611b08953a4b0286367/artifacts
+end_time: 1738150281555
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c455bcb1c6344611b08953a4b0286367
+run_name: nimble-vole-774
+run_uuid: c455bcb1c6344611b08953a4b0286367
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738150281409
+status: 3
+tags: []
+user_id: unknown

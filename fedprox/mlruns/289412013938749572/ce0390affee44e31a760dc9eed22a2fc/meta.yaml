@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ce0390affee44e31a760dc9eed22a2fc/artifacts
+end_time: 1746013436485
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ce0390affee44e31a760dc9eed22a2fc
+run_name: adorable-stork-542
+run_uuid: ce0390affee44e31a760dc9eed22a2fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013436433
+status: 4
+tags: []
+user_id: unknown

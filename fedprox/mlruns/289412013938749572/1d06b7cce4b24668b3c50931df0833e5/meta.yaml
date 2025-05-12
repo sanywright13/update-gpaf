@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1d06b7cce4b24668b3c50931df0833e5/artifacts
+end_time: 1746013450157
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1d06b7cce4b24668b3c50931df0833e5
+run_name: adaptable-turtle-189
+run_uuid: 1d06b7cce4b24668b3c50931df0833e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013450110
+status: 4
+tags: []
+user_id: unknown

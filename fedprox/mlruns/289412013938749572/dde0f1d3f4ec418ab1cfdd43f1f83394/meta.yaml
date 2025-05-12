@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dde0f1d3f4ec418ab1cfdd43f1f83394/artifacts
+end_time: 1746023774784
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dde0f1d3f4ec418ab1cfdd43f1f83394
+run_name: unique-elk-541
+run_uuid: dde0f1d3f4ec418ab1cfdd43f1f83394
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023774687
+status: 4
+tags: []
+user_id: unknown

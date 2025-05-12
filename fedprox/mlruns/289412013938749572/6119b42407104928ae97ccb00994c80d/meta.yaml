@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6119b42407104928ae97ccb00994c80d/artifacts
+end_time: 1746011636962
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6119b42407104928ae97ccb00994c80d
+run_name: able-cat-833
+run_uuid: 6119b42407104928ae97ccb00994c80d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011636923
+status: 4
+tags: []
+user_id: unknown

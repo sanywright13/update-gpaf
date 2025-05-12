@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/24849fe9abb94458aad7e4cfc8fa154c/artifacts
+end_time: 1738242051458
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 24849fe9abb94458aad7e4cfc8fa154c
+run_name: luxuriant-ape-473
+run_uuid: 24849fe9abb94458aad7e4cfc8fa154c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738242041486
+status: 3
+tags: []
+user_id: unknown

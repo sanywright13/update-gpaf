@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/1c69a46ea12d401b96858d3fb3951b3c/artifacts
+end_time: 1744623708893
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 1c69a46ea12d401b96858d3fb3951b3c
+run_name: mysterious-goat-602
+run_uuid: 1c69a46ea12d401b96858d3fb3951b3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744623708757
+status: 3
+tags: []
+user_id: unknown

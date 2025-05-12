@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d0e6d4fffe4a47a1b24cd5944c41b344/artifacts
+end_time: 1746011578155
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d0e6d4fffe4a47a1b24cd5944c41b344
+run_name: receptive-conch-163
+run_uuid: d0e6d4fffe4a47a1b24cd5944c41b344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011578116
+status: 4
+tags: []
+user_id: unknown

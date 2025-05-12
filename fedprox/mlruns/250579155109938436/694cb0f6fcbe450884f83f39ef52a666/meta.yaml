@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/694cb0f6fcbe450884f83f39ef52a666/artifacts
+end_time: 1738255212102
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 694cb0f6fcbe450884f83f39ef52a666
+run_name: loud-cat-794
+run_uuid: 694cb0f6fcbe450884f83f39ef52a666
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738255204026
+status: 3
+tags: []
+user_id: unknown

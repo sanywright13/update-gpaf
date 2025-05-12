@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e6b2f1cc0fa44f4e9d3624e63274ec90/artifacts
+end_time: 1746023805144
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e6b2f1cc0fa44f4e9d3624e63274ec90
+run_name: calm-slug-236
+run_uuid: e6b2f1cc0fa44f4e9d3624e63274ec90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023805048
+status: 4
+tags: []
+user_id: unknown

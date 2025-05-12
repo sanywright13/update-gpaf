@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b4c139326d40421e90f305678a1190da/artifacts
+end_time: 1746023739670
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b4c139326d40421e90f305678a1190da
+run_name: amusing-grouse-496
+run_uuid: b4c139326d40421e90f305678a1190da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023739282
+status: 3
+tags: []
+user_id: unknown

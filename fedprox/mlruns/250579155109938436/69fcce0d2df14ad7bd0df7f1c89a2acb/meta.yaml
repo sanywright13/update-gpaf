@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/69fcce0d2df14ad7bd0df7f1c89a2acb/artifacts
+end_time: 1738258060522
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 69fcce0d2df14ad7bd0df7f1c89a2acb
+run_name: beautiful-ant-816
+run_uuid: 69fcce0d2df14ad7bd0df7f1c89a2acb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258050897
+status: 3
+tags: []
+user_id: unknown

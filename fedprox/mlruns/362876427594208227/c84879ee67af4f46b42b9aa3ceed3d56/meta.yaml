@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/c84879ee67af4f46b42b9aa3ceed3d56/artifacts
+end_time: 1738001101243
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: c84879ee67af4f46b42b9aa3ceed3d56
+run_name: omniscient-steed-470
+run_uuid: c84879ee67af4f46b42b9aa3ceed3d56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738001101203
+status: 3
+tags: []
+user_id: unknown

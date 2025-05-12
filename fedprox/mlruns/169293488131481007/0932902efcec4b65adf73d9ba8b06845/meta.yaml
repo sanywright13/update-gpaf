@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/0932902efcec4b65adf73d9ba8b06845/artifacts
+end_time: 1737388099103
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 0932902efcec4b65adf73d9ba8b06845
+run_name: unruly-mare-312
+run_uuid: 0932902efcec4b65adf73d9ba8b06845
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737387967038
+status: 3
+tags: []
+user_id: unknown

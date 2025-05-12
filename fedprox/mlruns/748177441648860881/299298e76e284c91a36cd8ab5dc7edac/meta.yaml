@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/299298e76e284c91a36cd8ab5dc7edac/artifacts
+end_time: 1742256897494
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 299298e76e284c91a36cd8ab5dc7edac
+run_name: rumbling-horse-732
+run_uuid: 299298e76e284c91a36cd8ab5dc7edac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256897445
+status: 3
+tags: []
+user_id: unknown

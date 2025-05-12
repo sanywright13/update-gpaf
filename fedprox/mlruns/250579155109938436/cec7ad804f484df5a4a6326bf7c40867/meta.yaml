@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/cec7ad804f484df5a4a6326bf7c40867/artifacts
+end_time: 1738154807365
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: cec7ad804f484df5a4a6326bf7c40867
+run_name: secretive-panda-266
+run_uuid: cec7ad804f484df5a4a6326bf7c40867
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738154807100
+status: 3
+tags: []
+user_id: unknown

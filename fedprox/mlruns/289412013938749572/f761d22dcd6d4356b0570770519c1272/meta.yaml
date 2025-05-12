@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f761d22dcd6d4356b0570770519c1272/artifacts
+end_time: 1746013448642
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f761d22dcd6d4356b0570770519c1272
+run_name: upset-fox-194
+run_uuid: f761d22dcd6d4356b0570770519c1272
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013448588
+status: 4
+tags: []
+user_id: unknown

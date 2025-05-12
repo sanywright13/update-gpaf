@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ca36771d849d43f499d2d65e3733c47f/artifacts
+end_time: 1744483962674
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ca36771d849d43f499d2d65e3733c47f
+run_name: delightful-wren-453
+run_uuid: ca36771d849d43f499d2d65e3733c47f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483961874
+status: 3
+tags: []
+user_id: unknown

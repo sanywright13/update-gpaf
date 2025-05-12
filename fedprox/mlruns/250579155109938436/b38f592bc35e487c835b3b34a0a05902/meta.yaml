@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/b38f592bc35e487c835b3b34a0a05902/artifacts
+end_time: 1738258777571
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: b38f592bc35e487c835b3b34a0a05902
+run_name: overjoyed-toad-534
+run_uuid: b38f592bc35e487c835b3b34a0a05902
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258767729
+status: 3
+tags: []
+user_id: unknown

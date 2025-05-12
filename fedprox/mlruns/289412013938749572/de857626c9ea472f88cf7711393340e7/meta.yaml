@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/de857626c9ea472f88cf7711393340e7/artifacts
+end_time: 1746023763676
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: de857626c9ea472f88cf7711393340e7
+run_name: puzzled-toad-983
+run_uuid: de857626c9ea472f88cf7711393340e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023763587
+status: 4
+tags: []
+user_id: unknown

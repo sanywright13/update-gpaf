@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ef6a1fe8243d4030824e1942b0eb48d6/artifacts
+end_time: 1743213168795
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ef6a1fe8243d4030824e1942b0eb48d6
+run_name: luxuriant-hare-596
+run_uuid: ef6a1fe8243d4030824e1942b0eb48d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743213168179
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/05681413284747e8b463ed89def73361/artifacts
+end_time: 1746023763198
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 05681413284747e8b463ed89def73361
+run_name: masked-lynx-799
+run_uuid: 05681413284747e8b463ed89def73361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023762781
+status: 3
+tags: []
+user_id: unknown

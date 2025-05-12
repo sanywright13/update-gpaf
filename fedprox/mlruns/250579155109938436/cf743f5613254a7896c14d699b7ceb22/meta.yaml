@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/cf743f5613254a7896c14d699b7ceb22/artifacts
+end_time: 1738242038422
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: cf743f5613254a7896c14d699b7ceb22
+run_name: learned-owl-115
+run_uuid: cf743f5613254a7896c14d699b7ceb22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738242038379
+status: 3
+tags: []
+user_id: unknown

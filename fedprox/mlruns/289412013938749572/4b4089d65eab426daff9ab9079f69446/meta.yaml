@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4b4089d65eab426daff9ab9079f69446/artifacts
+end_time: 1746011656655
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4b4089d65eab426daff9ab9079f69446
+run_name: angry-wolf-317
+run_uuid: 4b4089d65eab426daff9ab9079f69446
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011656611
+status: 4
+tags: []
+user_id: unknown

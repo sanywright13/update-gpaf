@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/82b482b28ded42f8b1a85da019c0e17a/artifacts
+end_time: 1737117586037
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 82b482b28ded42f8b1a85da019c0e17a
+run_name: resilient-yak-641
+run_uuid: 82b482b28ded42f8b1a85da019c0e17a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117585968
+status: 4
+tags: []
+user_id: unknown

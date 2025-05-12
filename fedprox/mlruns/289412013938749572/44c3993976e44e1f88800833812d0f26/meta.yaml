@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/44c3993976e44e1f88800833812d0f26/artifacts
+end_time: 1746011626214
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 44c3993976e44e1f88800833812d0f26
+run_name: clean-sheep-821
+run_uuid: 44c3993976e44e1f88800833812d0f26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011626177
+status: 4
+tags: []
+user_id: unknown

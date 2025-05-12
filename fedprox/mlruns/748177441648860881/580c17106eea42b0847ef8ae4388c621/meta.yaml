@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/580c17106eea42b0847ef8ae4388c621/artifacts
+end_time: 1744492273671
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 580c17106eea42b0847ef8ae4388c621
+run_name: lyrical-donkey-981
+run_uuid: 580c17106eea42b0847ef8ae4388c621
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492272837
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/3183b74404764b6793e3c6328bb8a16a/artifacts
+end_time: 1742394919081
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 3183b74404764b6793e3c6328bb8a16a
+run_name: colorful-hog-689
+run_uuid: 3183b74404764b6793e3c6328bb8a16a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742394918636
+status: 3
+tags: []
+user_id: unknown

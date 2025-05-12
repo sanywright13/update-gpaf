@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/697019ad2e7b4502a9532b9994436579/artifacts
+end_time: 1744487876346
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 697019ad2e7b4502a9532b9994436579
+run_name: valuable-bug-115
+run_uuid: 697019ad2e7b4502a9532b9994436579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744487875696
+status: 3
+tags: []
+user_id: unknown

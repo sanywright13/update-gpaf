@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e7d6ced573ec41fd86cdd7cdf71678b4/artifacts
+end_time: 1746011619288
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e7d6ced573ec41fd86cdd7cdf71678b4
+run_name: judicious-crab-491
+run_uuid: e7d6ced573ec41fd86cdd7cdf71678b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011619251
+status: 4
+tags: []
+user_id: unknown

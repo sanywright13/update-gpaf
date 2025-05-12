@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/20a70bf5e5a84c8d84e87e6fbd30b6cf/artifacts
+end_time: 1746023755952
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 20a70bf5e5a84c8d84e87e6fbd30b6cf
+run_name: rumbling-skunk-504
+run_uuid: 20a70bf5e5a84c8d84e87e6fbd30b6cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023755535
+status: 3
+tags: []
+user_id: unknown

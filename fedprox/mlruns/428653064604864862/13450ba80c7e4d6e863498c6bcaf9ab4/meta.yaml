@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/13450ba80c7e4d6e863498c6bcaf9ab4/artifacts
+end_time: 1737574608159
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 13450ba80c7e4d6e863498c6bcaf9ab4
+run_name: abrasive-ram-243
+run_uuid: 13450ba80c7e4d6e863498c6bcaf9ab4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737574608111
+status: 3
+tags: []
+user_id: unknown

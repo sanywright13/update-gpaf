@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a520071b5c1143ec8d984dbbc3a409e6/artifacts
+end_time: 1746019328568
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a520071b5c1143ec8d984dbbc3a409e6
+run_name: traveling-goose-158
+run_uuid: a520071b5c1143ec8d984dbbc3a409e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019328149
+status: 3
+tags: []
+user_id: unknown

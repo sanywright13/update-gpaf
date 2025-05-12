@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/13eb1d7597dd47eab0b37f22e1c0a17e/artifacts
+end_time: 1746018847769
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 13eb1d7597dd47eab0b37f22e1c0a17e
+run_name: resilient-fawn-457
+run_uuid: 13eb1d7597dd47eab0b37f22e1c0a17e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018847686
+status: 4
+tags: []
+user_id: unknown

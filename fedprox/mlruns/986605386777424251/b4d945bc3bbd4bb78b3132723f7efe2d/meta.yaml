@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/986605386777424251/b4d945bc3bbd4bb78b3132723f7efe2d/artifacts
+end_time: 1737749647309
+entry_point_name: ''
+experiment_id: '986605386777424251'
+lifecycle_stage: active
+run_id: b4d945bc3bbd4bb78b3132723f7efe2d
+run_name: youthful-ant-165
+run_uuid: b4d945bc3bbd4bb78b3132723f7efe2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737749111345
+status: 3
+tags: []
+user_id: unknown

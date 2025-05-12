@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/723a536cb418451aadf3341604eb7581/artifacts
+end_time: 1737991605904
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 723a536cb418451aadf3341604eb7581
+run_name: big-cat-304
+run_uuid: 723a536cb418451aadf3341604eb7581
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737991568875
+status: 3
+tags: []
+user_id: unknown

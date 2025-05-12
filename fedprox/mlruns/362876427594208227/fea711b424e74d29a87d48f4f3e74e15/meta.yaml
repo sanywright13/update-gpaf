@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/fea711b424e74d29a87d48f4f3e74e15/artifacts
+end_time: 1738005326084
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: fea711b424e74d29a87d48f4f3e74e15
+run_name: useful-stoat-766
+run_uuid: fea711b424e74d29a87d48f4f3e74e15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005325863
+status: 3
+tags: []
+user_id: unknown

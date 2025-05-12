@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/91deed2cdebf41b9b063ffe2d72bff76/artifacts
+end_time: 1737632196189
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 91deed2cdebf41b9b063ffe2d72bff76
+run_name: placid-toad-888
+run_uuid: 91deed2cdebf41b9b063ffe2d72bff76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737631912256
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9ccc7372dadc4b96a826c529595cc686/artifacts
+end_time: 1746013398033
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9ccc7372dadc4b96a826c529595cc686
+run_name: glamorous-boar-296
+run_uuid: 9ccc7372dadc4b96a826c529595cc686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013397990
+status: 4
+tags: []
+user_id: unknown

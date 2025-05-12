@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/70ffa2e8482143e1931ccbe42fd566e2/artifacts
+end_time: 1737390745997
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 70ffa2e8482143e1931ccbe42fd566e2
+run_name: fun-shrike-283
+run_uuid: 70ffa2e8482143e1931ccbe42fd566e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737390745966
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/7fb2b8692d394968ac078da65d8c2be0/artifacts
+end_time: 1738149619509
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 7fb2b8692d394968ac078da65d8c2be0
+run_name: upset-fox-905
+run_uuid: 7fb2b8692d394968ac078da65d8c2be0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738149619304
+status: 3
+tags: []
+user_id: unknown

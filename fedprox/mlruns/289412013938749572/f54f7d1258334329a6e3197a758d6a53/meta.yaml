@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f54f7d1258334329a6e3197a758d6a53/artifacts
+end_time: 1746019158847
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f54f7d1258334329a6e3197a758d6a53
+run_name: languid-shad-29
+run_uuid: f54f7d1258334329a6e3197a758d6a53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019158418
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/627526490956875341/38aae3e8737347a4a31dc9f76e2873e5/artifacts
+end_time: 1737934519854
+entry_point_name: ''
+experiment_id: '627526490956875341'
+lifecycle_stage: active
+run_id: 38aae3e8737347a4a31dc9f76e2873e5
+run_name: brawny-sow-999
+run_uuid: 38aae3e8737347a4a31dc9f76e2873e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737928329627
+status: 3
+tags: []
+user_id: unknown

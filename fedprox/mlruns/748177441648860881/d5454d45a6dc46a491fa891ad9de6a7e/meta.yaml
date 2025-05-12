@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d5454d45a6dc46a491fa891ad9de6a7e/artifacts
+end_time: 1740077838541
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d5454d45a6dc46a491fa891ad9de6a7e
+run_name: persistent-skink-101
+run_uuid: d5454d45a6dc46a491fa891ad9de6a7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740077838284
+status: 3
+tags: []
+user_id: unknown

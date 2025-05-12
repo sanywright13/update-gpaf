@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/4f60946cb6cd4ed483c1fda65e1062ea/artifacts
+end_time: 1736888381840
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 4f60946cb6cd4ed483c1fda65e1062ea
+run_name: agreeable-steed-359
+run_uuid: 4f60946cb6cd4ed483c1fda65e1062ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888381800
+status: 3
+tags: []
+user_id: unknown

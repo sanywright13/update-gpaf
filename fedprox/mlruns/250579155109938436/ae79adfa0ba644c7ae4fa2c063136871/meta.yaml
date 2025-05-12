@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/ae79adfa0ba644c7ae4fa2c063136871/artifacts
+end_time: 1738150761073
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: ae79adfa0ba644c7ae4fa2c063136871
+run_name: fun-rat-260
+run_uuid: ae79adfa0ba644c7ae4fa2c063136871
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738150587739
+status: 3
+tags: []
+user_id: unknown

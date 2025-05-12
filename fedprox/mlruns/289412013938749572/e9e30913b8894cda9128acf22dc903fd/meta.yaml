@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e9e30913b8894cda9128acf22dc903fd/artifacts
+end_time: 1746023693940
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e9e30913b8894cda9128acf22dc903fd
+run_name: bedecked-worm-702
+run_uuid: e9e30913b8894cda9128acf22dc903fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023693544
+status: 3
+tags: []
+user_id: unknown

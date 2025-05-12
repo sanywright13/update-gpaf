@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c07178c88f01431aaeabe151b44cf1df/artifacts
+end_time: 1738158489234
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c07178c88f01431aaeabe151b44cf1df
+run_name: adaptable-toad-889
+run_uuid: c07178c88f01431aaeabe151b44cf1df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158489017
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/41ecc731ab7c4af89eca630d5ca36a40/artifacts
+end_time: 1736889016168
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 41ecc731ab7c4af89eca630d5ca36a40
+run_name: bald-sponge-690
+run_uuid: 41ecc731ab7c4af89eca630d5ca36a40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889016135
+status: 3
+tags: []
+user_id: unknown

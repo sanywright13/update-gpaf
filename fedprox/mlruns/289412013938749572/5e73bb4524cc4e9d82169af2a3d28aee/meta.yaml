@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5e73bb4524cc4e9d82169af2a3d28aee/artifacts
+end_time: 1746013358813
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5e73bb4524cc4e9d82169af2a3d28aee
+run_name: burly-worm-369
+run_uuid: 5e73bb4524cc4e9d82169af2a3d28aee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013358772
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f68e978d64ba45429e8314b94dca8265/artifacts
+end_time: 1746023692451
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f68e978d64ba45429e8314b94dca8265
+run_name: crawling-squid-306
+run_uuid: f68e978d64ba45429e8314b94dca8265
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023692021
+status: 3
+tags: []
+user_id: unknown

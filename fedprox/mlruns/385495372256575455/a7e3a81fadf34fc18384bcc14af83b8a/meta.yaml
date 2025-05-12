@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/a7e3a81fadf34fc18384bcc14af83b8a/artifacts
+end_time: 1737471868426
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: a7e3a81fadf34fc18384bcc14af83b8a
+run_name: lyrical-doe-345
+run_uuid: a7e3a81fadf34fc18384bcc14af83b8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737471868398
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/32caaf06278e42dda3ad947b9bca6b3e/artifacts
+end_time: 1737564296247
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 32caaf06278e42dda3ad947b9bca6b3e
+run_name: smiling-trout-96
+run_uuid: 32caaf06278e42dda3ad947b9bca6b3e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564296207
+status: 3
+tags: []
+user_id: unknown

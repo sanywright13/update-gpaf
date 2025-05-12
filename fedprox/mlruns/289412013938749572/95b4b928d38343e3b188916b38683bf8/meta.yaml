@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/95b4b928d38343e3b188916b38683bf8/artifacts
+end_time: 1746011593222
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 95b4b928d38343e3b188916b38683bf8
+run_name: salty-crab-484
+run_uuid: 95b4b928d38343e3b188916b38683bf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011593181
+status: 4
+tags: []
+user_id: unknown

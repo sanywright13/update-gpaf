@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/08454856935f4ba7b7c566126e4edc04/artifacts
+end_time: 1744624196589
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 08454856935f4ba7b7c566126e4edc04
+run_name: wistful-boar-505
+run_uuid: 08454856935f4ba7b7c566126e4edc04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744624159090
+status: 3
+tags: []
+user_id: unknown

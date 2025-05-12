@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2ffcdc2a57a14a5ab1db8b5ff07a3d92/artifacts
+end_time: 1746013369918
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2ffcdc2a57a14a5ab1db8b5ff07a3d92
+run_name: capricious-wasp-173
+run_uuid: 2ffcdc2a57a14a5ab1db8b5ff07a3d92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013369876
+status: 4
+tags: []
+user_id: unknown

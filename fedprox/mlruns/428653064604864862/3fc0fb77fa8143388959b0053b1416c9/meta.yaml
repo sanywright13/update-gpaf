@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/3fc0fb77fa8143388959b0053b1416c9/artifacts
+end_time: 1737562852979
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 3fc0fb77fa8143388959b0053b1416c9
+run_name: fearless-wasp-302
+run_uuid: 3fc0fb77fa8143388959b0053b1416c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737562852944
+status: 3
+tags: []
+user_id: unknown

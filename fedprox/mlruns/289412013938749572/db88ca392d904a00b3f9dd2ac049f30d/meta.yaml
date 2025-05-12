@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/db88ca392d904a00b3f9dd2ac049f30d/artifacts
+end_time: 1746021806717
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: db88ca392d904a00b3f9dd2ac049f30d
+run_name: adventurous-flea-174
+run_uuid: db88ca392d904a00b3f9dd2ac049f30d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021806622
+status: 4
+tags: []
+user_id: unknown

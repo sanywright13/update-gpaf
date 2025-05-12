@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/be99f22b5109487ea6fe685304b4f4dc/artifacts
+end_time: 1746011578147
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: be99f22b5109487ea6fe685304b4f4dc
+run_name: mysterious-flea-50
+run_uuid: be99f22b5109487ea6fe685304b4f4dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011578112
+status: 4
+tags: []
+user_id: unknown

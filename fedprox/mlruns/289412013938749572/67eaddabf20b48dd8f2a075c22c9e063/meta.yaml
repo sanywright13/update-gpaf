@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/67eaddabf20b48dd8f2a075c22c9e063/artifacts
+end_time: 1746013369119
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 67eaddabf20b48dd8f2a075c22c9e063
+run_name: bemused-colt-728
+run_uuid: 67eaddabf20b48dd8f2a075c22c9e063
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013369074
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bad5f563957944ac8b3592c085ee1a1a/artifacts
+end_time: 1746018053101
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bad5f563957944ac8b3592c085ee1a1a
+run_name: bold-ape-575
+run_uuid: bad5f563957944ac8b3592c085ee1a1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018053018
+status: 4
+tags: []
+user_id: unknown

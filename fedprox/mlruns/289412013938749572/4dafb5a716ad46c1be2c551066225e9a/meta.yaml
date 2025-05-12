@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4dafb5a716ad46c1be2c551066225e9a/artifacts
+end_time: 1746018366215
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4dafb5a716ad46c1be2c551066225e9a
+run_name: languid-smelt-307
+run_uuid: 4dafb5a716ad46c1be2c551066225e9a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018366133
+status: 4
+tags: []
+user_id: unknown

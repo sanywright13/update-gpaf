@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ae85f3c63f5e44cc8bd1da1e8113c9fc/artifacts
+end_time: 1740078883960
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ae85f3c63f5e44cc8bd1da1e8113c9fc
+run_name: righteous-cow-237
+run_uuid: ae85f3c63f5e44cc8bd1da1e8113c9fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078799294
+status: 3
+tags: []
+user_id: unknown

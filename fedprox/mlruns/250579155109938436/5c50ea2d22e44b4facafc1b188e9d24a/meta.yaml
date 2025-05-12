@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/5c50ea2d22e44b4facafc1b188e9d24a/artifacts
+end_time: 1738277237539
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 5c50ea2d22e44b4facafc1b188e9d24a
+run_name: dashing-crab-67
+run_uuid: 5c50ea2d22e44b4facafc1b188e9d24a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738277237502
+status: 3
+tags: []
+user_id: unknown

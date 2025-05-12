@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0883d88eb28b4d17a691f5a29559926f/artifacts
+end_time: 1746013405414
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0883d88eb28b4d17a691f5a29559926f
+run_name: fun-newt-219
+run_uuid: 0883d88eb28b4d17a691f5a29559926f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013405366
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/57ab0c75ec3a409a957925d62e44f8a6/artifacts
+end_time: 1744466228509
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 57ab0c75ec3a409a957925d62e44f8a6
+run_name: salty-fly-646
+run_uuid: 57ab0c75ec3a409a957925d62e44f8a6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744466166461
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/05a73cb1fd904cf49dbff725c8e64f04/artifacts
+end_time: 1737663081365
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 05a73cb1fd904cf49dbff725c8e64f04
+run_name: bouncy-jay-454
+run_uuid: 05a73cb1fd904cf49dbff725c8e64f04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737663081135
+status: 3
+tags: []
+user_id: unknown

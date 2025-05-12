@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/eb68cd2709ee4cf2a68c570ead85b359/artifacts
+end_time: 1744467172374
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: eb68cd2709ee4cf2a68c570ead85b359
+run_name: sassy-eel-907
+run_uuid: eb68cd2709ee4cf2a68c570ead85b359
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744467119511
+status: 3
+tags: []
+user_id: unknown

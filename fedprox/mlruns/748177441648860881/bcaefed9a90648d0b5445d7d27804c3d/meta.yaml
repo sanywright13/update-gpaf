@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/bcaefed9a90648d0b5445d7d27804c3d/artifacts
+end_time: 1742256894021
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: bcaefed9a90648d0b5445d7d27804c3d
+run_name: stately-conch-445
+run_uuid: bcaefed9a90648d0b5445d7d27804c3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256893909
+status: 3
+tags: []
+user_id: unknown

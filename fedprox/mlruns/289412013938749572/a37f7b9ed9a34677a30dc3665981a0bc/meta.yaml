@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a37f7b9ed9a34677a30dc3665981a0bc/artifacts
+end_time: 1746011594009
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a37f7b9ed9a34677a30dc3665981a0bc
+run_name: dapper-wren-19
+run_uuid: a37f7b9ed9a34677a30dc3665981a0bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011593969
+status: 4
+tags: []
+user_id: unknown

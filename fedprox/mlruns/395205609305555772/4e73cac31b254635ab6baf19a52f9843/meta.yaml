@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/4e73cac31b254635ab6baf19a52f9843/artifacts
+end_time: 1736889193205
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 4e73cac31b254635ab6baf19a52f9843
+run_name: receptive-calf-564
+run_uuid: 4e73cac31b254635ab6baf19a52f9843
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889168518
+status: 3
+tags: []
+user_id: unknown

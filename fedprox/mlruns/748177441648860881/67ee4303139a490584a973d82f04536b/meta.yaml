@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/67ee4303139a490584a973d82f04536b/artifacts
+end_time: 1744483957104
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 67ee4303139a490584a973d82f04536b
+run_name: polite-hound-74
+run_uuid: 67ee4303139a490584a973d82f04536b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483956514
+status: 3
+tags: []
+user_id: unknown

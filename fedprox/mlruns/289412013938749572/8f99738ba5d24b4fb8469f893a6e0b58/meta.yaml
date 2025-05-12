@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8f99738ba5d24b4fb8469f893a6e0b58/artifacts
+end_time: 1746011651381
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8f99738ba5d24b4fb8469f893a6e0b58
+run_name: marvelous-boar-971
+run_uuid: 8f99738ba5d24b4fb8469f893a6e0b58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011651338
+status: 4
+tags: []
+user_id: unknown

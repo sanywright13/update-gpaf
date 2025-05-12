@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1b06145cbd09432f82e0d142e66f1945/artifacts
+end_time: 1737582915787
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1b06145cbd09432f82e0d142e66f1945
+run_name: adventurous-bug-979
+run_uuid: 1b06145cbd09432f82e0d142e66f1945
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737582915761
+status: 3
+tags: []
+user_id: unknown

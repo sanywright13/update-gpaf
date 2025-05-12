@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/762eb8da270c4b8e88d3e6ff587478d2/artifacts
+end_time: 1746023754784
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 762eb8da270c4b8e88d3e6ff587478d2
+run_name: orderly-trout-544
+run_uuid: 762eb8da270c4b8e88d3e6ff587478d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023754697
+status: 4
+tags: []
+user_id: unknown

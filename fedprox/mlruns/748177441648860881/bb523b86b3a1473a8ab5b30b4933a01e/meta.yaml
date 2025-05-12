@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/bb523b86b3a1473a8ab5b30b4933a01e/artifacts
+end_time: 1742341872473
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: bb523b86b3a1473a8ab5b30b4933a01e
+run_name: secretive-flea-430
+run_uuid: bb523b86b3a1473a8ab5b30b4933a01e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742341872284
+status: 4
+tags: []
+user_id: unknown

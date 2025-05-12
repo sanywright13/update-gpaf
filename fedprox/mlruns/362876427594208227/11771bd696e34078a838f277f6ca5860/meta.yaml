@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/11771bd696e34078a838f277f6ca5860/artifacts
+end_time: 1738005539237
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 11771bd696e34078a838f277f6ca5860
+run_name: bright-stag-868
+run_uuid: 11771bd696e34078a838f277f6ca5860
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005539022
+status: 3
+tags: []
+user_id: unknown

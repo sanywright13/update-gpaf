@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bec6316ce4ad4ff1861129e8b4285b9b/artifacts
+end_time: 1746017488690
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bec6316ce4ad4ff1861129e8b4285b9b
+run_name: marvelous-zebra-907
+run_uuid: bec6316ce4ad4ff1861129e8b4285b9b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017488599
+status: 4
+tags: []
+user_id: unknown

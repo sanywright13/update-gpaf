@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9e97a0b6b70e4485a780ed8800761b43/artifacts
+end_time: 1746013429451
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9e97a0b6b70e4485a780ed8800761b43
+run_name: serious-frog-345
+run_uuid: 9e97a0b6b70e4485a780ed8800761b43
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013429402
+status: 4
+tags: []
+user_id: unknown

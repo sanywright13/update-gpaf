@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ddb9d7e9edb740f59bd37f71c8b27b27/artifacts
+end_time: 1746023695472
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ddb9d7e9edb740f59bd37f71c8b27b27
+run_name: rare-hound-709
+run_uuid: ddb9d7e9edb740f59bd37f71c8b27b27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023695068
+status: 3
+tags: []
+user_id: unknown

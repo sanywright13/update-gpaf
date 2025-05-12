@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b474bf4986c14f63ab498998ead899bc/artifacts
+end_time: 1746013403224
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b474bf4986c14f63ab498998ead899bc
+run_name: colorful-smelt-962
+run_uuid: b474bf4986c14f63ab498998ead899bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013403175
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/cdaa91e72d5b4ba1a45f52a18f7a16df/artifacts
+end_time: 1738255849813
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: cdaa91e72d5b4ba1a45f52a18f7a16df
+run_name: loud-fly-388
+run_uuid: cdaa91e72d5b4ba1a45f52a18f7a16df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738255842749
+status: 3
+tags: []
+user_id: unknown

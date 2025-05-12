@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/bbea8ab0a43f4bf19996fc3396e81b1f/artifacts
+end_time: 1744474795472
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: bbea8ab0a43f4bf19996fc3396e81b1f
+run_name: mercurial-snipe-782
+run_uuid: bbea8ab0a43f4bf19996fc3396e81b1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744474591548
+status: 3
+tags: []
+user_id: unknown

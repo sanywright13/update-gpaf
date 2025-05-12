@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c21db2def306401aab0e971ed170870f/artifacts
+end_time: 1746013443923
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c21db2def306401aab0e971ed170870f
+run_name: able-perch-555
+run_uuid: c21db2def306401aab0e971ed170870f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013443878
+status: 4
+tags: []
+user_id: unknown

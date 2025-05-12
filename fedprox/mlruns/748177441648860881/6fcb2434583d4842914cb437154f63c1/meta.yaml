@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6fcb2434583d4842914cb437154f63c1/artifacts
+end_time: 1744483948807
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6fcb2434583d4842914cb437154f63c1
+run_name: nervous-squirrel-0
+run_uuid: 6fcb2434583d4842914cb437154f63c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483948200
+status: 3
+tags: []
+user_id: unknown

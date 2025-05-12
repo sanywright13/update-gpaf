@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f8e7067048e3469389c464d8a67de53c/artifacts
+end_time: 1740091873768
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f8e7067048e3469389c464d8a67de53c
+run_name: charming-seal-67
+run_uuid: f8e7067048e3469389c464d8a67de53c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740091873645
+status: 3
+tags: []
+user_id: unknown

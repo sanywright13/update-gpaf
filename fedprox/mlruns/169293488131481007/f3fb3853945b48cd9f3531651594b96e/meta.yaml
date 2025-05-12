@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/f3fb3853945b48cd9f3531651594b96e/artifacts
+end_time: 1737383049015
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: f3fb3853945b48cd9f3531651594b96e
+run_name: painted-boar-407
+run_uuid: f3fb3853945b48cd9f3531651594b96e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382856171
+status: 3
+tags: []
+user_id: unknown

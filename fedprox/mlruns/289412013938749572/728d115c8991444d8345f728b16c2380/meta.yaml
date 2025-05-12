@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/728d115c8991444d8345f728b16c2380/artifacts
+end_time: 1746011579809
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 728d115c8991444d8345f728b16c2380
+run_name: bold-bird-659
+run_uuid: 728d115c8991444d8345f728b16c2380
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011579770
+status: 4
+tags: []
+user_id: unknown

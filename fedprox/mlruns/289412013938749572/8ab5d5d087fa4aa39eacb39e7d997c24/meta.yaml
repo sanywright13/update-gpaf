@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8ab5d5d087fa4aa39eacb39e7d997c24/artifacts
+end_time: 1746011638839
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8ab5d5d087fa4aa39eacb39e7d997c24
+run_name: bright-steed-231
+run_uuid: 8ab5d5d087fa4aa39eacb39e7d997c24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011638794
+status: 4
+tags: []
+user_id: unknown

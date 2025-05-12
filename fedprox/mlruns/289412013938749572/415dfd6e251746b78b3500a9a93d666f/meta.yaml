@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/415dfd6e251746b78b3500a9a93d666f/artifacts
+end_time: 1746013365776
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 415dfd6e251746b78b3500a9a93d666f
+run_name: nebulous-turtle-321
+run_uuid: 415dfd6e251746b78b3500a9a93d666f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013365730
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a6fc2b22d92f409291e82d843c213b8d/artifacts
+end_time: 1744469422150
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a6fc2b22d92f409291e82d843c213b8d
+run_name: chill-kit-615
+run_uuid: a6fc2b22d92f409291e82d843c213b8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744469200631
+status: 3
+tags: []
+user_id: unknown

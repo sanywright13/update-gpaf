@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0ba812cfecf5402b995c23d886e848e2/artifacts
+end_time: 1746013376379
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0ba812cfecf5402b995c23d886e848e2
+run_name: orderly-mare-777
+run_uuid: 0ba812cfecf5402b995c23d886e848e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013376337
+status: 4
+tags: []
+user_id: unknown

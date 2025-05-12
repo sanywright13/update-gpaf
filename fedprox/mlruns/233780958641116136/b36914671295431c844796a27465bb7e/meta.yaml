@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/b36914671295431c844796a27465bb7e/artifacts
+end_time: 1738862387796
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: b36914671295431c844796a27465bb7e
+run_name: gentle-horse-457
+run_uuid: b36914671295431c844796a27465bb7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862387764
+status: 4
+tags: []
+user_id: unknown

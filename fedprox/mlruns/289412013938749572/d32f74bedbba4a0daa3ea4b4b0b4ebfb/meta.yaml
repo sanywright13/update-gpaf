@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d32f74bedbba4a0daa3ea4b4b0b4ebfb/artifacts
+end_time: 1746013375445
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d32f74bedbba4a0daa3ea4b4b0b4ebfb
+run_name: likeable-penguin-218
+run_uuid: d32f74bedbba4a0daa3ea4b4b0b4ebfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013375398
+status: 4
+tags: []
+user_id: unknown

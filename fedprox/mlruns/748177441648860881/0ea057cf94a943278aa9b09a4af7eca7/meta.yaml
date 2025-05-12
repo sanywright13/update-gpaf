@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0ea057cf94a943278aa9b09a4af7eca7/artifacts
+end_time: 1744492722306
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0ea057cf94a943278aa9b09a4af7eca7
+run_name: caring-grouse-716
+run_uuid: 0ea057cf94a943278aa9b09a4af7eca7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492721905
+status: 3
+tags: []
+user_id: unknown

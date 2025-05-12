@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b3f278282f104bc88994cd17c58c6fda/artifacts
+end_time: 1746018195759
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b3f278282f104bc88994cd17c58c6fda
+run_name: selective-grouse-760
+run_uuid: b3f278282f104bc88994cd17c58c6fda
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018195334
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a3a98c2d5f14489c89056d8f305f146b/artifacts
+end_time: 1746013364046
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a3a98c2d5f14489c89056d8f305f146b
+run_name: fearless-grouse-616
+run_uuid: a3a98c2d5f14489c89056d8f305f146b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013364005
+status: 4
+tags: []
+user_id: unknown

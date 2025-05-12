@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1755bd32ccca43ef86859d1f67cea68f/artifacts
+end_time: 1746013422368
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1755bd32ccca43ef86859d1f67cea68f
+run_name: overjoyed-shad-12
+run_uuid: 1755bd32ccca43ef86859d1f67cea68f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013422319
+status: 4
+tags: []
+user_id: unknown

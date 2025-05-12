@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/3fd9f726e7424b8395935aebc5aa903b/artifacts
+end_time: 1737563405859
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 3fd9f726e7424b8395935aebc5aa903b
+run_name: merciful-sow-647
+run_uuid: 3fd9f726e7424b8395935aebc5aa903b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563405837
+status: 3
+tags: []
+user_id: unknown

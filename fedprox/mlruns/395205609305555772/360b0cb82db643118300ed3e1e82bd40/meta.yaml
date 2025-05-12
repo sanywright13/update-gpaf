@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/360b0cb82db643118300ed3e1e82bd40/artifacts
+end_time: 1736888378866
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 360b0cb82db643118300ed3e1e82bd40
+run_name: nimble-skink-743
+run_uuid: 360b0cb82db643118300ed3e1e82bd40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888378845
+status: 3
+tags: []
+user_id: unknown

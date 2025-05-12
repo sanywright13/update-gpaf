@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/4ac77afaf577496e87d9706b372b669d/artifacts
+end_time: 1742256846221
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 4ac77afaf577496e87d9706b372b669d
+run_name: luxuriant-perch-904
+run_uuid: 4ac77afaf577496e87d9706b372b669d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256846135
+status: 3
+tags: []
+user_id: unknown

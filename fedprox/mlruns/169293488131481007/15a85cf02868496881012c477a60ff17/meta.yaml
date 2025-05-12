@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/15a85cf02868496881012c477a60ff17/artifacts
+end_time: 1737463797657
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 15a85cf02868496881012c477a60ff17
+run_name: unruly-mouse-199
+run_uuid: 15a85cf02868496881012c477a60ff17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737463797628
+status: 3
+tags: []
+user_id: unknown

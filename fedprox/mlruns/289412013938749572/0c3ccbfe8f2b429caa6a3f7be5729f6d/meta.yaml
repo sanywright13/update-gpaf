@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0c3ccbfe8f2b429caa6a3f7be5729f6d/artifacts
+end_time: 1746023740508
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0c3ccbfe8f2b429caa6a3f7be5729f6d
+run_name: calm-ant-311
+run_uuid: 0c3ccbfe8f2b429caa6a3f7be5729f6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023740077
+status: 3
+tags: []
+user_id: unknown

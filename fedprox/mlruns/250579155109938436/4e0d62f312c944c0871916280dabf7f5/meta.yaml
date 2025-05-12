@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/4e0d62f312c944c0871916280dabf7f5/artifacts
+end_time: 1738158508209
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 4e0d62f312c944c0871916280dabf7f5
+run_name: thoughtful-fox-470
+run_uuid: 4e0d62f312c944c0871916280dabf7f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158508003
+status: 3
+tags: []
+user_id: unknown

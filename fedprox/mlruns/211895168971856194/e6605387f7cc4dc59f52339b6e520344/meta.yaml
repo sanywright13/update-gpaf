@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/e6605387f7cc4dc59f52339b6e520344/artifacts
+end_time: 1737915137624
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: e6605387f7cc4dc59f52339b6e520344
+run_name: unleashed-rook-901
+run_uuid: e6605387f7cc4dc59f52339b6e520344
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737912083464
+status: 3
+tags: []
+user_id: unknown

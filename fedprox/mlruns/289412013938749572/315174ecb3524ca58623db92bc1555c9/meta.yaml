@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/315174ecb3524ca58623db92bc1555c9/artifacts
+end_time: 1746013409431
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 315174ecb3524ca58623db92bc1555c9
+run_name: gifted-lamb-665
+run_uuid: 315174ecb3524ca58623db92bc1555c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013409378
+status: 4
+tags: []
+user_id: unknown

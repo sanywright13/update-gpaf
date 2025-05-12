@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/282552415979194402/d89cd10142514482a2b6134f643774da/artifacts
+end_time: 1737120688891
+entry_point_name: ''
+experiment_id: '282552415979194402'
+lifecycle_stage: active
+run_id: d89cd10142514482a2b6134f643774da
+run_name: hilarious-bass-160
+run_uuid: d89cd10142514482a2b6134f643774da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737120688858
+status: 4
+tags: []
+user_id: unknown

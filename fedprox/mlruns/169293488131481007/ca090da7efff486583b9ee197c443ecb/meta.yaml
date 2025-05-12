@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/ca090da7efff486583b9ee197c443ecb/artifacts
+end_time: 1737382490501
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: ca090da7efff486583b9ee197c443ecb
+run_name: gentle-ram-40
+run_uuid: ca090da7efff486583b9ee197c443ecb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382490479
+status: 3
+tags: []
+user_id: unknown

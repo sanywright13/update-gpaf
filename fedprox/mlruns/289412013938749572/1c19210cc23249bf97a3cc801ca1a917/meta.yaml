@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1c19210cc23249bf97a3cc801ca1a917/artifacts
+end_time: 1746011578155
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1c19210cc23249bf97a3cc801ca1a917
+run_name: bald-donkey-539
+run_uuid: 1c19210cc23249bf97a3cc801ca1a917
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011578116
+status: 4
+tags: []
+user_id: unknown

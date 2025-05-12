@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/26db48a8961944abaa07e6e5a4cbb647/artifacts
+end_time: 1746017713522
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 26db48a8961944abaa07e6e5a4cbb647
+run_name: sneaky-slug-553
+run_uuid: 26db48a8961944abaa07e6e5a4cbb647
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017713099
+status: 3
+tags: []
+user_id: unknown

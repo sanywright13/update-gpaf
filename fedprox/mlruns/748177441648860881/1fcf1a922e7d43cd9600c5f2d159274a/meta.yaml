@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/1fcf1a922e7d43cd9600c5f2d159274a/artifacts
+end_time: 1743211255182
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 1fcf1a922e7d43cd9600c5f2d159274a
+run_name: peaceful-stork-65
+run_uuid: 1fcf1a922e7d43cd9600c5f2d159274a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743211216741
+status: 3
+tags: []
+user_id: unknown

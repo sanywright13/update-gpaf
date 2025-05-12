@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/363171662d34447eaef1f23b71125e2c/artifacts
+end_time: 1746011592620
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 363171662d34447eaef1f23b71125e2c
+run_name: clean-whale-465
+run_uuid: 363171662d34447eaef1f23b71125e2c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011592584
+status: 4
+tags: []
+user_id: unknown

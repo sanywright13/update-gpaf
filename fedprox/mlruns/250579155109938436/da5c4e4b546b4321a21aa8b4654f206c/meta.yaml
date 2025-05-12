@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/da5c4e4b546b4321a21aa8b4654f206c/artifacts
+end_time: 1738159064580
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: da5c4e4b546b4321a21aa8b4654f206c
+run_name: bittersweet-gnat-935
+run_uuid: da5c4e4b546b4321a21aa8b4654f206c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738159064254
+status: 3
+tags: []
+user_id: unknown

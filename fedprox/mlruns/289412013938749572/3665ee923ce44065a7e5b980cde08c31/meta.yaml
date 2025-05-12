@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3665ee923ce44065a7e5b980cde08c31/artifacts
+end_time: 1746013433374
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3665ee923ce44065a7e5b980cde08c31
+run_name: wistful-cub-200
+run_uuid: 3665ee923ce44065a7e5b980cde08c31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013433324
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/253a12e2c0a74881a2706acaf46e5deb/artifacts
+end_time: 1746013426796
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 253a12e2c0a74881a2706acaf46e5deb
+run_name: bald-penguin-399
+run_uuid: 253a12e2c0a74881a2706acaf46e5deb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013426752
+status: 4
+tags: []
+user_id: unknown

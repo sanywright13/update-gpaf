@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/337b8a2190874ce5928931ea752f6c26/artifacts
+end_time: 1737393655101
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 337b8a2190874ce5928931ea752f6c26
+run_name: agreeable-seal-750
+run_uuid: 337b8a2190874ce5928931ea752f6c26
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737393654470
+status: 3
+tags: []
+user_id: unknown

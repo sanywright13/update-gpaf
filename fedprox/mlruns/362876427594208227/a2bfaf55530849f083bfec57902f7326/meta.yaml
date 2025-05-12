@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/a2bfaf55530849f083bfec57902f7326/artifacts
+end_time: 1737994792148
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: a2bfaf55530849f083bfec57902f7326
+run_name: sassy-jay-35
+run_uuid: a2bfaf55530849f083bfec57902f7326
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737993305457
+status: 3
+tags: []
+user_id: unknown

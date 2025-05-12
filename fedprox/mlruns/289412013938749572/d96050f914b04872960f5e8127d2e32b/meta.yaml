@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d96050f914b04872960f5e8127d2e32b/artifacts
+end_time: 1746011633712
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d96050f914b04872960f5e8127d2e32b
+run_name: skittish-dog-852
+run_uuid: d96050f914b04872960f5e8127d2e32b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011633668
+status: 4
+tags: []
+user_id: unknown

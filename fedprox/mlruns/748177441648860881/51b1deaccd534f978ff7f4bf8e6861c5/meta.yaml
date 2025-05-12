@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/51b1deaccd534f978ff7f4bf8e6861c5/artifacts
+end_time: 1744725445782
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 51b1deaccd534f978ff7f4bf8e6861c5
+run_name: exultant-frog-812
+run_uuid: 51b1deaccd534f978ff7f4bf8e6861c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744713600127
+status: 3
+tags: []
+user_id: unknown

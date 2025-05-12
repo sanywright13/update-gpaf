@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2cd6bdc104a149a18c51699fc199f765/artifacts
+end_time: 1738249428028
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2cd6bdc104a149a18c51699fc199f765
+run_name: shivering-cod-316
+run_uuid: 2cd6bdc104a149a18c51699fc199f765
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738249417824
+status: 3
+tags: []
+user_id: unknown

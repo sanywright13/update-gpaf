@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/6a22712de7f84e79bd2ebaf97258426b/artifacts
+end_time: 1736889013794
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 6a22712de7f84e79bd2ebaf97258426b
+run_name: salty-frog-738
+run_uuid: 6a22712de7f84e79bd2ebaf97258426b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889013761
+status: 3
+tags: []
+user_id: unknown

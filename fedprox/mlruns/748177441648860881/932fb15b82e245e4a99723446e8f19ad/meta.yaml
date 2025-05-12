@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/932fb15b82e245e4a99723446e8f19ad/artifacts
+end_time: 1740078399726
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 932fb15b82e245e4a99723446e8f19ad
+run_name: powerful-shrimp-493
+run_uuid: 932fb15b82e245e4a99723446e8f19ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078392829
+status: 3
+tags: []
+user_id: unknown

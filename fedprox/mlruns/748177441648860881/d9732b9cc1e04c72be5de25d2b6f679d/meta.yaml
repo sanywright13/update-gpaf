@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d9732b9cc1e04c72be5de25d2b6f679d/artifacts
+end_time: 1744492709443
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d9732b9cc1e04c72be5de25d2b6f679d
+run_name: delicate-rat-715
+run_uuid: d9732b9cc1e04c72be5de25d2b6f679d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492709082
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/8ee7849024d248f38dceb1f75c51842a/artifacts
+end_time: 1738154802470
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 8ee7849024d248f38dceb1f75c51842a
+run_name: abundant-foal-445
+run_uuid: 8ee7849024d248f38dceb1f75c51842a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738154802261
+status: 3
+tags: []
+user_id: unknown

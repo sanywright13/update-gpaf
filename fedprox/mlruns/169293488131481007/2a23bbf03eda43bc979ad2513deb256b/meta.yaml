@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/2a23bbf03eda43bc979ad2513deb256b/artifacts
+end_time: 1737466691948
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 2a23bbf03eda43bc979ad2513deb256b
+run_name: aged-chimp-898
+run_uuid: 2a23bbf03eda43bc979ad2513deb256b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737466691915
+status: 3
+tags: []
+user_id: unknown

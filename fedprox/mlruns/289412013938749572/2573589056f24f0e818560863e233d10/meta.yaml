@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2573589056f24f0e818560863e233d10/artifacts
+end_time: 1746011648091
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2573589056f24f0e818560863e233d10
+run_name: sincere-carp-444
+run_uuid: 2573589056f24f0e818560863e233d10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011648047
+status: 4
+tags: []
+user_id: unknown

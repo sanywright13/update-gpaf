@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/00324547a32a4776a6ecb2346388de6c/artifacts
+end_time: 1738254581387
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 00324547a32a4776a6ecb2346388de6c
+run_name: clean-penguin-546
+run_uuid: 00324547a32a4776a6ecb2346388de6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738254573940
+status: 3
+tags: []
+user_id: unknown

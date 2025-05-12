@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/361b5bb6098a42b2b02287b6677f8416/artifacts
+end_time: 1746011652723
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 361b5bb6098a42b2b02287b6677f8416
+run_name: burly-smelt-200
+run_uuid: 361b5bb6098a42b2b02287b6677f8416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011652680
+status: 4
+tags: []
+user_id: unknown

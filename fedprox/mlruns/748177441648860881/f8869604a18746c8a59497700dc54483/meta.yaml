@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f8869604a18746c8a59497700dc54483/artifacts
+end_time: 1744483916184
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f8869604a18746c8a59497700dc54483
+run_name: rebellious-vole-167
+run_uuid: f8869604a18746c8a59497700dc54483
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483915686
+status: 3
+tags: []
+user_id: unknown

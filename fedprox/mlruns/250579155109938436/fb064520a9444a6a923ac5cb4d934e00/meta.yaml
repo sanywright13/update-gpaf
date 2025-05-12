@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/fb064520a9444a6a923ac5cb4d934e00/artifacts
+end_time: 1738258060932
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: fb064520a9444a6a923ac5cb4d934e00
+run_name: unruly-horse-670
+run_uuid: fb064520a9444a6a923ac5cb4d934e00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258050691
+status: 3
+tags: []
+user_id: unknown

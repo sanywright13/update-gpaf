@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c59fdf4cfd93492eaad720e3833f3d8a/artifacts
+end_time: 1742256870739
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c59fdf4cfd93492eaad720e3833f3d8a
+run_name: classy-snipe-36
+run_uuid: c59fdf4cfd93492eaad720e3833f3d8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256870623
+status: 3
+tags: []
+user_id: unknown

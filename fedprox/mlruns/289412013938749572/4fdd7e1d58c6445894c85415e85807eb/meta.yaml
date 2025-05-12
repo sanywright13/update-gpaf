@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4fdd7e1d58c6445894c85415e85807eb/artifacts
+end_time: 1746013425218
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4fdd7e1d58c6445894c85415e85807eb
+run_name: sassy-hound-760
+run_uuid: 4fdd7e1d58c6445894c85415e85807eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013425168
+status: 4
+tags: []
+user_id: unknown

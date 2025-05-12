@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/e4ca1b07c65e460c85a976e3d37f0995/artifacts
+end_time: 1737117064448
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: e4ca1b07c65e460c85a976e3d37f0995
+run_name: smiling-ram-194
+run_uuid: e4ca1b07c65e460c85a976e3d37f0995
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117064428
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c3b297f48e984c3f81854bc286017e79/artifacts
+end_time: 1737587171492
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c3b297f48e984c3f81854bc286017e79
+run_name: sedate-conch-693
+run_uuid: c3b297f48e984c3f81854bc286017e79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737587166653
+status: 3
+tags: []
+user_id: unknown

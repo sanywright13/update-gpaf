@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3d76af55fa6741a285ad571264c39043/artifacts
+end_time: 1746011621770
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3d76af55fa6741a285ad571264c39043
+run_name: puzzled-dolphin-954
+run_uuid: 3d76af55fa6741a285ad571264c39043
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011621729
+status: 4
+tags: []
+user_id: unknown

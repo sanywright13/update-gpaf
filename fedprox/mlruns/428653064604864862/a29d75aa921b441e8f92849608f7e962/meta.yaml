@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/a29d75aa921b441e8f92849608f7e962/artifacts
+end_time: 1737563174680
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: a29d75aa921b441e8f92849608f7e962
+run_name: smiling-mouse-861
+run_uuid: a29d75aa921b441e8f92849608f7e962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563174649
+status: 3
+tags: []
+user_id: unknown

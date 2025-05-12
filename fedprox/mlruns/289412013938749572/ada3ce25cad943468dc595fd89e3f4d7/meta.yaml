@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ada3ce25cad943468dc595fd89e3f4d7/artifacts
+end_time: 1746013382995
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ada3ce25cad943468dc595fd89e3f4d7
+run_name: grandiose-shrew-748
+run_uuid: ada3ce25cad943468dc595fd89e3f4d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013382951
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/583563997509513971/790ed75e06c8431ca60134196a786296/artifacts
+end_time: 1744732409660
+entry_point_name: ''
+experiment_id: '583563997509513971'
+lifecycle_stage: active
+run_id: 790ed75e06c8431ca60134196a786296
+run_name: loud-owl-364
+run_uuid: 790ed75e06c8431ca60134196a786296
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744728265637
+status: 3
+tags: []
+user_id: unknown

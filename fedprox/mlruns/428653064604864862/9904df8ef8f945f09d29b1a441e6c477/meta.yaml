@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/9904df8ef8f945f09d29b1a441e6c477/artifacts
+end_time: 1737562853333
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 9904df8ef8f945f09d29b1a441e6c477
+run_name: rare-sloth-174
+run_uuid: 9904df8ef8f945f09d29b1a441e6c477
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737562848543
+status: 3
+tags: []
+user_id: unknown

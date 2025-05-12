@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e8a948b5326a477d8c87965a6570c647/artifacts
+end_time: 1746023804275
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e8a948b5326a477d8c87965a6570c647
+run_name: gentle-fish-466
+run_uuid: e8a948b5326a477d8c87965a6570c647
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023804150
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f550f2d0460c40e5a765865ec9e21f43/artifacts
+end_time: 1743375970499
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f550f2d0460c40e5a765865ec9e21f43
+run_name: ambitious-goose-513
+run_uuid: f550f2d0460c40e5a765865ec9e21f43
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743375969951
+status: 3
+tags: []
+user_id: unknown

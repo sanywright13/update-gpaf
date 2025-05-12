@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c2e5e3ead25f4373910d50d6b9ee4193/artifacts
+end_time: 1746011634623
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c2e5e3ead25f4373910d50d6b9ee4193
+run_name: ambitious-panda-772
+run_uuid: c2e5e3ead25f4373910d50d6b9ee4193
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011634580
+status: 4
+tags: []
+user_id: unknown

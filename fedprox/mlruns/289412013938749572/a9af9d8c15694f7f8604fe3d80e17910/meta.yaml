@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a9af9d8c15694f7f8604fe3d80e17910/artifacts
+end_time: 1746013441408
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a9af9d8c15694f7f8604fe3d80e17910
+run_name: zealous-newt-419
+run_uuid: a9af9d8c15694f7f8604fe3d80e17910
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013441358
+status: 4
+tags: []
+user_id: unknown

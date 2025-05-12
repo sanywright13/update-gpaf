@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2e31f03dfda44242bb58a3223173d83f/artifacts
+end_time: 1746018026359
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2e31f03dfda44242bb58a3223173d83f
+run_name: sincere-fawn-187
+run_uuid: 2e31f03dfda44242bb58a3223173d83f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018026248
+status: 4
+tags: []
+user_id: unknown

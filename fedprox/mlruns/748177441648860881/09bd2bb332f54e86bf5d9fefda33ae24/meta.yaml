@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/09bd2bb332f54e86bf5d9fefda33ae24/artifacts
+end_time: 1740078883219
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 09bd2bb332f54e86bf5d9fefda33ae24
+run_name: rogue-bee-825
+run_uuid: 09bd2bb332f54e86bf5d9fefda33ae24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078797780
+status: 3
+tags: []
+user_id: unknown

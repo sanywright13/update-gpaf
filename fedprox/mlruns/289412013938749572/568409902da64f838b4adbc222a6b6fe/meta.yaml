@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/568409902da64f838b4adbc222a6b6fe/artifacts
+end_time: 1746013425205
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 568409902da64f838b4adbc222a6b6fe
+run_name: exultant-crab-154
+run_uuid: 568409902da64f838b4adbc222a6b6fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013425160
+status: 4
+tags: []
+user_id: unknown

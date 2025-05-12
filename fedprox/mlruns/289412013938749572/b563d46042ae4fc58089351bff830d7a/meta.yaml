@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b563d46042ae4fc58089351bff830d7a/artifacts
+end_time: 1746023785572
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b563d46042ae4fc58089351bff830d7a
+run_name: defiant-fish-156
+run_uuid: b563d46042ae4fc58089351bff830d7a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023785476
+status: 4
+tags: []
+user_id: unknown

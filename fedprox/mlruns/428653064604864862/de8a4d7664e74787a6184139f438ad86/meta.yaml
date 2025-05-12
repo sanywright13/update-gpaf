@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/de8a4d7664e74787a6184139f438ad86/artifacts
+end_time: 1737564425615
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: de8a4d7664e74787a6184139f438ad86
+run_name: capable-crow-821
+run_uuid: de8a4d7664e74787a6184139f438ad86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564425574
+status: 3
+tags: []
+user_id: unknown

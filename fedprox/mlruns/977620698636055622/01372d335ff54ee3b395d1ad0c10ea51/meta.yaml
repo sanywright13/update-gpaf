@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/977620698636055622/01372d335ff54ee3b395d1ad0c10ea51/artifacts
+end_time: 1737839172603
+entry_point_name: ''
+experiment_id: '977620698636055622'
+lifecycle_stage: active
+run_id: 01372d335ff54ee3b395d1ad0c10ea51
+run_name: amazing-koi-460
+run_uuid: 01372d335ff54ee3b395d1ad0c10ea51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737838718416
+status: 3
+tags: []
+user_id: unknown

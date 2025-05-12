@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bcf97bfd74494a579b424a73eb651b05/artifacts
+end_time: 1746011620946
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bcf97bfd74494a579b424a73eb651b05
+run_name: rambunctious-fox-190
+run_uuid: bcf97bfd74494a579b424a73eb651b05
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011620909
+status: 4
+tags: []
+user_id: unknown

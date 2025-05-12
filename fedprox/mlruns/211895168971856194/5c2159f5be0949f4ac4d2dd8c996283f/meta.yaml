@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/5c2159f5be0949f4ac4d2dd8c996283f/artifacts
+end_time: 1737906031120
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 5c2159f5be0949f4ac4d2dd8c996283f
+run_name: selective-moose-233
+run_uuid: 5c2159f5be0949f4ac4d2dd8c996283f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737905496548
+status: 3
+tags: []
+user_id: unknown

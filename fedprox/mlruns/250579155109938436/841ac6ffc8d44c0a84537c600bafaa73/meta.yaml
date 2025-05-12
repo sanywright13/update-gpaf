@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/841ac6ffc8d44c0a84537c600bafaa73/artifacts
+end_time: 1738240688784
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 841ac6ffc8d44c0a84537c600bafaa73
+run_name: luminous-fawn-690
+run_uuid: 841ac6ffc8d44c0a84537c600bafaa73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240688712
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/521ff97129e84965a73a21a5200adff1/artifacts
+end_time: 1746019300377
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 521ff97129e84965a73a21a5200adff1
+run_name: wistful-horse-25
+run_uuid: 521ff97129e84965a73a21a5200adff1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019299930
+status: 3
+tags: []
+user_id: unknown

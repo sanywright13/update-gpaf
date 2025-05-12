@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/977428073495976397/138318c625784b008a2040c55b10fe27/artifacts
+end_time: 1737756153318
+entry_point_name: ''
+experiment_id: '977428073495976397'
+lifecycle_stage: active
+run_id: 138318c625784b008a2040c55b10fe27
+run_name: incongruous-eel-165
+run_uuid: 138318c625784b008a2040c55b10fe27
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737756153250
+status: 3
+tags: []
+user_id: unknown

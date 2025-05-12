@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d3f6595266464282b2f2f90d8067e566/artifacts
+end_time: 1738274141179
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d3f6595266464282b2f2f90d8067e566
+run_name: bemused-fawn-387
+run_uuid: d3f6595266464282b2f2f90d8067e566
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738274141102
+status: 3
+tags: []
+user_id: unknown

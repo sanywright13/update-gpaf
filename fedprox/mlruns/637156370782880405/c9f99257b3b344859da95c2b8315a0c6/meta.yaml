@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/637156370782880405/c9f99257b3b344859da95c2b8315a0c6/artifacts
+end_time: 1737118892867
+entry_point_name: ''
+experiment_id: '637156370782880405'
+lifecycle_stage: active
+run_id: c9f99257b3b344859da95c2b8315a0c6
+run_name: spiffy-gnat-874
+run_uuid: c9f99257b3b344859da95c2b8315a0c6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737118702770
+status: 3
+tags: []
+user_id: unknown

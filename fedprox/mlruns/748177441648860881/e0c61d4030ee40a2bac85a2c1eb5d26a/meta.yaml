@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e0c61d4030ee40a2bac85a2c1eb5d26a/artifacts
+end_time: 1744627843372
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e0c61d4030ee40a2bac85a2c1eb5d26a
+run_name: aged-croc-149
+run_uuid: e0c61d4030ee40a2bac85a2c1eb5d26a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744627775115
+status: 3
+tags: []
+user_id: unknown

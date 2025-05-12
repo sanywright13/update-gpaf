@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8efc35ef70a5439cbab9bb7ccf1d1831/artifacts
+end_time: 1746011579810
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8efc35ef70a5439cbab9bb7ccf1d1831
+run_name: sincere-hawk-404
+run_uuid: 8efc35ef70a5439cbab9bb7ccf1d1831
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011579770
+status: 4
+tags: []
+user_id: unknown

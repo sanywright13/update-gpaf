@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/022f40d4c1c447f68fc971f7e0f41d6d/artifacts
+end_time: 1746019214610
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 022f40d4c1c447f68fc971f7e0f41d6d
+run_name: sincere-stag-984
+run_uuid: 022f40d4c1c447f68fc971f7e0f41d6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019214522
+status: 4
+tags: []
+user_id: unknown

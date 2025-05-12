@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/23493163c47d4890b85cfa7dfef6b247/artifacts
+end_time: 1738005541058
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 23493163c47d4890b85cfa7dfef6b247
+run_name: gentle-cat-57
+run_uuid: 23493163c47d4890b85cfa7dfef6b247
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005540838
+status: 3
+tags: []
+user_id: unknown

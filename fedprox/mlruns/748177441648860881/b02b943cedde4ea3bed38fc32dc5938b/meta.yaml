@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/b02b943cedde4ea3bed38fc32dc5938b/artifacts
+end_time: 1743679766309
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: b02b943cedde4ea3bed38fc32dc5938b
+run_name: flawless-stag-718
+run_uuid: b02b943cedde4ea3bed38fc32dc5938b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743679663643
+status: 3
+tags: []
+user_id: unknown

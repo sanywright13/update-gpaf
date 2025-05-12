@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f74b468788844583aa26229d503b4e62/artifacts
+end_time: 1746013382999
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f74b468788844583aa26229d503b4e62
+run_name: caring-duck-423
+run_uuid: f74b468788844583aa26229d503b4e62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013382953
+status: 4
+tags: []
+user_id: unknown

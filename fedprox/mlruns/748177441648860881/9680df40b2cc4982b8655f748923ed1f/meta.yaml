@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/9680df40b2cc4982b8655f748923ed1f/artifacts
+end_time: 1742344951378
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 9680df40b2cc4982b8655f748923ed1f
+run_name: useful-sow-704
+run_uuid: 9680df40b2cc4982b8655f748923ed1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344951240
+status: 4
+tags: []
+user_id: unknown

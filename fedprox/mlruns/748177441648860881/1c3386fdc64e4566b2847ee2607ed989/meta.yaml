@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/1c3386fdc64e4566b2847ee2607ed989/artifacts
+end_time: 1742395160669
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 1c3386fdc64e4566b2847ee2607ed989
+run_name: clumsy-seal-446
+run_uuid: 1c3386fdc64e4566b2847ee2607ed989
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742395160276
+status: 3
+tags: []
+user_id: unknown

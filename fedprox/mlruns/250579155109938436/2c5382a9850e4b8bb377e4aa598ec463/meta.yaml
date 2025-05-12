@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2c5382a9850e4b8bb377e4aa598ec463/artifacts
+end_time: 1738274139381
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2c5382a9850e4b8bb377e4aa598ec463
+run_name: carefree-gull-838
+run_uuid: 2c5382a9850e4b8bb377e4aa598ec463
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738274139242
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a957ba0d501149499e2ad0fcf6732ce0/artifacts
+end_time: 1746013445509
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a957ba0d501149499e2ad0fcf6732ce0
+run_name: illustrious-wasp-959
+run_uuid: a957ba0d501149499e2ad0fcf6732ce0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013445463
+status: 4
+tags: []
+user_id: unknown

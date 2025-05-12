@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/1a0b222c043c4bfa8fe1f8f93952e374/artifacts
+end_time: 1738258777821
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 1a0b222c043c4bfa8fe1f8f93952e374
+run_name: learned-goat-366
+run_uuid: 1a0b222c043c4bfa8fe1f8f93952e374
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258768140
+status: 3
+tags: []
+user_id: unknown

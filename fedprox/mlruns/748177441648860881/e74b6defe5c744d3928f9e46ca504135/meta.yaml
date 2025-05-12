@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e74b6defe5c744d3928f9e46ca504135/artifacts
+end_time: 1740077624103
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e74b6defe5c744d3928f9e46ca504135
+run_name: charming-finch-658
+run_uuid: e74b6defe5c744d3928f9e46ca504135
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740077623856
+status: 3
+tags: []
+user_id: unknown

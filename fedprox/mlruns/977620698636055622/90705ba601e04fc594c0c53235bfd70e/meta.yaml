@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/977620698636055622/90705ba601e04fc594c0c53235bfd70e/artifacts
+end_time: 1737842750165
+entry_point_name: ''
+experiment_id: '977620698636055622'
+lifecycle_stage: active
+run_id: 90705ba601e04fc594c0c53235bfd70e
+run_name: abrasive-newt-702
+run_uuid: 90705ba601e04fc594c0c53235bfd70e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737842208177
+status: 3
+tags: []
+user_id: unknown

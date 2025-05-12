@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a61f5e39968e4f019fda2a5efc23bc89/artifacts
+end_time: 1744483970810
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a61f5e39968e4f019fda2a5efc23bc89
+run_name: bedecked-swan-273
+run_uuid: a61f5e39968e4f019fda2a5efc23bc89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483970195
+status: 3
+tags: []
+user_id: unknown

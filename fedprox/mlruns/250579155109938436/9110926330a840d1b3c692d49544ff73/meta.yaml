@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/9110926330a840d1b3c692d49544ff73/artifacts
+end_time: 1738278998011
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 9110926330a840d1b3c692d49544ff73
+run_name: bright-bug-819
+run_uuid: 9110926330a840d1b3c692d49544ff73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738278997921
+status: 3
+tags: []
+user_id: unknown

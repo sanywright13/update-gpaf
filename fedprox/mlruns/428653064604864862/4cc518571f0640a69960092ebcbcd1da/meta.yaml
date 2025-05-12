@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/4cc518571f0640a69960092ebcbcd1da/artifacts
+end_time: 1737633938178
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 4cc518571f0640a69960092ebcbcd1da
+run_name: bemused-lamb-983
+run_uuid: 4cc518571f0640a69960092ebcbcd1da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737633889844
+status: 3
+tags: []
+user_id: unknown

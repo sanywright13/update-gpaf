@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f5a4da3568544f65ad1a1e8761672235/artifacts
+end_time: 1742389604885
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f5a4da3568544f65ad1a1e8761672235
+run_name: defiant-bat-20
+run_uuid: f5a4da3568544f65ad1a1e8761672235
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742389604784
+status: 4
+tags: []
+user_id: unknown

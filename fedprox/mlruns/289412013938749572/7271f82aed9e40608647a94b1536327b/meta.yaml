@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7271f82aed9e40608647a94b1536327b/artifacts
+end_time: 1746018366558
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7271f82aed9e40608647a94b1536327b
+run_name: bittersweet-cow-880
+run_uuid: 7271f82aed9e40608647a94b1536327b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018366136
+status: 3
+tags: []
+user_id: unknown

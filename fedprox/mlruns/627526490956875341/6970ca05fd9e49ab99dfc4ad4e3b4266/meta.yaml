@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/627526490956875341/6970ca05fd9e49ab99dfc4ad4e3b4266/artifacts
+end_time: 1737934520105
+entry_point_name: ''
+experiment_id: '627526490956875341'
+lifecycle_stage: active
+run_id: 6970ca05fd9e49ab99dfc4ad4e3b4266
+run_name: polite-sloth-638
+run_uuid: 6970ca05fd9e49ab99dfc4ad4e3b4266
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737928634368
+status: 3
+tags: []
+user_id: unknown

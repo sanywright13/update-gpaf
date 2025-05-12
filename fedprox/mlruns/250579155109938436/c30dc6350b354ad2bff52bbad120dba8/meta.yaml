@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c30dc6350b354ad2bff52bbad120dba8/artifacts
+end_time: 1738158891026
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c30dc6350b354ad2bff52bbad120dba8
+run_name: nosy-shrimp-141
+run_uuid: c30dc6350b354ad2bff52bbad120dba8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158890794
+status: 3
+tags: []
+user_id: unknown

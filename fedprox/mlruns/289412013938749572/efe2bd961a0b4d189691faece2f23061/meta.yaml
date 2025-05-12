@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/efe2bd961a0b4d189691faece2f23061/artifacts
+end_time: 1746023795207
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: efe2bd961a0b4d189691faece2f23061
+run_name: gregarious-moth-483
+run_uuid: efe2bd961a0b4d189691faece2f23061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023794786
+status: 3
+tags: []
+user_id: unknown

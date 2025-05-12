@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/23f1c0aaf3e14ae8b4207e3c465e0e2f/artifacts
+end_time: 1746011656230
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 23f1c0aaf3e14ae8b4207e3c465e0e2f
+run_name: silent-fowl-234
+run_uuid: 23f1c0aaf3e14ae8b4207e3c465e0e2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011656186
+status: 4
+tags: []
+user_id: unknown

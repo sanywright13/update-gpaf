@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/492a8c31d0f64d75ab4d2920080a99ff/artifacts
+end_time: 1744576367204
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 492a8c31d0f64d75ab4d2920080a99ff
+run_name: valuable-moose-16
+run_uuid: 492a8c31d0f64d75ab4d2920080a99ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576367059
+status: 3
+tags: []
+user_id: unknown

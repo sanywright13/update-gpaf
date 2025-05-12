@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/efc383ad398d4b3da63d26dd216c3b51/artifacts
+end_time: 1744483972433
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: efc383ad398d4b3da63d26dd216c3b51
+run_name: intelligent-worm-317
+run_uuid: efc383ad398d4b3da63d26dd216c3b51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483971778
+status: 3
+tags: []
+user_id: unknown

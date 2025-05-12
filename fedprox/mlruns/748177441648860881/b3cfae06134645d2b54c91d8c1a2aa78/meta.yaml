@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/b3cfae06134645d2b54c91d8c1a2aa78/artifacts
+end_time: 1744487642184
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: b3cfae06134645d2b54c91d8c1a2aa78
+run_name: sincere-rat-65
+run_uuid: b3cfae06134645d2b54c91d8c1a2aa78
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744487641685
+status: 3
+tags: []
+user_id: unknown

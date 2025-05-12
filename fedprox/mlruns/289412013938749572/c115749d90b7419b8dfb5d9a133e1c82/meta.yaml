@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c115749d90b7419b8dfb5d9a133e1c82/artifacts
+end_time: 1746011588931
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c115749d90b7419b8dfb5d9a133e1c82
+run_name: welcoming-trout-946
+run_uuid: c115749d90b7419b8dfb5d9a133e1c82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011588892
+status: 4
+tags: []
+user_id: unknown

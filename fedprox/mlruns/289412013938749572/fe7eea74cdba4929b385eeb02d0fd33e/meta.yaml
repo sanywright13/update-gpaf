@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fe7eea74cdba4929b385eeb02d0fd33e/artifacts
+end_time: 1746019101414
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fe7eea74cdba4929b385eeb02d0fd33e
+run_name: carefree-frog-746
+run_uuid: fe7eea74cdba4929b385eeb02d0fd33e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019101002
+status: 3
+tags: []
+user_id: unknown

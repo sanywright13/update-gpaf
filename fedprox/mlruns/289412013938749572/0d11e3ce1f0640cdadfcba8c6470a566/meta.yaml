@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0d11e3ce1f0640cdadfcba8c6470a566/artifacts
+end_time: 1746017881294
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0d11e3ce1f0640cdadfcba8c6470a566
+run_name: suave-vole-874
+run_uuid: 0d11e3ce1f0640cdadfcba8c6470a566
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017881214
+status: 4
+tags: []
+user_id: unknown

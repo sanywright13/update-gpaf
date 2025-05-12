@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4ebf225dd86d41609c3833ecf58caf0e/artifacts
+end_time: 1746017626740
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4ebf225dd86d41609c3833ecf58caf0e
+run_name: victorious-lark-792
+run_uuid: 4ebf225dd86d41609c3833ecf58caf0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017626626
+status: 4
+tags: []
+user_id: unknown

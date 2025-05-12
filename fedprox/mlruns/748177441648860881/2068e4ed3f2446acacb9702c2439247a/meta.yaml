@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2068e4ed3f2446acacb9702c2439247a/artifacts
+end_time: 1742344605596
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2068e4ed3f2446acacb9702c2439247a
+run_name: fortunate-dove-221
+run_uuid: 2068e4ed3f2446acacb9702c2439247a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344605428
+status: 4
+tags: []
+user_id: unknown

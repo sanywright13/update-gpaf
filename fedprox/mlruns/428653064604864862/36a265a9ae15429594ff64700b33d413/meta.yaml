@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/36a265a9ae15429594ff64700b33d413/artifacts
+end_time: 1737566979289
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 36a265a9ae15429594ff64700b33d413
+run_name: magnificent-colt-561
+run_uuid: 36a265a9ae15429594ff64700b33d413
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566979264
+status: 3
+tags: []
+user_id: unknown

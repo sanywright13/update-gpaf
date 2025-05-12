@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/32f5cfaa79f04b00aea62b505e40f8d0/artifacts
+end_time: 1737552408521
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 32f5cfaa79f04b00aea62b505e40f8d0
+run_name: invincible-vole-290
+run_uuid: 32f5cfaa79f04b00aea62b505e40f8d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737552408498
+status: 3
+tags: []
+user_id: unknown

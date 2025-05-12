@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/734d38e53aa2450bbe674a458abdd1ec/artifacts
+end_time: 1744492267761
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 734d38e53aa2450bbe674a458abdd1ec
+run_name: gaudy-dog-847
+run_uuid: 734d38e53aa2450bbe674a458abdd1ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492267325
+status: 3
+tags: []
+user_id: unknown

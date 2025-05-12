@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/33778260861d4a6987be83382fceeaa2/artifacts
+end_time: 1737385475926
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 33778260861d4a6987be83382fceeaa2
+run_name: rogue-gnu-218
+run_uuid: 33778260861d4a6987be83382fceeaa2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737385408517
+status: 3
+tags: []
+user_id: unknown

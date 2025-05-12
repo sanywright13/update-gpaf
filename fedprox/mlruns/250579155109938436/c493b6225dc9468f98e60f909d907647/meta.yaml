@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c493b6225dc9468f98e60f909d907647/artifacts
+end_time: 1738158455459
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c493b6225dc9468f98e60f909d907647
+run_name: server
+run_uuid: c493b6225dc9468f98e60f909d907647
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158455417
+status: 3
+tags: []
+user_id: root

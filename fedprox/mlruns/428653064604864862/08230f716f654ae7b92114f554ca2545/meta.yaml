@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/08230f716f654ae7b92114f554ca2545/artifacts
+end_time: 1737665234591
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 08230f716f654ae7b92114f554ca2545
+run_name: merciful-ox-594
+run_uuid: 08230f716f654ae7b92114f554ca2545
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737665234076
+status: 3
+tags: []
+user_id: unknown

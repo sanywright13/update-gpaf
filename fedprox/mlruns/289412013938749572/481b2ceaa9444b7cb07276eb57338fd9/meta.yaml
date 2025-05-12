@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/481b2ceaa9444b7cb07276eb57338fd9/artifacts
+end_time: 1746019355795
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 481b2ceaa9444b7cb07276eb57338fd9
+run_name: bedecked-hawk-973
+run_uuid: 481b2ceaa9444b7cb07276eb57338fd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019355305
+status: 3
+tags: []
+user_id: unknown

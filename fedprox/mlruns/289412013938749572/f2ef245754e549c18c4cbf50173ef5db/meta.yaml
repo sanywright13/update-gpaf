@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f2ef245754e549c18c4cbf50173ef5db/artifacts
+end_time: 1746017826657
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f2ef245754e549c18c4cbf50173ef5db
+run_name: mysterious-frog-548
+run_uuid: f2ef245754e549c18c4cbf50173ef5db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017826238
+status: 3
+tags: []
+user_id: unknown

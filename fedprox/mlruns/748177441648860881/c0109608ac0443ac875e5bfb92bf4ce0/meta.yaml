@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c0109608ac0443ac875e5bfb92bf4ce0/artifacts
+end_time: 1742256884128
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c0109608ac0443ac875e5bfb92bf4ce0
+run_name: agreeable-ant-737
+run_uuid: c0109608ac0443ac875e5bfb92bf4ce0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256884080
+status: 3
+tags: []
+user_id: unknown

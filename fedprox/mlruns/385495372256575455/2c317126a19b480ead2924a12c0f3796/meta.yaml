@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/2c317126a19b480ead2924a12c0f3796/artifacts
+end_time: 1737481136565
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: 2c317126a19b480ead2924a12c0f3796
+run_name: enthused-doe-963
+run_uuid: 2c317126a19b480ead2924a12c0f3796
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737480600809
+status: 3
+tags: []
+user_id: unknown

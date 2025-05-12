@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a8d9405617854e60b2ca64dcc457f02f/artifacts
+end_time: 1746019270802
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a8d9405617854e60b2ca64dcc457f02f
+run_name: skillful-colt-794
+run_uuid: a8d9405617854e60b2ca64dcc457f02f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019270340
+status: 3
+tags: []
+user_id: unknown

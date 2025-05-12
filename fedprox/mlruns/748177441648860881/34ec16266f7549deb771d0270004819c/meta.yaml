@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/34ec16266f7549deb771d0270004819c/artifacts
+end_time: 1743677717738
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 34ec16266f7549deb771d0270004819c
+run_name: painted-shrike-231
+run_uuid: 34ec16266f7549deb771d0270004819c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743677717402
+status: 3
+tags: []
+user_id: unknown

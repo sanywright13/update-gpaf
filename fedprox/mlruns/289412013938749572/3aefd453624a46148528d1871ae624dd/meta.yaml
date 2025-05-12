@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3aefd453624a46148528d1871ae624dd/artifacts
+end_time: 1746013444408
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3aefd453624a46148528d1871ae624dd
+run_name: bold-snake-653
+run_uuid: 3aefd453624a46148528d1871ae624dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013444360
+status: 4
+tags: []
+user_id: unknown

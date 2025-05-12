@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/53f48587584e45b394b895e1ced0342a/artifacts
+end_time: 1746018818325
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 53f48587584e45b394b895e1ced0342a
+run_name: bemused-bee-865
+run_uuid: 53f48587584e45b394b895e1ced0342a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018818245
+status: 4
+tags: []
+user_id: unknown

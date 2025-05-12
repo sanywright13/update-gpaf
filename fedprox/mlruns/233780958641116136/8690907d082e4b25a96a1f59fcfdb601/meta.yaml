@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/8690907d082e4b25a96a1f59fcfdb601/artifacts
+end_time: 1738755311121
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 8690907d082e4b25a96a1f59fcfdb601
+run_name: magnificent-eel-33
+run_uuid: 8690907d082e4b25a96a1f59fcfdb601
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754692927
+status: 3
+tags: []
+user_id: unknown

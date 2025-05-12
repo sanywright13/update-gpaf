@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c7d7288b9182468eb4ada4721f8af135/artifacts
+end_time: 1742347565426
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c7d7288b9182468eb4ada4721f8af135
+run_name: lyrical-midge-628
+run_uuid: c7d7288b9182468eb4ada4721f8af135
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742347565224
+status: 4
+tags: []
+user_id: unknown

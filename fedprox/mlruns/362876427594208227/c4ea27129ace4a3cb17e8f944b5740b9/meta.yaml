@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/c4ea27129ace4a3cb17e8f944b5740b9/artifacts
+end_time: 1738005559276
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: c4ea27129ace4a3cb17e8f944b5740b9
+run_name: receptive-deer-825
+run_uuid: c4ea27129ace4a3cb17e8f944b5740b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005559097
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/6d1dda244bab46e1988de099bce98941/artifacts
+end_time: 1738273740341
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 6d1dda244bab46e1988de099bce98941
+run_name: skittish-moth-182
+run_uuid: 6d1dda244bab46e1988de099bce98941
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738273740067
+status: 3
+tags: []
+user_id: unknown

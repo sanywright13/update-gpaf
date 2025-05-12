@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cec672ab19214ce9943ce6d0a2dbd9bd/artifacts
+end_time: 1746017968571
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cec672ab19214ce9943ce6d0a2dbd9bd
+run_name: mysterious-bear-490
+run_uuid: cec672ab19214ce9943ce6d0a2dbd9bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017968174
+status: 3
+tags: []
+user_id: unknown

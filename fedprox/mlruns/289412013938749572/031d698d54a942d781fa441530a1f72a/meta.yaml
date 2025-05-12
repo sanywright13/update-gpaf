@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/031d698d54a942d781fa441530a1f72a/artifacts
+end_time: 1746013425797
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 031d698d54a942d781fa441530a1f72a
+run_name: wise-deer-5
+run_uuid: 031d698d54a942d781fa441530a1f72a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013425750
+status: 4
+tags: []
+user_id: unknown

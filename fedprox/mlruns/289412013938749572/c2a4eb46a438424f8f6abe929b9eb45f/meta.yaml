@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c2a4eb46a438424f8f6abe929b9eb45f/artifacts
+end_time: 1746011582146
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c2a4eb46a438424f8f6abe929b9eb45f
+run_name: vaunted-kite-716
+run_uuid: c2a4eb46a438424f8f6abe929b9eb45f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011582106
+status: 4
+tags: []
+user_id: unknown

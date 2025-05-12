@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/25c8db7927dd4f32a60766ca204f0aa5/artifacts
+end_time: 1746023730035
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 25c8db7927dd4f32a60766ca204f0aa5
+run_name: luminous-wolf-798
+run_uuid: 25c8db7927dd4f32a60766ca204f0aa5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023729603
+status: 3
+tags: []
+user_id: unknown

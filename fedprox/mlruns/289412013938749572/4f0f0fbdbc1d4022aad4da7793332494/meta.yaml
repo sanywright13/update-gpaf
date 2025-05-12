@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4f0f0fbdbc1d4022aad4da7793332494/artifacts
+end_time: 1746011634105
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4f0f0fbdbc1d4022aad4da7793332494
+run_name: hilarious-mouse-128
+run_uuid: 4f0f0fbdbc1d4022aad4da7793332494
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011634062
+status: 4
+tags: []
+user_id: unknown

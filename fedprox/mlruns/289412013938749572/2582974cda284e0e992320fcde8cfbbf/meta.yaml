@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2582974cda284e0e992320fcde8cfbbf/artifacts
+end_time: 1746017825324
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2582974cda284e0e992320fcde8cfbbf
+run_name: beautiful-perch-84
+run_uuid: 2582974cda284e0e992320fcde8cfbbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017824909
+status: 3
+tags: []
+user_id: unknown

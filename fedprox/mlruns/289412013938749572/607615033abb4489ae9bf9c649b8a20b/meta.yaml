@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/607615033abb4489ae9bf9c649b8a20b/artifacts
+end_time: 1746023725044
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 607615033abb4489ae9bf9c649b8a20b
+run_name: gregarious-bass-640
+run_uuid: 607615033abb4489ae9bf9c649b8a20b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023724631
+status: 3
+tags: []
+user_id: unknown

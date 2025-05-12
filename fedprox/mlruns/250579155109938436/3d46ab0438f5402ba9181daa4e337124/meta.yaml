@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/3d46ab0438f5402ba9181daa4e337124/artifacts
+end_time: 1738248716847
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 3d46ab0438f5402ba9181daa4e337124
+run_name: placid-crane-171
+run_uuid: 3d46ab0438f5402ba9181daa4e337124
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738248708057
+status: 3
+tags: []
+user_id: unknown

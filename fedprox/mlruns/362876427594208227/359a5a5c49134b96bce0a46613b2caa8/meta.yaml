@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/359a5a5c49134b96bce0a46613b2caa8/artifacts
+end_time: 1738007671264
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 359a5a5c49134b96bce0a46613b2caa8
+run_name: adaptable-grouse-141
+run_uuid: 359a5a5c49134b96bce0a46613b2caa8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738007671009
+status: 3
+tags: []
+user_id: unknown

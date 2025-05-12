@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/d13e4ee0c3b84b178947b0bbbb17ad94/artifacts
+end_time: 1737572061223
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: d13e4ee0c3b84b178947b0bbbb17ad94
+run_name: persistent-calf-167
+run_uuid: d13e4ee0c3b84b178947b0bbbb17ad94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737571790371
+status: 3
+tags: []
+user_id: unknown

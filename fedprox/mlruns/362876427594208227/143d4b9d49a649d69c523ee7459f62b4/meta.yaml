@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/143d4b9d49a649d69c523ee7459f62b4/artifacts
+end_time: 1738005288776
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 143d4b9d49a649d69c523ee7459f62b4
+run_name: unruly-hen-448
+run_uuid: 143d4b9d49a649d69c523ee7459f62b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005288570
+status: 3
+tags: []
+user_id: unknown

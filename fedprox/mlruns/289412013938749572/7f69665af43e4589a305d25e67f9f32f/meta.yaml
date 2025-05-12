@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7f69665af43e4589a305d25e67f9f32f/artifacts
+end_time: 1746023692119
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7f69665af43e4589a305d25e67f9f32f
+run_name: big-wren-237
+run_uuid: 7f69665af43e4589a305d25e67f9f32f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023692019
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/80285437b79943ad9f7d7e400787bea1/artifacts
+end_time: 1737639201188
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 80285437b79943ad9f7d7e400787bea1
+run_name: merciful-panda-445
+run_uuid: 80285437b79943ad9f7d7e400787bea1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737639174741
+status: 3
+tags: []
+user_id: unknown

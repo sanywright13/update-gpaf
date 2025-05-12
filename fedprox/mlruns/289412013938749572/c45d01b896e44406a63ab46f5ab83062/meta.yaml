@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c45d01b896e44406a63ab46f5ab83062/artifacts
+end_time: 1746017685165
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c45d01b896e44406a63ab46f5ab83062
+run_name: rare-cub-827
+run_uuid: c45d01b896e44406a63ab46f5ab83062
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017685074
+status: 4
+tags: []
+user_id: unknown

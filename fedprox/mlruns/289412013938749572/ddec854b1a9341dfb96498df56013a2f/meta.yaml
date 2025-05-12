@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ddec854b1a9341dfb96498df56013a2f/artifacts
+end_time: 1746017940361
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ddec854b1a9341dfb96498df56013a2f
+run_name: classy-colt-709
+run_uuid: ddec854b1a9341dfb96498df56013a2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017939919
+status: 3
+tags: []
+user_id: unknown

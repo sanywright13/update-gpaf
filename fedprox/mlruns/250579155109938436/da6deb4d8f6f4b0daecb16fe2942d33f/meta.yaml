@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/da6deb4d8f6f4b0daecb16fe2942d33f/artifacts
+end_time: 1738158642874
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: da6deb4d8f6f4b0daecb16fe2942d33f
+run_name: big-rook-134
+run_uuid: da6deb4d8f6f4b0daecb16fe2942d33f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158642547
+status: 3
+tags: []
+user_id: unknown

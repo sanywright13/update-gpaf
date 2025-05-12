@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/de826d93d1b3442f9838d996ca3096ab/artifacts
+end_time: 1737567646713
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: de826d93d1b3442f9838d996ca3096ab
+run_name: resilient-moth-619
+run_uuid: de826d93d1b3442f9838d996ca3096ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737567646662
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/79ca85eaa51445aa8faefa85f0dd6a63/artifacts
+end_time: 1737464807230
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 79ca85eaa51445aa8faefa85f0dd6a63
+run_name: bright-shoat-898
+run_uuid: 79ca85eaa51445aa8faefa85f0dd6a63
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737464736763
+status: 3
+tags: []
+user_id: unknown

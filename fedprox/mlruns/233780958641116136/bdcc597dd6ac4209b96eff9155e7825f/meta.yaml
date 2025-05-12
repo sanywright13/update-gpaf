@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/bdcc597dd6ac4209b96eff9155e7825f/artifacts
+end_time: 1739803595379
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: bdcc597dd6ac4209b96eff9155e7825f
+run_name: likeable-shrew-275
+run_uuid: bdcc597dd6ac4209b96eff9155e7825f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739803595218
+status: 3
+tags: []
+user_id: unknown

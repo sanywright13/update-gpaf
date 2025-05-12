@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/407aa2f164de402995d47d189fb79b32/artifacts
+end_time: 1738257753037
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 407aa2f164de402995d47d189fb79b32
+run_name: stylish-trout-578
+run_uuid: 407aa2f164de402995d47d189fb79b32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738257745608
+status: 3
+tags: []
+user_id: unknown

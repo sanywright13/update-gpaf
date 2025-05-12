@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c295ee11374b480d9382cdc4ec2aa277/artifacts
+end_time: 1744624483370
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c295ee11374b480d9382cdc4ec2aa277
+run_name: sneaky-kit-603
+run_uuid: c295ee11374b480d9382cdc4ec2aa277
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744624405495
+status: 3
+tags: []
+user_id: unknown

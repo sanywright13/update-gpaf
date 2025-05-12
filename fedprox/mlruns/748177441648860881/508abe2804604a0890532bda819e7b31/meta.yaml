@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/508abe2804604a0890532bda819e7b31/artifacts
+end_time: 1744551792143
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 508abe2804604a0890532bda819e7b31
+run_name: capricious-colt-715
+run_uuid: 508abe2804604a0890532bda819e7b31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744551791762
+status: 4
+tags: []
+user_id: unknown

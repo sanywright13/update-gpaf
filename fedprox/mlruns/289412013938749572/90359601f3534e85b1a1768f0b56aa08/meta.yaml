@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/90359601f3534e85b1a1768f0b56aa08/artifacts
+end_time: 1746013372666
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 90359601f3534e85b1a1768f0b56aa08
+run_name: lyrical-bird-574
+run_uuid: 90359601f3534e85b1a1768f0b56aa08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013372622
+status: 4
+tags: []
+user_id: unknown

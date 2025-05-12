@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1aed6a870b184978aee14cd469f776f3/artifacts
+end_time: 1746023720484
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1aed6a870b184978aee14cd469f776f3
+run_name: receptive-cow-962
+run_uuid: 1aed6a870b184978aee14cd469f776f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023720390
+status: 4
+tags: []
+user_id: unknown

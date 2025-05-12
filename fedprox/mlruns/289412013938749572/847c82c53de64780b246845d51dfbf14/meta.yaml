@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/847c82c53de64780b246845d51dfbf14/artifacts
+end_time: 1746011628672
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 847c82c53de64780b246845d51dfbf14
+run_name: abrasive-gnat-753
+run_uuid: 847c82c53de64780b246845d51dfbf14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011628635
+status: 4
+tags: []
+user_id: unknown

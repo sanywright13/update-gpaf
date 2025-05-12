@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/75e653017a2d4285be4105b09cae4f06/artifacts
+end_time: 1738862949912
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 75e653017a2d4285be4105b09cae4f06
+run_name: classy-doe-269
+run_uuid: 75e653017a2d4285be4105b09cae4f06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862949888
+status: 4
+tags: []
+user_id: unknown

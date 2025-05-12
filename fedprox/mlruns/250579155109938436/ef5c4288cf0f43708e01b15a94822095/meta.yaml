@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/ef5c4288cf0f43708e01b15a94822095/artifacts
+end_time: 1738158636585
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: ef5c4288cf0f43708e01b15a94822095
+run_name: shivering-crab-790
+run_uuid: ef5c4288cf0f43708e01b15a94822095
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158636399
+status: 3
+tags: []
+user_id: unknown

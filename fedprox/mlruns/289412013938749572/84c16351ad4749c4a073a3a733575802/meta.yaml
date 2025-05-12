@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/84c16351ad4749c4a073a3a733575802/artifacts
+end_time: 1746017627069
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 84c16351ad4749c4a073a3a733575802
+run_name: unruly-stoat-223
+run_uuid: 84c16351ad4749c4a073a3a733575802
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017626630
+status: 3
+tags: []
+user_id: unknown

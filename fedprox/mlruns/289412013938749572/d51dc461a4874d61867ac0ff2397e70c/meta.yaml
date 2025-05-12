@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d51dc461a4874d61867ac0ff2397e70c/artifacts
+end_time: 1746023735758
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d51dc461a4874d61867ac0ff2397e70c
+run_name: judicious-snake-834
+run_uuid: d51dc461a4874d61867ac0ff2397e70c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023735336
+status: 3
+tags: []
+user_id: unknown

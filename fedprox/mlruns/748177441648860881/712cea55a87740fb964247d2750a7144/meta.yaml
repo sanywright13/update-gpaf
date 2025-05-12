@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/712cea55a87740fb964247d2750a7144/artifacts
+end_time: 1744623710897
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 712cea55a87740fb964247d2750a7144
+run_name: delicate-elk-756
+run_uuid: 712cea55a87740fb964247d2750a7144
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744623710748
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/cdc834e7805544538d8855537449c2ca/artifacts
+end_time: 1737544613688
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: cdc834e7805544538d8855537449c2ca
+run_name: orderly-gnat-890
+run_uuid: cdc834e7805544538d8855537449c2ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737544583613
+status: 3
+tags: []
+user_id: unknown

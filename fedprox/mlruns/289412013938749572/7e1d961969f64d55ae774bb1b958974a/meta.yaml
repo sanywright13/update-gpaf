@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7e1d961969f64d55ae774bb1b958974a/artifacts
+end_time: 1746013366765
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7e1d961969f64d55ae774bb1b958974a
+run_name: whimsical-fish-654
+run_uuid: 7e1d961969f64d55ae774bb1b958974a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013366725
+status: 4
+tags: []
+user_id: unknown

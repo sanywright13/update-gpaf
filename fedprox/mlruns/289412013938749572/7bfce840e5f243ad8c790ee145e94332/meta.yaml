@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7bfce840e5f243ad8c790ee145e94332/artifacts
+end_time: 1746023782369
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7bfce840e5f243ad8c790ee145e94332
+run_name: efficient-smelt-512
+run_uuid: 7bfce840e5f243ad8c790ee145e94332
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023781954
+status: 3
+tags: []
+user_id: unknown

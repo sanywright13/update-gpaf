@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/ef4529add8ba48d594603f2a3c0dc1e0/artifacts
+end_time: 1737117259622
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: ef4529add8ba48d594603f2a3c0dc1e0
+run_name: skillful-yak-406
+run_uuid: ef4529add8ba48d594603f2a3c0dc1e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117259600
+status: 3
+tags: []
+user_id: unknown

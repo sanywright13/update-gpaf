@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5f842ad06cec46d492a2d84f5665ba88/artifacts
+end_time: 1744551907066
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5f842ad06cec46d492a2d84f5665ba88
+run_name: ambitious-conch-86
+run_uuid: 5f842ad06cec46d492a2d84f5665ba88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744551906729
+status: 4
+tags: []
+user_id: unknown

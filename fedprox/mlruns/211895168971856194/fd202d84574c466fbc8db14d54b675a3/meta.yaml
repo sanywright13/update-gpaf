@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/fd202d84574c466fbc8db14d54b675a3/artifacts
+end_time: 1737908428896
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: fd202d84574c466fbc8db14d54b675a3
+run_name: invincible-bass-939
+run_uuid: fd202d84574c466fbc8db14d54b675a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737908355885
+status: 3
+tags: []
+user_id: unknown

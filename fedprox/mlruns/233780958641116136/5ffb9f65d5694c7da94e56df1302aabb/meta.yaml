@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/5ffb9f65d5694c7da94e56df1302aabb/artifacts
+end_time: 1738863684971
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 5ffb9f65d5694c7da94e56df1302aabb
+run_name: victorious-newt-583
+run_uuid: 5ffb9f65d5694c7da94e56df1302aabb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738863119436
+status: 3
+tags: []
+user_id: unknown

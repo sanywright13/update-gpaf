@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/7427ba3951cd4ae7a146c55ba95dec4c/artifacts
+end_time: 1740077622222
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 7427ba3951cd4ae7a146c55ba95dec4c
+run_name: defiant-koi-908
+run_uuid: 7427ba3951cd4ae7a146c55ba95dec4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740077621998
+status: 3
+tags: []
+user_id: unknown

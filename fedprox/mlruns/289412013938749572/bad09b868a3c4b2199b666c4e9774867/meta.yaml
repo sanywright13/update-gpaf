@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bad09b868a3c4b2199b666c4e9774867/artifacts
+end_time: 1746011621762
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bad09b868a3c4b2199b666c4e9774867
+run_name: carefree-hog-472
+run_uuid: bad09b868a3c4b2199b666c4e9774867
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011621725
+status: 4
+tags: []
+user_id: unknown

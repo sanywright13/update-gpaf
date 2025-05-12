@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/8226dde1124e4b16ae8bf93c8c3726f4/artifacts
+end_time: 1737392293127
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 8226dde1124e4b16ae8bf93c8c3726f4
+run_name: zealous-panda-630
+run_uuid: 8226dde1124e4b16ae8bf93c8c3726f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737392271386
+status: 3
+tags: []
+user_id: unknown

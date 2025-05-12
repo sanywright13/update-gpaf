@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e210d5f5b873469493f9318e7fd73a3f/artifacts
+end_time: 1740080855333
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e210d5f5b873469493f9318e7fd73a3f
+run_name: rogue-ox-168
+run_uuid: e210d5f5b873469493f9318e7fd73a3f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080820968
+status: 3
+tags: []
+user_id: unknown

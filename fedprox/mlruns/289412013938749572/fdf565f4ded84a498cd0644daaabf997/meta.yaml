@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fdf565f4ded84a498cd0644daaabf997/artifacts
+end_time: 1746011653230
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fdf565f4ded84a498cd0644daaabf997
+run_name: flawless-snake-323
+run_uuid: fdf565f4ded84a498cd0644daaabf997
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011653186
+status: 4
+tags: []
+user_id: unknown

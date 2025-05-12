@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/9ba4b3055b3a41fbb7ce0504871e7d7d/artifacts
+end_time: 1738863685128
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 9ba4b3055b3a41fbb7ce0504871e7d7d
+run_name: painted-seal-143
+run_uuid: 9ba4b3055b3a41fbb7ce0504871e7d7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738863105436
+status: 3
+tags: []
+user_id: unknown

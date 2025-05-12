@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c73c159eb2194438a346fec64956746c/artifacts
+end_time: 1746023800802
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c73c159eb2194438a346fec64956746c
+run_name: enchanting-skink-473
+run_uuid: c73c159eb2194438a346fec64956746c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023800700
+status: 4
+tags: []
+user_id: unknown

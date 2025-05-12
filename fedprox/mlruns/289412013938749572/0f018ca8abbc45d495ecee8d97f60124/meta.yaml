@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0f018ca8abbc45d495ecee8d97f60124/artifacts
+end_time: 1746013429453
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0f018ca8abbc45d495ecee8d97f60124
+run_name: ambitious-cod-912
+run_uuid: 0f018ca8abbc45d495ecee8d97f60124
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013429403
+status: 4
+tags: []
+user_id: unknown

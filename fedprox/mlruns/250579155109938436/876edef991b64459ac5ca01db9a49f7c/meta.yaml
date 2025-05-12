@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/876edef991b64459ac5ca01db9a49f7c/artifacts
+end_time: 1738276262568
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 876edef991b64459ac5ca01db9a49f7c
+run_name: wise-jay-565
+run_uuid: 876edef991b64459ac5ca01db9a49f7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738276262498
+status: 3
+tags: []
+user_id: unknown

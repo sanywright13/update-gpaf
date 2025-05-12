@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/79f0bc50af104a94aa27dd01c2471ee9/artifacts
+end_time: 1746013359431
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 79f0bc50af104a94aa27dd01c2471ee9
+run_name: learned-finch-313
+run_uuid: 79f0bc50af104a94aa27dd01c2471ee9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013359385
+status: 4
+tags: []
+user_id: unknown

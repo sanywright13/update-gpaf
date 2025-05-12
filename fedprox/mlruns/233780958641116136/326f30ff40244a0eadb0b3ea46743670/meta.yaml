@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/326f30ff40244a0eadb0b3ea46743670/artifacts
+end_time: 1739804417088
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 326f30ff40244a0eadb0b3ea46743670
+run_name: legendary-moth-27
+run_uuid: 326f30ff40244a0eadb0b3ea46743670
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739804416405
+status: 3
+tags: []
+user_id: unknown

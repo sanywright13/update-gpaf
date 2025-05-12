@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/aca750341f364d5fbdd67066335f32d3/artifacts
+end_time: 1744492275291
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: aca750341f364d5fbdd67066335f32d3
+run_name: victorious-pig-10
+run_uuid: aca750341f364d5fbdd67066335f32d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492274806
+status: 3
+tags: []
+user_id: unknown

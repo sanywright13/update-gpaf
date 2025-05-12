@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/606003af5d734b7db92f50ee091c4da3/artifacts
+end_time: 1746011659911
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 606003af5d734b7db92f50ee091c4da3
+run_name: righteous-colt-631
+run_uuid: 606003af5d734b7db92f50ee091c4da3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011659865
+status: 4
+tags: []
+user_id: unknown

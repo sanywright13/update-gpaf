@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e07479d65ec0492bbe7da60371e18a96/artifacts
+end_time: 1744470568851
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e07479d65ec0492bbe7da60371e18a96
+run_name: adaptable-hound-632
+run_uuid: e07479d65ec0492bbe7da60371e18a96
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744470506466
+status: 3
+tags: []
+user_id: unknown

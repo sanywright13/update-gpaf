@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/87d2cdd7eb43470e877d814d6852be5e/artifacts
+end_time: 1746013365253
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 87d2cdd7eb43470e877d814d6852be5e
+run_name: angry-koi-959
+run_uuid: 87d2cdd7eb43470e877d814d6852be5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013365207
+status: 4
+tags: []
+user_id: unknown

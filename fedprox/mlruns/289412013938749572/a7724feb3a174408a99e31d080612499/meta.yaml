@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a7724feb3a174408a99e31d080612499/artifacts
+end_time: 1746013362937
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a7724feb3a174408a99e31d080612499
+run_name: mysterious-finch-603
+run_uuid: a7724feb3a174408a99e31d080612499
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013362897
+status: 4
+tags: []
+user_id: unknown

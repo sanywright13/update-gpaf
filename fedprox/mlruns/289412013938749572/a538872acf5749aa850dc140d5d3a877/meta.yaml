@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a538872acf5749aa850dc140d5d3a877/artifacts
+end_time: 1746011576498
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a538872acf5749aa850dc140d5d3a877
+run_name: flawless-dove-372
+run_uuid: a538872acf5749aa850dc140d5d3a877
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011576457
+status: 4
+tags: []
+user_id: unknown

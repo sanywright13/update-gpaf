@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c05fff283a4a472e8bc37071069b6145/artifacts
+end_time: 1746023725822
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c05fff283a4a472e8bc37071069b6145
+run_name: bald-asp-212
+run_uuid: c05fff283a4a472e8bc37071069b6145
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023725431
+status: 3
+tags: []
+user_id: unknown

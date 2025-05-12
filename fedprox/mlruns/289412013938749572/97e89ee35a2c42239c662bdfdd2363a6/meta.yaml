@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/97e89ee35a2c42239c662bdfdd2363a6/artifacts
+end_time: 1746011625281
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 97e89ee35a2c42239c662bdfdd2363a6
+run_name: bold-quail-188
+run_uuid: 97e89ee35a2c42239c662bdfdd2363a6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011625239
+status: 4
+tags: []
+user_id: unknown

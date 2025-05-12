@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/291a28a00e9847e0b9acc4118c8dfabc/artifacts
+end_time: 1746011581189
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 291a28a00e9847e0b9acc4118c8dfabc
+run_name: capable-grouse-411
+run_uuid: 291a28a00e9847e0b9acc4118c8dfabc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011581150
+status: 4
+tags: []
+user_id: unknown

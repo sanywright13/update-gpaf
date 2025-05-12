@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/716793242267076414/4945813068bd420284820aa8fdf92519/artifacts
+end_time: 1737120978432
+entry_point_name: ''
+experiment_id: '716793242267076414'
+lifecycle_stage: active
+run_id: 4945813068bd420284820aa8fdf92519
+run_name: skillful-cow-369
+run_uuid: 4945813068bd420284820aa8fdf92519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737120777781
+status: 3
+tags: []
+user_id: unknown

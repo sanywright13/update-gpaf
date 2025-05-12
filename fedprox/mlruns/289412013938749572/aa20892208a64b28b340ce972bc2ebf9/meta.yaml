@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aa20892208a64b28b340ce972bc2ebf9/artifacts
+end_time: 1746013387450
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aa20892208a64b28b340ce972bc2ebf9
+run_name: bemused-squirrel-300
+run_uuid: aa20892208a64b28b340ce972bc2ebf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013387403
+status: 4
+tags: []
+user_id: unknown

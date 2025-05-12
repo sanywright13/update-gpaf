@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/82d64219f1e94b948ef377091f4031fe/artifacts
+end_time: 1737117419860
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 82d64219f1e94b948ef377091f4031fe
+run_name: sincere-wolf-378
+run_uuid: 82d64219f1e94b948ef377091f4031fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117419829
+status: 3
+tags: []
+user_id: unknown

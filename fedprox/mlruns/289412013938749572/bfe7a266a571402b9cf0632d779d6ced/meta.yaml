@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bfe7a266a571402b9cf0632d779d6ced/artifacts
+end_time: 1746023743735
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bfe7a266a571402b9cf0632d779d6ced
+run_name: aged-grub-391
+run_uuid: bfe7a266a571402b9cf0632d779d6ced
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023743304
+status: 3
+tags: []
+user_id: unknown

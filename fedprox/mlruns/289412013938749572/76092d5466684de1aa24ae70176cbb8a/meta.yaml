@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/76092d5466684de1aa24ae70176cbb8a/artifacts
+end_time: 1746023751708
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 76092d5466684de1aa24ae70176cbb8a
+run_name: resilient-zebra-937
+run_uuid: 76092d5466684de1aa24ae70176cbb8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023751281
+status: 3
+tags: []
+user_id: unknown

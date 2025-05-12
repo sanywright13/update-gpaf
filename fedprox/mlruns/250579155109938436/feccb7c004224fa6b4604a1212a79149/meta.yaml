@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/feccb7c004224fa6b4604a1212a79149/artifacts
+end_time: 1738254077685
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: feccb7c004224fa6b4604a1212a79149
+run_name: angry-eel-502
+run_uuid: feccb7c004224fa6b4604a1212a79149
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738254077595
+status: 3
+tags: []
+user_id: unknown

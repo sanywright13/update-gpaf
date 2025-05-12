@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/10c80f33e0a54a86ae4d2a7cb888b5f2/artifacts
+end_time: 1737053581319
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 10c80f33e0a54a86ae4d2a7cb888b5f2
+run_name: fearless-turtle-849
+run_uuid: 10c80f33e0a54a86ae4d2a7cb888b5f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737053509580
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/11ec27556cae42ddad4246ce37ffb5ec/artifacts
+end_time: 1742256855707
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 11ec27556cae42ddad4246ce37ffb5ec
+run_name: beautiful-rook-98
+run_uuid: 11ec27556cae42ddad4246ce37ffb5ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256855601
+status: 3
+tags: []
+user_id: unknown

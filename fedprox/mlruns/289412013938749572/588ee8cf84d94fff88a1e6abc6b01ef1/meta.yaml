@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/588ee8cf84d94fff88a1e6abc6b01ef1/artifacts
+end_time: 1746011587675
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 588ee8cf84d94fff88a1e6abc6b01ef1
+run_name: thoughtful-fly-563
+run_uuid: 588ee8cf84d94fff88a1e6abc6b01ef1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011587640
+status: 4
+tags: []
+user_id: unknown

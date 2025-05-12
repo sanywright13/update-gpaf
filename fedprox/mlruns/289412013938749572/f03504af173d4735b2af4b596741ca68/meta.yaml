@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f03504af173d4735b2af4b596741ca68/artifacts
+end_time: 1746011647047
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f03504af173d4735b2af4b596741ca68
+run_name: nebulous-owl-376
+run_uuid: f03504af173d4735b2af4b596741ca68
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011647008
+status: 4
+tags: []
+user_id: unknown

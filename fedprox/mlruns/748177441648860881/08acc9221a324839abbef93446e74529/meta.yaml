@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/08acc9221a324839abbef93446e74529/artifacts
+end_time: 1742347155322
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 08acc9221a324839abbef93446e74529
+run_name: skillful-doe-83
+run_uuid: 08acc9221a324839abbef93446e74529
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742347155030
+status: 4
+tags: []
+user_id: unknown

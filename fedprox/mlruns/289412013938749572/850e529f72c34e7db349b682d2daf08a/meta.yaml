@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/850e529f72c34e7db349b682d2daf08a/artifacts
+end_time: 1746023735427
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 850e529f72c34e7db349b682d2daf08a
+run_name: bald-hound-726
+run_uuid: 850e529f72c34e7db349b682d2daf08a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023735332
+status: 4
+tags: []
+user_id: unknown

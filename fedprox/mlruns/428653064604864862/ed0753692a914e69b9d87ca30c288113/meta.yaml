@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/ed0753692a914e69b9d87ca30c288113/artifacts
+end_time: 1737638866900
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: ed0753692a914e69b9d87ca30c288113
+run_name: aged-mink-857
+run_uuid: ed0753692a914e69b9d87ca30c288113
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737638866845
+status: 3
+tags: []
+user_id: unknown

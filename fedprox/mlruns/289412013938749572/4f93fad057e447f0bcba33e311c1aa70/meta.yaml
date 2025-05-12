@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4f93fad057e447f0bcba33e311c1aa70/artifacts
+end_time: 1746011657032
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4f93fad057e447f0bcba33e311c1aa70
+run_name: capable-mule-845
+run_uuid: 4f93fad057e447f0bcba33e311c1aa70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011656991
+status: 4
+tags: []
+user_id: unknown

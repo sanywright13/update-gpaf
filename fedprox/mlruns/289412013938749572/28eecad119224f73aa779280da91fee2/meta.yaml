@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/28eecad119224f73aa779280da91fee2/artifacts
+end_time: 1746023699652
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 28eecad119224f73aa779280da91fee2
+run_name: whimsical-doe-916
+run_uuid: 28eecad119224f73aa779280da91fee2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023699558
+status: 4
+tags: []
+user_id: unknown

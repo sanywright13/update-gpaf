@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a53824be799d4a0d9ae97f7fe3cc8fcd/artifacts
+end_time: 1746013370815
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a53824be799d4a0d9ae97f7fe3cc8fcd
+run_name: wise-bass-389
+run_uuid: a53824be799d4a0d9ae97f7fe3cc8fcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013370775
+status: 4
+tags: []
+user_id: unknown

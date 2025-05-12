@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/09baf6d12bb54174bbd2b4235990d390/artifacts
+end_time: 1746021918832
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 09baf6d12bb54174bbd2b4235990d390
+run_name: bittersweet-boar-22
+run_uuid: 09baf6d12bb54174bbd2b4235990d390
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021918401
+status: 3
+tags: []
+user_id: unknown

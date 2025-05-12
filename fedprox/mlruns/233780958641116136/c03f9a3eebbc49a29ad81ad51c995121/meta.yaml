@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/c03f9a3eebbc49a29ad81ad51c995121/artifacts
+end_time: 1738754302951
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: c03f9a3eebbc49a29ad81ad51c995121
+run_name: kindly-turtle-72
+run_uuid: c03f9a3eebbc49a29ad81ad51c995121
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754302827
+status: 3
+tags: []
+user_id: unknown

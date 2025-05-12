@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1a0f93b416bf4480bd34d8e8e70d1cb1/artifacts
+end_time: 1737668278348
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1a0f93b416bf4480bd34d8e8e70d1cb1
+run_name: burly-sheep-367
+run_uuid: 1a0f93b416bf4480bd34d8e8e70d1cb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737668266742
+status: 3
+tags: []
+user_id: unknown

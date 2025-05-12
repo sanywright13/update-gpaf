@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e54c0b0f7eae4c9abc236f8bc81dac54/artifacts
+end_time: 1746023803791
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e54c0b0f7eae4c9abc236f8bc81dac54
+run_name: defiant-kit-689
+run_uuid: e54c0b0f7eae4c9abc236f8bc81dac54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023803345
+status: 3
+tags: []
+user_id: unknown

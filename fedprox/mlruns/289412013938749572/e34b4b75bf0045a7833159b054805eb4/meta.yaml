@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e34b4b75bf0045a7833159b054805eb4/artifacts
+end_time: 1746011612845
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e34b4b75bf0045a7833159b054805eb4
+run_name: skittish-dove-149
+run_uuid: e34b4b75bf0045a7833159b054805eb4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011612804
+status: 4
+tags: []
+user_id: unknown

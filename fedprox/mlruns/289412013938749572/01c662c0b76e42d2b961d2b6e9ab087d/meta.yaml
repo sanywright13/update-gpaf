@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/01c662c0b76e42d2b961d2b6e9ab087d/artifacts
+end_time: 1746013436957
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 01c662c0b76e42d2b961d2b6e9ab087d
+run_name: incongruous-mule-814
+run_uuid: 01c662c0b76e42d2b961d2b6e9ab087d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013436912
+status: 4
+tags: []
+user_id: unknown

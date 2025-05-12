@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aee1dbff5311482aac3ebf66ed55a152/artifacts
+end_time: 1746011613269
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aee1dbff5311482aac3ebf66ed55a152
+run_name: intrigued-chimp-122
+run_uuid: aee1dbff5311482aac3ebf66ed55a152
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011613227
+status: 4
+tags: []
+user_id: unknown

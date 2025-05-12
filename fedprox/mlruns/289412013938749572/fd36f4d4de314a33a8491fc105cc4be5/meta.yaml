@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fd36f4d4de314a33a8491fc105cc4be5/artifacts
+end_time: 1746011597209
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fd36f4d4de314a33a8491fc105cc4be5
+run_name: learned-cod-127
+run_uuid: fd36f4d4de314a33a8491fc105cc4be5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011597169
+status: 4
+tags: []
+user_id: unknown

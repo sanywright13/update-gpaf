@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fb722dbcad2740669a3d5344db6d2277/artifacts
+end_time: 1746011648082
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fb722dbcad2740669a3d5344db6d2277
+run_name: luminous-lynx-689
+run_uuid: fb722dbcad2740669a3d5344db6d2277
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011648043
+status: 4
+tags: []
+user_id: unknown

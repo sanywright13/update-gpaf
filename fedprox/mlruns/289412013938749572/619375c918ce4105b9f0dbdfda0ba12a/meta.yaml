@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/619375c918ce4105b9f0dbdfda0ba12a/artifacts
+end_time: 1746013379632
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 619375c918ce4105b9f0dbdfda0ba12a
+run_name: marvelous-gull-737
+run_uuid: 619375c918ce4105b9f0dbdfda0ba12a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013379582
+status: 4
+tags: []
+user_id: unknown

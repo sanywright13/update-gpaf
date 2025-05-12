@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/232a3799b9ee45f784fff7e77ee94625/artifacts
+end_time: 1746013367875
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 232a3799b9ee45f784fff7e77ee94625
+run_name: shivering-koi-520
+run_uuid: 232a3799b9ee45f784fff7e77ee94625
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013367834
+status: 4
+tags: []
+user_id: unknown

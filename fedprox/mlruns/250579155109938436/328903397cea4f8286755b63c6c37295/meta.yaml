@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/328903397cea4f8286755b63c6c37295/artifacts
+end_time: 1738158651893
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 328903397cea4f8286755b63c6c37295
+run_name: peaceful-jay-343
+run_uuid: 328903397cea4f8286755b63c6c37295
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158651556
+status: 3
+tags: []
+user_id: unknown

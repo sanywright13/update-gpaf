@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/ea59ce288bd14e39b2c936fd336bab65/artifacts
+end_time: 1737991292018
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: ea59ce288bd14e39b2c936fd336bab65
+run_name: adaptable-vole-722
+run_uuid: ea59ce288bd14e39b2c936fd336bab65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737991260789
+status: 3
+tags: []
+user_id: unknown

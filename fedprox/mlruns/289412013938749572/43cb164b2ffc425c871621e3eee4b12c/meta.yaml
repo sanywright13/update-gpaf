@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/43cb164b2ffc425c871621e3eee4b12c/artifacts
+end_time: 1746013368744
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 43cb164b2ffc425c871621e3eee4b12c
+run_name: bittersweet-stag-983
+run_uuid: 43cb164b2ffc425c871621e3eee4b12c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013368699
+status: 4
+tags: []
+user_id: unknown

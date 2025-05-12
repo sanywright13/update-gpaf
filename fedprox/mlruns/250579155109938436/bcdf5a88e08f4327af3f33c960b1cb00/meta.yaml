@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/bcdf5a88e08f4327af3f33c960b1cb00/artifacts
+end_time: 1738240689580
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: bcdf5a88e08f4327af3f33c960b1cb00
+run_name: gentle-loon-883
+run_uuid: bcdf5a88e08f4327af3f33c960b1cb00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240689508
+status: 4
+tags: []
+user_id: unknown

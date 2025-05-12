@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6e57ee79fea04abf967aa1375103861d/artifacts
+end_time: 1746023723111
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6e57ee79fea04abf967aa1375103861d
+run_name: colorful-rook-642
+run_uuid: 6e57ee79fea04abf967aa1375103861d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023723014
+status: 4
+tags: []
+user_id: unknown

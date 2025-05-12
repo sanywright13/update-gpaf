@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/fc76bd99cdbd48b6a9b2c801ccb6c366/artifacts
+end_time: 1738007757178
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: fc76bd99cdbd48b6a9b2c801ccb6c366
+run_name: angry-loon-633
+run_uuid: fc76bd99cdbd48b6a9b2c801ccb6c366
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738007675717
+status: 3
+tags: []
+user_id: unknown

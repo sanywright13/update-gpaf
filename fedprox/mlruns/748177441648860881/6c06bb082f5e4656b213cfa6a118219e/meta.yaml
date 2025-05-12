@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6c06bb082f5e4656b213cfa6a118219e/artifacts
+end_time: 1744576756167
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6c06bb082f5e4656b213cfa6a118219e
+run_name: rare-squirrel-532
+run_uuid: 6c06bb082f5e4656b213cfa6a118219e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576756019
+status: 3
+tags: []
+user_id: unknown

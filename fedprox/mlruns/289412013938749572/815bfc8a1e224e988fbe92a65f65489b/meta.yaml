@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/815bfc8a1e224e988fbe92a65f65489b/artifacts
+end_time: 1746017770258
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 815bfc8a1e224e988fbe92a65f65489b
+run_name: funny-bass-518
+run_uuid: 815bfc8a1e224e988fbe92a65f65489b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017769835
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/659c77bb21aa40b5bce2b9cde10e25e7/artifacts
+end_time: 1742388061364
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 659c77bb21aa40b5bce2b9cde10e25e7
+run_name: bright-foal-231
+run_uuid: 659c77bb21aa40b5bce2b9cde10e25e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742388061219
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/95d37b92d4a440faa345511b4f4b75e4/artifacts
+end_time: 1746013435369
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 95d37b92d4a440faa345511b4f4b75e4
+run_name: zealous-pug-621
+run_uuid: 95d37b92d4a440faa345511b4f4b75e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013435320
+status: 4
+tags: []
+user_id: unknown

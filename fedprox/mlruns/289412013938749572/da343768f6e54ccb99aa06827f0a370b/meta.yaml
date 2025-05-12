@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/da343768f6e54ccb99aa06827f0a370b/artifacts
+end_time: 1746023701504
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: da343768f6e54ccb99aa06827f0a370b
+run_name: thundering-gnat-402
+run_uuid: da343768f6e54ccb99aa06827f0a370b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023701107
+status: 3
+tags: []
+user_id: unknown

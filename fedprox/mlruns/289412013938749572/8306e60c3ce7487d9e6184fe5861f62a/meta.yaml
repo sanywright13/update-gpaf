@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8306e60c3ce7487d9e6184fe5861f62a/artifacts
+end_time: 1746013398044
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8306e60c3ce7487d9e6184fe5861f62a
+run_name: fun-owl-497
+run_uuid: 8306e60c3ce7487d9e6184fe5861f62a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013397995
+status: 4
+tags: []
+user_id: unknown

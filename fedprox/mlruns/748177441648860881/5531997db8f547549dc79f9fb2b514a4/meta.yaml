@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5531997db8f547549dc79f9fb2b514a4/artifacts
+end_time: 1744478813047
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5531997db8f547549dc79f9fb2b514a4
+run_name: ambitious-shoat-354
+run_uuid: 5531997db8f547549dc79f9fb2b514a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744477541233
+status: 3
+tags: []
+user_id: unknown

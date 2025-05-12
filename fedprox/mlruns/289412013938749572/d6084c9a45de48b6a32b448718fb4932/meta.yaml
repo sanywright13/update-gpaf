@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d6084c9a45de48b6a32b448718fb4932/artifacts
+end_time: 1746011631324
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d6084c9a45de48b6a32b448718fb4932
+run_name: languid-hog-391
+run_uuid: d6084c9a45de48b6a32b448718fb4932
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011631274
+status: 4
+tags: []
+user_id: unknown

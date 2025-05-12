@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d292e0f6c5604c49bf671da2e6716f16/artifacts
+end_time: 1744556481236
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d292e0f6c5604c49bf671da2e6716f16
+run_name: caring-turtle-211
+run_uuid: d292e0f6c5604c49bf671da2e6716f16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744556473930
+status: 3
+tags: []
+user_id: unknown

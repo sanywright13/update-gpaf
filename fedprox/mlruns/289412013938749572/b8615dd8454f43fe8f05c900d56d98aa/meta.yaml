@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b8615dd8454f43fe8f05c900d56d98aa/artifacts
+end_time: 1746018279111
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b8615dd8454f43fe8f05c900d56d98aa
+run_name: glamorous-skink-618
+run_uuid: b8615dd8454f43fe8f05c900d56d98aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018278691
+status: 3
+tags: []
+user_id: unknown

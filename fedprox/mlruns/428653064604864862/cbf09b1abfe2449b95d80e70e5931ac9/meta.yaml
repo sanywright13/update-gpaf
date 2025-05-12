@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/cbf09b1abfe2449b95d80e70e5931ac9/artifacts
+end_time: 1737566808026
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: cbf09b1abfe2449b95d80e70e5931ac9
+run_name: bemused-loon-329
+run_uuid: cbf09b1abfe2449b95d80e70e5931ac9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566808000
+status: 3
+tags: []
+user_id: unknown

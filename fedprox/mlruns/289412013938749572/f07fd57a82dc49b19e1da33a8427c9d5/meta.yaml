@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f07fd57a82dc49b19e1da33a8427c9d5/artifacts
+end_time: 1746011631807
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f07fd57a82dc49b19e1da33a8427c9d5
+run_name: awesome-zebra-609
+run_uuid: f07fd57a82dc49b19e1da33a8427c9d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011631764
+status: 4
+tags: []
+user_id: unknown

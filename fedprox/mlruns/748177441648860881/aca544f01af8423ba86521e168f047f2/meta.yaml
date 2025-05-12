@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/aca544f01af8423ba86521e168f047f2/artifacts
+end_time: 1742344652490
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: aca544f01af8423ba86521e168f047f2
+run_name: carefree-worm-373
+run_uuid: aca544f01af8423ba86521e168f047f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344652346
+status: 4
+tags: []
+user_id: unknown

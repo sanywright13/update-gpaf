@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/22ca9848e63e4d1993092e5213401527/artifacts
+end_time: 1746013418273
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 22ca9848e63e4d1993092e5213401527
+run_name: silent-sponge-803
+run_uuid: 22ca9848e63e4d1993092e5213401527
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013418225
+status: 4
+tags: []
+user_id: unknown

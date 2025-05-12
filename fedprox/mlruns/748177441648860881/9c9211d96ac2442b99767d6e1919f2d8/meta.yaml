@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/9c9211d96ac2442b99767d6e1919f2d8/artifacts
+end_time: 1743635226371
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 9c9211d96ac2442b99767d6e1919f2d8
+run_name: grandiose-ray-594
+run_uuid: 9c9211d96ac2442b99767d6e1919f2d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743635225879
+status: 3
+tags: []
+user_id: unknown

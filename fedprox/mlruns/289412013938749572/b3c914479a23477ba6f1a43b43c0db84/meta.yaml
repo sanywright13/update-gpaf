@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b3c914479a23477ba6f1a43b43c0db84/artifacts
+end_time: 1746013401859
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b3c914479a23477ba6f1a43b43c0db84
+run_name: bittersweet-asp-564
+run_uuid: b3c914479a23477ba6f1a43b43c0db84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013401810
+status: 4
+tags: []
+user_id: unknown

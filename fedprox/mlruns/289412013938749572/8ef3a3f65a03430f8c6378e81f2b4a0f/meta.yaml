@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8ef3a3f65a03430f8c6378e81f2b4a0f/artifacts
+end_time: 1746011615187
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8ef3a3f65a03430f8c6378e81f2b4a0f
+run_name: bright-gnu-703
+run_uuid: 8ef3a3f65a03430f8c6378e81f2b4a0f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011615146
+status: 4
+tags: []
+user_id: unknown

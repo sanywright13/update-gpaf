@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a71044dc9aaf411fab2fd1cb641b6e8d/artifacts
+end_time: 1746013426796
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a71044dc9aaf411fab2fd1cb641b6e8d
+run_name: handsome-penguin-255
+run_uuid: a71044dc9aaf411fab2fd1cb641b6e8d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013426748
+status: 4
+tags: []
+user_id: unknown

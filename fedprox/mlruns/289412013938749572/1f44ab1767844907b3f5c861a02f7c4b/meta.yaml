@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1f44ab1767844907b3f5c861a02f7c4b/artifacts
+end_time: 1746023777328
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1f44ab1767844907b3f5c861a02f7c4b
+run_name: awesome-steed-666
+run_uuid: 1f44ab1767844907b3f5c861a02f7c4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023776906
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/7e56aeb4e9d943c781a8807435a378ad/artifacts
+end_time: 1738154400404
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 7e56aeb4e9d943c781a8807435a378ad
+run_name: blushing-ram-823
+run_uuid: 7e56aeb4e9d943c781a8807435a378ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738154400158
+status: 3
+tags: []
+user_id: unknown

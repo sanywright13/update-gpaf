@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/ea5b3b755a6a419c94d53b521b17337c/artifacts
+end_time: 1738005526334
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: ea5b3b755a6a419c94d53b521b17337c
+run_name: dashing-snake-908
+run_uuid: ea5b3b755a6a419c94d53b521b17337c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005526140
+status: 3
+tags: []
+user_id: unknown

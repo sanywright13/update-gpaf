@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a8e4a443b8f746b3bfd48766a945a87d/artifacts
+end_time: 1740078264534
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a8e4a443b8f746b3bfd48766a945a87d
+run_name: whimsical-ape-992
+run_uuid: a8e4a443b8f746b3bfd48766a945a87d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078264320
+status: 3
+tags: []
+user_id: unknown

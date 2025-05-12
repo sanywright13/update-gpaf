@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/ce3d6f7deb584d92bb4cbf5f2c21217b/artifacts
+end_time: 1738253306876
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: ce3d6f7deb584d92bb4cbf5f2c21217b
+run_name: resilient-doe-47
+run_uuid: ce3d6f7deb584d92bb4cbf5f2c21217b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738253306806
+status: 3
+tags: []
+user_id: unknown

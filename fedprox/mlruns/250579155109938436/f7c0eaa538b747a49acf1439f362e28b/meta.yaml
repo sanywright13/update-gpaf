@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/f7c0eaa538b747a49acf1439f362e28b/artifacts
+end_time: 1738151858769
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: f7c0eaa538b747a49acf1439f362e28b
+run_name: invincible-gull-379
+run_uuid: f7c0eaa538b747a49acf1439f362e28b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738151681523
+status: 3
+tags: []
+user_id: unknown

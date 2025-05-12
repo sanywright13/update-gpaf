@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/1726ebf019b64aa6a70850cd8681017a/artifacts
+end_time: 1737991565598
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 1726ebf019b64aa6a70850cd8681017a
+run_name: receptive-kit-342
+run_uuid: 1726ebf019b64aa6a70850cd8681017a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737991565533
+status: 3
+tags: []
+user_id: unknown

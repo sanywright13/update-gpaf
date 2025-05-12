@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e8a84fe2807444f499f536e4a9ca4e06/artifacts
+end_time: 1746011593209
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e8a84fe2807444f499f536e4a9ca4e06
+run_name: bittersweet-carp-239
+run_uuid: e8a84fe2807444f499f536e4a9ca4e06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011593169
+status: 4
+tags: []
+user_id: unknown

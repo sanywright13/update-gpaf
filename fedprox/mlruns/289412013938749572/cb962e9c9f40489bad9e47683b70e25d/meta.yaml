@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cb962e9c9f40489bad9e47683b70e25d/artifacts
+end_time: 1746018960751
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cb962e9c9f40489bad9e47683b70e25d
+run_name: learned-kite-684
+run_uuid: cb962e9c9f40489bad9e47683b70e25d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018960316
+status: 3
+tags: []
+user_id: unknown

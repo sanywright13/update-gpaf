@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c73ff1fb27614f2ba2c6fa15f323e95c/artifacts
+end_time: 1738250081678
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c73ff1fb27614f2ba2c6fa15f323e95c
+run_name: beautiful-goat-659
+run_uuid: c73ff1fb27614f2ba2c6fa15f323e95c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738250074180
+status: 3
+tags: []
+user_id: unknown

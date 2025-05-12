@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9a9854b76b4e4efca47351c5f29a014d/artifacts
+end_time: 1746018478679
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9a9854b76b4e4efca47351c5f29a014d
+run_name: bedecked-steed-220
+run_uuid: 9a9854b76b4e4efca47351c5f29a014d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018478287
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d890517772004db6b7c0997ff3fcb71f/artifacts
+end_time: 1740080135901
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d890517772004db6b7c0997ff3fcb71f
+run_name: nosy-ant-616
+run_uuid: d890517772004db6b7c0997ff3fcb71f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080126892
+status: 3
+tags: []
+user_id: unknown

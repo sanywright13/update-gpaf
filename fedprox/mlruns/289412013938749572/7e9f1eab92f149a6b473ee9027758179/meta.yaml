@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7e9f1eab92f149a6b473ee9027758179/artifacts
+end_time: 1746017881642
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7e9f1eab92f149a6b473ee9027758179
+run_name: popular-ant-547
+run_uuid: 7e9f1eab92f149a6b473ee9027758179
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017881217
+status: 3
+tags: []
+user_id: unknown

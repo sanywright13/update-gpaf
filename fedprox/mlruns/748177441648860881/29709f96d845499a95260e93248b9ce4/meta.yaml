@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/29709f96d845499a95260e93248b9ce4/artifacts
+end_time: 1744462409986
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 29709f96d845499a95260e93248b9ce4
+run_name: popular-kite-586
+run_uuid: 29709f96d845499a95260e93248b9ce4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744462345973
+status: 3
+tags: []
+user_id: unknown

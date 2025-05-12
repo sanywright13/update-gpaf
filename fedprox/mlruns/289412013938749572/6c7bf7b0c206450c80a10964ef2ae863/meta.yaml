@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6c7bf7b0c206450c80a10964ef2ae863/artifacts
+end_time: 1746023734935
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6c7bf7b0c206450c80a10964ef2ae863
+run_name: painted-moose-733
+run_uuid: 6c7bf7b0c206450c80a10964ef2ae863
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023734520
+status: 3
+tags: []
+user_id: unknown

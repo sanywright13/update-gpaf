@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/e809bfbbbdd04abc8a6ee84133b2ffc9/artifacts
+end_time: 1737991292305
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: e809bfbbbdd04abc8a6ee84133b2ffc9
+run_name: wise-lark-412
+run_uuid: e809bfbbbdd04abc8a6ee84133b2ffc9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737991261127
+status: 3
+tags: []
+user_id: unknown

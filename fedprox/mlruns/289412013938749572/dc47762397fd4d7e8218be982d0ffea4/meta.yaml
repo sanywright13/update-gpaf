@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dc47762397fd4d7e8218be982d0ffea4/artifacts
+end_time: 1746011581176
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dc47762397fd4d7e8218be982d0ffea4
+run_name: lyrical-dove-100
+run_uuid: dc47762397fd4d7e8218be982d0ffea4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011581136
+status: 4
+tags: []
+user_id: unknown

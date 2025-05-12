@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/193f291156cd4a9ca0b40bbed7c7ffbf/artifacts
+end_time: 1736889011697
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 193f291156cd4a9ca0b40bbed7c7ffbf
+run_name: amusing-stoat-596
+run_uuid: 193f291156cd4a9ca0b40bbed7c7ffbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889011644
+status: 3
+tags: []
+user_id: unknown

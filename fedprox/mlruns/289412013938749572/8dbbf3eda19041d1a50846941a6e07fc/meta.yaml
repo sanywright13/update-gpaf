@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8dbbf3eda19041d1a50846941a6e07fc/artifacts
+end_time: 1746011624081
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8dbbf3eda19041d1a50846941a6e07fc
+run_name: big-squid-852
+run_uuid: 8dbbf3eda19041d1a50846941a6e07fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011624038
+status: 4
+tags: []
+user_id: unknown

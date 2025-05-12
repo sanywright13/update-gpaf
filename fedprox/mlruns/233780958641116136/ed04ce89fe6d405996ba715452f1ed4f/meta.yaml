@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/ed04ce89fe6d405996ba715452f1ed4f/artifacts
+end_time: 1738862387952
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: ed04ce89fe6d405996ba715452f1ed4f
+run_name: wistful-goat-539
+run_uuid: ed04ce89fe6d405996ba715452f1ed4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862387927
+status: 4
+tags: []
+user_id: unknown

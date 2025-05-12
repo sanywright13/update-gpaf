@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e6cf2456d5dd4524b8a6c7999890f8dd/artifacts
+end_time: 1746011588120
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e6cf2456d5dd4524b8a6c7999890f8dd
+run_name: polite-ray-394
+run_uuid: e6cf2456d5dd4524b8a6c7999890f8dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011588086
+status: 4
+tags: []
+user_id: unknown

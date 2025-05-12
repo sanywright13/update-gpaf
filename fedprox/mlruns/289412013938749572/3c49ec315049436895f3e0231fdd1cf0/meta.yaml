@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3c49ec315049436895f3e0231fdd1cf0/artifacts
+end_time: 1746021891737
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3c49ec315049436895f3e0231fdd1cf0
+run_name: kindly-mule-873
+run_uuid: 3c49ec315049436895f3e0231fdd1cf0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021891642
+status: 4
+tags: []
+user_id: unknown

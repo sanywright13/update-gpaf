@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/673903e2a4914dd69c3f5cd01f033294/artifacts
+end_time: 1738279215935
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 673903e2a4914dd69c3f5cd01f033294
+run_name: casual-stag-381
+run_uuid: 673903e2a4914dd69c3f5cd01f033294
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738279215882
+status: 3
+tags: []
+user_id: unknown

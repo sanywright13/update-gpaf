@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/754b523ae51944258765b66e9de9dcba/artifacts
+end_time: 1746013389914
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 754b523ae51944258765b66e9de9dcba
+run_name: rumbling-quail-120
+run_uuid: 754b523ae51944258765b66e9de9dcba
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013389865
+status: 4
+tags: []
+user_id: unknown

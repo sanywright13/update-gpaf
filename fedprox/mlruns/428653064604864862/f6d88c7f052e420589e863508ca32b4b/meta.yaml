@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/f6d88c7f052e420589e863508ca32b4b/artifacts
+end_time: 1737566808258
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: f6d88c7f052e420589e863508ca32b4b
+run_name: hilarious-finch-386
+run_uuid: f6d88c7f052e420589e863508ca32b4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566808235
+status: 3
+tags: []
+user_id: unknown

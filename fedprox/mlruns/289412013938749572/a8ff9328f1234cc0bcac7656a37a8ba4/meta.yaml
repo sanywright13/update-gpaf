@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a8ff9328f1234cc0bcac7656a37a8ba4/artifacts
+end_time: 1746019300351
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a8ff9328f1234cc0bcac7656a37a8ba4
+run_name: rogue-grouse-405
+run_uuid: a8ff9328f1234cc0bcac7656a37a8ba4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019299915
+status: 3
+tags: []
+user_id: unknown

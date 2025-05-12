@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/498dd7a64ec7410290db4045ade3cd07/artifacts
+end_time: 1742342049848
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 498dd7a64ec7410290db4045ade3cd07
+run_name: beautiful-mule-959
+run_uuid: 498dd7a64ec7410290db4045ade3cd07
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742342049798
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/0a94a4cdf8464d0fb6da53723af3486b/artifacts
+end_time: 1737297306814
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: 0a94a4cdf8464d0fb6da53723af3486b
+run_name: stylish-swan-602
+run_uuid: 0a94a4cdf8464d0fb6da53723af3486b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297306792
+status: 3
+tags: []
+user_id: unknown

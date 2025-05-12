@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0b934bc375884b8fad1d50d1458997c3/artifacts
+end_time: 1742256891308
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0b934bc375884b8fad1d50d1458997c3
+run_name: orderly-midge-516
+run_uuid: 0b934bc375884b8fad1d50d1458997c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256891256
+status: 3
+tags: []
+user_id: unknown

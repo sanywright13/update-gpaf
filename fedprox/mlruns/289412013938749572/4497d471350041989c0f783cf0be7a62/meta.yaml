@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4497d471350041989c0f783cf0be7a62/artifacts
+end_time: 1746023695909
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4497d471350041989c0f783cf0be7a62
+run_name: bittersweet-duck-101
+run_uuid: 4497d471350041989c0f783cf0be7a62
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023695814
+status: 4
+tags: []
+user_id: unknown

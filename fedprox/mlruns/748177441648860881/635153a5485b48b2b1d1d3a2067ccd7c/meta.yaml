@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/635153a5485b48b2b1d1d3a2067ccd7c/artifacts
+end_time: 1742256876018
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 635153a5485b48b2b1d1d3a2067ccd7c
+run_name: intelligent-chimp-1
+run_uuid: 635153a5485b48b2b1d1d3a2067ccd7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256875938
+status: 3
+tags: []
+user_id: unknown

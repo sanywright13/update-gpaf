@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/320a0ec57956473a853d499897af03b9/artifacts
+end_time: 1746023785869
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 320a0ec57956473a853d499897af03b9
+run_name: brawny-eel-231
+run_uuid: 320a0ec57956473a853d499897af03b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023785473
+status: 3
+tags: []
+user_id: unknown

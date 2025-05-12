@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e282424f95b14a25ba840ad766f96179/artifacts
+end_time: 1746013376807
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e282424f95b14a25ba840ad766f96179
+run_name: suave-whale-384
+run_uuid: e282424f95b14a25ba840ad766f96179
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013376761
+status: 4
+tags: []
+user_id: unknown

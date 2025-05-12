@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/855426e3d65e41658958ffd3b317bc56/artifacts
+end_time: 1744462104237
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 855426e3d65e41658958ffd3b317bc56
+run_name: blushing-snake-718
+run_uuid: 855426e3d65e41658958ffd3b317bc56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744462103656
+status: 3
+tags: []
+user_id: unknown

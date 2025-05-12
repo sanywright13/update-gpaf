@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c5ac37f3dd0944bb9cc6f8d42eb18012/artifacts
+end_time: 1744562229996
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c5ac37f3dd0944bb9cc6f8d42eb18012
+run_name: luxuriant-finch-576
+run_uuid: c5ac37f3dd0944bb9cc6f8d42eb18012
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744560517759
+status: 3
+tags: []
+user_id: unknown

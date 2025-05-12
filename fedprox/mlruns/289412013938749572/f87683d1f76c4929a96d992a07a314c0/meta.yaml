@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f87683d1f76c4929a96d992a07a314c0/artifacts
+end_time: 1746013427805
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f87683d1f76c4929a96d992a07a314c0
+run_name: beautiful-owl-771
+run_uuid: f87683d1f76c4929a96d992a07a314c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013427761
+status: 4
+tags: []
+user_id: unknown

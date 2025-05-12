@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/343da77238a54e98a0519968f2dab822/artifacts
+end_time: 1746011624465
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 343da77238a54e98a0519968f2dab822
+run_name: clean-seal-672
+run_uuid: 343da77238a54e98a0519968f2dab822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011624428
+status: 4
+tags: []
+user_id: unknown

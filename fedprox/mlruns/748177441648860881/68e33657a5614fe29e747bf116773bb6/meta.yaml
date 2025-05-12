@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/68e33657a5614fe29e747bf116773bb6/artifacts
+end_time: 1744492716492
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 68e33657a5614fe29e747bf116773bb6
+run_name: redolent-bat-771
+run_uuid: 68e33657a5614fe29e747bf116773bb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492716081
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/62b852c782a540d5be729112eac640a1/artifacts
+end_time: 1746013381039
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 62b852c782a540d5be729112eac640a1
+run_name: luxuriant-ox-750
+run_uuid: 62b852c782a540d5be729112eac640a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013380997
+status: 4
+tags: []
+user_id: unknown

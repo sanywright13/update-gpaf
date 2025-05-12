@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/743aac2395b94f1894e99683248e4727/artifacts
+end_time: 1746013356707
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 743aac2395b94f1894e99683248e4727
+run_name: auspicious-smelt-386
+run_uuid: 743aac2395b94f1894e99683248e4727
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013356666
+status: 4
+tags: []
+user_id: unknown

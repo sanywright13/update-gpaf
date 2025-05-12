@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7c9497f32a134934b4a46e1e4c1bba0e/artifacts
+end_time: 1746013410311
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7c9497f32a134934b4a46e1e4c1bba0e
+run_name: chill-eel-428
+run_uuid: 7c9497f32a134934b4a46e1e4c1bba0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013410263
+status: 4
+tags: []
+user_id: unknown

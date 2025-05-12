@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/079edbe7721446aab114ba7d9c36ccff/artifacts
+end_time: 1744668334455
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 079edbe7721446aab114ba7d9c36ccff
+run_name: defiant-hound-591
+run_uuid: 079edbe7721446aab114ba7d9c36ccff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744668324101
+status: 3
+tags: []
+user_id: unknown

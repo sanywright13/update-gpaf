@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/197a35367d0f45c7ae7ca390b2da176c/artifacts
+end_time: 1746011609531
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 197a35367d0f45c7ae7ca390b2da176c
+run_name: suave-mule-317
+run_uuid: 197a35367d0f45c7ae7ca390b2da176c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011609496
+status: 4
+tags: []
+user_id: unknown

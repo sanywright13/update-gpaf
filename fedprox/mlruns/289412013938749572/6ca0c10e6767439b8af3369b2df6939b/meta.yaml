@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6ca0c10e6767439b8af3369b2df6939b/artifacts
+end_time: 1746011582520
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6ca0c10e6767439b8af3369b2df6939b
+run_name: welcoming-ape-676
+run_uuid: 6ca0c10e6767439b8af3369b2df6939b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011582481
+status: 4
+tags: []
+user_id: unknown

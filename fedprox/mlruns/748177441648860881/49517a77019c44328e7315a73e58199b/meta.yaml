@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/49517a77019c44328e7315a73e58199b/artifacts
+end_time: 1744671000020
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 49517a77019c44328e7315a73e58199b
+run_name: polite-squid-991
+run_uuid: 49517a77019c44328e7315a73e58199b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744670958567
+status: 3
+tags: []
+user_id: unknown

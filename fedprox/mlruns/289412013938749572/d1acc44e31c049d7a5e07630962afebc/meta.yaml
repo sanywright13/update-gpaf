@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d1acc44e31c049d7a5e07630962afebc/artifacts
+end_time: 1746013415388
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d1acc44e31c049d7a5e07630962afebc
+run_name: shivering-doe-417
+run_uuid: d1acc44e31c049d7a5e07630962afebc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013415339
+status: 4
+tags: []
+user_id: unknown

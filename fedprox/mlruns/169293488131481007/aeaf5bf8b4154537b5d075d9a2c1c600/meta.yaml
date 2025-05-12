@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/aeaf5bf8b4154537b5d075d9a2c1c600/artifacts
+end_time: 1737463910081
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: aeaf5bf8b4154537b5d075d9a2c1c600
+run_name: abundant-vole-792
+run_uuid: aeaf5bf8b4154537b5d075d9a2c1c600
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737463910054
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0fc0c9b3826c4822909cdff9e3098f84/artifacts
+end_time: 1746013440394
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0fc0c9b3826c4822909cdff9e3098f84
+run_name: painted-newt-16
+run_uuid: 0fc0c9b3826c4822909cdff9e3098f84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013440344
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/00dac98e53ae41b5ba0708ea6c0fe5e5/artifacts
+end_time: 1746011641754
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 00dac98e53ae41b5ba0708ea6c0fe5e5
+run_name: invincible-smelt-869
+run_uuid: 00dac98e53ae41b5ba0708ea6c0fe5e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011641708
+status: 4
+tags: []
+user_id: unknown

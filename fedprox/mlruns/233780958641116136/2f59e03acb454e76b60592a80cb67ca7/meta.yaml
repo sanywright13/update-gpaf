@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/2f59e03acb454e76b60592a80cb67ca7/artifacts
+end_time: 1738754305936
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 2f59e03acb454e76b60592a80cb67ca7
+run_name: thundering-squid-281
+run_uuid: 2f59e03acb454e76b60592a80cb67ca7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754291275
+status: 3
+tags: []
+user_id: unknown

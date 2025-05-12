@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d274fd69db5b4149947fafa529fa4f04/artifacts
+end_time: 1746018338523
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d274fd69db5b4149947fafa529fa4f04
+run_name: thundering-koi-628
+run_uuid: d274fd69db5b4149947fafa529fa4f04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018338102
+status: 3
+tags: []
+user_id: unknown

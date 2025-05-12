@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/35841241af334487b9e6d909b3c132f1/artifacts
+end_time: 1746021918832
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 35841241af334487b9e6d909b3c132f1
+run_name: grandiose-snail-337
+run_uuid: 35841241af334487b9e6d909b3c132f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021918395
+status: 3
+tags: []
+user_id: unknown

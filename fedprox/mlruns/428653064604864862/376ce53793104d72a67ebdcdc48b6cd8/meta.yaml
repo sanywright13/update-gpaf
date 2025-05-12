@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/376ce53793104d72a67ebdcdc48b6cd8/artifacts
+end_time: 1737566128558
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 376ce53793104d72a67ebdcdc48b6cd8
+run_name: big-quail-650
+run_uuid: 376ce53793104d72a67ebdcdc48b6cd8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566128516
+status: 3
+tags: []
+user_id: unknown

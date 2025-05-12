@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/904cf137b4654a66bec40ecee0cdc0b0/artifacts
+end_time: 1738005528269
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 904cf137b4654a66bec40ecee0cdc0b0
+run_name: aged-koi-866
+run_uuid: 904cf137b4654a66bec40ecee0cdc0b0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005528035
+status: 3
+tags: []
+user_id: unknown

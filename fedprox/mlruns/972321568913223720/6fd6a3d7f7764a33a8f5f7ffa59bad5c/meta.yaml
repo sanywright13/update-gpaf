@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/6fd6a3d7f7764a33a8f5f7ffa59bad5c/artifacts
+end_time: 1737117425735
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 6fd6a3d7f7764a33a8f5f7ffa59bad5c
+run_name: peaceful-ox-872
+run_uuid: 6fd6a3d7f7764a33a8f5f7ffa59bad5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117425680
+status: 4
+tags: []
+user_id: unknown

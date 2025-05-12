@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fadffde6981e44f39adf8d2ebd5d3950/artifacts
+end_time: 1746018678360
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fadffde6981e44f39adf8d2ebd5d3950
+run_name: thundering-crane-924
+run_uuid: fadffde6981e44f39adf8d2ebd5d3950
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018677940
+status: 3
+tags: []
+user_id: unknown

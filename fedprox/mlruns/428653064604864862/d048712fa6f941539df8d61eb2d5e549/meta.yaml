@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/d048712fa6f941539df8d61eb2d5e549/artifacts
+end_time: 1737669696332
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: d048712fa6f941539df8d61eb2d5e549
+run_name: carefree-foal-894
+run_uuid: d048712fa6f941539df8d61eb2d5e549
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737669696248
+status: 3
+tags: []
+user_id: unknown

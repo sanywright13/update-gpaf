@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d28d1168294f4356a901b40f9dee8df8/artifacts
+end_time: 1744483999220
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d28d1168294f4356a901b40f9dee8df8
+run_name: shivering-moose-452
+run_uuid: d28d1168294f4356a901b40f9dee8df8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483998600
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/147594454214892704/723b401484a3480d9068945f5e4a8faf/artifacts
+end_time: 1737741823171
+entry_point_name: ''
+experiment_id: '147594454214892704'
+lifecycle_stage: active
+run_id: 723b401484a3480d9068945f5e4a8faf
+run_name: zealous-shrike-974
+run_uuid: 723b401484a3480d9068945f5e4a8faf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737741376498
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/72a98ed062c54619a8d20c345b4c6883/artifacts
+end_time: 1746023759182
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 72a98ed062c54619a8d20c345b4c6883
+run_name: hilarious-rook-395
+run_uuid: 72a98ed062c54619a8d20c345b4c6883
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023758766
+status: 3
+tags: []
+user_id: unknown

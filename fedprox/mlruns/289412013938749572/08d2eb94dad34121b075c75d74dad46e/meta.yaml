@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/08d2eb94dad34121b075c75d74dad46e/artifacts
+end_time: 1746013376004
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 08d2eb94dad34121b075c75d74dad46e
+run_name: crawling-shoat-982
+run_uuid: 08d2eb94dad34121b075c75d74dad46e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013375962
+status: 4
+tags: []
+user_id: unknown

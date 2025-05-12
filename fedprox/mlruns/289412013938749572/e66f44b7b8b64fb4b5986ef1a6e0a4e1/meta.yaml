@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e66f44b7b8b64fb4b5986ef1a6e0a4e1/artifacts
+end_time: 1746013433841
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e66f44b7b8b64fb4b5986ef1a6e0a4e1
+run_name: enthused-grouse-184
+run_uuid: e66f44b7b8b64fb4b5986ef1a6e0a4e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013433796
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e51f78d64e3c49dfb3d5afc73e1d9a4c/artifacts
+end_time: 1746013414963
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e51f78d64e3c49dfb3d5afc73e1d9a4c
+run_name: dapper-trout-213
+run_uuid: e51f78d64e3c49dfb3d5afc73e1d9a4c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013414919
+status: 4
+tags: []
+user_id: unknown

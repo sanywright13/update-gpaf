@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a3c3bb4957c14d9f8b04f598ca064181/artifacts
+end_time: 1746013381575
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a3c3bb4957c14d9f8b04f598ca064181
+run_name: angry-vole-262
+run_uuid: a3c3bb4957c14d9f8b04f598ca064181
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013381527
+status: 4
+tags: []
+user_id: unknown

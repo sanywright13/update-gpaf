@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/768516cec28346f68f40caf0266ab009/artifacts
+end_time: 1738277914370
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 768516cec28346f68f40caf0266ab009
+run_name: intelligent-doe-59
+run_uuid: 768516cec28346f68f40caf0266ab009
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738277914336
+status: 3
+tags: []
+user_id: unknown

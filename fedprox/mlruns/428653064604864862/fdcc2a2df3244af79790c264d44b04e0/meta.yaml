@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/fdcc2a2df3244af79790c264d44b04e0/artifacts
+end_time: 1737550123724
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: fdcc2a2df3244af79790c264d44b04e0
+run_name: salty-trout-800
+run_uuid: fdcc2a2df3244af79790c264d44b04e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737550123704
+status: 3
+tags: []
+user_id: unknown

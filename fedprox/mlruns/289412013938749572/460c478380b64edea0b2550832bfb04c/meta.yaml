@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/460c478380b64edea0b2550832bfb04c/artifacts
+end_time: 1746017599982
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 460c478380b64edea0b2550832bfb04c
+run_name: adventurous-bear-222
+run_uuid: 460c478380b64edea0b2550832bfb04c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017599588
+status: 3
+tags: []
+user_id: unknown

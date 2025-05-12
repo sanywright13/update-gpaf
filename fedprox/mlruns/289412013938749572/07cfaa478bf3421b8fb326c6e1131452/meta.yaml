@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/07cfaa478bf3421b8fb326c6e1131452/artifacts
+end_time: 1746017542488
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 07cfaa478bf3421b8fb326c6e1131452
+run_name: learned-calf-826
+run_uuid: 07cfaa478bf3421b8fb326c6e1131452
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017542411
+status: 4
+tags: []
+user_id: unknown

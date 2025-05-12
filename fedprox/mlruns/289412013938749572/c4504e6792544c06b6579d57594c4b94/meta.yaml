@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c4504e6792544c06b6579d57594c4b94/artifacts
+end_time: 1746013378140
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c4504e6792544c06b6579d57594c4b94
+run_name: burly-snake-201
+run_uuid: c4504e6792544c06b6579d57594c4b94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013378097
+status: 4
+tags: []
+user_id: unknown

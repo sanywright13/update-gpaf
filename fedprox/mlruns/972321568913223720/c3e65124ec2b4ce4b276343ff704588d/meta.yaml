@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/c3e65124ec2b4ce4b276343ff704588d/artifacts
+end_time: 1737117420590
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: c3e65124ec2b4ce4b276343ff704588d
+run_name: victorious-worm-135
+run_uuid: c3e65124ec2b4ce4b276343ff704588d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117420549
+status: 4
+tags: []
+user_id: unknown

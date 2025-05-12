@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d60ff9d2c92848dcab656e54240cd44e/artifacts
+end_time: 1746013433843
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d60ff9d2c92848dcab656e54240cd44e
+run_name: loud-duck-926
+run_uuid: d60ff9d2c92848dcab656e54240cd44e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013433798
+status: 4
+tags: []
+user_id: unknown

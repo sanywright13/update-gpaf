@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/62d677905d85469db221f78905540f85/artifacts
+end_time: 1737908351304
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 62d677905d85469db221f78905540f85
+run_name: gifted-grouse-552
+run_uuid: 62d677905d85469db221f78905540f85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737908351207
+status: 3
+tags: []
+user_id: unknown

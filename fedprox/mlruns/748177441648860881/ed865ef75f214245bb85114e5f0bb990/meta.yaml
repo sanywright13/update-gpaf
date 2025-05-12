@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ed865ef75f214245bb85114e5f0bb990/artifacts
+end_time: 1744554279091
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ed865ef75f214245bb85114e5f0bb990
+run_name: burly-goose-36
+run_uuid: ed865ef75f214245bb85114e5f0bb990
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744552479063
+status: 3
+tags: []
+user_id: unknown

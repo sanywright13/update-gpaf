@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/929d273aa86d4b3281a8567ed212c82f/artifacts
+end_time: 1744467115851
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 929d273aa86d4b3281a8567ed212c82f
+run_name: gaudy-bass-351
+run_uuid: 929d273aa86d4b3281a8567ed212c82f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744467115464
+status: 3
+tags: []
+user_id: unknown

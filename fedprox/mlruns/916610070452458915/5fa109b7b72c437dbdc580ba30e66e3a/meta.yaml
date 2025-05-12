@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/916610070452458915/5fa109b7b72c437dbdc580ba30e66e3a/artifacts
+end_time: 1744750404459
+entry_point_name: ''
+experiment_id: '916610070452458915'
+lifecycle_stage: active
+run_id: 5fa109b7b72c437dbdc580ba30e66e3a
+run_name: angry-shrike-362
+run_uuid: 5fa109b7b72c437dbdc580ba30e66e3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744746092283
+status: 3
+tags: []
+user_id: unknown

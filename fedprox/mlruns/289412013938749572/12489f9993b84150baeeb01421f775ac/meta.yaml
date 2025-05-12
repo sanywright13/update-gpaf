@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/12489f9993b84150baeeb01421f775ac/artifacts
+end_time: 1746013354872
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 12489f9993b84150baeeb01421f775ac
+run_name: debonair-mule-974
+run_uuid: 12489f9993b84150baeeb01421f775ac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013354827
+status: 4
+tags: []
+user_id: unknown

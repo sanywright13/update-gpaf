@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/1bc8c713d61748fabbb6a5b678625b9d/artifacts
+end_time: 1738008236255
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 1bc8c713d61748fabbb6a5b678625b9d
+run_name: upbeat-shrew-520
+run_uuid: 1bc8c713d61748fabbb6a5b678625b9d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738008194542
+status: 3
+tags: []
+user_id: unknown

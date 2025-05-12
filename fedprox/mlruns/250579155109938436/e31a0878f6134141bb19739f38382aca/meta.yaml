@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e31a0878f6134141bb19739f38382aca/artifacts
+end_time: 1738255212291
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e31a0878f6134141bb19739f38382aca
+run_name: big-seal-769
+run_uuid: e31a0878f6134141bb19739f38382aca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738255204292
+status: 3
+tags: []
+user_id: unknown

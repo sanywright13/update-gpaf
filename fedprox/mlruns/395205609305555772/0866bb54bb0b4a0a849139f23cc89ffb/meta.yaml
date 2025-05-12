@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/0866bb54bb0b4a0a849139f23cc89ffb/artifacts
+end_time: 1736888370465
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 0866bb54bb0b4a0a849139f23cc89ffb
+run_name: adorable-fowl-647
+run_uuid: 0866bb54bb0b4a0a849139f23cc89ffb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888370415
+status: 3
+tags: []
+user_id: unknown

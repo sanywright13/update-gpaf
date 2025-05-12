@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/87e07946b16d4e25a8455ee4ee8f744f/artifacts
+end_time: 1746011577756
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 87e07946b16d4e25a8455ee4ee8f744f
+run_name: chill-donkey-755
+run_uuid: 87e07946b16d4e25a8455ee4ee8f744f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011577721
+status: 4
+tags: []
+user_id: unknown

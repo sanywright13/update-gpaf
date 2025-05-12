@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/371e5fd54676438db20c4375c2ec3f17/artifacts
+end_time: 1737469822478
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 371e5fd54676438db20c4375c2ec3f17
+run_name: sincere-sloth-453
+run_uuid: 371e5fd54676438db20c4375c2ec3f17
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469822449
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3149849a80944743ba0b08c915425d94/artifacts
+end_time: 1746011640355
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3149849a80944743ba0b08c915425d94
+run_name: flawless-shrike-840
+run_uuid: 3149849a80944743ba0b08c915425d94
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011640310
+status: 4
+tags: []
+user_id: unknown

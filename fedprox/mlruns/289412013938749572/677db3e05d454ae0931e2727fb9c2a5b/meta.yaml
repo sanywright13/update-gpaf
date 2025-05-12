@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/677db3e05d454ae0931e2727fb9c2a5b/artifacts
+end_time: 1746013363550
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 677db3e05d454ae0931e2727fb9c2a5b
+run_name: bald-jay-739
+run_uuid: 677db3e05d454ae0931e2727fb9c2a5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013363505
+status: 4
+tags: []
+user_id: unknown

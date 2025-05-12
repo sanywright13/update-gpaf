@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/e11a13f8c20f4787bb5c89b7604d767d/artifacts
+end_time: 1738006750611
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: e11a13f8c20f4787bb5c89b7604d767d
+run_name: bouncy-hawk-686
+run_uuid: e11a13f8c20f4787bb5c89b7604d767d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738006672918
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2d52a9f556f34a82b9894a937e9a0a99/artifacts
+end_time: 1738241899501
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2d52a9f556f34a82b9894a937e9a0a99
+run_name: zealous-snake-919
+run_uuid: 2d52a9f556f34a82b9894a937e9a0a99
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738241892019
+status: 3
+tags: []
+user_id: unknown

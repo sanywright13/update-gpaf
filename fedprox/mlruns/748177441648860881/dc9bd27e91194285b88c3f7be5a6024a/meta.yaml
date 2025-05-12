@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/dc9bd27e91194285b88c3f7be5a6024a/artifacts
+end_time: 1743634747173
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: dc9bd27e91194285b88c3f7be5a6024a
+run_name: merciful-cow-391
+run_uuid: dc9bd27e91194285b88c3f7be5a6024a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743634746829
+status: 3
+tags: []
+user_id: unknown

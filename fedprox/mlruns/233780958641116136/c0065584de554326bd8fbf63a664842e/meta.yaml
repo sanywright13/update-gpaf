@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/c0065584de554326bd8fbf63a664842e/artifacts
+end_time: 1738754303524
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: c0065584de554326bd8fbf63a664842e
+run_name: merciful-perch-569
+run_uuid: c0065584de554326bd8fbf63a664842e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754303403
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/916610070452458915/fcc83e1376df48ec86ef205c101ff34c/artifacts
+end_time: 1744750404157
+entry_point_name: ''
+experiment_id: '916610070452458915'
+lifecycle_stage: active
+run_id: fcc83e1376df48ec86ef205c101ff34c
+run_name: treasured-koi-533
+run_uuid: fcc83e1376df48ec86ef205c101ff34c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744746064727
+status: 3
+tags: []
+user_id: unknown

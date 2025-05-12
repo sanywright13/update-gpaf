@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1f3b1653b1aa4f899418211cb51bd804/artifacts
+end_time: 1746011612454
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1f3b1653b1aa4f899418211cb51bd804
+run_name: rebellious-bass-824
+run_uuid: 1f3b1653b1aa4f899418211cb51bd804
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011612412
+status: 4
+tags: []
+user_id: unknown

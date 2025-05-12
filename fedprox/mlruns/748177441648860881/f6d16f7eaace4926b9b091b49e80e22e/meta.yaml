@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f6d16f7eaace4926b9b091b49e80e22e/artifacts
+end_time: 1744488372761
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f6d16f7eaace4926b9b091b49e80e22e
+run_name: judicious-lynx-245
+run_uuid: f6d16f7eaace4926b9b091b49e80e22e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744488372129
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4e3fb4c4632046329b57006436a0ffcb/artifacts
+end_time: 1746013387829
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4e3fb4c4632046329b57006436a0ffcb
+run_name: luminous-doe-536
+run_uuid: 4e3fb4c4632046329b57006436a0ffcb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013387783
+status: 4
+tags: []
+user_id: unknown

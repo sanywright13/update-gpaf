@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/016edbd3dcfd459186d7e6878f4cb1a4/artifacts
+end_time: 1743289097021
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 016edbd3dcfd459186d7e6878f4cb1a4
+run_name: classy-dolphin-590
+run_uuid: 016edbd3dcfd459186d7e6878f4cb1a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743289063097
+status: 3
+tags: []
+user_id: unknown

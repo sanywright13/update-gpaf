@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/adf041b45bd8499ab8bd5076c300cafc/artifacts
+end_time: 1746011634620
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: adf041b45bd8499ab8bd5076c300cafc
+run_name: chill-kite-112
+run_uuid: adf041b45bd8499ab8bd5076c300cafc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011634577
+status: 4
+tags: []
+user_id: unknown

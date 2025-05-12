@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c62c261bd16249bc84acfd3ab30515e1/artifacts
+end_time: 1746013412070
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c62c261bd16249bc84acfd3ab30515e1
+run_name: merciful-cod-164
+run_uuid: c62c261bd16249bc84acfd3ab30515e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013412025
+status: 4
+tags: []
+user_id: unknown

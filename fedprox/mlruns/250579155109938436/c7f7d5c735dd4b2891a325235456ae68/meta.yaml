@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/c7f7d5c735dd4b2891a325235456ae68/artifacts
+end_time: 1738157325730
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: c7f7d5c735dd4b2891a325235456ae68
+run_name: dashing-conch-435
+run_uuid: c7f7d5c735dd4b2891a325235456ae68
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738157325437
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/13e9890c6ec64de4af15a209df1b3c6d/artifacts
+end_time: 1746017515291
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 13e9890c6ec64de4af15a209df1b3c6d
+run_name: sneaky-squid-46
+run_uuid: 13e9890c6ec64de4af15a209df1b3c6d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017515201
+status: 4
+tags: []
+user_id: unknown

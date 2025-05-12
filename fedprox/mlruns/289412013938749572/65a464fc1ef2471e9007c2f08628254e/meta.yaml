@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/65a464fc1ef2471e9007c2f08628254e/artifacts
+end_time: 1746017998061
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 65a464fc1ef2471e9007c2f08628254e
+run_name: adorable-fish-845
+run_uuid: 65a464fc1ef2471e9007c2f08628254e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017997639
+status: 3
+tags: []
+user_id: unknown

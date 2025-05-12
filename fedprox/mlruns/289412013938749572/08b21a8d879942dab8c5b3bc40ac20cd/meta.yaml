@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/08b21a8d879942dab8c5b3bc40ac20cd/artifacts
+end_time: 1746013431394
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 08b21a8d879942dab8c5b3bc40ac20cd
+run_name: inquisitive-fowl-768
+run_uuid: 08b21a8d879942dab8c5b3bc40ac20cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013431345
+status: 4
+tags: []
+user_id: unknown

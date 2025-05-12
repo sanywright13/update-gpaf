@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2a486130de76429fa5cea1e71f57a4ae/artifacts
+end_time: 1746021805905
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2a486130de76429fa5cea1e71f57a4ae
+run_name: stately-sow-318
+run_uuid: 2a486130de76429fa5cea1e71f57a4ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021805501
+status: 3
+tags: []
+user_id: unknown

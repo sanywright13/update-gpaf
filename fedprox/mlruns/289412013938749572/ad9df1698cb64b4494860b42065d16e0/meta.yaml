@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ad9df1698cb64b4494860b42065d16e0/artifacts
+end_time: 1746011617445
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ad9df1698cb64b4494860b42065d16e0
+run_name: traveling-wasp-754
+run_uuid: ad9df1698cb64b4494860b42065d16e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011617403
+status: 4
+tags: []
+user_id: unknown

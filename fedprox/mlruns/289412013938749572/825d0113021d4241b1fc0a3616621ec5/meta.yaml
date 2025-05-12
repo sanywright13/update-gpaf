@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/825d0113021d4241b1fc0a3616621ec5/artifacts
+end_time: 1746013365244
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 825d0113021d4241b1fc0a3616621ec5
+run_name: traveling-conch-640
+run_uuid: 825d0113021d4241b1fc0a3616621ec5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013365204
+status: 4
+tags: []
+user_id: unknown

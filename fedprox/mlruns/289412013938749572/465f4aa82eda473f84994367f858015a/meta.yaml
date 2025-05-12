@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/465f4aa82eda473f84994367f858015a/artifacts
+end_time: 1746013416762
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 465f4aa82eda473f84994367f858015a
+run_name: polite-hawk-957
+run_uuid: 465f4aa82eda473f84994367f858015a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013416719
+status: 4
+tags: []
+user_id: unknown

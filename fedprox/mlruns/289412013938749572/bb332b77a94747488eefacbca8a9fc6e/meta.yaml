@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bb332b77a94747488eefacbca8a9fc6e/artifacts
+end_time: 1746013386576
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bb332b77a94747488eefacbca8a9fc6e
+run_name: redolent-swan-569
+run_uuid: bb332b77a94747488eefacbca8a9fc6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013386535
+status: 4
+tags: []
+user_id: unknown

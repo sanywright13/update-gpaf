@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dd156fd0ccf04374b2d24957bde30a54/artifacts
+end_time: 1746013386069
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dd156fd0ccf04374b2d24957bde30a54
+run_name: defiant-rook-223
+run_uuid: dd156fd0ccf04374b2d24957bde30a54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013386026
+status: 4
+tags: []
+user_id: unknown

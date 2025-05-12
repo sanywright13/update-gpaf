@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/84463b511ca3436ebec6bc451a81e025/artifacts
+end_time: 1742344908794
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 84463b511ca3436ebec6bc451a81e025
+run_name: loud-grub-743
+run_uuid: 84463b511ca3436ebec6bc451a81e025
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344908631
+status: 4
+tags: []
+user_id: unknown

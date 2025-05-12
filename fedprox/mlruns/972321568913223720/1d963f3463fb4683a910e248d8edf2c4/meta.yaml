@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/1d963f3463fb4683a910e248d8edf2c4/artifacts
+end_time: 1737050378751
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 1d963f3463fb4683a910e248d8edf2c4
+run_name: nosy-steed-274
+run_uuid: 1d963f3463fb4683a910e248d8edf2c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737050307393
+status: 3
+tags: []
+user_id: unknown

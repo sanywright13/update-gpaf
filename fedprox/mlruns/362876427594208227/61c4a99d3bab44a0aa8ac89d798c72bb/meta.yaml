@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/61c4a99d3bab44a0aa8ac89d798c72bb/artifacts
+end_time: 1738005284200
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 61c4a99d3bab44a0aa8ac89d798c72bb
+run_name: ambitious-mole-752
+run_uuid: 61c4a99d3bab44a0aa8ac89d798c72bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005283996
+status: 3
+tags: []
+user_id: unknown

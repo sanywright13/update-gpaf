@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/763b592fea5541e182f1f5d41ed0c6d5/artifacts
+end_time: 1737469830217
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 763b592fea5541e182f1f5d41ed0c6d5
+run_name: efficient-donkey-792
+run_uuid: 763b592fea5541e182f1f5d41ed0c6d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469830177
+status: 4
+tags: []
+user_id: unknown

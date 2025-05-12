@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/10584a56c0174606a4083b2f08b14c09/artifacts
+end_time: 1746023722519
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 10584a56c0174606a4083b2f08b14c09
+run_name: mysterious-loon-190
+run_uuid: 10584a56c0174606a4083b2f08b14c09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023722100
+status: 3
+tags: []
+user_id: unknown

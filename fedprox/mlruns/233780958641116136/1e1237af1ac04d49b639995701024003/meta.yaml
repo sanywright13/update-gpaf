@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/1e1237af1ac04d49b639995701024003/artifacts
+end_time: 1738862951181
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 1e1237af1ac04d49b639995701024003
+run_name: likeable-roo-764
+run_uuid: 1e1237af1ac04d49b639995701024003
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862951154
+status: 4
+tags: []
+user_id: unknown

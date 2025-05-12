@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/40bb2402596e44aba38f73b9febbf5e8/artifacts
+end_time: 1746106652707
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 40bb2402596e44aba38f73b9febbf5e8
+run_name: bustling-grouse-32
+run_uuid: 40bb2402596e44aba38f73b9febbf5e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746106651735
+status: 3
+tags: []
+user_id: unknown

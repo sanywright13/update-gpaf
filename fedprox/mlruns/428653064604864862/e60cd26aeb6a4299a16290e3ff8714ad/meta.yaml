@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/e60cd26aeb6a4299a16290e3ff8714ad/artifacts
+end_time: 1737544614583
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: e60cd26aeb6a4299a16290e3ff8714ad
+run_name: masked-elk-204
+run_uuid: e60cd26aeb6a4299a16290e3ff8714ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737544588546
+status: 3
+tags: []
+user_id: unknown

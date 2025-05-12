@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/8a506fedeb9b4f74b686dcca942e4ce2/artifacts
+end_time: 1742391347352
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 8a506fedeb9b4f74b686dcca942e4ce2
+run_name: capricious-crane-615
+run_uuid: 8a506fedeb9b4f74b686dcca942e4ce2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742391335066
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/85d24d6138414098b39dc2b69b4102f2/artifacts
+end_time: 1746023719210
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 85d24d6138414098b39dc2b69b4102f2
+run_name: stylish-mule-478
+run_uuid: 85d24d6138414098b39dc2b69b4102f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023718788
+status: 3
+tags: []
+user_id: unknown

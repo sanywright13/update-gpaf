@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fed63e5cafbe4882a38dd33ad0fc9a56/artifacts
+end_time: 1746023729096
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fed63e5cafbe4882a38dd33ad0fc9a56
+run_name: learned-hound-259
+run_uuid: fed63e5cafbe4882a38dd33ad0fc9a56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023728666
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/8ab05a3846514fb5848b513cb6b311bf/artifacts
+end_time: 1737469826744
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 8ab05a3846514fb5848b513cb6b311bf
+run_name: rumbling-dove-952
+run_uuid: 8ab05a3846514fb5848b513cb6b311bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469826706
+status: 4
+tags: []
+user_id: unknown

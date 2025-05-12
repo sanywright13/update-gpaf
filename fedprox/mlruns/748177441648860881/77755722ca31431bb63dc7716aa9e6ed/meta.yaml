@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/77755722ca31431bb63dc7716aa9e6ed/artifacts
+end_time: 1740078661668
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 77755722ca31431bb63dc7716aa9e6ed
+run_name: rebellious-bat-984
+run_uuid: 77755722ca31431bb63dc7716aa9e6ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078626479
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5e63da93fa964e519d2d1599c8107291/artifacts
+end_time: 1742344652289
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5e63da93fa964e519d2d1599c8107291
+run_name: overjoyed-koi-852
+run_uuid: 5e63da93fa964e519d2d1599c8107291
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344569509
+status: 3
+tags: []
+user_id: unknown

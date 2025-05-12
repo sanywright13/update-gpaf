@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/ded01a473c874438aefc331ff690afb9/artifacts
+end_time: 1736975737455
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: ded01a473c874438aefc331ff690afb9
+run_name: languid-flea-473
+run_uuid: ded01a473c874438aefc331ff690afb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736975568625
+status: 3
+tags: []
+user_id: unknown

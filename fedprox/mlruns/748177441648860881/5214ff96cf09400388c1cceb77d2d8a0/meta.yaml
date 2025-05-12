@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5214ff96cf09400388c1cceb77d2d8a0/artifacts
+end_time: 1740078398139
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5214ff96cf09400388c1cceb77d2d8a0
+run_name: bouncy-seal-204
+run_uuid: 5214ff96cf09400388c1cceb77d2d8a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078388745
+status: 3
+tags: []
+user_id: unknown

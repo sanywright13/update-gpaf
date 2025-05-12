@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9c818fa5ca0f4dcb9337360a171c0f10/artifacts
+end_time: 1746023795215
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9c818fa5ca0f4dcb9337360a171c0f10
+run_name: judicious-zebra-473
+run_uuid: 9c818fa5ca0f4dcb9337360a171c0f10
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023794781
+status: 3
+tags: []
+user_id: unknown

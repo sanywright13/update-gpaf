@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6488d3b836c44d1db3e2dcba32e91f79/artifacts
+end_time: 1746011585898
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6488d3b836c44d1db3e2dcba32e91f79
+run_name: delicate-rook-520
+run_uuid: 6488d3b836c44d1db3e2dcba32e91f79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011585864
+status: 4
+tags: []
+user_id: unknown

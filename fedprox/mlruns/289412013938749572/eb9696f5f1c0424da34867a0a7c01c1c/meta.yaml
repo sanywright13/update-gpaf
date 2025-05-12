@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/eb9696f5f1c0424da34867a0a7c01c1c/artifacts
+end_time: 1746011624087
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: eb9696f5f1c0424da34867a0a7c01c1c
+run_name: delightful-midge-71
+run_uuid: eb9696f5f1c0424da34867a0a7c01c1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011624045
+status: 4
+tags: []
+user_id: unknown

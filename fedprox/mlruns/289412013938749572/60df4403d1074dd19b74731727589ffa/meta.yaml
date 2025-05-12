@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/60df4403d1074dd19b74731727589ffa/artifacts
+end_time: 1746013400799
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 60df4403d1074dd19b74731727589ffa
+run_name: likeable-duck-850
+run_uuid: 60df4403d1074dd19b74731727589ffa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013400752
+status: 4
+tags: []
+user_id: unknown

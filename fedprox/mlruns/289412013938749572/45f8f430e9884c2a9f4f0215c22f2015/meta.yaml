@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/45f8f430e9884c2a9f4f0215c22f2015/artifacts
+end_time: 1746011594410
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 45f8f430e9884c2a9f4f0215c22f2015
+run_name: glamorous-kite-652
+run_uuid: 45f8f430e9884c2a9f4f0215c22f2015
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011594366
+status: 4
+tags: []
+user_id: unknown

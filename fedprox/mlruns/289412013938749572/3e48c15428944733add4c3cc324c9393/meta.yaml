@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3e48c15428944733add4c3cc324c9393/artifacts
+end_time: 1746018451507
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3e48c15428944733add4c3cc324c9393
+run_name: stately-wasp-591
+run_uuid: 3e48c15428944733add4c3cc324c9393
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018451371
+status: 4
+tags: []
+user_id: unknown

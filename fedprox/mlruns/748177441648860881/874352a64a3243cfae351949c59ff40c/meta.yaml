@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/874352a64a3243cfae351949c59ff40c/artifacts
+end_time: 1744669705087
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 874352a64a3243cfae351949c59ff40c
+run_name: sedate-midge-309
+run_uuid: 874352a64a3243cfae351949c59ff40c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744669694660
+status: 3
+tags: []
+user_id: unknown

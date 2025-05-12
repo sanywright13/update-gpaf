@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/aac6677a43ba4c6ca861da206a9a0d0e/artifacts
+end_time: 1740091736041
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: aac6677a43ba4c6ca861da206a9a0d0e
+run_name: luminous-goose-719
+run_uuid: aac6677a43ba4c6ca861da206a9a0d0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740091735903
+status: 3
+tags: []
+user_id: unknown

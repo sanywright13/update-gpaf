@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/ecabac6351944aafb8b3a6de782c71df/artifacts
+end_time: 1738005516617
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: ecabac6351944aafb8b3a6de782c71df
+run_name: grandiose-zebra-336
+run_uuid: ecabac6351944aafb8b3a6de782c71df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005516384
+status: 3
+tags: []
+user_id: unknown

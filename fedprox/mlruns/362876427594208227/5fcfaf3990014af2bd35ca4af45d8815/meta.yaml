@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/5fcfaf3990014af2bd35ca4af45d8815/artifacts
+end_time: 1738005553820
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 5fcfaf3990014af2bd35ca4af45d8815
+run_name: crawling-shrew-332
+run_uuid: 5fcfaf3990014af2bd35ca4af45d8815
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005553548
+status: 3
+tags: []
+user_id: unknown

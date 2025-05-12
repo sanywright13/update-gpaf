@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8f60b410f0fc4de1a5eda7380569a029/artifacts
+end_time: 1746023725520
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8f60b410f0fc4de1a5eda7380569a029
+run_name: thoughtful-koi-211
+run_uuid: 8f60b410f0fc4de1a5eda7380569a029
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023725424
+status: 4
+tags: []
+user_id: unknown

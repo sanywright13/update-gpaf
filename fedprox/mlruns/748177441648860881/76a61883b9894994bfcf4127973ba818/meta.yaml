@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/76a61883b9894994bfcf4127973ba818/artifacts
+end_time: 1742346879600
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 76a61883b9894994bfcf4127973ba818
+run_name: sedate-squirrel-645
+run_uuid: 76a61883b9894994bfcf4127973ba818
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742346879428
+status: 4
+tags: []
+user_id: unknown

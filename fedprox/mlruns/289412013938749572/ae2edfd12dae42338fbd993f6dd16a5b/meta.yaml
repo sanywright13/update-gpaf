@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ae2edfd12dae42338fbd993f6dd16a5b/artifacts
+end_time: 1746013425796
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ae2edfd12dae42338fbd993f6dd16a5b
+run_name: caring-wren-419
+run_uuid: ae2edfd12dae42338fbd993f6dd16a5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013425750
+status: 4
+tags: []
+user_id: unknown

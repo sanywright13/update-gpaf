@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/077c73161fcd422896c5aa99b9a34edc/artifacts
+end_time: 1746018650362
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 077c73161fcd422896c5aa99b9a34edc
+run_name: burly-perch-619
+run_uuid: 077c73161fcd422896c5aa99b9a34edc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018650277
+status: 4
+tags: []
+user_id: unknown

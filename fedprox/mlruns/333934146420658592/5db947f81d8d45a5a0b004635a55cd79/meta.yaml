@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/333934146420658592/5db947f81d8d45a5a0b004635a55cd79/artifacts
+end_time: 1737843503119
+entry_point_name: ''
+experiment_id: '333934146420658592'
+lifecycle_stage: active
+run_id: 5db947f81d8d45a5a0b004635a55cd79
+run_name: sassy-ox-802
+run_uuid: 5db947f81d8d45a5a0b004635a55cd79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737843155509
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/fad3eb2d014a4b2bbbeda6cb6aaa1825/artifacts
+end_time: 1737389442867
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: fad3eb2d014a4b2bbbeda6cb6aaa1825
+run_name: bittersweet-hawk-909
+run_uuid: fad3eb2d014a4b2bbbeda6cb6aaa1825
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737389442824
+status: 3
+tags: []
+user_id: unknown

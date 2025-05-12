@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/4846d4f2a4864f66b19b5871fd153454/artifacts
+end_time: 1738154417777
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 4846d4f2a4864f66b19b5871fd153454
+run_name: dapper-worm-739
+run_uuid: 4846d4f2a4864f66b19b5871fd153454
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738154414847
+status: 3
+tags: []
+user_id: unknown

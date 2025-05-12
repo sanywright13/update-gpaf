@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/127a47b8771d41c1a0997aefaa90f8cc/artifacts
+end_time: 1746023772568
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 127a47b8771d41c1a0997aefaa90f8cc
+run_name: learned-skink-215
+run_uuid: 127a47b8771d41c1a0997aefaa90f8cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023772162
+status: 3
+tags: []
+user_id: unknown

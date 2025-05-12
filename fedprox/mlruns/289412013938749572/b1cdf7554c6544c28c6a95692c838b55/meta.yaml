@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b1cdf7554c6544c28c6a95692c838b55/artifacts
+end_time: 1746023694681
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b1cdf7554c6544c28c6a95692c838b55
+run_name: unleashed-snipe-112
+run_uuid: b1cdf7554c6544c28c6a95692c838b55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023694304
+status: 3
+tags: []
+user_id: unknown

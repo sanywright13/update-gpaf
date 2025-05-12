@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/dba13fd9769d466cbd541cbe8e6edb47/artifacts
+end_time: 1737563781226
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: dba13fd9769d466cbd541cbe8e6edb47
+run_name: rebellious-ram-722
+run_uuid: dba13fd9769d466cbd541cbe8e6edb47
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563781202
+status: 3
+tags: []
+user_id: unknown

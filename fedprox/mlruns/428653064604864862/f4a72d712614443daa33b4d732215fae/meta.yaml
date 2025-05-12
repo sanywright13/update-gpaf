@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/f4a72d712614443daa33b4d732215fae/artifacts
+end_time: 1737550126179
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: f4a72d712614443daa33b4d732215fae
+run_name: bedecked-trout-240
+run_uuid: f4a72d712614443daa33b4d732215fae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737550121246
+status: 3
+tags: []
+user_id: unknown

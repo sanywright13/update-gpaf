@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/00b1baed459f48e59baa8a1ec1ee7404/artifacts
+end_time: 1738273739024
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 00b1baed459f48e59baa8a1ec1ee7404
+run_name: able-cat-194
+run_uuid: 00b1baed459f48e59baa8a1ec1ee7404
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738273738991
+status: 3
+tags: []
+user_id: unknown

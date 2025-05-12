@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7a37108ef50a41a080f5100394d41db5/artifacts
+end_time: 1746018509462
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7a37108ef50a41a080f5100394d41db5
+run_name: likeable-sloth-321
+run_uuid: 7a37108ef50a41a080f5100394d41db5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018509042
+status: 3
+tags: []
+user_id: unknown

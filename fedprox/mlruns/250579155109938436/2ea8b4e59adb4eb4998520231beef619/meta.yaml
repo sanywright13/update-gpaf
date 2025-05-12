@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2ea8b4e59adb4eb4998520231beef619/artifacts
+end_time: 1738253877030
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2ea8b4e59adb4eb4998520231beef619
+run_name: delicate-asp-533
+run_uuid: 2ea8b4e59adb4eb4998520231beef619
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738253876959
+status: 3
+tags: []
+user_id: unknown

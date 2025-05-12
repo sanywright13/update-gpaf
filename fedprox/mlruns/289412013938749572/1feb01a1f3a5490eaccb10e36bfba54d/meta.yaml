@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1feb01a1f3a5490eaccb10e36bfba54d/artifacts
+end_time: 1746021920127
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1feb01a1f3a5490eaccb10e36bfba54d
+run_name: upbeat-cat-731
+run_uuid: 1feb01a1f3a5490eaccb10e36bfba54d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021919708
+status: 3
+tags: []
+user_id: unknown

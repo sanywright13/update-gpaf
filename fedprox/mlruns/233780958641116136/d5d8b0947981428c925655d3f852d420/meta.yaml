@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/d5d8b0947981428c925655d3f852d420/artifacts
+end_time: 1738862384823
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: d5d8b0947981428c925655d3f852d420
+run_name: exultant-chimp-446
+run_uuid: d5d8b0947981428c925655d3f852d420
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862384799
+status: 4
+tags: []
+user_id: unknown

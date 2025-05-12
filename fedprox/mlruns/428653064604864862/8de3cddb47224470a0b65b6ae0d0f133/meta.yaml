@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/8de3cddb47224470a0b65b6ae0d0f133/artifacts
+end_time: 1737564293631
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 8de3cddb47224470a0b65b6ae0d0f133
+run_name: silent-shark-748
+run_uuid: 8de3cddb47224470a0b65b6ae0d0f133
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564293609
+status: 3
+tags: []
+user_id: unknown

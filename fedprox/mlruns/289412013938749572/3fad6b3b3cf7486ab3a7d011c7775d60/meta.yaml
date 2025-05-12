@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3fad6b3b3cf7486ab3a7d011c7775d60/artifacts
+end_time: 1746013442373
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3fad6b3b3cf7486ab3a7d011c7775d60
+run_name: stylish-shrike-929
+run_uuid: 3fad6b3b3cf7486ab3a7d011c7775d60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013442322
+status: 4
+tags: []
+user_id: unknown

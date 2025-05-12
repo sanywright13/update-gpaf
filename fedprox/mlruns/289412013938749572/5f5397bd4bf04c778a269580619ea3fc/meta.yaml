@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5f5397bd4bf04c778a269580619ea3fc/artifacts
+end_time: 1746023795984
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5f5397bd4bf04c778a269580619ea3fc
+run_name: kindly-skink-208
+run_uuid: 5f5397bd4bf04c778a269580619ea3fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023795572
+status: 3
+tags: []
+user_id: unknown

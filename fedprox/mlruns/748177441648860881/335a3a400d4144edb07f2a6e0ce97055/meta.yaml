@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/335a3a400d4144edb07f2a6e0ce97055/artifacts
+end_time: 1742347483644
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 335a3a400d4144edb07f2a6e0ce97055
+run_name: bald-kit-902
+run_uuid: 335a3a400d4144edb07f2a6e0ce97055
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742347483479
+status: 4
+tags: []
+user_id: unknown

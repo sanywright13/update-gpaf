@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/926d3d1bd6b04260b373575dbbc6578a/artifacts
+end_time: 1746011597992
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 926d3d1bd6b04260b373575dbbc6578a
+run_name: brawny-hog-627
+run_uuid: 926d3d1bd6b04260b373575dbbc6578a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011597951
+status: 4
+tags: []
+user_id: unknown

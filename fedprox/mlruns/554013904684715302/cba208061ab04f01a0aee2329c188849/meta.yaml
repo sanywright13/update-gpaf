@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/cba208061ab04f01a0aee2329c188849/artifacts
+end_time: 1737314302369
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: cba208061ab04f01a0aee2329c188849
+run_name: sneaky-shrike-758
+run_uuid: cba208061ab04f01a0aee2329c188849
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737314302328
+status: 3
+tags: []
+user_id: unknown

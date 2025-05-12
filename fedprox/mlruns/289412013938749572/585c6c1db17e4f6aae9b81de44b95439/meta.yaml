@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/585c6c1db17e4f6aae9b81de44b95439/artifacts
+end_time: 1746011617436
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 585c6c1db17e4f6aae9b81de44b95439
+run_name: skittish-shad-308
+run_uuid: 585c6c1db17e4f6aae9b81de44b95439
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011617394
+status: 4
+tags: []
+user_id: unknown

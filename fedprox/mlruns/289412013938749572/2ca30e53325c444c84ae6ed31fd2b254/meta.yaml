@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2ca30e53325c444c84ae6ed31fd2b254/artifacts
+end_time: 1746023799300
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2ca30e53325c444c84ae6ed31fd2b254
+run_name: luxuriant-fly-18
+run_uuid: 2ca30e53325c444c84ae6ed31fd2b254
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023798878
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/2b682f0999114437aaafb466b37f9e61/artifacts
+end_time: 1738782260484
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 2b682f0999114437aaafb466b37f9e61
+run_name: awesome-wren-157
+run_uuid: 2b682f0999114437aaafb466b37f9e61
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738781662216
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1e83a04c81364b088095df751f934f50/artifacts
+end_time: 1746011659505
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1e83a04c81364b088095df751f934f50
+run_name: thoughtful-gull-365
+run_uuid: 1e83a04c81364b088095df751f934f50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011659460
+status: 4
+tags: []
+user_id: unknown

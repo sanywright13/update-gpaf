@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/75a6e0867a554b66b15ab084bc8b5963/artifacts
+end_time: 1746018932808
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 75a6e0867a554b66b15ab084bc8b5963
+run_name: zealous-doe-729
+run_uuid: 75a6e0867a554b66b15ab084bc8b5963
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018932368
+status: 3
+tags: []
+user_id: unknown

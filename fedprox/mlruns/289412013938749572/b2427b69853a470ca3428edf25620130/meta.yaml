@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b2427b69853a470ca3428edf25620130/artifacts
+end_time: 1746017825354
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b2427b69853a470ca3428edf25620130
+run_name: fun-snake-870
+run_uuid: b2427b69853a470ca3428edf25620130
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017824912
+status: 3
+tags: []
+user_id: unknown

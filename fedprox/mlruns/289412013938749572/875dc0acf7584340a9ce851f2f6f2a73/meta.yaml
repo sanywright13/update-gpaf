@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/875dc0acf7584340a9ce851f2f6f2a73/artifacts
+end_time: 1746013378130
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 875dc0acf7584340a9ce851f2f6f2a73
+run_name: legendary-sponge-814
+run_uuid: 875dc0acf7584340a9ce851f2f6f2a73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013378087
+status: 4
+tags: []
+user_id: unknown

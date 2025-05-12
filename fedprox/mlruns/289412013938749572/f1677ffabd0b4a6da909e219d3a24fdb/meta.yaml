@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f1677ffabd0b4a6da909e219d3a24fdb/artifacts
+end_time: 1746011573647
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f1677ffabd0b4a6da909e219d3a24fdb
+run_name: bedecked-jay-570
+run_uuid: f1677ffabd0b4a6da909e219d3a24fdb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011573609
+status: 4
+tags: []
+user_id: unknown

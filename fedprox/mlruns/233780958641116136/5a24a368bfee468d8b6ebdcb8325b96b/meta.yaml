@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/5a24a368bfee468d8b6ebdcb8325b96b/artifacts
+end_time: 1738866506091
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 5a24a368bfee468d8b6ebdcb8325b96b
+run_name: learned-grub-969
+run_uuid: 5a24a368bfee468d8b6ebdcb8325b96b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738866506041
+status: 3
+tags: []
+user_id: unknown

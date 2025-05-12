@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/02b604b5edc74ea6b8df6fe999886061/artifacts
+end_time: 1746013426320
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 02b604b5edc74ea6b8df6fe999886061
+run_name: trusting-bass-501
+run_uuid: 02b604b5edc74ea6b8df6fe999886061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013426269
+status: 4
+tags: []
+user_id: unknown

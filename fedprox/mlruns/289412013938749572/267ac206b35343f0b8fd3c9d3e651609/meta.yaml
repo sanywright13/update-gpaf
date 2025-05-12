@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/267ac206b35343f0b8fd3c9d3e651609/artifacts
+end_time: 1746011625826
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 267ac206b35343f0b8fd3c9d3e651609
+run_name: enchanting-quail-13
+run_uuid: 267ac206b35343f0b8fd3c9d3e651609
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011625784
+status: 4
+tags: []
+user_id: unknown

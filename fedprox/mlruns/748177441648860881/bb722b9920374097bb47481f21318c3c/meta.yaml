@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/bb722b9920374097bb47481f21318c3c/artifacts
+end_time: 1742342222713
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: bb722b9920374097bb47481f21318c3c
+run_name: abrasive-fawn-197
+run_uuid: bb722b9920374097bb47481f21318c3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742342222660
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7f33dc922e5f4dbea3d6de4fa30b4ca1/artifacts
+end_time: 1746011623228
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7f33dc922e5f4dbea3d6de4fa30b4ca1
+run_name: fearless-seal-290
+run_uuid: 7f33dc922e5f4dbea3d6de4fa30b4ca1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011623185
+status: 4
+tags: []
+user_id: unknown

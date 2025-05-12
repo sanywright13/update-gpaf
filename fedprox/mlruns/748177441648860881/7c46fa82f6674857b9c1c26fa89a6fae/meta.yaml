@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/7c46fa82f6674857b9c1c26fa89a6fae/artifacts
+end_time: 1744492066603
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 7c46fa82f6674857b9c1c26fa89a6fae
+run_name: dapper-dove-173
+run_uuid: 7c46fa82f6674857b9c1c26fa89a6fae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492066127
+status: 3
+tags: []
+user_id: unknown

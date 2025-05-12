@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2895b8538dbd4c1d9f27e6b0cb6e293e/artifacts
+end_time: 1746013395345
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2895b8538dbd4c1d9f27e6b0cb6e293e
+run_name: rebellious-boar-365
+run_uuid: 2895b8538dbd4c1d9f27e6b0cb6e293e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013395295
+status: 4
+tags: []
+user_id: unknown

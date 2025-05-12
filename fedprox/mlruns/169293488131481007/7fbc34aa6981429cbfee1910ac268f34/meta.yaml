@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/7fbc34aa6981429cbfee1910ac268f34/artifacts
+end_time: 1737389520403
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 7fbc34aa6981429cbfee1910ac268f34
+run_name: powerful-whale-319
+run_uuid: 7fbc34aa6981429cbfee1910ac268f34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737389446121
+status: 3
+tags: []
+user_id: unknown

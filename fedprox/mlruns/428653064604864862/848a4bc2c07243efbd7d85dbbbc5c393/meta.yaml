@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/848a4bc2c07243efbd7d85dbbbc5c393/artifacts
+end_time: 1737564430933
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 848a4bc2c07243efbd7d85dbbbc5c393
+run_name: learned-rook-410
+run_uuid: 848a4bc2c07243efbd7d85dbbbc5c393
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564424833
+status: 3
+tags: []
+user_id: unknown

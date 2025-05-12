@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/2ec806185394429ebf5c2722f51c450b/artifacts
+end_time: 1738279217048
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 2ec806185394429ebf5c2722f51c450b
+run_name: selective-finch-156
+run_uuid: 2ec806185394429ebf5c2722f51c450b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738279216948
+status: 3
+tags: []
+user_id: unknown

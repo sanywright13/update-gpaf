@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/aa7a2144b2384adfb6e681c07c14406f/artifacts
+end_time: 1740077840355
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: aa7a2144b2384adfb6e681c07c14406f
+run_name: efficient-colt-826
+run_uuid: aa7a2144b2384adfb6e681c07c14406f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740077833727
+status: 3
+tags: []
+user_id: unknown

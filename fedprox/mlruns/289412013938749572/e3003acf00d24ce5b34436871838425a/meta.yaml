@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e3003acf00d24ce5b34436871838425a/artifacts
+end_time: 1746011579109
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e3003acf00d24ce5b34436871838425a
+run_name: respected-pig-676
+run_uuid: e3003acf00d24ce5b34436871838425a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011579070
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/3b83dd7808854b9bb2511726af0449cd/artifacts
+end_time: 1737552411758
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 3b83dd7808854b9bb2511726af0449cd
+run_name: smiling-donkey-330
+run_uuid: 3b83dd7808854b9bb2511726af0449cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737552411736
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/66042167fd75490db923ac3115f28f48/artifacts
+end_time: 1746023775104
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 66042167fd75490db923ac3115f28f48
+run_name: awesome-shoat-616
+run_uuid: 66042167fd75490db923ac3115f28f48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023774683
+status: 3
+tags: []
+user_id: unknown

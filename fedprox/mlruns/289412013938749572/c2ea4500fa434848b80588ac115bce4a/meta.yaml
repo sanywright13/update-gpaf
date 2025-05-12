@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c2ea4500fa434848b80588ac115bce4a/artifacts
+end_time: 1746011599358
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c2ea4500fa434848b80588ac115bce4a
+run_name: able-conch-902
+run_uuid: c2ea4500fa434848b80588ac115bce4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011599318
+status: 4
+tags: []
+user_id: unknown

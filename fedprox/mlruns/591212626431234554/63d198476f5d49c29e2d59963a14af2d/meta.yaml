@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/591212626431234554/63d198476f5d49c29e2d59963a14af2d/artifacts
+end_time: 1737748739659
+entry_point_name: ''
+experiment_id: '591212626431234554'
+lifecycle_stage: active
+run_id: 63d198476f5d49c29e2d59963a14af2d
+run_name: whimsical-horse-834
+run_uuid: 63d198476f5d49c29e2d59963a14af2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737748221341
+status: 3
+tags: []
+user_id: unknown

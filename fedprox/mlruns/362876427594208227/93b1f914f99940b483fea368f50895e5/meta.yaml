@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/93b1f914f99940b483fea368f50895e5/artifacts
+end_time: 1738005563413
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 93b1f914f99940b483fea368f50895e5
+run_name: victorious-conch-12
+run_uuid: 93b1f914f99940b483fea368f50895e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005563244
+status: 3
+tags: []
+user_id: unknown

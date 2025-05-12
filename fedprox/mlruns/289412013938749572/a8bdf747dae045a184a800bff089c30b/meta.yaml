@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a8bdf747dae045a184a800bff089c30b/artifacts
+end_time: 1746013366255
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a8bdf747dae045a184a800bff089c30b
+run_name: legendary-flea-630
+run_uuid: a8bdf747dae045a184a800bff089c30b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013366210
+status: 4
+tags: []
+user_id: unknown

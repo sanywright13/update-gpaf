@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f274ebc99e49445eaa77bc4febc092cc/artifacts
+end_time: 1746023787412
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f274ebc99e49445eaa77bc4febc092cc
+run_name: vaunted-fox-481
+run_uuid: f274ebc99e49445eaa77bc4febc092cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023786986
+status: 3
+tags: []
+user_id: unknown

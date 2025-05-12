@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/3625dac411da48199e5c8e0e0f8dc841/artifacts
+end_time: 1737117260255
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 3625dac411da48199e5c8e0e0f8dc841
+run_name: peaceful-wolf-357
+run_uuid: 3625dac411da48199e5c8e0e0f8dc841
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117260234
+status: 3
+tags: []
+user_id: unknown

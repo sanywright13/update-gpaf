@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f713d25aa91e47508b0c6115d86c8db6/artifacts
+end_time: 1744576640506
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f713d25aa91e47508b0c6115d86c8db6
+run_name: omniscient-hawk-21
+run_uuid: f713d25aa91e47508b0c6115d86c8db6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576629902
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c275e108465a464895e697985993d0a7/artifacts
+end_time: 1746018960738
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c275e108465a464895e697985993d0a7
+run_name: delightful-moose-326
+run_uuid: c275e108465a464895e697985993d0a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018960311
+status: 3
+tags: []
+user_id: unknown

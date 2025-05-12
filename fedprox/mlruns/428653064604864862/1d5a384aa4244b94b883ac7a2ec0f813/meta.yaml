@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1d5a384aa4244b94b883ac7a2ec0f813/artifacts
+end_time: 1737563715828
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1d5a384aa4244b94b883ac7a2ec0f813
+run_name: auspicious-bird-600
+run_uuid: 1d5a384aa4244b94b883ac7a2ec0f813
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563715803
+status: 3
+tags: []
+user_id: unknown

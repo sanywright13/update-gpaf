@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/d58aa68884394596b4d255a8954c7ad2/artifacts
+end_time: 1737469823061
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: d58aa68884394596b4d255a8954c7ad2
+run_name: bright-dolphin-627
+run_uuid: d58aa68884394596b4d255a8954c7ad2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469823031
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/69f6c7b45a7d412a828ecdc922c88d9e/artifacts
+end_time: 1737117424645
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 69f6c7b45a7d412a828ecdc922c88d9e
+run_name: bold-roo-972
+run_uuid: 69f6c7b45a7d412a828ecdc922c88d9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117424624
+status: 3
+tags: []
+user_id: unknown

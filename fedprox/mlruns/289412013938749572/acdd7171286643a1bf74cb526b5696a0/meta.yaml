@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/acdd7171286643a1bf74cb526b5696a0/artifacts
+end_time: 1746013388287
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: acdd7171286643a1bf74cb526b5696a0
+run_name: angry-shark-726
+run_uuid: acdd7171286643a1bf74cb526b5696a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013388245
+status: 4
+tags: []
+user_id: unknown

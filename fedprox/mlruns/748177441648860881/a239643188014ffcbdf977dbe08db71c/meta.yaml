@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a239643188014ffcbdf977dbe08db71c/artifacts
+end_time: 1744638290552
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a239643188014ffcbdf977dbe08db71c
+run_name: respected-deer-768
+run_uuid: a239643188014ffcbdf977dbe08db71c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744627974219
+status: 3
+tags: []
+user_id: unknown

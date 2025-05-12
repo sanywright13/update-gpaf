@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/41e483f2da974c9389e00ec659b0bae2/artifacts
+end_time: 1746013388786
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 41e483f2da974c9389e00ec659b0bae2
+run_name: mysterious-steed-319
+run_uuid: 41e483f2da974c9389e00ec659b0bae2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013388743
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/79738911a29f4fc48b4aa603ac619e21/artifacts
+end_time: 1746023801120
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 79738911a29f4fc48b4aa603ac619e21
+run_name: omniscient-conch-147
+run_uuid: 79738911a29f4fc48b4aa603ac619e21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023800704
+status: 3
+tags: []
+user_id: unknown

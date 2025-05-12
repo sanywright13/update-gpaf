@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/bafd106407464c03a71262514a3380a5/artifacts
+end_time: 1736889016641
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: bafd106407464c03a71262514a3380a5
+run_name: nebulous-shark-640
+run_uuid: bafd106407464c03a71262514a3380a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889016613
+status: 3
+tags: []
+user_id: unknown

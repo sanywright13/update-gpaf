@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/eb3e2a9b86724b0cac97aec317d69c34/artifacts
+end_time: 1737907587188
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: eb3e2a9b86724b0cac97aec317d69c34
+run_name: efficient-cow-257
+run_uuid: eb3e2a9b86724b0cac97aec317d69c34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737907587082
+status: 3
+tags: []
+user_id: unknown

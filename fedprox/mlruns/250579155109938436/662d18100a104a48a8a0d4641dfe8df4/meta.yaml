@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/662d18100a104a48a8a0d4641dfe8df4/artifacts
+end_time: 1738146605295
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 662d18100a104a48a8a0d4641dfe8df4
+run_name: bedecked-worm-948
+run_uuid: 662d18100a104a48a8a0d4641dfe8df4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738146605085
+status: 3
+tags: []
+user_id: unknown

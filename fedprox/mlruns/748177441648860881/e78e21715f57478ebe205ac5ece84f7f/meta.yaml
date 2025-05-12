@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e78e21715f57478ebe205ac5ece84f7f/artifacts
+end_time: 1744462411695
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e78e21715f57478ebe205ac5ece84f7f
+run_name: dapper-deer-743
+run_uuid: e78e21715f57478ebe205ac5ece84f7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744462350814
+status: 3
+tags: []
+user_id: unknown

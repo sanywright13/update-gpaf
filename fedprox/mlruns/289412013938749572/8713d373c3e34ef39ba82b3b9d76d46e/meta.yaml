@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8713d373c3e34ef39ba82b3b9d76d46e/artifacts
+end_time: 1746023723433
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8713d373c3e34ef39ba82b3b9d76d46e
+run_name: bedecked-crow-276
+run_uuid: 8713d373c3e34ef39ba82b3b9d76d46e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023723009
+status: 3
+tags: []
+user_id: unknown

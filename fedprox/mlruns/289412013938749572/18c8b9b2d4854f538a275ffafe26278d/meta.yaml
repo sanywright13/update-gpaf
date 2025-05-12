@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/18c8b9b2d4854f538a275ffafe26278d/artifacts
+end_time: 1746019355378
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 18c8b9b2d4854f538a275ffafe26278d
+run_name: nebulous-moose-24
+run_uuid: 18c8b9b2d4854f538a275ffafe26278d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019355295
+status: 4
+tags: []
+user_id: unknown

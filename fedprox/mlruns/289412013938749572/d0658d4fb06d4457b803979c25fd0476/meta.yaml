@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d0658d4fb06d4457b803979c25fd0476/artifacts
+end_time: 1746018025576
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d0658d4fb06d4457b803979c25fd0476
+run_name: funny-ant-342
+run_uuid: d0658d4fb06d4457b803979c25fd0476
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018025167
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/959b5c4aac6144d983d95531b0b019c9/artifacts
+end_time: 1738241899245
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 959b5c4aac6144d983d95531b0b019c9
+run_name: incongruous-duck-850
+run_uuid: 959b5c4aac6144d983d95531b0b019c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738241891625
+status: 3
+tags: []
+user_id: unknown

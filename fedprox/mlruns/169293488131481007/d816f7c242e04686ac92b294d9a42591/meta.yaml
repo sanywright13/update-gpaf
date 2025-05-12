@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/d816f7c242e04686ac92b294d9a42591/artifacts
+end_time: 1737456770504
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: d816f7c242e04686ac92b294d9a42591
+run_name: honorable-shrimp-554
+run_uuid: d816f7c242e04686ac92b294d9a42591
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737456770470
+status: 3
+tags: []
+user_id: unknown

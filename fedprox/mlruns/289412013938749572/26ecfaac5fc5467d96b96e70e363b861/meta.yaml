@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/26ecfaac5fc5467d96b96e70e363b861/artifacts
+end_time: 1746013370434
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 26ecfaac5fc5467d96b96e70e363b861
+run_name: blushing-moose-940
+run_uuid: 26ecfaac5fc5467d96b96e70e363b861
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013370389
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4f186d346d75475f8c0e875fada4694d/artifacts
+end_time: 1746011642328
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4f186d346d75475f8c0e875fada4694d
+run_name: smiling-roo-952
+run_uuid: 4f186d346d75475f8c0e875fada4694d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011642283
+status: 4
+tags: []
+user_id: unknown

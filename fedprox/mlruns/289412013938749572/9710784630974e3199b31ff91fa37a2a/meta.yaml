@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9710784630974e3199b31ff91fa37a2a/artifacts
+end_time: 1746023765627
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9710784630974e3199b31ff91fa37a2a
+run_name: loud-turtle-578
+run_uuid: 9710784630974e3199b31ff91fa37a2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023765209
+status: 3
+tags: []
+user_id: unknown

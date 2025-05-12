@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/2e1fed57826a4da39bcc510dff263830/artifacts
+end_time: 1737926327929
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 2e1fed57826a4da39bcc510dff263830
+run_name: marvelous-slug-308
+run_uuid: 2e1fed57826a4da39bcc510dff263830
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737925105160
+status: 3
+tags: []
+user_id: unknown

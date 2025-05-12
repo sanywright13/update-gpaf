@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/05b7adb291144ce89e015ec7188dbf13/artifacts
+end_time: 1746017684260
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 05b7adb291144ce89e015ec7188dbf13
+run_name: rebellious-seal-625
+run_uuid: 05b7adb291144ce89e015ec7188dbf13
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017683841
+status: 3
+tags: []
+user_id: unknown

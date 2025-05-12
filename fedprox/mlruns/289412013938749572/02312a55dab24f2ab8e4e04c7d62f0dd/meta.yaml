@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/02312a55dab24f2ab8e4e04c7d62f0dd/artifacts
+end_time: 1746011636579
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 02312a55dab24f2ab8e4e04c7d62f0dd
+run_name: intrigued-crane-124
+run_uuid: 02312a55dab24f2ab8e4e04c7d62f0dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011636536
+status: 4
+tags: []
+user_id: unknown

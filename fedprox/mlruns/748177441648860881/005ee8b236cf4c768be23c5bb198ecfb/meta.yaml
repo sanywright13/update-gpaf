@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/005ee8b236cf4c768be23c5bb198ecfb/artifacts
+end_time: 1742344825537
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 005ee8b236cf4c768be23c5bb198ecfb
+run_name: clean-hare-567
+run_uuid: 005ee8b236cf4c768be23c5bb198ecfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344825278
+status: 4
+tags: []
+user_id: unknown

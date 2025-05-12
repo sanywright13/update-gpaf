@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d3c66d06b4474071b05121b1515f74a0/artifacts
+end_time: 1742391662308
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d3c66d06b4474071b05121b1515f74a0
+run_name: legendary-turtle-46
+run_uuid: d3c66d06b4474071b05121b1515f74a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742391603933
+status: 3
+tags: []
+user_id: unknown

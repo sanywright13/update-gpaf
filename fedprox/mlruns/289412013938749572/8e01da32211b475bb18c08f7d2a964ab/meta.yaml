@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8e01da32211b475bb18c08f7d2a964ab/artifacts
+end_time: 1746023769381
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8e01da32211b475bb18c08f7d2a964ab
+run_name: trusting-shrike-91
+run_uuid: 8e01da32211b475bb18c08f7d2a964ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023768947
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2d697f6a117944e38d6a2c3c7737b99c/artifacts
+end_time: 1740080820039
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2d697f6a117944e38d6a2c3c7737b99c
+run_name: puzzled-penguin-955
+run_uuid: 2d697f6a117944e38d6a2c3c7737b99c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080819893
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d24a1cea55204860b3ee079ac5c0e453/artifacts
+end_time: 1746011658314
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d24a1cea55204860b3ee079ac5c0e453
+run_name: languid-sponge-48
+run_uuid: d24a1cea55204860b3ee079ac5c0e453
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011658270
+status: 4
+tags: []
+user_id: unknown

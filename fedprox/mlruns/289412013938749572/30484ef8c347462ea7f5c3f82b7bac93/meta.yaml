@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/30484ef8c347462ea7f5c3f82b7bac93/artifacts
+end_time: 1746179755227
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 30484ef8c347462ea7f5c3f82b7bac93
+run_name: caring-squid-28
+run_uuid: 30484ef8c347462ea7f5c3f82b7bac93
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746179754305
+status: 3
+tags: []
+user_id: unknown

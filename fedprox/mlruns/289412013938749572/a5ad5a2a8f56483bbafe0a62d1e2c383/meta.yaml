@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a5ad5a2a8f56483bbafe0a62d1e2c383/artifacts
+end_time: 1746013419763
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a5ad5a2a8f56483bbafe0a62d1e2c383
+run_name: abrasive-croc-735
+run_uuid: a5ad5a2a8f56483bbafe0a62d1e2c383
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013419719
+status: 4
+tags: []
+user_id: unknown

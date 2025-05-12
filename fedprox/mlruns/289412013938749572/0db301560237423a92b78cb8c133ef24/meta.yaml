@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0db301560237423a92b78cb8c133ef24/artifacts
+end_time: 1746011630337
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0db301560237423a92b78cb8c133ef24
+run_name: skittish-horse-654
+run_uuid: 0db301560237423a92b78cb8c133ef24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011630299
+status: 4
+tags: []
+user_id: unknown

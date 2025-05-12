@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/922898f381454aa4a51b77eee0c1934c/artifacts
+end_time: 1746018223565
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 922898f381454aa4a51b77eee0c1934c
+run_name: gregarious-pig-743
+run_uuid: 922898f381454aa4a51b77eee0c1934c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018223485
+status: 4
+tags: []
+user_id: unknown

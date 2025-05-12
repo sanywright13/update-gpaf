@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/9f22ff7e6232493dbd5956b75a69ef86/artifacts
+end_time: 1737117589913
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 9f22ff7e6232493dbd5956b75a69ef86
+run_name: rebellious-hare-392
+run_uuid: 9f22ff7e6232493dbd5956b75a69ef86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117589783
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/369cb58c91eb420baae2e1984509774b/artifacts
+end_time: 1746023772568
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 369cb58c91eb420baae2e1984509774b
+run_name: blushing-smelt-954
+run_uuid: 369cb58c91eb420baae2e1984509774b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023772156
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/26e8bd2d88ea4493b53778f90d59f803/artifacts
+end_time: 1746018760863
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 26e8bd2d88ea4493b53778f90d59f803
+run_name: bittersweet-quail-25
+run_uuid: 26e8bd2d88ea4493b53778f90d59f803
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018760781
+status: 4
+tags: []
+user_id: unknown

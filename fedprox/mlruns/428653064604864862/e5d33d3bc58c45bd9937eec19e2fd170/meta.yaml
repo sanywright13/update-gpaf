@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/e5d33d3bc58c45bd9937eec19e2fd170/artifacts
+end_time: 1737562665880
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: e5d33d3bc58c45bd9937eec19e2fd170
+run_name: indecisive-kite-487
+run_uuid: e5d33d3bc58c45bd9937eec19e2fd170
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737562665837
+status: 3
+tags: []
+user_id: unknown

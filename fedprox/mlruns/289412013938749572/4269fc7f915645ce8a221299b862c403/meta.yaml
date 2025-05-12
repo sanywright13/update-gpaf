@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4269fc7f915645ce8a221299b862c403/artifacts
+end_time: 1746023747838
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4269fc7f915645ce8a221299b862c403
+run_name: aged-hare-104
+run_uuid: 4269fc7f915645ce8a221299b862c403
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023747440
+status: 3
+tags: []
+user_id: unknown

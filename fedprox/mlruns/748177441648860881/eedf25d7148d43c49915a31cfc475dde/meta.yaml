@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/eedf25d7148d43c49915a31cfc475dde/artifacts
+end_time: 1744624197785
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: eedf25d7148d43c49915a31cfc475dde
+run_name: loud-frog-213
+run_uuid: eedf25d7148d43c49915a31cfc475dde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744624187052
+status: 3
+tags: []
+user_id: unknown

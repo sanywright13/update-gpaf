@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a6d8960747b34b10bcc600ccb4dec5ee/artifacts
+end_time: 1746023785869
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a6d8960747b34b10bcc600ccb4dec5ee
+run_name: spiffy-fly-321
+run_uuid: a6d8960747b34b10bcc600ccb4dec5ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023785460
+status: 3
+tags: []
+user_id: unknown

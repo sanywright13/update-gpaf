@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b7cf77d456bb43de8bab2ae74be50f42/artifacts
+end_time: 1746023805934
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b7cf77d456bb43de8bab2ae74be50f42
+run_name: abundant-snake-142
+run_uuid: b7cf77d456bb43de8bab2ae74be50f42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023805836
+status: 4
+tags: []
+user_id: unknown

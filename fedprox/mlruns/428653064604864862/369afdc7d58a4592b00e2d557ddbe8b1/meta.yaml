@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/369afdc7d58a4592b00e2d557ddbe8b1/artifacts
+end_time: 1737625702257
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 369afdc7d58a4592b00e2d557ddbe8b1
+run_name: monumental-mole-862
+run_uuid: 369afdc7d58a4592b00e2d557ddbe8b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737625702226
+status: 3
+tags: []
+user_id: unknown

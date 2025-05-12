@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9733a52409c649f89e28e2b64673c70f/artifacts
+end_time: 1746011619708
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9733a52409c649f89e28e2b64673c70f
+run_name: skillful-newt-713
+run_uuid: 9733a52409c649f89e28e2b64673c70f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011619666
+status: 4
+tags: []
+user_id: unknown

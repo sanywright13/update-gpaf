@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cdd84fb4740d46db98791c93725d4d54/artifacts
+end_time: 1746011636016
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cdd84fb4740d46db98791c93725d4d54
+run_name: inquisitive-grub-726
+run_uuid: cdd84fb4740d46db98791c93725d4d54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011635978
+status: 4
+tags: []
+user_id: unknown

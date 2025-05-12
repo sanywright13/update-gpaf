@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f6e4e9402ea444c6a570bb71a53d3ba9/artifacts
+end_time: 1743677497000
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f6e4e9402ea444c6a570bb71a53d3ba9
+run_name: skillful-turtle-619
+run_uuid: f6e4e9402ea444c6a570bb71a53d3ba9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743677496649
+status: 3
+tags: []
+user_id: unknown

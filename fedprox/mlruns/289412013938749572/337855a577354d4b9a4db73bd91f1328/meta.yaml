@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/337855a577354d4b9a4db73bd91f1328/artifacts
+end_time: 1746011651672
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 337855a577354d4b9a4db73bd91f1328
+run_name: stylish-hog-144
+run_uuid: 337855a577354d4b9a4db73bd91f1328
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011651629
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/0f425b27b0eb451f8ed06a7ae9630873/artifacts
+end_time: 1737456773143
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 0f425b27b0eb451f8ed06a7ae9630873
+run_name: tasteful-jay-252
+run_uuid: 0f425b27b0eb451f8ed06a7ae9630873
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737456773093
+status: 3
+tags: []
+user_id: unknown

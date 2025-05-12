@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a1b81154c49c4e86a7c31167cd30b557/artifacts
+end_time: 1746013446530
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a1b81154c49c4e86a7c31167cd30b557
+run_name: enchanting-grub-735
+run_uuid: a1b81154c49c4e86a7c31167cd30b557
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013446478
+status: 4
+tags: []
+user_id: unknown

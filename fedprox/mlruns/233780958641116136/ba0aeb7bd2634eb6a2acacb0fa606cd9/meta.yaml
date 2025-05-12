@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/ba0aeb7bd2634eb6a2acacb0fa606cd9/artifacts
+end_time: 1738754294137
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: ba0aeb7bd2634eb6a2acacb0fa606cd9
+run_name: persistent-bass-965
+run_uuid: ba0aeb7bd2634eb6a2acacb0fa606cd9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754293863
+status: 3
+tags: []
+user_id: unknown

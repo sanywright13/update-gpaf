@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/72be25917f70495299453173dceb5dc7/artifacts
+end_time: 1738158480814
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 72be25917f70495299453173dceb5dc7
+run_name: stately-mink-381
+run_uuid: 72be25917f70495299453173dceb5dc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158480565
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/95e7ff6bb9514e63aea67e0ddb402a29/artifacts
+end_time: 1743687230865
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 95e7ff6bb9514e63aea67e0ddb402a29
+run_name: tasteful-calf-845
+run_uuid: 95e7ff6bb9514e63aea67e0ddb402a29
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743687110080
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0fb7fcc19116418fb9c00db0f4f88ef9/artifacts
+end_time: 1746023736445
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0fb7fcc19116418fb9c00db0f4f88ef9
+run_name: bright-stag-169
+run_uuid: 0fb7fcc19116418fb9c00db0f4f88ef9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023736021
+status: 3
+tags: []
+user_id: unknown

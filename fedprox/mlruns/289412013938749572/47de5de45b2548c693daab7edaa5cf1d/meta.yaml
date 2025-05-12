@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/47de5de45b2548c693daab7edaa5cf1d/artifacts
+end_time: 1746013391519
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 47de5de45b2548c693daab7edaa5cf1d
+run_name: chill-calf-28
+run_uuid: 47de5de45b2548c693daab7edaa5cf1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013391470
+status: 4
+tags: []
+user_id: unknown

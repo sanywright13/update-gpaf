@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/db2624e2e41240aca35558c07f269e6f/artifacts
+end_time: 1746011629630
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: db2624e2e41240aca35558c07f269e6f
+run_name: adventurous-fly-806
+run_uuid: db2624e2e41240aca35558c07f269e6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011629592
+status: 4
+tags: []
+user_id: unknown

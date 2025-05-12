@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/408493a6f48c48548e223aff8dd4a83e/artifacts
+end_time: 1746023760466
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 408493a6f48c48548e223aff8dd4a83e
+run_name: sincere-stoat-629
+run_uuid: 408493a6f48c48548e223aff8dd4a83e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023760365
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/95a83fb9707b4904b622088395cf9335/artifacts
+end_time: 1737391640098
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 95a83fb9707b4904b622088395cf9335
+run_name: gifted-rat-419
+run_uuid: 95a83fb9707b4904b622088395cf9335
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737391639578
+status: 3
+tags: []
+user_id: unknown

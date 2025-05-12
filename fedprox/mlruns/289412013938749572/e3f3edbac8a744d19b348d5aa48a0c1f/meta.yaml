@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e3f3edbac8a744d19b348d5aa48a0c1f/artifacts
+end_time: 1746011617843
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e3f3edbac8a744d19b348d5aa48a0c1f
+run_name: sneaky-asp-992
+run_uuid: e3f3edbac8a744d19b348d5aa48a0c1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011617801
+status: 4
+tags: []
+user_id: unknown

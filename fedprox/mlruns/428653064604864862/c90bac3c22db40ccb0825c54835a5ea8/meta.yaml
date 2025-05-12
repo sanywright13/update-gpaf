@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c90bac3c22db40ccb0825c54835a5ea8/artifacts
+end_time: 1737668704429
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c90bac3c22db40ccb0825c54835a5ea8
+run_name: stylish-lynx-450
+run_uuid: c90bac3c22db40ccb0825c54835a5ea8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737668704209
+status: 3
+tags: []
+user_id: unknown

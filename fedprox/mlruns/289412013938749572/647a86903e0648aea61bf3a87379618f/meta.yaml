@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/647a86903e0648aea61bf3a87379618f/artifacts
+end_time: 1746011585110
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 647a86903e0648aea61bf3a87379618f
+run_name: nosy-sheep-367
+run_uuid: 647a86903e0648aea61bf3a87379618f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011585070
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/faae25e3f6364554ac40a351a7899bee/artifacts
+end_time: 1737638671388
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: faae25e3f6364554ac40a351a7899bee
+run_name: auspicious-bear-355
+run_uuid: faae25e3f6364554ac40a351a7899bee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737638671357
+status: 3
+tags: []
+user_id: unknown

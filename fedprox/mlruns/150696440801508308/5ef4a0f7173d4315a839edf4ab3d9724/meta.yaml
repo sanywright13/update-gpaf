@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/150696440801508308/5ef4a0f7173d4315a839edf4ab3d9724/artifacts
+end_time: 1745332491112
+entry_point_name: ''
+experiment_id: '150696440801508308'
+lifecycle_stage: active
+run_id: 5ef4a0f7173d4315a839edf4ab3d9724
+run_name: worried-shrike-598
+run_uuid: 5ef4a0f7173d4315a839edf4ab3d9724
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745323505039
+status: 3
+tags: []
+user_id: unknown

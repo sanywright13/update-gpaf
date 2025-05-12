@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f44cdd29fd7642cf844158576ec374c5/artifacts
+end_time: 1746011630055
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f44cdd29fd7642cf844158576ec374c5
+run_name: delightful-hog-235
+run_uuid: f44cdd29fd7642cf844158576ec374c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011630013
+status: 4
+tags: []
+user_id: unknown

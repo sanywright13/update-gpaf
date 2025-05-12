@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/6f6bf96a6b8b4b299837aec2d7a18a24/artifacts
+end_time: 1738754300273
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 6f6bf96a6b8b4b299837aec2d7a18a24
+run_name: unleashed-dove-273
+run_uuid: 6f6bf96a6b8b4b299837aec2d7a18a24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754300055
+status: 3
+tags: []
+user_id: unknown

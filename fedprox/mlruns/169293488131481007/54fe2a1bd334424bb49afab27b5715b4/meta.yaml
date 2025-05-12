@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/54fe2a1bd334424bb49afab27b5715b4/artifacts
+end_time: 1737386894980
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 54fe2a1bd334424bb49afab27b5715b4
+run_name: invincible-duck-198
+run_uuid: 54fe2a1bd334424bb49afab27b5715b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737386796256
+status: 3
+tags: []
+user_id: unknown

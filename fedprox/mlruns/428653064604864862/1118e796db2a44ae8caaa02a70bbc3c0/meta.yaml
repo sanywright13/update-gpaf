@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1118e796db2a44ae8caaa02a70bbc3c0/artifacts
+end_time: 1737582218863
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1118e796db2a44ae8caaa02a70bbc3c0
+run_name: thundering-newt-853
+run_uuid: 1118e796db2a44ae8caaa02a70bbc3c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737582218839
+status: 3
+tags: []
+user_id: unknown

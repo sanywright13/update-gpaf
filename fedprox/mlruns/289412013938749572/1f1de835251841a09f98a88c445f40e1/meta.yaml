@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1f1de835251841a09f98a88c445f40e1/artifacts
+end_time: 1746018110860
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1f1de835251841a09f98a88c445f40e1
+run_name: powerful-ray-207
+run_uuid: 1f1de835251841a09f98a88c445f40e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018110781
+status: 4
+tags: []
+user_id: unknown

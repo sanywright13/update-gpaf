@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a48cc8b06c5745a6bddebeab42397ab8/artifacts
+end_time: 1746018734330
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a48cc8b06c5745a6bddebeab42397ab8
+run_name: charming-lark-312
+run_uuid: a48cc8b06c5745a6bddebeab42397ab8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018734250
+status: 4
+tags: []
+user_id: unknown

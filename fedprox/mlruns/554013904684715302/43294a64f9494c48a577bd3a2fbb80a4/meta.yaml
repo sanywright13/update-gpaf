@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/43294a64f9494c48a577bd3a2fbb80a4/artifacts
+end_time: 1737297304761
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: 43294a64f9494c48a577bd3a2fbb80a4
+run_name: unleashed-calf-481
+run_uuid: 43294a64f9494c48a577bd3a2fbb80a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297304735
+status: 3
+tags: []
+user_id: unknown

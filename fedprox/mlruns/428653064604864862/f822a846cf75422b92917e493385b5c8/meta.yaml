@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/f822a846cf75422b92917e493385b5c8/artifacts
+end_time: 1737550123521
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: f822a846cf75422b92917e493385b5c8
+run_name: dashing-chimp-604
+run_uuid: f822a846cf75422b92917e493385b5c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737550123500
+status: 3
+tags: []
+user_id: unknown

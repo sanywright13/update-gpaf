@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/b8cca5b5750541ef9170571bc0a4a12e/artifacts
+end_time: 1738240771976
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: b8cca5b5750541ef9170571bc0a4a12e
+run_name: casual-wolf-426
+run_uuid: b8cca5b5750541ef9170571bc0a4a12e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240765846
+status: 3
+tags: []
+user_id: unknown

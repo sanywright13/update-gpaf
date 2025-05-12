@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/636fc0a514f74f9693a10ce3610290fc/artifacts
+end_time: 1738001140775
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 636fc0a514f74f9693a10ce3610290fc
+run_name: masked-bass-403
+run_uuid: 636fc0a514f74f9693a10ce3610290fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738001105625
+status: 3
+tags: []
+user_id: unknown

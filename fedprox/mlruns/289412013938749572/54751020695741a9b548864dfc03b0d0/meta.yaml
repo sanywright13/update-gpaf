@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/54751020695741a9b548864dfc03b0d0/artifacts
+end_time: 1746023759183
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 54751020695741a9b548864dfc03b0d0
+run_name: agreeable-loon-111
+run_uuid: 54751020695741a9b548864dfc03b0d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023758764
+status: 3
+tags: []
+user_id: unknown

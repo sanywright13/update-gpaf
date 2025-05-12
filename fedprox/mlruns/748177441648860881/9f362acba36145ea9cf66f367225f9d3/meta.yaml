@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/9f362acba36145ea9cf66f367225f9d3/artifacts
+end_time: 1742388071701
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 9f362acba36145ea9cf66f367225f9d3
+run_name: gifted-calf-989
+run_uuid: 9f362acba36145ea9cf66f367225f9d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742388071584
+status: 4
+tags: []
+user_id: unknown

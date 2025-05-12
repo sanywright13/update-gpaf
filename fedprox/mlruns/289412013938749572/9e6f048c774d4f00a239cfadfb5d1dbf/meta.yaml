@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9e6f048c774d4f00a239cfadfb5d1dbf/artifacts
+end_time: 1746018309711
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9e6f048c774d4f00a239cfadfb5d1dbf
+run_name: thundering-wolf-943
+run_uuid: 9e6f048c774d4f00a239cfadfb5d1dbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018309624
+status: 4
+tags: []
+user_id: unknown

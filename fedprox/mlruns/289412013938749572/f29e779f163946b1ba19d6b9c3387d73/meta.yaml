@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f29e779f163946b1ba19d6b9c3387d73/artifacts
+end_time: 1746013418275
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f29e779f163946b1ba19d6b9c3387d73
+run_name: likeable-mule-946
+run_uuid: f29e779f163946b1ba19d6b9c3387d73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013418232
+status: 4
+tags: []
+user_id: unknown

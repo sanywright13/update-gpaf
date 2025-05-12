@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dca2a365e24d4726be171a51c3d53abb/artifacts
+end_time: 1746018082614
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dca2a365e24d4726be171a51c3d53abb
+run_name: smiling-lamb-950
+run_uuid: dca2a365e24d4726be171a51c3d53abb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018082534
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/eda3efd6c47b45358d2b87e86de14bb9/artifacts
+end_time: 1746011641364
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: eda3efd6c47b45358d2b87e86de14bb9
+run_name: fearless-shark-680
+run_uuid: eda3efd6c47b45358d2b87e86de14bb9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011641321
+status: 4
+tags: []
+user_id: unknown

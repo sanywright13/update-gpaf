@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/159d61980cf94932a1f34da5b1c51355/artifacts
+end_time: 1746023796808
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 159d61980cf94932a1f34da5b1c51355
+run_name: suave-wasp-617
+run_uuid: 159d61980cf94932a1f34da5b1c51355
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023796391
+status: 3
+tags: []
+user_id: unknown

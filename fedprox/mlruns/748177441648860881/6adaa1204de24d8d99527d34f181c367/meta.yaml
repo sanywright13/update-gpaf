@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6adaa1204de24d8d99527d34f181c367/artifacts
+end_time: 1743212812098
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6adaa1204de24d8d99527d34f181c367
+run_name: auspicious-calf-232
+run_uuid: 6adaa1204de24d8d99527d34f181c367
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743212811463
+status: 3
+tags: []
+user_id: unknown

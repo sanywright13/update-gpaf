@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/456edd3a904446a1a16ba0ded20efc16/artifacts
+end_time: 1738153251501
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 456edd3a904446a1a16ba0ded20efc16
+run_name: loud-sow-325
+run_uuid: 456edd3a904446a1a16ba0ded20efc16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738153074271
+status: 3
+tags: []
+user_id: unknown

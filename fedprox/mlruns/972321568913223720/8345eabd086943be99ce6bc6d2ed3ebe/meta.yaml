@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/8345eabd086943be99ce6bc6d2ed3ebe/artifacts
+end_time: 1737117422976
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 8345eabd086943be99ce6bc6d2ed3ebe
+run_name: vaunted-midge-343
+run_uuid: 8345eabd086943be99ce6bc6d2ed3ebe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117422953
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d776017b08e5431d86b2e28fa0399bcf/artifacts
+end_time: 1746023738538
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d776017b08e5431d86b2e28fa0399bcf
+run_name: hilarious-jay-721
+run_uuid: d776017b08e5431d86b2e28fa0399bcf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023738440
+status: 4
+tags: []
+user_id: unknown

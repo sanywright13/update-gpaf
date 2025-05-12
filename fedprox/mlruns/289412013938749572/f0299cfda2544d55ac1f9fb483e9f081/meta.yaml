@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f0299cfda2544d55ac1f9fb483e9f081/artifacts
+end_time: 1746011607125
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f0299cfda2544d55ac1f9fb483e9f081
+run_name: rumbling-foal-864
+run_uuid: f0299cfda2544d55ac1f9fb483e9f081
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011607088
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e362fc83a0ec46468bf5f78551eddf70/artifacts
+end_time: 1740079239440
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e362fc83a0ec46468bf5f78551eddf70
+run_name: bold-shrimp-723
+run_uuid: e362fc83a0ec46468bf5f78551eddf70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740079239299
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/77ddd80bb19144f5a64d356aa7188246/artifacts
+end_time: 1746017853151
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 77ddd80bb19144f5a64d356aa7188246
+run_name: intrigued-snipe-477
+run_uuid: 77ddd80bb19144f5a64d356aa7188246
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017853061
+status: 4
+tags: []
+user_id: unknown

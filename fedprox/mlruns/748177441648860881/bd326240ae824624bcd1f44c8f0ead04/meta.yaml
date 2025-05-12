@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/bd326240ae824624bcd1f44c8f0ead04/artifacts
+end_time: 1744725450615
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: bd326240ae824624bcd1f44c8f0ead04
+run_name: secretive-crane-955
+run_uuid: bd326240ae824624bcd1f44c8f0ead04
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744714591157
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/dd43c300b05a424888bbd53ef4e3e63d/artifacts
+end_time: 1746013438824
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: dd43c300b05a424888bbd53ef4e3e63d
+run_name: abundant-horse-310
+run_uuid: dd43c300b05a424888bbd53ef4e3e63d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013438772
+status: 4
+tags: []
+user_id: unknown

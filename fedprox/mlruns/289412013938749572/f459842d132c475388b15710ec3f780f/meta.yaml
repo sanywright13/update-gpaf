@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f459842d132c475388b15710ec3f780f/artifacts
+end_time: 1746019129123
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f459842d132c475388b15710ec3f780f
+run_name: dashing-snipe-331
+run_uuid: f459842d132c475388b15710ec3f780f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019129042
+status: 4
+tags: []
+user_id: unknown

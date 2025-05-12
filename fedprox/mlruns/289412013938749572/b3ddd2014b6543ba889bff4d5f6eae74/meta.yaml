@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b3ddd2014b6543ba889bff4d5f6eae74/artifacts
+end_time: 1746018790488
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b3ddd2014b6543ba889bff4d5f6eae74
+run_name: shivering-dog-596
+run_uuid: b3ddd2014b6543ba889bff4d5f6eae74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018790090
+status: 3
+tags: []
+user_id: unknown

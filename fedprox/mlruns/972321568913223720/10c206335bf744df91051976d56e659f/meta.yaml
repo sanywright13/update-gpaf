@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/10c206335bf744df91051976d56e659f/artifacts
+end_time: 1737049946052
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 10c206335bf744df91051976d56e659f
+run_name: secretive-swan-498
+run_uuid: 10c206335bf744df91051976d56e659f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737049942658
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e9efab9b1a714a4697e354b4cf198b8b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e9efab9b1a714a4697e354b4cf198b8b
+run_name: fortunate-swan-521
+run_uuid: e9efab9b1a714a4697e354b4cf198b8b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023806665
+status: 1
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/36c9dd7778e243e1959effd1c1d877a9/artifacts
+end_time: 1746011658703
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 36c9dd7778e243e1959effd1c1d877a9
+run_name: receptive-kite-496
+run_uuid: 36c9dd7778e243e1959effd1c1d877a9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011658658
+status: 4
+tags: []
+user_id: unknown

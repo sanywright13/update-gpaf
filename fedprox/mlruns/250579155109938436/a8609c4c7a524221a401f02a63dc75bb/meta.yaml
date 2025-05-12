@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/a8609c4c7a524221a401f02a63dc75bb/artifacts
+end_time: 1738279414693
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: a8609c4c7a524221a401f02a63dc75bb
+run_name: omniscient-lamb-305
+run_uuid: a8609c4c7a524221a401f02a63dc75bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738279414636
+status: 3
+tags: []
+user_id: unknown

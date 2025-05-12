@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5c562fae487e4a119ab66ce85830fd20/artifacts
+end_time: 1746013374529
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5c562fae487e4a119ab66ce85830fd20
+run_name: magnificent-eel-646
+run_uuid: 5c562fae487e4a119ab66ce85830fd20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013374486
+status: 4
+tags: []
+user_id: unknown

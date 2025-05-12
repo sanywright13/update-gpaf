@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2b8fb2ab5bbd4f3c9f5cf9239c64ae50/artifacts
+end_time: 1744577293899
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2b8fb2ab5bbd4f3c9f5cf9239c64ae50
+run_name: whimsical-dove-541
+run_uuid: 2b8fb2ab5bbd4f3c9f5cf9239c64ae50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744577293765
+status: 3
+tags: []
+user_id: unknown

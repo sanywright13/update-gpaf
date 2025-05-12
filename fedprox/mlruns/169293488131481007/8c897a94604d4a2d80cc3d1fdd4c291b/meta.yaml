@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/8c897a94604d4a2d80cc3d1fdd4c291b/artifacts
+end_time: 1737382489312
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 8c897a94604d4a2d80cc3d1fdd4c291b
+run_name: nebulous-gnu-614
+run_uuid: 8c897a94604d4a2d80cc3d1fdd4c291b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382489262
+status: 3
+tags: []
+user_id: unknown

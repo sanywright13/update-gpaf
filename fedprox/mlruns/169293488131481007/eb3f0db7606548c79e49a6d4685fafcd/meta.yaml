@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/eb3f0db7606548c79e49a6d4685fafcd/artifacts
+end_time: 1737462205438
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: eb3f0db7606548c79e49a6d4685fafcd
+run_name: dapper-snake-951
+run_uuid: eb3f0db7606548c79e49a6d4685fafcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737462205379
+status: 3
+tags: []
+user_id: unknown

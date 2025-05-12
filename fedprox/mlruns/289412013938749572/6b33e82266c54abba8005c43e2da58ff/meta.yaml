@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6b33e82266c54abba8005c43e2da58ff/artifacts
+end_time: 1746023787077
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6b33e82266c54abba8005c43e2da58ff
+run_name: capricious-shark-151
+run_uuid: 6b33e82266c54abba8005c43e2da58ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023786979
+status: 4
+tags: []
+user_id: unknown

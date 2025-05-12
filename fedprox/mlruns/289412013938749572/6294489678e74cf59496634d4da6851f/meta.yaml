@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6294489678e74cf59496634d4da6851f/artifacts
+end_time: 1746013432749
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6294489678e74cf59496634d4da6851f
+run_name: sneaky-goose-974
+run_uuid: 6294489678e74cf59496634d4da6851f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013432703
+status: 4
+tags: []
+user_id: unknown

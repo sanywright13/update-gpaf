@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/115445297169442189/e8049db95807423bb45da10176997591/artifacts
+end_time: 1737470568054
+entry_point_name: ''
+experiment_id: '115445297169442189'
+lifecycle_stage: active
+run_id: e8049db95807423bb45da10176997591
+run_name: merciful-stork-635
+run_uuid: e8049db95807423bb45da10176997591
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469986518
+status: 3
+tags: []
+user_id: unknown

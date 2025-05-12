@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c85a60da22bc4a79af53cc82ff819b4b/artifacts
+end_time: 1737625837122
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c85a60da22bc4a79af53cc82ff819b4b
+run_name: redolent-finch-760
+run_uuid: c85a60da22bc4a79af53cc82ff819b4b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737625827848
+status: 3
+tags: []
+user_id: unknown

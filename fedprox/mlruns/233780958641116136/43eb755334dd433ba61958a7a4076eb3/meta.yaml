@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/43eb755334dd433ba61958a7a4076eb3/artifacts
+end_time: 1738862376433
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 43eb755334dd433ba61958a7a4076eb3
+run_name: bemused-gnat-563
+run_uuid: 43eb755334dd433ba61958a7a4076eb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862376410
+status: 4
+tags: []
+user_id: unknown

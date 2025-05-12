@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/875766709100157591/858bd000a97540809cbf34575dc4b139/artifacts
+end_time: 1737120487943
+entry_point_name: ''
+experiment_id: '875766709100157591'
+lifecycle_stage: active
+run_id: 858bd000a97540809cbf34575dc4b139
+run_name: wistful-robin-600
+run_uuid: 858bd000a97540809cbf34575dc4b139
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737120319154
+status: 3
+tags: []
+user_id: unknown

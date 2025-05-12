@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cd83d4c8cd4d4b5e85259d5187010bf7/artifacts
+end_time: 1746013392008
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cd83d4c8cd4d4b5e85259d5187010bf7
+run_name: awesome-squid-996
+run_uuid: cd83d4c8cd4d4b5e85259d5187010bf7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013391961
+status: 4
+tags: []
+user_id: unknown

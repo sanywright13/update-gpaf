@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3cdfc1dcc17b411aad3ea7d12188580a/artifacts
+end_time: 1746013404504
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3cdfc1dcc17b411aad3ea7d12188580a
+run_name: unruly-flea-367
+run_uuid: 3cdfc1dcc17b411aad3ea7d12188580a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013404460
+status: 4
+tags: []
+user_id: unknown

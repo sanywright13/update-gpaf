@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/4c9e44e557d948b881c6153dc7c9afce/artifacts
+end_time: 1738157303914
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 4c9e44e557d948b881c6153dc7c9afce
+run_name: clumsy-yak-682
+run_uuid: 4c9e44e557d948b881c6153dc7c9afce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738157303604
+status: 3
+tags: []
+user_id: unknown

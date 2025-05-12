@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/362594e7528d477d95bc5993bc0c5530/artifacts
+end_time: 1736888370257
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 362594e7528d477d95bc5993bc0c5530
+run_name: powerful-eel-401
+run_uuid: 362594e7528d477d95bc5993bc0c5530
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888370210
+status: 3
+tags: []
+user_id: unknown

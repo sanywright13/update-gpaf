@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d11291a569fb43e088a4011d4be3ee40/artifacts
+end_time: 1738251693401
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d11291a569fb43e088a4011d4be3ee40
+run_name: stylish-carp-427
+run_uuid: d11291a569fb43e088a4011d4be3ee40
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738251693354
+status: 3
+tags: []
+user_id: unknown

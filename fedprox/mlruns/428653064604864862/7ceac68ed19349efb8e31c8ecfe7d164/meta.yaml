@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/7ceac68ed19349efb8e31c8ecfe7d164/artifacts
+end_time: 1737564428819
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 7ceac68ed19349efb8e31c8ecfe7d164
+run_name: receptive-mink-608
+run_uuid: 7ceac68ed19349efb8e31c8ecfe7d164
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564428780
+status: 3
+tags: []
+user_id: unknown

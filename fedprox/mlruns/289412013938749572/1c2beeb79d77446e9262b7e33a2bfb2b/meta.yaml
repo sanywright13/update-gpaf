@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1c2beeb79d77446e9262b7e33a2bfb2b/artifacts
+end_time: 1746011587657
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1c2beeb79d77446e9262b7e33a2bfb2b
+run_name: spiffy-conch-290
+run_uuid: 1c2beeb79d77446e9262b7e33a2bfb2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011587622
+status: 4
+tags: []
+user_id: unknown

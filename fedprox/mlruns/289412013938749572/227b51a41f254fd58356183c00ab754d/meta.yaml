@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/227b51a41f254fd58356183c00ab754d/artifacts
+end_time: 1746011655281
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 227b51a41f254fd58356183c00ab754d
+run_name: respected-skink-575
+run_uuid: 227b51a41f254fd58356183c00ab754d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011655235
+status: 4
+tags: []
+user_id: unknown

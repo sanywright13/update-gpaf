@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/980094df50cb4d4c8058b91dec79e0e0/artifacts
+end_time: 1737469829407
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 980094df50cb4d4c8058b91dec79e0e0
+run_name: invincible-stag-529
+run_uuid: 980094df50cb4d4c8058b91dec79e0e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469829382
+status: 4
+tags: []
+user_id: unknown

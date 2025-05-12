@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e0599f98d98a4b4ea5061b1fc69f1f9e/artifacts
+end_time: 1738158654140
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e0599f98d98a4b4ea5061b1fc69f1f9e
+run_name: sneaky-doe-399
+run_uuid: e0599f98d98a4b4ea5061b1fc69f1f9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158653852
+status: 3
+tags: []
+user_id: unknown

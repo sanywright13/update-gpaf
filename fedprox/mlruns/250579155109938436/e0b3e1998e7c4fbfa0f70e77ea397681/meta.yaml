@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e0b3e1998e7c4fbfa0f70e77ea397681/artifacts
+end_time: 1738255212463
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e0b3e1998e7c4fbfa0f70e77ea397681
+run_name: placid-roo-991
+run_uuid: e0b3e1998e7c4fbfa0f70e77ea397681
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738255204482
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/39f7880040d64e7e94999d86d5b496ec/artifacts
+end_time: 1738155089110
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 39f7880040d64e7e94999d86d5b496ec
+run_name: amusing-mink-96
+run_uuid: 39f7880040d64e7e94999d86d5b496ec
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738155037095
+status: 3
+tags: []
+user_id: unknown

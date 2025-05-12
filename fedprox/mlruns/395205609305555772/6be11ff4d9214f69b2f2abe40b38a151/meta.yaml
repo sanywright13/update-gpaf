@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/6be11ff4d9214f69b2f2abe40b38a151/artifacts
+end_time: 1736889013677
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 6be11ff4d9214f69b2f2abe40b38a151
+run_name: gentle-dog-795
+run_uuid: 6be11ff4d9214f69b2f2abe40b38a151
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889013631
+status: 3
+tags: []
+user_id: unknown

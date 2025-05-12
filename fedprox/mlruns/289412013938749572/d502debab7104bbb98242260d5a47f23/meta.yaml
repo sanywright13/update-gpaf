@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d502debab7104bbb98242260d5a47f23/artifacts
+end_time: 1746011622311
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d502debab7104bbb98242260d5a47f23
+run_name: agreeable-foal-834
+run_uuid: d502debab7104bbb98242260d5a47f23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011622274
+status: 4
+tags: []
+user_id: unknown

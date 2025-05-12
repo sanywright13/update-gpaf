@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/4bd5287af96b4e4eb8a819386746078c/artifacts
+end_time: 1738005324187
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 4bd5287af96b4e4eb8a819386746078c
+run_name: calm-sheep-932
+run_uuid: 4bd5287af96b4e4eb8a819386746078c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005324003
+status: 3
+tags: []
+user_id: unknown

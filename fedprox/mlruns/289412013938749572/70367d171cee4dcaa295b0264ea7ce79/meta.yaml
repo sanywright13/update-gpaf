@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/70367d171cee4dcaa295b0264ea7ce79/artifacts
+end_time: 1746013369926
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 70367d171cee4dcaa295b0264ea7ce79
+run_name: bemused-bear-317
+run_uuid: 70367d171cee4dcaa295b0264ea7ce79
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013369880
+status: 4
+tags: []
+user_id: unknown

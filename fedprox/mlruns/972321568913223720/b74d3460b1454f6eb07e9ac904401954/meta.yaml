@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/b74d3460b1454f6eb07e9ac904401954/artifacts
+end_time: 1737117586367
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: b74d3460b1454f6eb07e9ac904401954
+run_name: angry-snipe-756
+run_uuid: b74d3460b1454f6eb07e9ac904401954
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117586286
+status: 4
+tags: []
+user_id: unknown

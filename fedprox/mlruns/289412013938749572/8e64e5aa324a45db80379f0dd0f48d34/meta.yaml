@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8e64e5aa324a45db80379f0dd0f48d34/artifacts
+end_time: 1746023702254
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8e64e5aa324a45db80379f0dd0f48d34
+run_name: hilarious-lamb-370
+run_uuid: 8e64e5aa324a45db80379f0dd0f48d34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023701840
+status: 3
+tags: []
+user_id: unknown

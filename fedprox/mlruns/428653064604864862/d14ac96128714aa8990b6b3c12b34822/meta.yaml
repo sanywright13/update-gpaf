@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/d14ac96128714aa8990b6b3c12b34822/artifacts
+end_time: 1737564427035
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: d14ac96128714aa8990b6b3c12b34822
+run_name: casual-wren-423
+run_uuid: d14ac96128714aa8990b6b3c12b34822
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564426993
+status: 3
+tags: []
+user_id: unknown

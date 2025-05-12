@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/358be9076bca4834b37c792a21e81cbc/artifacts
+end_time: 1737117260454
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 358be9076bca4834b37c792a21e81cbc
+run_name: thundering-wasp-973
+run_uuid: 358be9076bca4834b37c792a21e81cbc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117260434
+status: 3
+tags: []
+user_id: unknown

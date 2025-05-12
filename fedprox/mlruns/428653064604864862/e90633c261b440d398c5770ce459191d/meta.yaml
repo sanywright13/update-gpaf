@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/e90633c261b440d398c5770ce459191d/artifacts
+end_time: 1737563080778
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: e90633c261b440d398c5770ce459191d
+run_name: adaptable-cod-878
+run_uuid: e90633c261b440d398c5770ce459191d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563080756
+status: 3
+tags: []
+user_id: unknown

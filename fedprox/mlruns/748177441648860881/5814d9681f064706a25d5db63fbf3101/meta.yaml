@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5814d9681f064706a25d5db63fbf3101/artifacts
+end_time: 1742347281820
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5814d9681f064706a25d5db63fbf3101
+run_name: colorful-skink-920
+run_uuid: 5814d9681f064706a25d5db63fbf3101
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742347281637
+status: 4
+tags: []
+user_id: unknown

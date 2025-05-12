@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/65809c85fca446cc8a424b54fa5f1c01/artifacts
+end_time: 1738155702498
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 65809c85fca446cc8a424b54fa5f1c01
+run_name: charming-foal-794
+run_uuid: 65809c85fca446cc8a424b54fa5f1c01
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738155393180
+status: 3
+tags: []
+user_id: unknown

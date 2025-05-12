@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/68686366222440cd96fe063175fd7d53/artifacts
+end_time: 1736888378754
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 68686366222440cd96fe063175fd7d53
+run_name: tasteful-newt-463
+run_uuid: 68686366222440cd96fe063175fd7d53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888378727
+status: 3
+tags: []
+user_id: unknown

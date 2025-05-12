@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/df3ee622fc1642618eda75d048e5cc16/artifacts
+end_time: 1746011604422
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: df3ee622fc1642618eda75d048e5cc16
+run_name: polite-snail-921
+run_uuid: df3ee622fc1642618eda75d048e5cc16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011604379
+status: 4
+tags: []
+user_id: unknown

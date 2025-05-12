@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d42db31d09974f3e8eefabc92e97cb92/artifacts
+end_time: 1746011598943
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d42db31d09974f3e8eefabc92e97cb92
+run_name: carefree-ape-848
+run_uuid: d42db31d09974f3e8eefabc92e97cb92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011598903
+status: 4
+tags: []
+user_id: unknown

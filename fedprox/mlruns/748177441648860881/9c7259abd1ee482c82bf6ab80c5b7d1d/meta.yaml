@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/9c7259abd1ee482c82bf6ab80c5b7d1d/artifacts
+end_time: 1740080032394
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 9c7259abd1ee482c82bf6ab80c5b7d1d
+run_name: marvelous-conch-481
+run_uuid: 9c7259abd1ee482c82bf6ab80c5b7d1d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080009260
+status: 3
+tags: []
+user_id: unknown

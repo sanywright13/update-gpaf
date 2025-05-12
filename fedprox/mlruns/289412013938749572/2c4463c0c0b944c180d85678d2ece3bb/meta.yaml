@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2c4463c0c0b944c180d85678d2ece3bb/artifacts
+end_time: 1746011590978
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2c4463c0c0b944c180d85678d2ece3bb
+run_name: enthused-ox-256
+run_uuid: 2c4463c0c0b944c180d85678d2ece3bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011590943
+status: 4
+tags: []
+user_id: unknown

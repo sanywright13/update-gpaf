@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/33a29cd7bdab4fa6a863017b1fc46c9b/artifacts
+end_time: 1746019072831
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 33a29cd7bdab4fa6a863017b1fc46c9b
+run_name: valuable-toad-846
+run_uuid: 33a29cd7bdab4fa6a863017b1fc46c9b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019072390
+status: 3
+tags: []
+user_id: unknown

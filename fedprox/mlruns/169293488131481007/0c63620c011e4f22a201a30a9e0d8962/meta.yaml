@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/0c63620c011e4f22a201a30a9e0d8962/artifacts
+end_time: 1737386793470
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 0c63620c011e4f22a201a30a9e0d8962
+run_name: glamorous-snipe-356
+run_uuid: 0c63620c011e4f22a201a30a9e0d8962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737386793412
+status: 3
+tags: []
+user_id: unknown

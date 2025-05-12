@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/634cbb80c44443e0882dd453b1df2a86/artifacts
+end_time: 1740078279758
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 634cbb80c44443e0882dd453b1df2a86
+run_name: bustling-sponge-667
+run_uuid: 634cbb80c44443e0882dd453b1df2a86
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078266844
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/81199d13056147b6b00bc66b6b120774/artifacts
+end_time: 1744669071184
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 81199d13056147b6b00bc66b6b120774
+run_name: whimsical-worm-763
+run_uuid: 81199d13056147b6b00bc66b6b120774
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744669029482
+status: 3
+tags: []
+user_id: unknown

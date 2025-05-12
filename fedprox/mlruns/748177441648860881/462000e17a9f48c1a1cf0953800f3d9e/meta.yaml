@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/462000e17a9f48c1a1cf0953800f3d9e/artifacts
+end_time: 1744577296645
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 462000e17a9f48c1a1cf0953800f3d9e
+run_name: dapper-dog-407
+run_uuid: 462000e17a9f48c1a1cf0953800f3d9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744577296496
+status: 3
+tags: []
+user_id: unknown

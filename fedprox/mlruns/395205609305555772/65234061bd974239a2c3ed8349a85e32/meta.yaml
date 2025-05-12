@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/65234061bd974239a2c3ed8349a85e32/artifacts
+end_time: 1736889010603
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 65234061bd974239a2c3ed8349a85e32
+run_name: mercurial-mare-509
+run_uuid: 65234061bd974239a2c3ed8349a85e32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889010570
+status: 3
+tags: []
+user_id: unknown

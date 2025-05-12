@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b5196951fe8c4f87b0ce8915b82565a0/artifacts
+end_time: 1746018451906
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b5196951fe8c4f87b0ce8915b82565a0
+run_name: clean-foal-199
+run_uuid: b5196951fe8c4f87b0ce8915b82565a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018451375
+status: 3
+tags: []
+user_id: unknown

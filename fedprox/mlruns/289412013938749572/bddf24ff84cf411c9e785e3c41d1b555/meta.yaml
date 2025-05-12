@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bddf24ff84cf411c9e785e3c41d1b555/artifacts
+end_time: 1746013368265
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bddf24ff84cf411c9e785e3c41d1b555
+run_name: bright-snipe-566
+run_uuid: bddf24ff84cf411c9e785e3c41d1b555
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013368220
+status: 4
+tags: []
+user_id: unknown

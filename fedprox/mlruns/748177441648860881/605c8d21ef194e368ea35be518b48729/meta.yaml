@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/605c8d21ef194e368ea35be518b48729/artifacts
+end_time: 1742256862319
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 605c8d21ef194e368ea35be518b48729
+run_name: stately-lark-755
+run_uuid: 605c8d21ef194e368ea35be518b48729
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256862224
+status: 3
+tags: []
+user_id: unknown

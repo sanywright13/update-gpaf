@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c680a176c2034197bc7ec6f1960b990a/artifacts
+end_time: 1739976366759
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c680a176c2034197bc7ec6f1960b990a
+run_name: beautiful-stoat-372
+run_uuid: c680a176c2034197bc7ec6f1960b990a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739976270622
+status: 3
+tags: []
+user_id: unknown

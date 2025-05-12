@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/720e81e1f201496e956d3adf313e432a/artifacts
+end_time: 1738279213256
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 720e81e1f201496e956d3adf313e432a
+run_name: overjoyed-sloth-163
+run_uuid: 720e81e1f201496e956d3adf313e432a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738279213218
+status: 3
+tags: []
+user_id: unknown

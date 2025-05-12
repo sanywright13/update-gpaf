@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/371b5e25cdd543f1a1abd2a0f287648a/artifacts
+end_time: 1738251694875
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 371b5e25cdd543f1a1abd2a0f287648a
+run_name: crawling-deer-466
+run_uuid: 371b5e25cdd543f1a1abd2a0f287648a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738251694799
+status: 3
+tags: []
+user_id: unknown

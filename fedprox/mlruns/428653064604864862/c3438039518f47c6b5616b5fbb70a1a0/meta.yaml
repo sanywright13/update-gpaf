@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c3438039518f47c6b5616b5fbb70a1a0/artifacts
+end_time: 1737563780329
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c3438039518f47c6b5616b5fbb70a1a0
+run_name: defiant-crane-282
+run_uuid: c3438039518f47c6b5616b5fbb70a1a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563780287
+status: 3
+tags: []
+user_id: unknown

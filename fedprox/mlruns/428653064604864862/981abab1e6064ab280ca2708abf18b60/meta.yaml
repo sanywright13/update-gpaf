@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/981abab1e6064ab280ca2708abf18b60/artifacts
+end_time: 1737625506348
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 981abab1e6064ab280ca2708abf18b60
+run_name: enchanting-colt-77
+run_uuid: 981abab1e6064ab280ca2708abf18b60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737625496307
+status: 3
+tags: []
+user_id: unknown

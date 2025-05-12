@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5b7acadf9e3f4a0ab9c091f152a5ec3b/artifacts
+end_time: 1743678292293
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5b7acadf9e3f4a0ab9c091f152a5ec3b
+run_name: caring-cod-881
+run_uuid: 5b7acadf9e3f4a0ab9c091f152a5ec3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743678277577
+status: 3
+tags: []
+user_id: unknown

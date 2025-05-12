@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/8a62ec9df5e74a1894c03abee21509a1/artifacts
+end_time: 1743375065381
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 8a62ec9df5e74a1894c03abee21509a1
+run_name: glamorous-snail-506
+run_uuid: 8a62ec9df5e74a1894c03abee21509a1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743375064881
+status: 3
+tags: []
+user_id: unknown

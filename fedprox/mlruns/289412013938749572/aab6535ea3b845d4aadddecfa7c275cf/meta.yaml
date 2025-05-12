@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aab6535ea3b845d4aadddecfa7c275cf/artifacts
+end_time: 1746011615198
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aab6535ea3b845d4aadddecfa7c275cf
+run_name: masked-hound-119
+run_uuid: aab6535ea3b845d4aadddecfa7c275cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011615156
+status: 4
+tags: []
+user_id: unknown

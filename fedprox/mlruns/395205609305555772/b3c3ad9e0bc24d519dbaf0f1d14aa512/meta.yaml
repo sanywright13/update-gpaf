@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/b3c3ad9e0bc24d519dbaf0f1d14aa512/artifacts
+end_time: 1736888376346
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: b3c3ad9e0bc24d519dbaf0f1d14aa512
+run_name: caring-worm-687
+run_uuid: b3c3ad9e0bc24d519dbaf0f1d14aa512
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888376291
+status: 3
+tags: []
+user_id: unknown

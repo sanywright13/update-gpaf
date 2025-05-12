@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d7fa84f63c8143f7a220b1916a1b8e1a/artifacts
+end_time: 1746023775760
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d7fa84f63c8143f7a220b1916a1b8e1a
+run_name: legendary-seal-19
+run_uuid: d7fa84f63c8143f7a220b1916a1b8e1a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023775365
+status: 3
+tags: []
+user_id: unknown

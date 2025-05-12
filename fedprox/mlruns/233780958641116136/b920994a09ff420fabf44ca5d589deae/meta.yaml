@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/b920994a09ff420fabf44ca5d589deae/artifacts
+end_time: 1738858905276
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: b920994a09ff420fabf44ca5d589deae
+run_name: bald-bee-265
+run_uuid: b920994a09ff420fabf44ca5d589deae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738858332606
+status: 3
+tags: []
+user_id: unknown

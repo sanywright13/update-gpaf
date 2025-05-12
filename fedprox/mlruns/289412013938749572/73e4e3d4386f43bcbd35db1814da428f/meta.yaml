@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/73e4e3d4386f43bcbd35db1814da428f/artifacts
+end_time: 1746011600109
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 73e4e3d4386f43bcbd35db1814da428f
+run_name: placid-jay-74
+run_uuid: 73e4e3d4386f43bcbd35db1814da428f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011600068
+status: 4
+tags: []
+user_id: unknown

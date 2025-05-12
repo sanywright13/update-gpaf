@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/41e78de30e9c490d823274a2d4bfa016/artifacts
+end_time: 1746013383573
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 41e78de30e9c490d823274a2d4bfa016
+run_name: smiling-shrimp-857
+run_uuid: 41e78de30e9c490d823274a2d4bfa016
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013383530
+status: 4
+tags: []
+user_id: unknown

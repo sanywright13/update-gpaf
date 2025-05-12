@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/de374388c16249909e3f98e6faf11fc0/artifacts
+end_time: 1746013434366
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: de374388c16249909e3f98e6faf11fc0
+run_name: casual-owl-293
+run_uuid: de374388c16249909e3f98e6faf11fc0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013434315
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/318a03a8aea44537bfa4a3215bf2d15e/artifacts
+end_time: 1746013444423
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 318a03a8aea44537bfa4a3215bf2d15e
+run_name: agreeable-zebra-151
+run_uuid: 318a03a8aea44537bfa4a3215bf2d15e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013444371
+status: 4
+tags: []
+user_id: unknown

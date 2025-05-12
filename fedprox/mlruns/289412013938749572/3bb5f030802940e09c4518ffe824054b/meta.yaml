@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3bb5f030802940e09c4518ffe824054b/artifacts
+end_time: 1746011654095
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3bb5f030802940e09c4518ffe824054b
+run_name: judicious-elk-268
+run_uuid: 3bb5f030802940e09c4518ffe824054b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011654051
+status: 4
+tags: []
+user_id: unknown

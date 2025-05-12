@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/618a7bd09a484cdd81c419820c167b18/artifacts
+end_time: 1746023694396
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 618a7bd09a484cdd81c419820c167b18
+run_name: learned-finch-699
+run_uuid: 618a7bd09a484cdd81c419820c167b18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023694303
+status: 4
+tags: []
+user_id: unknown

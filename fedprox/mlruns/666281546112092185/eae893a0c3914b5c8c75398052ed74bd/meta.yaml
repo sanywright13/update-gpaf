@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/eae893a0c3914b5c8c75398052ed74bd/artifacts
+end_time: 1737469828049
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: eae893a0c3914b5c8c75398052ed74bd
+run_name: stylish-owl-585
+run_uuid: eae893a0c3914b5c8c75398052ed74bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469828004
+status: 4
+tags: []
+user_id: unknown

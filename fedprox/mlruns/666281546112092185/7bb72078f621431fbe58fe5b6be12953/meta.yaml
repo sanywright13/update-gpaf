@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/7bb72078f621431fbe58fe5b6be12953/artifacts
+end_time: 1737469828285
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 7bb72078f621431fbe58fe5b6be12953
+run_name: clumsy-cub-479
+run_uuid: 7bb72078f621431fbe58fe5b6be12953
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469828243
+status: 4
+tags: []
+user_id: unknown

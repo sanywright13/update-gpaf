@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/05dc0c7ecc114800960b6237903f84ca/artifacts
+end_time: 1746013412648
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 05dc0c7ecc114800960b6237903f84ca
+run_name: upset-steed-392
+run_uuid: 05dc0c7ecc114800960b6237903f84ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013412600
+status: 4
+tags: []
+user_id: unknown

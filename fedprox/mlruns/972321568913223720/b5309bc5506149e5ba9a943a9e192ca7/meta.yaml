@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/b5309bc5506149e5ba9a943a9e192ca7/artifacts
+end_time: 1736975742583
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: b5309bc5506149e5ba9a943a9e192ca7
+run_name: skillful-shark-70
+run_uuid: b5309bc5506149e5ba9a943a9e192ca7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736975556117
+status: 3
+tags: []
+user_id: unknown

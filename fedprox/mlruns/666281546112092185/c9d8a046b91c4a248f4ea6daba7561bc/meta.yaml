@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/c9d8a046b91c4a248f4ea6daba7561bc/artifacts
+end_time: 1737469820114
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: c9d8a046b91c4a248f4ea6daba7561bc
+run_name: bemused-sow-768
+run_uuid: c9d8a046b91c4a248f4ea6daba7561bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469820082
+status: 4
+tags: []
+user_id: unknown

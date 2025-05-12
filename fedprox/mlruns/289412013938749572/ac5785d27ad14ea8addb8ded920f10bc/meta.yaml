@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ac5785d27ad14ea8addb8ded920f10bc/artifacts
+end_time: 1746018649473
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ac5785d27ad14ea8addb8ded920f10bc
+run_name: dazzling-robin-137
+run_uuid: ac5785d27ad14ea8addb8ded920f10bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018649051
+status: 3
+tags: []
+user_id: unknown

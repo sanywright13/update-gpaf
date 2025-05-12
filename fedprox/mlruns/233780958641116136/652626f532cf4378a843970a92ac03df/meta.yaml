@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/652626f532cf4378a843970a92ac03df/artifacts
+end_time: 1738862374871
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 652626f532cf4378a843970a92ac03df
+run_name: efficient-fowl-452
+run_uuid: 652626f532cf4378a843970a92ac03df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862374847
+status: 4
+tags: []
+user_id: unknown

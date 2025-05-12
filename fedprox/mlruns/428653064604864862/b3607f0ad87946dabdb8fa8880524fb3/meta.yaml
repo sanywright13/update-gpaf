@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/b3607f0ad87946dabdb8fa8880524fb3/artifacts
+end_time: 1737563970872
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: b3607f0ad87946dabdb8fa8880524fb3
+run_name: enchanting-zebra-808
+run_uuid: b3607f0ad87946dabdb8fa8880524fb3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563970846
+status: 3
+tags: []
+user_id: unknown

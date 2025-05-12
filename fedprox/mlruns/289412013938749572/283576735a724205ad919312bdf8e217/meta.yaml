@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/283576735a724205ad919312bdf8e217/artifacts
+end_time: 1746023777003
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 283576735a724205ad919312bdf8e217
+run_name: nimble-gnat-346
+run_uuid: 283576735a724205ad919312bdf8e217
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023776908
+status: 4
+tags: []
+user_id: unknown

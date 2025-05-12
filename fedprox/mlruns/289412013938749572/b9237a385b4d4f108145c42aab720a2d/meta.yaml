@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b9237a385b4d4f108145c42aab720a2d/artifacts
+end_time: 1746011577770
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b9237a385b4d4f108145c42aab720a2d
+run_name: placid-snake-529
+run_uuid: b9237a385b4d4f108145c42aab720a2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011577732
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/aa95958722494b319b3d1e05a8f277d7/artifacts
+end_time: 1736889006141
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: aa95958722494b319b3d1e05a8f277d7
+run_name: amusing-duck-409
+run_uuid: aa95958722494b319b3d1e05a8f277d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889006084
+status: 3
+tags: []
+user_id: unknown

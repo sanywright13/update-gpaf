@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/52aac14ba6be496a8330fc1b49397efa/artifacts
+end_time: 1737994791579
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 52aac14ba6be496a8330fc1b49397efa
+run_name: smiling-duck-292
+run_uuid: 52aac14ba6be496a8330fc1b49397efa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737994791314
+status: 3
+tags: []
+user_id: unknown

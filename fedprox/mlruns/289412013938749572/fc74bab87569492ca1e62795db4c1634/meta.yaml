@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fc74bab87569492ca1e62795db4c1634/artifacts
+end_time: 1746013413627
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fc74bab87569492ca1e62795db4c1634
+run_name: grandiose-ox-603
+run_uuid: fc74bab87569492ca1e62795db4c1634
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013413578
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ad109fe721b04743abd89c6d3c800137/artifacts
+end_time: 1744625092193
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ad109fe721b04743abd89c6d3c800137
+run_name: intrigued-mink-655
+run_uuid: ad109fe721b04743abd89c6d3c800137
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744625023283
+status: 3
+tags: []
+user_id: unknown

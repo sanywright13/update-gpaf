@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1f3f5d5c6ad64dd799c9ec33bf894504/artifacts
+end_time: 1746013421485
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1f3f5d5c6ad64dd799c9ec33bf894504
+run_name: efficient-horse-328
+run_uuid: 1f3f5d5c6ad64dd799c9ec33bf894504
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013421438
+status: 4
+tags: []
+user_id: unknown

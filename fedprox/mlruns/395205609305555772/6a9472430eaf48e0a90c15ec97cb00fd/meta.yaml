@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/6a9472430eaf48e0a90c15ec97cb00fd/artifacts
+end_time: 1736888367178
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 6a9472430eaf48e0a90c15ec97cb00fd
+run_name: unleashed-ray-332
+run_uuid: 6a9472430eaf48e0a90c15ec97cb00fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888367131
+status: 3
+tags: []
+user_id: unknown

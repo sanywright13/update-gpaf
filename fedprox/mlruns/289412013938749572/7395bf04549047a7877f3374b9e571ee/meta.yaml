@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7395bf04549047a7877f3374b9e571ee/artifacts
+end_time: 1746013413637
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7395bf04549047a7877f3374b9e571ee
+run_name: caring-moose-808
+run_uuid: 7395bf04549047a7877f3374b9e571ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013413589
+status: 4
+tags: []
+user_id: unknown

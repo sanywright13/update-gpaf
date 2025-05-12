@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/eed113d0cd8f4b13a835f15a77cc4eac/artifacts
+end_time: 1737543082656
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: eed113d0cd8f4b13a835f15a77cc4eac
+run_name: clumsy-zebra-826
+run_uuid: eed113d0cd8f4b13a835f15a77cc4eac
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737543082028
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/622f3a300c414ef1aa67d6fbe1ed2115/artifacts
+end_time: 1737586972361
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 622f3a300c414ef1aa67d6fbe1ed2115
+run_name: intelligent-bird-723
+run_uuid: 622f3a300c414ef1aa67d6fbe1ed2115
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737586971248
+status: 3
+tags: []
+user_id: unknown

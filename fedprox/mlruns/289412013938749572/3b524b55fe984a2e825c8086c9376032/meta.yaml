@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3b524b55fe984a2e825c8086c9376032/artifacts
+end_time: 1746018139893
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3b524b55fe984a2e825c8086c9376032
+run_name: smiling-bee-671
+run_uuid: 3b524b55fe984a2e825c8086c9376032
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018139456
+status: 3
+tags: []
+user_id: unknown

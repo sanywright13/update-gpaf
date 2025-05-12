@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2f734093091c47b2b44e531b6d3eb947/artifacts
+end_time: 1746011648079
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2f734093091c47b2b44e531b6d3eb947
+run_name: unruly-finch-791
+run_uuid: 2f734093091c47b2b44e531b6d3eb947
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011648041
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/54056f6f1670467599d7438066ae550a/artifacts
+end_time: 1746013418278
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 54056f6f1670467599d7438066ae550a
+run_name: redolent-quail-810
+run_uuid: 54056f6f1670467599d7438066ae550a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013418229
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/1969dc3acffc4dda9505eb0570bc7e76/artifacts
+end_time: 1738157315362
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 1969dc3acffc4dda9505eb0570bc7e76
+run_name: bold-wolf-596
+run_uuid: 1969dc3acffc4dda9505eb0570bc7e76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738157315152
+status: 3
+tags: []
+user_id: unknown

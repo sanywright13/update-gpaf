@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/48555d5fa5a14a0b9fd4546bd47d6a95/artifacts
+end_time: 1746017570103
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 48555d5fa5a14a0b9fd4546bd47d6a95
+run_name: crawling-penguin-300
+run_uuid: 48555d5fa5a14a0b9fd4546bd47d6a95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017570021
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/033e1ed1c2aa490bbe2c372e021416bc/artifacts
+end_time: 1742347575843
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 033e1ed1c2aa490bbe2c372e021416bc
+run_name: fearless-cub-942
+run_uuid: 033e1ed1c2aa490bbe2c372e021416bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742347575714
+status: 4
+tags: []
+user_id: unknown

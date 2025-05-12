@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/3aa8d11155b846448f77a7b37907d6a6/artifacts
+end_time: 1737716513267
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 3aa8d11155b846448f77a7b37907d6a6
+run_name: shivering-calf-29
+run_uuid: 3aa8d11155b846448f77a7b37907d6a6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737716224392
+status: 3
+tags: []
+user_id: unknown

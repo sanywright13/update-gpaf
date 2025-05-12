@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a193d9fde23b471bb9537dd50d5f5b5c/artifacts
+end_time: 1746011614656
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a193d9fde23b471bb9537dd50d5f5b5c
+run_name: spiffy-elk-156
+run_uuid: a193d9fde23b471bb9537dd50d5f5b5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011614620
+status: 4
+tags: []
+user_id: unknown

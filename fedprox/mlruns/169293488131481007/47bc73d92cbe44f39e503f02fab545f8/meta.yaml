@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/47bc73d92cbe44f39e503f02fab545f8/artifacts
+end_time: 1737466096039
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 47bc73d92cbe44f39e503f02fab545f8
+run_name: delightful-crane-46
+run_uuid: 47bc73d92cbe44f39e503f02fab545f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737466095974
+status: 3
+tags: []
+user_id: unknown

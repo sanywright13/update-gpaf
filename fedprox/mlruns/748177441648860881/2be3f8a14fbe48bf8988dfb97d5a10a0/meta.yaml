@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2be3f8a14fbe48bf8988dfb97d5a10a0/artifacts
+end_time: 1744492261809
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2be3f8a14fbe48bf8988dfb97d5a10a0
+run_name: secretive-chimp-290
+run_uuid: 2be3f8a14fbe48bf8988dfb97d5a10a0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744492261423
+status: 3
+tags: []
+user_id: unknown

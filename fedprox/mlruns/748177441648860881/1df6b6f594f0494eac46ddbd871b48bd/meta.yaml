@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/1df6b6f594f0494eac46ddbd871b48bd/artifacts
+end_time: 1744551907749
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 1df6b6f594f0494eac46ddbd871b48bd
+run_name: kindly-perch-935
+run_uuid: 1df6b6f594f0494eac46ddbd871b48bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744551907177
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/51fc70a050934fb495e8aa9b6b0dd6cd/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 51fc70a050934fb495e8aa9b6b0dd6cd
+run_name: bright-conch-280
+run_uuid: 51fc70a050934fb495e8aa9b6b0dd6cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023806656
+status: 1
+tags: []
+user_id: unknown

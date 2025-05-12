@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/ef3b8a33a25e4e4b9133b78fa04fe178/artifacts
+end_time: 1737383048767
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: ef3b8a33a25e4e4b9133b78fa04fe178
+run_name: polite-fish-125
+run_uuid: ef3b8a33a25e4e4b9133b78fa04fe178
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382896404
+status: 3
+tags: []
+user_id: unknown

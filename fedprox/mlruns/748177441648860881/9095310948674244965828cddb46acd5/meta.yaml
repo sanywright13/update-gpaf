@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/9095310948674244965828cddb46acd5/artifacts
+end_time: 1739973906763
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 9095310948674244965828cddb46acd5
+run_name: sincere-mouse-702
+run_uuid: 9095310948674244965828cddb46acd5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739973810343
+status: 3
+tags: []
+user_id: unknown

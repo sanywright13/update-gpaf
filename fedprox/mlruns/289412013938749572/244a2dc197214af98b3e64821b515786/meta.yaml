@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/244a2dc197214af98b3e64821b515786/artifacts
+end_time: 1746018818658
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 244a2dc197214af98b3e64821b515786
+run_name: omniscient-hound-516
+run_uuid: 244a2dc197214af98b3e64821b515786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018818233
+status: 3
+tags: []
+user_id: unknown

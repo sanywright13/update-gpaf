@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/490894f7d5f74227a2ba7810fcf939f8/artifacts
+end_time: 1744487871912
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 490894f7d5f74227a2ba7810fcf939f8
+run_name: peaceful-ox-542
+run_uuid: 490894f7d5f74227a2ba7810fcf939f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744487871106
+status: 3
+tags: []
+user_id: unknown

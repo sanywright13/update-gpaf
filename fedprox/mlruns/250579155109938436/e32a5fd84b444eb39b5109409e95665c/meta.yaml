@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e32a5fd84b444eb39b5109409e95665c/artifacts
+end_time: 1738250081939
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e32a5fd84b444eb39b5109409e95665c
+run_name: popular-asp-815
+run_uuid: e32a5fd84b444eb39b5109409e95665c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738250074582
+status: 3
+tags: []
+user_id: unknown

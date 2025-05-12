@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/9ee6d592a0c148c6bebf8978943787d9/artifacts
+end_time: 1737469830130
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 9ee6d592a0c148c6bebf8978943787d9
+run_name: useful-boar-940
+run_uuid: 9ee6d592a0c148c6bebf8978943787d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469830105
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aafb4b4ce80742898be723bd3a14cc4a/artifacts
+end_time: 1746011621375
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aafb4b4ce80742898be723bd3a14cc4a
+run_name: silent-snake-83
+run_uuid: aafb4b4ce80742898be723bd3a14cc4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011621332
+status: 4
+tags: []
+user_id: unknown

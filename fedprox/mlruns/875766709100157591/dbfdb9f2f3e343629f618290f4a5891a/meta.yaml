@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/875766709100157591/dbfdb9f2f3e343629f618290f4a5891a/artifacts
+end_time: 1737120487527
+entry_point_name: ''
+experiment_id: '875766709100157591'
+lifecycle_stage: active
+run_id: dbfdb9f2f3e343629f618290f4a5891a
+run_name: dazzling-asp-554
+run_uuid: dbfdb9f2f3e343629f618290f4a5891a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737120320416
+status: 3
+tags: []
+user_id: unknown

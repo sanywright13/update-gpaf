@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/c1699d3d527d4be5860a212995886f21/artifacts
+end_time: 1737915136131
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: c1699d3d527d4be5860a212995886f21
+run_name: zealous-smelt-295
+run_uuid: c1699d3d527d4be5860a212995886f21
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737910722762
+status: 3
+tags: []
+user_id: unknown

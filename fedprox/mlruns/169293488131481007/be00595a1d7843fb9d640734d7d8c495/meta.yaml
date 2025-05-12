@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/be00595a1d7843fb9d640734d7d8c495/artifacts
+end_time: 1737390084259
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: be00595a1d7843fb9d640734d7d8c495
+run_name: suave-skunk-488
+run_uuid: be00595a1d7843fb9d640734d7d8c495
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737390062542
+status: 3
+tags: []
+user_id: unknown

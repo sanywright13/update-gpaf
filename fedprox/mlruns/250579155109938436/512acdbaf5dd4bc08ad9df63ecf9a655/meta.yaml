@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/512acdbaf5dd4bc08ad9df63ecf9a655/artifacts
+end_time: 1738249770417
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 512acdbaf5dd4bc08ad9df63ecf9a655
+run_name: unique-sponge-701
+run_uuid: 512acdbaf5dd4bc08ad9df63ecf9a655
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738249761233
+status: 3
+tags: []
+user_id: unknown

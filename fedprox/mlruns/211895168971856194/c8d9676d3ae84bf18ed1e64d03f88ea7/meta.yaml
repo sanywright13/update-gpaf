@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/c8d9676d3ae84bf18ed1e64d03f88ea7/artifacts
+end_time: 1737844609549
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: c8d9676d3ae84bf18ed1e64d03f88ea7
+run_name: powerful-worm-281
+run_uuid: c8d9676d3ae84bf18ed1e64d03f88ea7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737844025039
+status: 3
+tags: []
+user_id: unknown

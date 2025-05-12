@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/871d7b8275694fcfbac734a82ecbd723/artifacts
+end_time: 1738254571021
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 871d7b8275694fcfbac734a82ecbd723
+run_name: gifted-stoat-834
+run_uuid: 871d7b8275694fcfbac734a82ecbd723
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738254570949
+status: 3
+tags: []
+user_id: unknown

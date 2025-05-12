@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/98f5eebbf0254d93abed224b5e201527/artifacts
+end_time: 1738146676539
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 98f5eebbf0254d93abed224b5e201527
+run_name: incongruous-boar-858
+run_uuid: 98f5eebbf0254d93abed224b5e201527
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738146615701
+status: 3
+tags: []
+user_id: unknown

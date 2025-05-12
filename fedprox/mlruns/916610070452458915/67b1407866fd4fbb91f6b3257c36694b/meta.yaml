@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/916610070452458915/67b1407866fd4fbb91f6b3257c36694b/artifacts
+end_time: 1744750404895
+entry_point_name: ''
+experiment_id: '916610070452458915'
+lifecycle_stage: active
+run_id: 67b1407866fd4fbb91f6b3257c36694b
+run_name: colorful-kit-315
+run_uuid: 67b1407866fd4fbb91f6b3257c36694b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744746037974
+status: 3
+tags: []
+user_id: unknown

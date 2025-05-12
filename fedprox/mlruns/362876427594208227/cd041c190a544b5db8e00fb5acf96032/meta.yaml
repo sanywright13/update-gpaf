@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/cd041c190a544b5db8e00fb5acf96032/artifacts
+end_time: 1738005310063
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: cd041c190a544b5db8e00fb5acf96032
+run_name: dazzling-ape-363
+run_uuid: cd041c190a544b5db8e00fb5acf96032
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005309797
+status: 3
+tags: []
+user_id: unknown

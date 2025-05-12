@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a123553eb5614ab08e46c831ef88284c/artifacts
+end_time: 1744474463025
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a123553eb5614ab08e46c831ef88284c
+run_name: adaptable-rat-470
+run_uuid: a123553eb5614ab08e46c831ef88284c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744474462380
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/14b24317f6d24d3f85c34f9033e42331/artifacts
+end_time: 1746018053431
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 14b24317f6d24d3f85c34f9033e42331
+run_name: silent-dolphin-637
+run_uuid: 14b24317f6d24d3f85c34f9033e42331
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018053023
+status: 3
+tags: []
+user_id: unknown

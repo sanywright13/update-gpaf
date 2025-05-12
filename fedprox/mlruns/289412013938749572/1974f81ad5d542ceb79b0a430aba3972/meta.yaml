@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1974f81ad5d542ceb79b0a430aba3972/artifacts
+end_time: 1746023746239
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1974f81ad5d542ceb79b0a430aba3972
+run_name: popular-chimp-900
+run_uuid: 1974f81ad5d542ceb79b0a430aba3972
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023745830
+status: 3
+tags: []
+user_id: unknown

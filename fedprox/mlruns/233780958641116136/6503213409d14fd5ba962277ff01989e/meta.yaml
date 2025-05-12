@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/6503213409d14fd5ba962277ff01989e/artifacts
+end_time: 1738754298108
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 6503213409d14fd5ba962277ff01989e
+run_name: flawless-carp-123
+run_uuid: 6503213409d14fd5ba962277ff01989e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754297853
+status: 3
+tags: []
+user_id: unknown

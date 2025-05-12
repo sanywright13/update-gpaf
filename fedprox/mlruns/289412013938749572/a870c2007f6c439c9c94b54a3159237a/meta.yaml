@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a870c2007f6c439c9c94b54a3159237a/artifacts
+end_time: 1746017571690
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a870c2007f6c439c9c94b54a3159237a
+run_name: gaudy-hawk-589
+run_uuid: a870c2007f6c439c9c94b54a3159237a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017571240
+status: 3
+tags: []
+user_id: unknown

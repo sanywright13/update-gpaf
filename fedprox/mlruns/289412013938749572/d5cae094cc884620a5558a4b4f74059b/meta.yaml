@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d5cae094cc884620a5558a4b4f74059b/artifacts
+end_time: 1746021805596
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d5cae094cc884620a5558a4b4f74059b
+run_name: nebulous-goat-632
+run_uuid: d5cae094cc884620a5558a4b4f74059b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021805503
+status: 4
+tags: []
+user_id: unknown

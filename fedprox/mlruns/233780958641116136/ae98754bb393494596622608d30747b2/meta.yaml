@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/ae98754bb393494596622608d30747b2/artifacts
+end_time: 1738700107387
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: ae98754bb393494596622608d30747b2
+run_name: illustrious-fowl-26
+run_uuid: ae98754bb393494596622608d30747b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738700107281
+status: 3
+tags: []
+user_id: unknown

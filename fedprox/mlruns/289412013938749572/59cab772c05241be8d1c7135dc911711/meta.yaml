@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/59cab772c05241be8d1c7135dc911711/artifacts
+end_time: 1746023736222
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 59cab772c05241be8d1c7135dc911711
+run_name: tasteful-turtle-863
+run_uuid: 59cab772c05241be8d1c7135dc911711
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023736111
+status: 4
+tags: []
+user_id: unknown

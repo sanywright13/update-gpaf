@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/21b05e615c4a49ecb99fc3c798f19fbd/artifacts
+end_time: 1744576141444
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 21b05e615c4a49ecb99fc3c798f19fbd
+run_name: able-steed-282
+run_uuid: 21b05e615c4a49ecb99fc3c798f19fbd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576141304
+status: 3
+tags: []
+user_id: unknown

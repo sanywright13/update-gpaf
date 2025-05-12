@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/92285666cf7f4352b17d8c281b8e5a52/artifacts
+end_time: 1743691950818
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 92285666cf7f4352b17d8c281b8e5a52
+run_name: hilarious-panda-445
+run_uuid: 92285666cf7f4352b17d8c281b8e5a52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743690708996
+status: 3
+tags: []
+user_id: unknown

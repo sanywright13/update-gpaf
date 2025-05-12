@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/4855db77424e4ec0af1c648132d2ad3d/artifacts
+end_time: 1738153249800
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 4855db77424e4ec0af1c648132d2ad3d
+run_name: nimble-moose-548
+run_uuid: 4855db77424e4ec0af1c648132d2ad3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738153046558
+status: 3
+tags: []
+user_id: unknown

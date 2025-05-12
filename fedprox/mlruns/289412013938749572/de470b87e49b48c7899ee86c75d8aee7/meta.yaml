@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/de470b87e49b48c7899ee86c75d8aee7/artifacts
+end_time: 1746023775078
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: de470b87e49b48c7899ee86c75d8aee7
+run_name: nebulous-goose-786
+run_uuid: de470b87e49b48c7899ee86c75d8aee7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023774670
+status: 3
+tags: []
+user_id: unknown

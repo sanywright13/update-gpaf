@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aaf154810bb64ac4b96fc86bd2f941a5/artifacts
+end_time: 1746018138655
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aaf154810bb64ac4b96fc86bd2f941a5
+run_name: peaceful-ant-233
+run_uuid: aaf154810bb64ac4b96fc86bd2f941a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018138219
+status: 3
+tags: []
+user_id: unknown

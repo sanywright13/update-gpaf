@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/6b569f341fb242759e18e68c4724b2e9/artifacts
+end_time: 1737626873719
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 6b569f341fb242759e18e68c4724b2e9
+run_name: skittish-carp-452
+run_uuid: 6b569f341fb242759e18e68c4724b2e9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737626703787
+status: 3
+tags: []
+user_id: unknown

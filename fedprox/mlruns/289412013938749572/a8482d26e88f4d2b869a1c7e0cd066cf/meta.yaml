@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a8482d26e88f4d2b869a1c7e0cd066cf/artifacts
+end_time: 1746011602958
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a8482d26e88f4d2b869a1c7e0cd066cf
+run_name: blushing-whale-912
+run_uuid: a8482d26e88f4d2b869a1c7e0cd066cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011602917
+status: 4
+tags: []
+user_id: unknown

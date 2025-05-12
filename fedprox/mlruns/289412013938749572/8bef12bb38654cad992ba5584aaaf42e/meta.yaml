@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8bef12bb38654cad992ba5584aaaf42e/artifacts
+end_time: 1746102581521
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8bef12bb38654cad992ba5584aaaf42e
+run_name: abundant-kite-245
+run_uuid: 8bef12bb38654cad992ba5584aaaf42e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746102580370
+status: 3
+tags: []
+user_id: unknown

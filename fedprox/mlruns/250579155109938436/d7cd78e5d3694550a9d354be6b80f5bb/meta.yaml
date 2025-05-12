@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d7cd78e5d3694550a9d354be6b80f5bb/artifacts
+end_time: 1738242039232
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d7cd78e5d3694550a9d354be6b80f5bb
+run_name: magnificent-kite-559
+run_uuid: d7cd78e5d3694550a9d354be6b80f5bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738242039165
+status: 3
+tags: []
+user_id: unknown

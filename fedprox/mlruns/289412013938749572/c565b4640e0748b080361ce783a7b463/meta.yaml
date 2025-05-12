@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c565b4640e0748b080361ce783a7b463/artifacts
+end_time: 1746013391996
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c565b4640e0748b080361ce783a7b463
+run_name: suave-moose-755
+run_uuid: c565b4640e0748b080361ce783a7b463
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013391954
+status: 4
+tags: []
+user_id: unknown

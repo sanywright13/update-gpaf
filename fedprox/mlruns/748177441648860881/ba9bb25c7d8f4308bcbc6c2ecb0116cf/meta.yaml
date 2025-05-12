@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/ba9bb25c7d8f4308bcbc6c2ecb0116cf/artifacts
+end_time: 1744626482864
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: ba9bb25c7d8f4308bcbc6c2ecb0116cf
+run_name: incongruous-toad-183
+run_uuid: ba9bb25c7d8f4308bcbc6c2ecb0116cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744626414606
+status: 3
+tags: []
+user_id: unknown

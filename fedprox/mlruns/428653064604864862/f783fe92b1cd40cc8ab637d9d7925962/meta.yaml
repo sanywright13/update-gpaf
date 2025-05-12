@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/f783fe92b1cd40cc8ab637d9d7925962/artifacts
+end_time: 1737632833024
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: f783fe92b1cd40cc8ab637d9d7925962
+run_name: wise-gull-886
+run_uuid: f783fe92b1cd40cc8ab637d9d7925962
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737632832978
+status: 3
+tags: []
+user_id: unknown

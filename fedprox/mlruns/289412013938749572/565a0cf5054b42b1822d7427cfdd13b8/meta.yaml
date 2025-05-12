@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/565a0cf5054b42b1822d7427cfdd13b8/artifacts
+end_time: 1746013401353
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 565a0cf5054b42b1822d7427cfdd13b8
+run_name: smiling-carp-70
+run_uuid: 565a0cf5054b42b1822d7427cfdd13b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013401310
+status: 4
+tags: []
+user_id: unknown

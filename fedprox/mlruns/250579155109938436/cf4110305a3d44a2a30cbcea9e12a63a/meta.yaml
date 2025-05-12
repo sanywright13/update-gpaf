@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/cf4110305a3d44a2a30cbcea9e12a63a/artifacts
+end_time: 1738260251560
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: cf4110305a3d44a2a30cbcea9e12a63a
+run_name: masked-bear-544
+run_uuid: cf4110305a3d44a2a30cbcea9e12a63a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738260240997
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/217559879343732612/8e7f95fbf924444db06486975a84e0c4/artifacts
+end_time: 1737755020179
+entry_point_name: ''
+experiment_id: '217559879343732612'
+lifecycle_stage: active
+run_id: 8e7f95fbf924444db06486975a84e0c4
+run_name: lyrical-toad-395
+run_uuid: 8e7f95fbf924444db06486975a84e0c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737754437770
+status: 3
+tags: []
+user_id: unknown

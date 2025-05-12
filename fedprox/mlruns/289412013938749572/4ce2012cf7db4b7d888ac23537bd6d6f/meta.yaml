@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4ce2012cf7db4b7d888ac23537bd6d6f/artifacts
+end_time: 1746011648998
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4ce2012cf7db4b7d888ac23537bd6d6f
+run_name: stately-fly-650
+run_uuid: 4ce2012cf7db4b7d888ac23537bd6d6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011648952
+status: 4
+tags: []
+user_id: unknown

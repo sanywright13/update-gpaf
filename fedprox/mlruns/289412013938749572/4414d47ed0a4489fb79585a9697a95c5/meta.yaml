@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4414d47ed0a4489fb79585a9697a95c5/artifacts
+end_time: 1746021863630
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4414d47ed0a4489fb79585a9697a95c5
+run_name: indecisive-koi-91
+run_uuid: 4414d47ed0a4489fb79585a9697a95c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021863534
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/377902920434744107/0c34ec10226e4a0b8e554f0109ceced8/artifacts
+end_time: 1737756986059
+entry_point_name: ''
+experiment_id: '377902920434744107'
+lifecycle_stage: active
+run_id: 0c34ec10226e4a0b8e554f0109ceced8
+run_name: caring-chimp-881
+run_uuid: 0c34ec10226e4a0b8e554f0109ceced8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737756393322
+status: 3
+tags: []
+user_id: unknown

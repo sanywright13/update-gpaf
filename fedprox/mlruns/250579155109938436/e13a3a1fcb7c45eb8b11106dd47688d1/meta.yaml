@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e13a3a1fcb7c45eb8b11106dd47688d1/artifacts
+end_time: 1738248717196
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e13a3a1fcb7c45eb8b11106dd47688d1
+run_name: defiant-hare-266
+run_uuid: e13a3a1fcb7c45eb8b11106dd47688d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738248707442
+status: 3
+tags: []
+user_id: unknown

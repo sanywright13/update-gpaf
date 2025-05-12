@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/977620698636055622/d26ebc5dc7e9493aa80726369797c28b/artifacts
+end_time: 1737842749899
+entry_point_name: ''
+experiment_id: '977620698636055622'
+lifecycle_stage: active
+run_id: d26ebc5dc7e9493aa80726369797c28b
+run_name: suave-shrike-720
+run_uuid: d26ebc5dc7e9493aa80726369797c28b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737842237685
+status: 3
+tags: []
+user_id: unknown

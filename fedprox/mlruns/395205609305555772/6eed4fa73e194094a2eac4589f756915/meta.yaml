@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/6eed4fa73e194094a2eac4589f756915/artifacts
+end_time: 1736889004756
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 6eed4fa73e194094a2eac4589f756915
+run_name: colorful-mare-521
+run_uuid: 6eed4fa73e194094a2eac4589f756915
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889004713
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/4ce72b6c5141434c80011673d0d82670/artifacts
+end_time: 1737481928325
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: 4ce72b6c5141434c80011673d0d82670
+run_name: agreeable-colt-517
+run_uuid: 4ce72b6c5141434c80011673d0d82670
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737481373518
+status: 3
+tags: []
+user_id: unknown

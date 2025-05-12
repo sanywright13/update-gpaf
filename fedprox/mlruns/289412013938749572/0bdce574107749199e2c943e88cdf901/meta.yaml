@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0bdce574107749199e2c943e88cdf901/artifacts
+end_time: 1746018678361
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0bdce574107749199e2c943e88cdf901
+run_name: intelligent-seal-932
+run_uuid: 0bdce574107749199e2c943e88cdf901
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018677927
+status: 3
+tags: []
+user_id: unknown

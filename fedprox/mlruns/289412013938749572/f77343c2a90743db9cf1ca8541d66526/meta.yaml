@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f77343c2a90743db9cf1ca8541d66526/artifacts
+end_time: 1746013398567
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f77343c2a90743db9cf1ca8541d66526
+run_name: smiling-mule-207
+run_uuid: f77343c2a90743db9cf1ca8541d66526
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013398519
+status: 4
+tags: []
+user_id: unknown

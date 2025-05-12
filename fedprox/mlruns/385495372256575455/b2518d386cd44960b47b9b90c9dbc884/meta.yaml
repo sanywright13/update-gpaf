@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/b2518d386cd44960b47b9b90c9dbc884/artifacts
+end_time: 1737479846464
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: b2518d386cd44960b47b9b90c9dbc884
+run_name: resilient-hawk-870
+run_uuid: b2518d386cd44960b47b9b90c9dbc884
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737479846440
+status: 3
+tags: []
+user_id: unknown

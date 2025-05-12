@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/996863835514141969/26f0ea29fd95453fbd9d23eb6912a806/artifacts
+end_time: 1737471662983
+entry_point_name: ''
+experiment_id: '996863835514141969'
+lifecycle_stage: active
+run_id: 26f0ea29fd95453fbd9d23eb6912a806
+run_name: calm-asp-144
+run_uuid: 26f0ea29fd95453fbd9d23eb6912a806
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737471662954
+status: 3
+tags: []
+user_id: unknown

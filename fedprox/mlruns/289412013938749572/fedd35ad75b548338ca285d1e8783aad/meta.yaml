@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fedd35ad75b548338ca285d1e8783aad/artifacts
+end_time: 1746021976968
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fedd35ad75b548338ca285d1e8783aad
+run_name: bustling-duck-952
+run_uuid: fedd35ad75b548338ca285d1e8783aad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021976549
+status: 3
+tags: []
+user_id: unknown

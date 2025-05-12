@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/b254f6e3b60c461cab5bc0dbddd9938c/artifacts
+end_time: 1737562751034
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: b254f6e3b60c461cab5bc0dbddd9938c
+run_name: unruly-bug-235
+run_uuid: b254f6e3b60c461cab5bc0dbddd9938c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737562751006
+status: 3
+tags: []
+user_id: unknown

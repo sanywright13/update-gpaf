@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/184439ed6ce74946849dab8869f18c1f/artifacts
+end_time: 1737387963726
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 184439ed6ce74946849dab8869f18c1f
+run_name: bald-wolf-399
+run_uuid: 184439ed6ce74946849dab8869f18c1f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737387963634
+status: 3
+tags: []
+user_id: unknown

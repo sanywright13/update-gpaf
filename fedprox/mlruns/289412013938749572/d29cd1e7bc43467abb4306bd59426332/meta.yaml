@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d29cd1e7bc43467abb4306bd59426332/artifacts
+end_time: 1746013411682
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d29cd1e7bc43467abb4306bd59426332
+run_name: bedecked-ram-397
+run_uuid: d29cd1e7bc43467abb4306bd59426332
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013411632
+status: 4
+tags: []
+user_id: unknown

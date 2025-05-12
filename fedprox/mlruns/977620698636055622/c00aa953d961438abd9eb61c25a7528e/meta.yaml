@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/977620698636055622/c00aa953d961438abd9eb61c25a7528e/artifacts
+end_time: 1737839172298
+entry_point_name: ''
+experiment_id: '977620698636055622'
+lifecycle_stage: active
+run_id: c00aa953d961438abd9eb61c25a7528e
+run_name: persistent-zebra-155
+run_uuid: c00aa953d961438abd9eb61c25a7528e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737838669309
+status: 3
+tags: []
+user_id: unknown

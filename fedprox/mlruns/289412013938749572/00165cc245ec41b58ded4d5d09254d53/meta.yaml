@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/00165cc245ec41b58ded4d5d09254d53/artifacts
+end_time: 1746013396342
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 00165cc245ec41b58ded4d5d09254d53
+run_name: fearless-steed-672
+run_uuid: 00165cc245ec41b58ded4d5d09254d53
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013396294
+status: 4
+tags: []
+user_id: unknown

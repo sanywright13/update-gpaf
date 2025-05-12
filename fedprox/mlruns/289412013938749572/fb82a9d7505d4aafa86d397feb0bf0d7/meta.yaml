@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fb82a9d7505d4aafa86d397feb0bf0d7/artifacts
+end_time: 1746019158501
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fb82a9d7505d4aafa86d397feb0bf0d7
+run_name: learned-perch-711
+run_uuid: fb82a9d7505d4aafa86d397feb0bf0d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019158413
+status: 4
+tags: []
+user_id: unknown

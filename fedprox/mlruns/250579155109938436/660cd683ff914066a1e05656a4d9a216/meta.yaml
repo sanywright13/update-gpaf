@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/660cd683ff914066a1e05656a4d9a216/artifacts
+end_time: 1738278994360
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 660cd683ff914066a1e05656a4d9a216
+run_name: omniscient-stork-303
+run_uuid: 660cd683ff914066a1e05656a4d9a216
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738278994294
+status: 3
+tags: []
+user_id: unknown

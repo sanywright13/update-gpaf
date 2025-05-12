@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e2bb2c5d497c4e138a6158a56fbaa7c7/artifacts
+end_time: 1746011591433
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e2bb2c5d497c4e138a6158a56fbaa7c7
+run_name: serious-moth-511
+run_uuid: e2bb2c5d497c4e138a6158a56fbaa7c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011591398
+status: 4
+tags: []
+user_id: unknown

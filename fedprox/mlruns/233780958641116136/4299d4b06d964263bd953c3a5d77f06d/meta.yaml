@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/4299d4b06d964263bd953c3a5d77f06d/artifacts
+end_time: 1738864177315
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 4299d4b06d964263bd953c3a5d77f06d
+run_name: sassy-shrew-416
+run_uuid: 4299d4b06d964263bd953c3a5d77f06d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738864082621
+status: 3
+tags: []
+user_id: unknown

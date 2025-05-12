@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/cda92c356dea4194af7f419be057d1e5/artifacts
+end_time: 1737908711157
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: cda92c356dea4194af7f419be057d1e5
+run_name: intelligent-fawn-336
+run_uuid: cda92c356dea4194af7f419be057d1e5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737908711116
+status: 3
+tags: []
+user_id: unknown

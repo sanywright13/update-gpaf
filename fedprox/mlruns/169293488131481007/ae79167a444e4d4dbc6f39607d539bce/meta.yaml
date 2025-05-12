@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/ae79167a444e4d4dbc6f39607d539bce/artifacts
+end_time: 1737388725394
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: ae79167a444e4d4dbc6f39607d539bce
+run_name: big-mule-275
+run_uuid: ae79167a444e4d4dbc6f39607d539bce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737388725356
+status: 3
+tags: []
+user_id: unknown

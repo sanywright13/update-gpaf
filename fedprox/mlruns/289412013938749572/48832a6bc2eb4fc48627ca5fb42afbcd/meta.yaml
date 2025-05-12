@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/48832a6bc2eb4fc48627ca5fb42afbcd/artifacts
+end_time: 1746023778966
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 48832a6bc2eb4fc48627ca5fb42afbcd
+run_name: receptive-sheep-518
+run_uuid: 48832a6bc2eb4fc48627ca5fb42afbcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023778535
+status: 3
+tags: []
+user_id: unknown

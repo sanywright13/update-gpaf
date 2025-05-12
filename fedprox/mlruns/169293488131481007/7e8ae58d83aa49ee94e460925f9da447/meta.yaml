@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/7e8ae58d83aa49ee94e460925f9da447/artifacts
+end_time: 1737462309549
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 7e8ae58d83aa49ee94e460925f9da447
+run_name: mysterious-swan-133
+run_uuid: 7e8ae58d83aa49ee94e460925f9da447
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737462209017
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bec583db7b884487b174e8a154dc397f/artifacts
+end_time: 1746011584272
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bec583db7b884487b174e8a154dc397f
+run_name: dapper-ape-894
+run_uuid: bec583db7b884487b174e8a154dc397f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011584230
+status: 4
+tags: []
+user_id: unknown

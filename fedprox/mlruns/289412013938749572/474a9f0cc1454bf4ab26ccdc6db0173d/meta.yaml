@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/474a9f0cc1454bf4ab26ccdc6db0173d/artifacts
+end_time: 1746023789822
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 474a9f0cc1454bf4ab26ccdc6db0173d
+run_name: shivering-toad-527
+run_uuid: 474a9f0cc1454bf4ab26ccdc6db0173d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023789714
+status: 4
+tags: []
+user_id: unknown

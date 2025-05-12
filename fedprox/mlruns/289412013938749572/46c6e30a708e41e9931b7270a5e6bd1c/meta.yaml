@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/46c6e30a708e41e9931b7270a5e6bd1c/artifacts
+end_time: 1746013416386
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 46c6e30a708e41e9931b7270a5e6bd1c
+run_name: gentle-whale-394
+run_uuid: 46c6e30a708e41e9931b7270a5e6bd1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013416337
+status: 4
+tags: []
+user_id: unknown

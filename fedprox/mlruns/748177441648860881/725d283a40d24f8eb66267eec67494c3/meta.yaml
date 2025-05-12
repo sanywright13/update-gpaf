@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/725d283a40d24f8eb66267eec67494c3/artifacts
+end_time: 1744623494729
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 725d283a40d24f8eb66267eec67494c3
+run_name: colorful-penguin-81
+run_uuid: 725d283a40d24f8eb66267eec67494c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744623465051
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/97df372c3f874e52b9705acd26e6697b/artifacts
+end_time: 1737915136507
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 97df372c3f874e52b9705acd26e6697b
+run_name: sedate-donkey-475
+run_uuid: 97df372c3f874e52b9705acd26e6697b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737911405534
+status: 3
+tags: []
+user_id: unknown

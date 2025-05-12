@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/075baa8fd794443d814b6a1933bfbaad/artifacts
+end_time: 1738260251850
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 075baa8fd794443d814b6a1933bfbaad
+run_name: skittish-sow-573
+run_uuid: 075baa8fd794443d814b6a1933bfbaad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738260241175
+status: 3
+tags: []
+user_id: unknown

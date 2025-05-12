@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/b90685670cc24853b84eedbdaf0e4afe/artifacts
+end_time: 1737566811798
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: b90685670cc24853b84eedbdaf0e4afe
+run_name: charming-cow-674
+run_uuid: b90685670cc24853b84eedbdaf0e4afe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566811761
+status: 3
+tags: []
+user_id: unknown

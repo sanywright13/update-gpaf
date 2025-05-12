@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/41fb1fbffea14d13ad76267d99428579/artifacts
+end_time: 1744470503596
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 41fb1fbffea14d13ad76267d99428579
+run_name: handsome-sheep-287
+run_uuid: 41fb1fbffea14d13ad76267d99428579
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744470503168
+status: 3
+tags: []
+user_id: unknown

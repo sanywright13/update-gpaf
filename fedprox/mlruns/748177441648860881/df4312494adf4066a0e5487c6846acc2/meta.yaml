@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/df4312494adf4066a0e5487c6846acc2/artifacts
+end_time: 1744577149772
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: df4312494adf4066a0e5487c6846acc2
+run_name: powerful-fox-521
+run_uuid: df4312494adf4066a0e5487c6846acc2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744577149535
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/104821f2225b497b9eda3b180a0c5a73/artifacts
+end_time: 1742341865567
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 104821f2225b497b9eda3b180a0c5a73
+run_name: marvelous-ant-891
+run_uuid: 104821f2225b497b9eda3b180a0c5a73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742341865330
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cb0830c8ed934654a40e269e14e99c5e/artifacts
+end_time: 1746023691398
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cb0830c8ed934654a40e269e14e99c5e
+run_name: victorious-goat-596
+run_uuid: cb0830c8ed934654a40e269e14e99c5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023691018
+status: 3
+tags: []
+user_id: unknown

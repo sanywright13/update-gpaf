@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/6d7b6cebc7f64bb98191be3ebde93b2b/artifacts
+end_time: 1737050135333
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 6d7b6cebc7f64bb98191be3ebde93b2b
+run_name: gregarious-grub-161
+run_uuid: 6d7b6cebc7f64bb98191be3ebde93b2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737050131580
+status: 3
+tags: []
+user_id: unknown

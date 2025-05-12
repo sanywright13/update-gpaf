@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/19aff2e5042744809b5aa6705b28ef92/artifacts
+end_time: 1746013447526
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 19aff2e5042744809b5aa6705b28ef92
+run_name: melodic-kit-248
+run_uuid: 19aff2e5042744809b5aa6705b28ef92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013447476
+status: 4
+tags: []
+user_id: unknown

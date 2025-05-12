@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/57f0ed50352e4bd2ba64b5050a0b6375/artifacts
+end_time: 1742342056928
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 57f0ed50352e4bd2ba64b5050a0b6375
+run_name: welcoming-asp-341
+run_uuid: 57f0ed50352e4bd2ba64b5050a0b6375
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742342056803
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0790448ce4a0402cbc55a4a581ec7e5b/artifacts
+end_time: 1744576140623
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0790448ce4a0402cbc55a4a581ec7e5b
+run_name: painted-wolf-125
+run_uuid: 0790448ce4a0402cbc55a4a581ec7e5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576140479
+status: 3
+tags: []
+user_id: unknown

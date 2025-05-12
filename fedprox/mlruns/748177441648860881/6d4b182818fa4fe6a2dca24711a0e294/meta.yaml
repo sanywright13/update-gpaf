@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6d4b182818fa4fe6a2dca24711a0e294/artifacts
+end_time: 1742399634808
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6d4b182818fa4fe6a2dca24711a0e294
+run_name: server
+run_uuid: 6d4b182818fa4fe6a2dca24711a0e294
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742399634754
+status: 3
+tags: []
+user_id: root

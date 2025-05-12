@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/484087042231123480/6fc6b9d4848341d3b38e7dfb05f5694c/artifacts
+end_time: 1737737147620
+entry_point_name: ''
+experiment_id: '484087042231123480'
+lifecycle_stage: active
+run_id: 6fc6b9d4848341d3b38e7dfb05f5694c
+run_name: worried-cub-789
+run_uuid: 6fc6b9d4848341d3b38e7dfb05f5694c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737736763684
+status: 3
+tags: []
+user_id: unknown

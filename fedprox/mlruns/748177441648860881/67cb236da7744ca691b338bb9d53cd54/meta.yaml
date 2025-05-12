@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/67cb236da7744ca691b338bb9d53cd54/artifacts
+end_time: 1740080380042
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 67cb236da7744ca691b338bb9d53cd54
+run_name: capable-colt-941
+run_uuid: 67cb236da7744ca691b338bb9d53cd54
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080370854
+status: 3
+tags: []
+user_id: unknown

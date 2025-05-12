@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/377902920434744107/6274e429d4794fa9a5dcd8f814124bfc/artifacts
+end_time: 1737756986252
+entry_point_name: ''
+experiment_id: '377902920434744107'
+lifecycle_stage: active
+run_id: 6274e429d4794fa9a5dcd8f814124bfc
+run_name: gifted-vole-857
+run_uuid: 6274e429d4794fa9a5dcd8f814124bfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737756425676
+status: 3
+tags: []
+user_id: unknown

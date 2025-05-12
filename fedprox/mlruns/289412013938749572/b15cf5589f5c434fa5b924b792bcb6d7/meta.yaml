@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b15cf5589f5c434fa5b924b792bcb6d7/artifacts
+end_time: 1746018622630
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b15cf5589f5c434fa5b924b792bcb6d7
+run_name: skittish-steed-543
+run_uuid: b15cf5589f5c434fa5b924b792bcb6d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018622210
+status: 3
+tags: []
+user_id: unknown

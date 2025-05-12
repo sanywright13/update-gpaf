@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/540127f3dcb74877bed7cbf9c094651b/artifacts
+end_time: 1746017798494
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 540127f3dcb74877bed7cbf9c094651b
+run_name: bouncy-eel-679
+run_uuid: 540127f3dcb74877bed7cbf9c094651b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017798074
+status: 3
+tags: []
+user_id: unknown

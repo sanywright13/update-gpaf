@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bece19ed8f2e45d0ae531d1c9ba70a0e/artifacts
+end_time: 1746011623230
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bece19ed8f2e45d0ae531d1c9ba70a0e
+run_name: able-moth-185
+run_uuid: bece19ed8f2e45d0ae531d1c9ba70a0e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011623188
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ebca0938f872435e8d554a20f2fbac1c/artifacts
+end_time: 1746013413109
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ebca0938f872435e8d554a20f2fbac1c
+run_name: unruly-fish-413
+run_uuid: ebca0938f872435e8d554a20f2fbac1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013413064
+status: 4
+tags: []
+user_id: unknown

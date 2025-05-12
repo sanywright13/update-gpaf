@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/694d28f84f01418ea8a8d7706469548f/artifacts
+end_time: 1746011601291
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 694d28f84f01418ea8a8d7706469548f
+run_name: mysterious-kit-379
+run_uuid: 694d28f84f01418ea8a8d7706469548f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011601255
+status: 4
+tags: []
+user_id: unknown

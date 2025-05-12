@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8515bf35193049b496d5e9b84073dd64/artifacts
+end_time: 1746011610008
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8515bf35193049b496d5e9b84073dd64
+run_name: handsome-asp-695
+run_uuid: 8515bf35193049b496d5e9b84073dd64
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011609966
+status: 4
+tags: []
+user_id: unknown

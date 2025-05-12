@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/6081accb2f9142e98673b1386533430e/artifacts
+end_time: 1738278717630
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 6081accb2f9142e98673b1386533430e
+run_name: placid-whale-57
+run_uuid: 6081accb2f9142e98673b1386533430e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738278717534
+status: 3
+tags: []
+user_id: unknown

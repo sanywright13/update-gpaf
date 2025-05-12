@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/df227ceaf0534d2eb15812aeebc10237/artifacts
+end_time: 1746011646649
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: df227ceaf0534d2eb15812aeebc10237
+run_name: silent-perch-993
+run_uuid: df227ceaf0534d2eb15812aeebc10237
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011646605
+status: 4
+tags: []
+user_id: unknown

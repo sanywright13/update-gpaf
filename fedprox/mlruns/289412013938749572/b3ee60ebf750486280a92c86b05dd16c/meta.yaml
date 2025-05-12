@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b3ee60ebf750486280a92c86b05dd16c/artifacts
+end_time: 1746011598946
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b3ee60ebf750486280a92c86b05dd16c
+run_name: efficient-mule-78
+run_uuid: b3ee60ebf750486280a92c86b05dd16c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011598905
+status: 4
+tags: []
+user_id: unknown

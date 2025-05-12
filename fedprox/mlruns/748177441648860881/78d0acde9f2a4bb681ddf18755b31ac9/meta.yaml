@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/78d0acde9f2a4bb681ddf18755b31ac9/artifacts
+end_time: 1744576790829
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 78d0acde9f2a4bb681ddf18755b31ac9
+run_name: wise-mouse-915
+run_uuid: 78d0acde9f2a4bb681ddf18755b31ac9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744576755432
+status: 3
+tags: []
+user_id: unknown

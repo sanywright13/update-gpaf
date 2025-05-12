@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d745de55b402482d93da641c3c4eabfc/artifacts
+end_time: 1746023728286
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d745de55b402482d93da641c3c4eabfc
+run_name: bright-moose-753
+run_uuid: d745de55b402482d93da641c3c4eabfc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023727863
+status: 3
+tags: []
+user_id: unknown

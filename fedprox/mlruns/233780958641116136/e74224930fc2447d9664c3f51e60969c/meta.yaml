@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/e74224930fc2447d9664c3f51e60969c/artifacts
+end_time: 1738754295377
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: e74224930fc2447d9664c3f51e60969c
+run_name: mysterious-auk-803
+run_uuid: e74224930fc2447d9664c3f51e60969c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738754295156
+status: 3
+tags: []
+user_id: unknown

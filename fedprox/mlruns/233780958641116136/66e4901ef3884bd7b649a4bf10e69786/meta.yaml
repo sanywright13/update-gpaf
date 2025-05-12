@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/66e4901ef3884bd7b649a4bf10e69786/artifacts
+end_time: 1738871653970
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 66e4901ef3884bd7b649a4bf10e69786
+run_name: monumental-finch-346
+run_uuid: 66e4901ef3884bd7b649a4bf10e69786
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738871092496
+status: 3
+tags: []
+user_id: unknown

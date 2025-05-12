@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d94bb6628b2a4c7ea1e8e598c3c6c17a/artifacts
+end_time: 1746017544010
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d94bb6628b2a4c7ea1e8e598c3c6c17a
+run_name: tasteful-sloth-644
+run_uuid: d94bb6628b2a4c7ea1e8e598c3c6c17a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017543603
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2d69515bf2584f7f9610fb68ea608141/artifacts
+end_time: 1746011590972
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2d69515bf2584f7f9610fb68ea608141
+run_name: stately-mink-356
+run_uuid: 2d69515bf2584f7f9610fb68ea608141
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011590937
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/c66730826735460b8101254b64fd8acd/artifacts
+end_time: 1737117588595
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: c66730826735460b8101254b64fd8acd
+run_name: smiling-perch-364
+run_uuid: c66730826735460b8101254b64fd8acd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117588574
+status: 3
+tags: []
+user_id: unknown

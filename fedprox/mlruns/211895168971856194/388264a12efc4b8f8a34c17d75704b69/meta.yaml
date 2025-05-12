@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/388264a12efc4b8f8a34c17d75704b69/artifacts
+end_time: 1737907052783
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 388264a12efc4b8f8a34c17d75704b69
+run_name: nimble-zebra-256
+run_uuid: 388264a12efc4b8f8a34c17d75704b69
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737906966962
+status: 3
+tags: []
+user_id: unknown

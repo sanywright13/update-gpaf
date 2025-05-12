@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/627d5621621c48d0b6128af969e3a0ab/artifacts
+end_time: 1738258214452
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 627d5621621c48d0b6128af969e3a0ab
+run_name: selective-mouse-349
+run_uuid: 627d5621621c48d0b6128af969e3a0ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258214397
+status: 3
+tags: []
+user_id: unknown

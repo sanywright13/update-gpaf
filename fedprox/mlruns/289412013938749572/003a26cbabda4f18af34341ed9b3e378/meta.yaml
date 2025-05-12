@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/003a26cbabda4f18af34341ed9b3e378/artifacts
+end_time: 1746013431386
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 003a26cbabda4f18af34341ed9b3e378
+run_name: fun-hawk-955
+run_uuid: 003a26cbabda4f18af34341ed9b3e378
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013431341
+status: 4
+tags: []
+user_id: unknown

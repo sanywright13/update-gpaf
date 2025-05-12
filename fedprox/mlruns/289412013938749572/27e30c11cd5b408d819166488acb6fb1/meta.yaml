@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/27e30c11cd5b408d819166488acb6fb1/artifacts
+end_time: 1746179753172
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 27e30c11cd5b408d819166488acb6fb1
+run_name: rumbling-goose-755
+run_uuid: 27e30c11cd5b408d819166488acb6fb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746179752365
+status: 3
+tags: []
+user_id: unknown

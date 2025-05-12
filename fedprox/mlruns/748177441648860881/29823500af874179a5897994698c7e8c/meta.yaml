@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/29823500af874179a5897994698c7e8c/artifacts
+end_time: 1743679689156
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 29823500af874179a5897994698c7e8c
+run_name: rebellious-hound-127
+run_uuid: 29823500af874179a5897994698c7e8c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743679587493
+status: 3
+tags: []
+user_id: unknown

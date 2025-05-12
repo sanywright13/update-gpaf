@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c5b0b80a785f4dd69707de37127ed32c/artifacts
+end_time: 1737665235179
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c5b0b80a785f4dd69707de37127ed32c
+run_name: valuable-shad-528
+run_uuid: c5b0b80a785f4dd69707de37127ed32c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737665234759
+status: 3
+tags: []
+user_id: unknown

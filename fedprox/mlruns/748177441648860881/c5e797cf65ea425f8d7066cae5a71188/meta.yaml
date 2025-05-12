@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c5e797cf65ea425f8d7066cae5a71188/artifacts
+end_time: 1743210682566
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c5e797cf65ea425f8d7066cae5a71188
+run_name: agreeable-stoat-949
+run_uuid: c5e797cf65ea425f8d7066cae5a71188
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743210672129
+status: 3
+tags: []
+user_id: unknown

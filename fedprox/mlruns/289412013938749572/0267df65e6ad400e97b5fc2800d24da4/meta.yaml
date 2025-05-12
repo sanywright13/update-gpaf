@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0267df65e6ad400e97b5fc2800d24da4/artifacts
+end_time: 1746013420991
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0267df65e6ad400e97b5fc2800d24da4
+run_name: defiant-ape-717
+run_uuid: 0267df65e6ad400e97b5fc2800d24da4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013420946
+status: 4
+tags: []
+user_id: unknown

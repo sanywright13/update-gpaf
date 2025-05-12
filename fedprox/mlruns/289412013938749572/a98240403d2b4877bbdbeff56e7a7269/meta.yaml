@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a98240403d2b4877bbdbeff56e7a7269/artifacts
+end_time: 1746018054330
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a98240403d2b4877bbdbeff56e7a7269
+run_name: bemused-bug-354
+run_uuid: a98240403d2b4877bbdbeff56e7a7269
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018054249
+status: 4
+tags: []
+user_id: unknown

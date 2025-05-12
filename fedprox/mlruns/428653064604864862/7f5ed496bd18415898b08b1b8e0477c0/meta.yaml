@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/7f5ed496bd18415898b08b1b8e0477c0/artifacts
+end_time: 1737665233878
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 7f5ed496bd18415898b08b1b8e0477c0
+run_name: bustling-crab-870
+run_uuid: 7f5ed496bd18415898b08b1b8e0477c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737665233363
+status: 3
+tags: []
+user_id: unknown

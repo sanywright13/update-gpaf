@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/16f56f8faa4b411b825c192a78742a72/artifacts
+end_time: 1746013373131
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 16f56f8faa4b411b825c192a78742a72
+run_name: incongruous-tern-13
+run_uuid: 16f56f8faa4b411b825c192a78742a72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013373089
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/c74a37994607426d8e678c4f8e3e15c2/artifacts
+end_time: 1736888377386
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: c74a37994607426d8e678c4f8e3e15c2
+run_name: sedate-hare-681
+run_uuid: c74a37994607426d8e678c4f8e3e15c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888377331
+status: 3
+tags: []
+user_id: unknown

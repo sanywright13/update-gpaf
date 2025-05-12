@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/3ecb70314cb74f72b86f9d6295653e8a/artifacts
+end_time: 1744491492878
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 3ecb70314cb74f72b86f9d6295653e8a
+run_name: nebulous-perch-336
+run_uuid: 3ecb70314cb74f72b86f9d6295653e8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744491492394
+status: 3
+tags: []
+user_id: unknown

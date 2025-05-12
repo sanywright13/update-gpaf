@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/52fef87a591f4bb2aab75c1d3d167d1c/artifacts
+end_time: 1738274476464
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 52fef87a591f4bb2aab75c1d3d167d1c
+run_name: bald-dog-263
+run_uuid: 52fef87a591f4bb2aab75c1d3d167d1c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738274476415
+status: 3
+tags: []
+user_id: unknown

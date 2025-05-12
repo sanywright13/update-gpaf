@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/4ebc05bad36e488aa99aed68caeb31de/artifacts
+end_time: 1738005555610
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 4ebc05bad36e488aa99aed68caeb31de
+run_name: trusting-shark-357
+run_uuid: 4ebc05bad36e488aa99aed68caeb31de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005555432
+status: 3
+tags: []
+user_id: unknown

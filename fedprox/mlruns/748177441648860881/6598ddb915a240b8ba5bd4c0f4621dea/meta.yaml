@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6598ddb915a240b8ba5bd4c0f4621dea/artifacts
+end_time: 1744623521662
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6598ddb915a240b8ba5bd4c0f4621dea
+run_name: nimble-moose-857
+run_uuid: 6598ddb915a240b8ba5bd4c0f4621dea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744623521506
+status: 3
+tags: []
+user_id: unknown

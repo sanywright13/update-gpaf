@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/38feaf575ee645b8a30f5c49be290259/artifacts
+end_time: 1746011630793
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 38feaf575ee645b8a30f5c49be290259
+run_name: fearless-ram-378
+run_uuid: 38feaf575ee645b8a30f5c49be290259
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011630750
+status: 4
+tags: []
+user_id: unknown

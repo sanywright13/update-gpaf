@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e4295847c41144c89753b13ae5d059c0/artifacts
+end_time: 1739985079065
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e4295847c41144c89753b13ae5d059c0
+run_name: gregarious-stoat-143
+run_uuid: e4295847c41144c89753b13ae5d059c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739983654484
+status: 3
+tags: []
+user_id: unknown

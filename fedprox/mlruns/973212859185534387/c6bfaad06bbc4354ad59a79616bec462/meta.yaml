@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/973212859185534387/c6bfaad06bbc4354ad59a79616bec462/artifacts
+end_time: 1737471482449
+entry_point_name: ''
+experiment_id: '973212859185534387'
+lifecycle_stage: active
+run_id: c6bfaad06bbc4354ad59a79616bec462
+run_name: zealous-shrike-656
+run_uuid: c6bfaad06bbc4354ad59a79616bec462
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737471482408
+status: 3
+tags: []
+user_id: unknown

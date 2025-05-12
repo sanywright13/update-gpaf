@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bf9bd7cf3af644d2992638bdd8806562/artifacts
+end_time: 1746018962000
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bf9bd7cf3af644d2992638bdd8806562
+run_name: vaunted-rat-286
+run_uuid: bf9bd7cf3af644d2992638bdd8806562
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018961586
+status: 3
+tags: []
+user_id: unknown

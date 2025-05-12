@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/84e992ca91f1431290f65c8d666d8727/artifacts
+end_time: 1746013402746
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 84e992ca91f1431290f65c8d666d8727
+run_name: redolent-rook-68
+run_uuid: 84e992ca91f1431290f65c8d666d8727
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013402703
+status: 4
+tags: []
+user_id: unknown

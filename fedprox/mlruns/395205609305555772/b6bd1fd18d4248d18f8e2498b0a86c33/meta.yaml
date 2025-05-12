@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/b6bd1fd18d4248d18f8e2498b0a86c33/artifacts
+end_time: 1736888382057
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: b6bd1fd18d4248d18f8e2498b0a86c33
+run_name: clumsy-turtle-945
+run_uuid: b6bd1fd18d4248d18f8e2498b0a86c33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888382007
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7d06c66f4a1a43e59e16653941a48ad5/artifacts
+end_time: 1746018081368
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7d06c66f4a1a43e59e16653941a48ad5
+run_name: amazing-conch-452
+run_uuid: 7d06c66f4a1a43e59e16653941a48ad5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018081289
+status: 4
+tags: []
+user_id: unknown

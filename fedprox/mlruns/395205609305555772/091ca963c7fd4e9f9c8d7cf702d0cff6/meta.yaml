@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/091ca963c7fd4e9f9c8d7cf702d0cff6/artifacts
+end_time: 1736889193521
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 091ca963c7fd4e9f9c8d7cf702d0cff6
+run_name: auspicious-stag-309
+run_uuid: 091ca963c7fd4e9f9c8d7cf702d0cff6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889168792
+status: 3
+tags: []
+user_id: unknown

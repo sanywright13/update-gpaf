@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/fdee64a5c54d4e3094c44d96ddbf9ec8/artifacts
+end_time: 1746011573652
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: fdee64a5c54d4e3094c44d96ddbf9ec8
+run_name: gentle-newt-199
+run_uuid: fdee64a5c54d4e3094c44d96ddbf9ec8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011573614
+status: 4
+tags: []
+user_id: unknown

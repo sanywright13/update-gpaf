@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bf9d0749de12416ebf7ac8a2104c14ef/artifacts
+end_time: 1746011584727
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bf9d0749de12416ebf7ac8a2104c14ef
+run_name: magnificent-bear-654
+run_uuid: bf9d0749de12416ebf7ac8a2104c14ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011584688
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/368f1b5a913e4500a5b15e023909478a/artifacts
+end_time: 1746023782375
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 368f1b5a913e4500a5b15e023909478a
+run_name: thoughtful-stag-44
+run_uuid: 368f1b5a913e4500a5b15e023909478a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023781951
+status: 3
+tags: []
+user_id: unknown

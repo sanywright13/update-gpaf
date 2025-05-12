@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c04d9276cc19477ea215ea5189869741/artifacts
+end_time: 1746019271727
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c04d9276cc19477ea215ea5189869741
+run_name: able-skink-572
+run_uuid: c04d9276cc19477ea215ea5189869741
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019271646
+status: 4
+tags: []
+user_id: unknown

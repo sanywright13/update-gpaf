@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cdcab3ee3c2f4f8ba835f84eb1acc0c3/artifacts
+end_time: 1746013446053
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cdcab3ee3c2f4f8ba835f84eb1acc0c3
+run_name: monumental-toad-63
+run_uuid: cdcab3ee3c2f4f8ba835f84eb1acc0c3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013446000
+status: 4
+tags: []
+user_id: unknown

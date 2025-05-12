@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/42c87a7479db47b991179b718f3f9041/artifacts
+end_time: 1738782255744
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 42c87a7479db47b991179b718f3f9041
+run_name: indecisive-mule-792
+run_uuid: 42c87a7479db47b991179b718f3f9041
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738781660475
+status: 3
+tags: []
+user_id: unknown

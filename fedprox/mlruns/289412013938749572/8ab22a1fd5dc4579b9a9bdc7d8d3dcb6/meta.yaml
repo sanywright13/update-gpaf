@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8ab22a1fd5dc4579b9a9bdc7d8d3dcb6/artifacts
+end_time: 1746019157574
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8ab22a1fd5dc4579b9a9bdc7d8d3dcb6
+run_name: agreeable-wolf-317
+run_uuid: 8ab22a1fd5dc4579b9a9bdc7d8d3dcb6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019157118
+status: 3
+tags: []
+user_id: unknown

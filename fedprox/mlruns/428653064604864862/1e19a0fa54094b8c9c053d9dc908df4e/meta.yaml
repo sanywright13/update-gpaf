@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1e19a0fa54094b8c9c053d9dc908df4e/artifacts
+end_time: 1737566002597
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1e19a0fa54094b8c9c053d9dc908df4e
+run_name: mysterious-mole-463
+run_uuid: 1e19a0fa54094b8c9c053d9dc908df4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566002573
+status: 3
+tags: []
+user_id: unknown

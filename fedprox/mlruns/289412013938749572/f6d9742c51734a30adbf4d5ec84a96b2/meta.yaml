@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f6d9742c51734a30adbf4d5ec84a96b2/artifacts
+end_time: 1746023721740
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f6d9742c51734a30adbf4d5ec84a96b2
+run_name: clumsy-ox-164
+run_uuid: f6d9742c51734a30adbf4d5ec84a96b2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023721316
+status: 3
+tags: []
+user_id: unknown

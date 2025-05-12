@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d7d82ea70add4e89b2bc15fbe72e5dbf/artifacts
+end_time: 1746013431395
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d7d82ea70add4e89b2bc15fbe72e5dbf
+run_name: unleashed-auk-408
+run_uuid: d7d82ea70add4e89b2bc15fbe72e5dbf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013431346
+status: 4
+tags: []
+user_id: unknown

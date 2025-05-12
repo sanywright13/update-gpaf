@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/91bfd634484745c88747ac14b4fe3552/artifacts
+end_time: 1746023729085
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 91bfd634484745c88747ac14b4fe3552
+run_name: chill-squid-109
+run_uuid: 91bfd634484745c88747ac14b4fe3552
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023728659
+status: 3
+tags: []
+user_id: unknown

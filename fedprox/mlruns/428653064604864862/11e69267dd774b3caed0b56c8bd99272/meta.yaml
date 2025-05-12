@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/11e69267dd774b3caed0b56c8bd99272/artifacts
+end_time: 1737564430172
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 11e69267dd774b3caed0b56c8bd99272
+run_name: marvelous-conch-466
+run_uuid: 11e69267dd774b3caed0b56c8bd99272
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564430133
+status: 3
+tags: []
+user_id: unknown

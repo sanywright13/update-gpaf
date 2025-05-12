@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/44eb74e1a06142ad9422c21a1fe226a8/artifacts
+end_time: 1746018933655
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 44eb74e1a06142ad9422c21a1fe226a8
+run_name: glamorous-flea-705
+run_uuid: 44eb74e1a06142ad9422c21a1fe226a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018933575
+status: 4
+tags: []
+user_id: unknown

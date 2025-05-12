@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/314035267319544039/53044c854d3541f4a80534f653801fd3/artifacts
+end_time: 1737119911125
+entry_point_name: ''
+experiment_id: '314035267319544039'
+lifecycle_stage: active
+run_id: 53044c854d3541f4a80534f653801fd3
+run_name: enchanting-calf-328
+run_uuid: 53044c854d3541f4a80534f653801fd3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737119910539
+status: 3
+tags: []
+user_id: unknown

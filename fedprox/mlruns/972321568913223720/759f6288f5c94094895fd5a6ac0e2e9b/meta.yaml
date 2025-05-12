@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/759f6288f5c94094895fd5a6ac0e2e9b/artifacts
+end_time: 1737117587798
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 759f6288f5c94094895fd5a6ac0e2e9b
+run_name: chill-hare-670
+run_uuid: 759f6288f5c94094895fd5a6ac0e2e9b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117587713
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/98f20cd479e84ccbb6cd25f0fd45fcc3/artifacts
+end_time: 1737571355030
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 98f20cd479e84ccbb6cd25f0fd45fcc3
+run_name: sneaky-zebra-762
+run_uuid: 98f20cd479e84ccbb6cd25f0fd45fcc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737571355002
+status: 3
+tags: []
+user_id: unknown

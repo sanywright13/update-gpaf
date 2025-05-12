@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7ac9332db6c2467980793071242950a3/artifacts
+end_time: 1746013355851
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7ac9332db6c2467980793071242950a3
+run_name: brawny-perch-822
+run_uuid: 7ac9332db6c2467980793071242950a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013355807
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6de2a6caebf94a12ba59486b1b035770/artifacts
+end_time: 1746011590294
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6de2a6caebf94a12ba59486b1b035770
+run_name: orderly-wasp-85
+run_uuid: 6de2a6caebf94a12ba59486b1b035770
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011590254
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/d47a3dd887e348b4b19d41ac9c46863a/artifacts
+end_time: 1737117258193
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: d47a3dd887e348b4b19d41ac9c46863a
+run_name: fortunate-hound-152
+run_uuid: d47a3dd887e348b4b19d41ac9c46863a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117258171
+status: 3
+tags: []
+user_id: unknown

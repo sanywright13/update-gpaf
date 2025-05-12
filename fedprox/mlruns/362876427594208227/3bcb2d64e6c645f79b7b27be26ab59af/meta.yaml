@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/3bcb2d64e6c645f79b7b27be26ab59af/artifacts
+end_time: 1738001140320
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 3bcb2d64e6c645f79b7b27be26ab59af
+run_name: calm-bass-490
+run_uuid: 3bcb2d64e6c645f79b7b27be26ab59af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738001105155
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f8e461b4d5d74cf3a137cdc36b8c9855/artifacts
+end_time: 1746013445506
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f8e461b4d5d74cf3a137cdc36b8c9855
+run_name: learned-crow-83
+run_uuid: f8e461b4d5d74cf3a137cdc36b8c9855
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013445460
+status: 4
+tags: []
+user_id: unknown

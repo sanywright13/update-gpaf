@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/822946f8a89b417cae827a35b2423f23/artifacts
+end_time: 1744466232794
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 822946f8a89b417cae827a35b2423f23
+run_name: luminous-rat-431
+run_uuid: 822946f8a89b417cae827a35b2423f23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744466176935
+status: 3
+tags: []
+user_id: unknown

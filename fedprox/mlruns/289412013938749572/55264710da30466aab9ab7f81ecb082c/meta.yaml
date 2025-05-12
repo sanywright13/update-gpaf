@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/55264710da30466aab9ab7f81ecb082c/artifacts
+end_time: 1746023805474
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 55264710da30466aab9ab7f81ecb082c
+run_name: nosy-gnat-0
+run_uuid: 55264710da30466aab9ab7f81ecb082c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023805042
+status: 3
+tags: []
+user_id: unknown

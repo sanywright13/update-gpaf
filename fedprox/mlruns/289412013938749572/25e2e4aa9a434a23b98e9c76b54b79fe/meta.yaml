@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/25e2e4aa9a434a23b98e9c76b54b79fe/artifacts
+end_time: 1746018139536
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 25e2e4aa9a434a23b98e9c76b54b79fe
+run_name: orderly-ox-601
+run_uuid: 25e2e4aa9a434a23b98e9c76b54b79fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018139438
+status: 4
+tags: []
+user_id: unknown

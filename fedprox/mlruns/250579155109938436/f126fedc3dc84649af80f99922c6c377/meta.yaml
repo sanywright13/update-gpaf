@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/f126fedc3dc84649af80f99922c6c377/artifacts
+end_time: 1738149101707
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: f126fedc3dc84649af80f99922c6c377
+run_name: honorable-vole-952
+run_uuid: f126fedc3dc84649af80f99922c6c377
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738149101599
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cb719fa42c3f478bac728fb747b7ffdc/artifacts
+end_time: 1746011603421
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cb719fa42c3f478bac728fb747b7ffdc
+run_name: stately-boar-585
+run_uuid: cb719fa42c3f478bac728fb747b7ffdc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011603379
+status: 4
+tags: []
+user_id: unknown

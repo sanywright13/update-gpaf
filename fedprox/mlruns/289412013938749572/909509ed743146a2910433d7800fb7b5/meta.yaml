@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/909509ed743146a2910433d7800fb7b5/artifacts
+end_time: 1746013432257
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 909509ed743146a2910433d7800fb7b5
+run_name: amazing-duck-230
+run_uuid: 909509ed743146a2910433d7800fb7b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013432206
+status: 4
+tags: []
+user_id: unknown

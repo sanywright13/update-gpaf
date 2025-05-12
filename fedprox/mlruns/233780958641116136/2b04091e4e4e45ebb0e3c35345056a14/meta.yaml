@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/2b04091e4e4e45ebb0e3c35345056a14/artifacts
+end_time: 1738871653622
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 2b04091e4e4e45ebb0e3c35345056a14
+run_name: capable-fish-738
+run_uuid: 2b04091e4e4e45ebb0e3c35345056a14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738871144017
+status: 3
+tags: []
+user_id: unknown

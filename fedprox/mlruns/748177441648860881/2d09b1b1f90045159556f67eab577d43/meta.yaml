@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2d09b1b1f90045159556f67eab577d43/artifacts
+end_time: 1742344583328
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2d09b1b1f90045159556f67eab577d43
+run_name: fortunate-cat-158
+run_uuid: 2d09b1b1f90045159556f67eab577d43
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742344583155
+status: 4
+tags: []
+user_id: unknown

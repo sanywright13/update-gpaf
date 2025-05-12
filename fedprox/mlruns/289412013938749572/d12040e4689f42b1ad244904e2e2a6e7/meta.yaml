@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d12040e4689f42b1ad244904e2e2a6e7/artifacts
+end_time: 1746017712429
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d12040e4689f42b1ad244904e2e2a6e7
+run_name: popular-carp-223
+run_uuid: d12040e4689f42b1ad244904e2e2a6e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017711993
+status: 3
+tags: []
+user_id: unknown

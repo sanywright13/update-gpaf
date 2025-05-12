@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b77ce2f99299464ebd5b6274846ac60c/artifacts
+end_time: 1746018082957
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b77ce2f99299464ebd5b6274846ac60c
+run_name: classy-hound-124
+run_uuid: b77ce2f99299464ebd5b6274846ac60c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018082543
+status: 3
+tags: []
+user_id: unknown

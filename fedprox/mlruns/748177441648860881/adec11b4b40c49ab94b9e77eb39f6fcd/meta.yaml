@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/adec11b4b40c49ab94b9e77eb39f6fcd/artifacts
+end_time: 1744483922403
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: adec11b4b40c49ab94b9e77eb39f6fcd
+run_name: bittersweet-gull-863
+run_uuid: adec11b4b40c49ab94b9e77eb39f6fcd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483921807
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/598812580a42423089de45ca521f840c/artifacts
+end_time: 1737385406222
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 598812580a42423089de45ca521f840c
+run_name: masked-frog-823
+run_uuid: 598812580a42423089de45ca521f840c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737385406139
+status: 3
+tags: []
+user_id: unknown

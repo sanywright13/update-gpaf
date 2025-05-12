@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/e3f9e7575a5942d2ae7458241f7955ef/artifacts
+end_time: 1738003433721
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: e3f9e7575a5942d2ae7458241f7955ef
+run_name: burly-fly-238
+run_uuid: e3f9e7575a5942d2ae7458241f7955ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738003433679
+status: 3
+tags: []
+user_id: unknown

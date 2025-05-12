@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/ea89d23fc8bd4db5ad7946ba480a144e/artifacts
+end_time: 1737667595180
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: ea89d23fc8bd4db5ad7946ba480a144e
+run_name: thoughtful-quail-443
+run_uuid: ea89d23fc8bd4db5ad7946ba480a144e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737667580006
+status: 3
+tags: []
+user_id: unknown

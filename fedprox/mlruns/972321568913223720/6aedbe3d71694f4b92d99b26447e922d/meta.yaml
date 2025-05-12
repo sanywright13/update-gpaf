@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/6aedbe3d71694f4b92d99b26447e922d/artifacts
+end_time: 1736975423925
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 6aedbe3d71694f4b92d99b26447e922d
+run_name: stylish-turtle-938
+run_uuid: 6aedbe3d71694f4b92d99b26447e922d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736975398956
+status: 3
+tags: []
+user_id: unknown

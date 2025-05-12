@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a6b4e6147626428d910d5f4b5ecddfc7/artifacts
+end_time: 1746017543997
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a6b4e6147626428d910d5f4b5ecddfc7
+run_name: secretive-newt-860
+run_uuid: a6b4e6147626428d910d5f4b5ecddfc7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017543584
+status: 3
+tags: []
+user_id: unknown

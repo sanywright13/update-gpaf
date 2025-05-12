@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a53b64c276be4f4b98647de47ed6d832/artifacts
+end_time: 1746017796823
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a53b64c276be4f4b98647de47ed6d832
+run_name: gaudy-frog-97
+run_uuid: a53b64c276be4f4b98647de47ed6d832
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017796744
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2cc8c0cb402347b8971e92777617c6ef/artifacts
+end_time: 1746023733228
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2cc8c0cb402347b8971e92777617c6ef
+run_name: monumental-gnu-743
+run_uuid: 2cc8c0cb402347b8971e92777617c6ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023732823
+status: 3
+tags: []
+user_id: unknown

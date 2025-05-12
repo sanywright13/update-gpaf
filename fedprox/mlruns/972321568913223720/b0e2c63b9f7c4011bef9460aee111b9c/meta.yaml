@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/b0e2c63b9f7c4011bef9460aee111b9c/artifacts
+end_time: 1737117427667
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: b0e2c63b9f7c4011bef9460aee111b9c
+run_name: merciful-newt-319
+run_uuid: b0e2c63b9f7c4011bef9460aee111b9c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117427578
+status: 4
+tags: []
+user_id: unknown

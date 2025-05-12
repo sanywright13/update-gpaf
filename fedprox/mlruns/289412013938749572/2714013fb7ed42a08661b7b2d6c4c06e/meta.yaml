@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2714013fb7ed42a08661b7b2d6c4c06e/artifacts
+end_time: 1746011626927
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2714013fb7ed42a08661b7b2d6c4c06e
+run_name: efficient-fowl-41
+run_uuid: 2714013fb7ed42a08661b7b2d6c4c06e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011626885
+status: 4
+tags: []
+user_id: unknown

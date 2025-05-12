@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/455e242f9ff24fb3ab6be6e862e0c02a/artifacts
+end_time: 1740077619120
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 455e242f9ff24fb3ab6be6e862e0c02a
+run_name: debonair-boar-508
+run_uuid: 455e242f9ff24fb3ab6be6e862e0c02a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740077618991
+status: 3
+tags: []
+user_id: unknown

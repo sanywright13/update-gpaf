@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/57ac36f798f3453d86f1aa36f4b32a5e/artifacts
+end_time: 1738001140533
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 57ac36f798f3453d86f1aa36f4b32a5e
+run_name: gaudy-elk-39
+run_uuid: 57ac36f798f3453d86f1aa36f4b32a5e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738001105399
+status: 3
+tags: []
+user_id: unknown

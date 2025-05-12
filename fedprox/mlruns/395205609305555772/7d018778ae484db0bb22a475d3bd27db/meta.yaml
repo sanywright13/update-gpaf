@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/7d018778ae484db0bb22a475d3bd27db/artifacts
+end_time: 1736888372617
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 7d018778ae484db0bb22a475d3bd27db
+run_name: gentle-goose-855
+run_uuid: 7d018778ae484db0bb22a475d3bd27db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888372576
+status: 3
+tags: []
+user_id: unknown

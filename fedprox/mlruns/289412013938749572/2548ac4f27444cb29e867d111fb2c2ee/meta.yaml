@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2548ac4f27444cb29e867d111fb2c2ee/artifacts
+end_time: 1746017742080
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2548ac4f27444cb29e867d111fb2c2ee
+run_name: burly-shrimp-413
+run_uuid: 2548ac4f27444cb29e867d111fb2c2ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017741668
+status: 3
+tags: []
+user_id: unknown

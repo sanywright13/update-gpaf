@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ee3c3d60020b446c9b0244d6852ce9bf/artifacts
+end_time: 1746011641750
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ee3c3d60020b446c9b0244d6852ce9bf
+run_name: useful-calf-632
+run_uuid: ee3c3d60020b446c9b0244d6852ce9bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011641706
+status: 4
+tags: []
+user_id: unknown

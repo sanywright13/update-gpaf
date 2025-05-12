@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/7f4f0e5ae4104ff1918a6d0b8f55b8ab/artifacts
+end_time: 1737547906206
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 7f4f0e5ae4104ff1918a6d0b8f55b8ab
+run_name: shivering-skink-660
+run_uuid: 7f4f0e5ae4104ff1918a6d0b8f55b8ab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737547905408
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/1da1f65224fd4845a897f6dcc8e6fa08/artifacts
+end_time: 1737668278638
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 1da1f65224fd4845a897f6dcc8e6fa08
+run_name: crawling-skunk-352
+run_uuid: 1da1f65224fd4845a897f6dcc8e6fa08
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737668266395
+status: 3
+tags: []
+user_id: unknown

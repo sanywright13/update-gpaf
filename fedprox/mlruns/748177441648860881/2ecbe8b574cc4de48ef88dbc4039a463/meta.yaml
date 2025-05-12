@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2ecbe8b574cc4de48ef88dbc4039a463/artifacts
+end_time: 1743677912721
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2ecbe8b574cc4de48ef88dbc4039a463
+run_name: welcoming-mink-210
+run_uuid: 2ecbe8b574cc4de48ef88dbc4039a463
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743677886593
+status: 3
+tags: []
+user_id: unknown

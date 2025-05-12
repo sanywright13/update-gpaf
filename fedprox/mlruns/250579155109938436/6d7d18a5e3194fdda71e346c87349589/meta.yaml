@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/6d7d18a5e3194fdda71e346c87349589/artifacts
+end_time: 1738240687304
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 6d7d18a5e3194fdda71e346c87349589
+run_name: intelligent-mole-678
+run_uuid: 6d7d18a5e3194fdda71e346c87349589
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240687233
+status: 4
+tags: []
+user_id: unknown

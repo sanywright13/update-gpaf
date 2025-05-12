@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/147594454214892704/2131133066784a838998101c5677b5c8/artifacts
+end_time: 1737741823002
+entry_point_name: ''
+experiment_id: '147594454214892704'
+lifecycle_stage: active
+run_id: 2131133066784a838998101c5677b5c8
+run_name: worried-goose-174
+run_uuid: 2131133066784a838998101c5677b5c8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737741416457
+status: 3
+tags: []
+user_id: unknown

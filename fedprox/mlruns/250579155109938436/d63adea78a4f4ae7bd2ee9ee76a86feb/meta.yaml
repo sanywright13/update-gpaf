@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d63adea78a4f4ae7bd2ee9ee76a86feb/artifacts
+end_time: 1738249770917
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d63adea78a4f4ae7bd2ee9ee76a86feb
+run_name: powerful-snake-119
+run_uuid: d63adea78a4f4ae7bd2ee9ee76a86feb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738249761823
+status: 3
+tags: []
+user_id: unknown

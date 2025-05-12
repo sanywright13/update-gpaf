@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ca20c43989404d34bf742048128c6d80/artifacts
+end_time: 1746013419274
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ca20c43989404d34bf742048128c6d80
+run_name: wistful-snake-758
+run_uuid: ca20c43989404d34bf742048128c6d80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013419230
+status: 4
+tags: []
+user_id: unknown

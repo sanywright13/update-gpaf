@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6a7ec7a20e9c4b72936e7d14ec572083/artifacts
+end_time: 1746018817089
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6a7ec7a20e9c4b72936e7d14ec572083
+run_name: ambitious-turtle-248
+run_uuid: 6a7ec7a20e9c4b72936e7d14ec572083
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018817006
+status: 4
+tags: []
+user_id: unknown

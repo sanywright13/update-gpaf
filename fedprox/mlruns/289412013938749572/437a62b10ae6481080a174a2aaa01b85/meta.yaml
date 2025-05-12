@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/437a62b10ae6481080a174a2aaa01b85/artifacts
+end_time: 1746023769049
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 437a62b10ae6481080a174a2aaa01b85
+run_name: bemused-foal-660
+run_uuid: 437a62b10ae6481080a174a2aaa01b85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023768951
+status: 4
+tags: []
+user_id: unknown

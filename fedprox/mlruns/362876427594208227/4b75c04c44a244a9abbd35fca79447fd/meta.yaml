@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/4b75c04c44a244a9abbd35fca79447fd/artifacts
+end_time: 1738005505721
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 4b75c04c44a244a9abbd35fca79447fd
+run_name: nosy-mouse-192
+run_uuid: 4b75c04c44a244a9abbd35fca79447fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005505564
+status: 3
+tags: []
+user_id: unknown

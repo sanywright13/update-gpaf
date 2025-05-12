@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/673620e2d00242268cc5e4b933790f5d/artifacts
+end_time: 1738785033647
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 673620e2d00242268cc5e4b933790f5d
+run_name: amusing-asp-252
+run_uuid: 673620e2d00242268cc5e4b933790f5d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738785033506
+status: 3
+tags: []
+user_id: unknown

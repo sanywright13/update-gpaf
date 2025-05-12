@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d5a7e8b0cae849359740ef219bfe62e8/artifacts
+end_time: 1738240763021
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d5a7e8b0cae849359740ef219bfe62e8
+run_name: chill-cow-292
+run_uuid: d5a7e8b0cae849359740ef219bfe62e8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240762912
+status: 3
+tags: []
+user_id: unknown

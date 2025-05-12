@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/250a7d266dbf4ce2a61e930d3e6bcbf3/artifacts
+end_time: 1737117066422
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 250a7d266dbf4ce2a61e930d3e6bcbf3
+run_name: popular-squirrel-239
+run_uuid: 250a7d266dbf4ce2a61e930d3e6bcbf3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737117066378
+status: 3
+tags: []
+user_id: unknown

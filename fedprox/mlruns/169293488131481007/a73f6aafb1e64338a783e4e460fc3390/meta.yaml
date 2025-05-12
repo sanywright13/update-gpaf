@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/a73f6aafb1e64338a783e4e460fc3390/artifacts
+end_time: 1737386894265
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: a73f6aafb1e64338a783e4e460fc3390
+run_name: burly-bat-302
+run_uuid: a73f6aafb1e64338a783e4e460fc3390
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737386795422
+status: 3
+tags: []
+user_id: unknown

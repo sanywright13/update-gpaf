@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ef210a8940694bc08e8780b8af4d4b4d/artifacts
+end_time: 1746023770974
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ef210a8940694bc08e8780b8af4d4b4d
+run_name: dashing-horse-432
+run_uuid: ef210a8940694bc08e8780b8af4d4b4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023770554
+status: 3
+tags: []
+user_id: unknown

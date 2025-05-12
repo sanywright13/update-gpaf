@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a1a213de04984842aa2a9fa44f3eb945/artifacts
+end_time: 1746011635103
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a1a213de04984842aa2a9fa44f3eb945
+run_name: capricious-pig-726
+run_uuid: a1a213de04984842aa2a9fa44f3eb945
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011635063
+status: 4
+tags: []
+user_id: unknown

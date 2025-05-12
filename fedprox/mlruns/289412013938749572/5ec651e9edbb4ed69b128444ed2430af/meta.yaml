@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5ec651e9edbb4ed69b128444ed2430af/artifacts
+end_time: 1746011647055
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5ec651e9edbb4ed69b128444ed2430af
+run_name: puzzled-grub-112
+run_uuid: 5ec651e9edbb4ed69b128444ed2430af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011647010
+status: 4
+tags: []
+user_id: unknown

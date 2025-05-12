@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/28512e0b05384fb0be10bcfb75aadec7/artifacts
+end_time: 1746023742115
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 28512e0b05384fb0be10bcfb75aadec7
+run_name: selective-fawn-737
+run_uuid: 28512e0b05384fb0be10bcfb75aadec7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023741703
+status: 3
+tags: []
+user_id: unknown

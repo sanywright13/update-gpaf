@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/63fcc89437b44a92a17b146158bf3ac5/artifacts
+end_time: 1746018538155
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 63fcc89437b44a92a17b146158bf3ac5
+run_name: debonair-vole-495
+run_uuid: 63fcc89437b44a92a17b146158bf3ac5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018538074
+status: 4
+tags: []
+user_id: unknown

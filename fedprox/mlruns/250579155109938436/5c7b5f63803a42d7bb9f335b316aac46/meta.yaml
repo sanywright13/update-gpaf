@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/5c7b5f63803a42d7bb9f335b316aac46/artifacts
+end_time: 1738241887401
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 5c7b5f63803a42d7bb9f335b316aac46
+run_name: trusting-asp-850
+run_uuid: 5c7b5f63803a42d7bb9f335b316aac46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738241887318
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/60a9f2e88cb74ba38482d5a732e08030/artifacts
+end_time: 1746023710027
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 60a9f2e88cb74ba38482d5a732e08030
+run_name: defiant-dog-192
+run_uuid: 60a9f2e88cb74ba38482d5a732e08030
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023709619
+status: 3
+tags: []
+user_id: unknown

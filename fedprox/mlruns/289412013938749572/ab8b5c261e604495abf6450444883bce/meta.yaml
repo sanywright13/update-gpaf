@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ab8b5c261e604495abf6450444883bce/artifacts
+end_time: 1746023724228
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ab8b5c261e604495abf6450444883bce
+run_name: classy-stork-972
+run_uuid: ab8b5c261e604495abf6450444883bce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023723814
+status: 3
+tags: []
+user_id: unknown

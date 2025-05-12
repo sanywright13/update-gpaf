@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/91e0b98514a34179a221553097404741/artifacts
+end_time: 1746013356257
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 91e0b98514a34179a221553097404741
+run_name: glamorous-rook-283
+run_uuid: 91e0b98514a34179a221553097404741
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013356211
+status: 4
+tags: []
+user_id: unknown

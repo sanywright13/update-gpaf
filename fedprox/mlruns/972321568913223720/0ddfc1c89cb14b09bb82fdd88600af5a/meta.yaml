@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/0ddfc1c89cb14b09bb82fdd88600af5a/artifacts
+end_time: 1736975424646
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 0ddfc1c89cb14b09bb82fdd88600af5a
+run_name: upset-snail-388
+run_uuid: 0ddfc1c89cb14b09bb82fdd88600af5a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736975403609
+status: 3
+tags: []
+user_id: unknown

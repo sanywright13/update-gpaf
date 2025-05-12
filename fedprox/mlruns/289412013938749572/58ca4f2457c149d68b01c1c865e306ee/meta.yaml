@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/58ca4f2457c149d68b01c1c865e306ee/artifacts
+end_time: 1746013432262
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 58ca4f2457c149d68b01c1c865e306ee
+run_name: resilient-wolf-709
+run_uuid: 58ca4f2457c149d68b01c1c865e306ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013432211
+status: 4
+tags: []
+user_id: unknown

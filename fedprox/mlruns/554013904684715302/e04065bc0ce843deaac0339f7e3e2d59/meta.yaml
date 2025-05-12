@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/e04065bc0ce843deaac0339f7e3e2d59/artifacts
+end_time: 1737297052729
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: e04065bc0ce843deaac0339f7e3e2d59
+run_name: big-pig-523
+run_uuid: e04065bc0ce843deaac0339f7e3e2d59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297052699
+status: 3
+tags: []
+user_id: unknown

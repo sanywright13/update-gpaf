@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5aee058eb9124eb9a42ece7d9bce4de6/artifacts
+end_time: 1746013365257
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5aee058eb9124eb9a42ece7d9bce4de6
+run_name: nervous-cod-211
+run_uuid: 5aee058eb9124eb9a42ece7d9bce4de6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013365212
+status: 4
+tags: []
+user_id: unknown

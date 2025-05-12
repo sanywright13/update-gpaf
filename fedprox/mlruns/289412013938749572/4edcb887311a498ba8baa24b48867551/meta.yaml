@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4edcb887311a498ba8baa24b48867551/artifacts
+end_time: 1746011592247
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4edcb887311a498ba8baa24b48867551
+run_name: adorable-duck-813
+run_uuid: 4edcb887311a498ba8baa24b48867551
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011592207
+status: 4
+tags: []
+user_id: unknown

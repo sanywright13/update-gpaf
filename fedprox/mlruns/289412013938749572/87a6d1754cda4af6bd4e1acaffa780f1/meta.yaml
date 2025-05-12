@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/87a6d1754cda4af6bd4e1acaffa780f1/artifacts
+end_time: 1746013422352
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 87a6d1754cda4af6bd4e1acaffa780f1
+run_name: big-sheep-414
+run_uuid: 87a6d1754cda4af6bd4e1acaffa780f1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013422307
+status: 4
+tags: []
+user_id: unknown

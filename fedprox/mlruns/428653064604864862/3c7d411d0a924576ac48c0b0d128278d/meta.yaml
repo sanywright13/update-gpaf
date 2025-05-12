@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/3c7d411d0a924576ac48c0b0d128278d/artifacts
+end_time: 1737567648300
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 3c7d411d0a924576ac48c0b0d128278d
+run_name: righteous-conch-379
+run_uuid: 3c7d411d0a924576ac48c0b0d128278d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737567642778
+status: 3
+tags: []
+user_id: unknown

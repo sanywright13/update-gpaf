@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/21bd457b5b6940888afe1bbfd0e8bcf8/artifacts
+end_time: 1738157300967
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 21bd457b5b6940888afe1bbfd0e8bcf8
+run_name: honorable-fish-262
+run_uuid: 21bd457b5b6940888afe1bbfd0e8bcf8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738157300720
+status: 3
+tags: []
+user_id: unknown

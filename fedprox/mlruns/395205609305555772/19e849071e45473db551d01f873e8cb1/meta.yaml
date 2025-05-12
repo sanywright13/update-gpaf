@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/19e849071e45473db551d01f873e8cb1/artifacts
+end_time: 1736889416961
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 19e849071e45473db551d01f873e8cb1
+run_name: agreeable-vole-106
+run_uuid: 19e849071e45473db551d01f873e8cb1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889347592
+status: 3
+tags: []
+user_id: unknown

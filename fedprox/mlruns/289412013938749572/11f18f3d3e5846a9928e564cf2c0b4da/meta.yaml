@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/11f18f3d3e5846a9928e564cf2c0b4da/artifacts
+end_time: 1746018423602
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 11f18f3d3e5846a9928e564cf2c0b4da
+run_name: adventurous-wren-186
+run_uuid: 11f18f3d3e5846a9928e564cf2c0b4da
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018423192
+status: 3
+tags: []
+user_id: unknown

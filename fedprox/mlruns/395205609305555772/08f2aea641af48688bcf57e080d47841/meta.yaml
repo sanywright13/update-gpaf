@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/08f2aea641af48688bcf57e080d47841/artifacts
+end_time: 1736889192899
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 08f2aea641af48688bcf57e080d47841
+run_name: exultant-shrike-572
+run_uuid: 08f2aea641af48688bcf57e080d47841
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889168255
+status: 3
+tags: []
+user_id: unknown

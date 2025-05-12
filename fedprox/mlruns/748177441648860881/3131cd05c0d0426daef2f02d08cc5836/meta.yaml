@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/3131cd05c0d0426daef2f02d08cc5836/artifacts
+end_time: 1744497167165
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 3131cd05c0d0426daef2f02d08cc5836
+run_name: resilient-goose-255
+run_uuid: 3131cd05c0d0426daef2f02d08cc5836
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744497163563
+status: 3
+tags: []
+user_id: unknown

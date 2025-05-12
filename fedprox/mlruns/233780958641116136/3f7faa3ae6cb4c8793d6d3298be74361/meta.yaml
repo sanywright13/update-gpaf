@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/3f7faa3ae6cb4c8793d6d3298be74361/artifacts
+end_time: 1738862379685
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 3f7faa3ae6cb4c8793d6d3298be74361
+run_name: carefree-lynx-772
+run_uuid: 3f7faa3ae6cb4c8793d6d3298be74361
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862379644
+status: 4
+tags: []
+user_id: unknown

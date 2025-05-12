@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/b46fa96b8d9e4509ae95a8dbb9e0e15c/artifacts
+end_time: 1738154832327
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: b46fa96b8d9e4509ae95a8dbb9e0e15c
+run_name: amazing-dog-721
+run_uuid: b46fa96b8d9e4509ae95a8dbb9e0e15c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738154816082
+status: 3
+tags: []
+user_id: unknown

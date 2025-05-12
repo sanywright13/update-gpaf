@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/04aaf5f8568247b48a7e707e5f24b700/artifacts
+end_time: 1746019186459
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 04aaf5f8568247b48a7e707e5f24b700
+run_name: persistent-smelt-836
+run_uuid: 04aaf5f8568247b48a7e707e5f24b700
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019186376
+status: 4
+tags: []
+user_id: unknown

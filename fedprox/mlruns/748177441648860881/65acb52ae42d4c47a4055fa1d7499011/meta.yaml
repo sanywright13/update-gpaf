@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/65acb52ae42d4c47a4055fa1d7499011/artifacts
+end_time: 1742256878501
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 65acb52ae42d4c47a4055fa1d7499011
+run_name: resilient-gnat-730
+run_uuid: 65acb52ae42d4c47a4055fa1d7499011
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256878452
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2acaf92663eb4d95ba97f34184939ecd/artifacts
+end_time: 1743677235368
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2acaf92663eb4d95ba97f34184939ecd
+run_name: welcoming-chimp-912
+run_uuid: 2acaf92663eb4d95ba97f34184939ecd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743677234693
+status: 3
+tags: []
+user_id: unknown

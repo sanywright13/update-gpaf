@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/efbc24eaf0a746b8bf1db75a3de51b44/artifacts
+end_time: 1746011581565
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: efbc24eaf0a746b8bf1db75a3de51b44
+run_name: shivering-stag-502
+run_uuid: efbc24eaf0a746b8bf1db75a3de51b44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011581526
+status: 4
+tags: []
+user_id: unknown

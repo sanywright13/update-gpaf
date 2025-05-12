@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9fc2552ccb844e41879b8b7f8c0e10a3/artifacts
+end_time: 1746019157184
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9fc2552ccb844e41879b8b7f8c0e10a3
+run_name: upbeat-colt-938
+run_uuid: 9fc2552ccb844e41879b8b7f8c0e10a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019157104
+status: 4
+tags: []
+user_id: unknown

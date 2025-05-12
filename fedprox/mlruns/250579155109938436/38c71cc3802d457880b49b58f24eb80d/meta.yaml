@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/38c71cc3802d457880b49b58f24eb80d/artifacts
+end_time: 1738150550532
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 38c71cc3802d457880b49b58f24eb80d
+run_name: delightful-stork-310
+run_uuid: 38c71cc3802d457880b49b58f24eb80d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738150550399
+status: 3
+tags: []
+user_id: unknown

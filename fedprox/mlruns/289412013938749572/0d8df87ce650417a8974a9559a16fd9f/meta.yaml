@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0d8df87ce650417a8974a9559a16fd9f/artifacts
+end_time: 1746013355837
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0d8df87ce650417a8974a9559a16fd9f
+run_name: bittersweet-bat-944
+run_uuid: 0d8df87ce650417a8974a9559a16fd9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013355793
+status: 4
+tags: []
+user_id: unknown

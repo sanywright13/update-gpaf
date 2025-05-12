@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a5878f42d3c648a39d9ab7004844742d/artifacts
+end_time: 1746011638331
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a5878f42d3c648a39d9ab7004844742d
+run_name: bustling-whale-37
+run_uuid: a5878f42d3c648a39d9ab7004844742d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011638293
+status: 4
+tags: []
+user_id: unknown

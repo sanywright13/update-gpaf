@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/968ae8a54ce1441d8de15453ec20d373/artifacts
+end_time: 1746023710823
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 968ae8a54ce1441d8de15453ec20d373
+run_name: charming-vole-616
+run_uuid: 968ae8a54ce1441d8de15453ec20d373
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023710410
+status: 3
+tags: []
+user_id: unknown

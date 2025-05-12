@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/a4284e7ed925426f8c9f97c699170310/artifacts
+end_time: 1737390386716
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: a4284e7ed925426f8c9f97c699170310
+run_name: calm-panda-159
+run_uuid: a4284e7ed925426f8c9f97c699170310
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737390386637
+status: 3
+tags: []
+user_id: unknown

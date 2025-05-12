@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/aeefba80e6264954b937edbcab3b42fe/artifacts
+end_time: 1736866275842
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: aeefba80e6264954b937edbcab3b42fe
+run_name: wistful-hen-13
+run_uuid: aeefba80e6264954b937edbcab3b42fe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736866230413
+status: 3
+tags: []
+user_id: unknown

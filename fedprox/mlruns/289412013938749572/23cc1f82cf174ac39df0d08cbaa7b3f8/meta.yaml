@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/23cc1f82cf174ac39df0d08cbaa7b3f8/artifacts
+end_time: 1746011600603
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 23cc1f82cf174ac39df0d08cbaa7b3f8
+run_name: luxuriant-mink-623
+run_uuid: 23cc1f82cf174ac39df0d08cbaa7b3f8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011600562
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3d1f5d5e1fde48ccb80439faf20e24ca/artifacts
+end_time: 1746013354868
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3d1f5d5e1fde48ccb80439faf20e24ca
+run_name: glamorous-quail-893
+run_uuid: 3d1f5d5e1fde48ccb80439faf20e24ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013354823
+status: 4
+tags: []
+user_id: unknown

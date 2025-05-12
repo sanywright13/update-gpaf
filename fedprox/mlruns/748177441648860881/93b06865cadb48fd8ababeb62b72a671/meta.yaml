@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/93b06865cadb48fd8ababeb62b72a671/artifacts
+end_time: 1740080382697
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 93b06865cadb48fd8ababeb62b72a671
+run_name: skillful-bee-964
+run_uuid: 93b06865cadb48fd8ababeb62b72a671
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080372533
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/4c6fdf21d48a434188489cebe4be701e/artifacts
+end_time: 1742398756359
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 4c6fdf21d48a434188489cebe4be701e
+run_name: unequaled-gull-92
+run_uuid: 4c6fdf21d48a434188489cebe4be701e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742398130520
+status: 3
+tags: []
+user_id: unknown

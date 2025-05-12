@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e9ca30ffb23348369858b4b5d18be08a/artifacts
+end_time: 1742256839864
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e9ca30ffb23348369858b4b5d18be08a
+run_name: calm-asp-105
+run_uuid: e9ca30ffb23348369858b4b5d18be08a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256839739
+status: 3
+tags: []
+user_id: unknown

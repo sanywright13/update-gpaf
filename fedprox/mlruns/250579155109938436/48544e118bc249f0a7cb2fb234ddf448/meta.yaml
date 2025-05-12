@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/48544e118bc249f0a7cb2fb234ddf448/artifacts
+end_time: 1738158889519
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 48544e118bc249f0a7cb2fb234ddf448
+run_name: bustling-flea-536
+run_uuid: 48544e118bc249f0a7cb2fb234ddf448
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158889230
+status: 3
+tags: []
+user_id: unknown

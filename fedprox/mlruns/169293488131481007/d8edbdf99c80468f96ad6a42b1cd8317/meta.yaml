@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/d8edbdf99c80468f96ad6a42b1cd8317/artifacts
+end_time: 1737314770986
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: d8edbdf99c80468f96ad6a42b1cd8317
+run_name: bouncy-fox-19
+run_uuid: d8edbdf99c80468f96ad6a42b1cd8317
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737314769819
+status: 3
+tags: []
+user_id: unknown

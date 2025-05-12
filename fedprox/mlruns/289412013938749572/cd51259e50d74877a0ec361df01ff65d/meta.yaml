@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cd51259e50d74877a0ec361df01ff65d/artifacts
+end_time: 1746017969812
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cd51259e50d74877a0ec361df01ff65d
+run_name: crawling-pig-496
+run_uuid: cd51259e50d74877a0ec361df01ff65d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017969390
+status: 3
+tags: []
+user_id: unknown

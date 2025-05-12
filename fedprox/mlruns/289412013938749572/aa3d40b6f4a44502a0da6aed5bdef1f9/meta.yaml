@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/aa3d40b6f4a44502a0da6aed5bdef1f9/artifacts
+end_time: 1746013426304
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: aa3d40b6f4a44502a0da6aed5bdef1f9
+run_name: learned-trout-753
+run_uuid: aa3d40b6f4a44502a0da6aed5bdef1f9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013426255
+status: 4
+tags: []
+user_id: unknown

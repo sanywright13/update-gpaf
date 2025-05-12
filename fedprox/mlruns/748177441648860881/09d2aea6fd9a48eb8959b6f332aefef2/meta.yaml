@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/09d2aea6fd9a48eb8959b6f332aefef2/artifacts
+end_time: 1743289435132
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 09d2aea6fd9a48eb8959b6f332aefef2
+run_name: masked-flea-217
+run_uuid: 09d2aea6fd9a48eb8959b6f332aefef2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743289422132
+status: 3
+tags: []
+user_id: unknown

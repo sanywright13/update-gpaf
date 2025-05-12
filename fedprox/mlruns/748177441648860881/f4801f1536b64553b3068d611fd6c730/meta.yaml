@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/f4801f1536b64553b3068d611fd6c730/artifacts
+end_time: 1742393520122
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: f4801f1536b64553b3068d611fd6c730
+run_name: zealous-owl-734
+run_uuid: f4801f1536b64553b3068d611fd6c730
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742392894999
+status: 3
+tags: []
+user_id: unknown

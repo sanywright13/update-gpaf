@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b4dc1b8d5a91402c923b8768afa1d8c9/artifacts
+end_time: 1746023741312
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b4dc1b8d5a91402c923b8768afa1d8c9
+run_name: melodic-skunk-88
+run_uuid: b4dc1b8d5a91402c923b8768afa1d8c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023740900
+status: 3
+tags: []
+user_id: unknown

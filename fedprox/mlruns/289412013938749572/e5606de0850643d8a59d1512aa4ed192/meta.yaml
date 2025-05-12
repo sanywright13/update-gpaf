@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e5606de0850643d8a59d1512aa4ed192/artifacts
+end_time: 1746017713503
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e5606de0850643d8a59d1512aa4ed192
+run_name: carefree-moth-62
+run_uuid: e5606de0850643d8a59d1512aa4ed192
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017713112
+status: 3
+tags: []
+user_id: unknown

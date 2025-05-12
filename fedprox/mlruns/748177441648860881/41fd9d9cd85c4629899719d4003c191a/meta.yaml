@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/41fd9d9cd85c4629899719d4003c191a/artifacts
+end_time: 1744623713247
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 41fd9d9cd85c4629899719d4003c191a
+run_name: skittish-hawk-433
+run_uuid: 41fd9d9cd85c4629899719d4003c191a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744623707427
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f361e5952b73426a95127991f1cc0a87/artifacts
+end_time: 1746011574183
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f361e5952b73426a95127991f1cc0a87
+run_name: selective-panda-434
+run_uuid: f361e5952b73426a95127991f1cc0a87
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011574143
+status: 4
+tags: []
+user_id: unknown

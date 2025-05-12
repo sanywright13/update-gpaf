@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/67bfe0c35f6d4f6496dfda13da956c3b/artifacts
+end_time: 1746011578721
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 67bfe0c35f6d4f6496dfda13da956c3b
+run_name: sincere-shrew-700
+run_uuid: 67bfe0c35f6d4f6496dfda13da956c3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011578683
+status: 4
+tags: []
+user_id: unknown

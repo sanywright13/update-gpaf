@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/e73c8d3891a24e26a5b686c4ed8d805a/artifacts
+end_time: 1738157313003
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: e73c8d3891a24e26a5b686c4ed8d805a
+run_name: dapper-bass-226
+run_uuid: e73c8d3891a24e26a5b686c4ed8d805a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738157312779
+status: 3
+tags: []
+user_id: unknown

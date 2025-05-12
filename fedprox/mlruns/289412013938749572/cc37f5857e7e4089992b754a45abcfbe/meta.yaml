@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cc37f5857e7e4089992b754a45abcfbe/artifacts
+end_time: 1746013379043
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cc37f5857e7e4089992b754a45abcfbe
+run_name: polite-kite-756
+run_uuid: cc37f5857e7e4089992b754a45abcfbe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013379001
+status: 4
+tags: []
+user_id: unknown

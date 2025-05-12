@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/433a07d6f774427fb6e1f282815068d2/artifacts
+end_time: 1746011602674
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 433a07d6f774427fb6e1f282815068d2
+run_name: charming-crab-31
+run_uuid: 433a07d6f774427fb6e1f282815068d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011602633
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/529dbc12d0334bed9599d72c3d56ff09/artifacts
+end_time: 1746023744307
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 529dbc12d0334bed9599d72c3d56ff09
+run_name: fun-turtle-963
+run_uuid: 529dbc12d0334bed9599d72c3d56ff09
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023744207
+status: 4
+tags: []
+user_id: unknown

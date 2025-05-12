@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c9e486a31c424d3884f7335fa5f710df/artifacts
+end_time: 1739976683802
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c9e486a31c424d3884f7335fa5f710df
+run_name: resilient-shoat-443
+run_uuid: c9e486a31c424d3884f7335fa5f710df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739976635617
+status: 3
+tags: []
+user_id: unknown

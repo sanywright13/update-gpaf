@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/30ff9b2c5fd64d25b23fe126abaf862f/artifacts
+end_time: 1738240761742
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 30ff9b2c5fd64d25b23fe126abaf862f
+run_name: zealous-mule-795
+run_uuid: 30ff9b2c5fd64d25b23fe126abaf862f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738240761675
+status: 3
+tags: []
+user_id: unknown

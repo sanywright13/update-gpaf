@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/66c2374ae06841e1b32e7db215a5120a/artifacts
+end_time: 1746013433352
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 66c2374ae06841e1b32e7db215a5120a
+run_name: powerful-sponge-529
+run_uuid: 66c2374ae06841e1b32e7db215a5120a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013433308
+status: 4
+tags: []
+user_id: unknown

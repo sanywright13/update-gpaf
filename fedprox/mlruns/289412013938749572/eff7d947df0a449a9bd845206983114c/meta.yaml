@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/eff7d947df0a449a9bd845206983114c/artifacts
+end_time: 1746023718103
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: eff7d947df0a449a9bd845206983114c
+run_name: unruly-moth-690
+run_uuid: eff7d947df0a449a9bd845206983114c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023718005
+status: 4
+tags: []
+user_id: unknown

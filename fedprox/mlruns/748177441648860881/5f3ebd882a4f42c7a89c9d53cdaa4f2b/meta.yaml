@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/5f3ebd882a4f42c7a89c9d53cdaa4f2b/artifacts
+end_time: 1744627571110
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 5f3ebd882a4f42c7a89c9d53cdaa4f2b
+run_name: grandiose-shoat-440
+run_uuid: 5f3ebd882a4f42c7a89c9d53cdaa4f2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744627505848
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/03954a9bea8d4a5aa4730382c1556c7d/artifacts
+end_time: 1737567265472
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 03954a9bea8d4a5aa4730382c1556c7d
+run_name: grandiose-bass-99
+run_uuid: 03954a9bea8d4a5aa4730382c1556c7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737567265446
+status: 3
+tags: []
+user_id: unknown

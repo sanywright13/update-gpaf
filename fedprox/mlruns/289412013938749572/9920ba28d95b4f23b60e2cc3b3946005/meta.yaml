@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/9920ba28d95b4f23b60e2cc3b3946005/artifacts
+end_time: 1746013436966
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 9920ba28d95b4f23b60e2cc3b3946005
+run_name: suave-penguin-425
+run_uuid: 9920ba28d95b4f23b60e2cc3b3946005
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013436915
+status: 4
+tags: []
+user_id: unknown

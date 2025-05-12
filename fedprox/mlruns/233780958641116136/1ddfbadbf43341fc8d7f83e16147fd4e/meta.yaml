@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/1ddfbadbf43341fc8d7f83e16147fd4e/artifacts
+end_time: 1738862948543
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 1ddfbadbf43341fc8d7f83e16147fd4e
+run_name: grandiose-pig-368
+run_uuid: 1ddfbadbf43341fc8d7f83e16147fd4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862948497
+status: 4
+tags: []
+user_id: unknown

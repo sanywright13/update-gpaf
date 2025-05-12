@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/087eef12576242b2a58c9b59fc67e50d/artifacts
+end_time: 1746018621407
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 087eef12576242b2a58c9b59fc67e50d
+run_name: inquisitive-toad-118
+run_uuid: 087eef12576242b2a58c9b59fc67e50d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018620985
+status: 3
+tags: []
+user_id: unknown

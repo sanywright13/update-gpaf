@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/3c0f4bdc2eb24a4ebd192e255bf3a733/artifacts
+end_time: 1746013409929
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 3c0f4bdc2eb24a4ebd192e255bf3a733
+run_name: mercurial-fawn-861
+run_uuid: 3c0f4bdc2eb24a4ebd192e255bf3a733
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013409878
+status: 4
+tags: []
+user_id: unknown

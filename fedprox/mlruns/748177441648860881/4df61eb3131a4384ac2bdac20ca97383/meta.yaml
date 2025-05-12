@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/4df61eb3131a4384ac2bdac20ca97383/artifacts
+end_time: 1744483995511
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 4df61eb3131a4384ac2bdac20ca97383
+run_name: auspicious-pig-582
+run_uuid: 4df61eb3131a4384ac2bdac20ca97383
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483994741
+status: 3
+tags: []
+user_id: unknown

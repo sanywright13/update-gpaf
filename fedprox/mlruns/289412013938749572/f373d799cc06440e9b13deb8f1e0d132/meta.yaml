@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f373d799cc06440e9b13deb8f1e0d132/artifacts
+end_time: 1746018250850
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f373d799cc06440e9b13deb8f1e0d132
+run_name: funny-shad-950
+run_uuid: f373d799cc06440e9b13deb8f1e0d132
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018250422
+status: 3
+tags: []
+user_id: unknown

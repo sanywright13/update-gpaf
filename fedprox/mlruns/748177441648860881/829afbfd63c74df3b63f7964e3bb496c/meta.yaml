@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/829afbfd63c74df3b63f7964e3bb496c/artifacts
+end_time: 1742347528865
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 829afbfd63c74df3b63f7964e3bb496c
+run_name: upbeat-ant-310
+run_uuid: 829afbfd63c74df3b63f7964e3bb496c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742347528645
+status: 4
+tags: []
+user_id: unknown

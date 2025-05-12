@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/dfe42023440a4e468162f1a000783c56/artifacts
+end_time: 1738192013133
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: dfe42023440a4e468162f1a000783c56
+run_name: serious-cod-496
+run_uuid: dfe42023440a4e468162f1a000783c56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738192013079
+status: 3
+tags: []
+user_id: unknown

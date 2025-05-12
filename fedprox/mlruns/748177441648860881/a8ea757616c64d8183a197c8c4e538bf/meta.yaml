@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a8ea757616c64d8183a197c8c4e538bf/artifacts
+end_time: 1744491490166
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a8ea757616c64d8183a197c8c4e538bf
+run_name: dapper-dolphin-261
+run_uuid: a8ea757616c64d8183a197c8c4e538bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744491489596
+status: 3
+tags: []
+user_id: unknown

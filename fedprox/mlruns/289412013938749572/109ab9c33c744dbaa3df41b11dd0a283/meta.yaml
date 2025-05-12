@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/109ab9c33c744dbaa3df41b11dd0a283/artifacts
+end_time: 1746013372374
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 109ab9c33c744dbaa3df41b11dd0a283
+run_name: clumsy-penguin-518
+run_uuid: 109ab9c33c744dbaa3df41b11dd0a283
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013372333
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/5d808e3f7b154bbc93d72928780361f6/artifacts
+end_time: 1738005564429
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 5d808e3f7b154bbc93d72928780361f6
+run_name: legendary-steed-695
+run_uuid: 5d808e3f7b154bbc93d72928780361f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005564227
+status: 3
+tags: []
+user_id: unknown

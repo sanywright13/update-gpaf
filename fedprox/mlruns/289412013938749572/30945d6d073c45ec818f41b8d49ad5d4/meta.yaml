@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/30945d6d073c45ec818f41b8d49ad5d4/artifacts
+end_time: 1746013420976
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 30945d6d073c45ec818f41b8d49ad5d4
+run_name: capricious-cow-617
+run_uuid: 30945d6d073c45ec818f41b8d49ad5d4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013420932
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/72a2bbfaa829420392484ef37904d5cd/artifacts
+end_time: 1738154404803
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 72a2bbfaa829420392484ef37904d5cd
+run_name: secretive-toad-242
+run_uuid: 72a2bbfaa829420392484ef37904d5cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738154404502
+status: 3
+tags: []
+user_id: unknown

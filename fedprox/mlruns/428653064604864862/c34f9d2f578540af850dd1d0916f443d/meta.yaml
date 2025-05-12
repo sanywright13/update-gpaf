@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/c34f9d2f578540af850dd1d0916f443d/artifacts
+end_time: 1737625939191
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: c34f9d2f578540af850dd1d0916f443d
+run_name: loud-fowl-593
+run_uuid: c34f9d2f578540af850dd1d0916f443d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737625927294
+status: 3
+tags: []
+user_id: unknown

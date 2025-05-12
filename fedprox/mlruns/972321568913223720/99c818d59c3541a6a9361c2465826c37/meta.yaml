@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/99c818d59c3541a6a9361c2465826c37/artifacts
+end_time: 1737049484984
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 99c818d59c3541a6a9361c2465826c37
+run_name: useful-dove-669
+run_uuid: 99c818d59c3541a6a9361c2465826c37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737049423619
+status: 3
+tags: []
+user_id: unknown

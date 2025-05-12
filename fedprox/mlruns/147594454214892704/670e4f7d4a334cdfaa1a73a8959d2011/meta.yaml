@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/147594454214892704/670e4f7d4a334cdfaa1a73a8959d2011/artifacts
+end_time: 1737741822847
+entry_point_name: ''
+experiment_id: '147594454214892704'
+lifecycle_stage: active
+run_id: 670e4f7d4a334cdfaa1a73a8959d2011
+run_name: rebellious-ant-289
+run_uuid: 670e4f7d4a334cdfaa1a73a8959d2011
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737741395707
+status: 3
+tags: []
+user_id: unknown

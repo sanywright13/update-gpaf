@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c376c3bf9ee2440687ae5b76a52c29af/artifacts
+end_time: 1743679275678
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c376c3bf9ee2440687ae5b76a52c29af
+run_name: orderly-asp-332
+run_uuid: c376c3bf9ee2440687ae5b76a52c29af
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743679247833
+status: 3
+tags: []
+user_id: unknown

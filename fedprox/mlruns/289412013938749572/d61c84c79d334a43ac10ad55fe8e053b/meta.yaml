@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d61c84c79d334a43ac10ad55fe8e053b/artifacts
+end_time: 1746011614668
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d61c84c79d334a43ac10ad55fe8e053b
+run_name: masked-mink-642
+run_uuid: d61c84c79d334a43ac10ad55fe8e053b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011614627
+status: 4
+tags: []
+user_id: unknown

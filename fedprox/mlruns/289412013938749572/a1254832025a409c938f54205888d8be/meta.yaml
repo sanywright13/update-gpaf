@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a1254832025a409c938f54205888d8be/artifacts
+end_time: 1746018310031
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a1254832025a409c938f54205888d8be
+run_name: chill-hog-500
+run_uuid: a1254832025a409c938f54205888d8be
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018309626
+status: 3
+tags: []
+user_id: unknown

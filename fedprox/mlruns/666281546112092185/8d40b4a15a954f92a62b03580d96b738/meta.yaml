@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/8d40b4a15a954f92a62b03580d96b738/artifacts
+end_time: 1737469830061
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 8d40b4a15a954f92a62b03580d96b738
+run_name: awesome-cub-579
+run_uuid: 8d40b4a15a954f92a62b03580d96b738
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469830036
+status: 4
+tags: []
+user_id: unknown

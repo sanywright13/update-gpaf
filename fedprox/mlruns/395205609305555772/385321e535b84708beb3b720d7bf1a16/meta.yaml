@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/385321e535b84708beb3b720d7bf1a16/artifacts
+end_time: 1736889014863
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 385321e535b84708beb3b720d7bf1a16
+run_name: colorful-snail-183
+run_uuid: 385321e535b84708beb3b720d7bf1a16
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889014842
+status: 3
+tags: []
+user_id: unknown

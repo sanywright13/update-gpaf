@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/f39a8504e4544e308f347cf2eb7e3cd2/artifacts
+end_time: 1736889011857
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: f39a8504e4544e308f347cf2eb7e3cd2
+run_name: capricious-dog-319
+run_uuid: f39a8504e4544e308f347cf2eb7e3cd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736889011821
+status: 3
+tags: []
+user_id: unknown

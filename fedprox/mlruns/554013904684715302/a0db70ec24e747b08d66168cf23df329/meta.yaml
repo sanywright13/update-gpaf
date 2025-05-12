@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/a0db70ec24e747b08d66168cf23df329/artifacts
+end_time: 1737314405454
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: a0db70ec24e747b08d66168cf23df329
+run_name: popular-goose-375
+run_uuid: a0db70ec24e747b08d66168cf23df329
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737314404553
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/abf551aa78b74ba68d6520ec08cc8e3a/artifacts
+end_time: 1738857429126
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: abf551aa78b74ba68d6520ec08cc8e3a
+run_name: whimsical-vole-944
+run_uuid: abf551aa78b74ba68d6520ec08cc8e3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738857429097
+status: 3
+tags: []
+user_id: unknown

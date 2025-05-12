@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bdfda295f6db4e4498e400bfb11c5dcf/artifacts
+end_time: 1746011645841
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bdfda295f6db4e4498e400bfb11c5dcf
+run_name: invincible-roo-627
+run_uuid: bdfda295f6db4e4498e400bfb11c5dcf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011645802
+status: 4
+tags: []
+user_id: unknown

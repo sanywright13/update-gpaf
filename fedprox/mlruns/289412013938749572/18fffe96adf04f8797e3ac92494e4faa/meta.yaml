@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/18fffe96adf04f8797e3ac92494e4faa/artifacts
+end_time: 1746021920120
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 18fffe96adf04f8797e3ac92494e4faa
+run_name: fun-zebra-636
+run_uuid: 18fffe96adf04f8797e3ac92494e4faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021919716
+status: 3
+tags: []
+user_id: unknown

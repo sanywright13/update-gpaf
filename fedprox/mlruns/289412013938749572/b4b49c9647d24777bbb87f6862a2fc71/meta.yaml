@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b4b49c9647d24777bbb87f6862a2fc71/artifacts
+end_time: 1746013437486
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b4b49c9647d24777bbb87f6862a2fc71
+run_name: skillful-owl-382
+run_uuid: b4b49c9647d24777bbb87f6862a2fc71
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013437441
+status: 4
+tags: []
+user_id: unknown

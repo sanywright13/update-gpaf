@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c66651bec24e4e49b9c42c23d8963a81/artifacts
+end_time: 1746018338186
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c66651bec24e4e49b9c42c23d8963a81
+run_name: redolent-calf-42
+run_uuid: c66651bec24e4e49b9c42c23d8963a81
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018338101
+status: 4
+tags: []
+user_id: unknown

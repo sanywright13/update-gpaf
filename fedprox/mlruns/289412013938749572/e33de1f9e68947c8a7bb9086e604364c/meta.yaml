@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e33de1f9e68947c8a7bb9086e604364c/artifacts
+end_time: 1746011620560
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e33de1f9e68947c8a7bb9086e604364c
+run_name: placid-sheep-329
+run_uuid: e33de1f9e68947c8a7bb9086e604364c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011620519
+status: 4
+tags: []
+user_id: unknown

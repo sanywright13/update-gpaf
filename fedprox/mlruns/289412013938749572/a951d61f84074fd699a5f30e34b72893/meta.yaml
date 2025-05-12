@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/a951d61f84074fd699a5f30e34b72893/artifacts
+end_time: 1746019327403
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: a951d61f84074fd699a5f30e34b72893
+run_name: adventurous-hawk-40
+run_uuid: a951d61f84074fd699a5f30e34b72893
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019326974
+status: 3
+tags: []
+user_id: unknown

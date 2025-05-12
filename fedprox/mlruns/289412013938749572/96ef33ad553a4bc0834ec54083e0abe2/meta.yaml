@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/96ef33ad553a4bc0834ec54083e0abe2/artifacts
+end_time: 1746018649129
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 96ef33ad553a4bc0834ec54083e0abe2
+run_name: resilient-ape-603
+run_uuid: 96ef33ad553a4bc0834ec54083e0abe2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018649047
+status: 4
+tags: []
+user_id: unknown

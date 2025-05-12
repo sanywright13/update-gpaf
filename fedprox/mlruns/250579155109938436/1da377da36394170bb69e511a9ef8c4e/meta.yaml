@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/1da377da36394170bb69e511a9ef8c4e/artifacts
+end_time: 1738192025016
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 1da377da36394170bb69e511a9ef8c4e
+run_name: charming-shrike-933
+run_uuid: 1da377da36394170bb69e511a9ef8c4e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738192016893
+status: 3
+tags: []
+user_id: unknown

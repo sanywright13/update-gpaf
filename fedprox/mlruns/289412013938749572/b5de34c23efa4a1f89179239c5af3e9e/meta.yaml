@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b5de34c23efa4a1f89179239c5af3e9e/artifacts
+end_time: 1746013386076
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b5de34c23efa4a1f89179239c5af3e9e
+run_name: masked-crane-214
+run_uuid: b5de34c23efa4a1f89179239c5af3e9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013386029
+status: 4
+tags: []
+user_id: unknown

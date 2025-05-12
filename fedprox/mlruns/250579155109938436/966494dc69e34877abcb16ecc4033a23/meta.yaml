@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/966494dc69e34877abcb16ecc4033a23/artifacts
+end_time: 1738155234329
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 966494dc69e34877abcb16ecc4033a23
+run_name: ambitious-trout-972
+run_uuid: 966494dc69e34877abcb16ecc4033a23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738155234106
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d8cec8e1e2db452fb1051b8b11b4a4eb/artifacts
+end_time: 1746013373624
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d8cec8e1e2db452fb1051b8b11b4a4eb
+run_name: delicate-kit-758
+run_uuid: d8cec8e1e2db452fb1051b8b11b4a4eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013373579
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/2ce65fbd0b5347c69a1ba0e93031455a/artifacts
+end_time: 1746023720010
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 2ce65fbd0b5347c69a1ba0e93031455a
+run_name: calm-jay-13
+run_uuid: 2ce65fbd0b5347c69a1ba0e93031455a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023719606
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/9fd4d1a245ec41dfa7830ece676f1dab/artifacts
+end_time: 1737382488302
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 9fd4d1a245ec41dfa7830ece676f1dab
+run_name: persistent-zebra-639
+run_uuid: 9fd4d1a245ec41dfa7830ece676f1dab
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382488243
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0459aa7df5064837b61fca825d7775f4/artifacts
+end_time: 1746013443461
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0459aa7df5064837b61fca825d7775f4
+run_name: enthused-stork-17
+run_uuid: 0459aa7df5064837b61fca825d7775f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013443416
+status: 4
+tags: []
+user_id: unknown

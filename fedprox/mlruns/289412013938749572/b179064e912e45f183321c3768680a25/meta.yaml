@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b179064e912e45f183321c3768680a25/artifacts
+end_time: 1746019129500
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b179064e912e45f183321c3768680a25
+run_name: thundering-stork-550
+run_uuid: b179064e912e45f183321c3768680a25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019129046
+status: 3
+tags: []
+user_id: unknown

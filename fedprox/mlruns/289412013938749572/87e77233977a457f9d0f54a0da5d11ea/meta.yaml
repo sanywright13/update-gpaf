@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/87e77233977a457f9d0f54a0da5d11ea/artifacts
+end_time: 1746011629238
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 87e77233977a457f9d0f54a0da5d11ea
+run_name: whimsical-swan-880
+run_uuid: 87e77233977a457f9d0f54a0da5d11ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011629198
+status: 4
+tags: []
+user_id: unknown

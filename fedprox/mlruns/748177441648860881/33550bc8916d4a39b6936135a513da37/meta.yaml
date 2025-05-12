@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/33550bc8916d4a39b6936135a513da37/artifacts
+end_time: 1744627575047
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 33550bc8916d4a39b6936135a513da37
+run_name: loud-snail-738
+run_uuid: 33550bc8916d4a39b6936135a513da37
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744627563916
+status: 3
+tags: []
+user_id: unknown

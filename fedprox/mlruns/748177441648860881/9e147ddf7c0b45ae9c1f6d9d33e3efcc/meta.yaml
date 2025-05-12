@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/9e147ddf7c0b45ae9c1f6d9d33e3efcc/artifacts
+end_time: 1740080213272
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 9e147ddf7c0b45ae9c1f6d9d33e3efcc
+run_name: beautiful-cod-949
+run_uuid: 9e147ddf7c0b45ae9c1f6d9d33e3efcc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740080213141
+status: 3
+tags: []
+user_id: unknown

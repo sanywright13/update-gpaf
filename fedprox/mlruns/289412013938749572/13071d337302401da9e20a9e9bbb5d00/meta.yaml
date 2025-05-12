@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/13071d337302401da9e20a9e9bbb5d00/artifacts
+end_time: 1746011653234
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 13071d337302401da9e20a9e9bbb5d00
+run_name: colorful-asp-878
+run_uuid: 13071d337302401da9e20a9e9bbb5d00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011653190
+status: 4
+tags: []
+user_id: unknown

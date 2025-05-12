@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/22643083696a4be1a1a8698929b287df/artifacts
+end_time: 1736888368256
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 22643083696a4be1a1a8698929b287df
+run_name: handsome-grouse-76
+run_uuid: 22643083696a4be1a1a8698929b287df
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888368224
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/2cf9643bdeb24fd09868d656d7f92d8e/artifacts
+end_time: 1737567644162
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 2cf9643bdeb24fd09868d656d7f92d8e
+run_name: righteous-bee-764
+run_uuid: 2cf9643bdeb24fd09868d656d7f92d8e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737567644136
+status: 3
+tags: []
+user_id: unknown

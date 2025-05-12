@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8b1b7ecd92d2430a8d6d49170ba10610/artifacts
+end_time: 1746019073736
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8b1b7ecd92d2430a8d6d49170ba10610
+run_name: polite-trout-361
+run_uuid: 8b1b7ecd92d2430a8d6d49170ba10610
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019073654
+status: 4
+tags: []
+user_id: unknown

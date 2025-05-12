@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e2b02bf40cf84373ab159bc3f2886028/artifacts
+end_time: 1743686656656
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e2b02bf40cf84373ab159bc3f2886028
+run_name: enchanting-trout-547
+run_uuid: e2b02bf40cf84373ab159bc3f2886028
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743685306621
+status: 3
+tags: []
+user_id: unknown

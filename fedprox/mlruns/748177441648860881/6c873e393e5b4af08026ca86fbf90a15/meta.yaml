@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6c873e393e5b4af08026ca86fbf90a15/artifacts
+end_time: 1740079252557
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6c873e393e5b4af08026ca86fbf90a15
+run_name: abundant-wolf-411
+run_uuid: 6c873e393e5b4af08026ca86fbf90a15
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740079236852
+status: 3
+tags: []
+user_id: unknown

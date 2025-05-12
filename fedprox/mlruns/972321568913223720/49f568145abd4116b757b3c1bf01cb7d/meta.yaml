@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/972321568913223720/49f568145abd4116b757b3c1bf01cb7d/artifacts
+end_time: 1737049795939
+entry_point_name: ''
+experiment_id: '972321568913223720'
+lifecycle_stage: active
+run_id: 49f568145abd4116b757b3c1bf01cb7d
+run_name: receptive-snake-809
+run_uuid: 49f568145abd4116b757b3c1bf01cb7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737049795461
+status: 3
+tags: []
+user_id: unknown

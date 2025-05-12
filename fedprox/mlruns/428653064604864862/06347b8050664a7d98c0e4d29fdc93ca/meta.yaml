@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/06347b8050664a7d98c0e4d29fdc93ca/artifacts
+end_time: 1737563081617
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 06347b8050664a7d98c0e4d29fdc93ca
+run_name: suave-mule-236
+run_uuid: 06347b8050664a7d98c0e4d29fdc93ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563081593
+status: 3
+tags: []
+user_id: unknown

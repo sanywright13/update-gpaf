@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/07300a3f48634c7a88a5a3c3b9d34352/artifacts
+end_time: 1737297305527
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: 07300a3f48634c7a88a5a3c3b9d34352
+run_name: blushing-roo-513
+run_uuid: 07300a3f48634c7a88a5a3c3b9d34352
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297305506
+status: 3
+tags: []
+user_id: unknown

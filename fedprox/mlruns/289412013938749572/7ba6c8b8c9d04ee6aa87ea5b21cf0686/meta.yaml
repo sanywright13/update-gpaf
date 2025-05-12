@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7ba6c8b8c9d04ee6aa87ea5b21cf0686/artifacts
+end_time: 1746013400804
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7ba6c8b8c9d04ee6aa87ea5b21cf0686
+run_name: rogue-frog-613
+run_uuid: 7ba6c8b8c9d04ee6aa87ea5b21cf0686
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013400757
+status: 4
+tags: []
+user_id: unknown

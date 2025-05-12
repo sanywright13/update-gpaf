@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/8e6f68df4fe247a49512047113ccc152/artifacts
+end_time: 1743677233518
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 8e6f68df4fe247a49512047113ccc152
+run_name: bold-ant-771
+run_uuid: 8e6f68df4fe247a49512047113ccc152
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743677232955
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/24a90e3f028f4221baff9c52f50498d9/artifacts
+end_time: 1739994904788
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 24a90e3f028f4221baff9c52f50498d9
+run_name: brawny-elk-627
+run_uuid: 24a90e3f028f4221baff9c52f50498d9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739985288604
+status: 3
+tags: []
+user_id: unknown

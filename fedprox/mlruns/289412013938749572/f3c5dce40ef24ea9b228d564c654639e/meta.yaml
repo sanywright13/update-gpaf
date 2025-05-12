@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f3c5dce40ef24ea9b228d564c654639e/artifacts
+end_time: 1746011610381
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f3c5dce40ef24ea9b228d564c654639e
+run_name: dapper-hound-720
+run_uuid: f3c5dce40ef24ea9b228d564c654639e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011610344
+status: 4
+tags: []
+user_id: unknown

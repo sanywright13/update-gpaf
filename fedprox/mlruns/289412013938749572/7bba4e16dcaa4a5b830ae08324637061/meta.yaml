@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7bba4e16dcaa4a5b830ae08324637061/artifacts
+end_time: 1746013416775
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7bba4e16dcaa4a5b830ae08324637061
+run_name: amusing-zebra-463
+run_uuid: 7bba4e16dcaa4a5b830ae08324637061
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013416726
+status: 4
+tags: []
+user_id: unknown

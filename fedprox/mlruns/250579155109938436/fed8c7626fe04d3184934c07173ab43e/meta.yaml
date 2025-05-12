@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/fed8c7626fe04d3184934c07173ab43e/artifacts
+end_time: 1738274479259
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: fed8c7626fe04d3184934c07173ab43e
+run_name: nebulous-shrew-171
+run_uuid: fed8c7626fe04d3184934c07173ab43e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738274479146
+status: 3
+tags: []
+user_id: unknown

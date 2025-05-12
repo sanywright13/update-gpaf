@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/adc040266d3f43809b58f0ef5d847111/artifacts
+end_time: 1746013382044
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: adc040266d3f43809b58f0ef5d847111
+run_name: serious-crab-568
+run_uuid: adc040266d3f43809b58f0ef5d847111
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013382003
+status: 4
+tags: []
+user_id: unknown

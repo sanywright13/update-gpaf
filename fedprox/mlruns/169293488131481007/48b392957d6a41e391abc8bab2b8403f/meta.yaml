@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/48b392957d6a41e391abc8bab2b8403f/artifacts
+end_time: 1737382488138
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 48b392957d6a41e391abc8bab2b8403f
+run_name: mercurial-mink-570
+run_uuid: 48b392957d6a41e391abc8bab2b8403f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737382488097
+status: 3
+tags: []
+user_id: unknown

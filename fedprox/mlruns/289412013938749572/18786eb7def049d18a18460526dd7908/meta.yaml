@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/18786eb7def049d18a18460526dd7908/artifacts
+end_time: 1746023691653
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 18786eb7def049d18a18460526dd7908
+run_name: spiffy-goat-813
+run_uuid: 18786eb7def049d18a18460526dd7908
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023691257
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f945a6ae6f5043d6a0a301f66b0a2bfb/artifacts
+end_time: 1746018817440
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f945a6ae6f5043d6a0a301f66b0a2bfb
+run_name: wise-skunk-374
+run_uuid: f945a6ae6f5043d6a0a301f66b0a2bfb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018817009
+status: 3
+tags: []
+user_id: unknown

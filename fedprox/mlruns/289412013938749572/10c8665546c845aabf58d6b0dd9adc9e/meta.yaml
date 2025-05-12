@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/10c8665546c845aabf58d6b0dd9adc9e/artifacts
+end_time: 1746023768583
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 10c8665546c845aabf58d6b0dd9adc9e
+run_name: awesome-ray-453
+run_uuid: 10c8665546c845aabf58d6b0dd9adc9e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023768153
+status: 3
+tags: []
+user_id: unknown

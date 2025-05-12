@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/95fb66c993a8480dad16d36c92ba3cdc/artifacts
+end_time: 1746023773168
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 95fb66c993a8480dad16d36c92ba3cdc
+run_name: trusting-sloth-322
+run_uuid: 95fb66c993a8480dad16d36c92ba3cdc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023773069
+status: 4
+tags: []
+user_id: unknown

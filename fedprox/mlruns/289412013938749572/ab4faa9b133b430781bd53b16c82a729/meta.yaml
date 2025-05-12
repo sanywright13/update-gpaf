@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ab4faa9b133b430781bd53b16c82a729/artifacts
+end_time: 1746023750137
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ab4faa9b133b430781bd53b16c82a729
+run_name: adorable-shark-524
+run_uuid: ab4faa9b133b430781bd53b16c82a729
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023749744
+status: 3
+tags: []
+user_id: unknown

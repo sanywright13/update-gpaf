@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/f0acb6721f0c431facc2ff9336f8f098/artifacts
+end_time: 1746018195739
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: f0acb6721f0c431facc2ff9336f8f098
+run_name: mercurial-slug-843
+run_uuid: f0acb6721f0c431facc2ff9336f8f098
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018195352
+status: 3
+tags: []
+user_id: unknown

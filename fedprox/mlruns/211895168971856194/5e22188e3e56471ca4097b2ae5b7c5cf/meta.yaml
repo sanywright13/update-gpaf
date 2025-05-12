@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/211895168971856194/5e22188e3e56471ca4097b2ae5b7c5cf/artifacts
+end_time: 1737907664720
+entry_point_name: ''
+experiment_id: '211895168971856194'
+lifecycle_stage: active
+run_id: 5e22188e3e56471ca4097b2ae5b7c5cf
+run_name: efficient-newt-858
+run_uuid: 5e22188e3e56471ca4097b2ae5b7c5cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737907589897
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/49fcaf086f2b4897a7b204dc0e204c3c/artifacts
+end_time: 1738253317839
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 49fcaf086f2b4897a7b204dc0e204c3c
+run_name: gaudy-toad-891
+run_uuid: 49fcaf086f2b4897a7b204dc0e204c3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738253308262
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/9b58b23c0e4244adaea2a9648feb2775/artifacts
+end_time: 1737469825216
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 9b58b23c0e4244adaea2a9648feb2775
+run_name: whimsical-hawk-254
+run_uuid: 9b58b23c0e4244adaea2a9648feb2775
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469825176
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d5cf56667e124e7ba687154a2f0880ee/artifacts
+end_time: 1746013451664
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d5cf56667e124e7ba687154a2f0880ee
+run_name: rumbling-trout-596
+run_uuid: d5cf56667e124e7ba687154a2f0880ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013451612
+status: 4
+tags: []
+user_id: unknown

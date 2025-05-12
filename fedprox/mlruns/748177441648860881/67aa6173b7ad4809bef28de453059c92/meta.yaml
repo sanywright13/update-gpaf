@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/67aa6173b7ad4809bef28de453059c92/artifacts
+end_time: 1739976039935
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 67aa6173b7ad4809bef28de453059c92
+run_name: efficient-dove-567
+run_uuid: 67aa6173b7ad4809bef28de453059c92
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1739975985093
+status: 3
+tags: []
+user_id: unknown

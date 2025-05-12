@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d9009f4755454ec2afc692ec2e25e910/artifacts
+end_time: 1746011576012
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d9009f4755454ec2afc692ec2e25e910
+run_name: flawless-ray-862
+run_uuid: d9009f4755454ec2afc692ec2e25e910
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011575972
+status: 4
+tags: []
+user_id: unknown

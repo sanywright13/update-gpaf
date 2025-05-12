@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8565b678502d4f61a6b9a3847ac7a3aa/artifacts
+end_time: 1746011630359
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8565b678502d4f61a6b9a3847ac7a3aa
+run_name: charming-penguin-280
+run_uuid: 8565b678502d4f61a6b9a3847ac7a3aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011630311
+status: 4
+tags: []
+user_id: unknown

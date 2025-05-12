@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/12ced2ee429b4279b324fcf51ecd5f56/artifacts
+end_time: 1746021948197
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 12ced2ee429b4279b324fcf51ecd5f56
+run_name: brawny-cow-173
+run_uuid: 12ced2ee429b4279b324fcf51ecd5f56
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021948081
+status: 4
+tags: []
+user_id: unknown

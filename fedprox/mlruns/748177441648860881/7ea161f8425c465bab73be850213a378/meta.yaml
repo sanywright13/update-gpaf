@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/7ea161f8425c465bab73be850213a378/artifacts
+end_time: 1744483974453
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 7ea161f8425c465bab73be850213a378
+run_name: aged-mole-790
+run_uuid: 7ea161f8425c465bab73be850213a378
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483973687
+status: 3
+tags: []
+user_id: unknown

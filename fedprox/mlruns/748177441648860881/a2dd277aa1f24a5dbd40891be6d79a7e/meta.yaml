@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/a2dd277aa1f24a5dbd40891be6d79a7e/artifacts
+end_time: 1744577548257
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: a2dd277aa1f24a5dbd40891be6d79a7e
+run_name: hilarious-carp-784
+run_uuid: a2dd277aa1f24a5dbd40891be6d79a7e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744577548123
+status: 3
+tags: []
+user_id: unknown

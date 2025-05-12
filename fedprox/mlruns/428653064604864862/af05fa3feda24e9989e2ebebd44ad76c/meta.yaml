@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/af05fa3feda24e9989e2ebebd44ad76c/artifacts
+end_time: 1737564135318
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: af05fa3feda24e9989e2ebebd44ad76c
+run_name: skittish-fawn-512
+run_uuid: af05fa3feda24e9989e2ebebd44ad76c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737564135294
+status: 3
+tags: []
+user_id: unknown

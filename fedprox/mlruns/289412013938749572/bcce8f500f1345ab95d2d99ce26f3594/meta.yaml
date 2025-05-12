@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bcce8f500f1345ab95d2d99ce26f3594/artifacts
+end_time: 1746013403229
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bcce8f500f1345ab95d2d99ce26f3594
+run_name: bright-colt-346
+run_uuid: bcce8f500f1345ab95d2d99ce26f3594
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013403180
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6d45e54da6d94ded850bb769a9d833b8/artifacts
+end_time: 1744626680614
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6d45e54da6d94ded850bb769a9d833b8
+run_name: aged-bird-834
+run_uuid: 6d45e54da6d94ded850bb769a9d833b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744626672050
+status: 3
+tags: []
+user_id: unknown

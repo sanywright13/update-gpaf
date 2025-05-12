@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/f24bd045834f43de8c802bb030ed5f95/artifacts
+end_time: 1738862385288
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: f24bd045834f43de8c802bb030ed5f95
+run_name: incongruous-gnu-541
+run_uuid: f24bd045834f43de8c802bb030ed5f95
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738862385265
+status: 4
+tags: []
+user_id: unknown

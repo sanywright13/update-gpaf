@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/13f176e4db0941a48fd44bb1d59d1ab9/artifacts
+end_time: 1743634768792
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 13f176e4db0941a48fd44bb1d59d1ab9
+run_name: lyrical-frog-538
+run_uuid: 13f176e4db0941a48fd44bb1d59d1ab9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743634754126
+status: 3
+tags: []
+user_id: unknown

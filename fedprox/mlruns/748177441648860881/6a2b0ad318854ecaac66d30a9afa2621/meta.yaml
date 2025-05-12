@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6a2b0ad318854ecaac66d30a9afa2621/artifacts
+end_time: 1744483925400
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6a2b0ad318854ecaac66d30a9afa2621
+run_name: rogue-shrew-552
+run_uuid: 6a2b0ad318854ecaac66d30a9afa2621
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744483924641
+status: 3
+tags: []
+user_id: unknown

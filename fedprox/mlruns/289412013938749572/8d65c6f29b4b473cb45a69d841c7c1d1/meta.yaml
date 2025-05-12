@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8d65c6f29b4b473cb45a69d841c7c1d1/artifacts
+end_time: 1746013434844
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8d65c6f29b4b473cb45a69d841c7c1d1
+run_name: brawny-lynx-879
+run_uuid: 8d65c6f29b4b473cb45a69d841c7c1d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013434800
+status: 4
+tags: []
+user_id: unknown

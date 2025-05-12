@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/c8b2f281c7d4420fb5c0191cf352582b/artifacts
+end_time: 1744460079394
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: c8b2f281c7d4420fb5c0191cf352582b
+run_name: serious-deer-331
+run_uuid: c8b2f281c7d4420fb5c0191cf352582b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744458798287
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/6a95bf60ceba43249db92e3f81e56cc9/artifacts
+end_time: 1744566696611
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 6a95bf60ceba43249db92e3f81e56cc9
+run_name: polite-shoat-385
+run_uuid: 6a95bf60ceba43249db92e3f81e56cc9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744564988014
+status: 3
+tags: []
+user_id: unknown

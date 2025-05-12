@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/4a00370d3f984e3f87ab6f6e9f7e6bc3/artifacts
+end_time: 1737574349019
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 4a00370d3f984e3f87ab6f6e9f7e6bc3
+run_name: defiant-worm-69
+run_uuid: 4a00370d3f984e3f87ab6f6e9f7e6bc3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737574348980
+status: 3
+tags: []
+user_id: unknown

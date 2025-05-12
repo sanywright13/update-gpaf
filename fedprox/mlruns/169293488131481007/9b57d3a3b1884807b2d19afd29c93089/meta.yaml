@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/9b57d3a3b1884807b2d19afd29c93089/artifacts
+end_time: 1737390516554
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 9b57d3a3b1884807b2d19afd29c93089
+run_name: awesome-quail-445
+run_uuid: 9b57d3a3b1884807b2d19afd29c93089
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737390391185
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e7fe2261dd1a400aa1b2bbf287a6fbee/artifacts
+end_time: 1746023731564
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e7fe2261dd1a400aa1b2bbf287a6fbee
+run_name: worried-fox-507
+run_uuid: e7fe2261dd1a400aa1b2bbf287a6fbee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023731163
+status: 3
+tags: []
+user_id: unknown

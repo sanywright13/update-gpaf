@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/484087042231123480/e9a06c811ac349afa2fbf401d1870672/artifacts
+end_time: 1737737147486
+entry_point_name: ''
+experiment_id: '484087042231123480'
+lifecycle_stage: active
+run_id: e9a06c811ac349afa2fbf401d1870672
+run_name: stylish-worm-141
+run_uuid: e9a06c811ac349afa2fbf401d1870672
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737736741180
+status: 3
+tags: []
+user_id: unknown

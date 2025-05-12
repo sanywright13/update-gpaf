@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1ba3ff2a5305405c9e2b58b949c31e00/artifacts
+end_time: 1746011579522
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1ba3ff2a5305405c9e2b58b949c31e00
+run_name: powerful-midge-406
+run_uuid: 1ba3ff2a5305405c9e2b58b949c31e00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011579483
+status: 4
+tags: []
+user_id: unknown

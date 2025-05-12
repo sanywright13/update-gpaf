@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/16e926e098b947058889421b3672a502/artifacts
+end_time: 1738002364323
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 16e926e098b947058889421b3672a502
+run_name: intrigued-steed-421
+run_uuid: 16e926e098b947058889421b3672a502
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738002323023
+status: 3
+tags: []
+user_id: unknown

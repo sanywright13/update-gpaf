@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/7fd7e33178d34a21ba7145e6e905e04f/artifacts
+end_time: 1746013360924
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 7fd7e33178d34a21ba7145e6e905e04f
+run_name: enchanting-fawn-427
+run_uuid: 7fd7e33178d34a21ba7145e6e905e04f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013360883
+status: 4
+tags: []
+user_id: unknown

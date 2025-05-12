@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/666281546112092185/63804ab609064246af54bbb1c39bd2c9/artifacts
+end_time: 1737469828505
+entry_point_name: ''
+experiment_id: '666281546112092185'
+lifecycle_stage: active
+run_id: 63804ab609064246af54bbb1c39bd2c9
+run_name: bold-dolphin-550
+run_uuid: 63804ab609064246af54bbb1c39bd2c9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737469828459
+status: 4
+tags: []
+user_id: unknown

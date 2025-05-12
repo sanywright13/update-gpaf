@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/dbfe23fc8e5f4b3680073fec12a355ff/artifacts
+end_time: 1737566130049
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: dbfe23fc8e5f4b3680073fec12a355ff
+run_name: powerful-carp-0
+run_uuid: dbfe23fc8e5f4b3680073fec12a355ff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566130010
+status: 3
+tags: []
+user_id: unknown

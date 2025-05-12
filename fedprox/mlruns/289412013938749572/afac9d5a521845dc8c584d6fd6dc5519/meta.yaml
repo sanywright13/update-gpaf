@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/afac9d5a521845dc8c584d6fd6dc5519/artifacts
+end_time: 1746023756741
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: afac9d5a521845dc8c584d6fd6dc5519
+run_name: adorable-hound-262
+run_uuid: afac9d5a521845dc8c584d6fd6dc5519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023756335
+status: 3
+tags: []
+user_id: unknown

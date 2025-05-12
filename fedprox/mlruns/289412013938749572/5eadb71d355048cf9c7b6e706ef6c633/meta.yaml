@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/5eadb71d355048cf9c7b6e706ef6c633/artifacts
+end_time: 1746013431784
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 5eadb71d355048cf9c7b6e706ef6c633
+run_name: able-bee-752
+run_uuid: 5eadb71d355048cf9c7b6e706ef6c633
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013431732
+status: 4
+tags: []
+user_id: unknown

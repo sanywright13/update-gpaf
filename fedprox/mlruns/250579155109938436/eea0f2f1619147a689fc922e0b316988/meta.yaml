@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/eea0f2f1619147a689fc922e0b316988/artifacts
+end_time: 1738254845669
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: eea0f2f1619147a689fc922e0b316988
+run_name: redolent-zebra-190
+run_uuid: eea0f2f1619147a689fc922e0b316988
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738254837294
+status: 3
+tags: []
+user_id: unknown

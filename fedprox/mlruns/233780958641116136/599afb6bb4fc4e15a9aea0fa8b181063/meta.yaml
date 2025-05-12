@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/599afb6bb4fc4e15a9aea0fa8b181063/artifacts
+end_time: 1738869112899
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 599afb6bb4fc4e15a9aea0fa8b181063
+run_name: nervous-shad-602
+run_uuid: 599afb6bb4fc4e15a9aea0fa8b181063
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738868615326
+status: 3
+tags: []
+user_id: unknown

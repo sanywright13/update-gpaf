@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/324a798a47d14d0682ad0cf7b12a0c50/artifacts
+end_time: 1746021835736
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 324a798a47d14d0682ad0cf7b12a0c50
+run_name: efficient-pug-343
+run_uuid: 324a798a47d14d0682ad0cf7b12a0c50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021835292
+status: 3
+tags: []
+user_id: unknown

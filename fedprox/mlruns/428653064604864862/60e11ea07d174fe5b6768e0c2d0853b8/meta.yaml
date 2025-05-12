@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/60e11ea07d174fe5b6768e0c2d0853b8/artifacts
+end_time: 1737543974057
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 60e11ea07d174fe5b6768e0c2d0853b8
+run_name: smiling-goose-955
+run_uuid: 60e11ea07d174fe5b6768e0c2d0853b8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737543661706
+status: 3
+tags: []
+user_id: unknown

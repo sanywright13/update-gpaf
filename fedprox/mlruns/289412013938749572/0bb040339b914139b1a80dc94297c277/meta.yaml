@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0bb040339b914139b1a80dc94297c277/artifacts
+end_time: 1746013418751
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0bb040339b914139b1a80dc94297c277
+run_name: useful-hare-298
+run_uuid: 0bb040339b914139b1a80dc94297c277
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013418707
+status: 4
+tags: []
+user_id: unknown

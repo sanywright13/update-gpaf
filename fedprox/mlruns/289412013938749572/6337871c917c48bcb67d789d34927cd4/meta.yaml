@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6337871c917c48bcb67d789d34927cd4/artifacts
+end_time: 1746011577350
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6337871c917c48bcb67d789d34927cd4
+run_name: omniscient-stag-210
+run_uuid: 6337871c917c48bcb67d789d34927cd4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011577311
+status: 4
+tags: []
+user_id: unknown

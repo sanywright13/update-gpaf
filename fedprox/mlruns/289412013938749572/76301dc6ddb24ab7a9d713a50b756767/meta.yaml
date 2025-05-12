@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/76301dc6ddb24ab7a9d713a50b756767/artifacts
+end_time: 1746023758847
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 76301dc6ddb24ab7a9d713a50b756767
+run_name: welcoming-pug-108
+run_uuid: 76301dc6ddb24ab7a9d713a50b756767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023758749
+status: 4
+tags: []
+user_id: unknown

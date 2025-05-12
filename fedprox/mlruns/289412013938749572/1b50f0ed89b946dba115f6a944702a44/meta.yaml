@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1b50f0ed89b946dba115f6a944702a44/artifacts
+end_time: 1746011637774
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1b50f0ed89b946dba115f6a944702a44
+run_name: bouncy-kit-624
+run_uuid: 1b50f0ed89b946dba115f6a944702a44
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011637731
+status: 4
+tags: []
+user_id: unknown

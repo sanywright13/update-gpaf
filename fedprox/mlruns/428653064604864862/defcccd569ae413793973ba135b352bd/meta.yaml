@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/defcccd569ae413793973ba135b352bd/artifacts
+end_time: 1737566978162
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: defcccd569ae413793973ba135b352bd
+run_name: smiling-robin-823
+run_uuid: defcccd569ae413793973ba135b352bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566978137
+status: 3
+tags: []
+user_id: unknown

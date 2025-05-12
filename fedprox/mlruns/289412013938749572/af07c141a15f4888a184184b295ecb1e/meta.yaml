@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/af07c141a15f4888a184184b295ecb1e/artifacts
+end_time: 1746011607136
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: af07c141a15f4888a184184b295ecb1e
+run_name: wise-mole-7
+run_uuid: af07c141a15f4888a184184b295ecb1e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011607094
+status: 4
+tags: []
+user_id: unknown

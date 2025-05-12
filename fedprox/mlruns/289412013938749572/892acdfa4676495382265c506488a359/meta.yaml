@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/892acdfa4676495382265c506488a359/artifacts
+end_time: 1746013355468
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 892acdfa4676495382265c506488a359
+run_name: nebulous-chimp-413
+run_uuid: 892acdfa4676495382265c506488a359
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013355424
+status: 4
+tags: []
+user_id: unknown

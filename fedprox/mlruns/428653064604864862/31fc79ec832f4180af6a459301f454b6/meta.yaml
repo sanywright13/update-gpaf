@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/31fc79ec832f4180af6a459301f454b6/artifacts
+end_time: 1737638459212
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 31fc79ec832f4180af6a459301f454b6
+run_name: smiling-rook-762
+run_uuid: 31fc79ec832f4180af6a459301f454b6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737638179139
+status: 3
+tags: []
+user_id: unknown

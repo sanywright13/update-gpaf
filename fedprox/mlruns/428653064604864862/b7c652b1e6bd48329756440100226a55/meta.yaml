@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/b7c652b1e6bd48329756440100226a55/artifacts
+end_time: 1737566811376
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: b7c652b1e6bd48329756440100226a55
+run_name: nimble-loon-135
+run_uuid: b7c652b1e6bd48329756440100226a55
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737566811339
+status: 3
+tags: []
+user_id: unknown

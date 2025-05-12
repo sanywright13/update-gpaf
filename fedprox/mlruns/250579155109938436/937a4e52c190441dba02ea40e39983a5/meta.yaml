@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/937a4e52c190441dba02ea40e39983a5/artifacts
+end_time: 1738158507084
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: 937a4e52c190441dba02ea40e39983a5
+run_name: aged-carp-26
+run_uuid: 937a4e52c190441dba02ea40e39983a5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738158506825
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/b4250a34272c4c79a27d5f2d1f7a8077/artifacts
+end_time: 1746023742916
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: b4250a34272c4c79a27d5f2d1f7a8077
+run_name: luxuriant-horse-610
+run_uuid: b4250a34272c4c79a27d5f2d1f7a8077
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023742505
+status: 3
+tags: []
+user_id: unknown

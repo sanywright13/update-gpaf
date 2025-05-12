@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/554013904684715302/14f3500b9a20434ea90bc335dd4b9890/artifacts
+end_time: 1737297047294
+entry_point_name: ''
+experiment_id: '554013904684715302'
+lifecycle_stage: active
+run_id: 14f3500b9a20434ea90bc335dd4b9890
+run_name: aged-roo-860
+run_uuid: 14f3500b9a20434ea90bc335dd4b9890
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737297047256
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/6f4170a35a764408bdbe59030487c48a/artifacts
+end_time: 1746021834147
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 6f4170a35a764408bdbe59030487c48a
+run_name: bemused-doe-333
+run_uuid: 6f4170a35a764408bdbe59030487c48a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746021834051
+status: 4
+tags: []
+user_id: unknown

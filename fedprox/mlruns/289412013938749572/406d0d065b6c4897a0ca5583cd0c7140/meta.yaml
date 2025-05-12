@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/406d0d065b6c4897a0ca5583cd0c7140/artifacts
+end_time: 1746023777704
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 406d0d065b6c4897a0ca5583cd0c7140
+run_name: spiffy-shrew-723
+run_uuid: 406d0d065b6c4897a0ca5583cd0c7140
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023777587
+status: 4
+tags: []
+user_id: unknown

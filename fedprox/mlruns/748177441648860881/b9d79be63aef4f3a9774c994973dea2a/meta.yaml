@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/b9d79be63aef4f3a9774c994973dea2a/artifacts
+end_time: 1744491488475
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: b9d79be63aef4f3a9774c994973dea2a
+run_name: fearless-robin-979
+run_uuid: b9d79be63aef4f3a9774c994973dea2a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744491488016
+status: 3
+tags: []
+user_id: unknown

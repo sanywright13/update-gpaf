@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/147361d5cd1b48fab6eb7e196c7494f0/artifacts
+end_time: 1746019327055
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 147361d5cd1b48fab6eb7e196c7494f0
+run_name: bright-fawn-934
+run_uuid: 147361d5cd1b48fab6eb7e196c7494f0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019326973
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/681cec49cdcf40acbc4ecd61a563637b/artifacts
+end_time: 1740078385693
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 681cec49cdcf40acbc4ecd61a563637b
+run_name: dashing-koi-178
+run_uuid: 681cec49cdcf40acbc4ecd61a563637b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740078385561
+status: 3
+tags: []
+user_id: unknown

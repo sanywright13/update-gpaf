@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/ac3d7664bfbc49b3bd10b585b332d049/artifacts
+end_time: 1738273741457
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: ac3d7664bfbc49b3bd10b585b332d049
+run_name: blushing-kit-901
+run_uuid: ac3d7664bfbc49b3bd10b585b332d049
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738273741399
+status: 3
+tags: []
+user_id: unknown

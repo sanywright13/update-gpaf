@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/cb6e994ea9de4d5c924bf238a1e03320/artifacts
+end_time: 1746023794166
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: cb6e994ea9de4d5c924bf238a1e03320
+run_name: amusing-gnat-772
+run_uuid: cb6e994ea9de4d5c924bf238a1e03320
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023793744
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0e3876d19adf475f833a4cb6d9b02125/artifacts
+end_time: 1746019018380
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0e3876d19adf475f833a4cb6d9b02125
+run_name: silent-kit-852
+run_uuid: 0e3876d19adf475f833a4cb6d9b02125
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746019017966
+status: 3
+tags: []
+user_id: unknown

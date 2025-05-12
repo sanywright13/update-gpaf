@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/297696be2bfe4fc696f2c314b558acfe/artifacts
+end_time: 1746023786599
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 297696be2bfe4fc696f2c314b558acfe
+run_name: capable-wasp-752
+run_uuid: 297696be2bfe4fc696f2c314b558acfe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023786193
+status: 3
+tags: []
+user_id: unknown

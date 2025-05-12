@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/169293488131481007/960c7bec7d9b4b4b94940b9c5201f8d7/artifacts
+end_time: 1737391027081
+entry_point_name: ''
+experiment_id: '169293488131481007'
+lifecycle_stage: active
+run_id: 960c7bec7d9b4b4b94940b9c5201f8d7
+run_name: gaudy-midge-741
+run_uuid: 960c7bec7d9b4b4b94940b9c5201f8d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737391026066
+status: 3
+tags: []
+user_id: unknown

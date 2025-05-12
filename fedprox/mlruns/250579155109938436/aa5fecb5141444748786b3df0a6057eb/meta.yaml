@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/aa5fecb5141444748786b3df0a6057eb/artifacts
+end_time: 1738258049230
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: aa5fecb5141444748786b3df0a6057eb
+run_name: bittersweet-boar-761
+run_uuid: aa5fecb5141444748786b3df0a6057eb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738258049150
+status: 3
+tags: []
+user_id: unknown

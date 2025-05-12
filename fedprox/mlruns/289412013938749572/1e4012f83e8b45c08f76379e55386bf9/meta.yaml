@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1e4012f83e8b45c08f76379e55386bf9/artifacts
+end_time: 1746023706800
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1e4012f83e8b45c08f76379e55386bf9
+run_name: thundering-zebra-772
+run_uuid: 1e4012f83e8b45c08f76379e55386bf9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023706387
+status: 3
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/70dbe3a108044ad1964de37ba2473c5c/artifacts
+end_time: 1746018109970
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 70dbe3a108044ad1964de37ba2473c5c
+run_name: popular-finch-920
+run_uuid: 70dbe3a108044ad1964de37ba2473c5c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018109560
+status: 3
+tags: []
+user_id: unknown

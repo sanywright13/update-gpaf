@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0a5763219f8948408aee0f79df816b33/artifacts
+end_time: 1746018734664
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0a5763219f8948408aee0f79df816b33
+run_name: bright-whale-768
+run_uuid: 0a5763219f8948408aee0f79df816b33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018734253
+status: 3
+tags: []
+user_id: unknown

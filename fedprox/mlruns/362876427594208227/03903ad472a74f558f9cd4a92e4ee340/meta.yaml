@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/03903ad472a74f558f9cd4a92e4ee340/artifacts
+end_time: 1738006009833
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 03903ad472a74f558f9cd4a92e4ee340
+run_name: incongruous-shad-569
+run_uuid: 03903ad472a74f558f9cd4a92e4ee340
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738006008205
+status: 3
+tags: []
+user_id: unknown

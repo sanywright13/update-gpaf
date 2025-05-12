@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e658d51be47e40c9af7964400dd889dc/artifacts
+end_time: 1746017940332
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e658d51be47e40c9af7964400dd889dc
+run_name: fun-vole-697
+run_uuid: e658d51be47e40c9af7964400dd889dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746017939916
+status: 3
+tags: []
+user_id: unknown

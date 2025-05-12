@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/2a43b662199f45839043020c49e87ca2/artifacts
+end_time: 1744468159520
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 2a43b662199f45839043020c49e87ca2
+run_name: efficient-fish-279
+run_uuid: 2a43b662199f45839043020c49e87ca2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744467941264
+status: 3
+tags: []
+user_id: unknown

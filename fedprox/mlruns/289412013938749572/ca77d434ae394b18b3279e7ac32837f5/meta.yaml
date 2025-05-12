@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/ca77d434ae394b18b3279e7ac32837f5/artifacts
+end_time: 1746011580276
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: ca77d434ae394b18b3279e7ac32837f5
+run_name: agreeable-eel-151
+run_uuid: ca77d434ae394b18b3279e7ac32837f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011580238
+status: 4
+tags: []
+user_id: unknown

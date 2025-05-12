@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4d33be5d9206451d868577663e700852/artifacts
+end_time: 1746013396844
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4d33be5d9206451d868577663e700852
+run_name: abundant-ray-994
+run_uuid: 4d33be5d9206451d868577663e700852
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013396801
+status: 4
+tags: []
+user_id: unknown

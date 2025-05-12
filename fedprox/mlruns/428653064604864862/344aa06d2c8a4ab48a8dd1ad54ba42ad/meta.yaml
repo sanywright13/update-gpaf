@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/428653064604864862/344aa06d2c8a4ab48a8dd1ad54ba42ad/artifacts
+end_time: 1737563082096
+entry_point_name: ''
+experiment_id: '428653064604864862'
+lifecycle_stage: active
+run_id: 344aa06d2c8a4ab48a8dd1ad54ba42ad
+run_name: rambunctious-bat-690
+run_uuid: 344aa06d2c8a4ab48a8dd1ad54ba42ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737563082072
+status: 3
+tags: []
+user_id: unknown

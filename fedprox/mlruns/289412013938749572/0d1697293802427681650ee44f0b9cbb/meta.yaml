@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0d1697293802427681650ee44f0b9cbb/artifacts
+end_time: 1746011588120
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0d1697293802427681650ee44f0b9cbb
+run_name: omniscient-dog-820
+run_uuid: 0d1697293802427681650ee44f0b9cbb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011588080
+status: 4
+tags: []
+user_id: unknown

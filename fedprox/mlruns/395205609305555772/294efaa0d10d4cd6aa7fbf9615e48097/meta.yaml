@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/395205609305555772/294efaa0d10d4cd6aa7fbf9615e48097/artifacts
+end_time: 1736888365610
+entry_point_name: ''
+experiment_id: '395205609305555772'
+lifecycle_stage: active
+run_id: 294efaa0d10d4cd6aa7fbf9615e48097
+run_name: zealous-rook-341
+run_uuid: 294efaa0d10d4cd6aa7fbf9615e48097
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736888365582
+status: 3
+tags: []
+user_id: unknown

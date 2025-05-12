@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/35786fd3b71346dab2fd5bfa6dcca1c2/artifacts
+end_time: 1746011632199
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 35786fd3b71346dab2fd5bfa6dcca1c2
+run_name: learned-wolf-302
+run_uuid: 35786fd3b71346dab2fd5bfa6dcca1c2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011632155
+status: 4
+tags: []
+user_id: unknown

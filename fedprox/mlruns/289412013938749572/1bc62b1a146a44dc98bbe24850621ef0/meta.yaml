@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/1bc62b1a146a44dc98bbe24850621ef0/artifacts
+end_time: 1746018138308
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 1bc62b1a146a44dc98bbe24850621ef0
+run_name: able-doe-300
+run_uuid: 1bc62b1a146a44dc98bbe24850621ef0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018138226
+status: 4
+tags: []
+user_id: unknown

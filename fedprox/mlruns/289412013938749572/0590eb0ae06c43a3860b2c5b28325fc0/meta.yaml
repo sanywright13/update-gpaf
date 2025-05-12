@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/0590eb0ae06c43a3860b2c5b28325fc0/artifacts
+end_time: 1746018706415
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 0590eb0ae06c43a3860b2c5b28325fc0
+run_name: mercurial-squid-605
+run_uuid: 0590eb0ae06c43a3860b2c5b28325fc0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018705997
+status: 3
+tags: []
+user_id: unknown

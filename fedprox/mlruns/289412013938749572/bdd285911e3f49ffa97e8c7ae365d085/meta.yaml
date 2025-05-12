@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/bdd285911e3f49ffa97e8c7ae365d085/artifacts
+end_time: 1746018139839
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: bdd285911e3f49ffa97e8c7ae365d085
+run_name: dazzling-horse-977
+run_uuid: bdd285911e3f49ffa97e8c7ae365d085
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746018139443
+status: 3
+tags: []
+user_id: unknown

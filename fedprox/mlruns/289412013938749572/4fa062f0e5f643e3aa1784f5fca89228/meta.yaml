@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/4fa062f0e5f643e3aa1784f5fca89228/artifacts
+end_time: 1746011606178
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 4fa062f0e5f643e3aa1784f5fca89228
+run_name: enthused-elk-360
+run_uuid: 4fa062f0e5f643e3aa1784f5fca89228
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011606142
+status: 4
+tags: []
+user_id: unknown

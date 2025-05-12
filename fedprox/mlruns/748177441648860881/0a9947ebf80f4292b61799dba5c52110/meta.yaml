@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/0a9947ebf80f4292b61799dba5c52110/artifacts
+end_time: 1742256871143
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: 0a9947ebf80f4292b61799dba5c52110
+run_name: hilarious-crane-368
+run_uuid: 0a9947ebf80f4292b61799dba5c52110
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742256871018
+status: 3
+tags: []
+user_id: unknown

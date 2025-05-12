@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/250579155109938436/d7fcf541846040ceaa8c42e9b623305f/artifacts
+end_time: 1738277742281
+entry_point_name: ''
+experiment_id: '250579155109938436'
+lifecycle_stage: active
+run_id: d7fcf541846040ceaa8c42e9b623305f
+run_name: mercurial-flea-221
+run_uuid: d7fcf541846040ceaa8c42e9b623305f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738277742222
+status: 3
+tags: []
+user_id: unknown

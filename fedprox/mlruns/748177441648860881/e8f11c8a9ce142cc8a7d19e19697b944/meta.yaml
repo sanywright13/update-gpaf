@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/e8f11c8a9ce142cc8a7d19e19697b944/artifacts
+end_time: 1744627840557
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: e8f11c8a9ce142cc8a7d19e19697b944
+run_name: welcoming-sheep-172
+run_uuid: e8f11c8a9ce142cc8a7d19e19697b944
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744627775506
+status: 3
+tags: []
+user_id: unknown

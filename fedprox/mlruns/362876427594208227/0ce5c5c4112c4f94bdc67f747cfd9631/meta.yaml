@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/0ce5c5c4112c4f94bdc67f747cfd9631/artifacts
+end_time: 1738005286550
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 0ce5c5c4112c4f94bdc67f747cfd9631
+run_name: awesome-snail-671
+run_uuid: 0ce5c5c4112c4f94bdc67f747cfd9631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005286379
+status: 3
+tags: []
+user_id: unknown

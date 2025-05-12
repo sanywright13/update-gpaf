@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/362876427594208227/28e522f41e2a4a5dae0d42297841d3c1/artifacts
+end_time: 1738005299275
+entry_point_name: ''
+experiment_id: '362876427594208227'
+lifecycle_stage: active
+run_id: 28e522f41e2a4a5dae0d42297841d3c1
+run_name: bouncy-fowl-771
+run_uuid: 28e522f41e2a4a5dae0d42297841d3c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738005299083
+status: 3
+tags: []
+user_id: unknown

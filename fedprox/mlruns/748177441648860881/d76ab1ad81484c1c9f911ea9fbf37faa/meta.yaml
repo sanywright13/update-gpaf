@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/748177441648860881/d76ab1ad81484c1c9f911ea9fbf37faa/artifacts
+end_time: 1743210149481
+entry_point_name: ''
+experiment_id: '748177441648860881'
+lifecycle_stage: active
+run_id: d76ab1ad81484c1c9f911ea9fbf37faa
+run_name: dashing-deer-390
+run_uuid: d76ab1ad81484c1c9f911ea9fbf37faa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743210130717
+status: 3
+tags: []
+user_id: unknown

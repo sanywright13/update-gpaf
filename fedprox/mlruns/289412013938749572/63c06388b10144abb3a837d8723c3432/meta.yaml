@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/63c06388b10144abb3a837d8723c3432/artifacts
+end_time: 1746013420479
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 63c06388b10144abb3a837d8723c3432
+run_name: luminous-swan-831
+run_uuid: 63c06388b10144abb3a837d8723c3432
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013420433
+status: 4
+tags: []
+user_id: unknown

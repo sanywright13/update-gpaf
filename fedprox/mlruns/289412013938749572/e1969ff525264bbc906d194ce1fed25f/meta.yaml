@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/e1969ff525264bbc906d194ce1fed25f/artifacts
+end_time: 1746013361933
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: e1969ff525264bbc906d194ce1fed25f
+run_name: grandiose-goose-170
+run_uuid: e1969ff525264bbc906d194ce1fed25f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746013361892
+status: 4
+tags: []
+user_id: unknown

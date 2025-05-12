@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c069bcbf9af14856a21912820fec56ed/artifacts
+end_time: 1746011617858
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c069bcbf9af14856a21912820fec56ed
+run_name: nervous-stag-519
+run_uuid: c069bcbf9af14856a21912820fec56ed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011617816
+status: 4
+tags: []
+user_id: unknown

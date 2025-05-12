@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d581b4a33fdd4c5e8ec658b78ee1e255/artifacts
+end_time: 1746011602671
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d581b4a33fdd4c5e8ec658b78ee1e255
+run_name: masked-newt-135
+run_uuid: d581b4a33fdd4c5e8ec658b78ee1e255
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011602628
+status: 4
+tags: []
+user_id: unknown

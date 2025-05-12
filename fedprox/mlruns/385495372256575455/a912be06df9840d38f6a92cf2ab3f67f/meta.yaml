@@ -1,0 +1,15 @@
+artifact_uri: file:///content/GPAFflower/baselines/fedprox/mlruns/385495372256575455/a912be06df9840d38f6a92cf2ab3f67f/artifacts
+end_time: 1737478703687
+entry_point_name: ''
+experiment_id: '385495372256575455'
+lifecycle_stage: active
+run_id: a912be06df9840d38f6a92cf2ab3f67f
+run_name: ambitious-smelt-882
+run_uuid: a912be06df9840d38f6a92cf2ab3f67f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737478703630
+status: 3
+tags: []
+user_id: unknown

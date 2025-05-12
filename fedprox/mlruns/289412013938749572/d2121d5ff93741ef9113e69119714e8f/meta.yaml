@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/d2121d5ff93741ef9113e69119714e8f/artifacts
+end_time: 1746011614185
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: d2121d5ff93741ef9113e69119714e8f
+run_name: adorable-gnat-608
+run_uuid: d2121d5ff93741ef9113e69119714e8f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011614139
+status: 4
+tags: []
+user_id: unknown

@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/8d84c2d75db44f7b8f6f77fd07e1121e/artifacts
+end_time: 1746023775770
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: 8d84c2d75db44f7b8f6f77fd07e1121e
+run_name: abundant-foal-457
+run_uuid: 8d84c2d75db44f7b8f6f77fd07e1121e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746023775371
+status: 3
+tags: []
+user_id: unknown

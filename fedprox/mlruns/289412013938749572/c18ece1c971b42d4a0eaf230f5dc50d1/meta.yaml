@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpafvsmoon/fedprox/mlruns/289412013938749572/c18ece1c971b42d4a0eaf230f5dc50d1/artifacts
+end_time: 1746011590984
+entry_point_name: ''
+experiment_id: '289412013938749572'
+lifecycle_stage: active
+run_id: c18ece1c971b42d4a0eaf230f5dc50d1
+run_name: melodic-hawk-122
+run_uuid: c18ece1c971b42d4a0eaf230f5dc50d1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1746011590944
+status: 4
+tags: []
+user_id: unknown

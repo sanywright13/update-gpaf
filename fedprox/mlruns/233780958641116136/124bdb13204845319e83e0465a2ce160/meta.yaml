@@ -1,0 +1,15 @@
+artifact_uri: file:///content/gpaf/simulation/fedprox/mlruns/233780958641116136/124bdb13204845319e83e0465a2ce160/artifacts
+end_time: 1738774186754
+entry_point_name: ''
+experiment_id: '233780958641116136'
+lifecycle_stage: active
+run_id: 124bdb13204845319e83e0465a2ce160
+run_name: defiant-jay-960
+run_uuid: 124bdb13204845319e83e0465a2ce160
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738773857378
+status: 3
+tags: []
+user_id: unknown

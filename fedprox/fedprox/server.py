@@ -15,7 +15,7 @@ from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 import json
 from flwr.server.strategy import Strategy,FedAvg
-from fedprox.models import Encoder, Classifier,test,test_gpaf ,GlobalGenerator,reparameterize,sample_labels,generate_feature_representation,LocalDiscriminator,GlobalDiscriminator
+from fedprox.models import test,test_gpaf ,reparameterize,sample_labels,generate_feature_representation
 from flwr.server.strategy.aggregate import aggregate, weighted_loss_avg
 from flwr.server.client_proxy import ClientProxy
 from fedprox.features_visualization import extract_features_and_labels,StructuredFeatureVisualizer
@@ -112,6 +112,62 @@ save_dir="feature_visualizations_gpaf"
       num_clients = client_manager.num_available()
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
     #1first run
+
+    def aggregate_fit(
+        self,
+        server_round: int,
+        results: List[Tuple[ClientProxy, flwr.common.FitRes]],
+                failures: List[Union[Tuple[ClientProxy, FitRes], BaseException]],
+    ) -> Tuple[Optional[Parameters], Dict[str, Scalar]]:
+        """Aggregate results and update generator."""
+        print(f'results faillure {failures}')    
+        if not results:
+            return None, {}
+        aggregated_params = super().aggregate_fit(server_round, results, failures)
+        # Prepare config for next round
+        config = {
+            "server_round": server_round,
+            
+        }
+        for client_res in results:
+                client_id = client_res[1].cid
+                prototypes = client_res[1].metrics.get("prototypes")
+                if prototypes:
+                    self.client_prototypes[client_id] = prototypes
+        # Cluster clients using cosine similarity between prototype vectors
+        self.perform_clustering(server_round)
+           
+        return ndarrays_to_parameters(aggregated_params),config
+
+
+    def perform_clustering(self,server_round):
+        # Convert prototype dicts to flat vectors and compute pairwise similarities
+        from sklearn.metrics.pairwise import cosine_similarity
+
+        client_ids = list(self.client_prototypes.keys())
+        vectors = []
+
+        for cid in client_ids:
+            proto = self.client_prototypes[cid]
+            # Flatten all class prototypes into a single vector per client
+            flat_vec = torch.cat([v for k, v in sorted(proto.items())])
+            vectors.append(flat_vec.numpy())
+
+        similarity_matrix = cosine_similarity(vectors)
+        
+        # Optionally visualize:
+        import seaborn as sns
+        import matplotlib.pyplot as plt
+        sns.heatmap(similarity_matrix, xticklabels=client_ids, yticklabels=client_ids, cmap="viridis")
+        plt.title("Client Prototype Cosine Similarity")
+        #plt.show() 
+
+        # Save visualization
+        filename = f"global_local_comparison_epoch{server_round}.png"
+        save_path = os.path.join(self.save_dir, filename)
+        plt.savefig(save_path, bbox_inches='tight', dpi=300)
+        plt.close()  
+
     def aggregate_evaluate(self, server_round: int, results, failures):
         """Aggregate evaluation results."""
         if not results:

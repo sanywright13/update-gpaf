@@ -8,6 +8,8 @@ import numpy as np
 import torch
 import copy
 import csv
+from collections import defaultdict
+
 import torch.nn.functional as F
 from flwr.common.typing import NDArrays, Scalar
 from hydra.utils import instantiate
@@ -94,8 +96,6 @@ class FederatedClient(fl.client.NumPyClient):
           print(f"evaluate dd Batch {batch_idx}, data shape: {data.shape}, target shape: {target.shape}")
           break  # J
         loss, accuracy = test_gpaf(self.net, self.validdata, self.device)
-        #get the round in config
-        # Log evaluation metrics using mlflow directly
 
         # Extract features and labels
         val_features, val_labels = extract_features_and_labels(
@@ -136,7 +136,7 @@ class FederatedClient(fl.client.NumPyClient):
     
     
    
-
+    
     def fit(self, parameters, config):
         """Train local models using latest generator state."""
         #print(f'=== client training {config}')
@@ -151,6 +151,7 @@ class FederatedClient(fl.client.NumPyClient):
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size)
            
         # Extract features for server
+        """
         features = []
         with torch.no_grad():
           for data, labels in self.traindata:
@@ -168,17 +169,43 @@ class FederatedClient(fl.client.NumPyClient):
         # Concatenate all features
         all_features = np.concatenate(features, axis=0)
         all_features_serialized = base64.b64encode(pickle.dumps(all_features)).decode('utf-8')
-      
+        
         # Clear memory
         del features
         del all_features
+        """
+
+        #protoype
+
+        # === Prototype Extraction ===
+        self.net.eval()
+        class_embeddings = defaultdict(list)
+
+        with torch.no_grad():
+          for batch in self.trainloader:
+            images, labels = batch
+            images, labels = images.to(DEVICE, dtype=torch.float32), labels.to(DEVICE, dtype=torch.long)
+            h, _, _ = self.net(images)  # Get encoder output (before projection head)
+
+            for i in range(labels.size(0)):
+                label = labels[i].item()
+                class_embeddings[label].append(h[i].cpu())
+
+        # Compute prototypes: mean of embeddings per class
+        prototypes = {}
+        for class_id in range(self.num_classes):
+          if class_id in class_embeddings and len(class_embeddings[class_id]) > 0:
+            prototypes[class_id] = torch.stack(class_embeddings[class_id]).mean(dim=0)
+          else:
+            prototypes[class_id] = torch.zeros_like(h[0].cpu())
+
         return (
         self.get_parameters(),
         len(self.traindata),
         {
            
             "label_distribution": label_distribution_str,
-            "features": all_features_serialized,
+            "prototypes": prototypes,
             #"grads": grads_serialized
 
         
@@ -342,6 +369,8 @@ class FlowerClient(NumPyClient):
             mlflow.pytorch.log_model(self.net, f"model_client_{self.client_id}")
         """
         return self.get_parameters(self.net), len(self.trainloader), {}
+
+
     
     def evaluate(self, parameters, config):
        
@@ -371,10 +400,7 @@ class FlowerClient(NumPyClient):
           # In client:
           features_serialized = base64.b64encode(pickle.dumps(features_np)).decode('utf-8')
           labels_serialized = base64.b64encode(pickle.dumps(labels_np)).decode('utf-8')
-          #print(f"Client {self.client_id} sending features shape: {features_np.shape}")
-          #print(f"Client {self.client_id} sending labels shape: {labels_np.shape}")
          
-          #print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
           return float(loss), len(self.valloader), {"accuracy": float(accuracy),
          "features": features_serialized,
             "labels": labels_serialized,

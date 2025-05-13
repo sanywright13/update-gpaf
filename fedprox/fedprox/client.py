@@ -63,7 +63,7 @@ class FederatedClient(fl.client.NumPyClient):
         self.net.to(self.device)
        
         self.domain_dim=32
-       
+        
         self. mlflow= mlflow
     
         self.run_id=run_id

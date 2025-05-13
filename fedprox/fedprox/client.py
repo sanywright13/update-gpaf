@@ -142,12 +142,7 @@ class FederatedClient(fl.client.NumPyClient):
         #print(f'=== client training {config}')
         # Update local models with global parameters
         self.set_parameters(parameters)
-        
-        all_labels = torch.cat(all_labels).squeeze().to(self.device)
-        label_distribution = compute_label_distribution(all_labels, self.num_classes)
-        # Serialize the label distribution to a JSON string
-        label_distribution_str = json.dumps(label_distribution)
-       
+    
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size)
            
         # Extract features for server

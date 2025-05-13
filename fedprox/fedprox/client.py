@@ -72,11 +72,11 @@ class FederatedClient(fl.client.NumPyClient):
         self.client_features = {}  # Add this
         self.client_labels = {}    # Add this
        
-     #update the local model with parameters received from the server
-    def set_parameters(self,net, parameters: List[np.ndarray]):
-      params_dict = zip(net.state_dict().keys(), parameters)
+    #update the local model with parameters received from the server
+    def set_parameters(self, parameters: List[np.ndarray]):
+      params_dict = zip(self.net.state_dict().keys(), parameters)
       state_dict = OrderedDict({k: torch.tensor(v) for k, v in params_dict})
-      net.load_state_dict(state_dict, strict=True)
+      self.net.load_state_dict(state_dict, strict=True)
 
     #get the updated model parameters from the local model return local model parameters
     

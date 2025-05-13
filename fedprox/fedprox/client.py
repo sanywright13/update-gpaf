@@ -103,7 +103,7 @@ class FederatedClient(fl.client.NumPyClient):
         self.validdata,
         self.device
            )
-    
+     
         if val_features is not None:
           self.client_features[self.client_id] = val_features
           self.client_labels[self.client_id] = val_labels

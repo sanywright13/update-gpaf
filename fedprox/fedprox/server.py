@@ -15,7 +15,7 @@ from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 import json
 from flwr.server.strategy import Strategy,FedAvg
-from fedprox.models import test,test_gpaf ,sample_labels
+from fedprox.models import test,test_gpaf 
 from flwr.server.strategy.aggregate import aggregate, weighted_loss_avg
 from flwr.server.client_proxy import ClientProxy
 from fedprox.features_visualization import extract_features_and_labels,StructuredFeatureVisualizer

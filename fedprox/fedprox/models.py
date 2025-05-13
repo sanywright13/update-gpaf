@@ -282,32 +282,26 @@ def save_checkpoint(model, optimizer, epoch, loss, filename="checkpoint.pth"):
     }
     torch.save(checkpoint, filename)
     print(f"Checkpoint saved at epoch {epoch}")
-def train_gpaf( encoder: nn.Module,
-classifier,
-discriminator,
+def train_gpaf( net: nn.Module,
+
     trainloader: DataLoader,
     device: torch.device,
     client_id,
     epochs: int,
-   global_generator,domain_discriminator
-   ,
-            decoder,batch_size
+  batch_size
     ):
 
 # j
     learning_rate=0.01
         
     train_one_epoch_gpaf(
-        encoder,
-classifier,discriminator , trainloader, device,client_id,
-            epochs,global_generator,domain_discriminator
-,
-            decoder,batch_size
+        net, trainloader, device,client_id,
+            epochs,batch_size
         )
 import csv
 #we must add a classifier that classifier into a binary categories
 #send back the classifier parameter to the server
-def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,global_generator,local_discriminator,decoder,batch_size,verbose=False):
+def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,verbose=False):
     """Train the network on the training set."""
     #criterion = torch.nn.CrossEntropyLoss()
     lr=0.00013914064388085564
@@ -345,7 +339,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,global_genera
                 "epoch","train_loss",
                 "accuracy","precision","recall","f1"
             ])
-    scaler = GradScaler()    
+     
     for  epoch in range(epochs):
         print('==start local training ==')
         # Reset metrics for epoch
@@ -365,7 +359,6 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,global_genera
                 if labels.dim() == 0:
                     labels = labels.unsqueeze(0)  # Handle single sample
             
-            real_imgs = images.to(DEVICE)
             batch_size = batch_size
          
             optimizer.zero_grad()
@@ -375,8 +368,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,global_genera
             optimizer.step()
             # Metrics
             epoch_loss += loss
-            
-      
+   
             # Update metrics
             preds = torch.argmax(outputs, dim=1)
             accuracy.update(preds, labels)

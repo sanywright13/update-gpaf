@@ -562,8 +562,7 @@ class FlowerClient(NumPyClient):
             #print(f'label fedavg {labels}')
             #labels=labels.unsqueeze(1)
             
-            
-            
+
             optimizer.zero_grad()
             outputs = net(images)
             loss = criterion(outputs, labels)

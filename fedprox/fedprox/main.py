@@ -27,7 +27,7 @@ import subprocess
 from fedprox.features_visualization import StructuredFeatureVisualizer
 from fedprox.strategy import FedAVGWithEval ,MOONStrategy
 from fedprox.dataset_preparation import SameModalityDomainShift , BreastMnistDataset ,build_transform
-from fedprox.models import get_model ,Encoder,Classifier,Decoder,save_client_model,load_client_model, test_gpaf,init_net,test_moon,load_client_model_moon, test
+from fedprox.models import get_model ,Model,save_client_model,load_client_model, test_gpaf,init_net,test_moon,load_client_model_moon, test
 #from fedprox.models import Generator
 FitConfig = Dict[str, Union[bool, float]]
 import mlflow

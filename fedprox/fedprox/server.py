@@ -141,7 +141,7 @@ save_dir="feature_visualizations_gpaf"
         # Cluster clients using cosine similarity between prototype vectors
         self.perform_clustering(server_round)
         aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
-
+        print(f' client parameters: {aggregated_params}')
         return ndarrays_to_parameters(aggregated_params),config
 
 

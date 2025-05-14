@@ -92,9 +92,7 @@ class FederatedClient(fl.client.NumPyClient):
         print(f'===evaluate client=== {type(parameters)}')
         self.set_parameters(parameters)
 
-        for batch_idx, (data, target) in enumerate(self.validdata):
-          print(f"evaluate dd Batch {batch_idx}, data shape: {data.shape}, target shape: {target.shape}")
-          break  # J
+     
         loss, accuracy = test_gpaf(self.net, self.validdata, self.device)
 
         # Extract features and labels
@@ -130,7 +128,7 @@ class FederatedClient(fl.client.NumPyClient):
         print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
         return float(loss), len(self.validdata), {"accuracy": float(accuracy),
          "features": features_serialized,
-            "labels": labels_serialized,
+          #  "labels": labels_serialized,
         }
     
     
@@ -193,13 +191,16 @@ class FederatedClient(fl.client.NumPyClient):
             prototypes[class_id] = torch.stack(class_embeddings[class_id]).mean(dim=0)
           else:
             prototypes[class_id] = torch.zeros_like(h[0].cpu())
+        
+        all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
+
 
         return (
         self.get_parameters(),
         len(self.traindata),
         {
            
-            "prototypes": prototypes,
+            "prototypes": all_prototypes,
             #"grads": grads_serialized
 
         

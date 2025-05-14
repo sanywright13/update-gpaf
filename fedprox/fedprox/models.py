@@ -151,7 +151,7 @@ class ResNetBreastMNIST(nn.Module):
         self.inplanes = 32  # Reduced from 64 to handle smaller images
         
         # First conv layer modified for 28x28 grayscale input
-        self.conv1 = nn.Conv2d(1, self.inplanes, kernel_size=3, stride=1, padding=1, bias=False)
+        self.conv1 = nn.Conv2d(3, self.inplanes, kernel_size=3, stride=1, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(self.inplanes)
         self.relu = nn.ReLU(inplace=True)
         

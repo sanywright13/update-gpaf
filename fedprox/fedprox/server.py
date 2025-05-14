@@ -74,6 +74,7 @@ class GPAFStrategy(FedAvg):
         self.client_to_domain={}
         self.num_domains = self.min_fit_clients
         self.batch_size=batch_size
+        self.save_dir="visualizations"
 
         print(f'num domain : {self.min_fit_clients}')
        

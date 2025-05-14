@@ -130,22 +130,48 @@ save_dir="feature_visualizations_gpaf"
             "server_round": server_round,
             
         }
+        clients_params_list=[]
+        num_samples_list=[]
         self.client_prototypes = {}  # <-- ADD THIS LINE
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
                 prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 prototypes = pickle.loads(base64.b64decode(prototypes))
                 client_parameters = parameters_to_ndarrays(fit_res.parameters)
+                clients_params_list.append(client_parameters)
                 if prototypes:
                     self.client_prototypes[client_id] = prototypes
+                num_samples_list.append(fit_res.num_examples)
         # Cluster clients using cosine similarity between prototype vectors
         self.perform_clustering(server_round)
-        print(f' client parameters: {client_parameters}')
-        aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
-        
+        #print(f' client parameters: {client_parameters}')
+        #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
+        aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
+
         return ndarrays_to_parameters(aggregated_params),config
 
+    def _fedavg_parameters(
+        self, params_list: List[List[np.ndarray]], num_samples_list: List[int]
+    ) -> List[np.ndarray]:
+        """Aggregate parameters using FedAvg (weighted averaging)."""
+        if not params_list:
+            return []
 
+        print("==== aggregation===")
+        total_samples = sum(num_samples_list)
+
+        # Initialize aggregated parameters with zeros
+        aggregated_params = [np.zeros_like(param) for param in params_list[0]]
+
+        # Weighted sum of parameters
+        for params, num_samples in zip(params_list, num_samples_list):
+            for i, param in enumerate(params):
+                aggregated_params[i] += param * num_samples
+
+        # Weighted average of parameters
+        aggregated_params = [param / total_samples for param in aggregated_params]
+
+        return aggregated_params
     def perform_clustering(self,server_round):
         # Convert prototype dicts to flat vectors and compute pairwise similarities
         from sklearn.metrics.pairwise import cosine_similarity

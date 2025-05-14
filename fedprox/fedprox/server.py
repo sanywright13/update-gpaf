@@ -125,6 +125,17 @@ save_dir="feature_visualizations_gpaf"
         if not results:
             return None, {}
         aggregated_params = super().aggregate_fit(server_round, results, failures)
+        cleaned_params = []
+
+        for arr in aggregated_params:
+          if isinstance(arr, np.ndarray) and arr.dtype != object:
+            cleaned_params.append(arr.astype(np.float32))  # or original dtype
+        else:
+          print(f' return an np array')
+          arr_np = np.array(arr, dtype=np.float32)  # convert list or object array to ndarray
+          cleaned_params.append(arr_np)
+        
+
         # Prepare config for next round
         config = {
             "server_round": server_round,
@@ -140,7 +151,7 @@ save_dir="feature_visualizations_gpaf"
         # Cluster clients using cosine similarity between prototype vectors
         self.perform_clustering(server_round)
            
-        return ndarrays_to_parameters(aggregated_params),config
+        return ndarrays_to_parameters(cleaned_params),config
 
 
     def perform_clustering(self,server_round):

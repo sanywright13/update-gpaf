@@ -96,6 +96,7 @@ class FederatedClient(fl.client.NumPyClient):
         loss, accuracy = test_gpaf(self.net, self.validdata, self.device)
 
         # Extract features and labels
+        """
         val_features, val_labels = extract_features_and_labels(
         self.net,
         self.validdata,
@@ -124,10 +125,10 @@ class FederatedClient(fl.client.NumPyClient):
         labels_serialized = base64.b64encode(pickle.dumps(labels_np)).decode('utf-8')
         print(f"Client {self.client_id} sending features shape: {features_np.shape}")
         print(f"Client {self.client_id} sending labels shape: {labels_np.shape}")
-         
+        """
         print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
         return float(loss), len(self.validdata), {"accuracy": float(accuracy),
-         "features": features_serialized,
+        #"features": features_serialized,
           #  "labels": labels_serialized,
         }
     

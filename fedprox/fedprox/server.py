@@ -129,9 +129,9 @@ save_dir="feature_visualizations_gpaf"
             "server_round": server_round,
             
         }
-        for client_res in results:
-                client_id = client_res[1].cid
-                prototypes = client_res[1].metrics.get("prototypes").encode('utf-8')
+        for client_proxy, fit_res in results:
+                client_id=client_proxy.cid
+                prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 prototypes = pickle.loads(base64.b64decode(prototypes))
                 if prototypes:
                     self.client_prototypes[client_id] = prototypes

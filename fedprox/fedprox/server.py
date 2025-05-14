@@ -129,6 +129,7 @@ save_dir="feature_visualizations_gpaf"
             "server_round": server_round,
             
         }
+        self.client_prototypes = {}  # <-- ADD THIS LINE
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
                 prototypes = fit_res.metrics.get("prototypes").encode('utf-8')

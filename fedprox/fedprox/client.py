@@ -177,7 +177,7 @@ class FederatedClient(fl.client.NumPyClient):
         class_embeddings = defaultdict(list)
 
         with torch.no_grad():
-          for batch in self.trainloader:
+          for batch in self.traindata:
             images, labels = batch
             images, labels = images.to(DEVICE, dtype=torch.float32), labels.to(DEVICE, dtype=torch.long)
             h, _, _ = self.net(images)  # Get encoder output (before projection head)
@@ -199,7 +199,6 @@ class FederatedClient(fl.client.NumPyClient):
         len(self.traindata),
         {
            
-            "label_distribution": label_distribution_str,
             "prototypes": prototypes,
             #"grads": grads_serialized
 

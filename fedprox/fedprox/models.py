@@ -362,7 +362,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,ve
             batch_size = batch_size
          
             optimizer.zero_grad()
-            outputs = net(images)
+            _,outputs,_ = net(images)
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()

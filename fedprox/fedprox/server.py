@@ -124,17 +124,6 @@ save_dir="feature_visualizations_gpaf"
         print(f'results faillure {failures}')    
         if not results:
             return None, {}
-        aggregated_params = super().aggregate_fit(server_round, results, failures)
-        cleaned_params = []
-
-        for arr in aggregated_params:
-          if isinstance(arr, np.ndarray) and arr.dtype != object:
-            cleaned_params.append(arr.astype(np.float32))  # or original dtype
-        else:
-          print(f' return an np array')
-          arr_np = np.array(arr, dtype=np.float32)  # convert list or object array to ndarray
-          cleaned_params.append(arr_np)
-        
 
         # Prepare config for next round
         config = {
@@ -146,18 +135,20 @@ save_dir="feature_visualizations_gpaf"
                 client_id=client_proxy.cid
                 prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 prototypes = pickle.loads(base64.b64decode(prototypes))
+                client_parameters = parameters_to_ndarrays(fit_res.parameters)
                 if prototypes:
                     self.client_prototypes[client_id] = prototypes
         # Cluster clients using cosine similarity between prototype vectors
         self.perform_clustering(server_round)
-           
-        return ndarrays_to_parameters(cleaned_params),config
+        aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
+
+        return ndarrays_to_parameters(aggregated_params),config
 
 
     def perform_clustering(self,server_round):
         # Convert prototype dicts to flat vectors and compute pairwise similarities
         from sklearn.metrics.pairwise import cosine_similarity
-
+ 
         client_ids = list(self.client_prototypes.keys())
         vectors = []
 

@@ -80,107 +80,16 @@ class LazyPathMNIST(Dataset):
         return img, lbl
 
 
-class DomainShiftedPathMNIST(torch.utils.data.Dataset):
-    def __init__(self, base_ds, client_id, seed=42):
-        """
-        base_ds: any torch Dataset returning (img, label)
-        client_id: integer 0–5
-        """
-        self.base = base_ds
-        self.shift = SameModalityDomainShift(client_id, modality="CT", seed=seed)
-
-    def __len__(self):
-        return len(self.base)
-
-    def __getitem__(self, idx):
-        img, label = self.base[idx]
-        img = self.shift.apply_transform(img)
-        return img, label
 
 
-def create_pathmnist_scenario2_loaders(
- 
-    npz_path ,
-    batch_size: int = 32,
-    val_ratio: float = 0.1,
-    seed: int = 42,
-    device=False
-):
-    torch.manual_seed(seed)
-    np.random.seed(seed)
-    print(f' chemin is {npz_path} and device is {device}')
-    # Instantiate the two splits, *lazily*
-    ds_train = LazyPathMNIST(npz_path, split='train', transform=build_transform())
-    ds_test  = LazyPathMNIST(npz_path, split='test',  transform=build_transform())
-
-    # carve off small in-domain validation sets
-    def _split(ds, ratio):
-        n_val = int(len(ds) * ratio)
-        n_trn = len(ds) - n_val
-        return random_split(ds, [n_trn, n_val],
-                            generator=torch.Generator().manual_seed(seed))
-
-    train0, val0 = _split(ds_train, val_ratio)
-    train1, val1 = _split(ds_test,  val_ratio)
 
 
-    train_dss = []
-    val_dss   = []
-
-    # Clients 0 & 1: the two original splits
-    train_dss.append(train0)   # client 0
-    val_dss.append(val0)    
-    train_dss.append(train1)   # client 1
-    val_dss.append(val1)
-
-    # Clients 2 & 3: two shifted versions of train0 & val0
-    for client_id in [2, 3]:
-      train_dss.append(DomainShiftedPathMNIST(train0, client_id))
-      val_dss.append(  DomainShiftedPathMNIST(val0,   client_id))
-
-    # Clients 4 & 5: two shifted versions of train1 & val1
-    for client_id in [4, 5]:
-      train_dss.append(DomainShiftedPathMNIST(train1, client_id))
-      val_dss.append(  DomainShiftedPathMNIST(val1,   client_id))
+def get_equipment_type(client_id):
+    types = ['high_end', 'mid_range', 'older_model']
+    return types[client_id % 3]
 
 
-    # 1) Original loaders (clients 0 and 1)
-    original_train_loaders = [
-    DataLoader(train0, batch_size=batch_size, shuffle=True,
-               pin_memory=torch.cuda.is_available(), num_workers=4, drop_last=True),
-    DataLoader(train1, batch_size=batch_size, shuffle=True,
-               pin_memory=torch.cuda.is_available(), num_workers=4, drop_last=True)
-    ]
-    original_val_loaders = [
-    DataLoader(val0, batch_size=batch_size, shuffle=False,
-               pin_memory=torch.cuda.is_available(), num_workers=4),
-    DataLoader(val1, batch_size=batch_size, shuffle=False,
-               pin_memory=torch.cuda.is_available(), num_workers=4)
-]
 
-    # 2) Domain-shifted loaders (clients 2–5)
-    shifted_train_loaders = [
-    DataLoader(ds, batch_size=batch_size, shuffle=True, pin_memory=True, num_workers=4)
-    for ds in train_dss
-]
-    shifted_val_loaders = [
-    DataLoader(ds, batch_size=batch_size, shuffle=False, pin_memory=True, num_workers=4)
-    for ds in val_dss
-]
-
-    # 3) Combine all clients into one array (clients 0–5)
-    train_loaders = original_train_loaders + shifted_train_loaders
-    val_loaders   = original_val_loaders + shifted_val_loaders
-
-    # combined final test
-    combined = ConcatDataset([val0, val1])
-    test_loader = DataLoader(combined,
-                             batch_size=batch_size,
-                             shuffle=False,
-                             pin_memory=True)
-
-    return train_loaders, val_loaders, test_loader
-    
 
 class SameModalityDomainShift:
     """Domain shift for same imaging modality across different clients."""
@@ -277,6 +186,89 @@ class DomainShiftedDataset(Dataset):
         img = self.domain_shift.apply_transform(img)  # Apply domain shift
         #print(f'ssssss data type {img}')
         return img, label
+
+from torch.utils.data import Dataset
+
+class DomainShiftedPathMNIST(Dataset):
+    def __init__(self, base_dataset, client_id):
+        self.base_dataset = base_dataset
+        self.transformer = SameModalityDomainShift(client_id)
+
+    def __getitem__(self, index):
+        img, label = self.base_dataset[index]
+        img = self.transformer.apply_transform(img)
+        return img, label
+
+    def __len__(self):
+        return len(self.base_dataset)
+
+
+
+def create_pathmnist_domain_shift_loaders(
+    npz_path,
+    batch_size: int = 32,
+    val_ratio: float = 0.1,
+    seed: int = 42
+):
+
+    def build_transform():
+        return transforms.Compose([
+            transforms.ToTensor()
+        ])
+
+    # Prepare dataset
+    # Instantiate the two splits, *lazily*
+    ds_train = LazyPathMNIST(npz_path, split='train', transform=build_transform())
+    ds_test  = LazyPathMNIST(npz_path, split='test',  transform=build_transform())
+   # carve off small in-domain validation sets
+    def _split(ds, ratio):
+        n_val = int(len(ds) * ratio)
+        n_trn = len(ds) - n_val
+        return random_split(ds, [n_trn, n_val],
+                            generator=torch.Generator().manual_seed(seed))
+    
+    #The fisrt two partition
+    #train0, val0 = _split(ds_train, val_ratio)
+    #train1, val1 = _split(ds_test,  val_ratio)
+    d=3
+    k=20
+    total_clients = d * k
+    samples_per_client = len(ds_train) // total_clients
+    indices = np.random.permutation(len(ds_train))
+
+    train_loaders, val_loaders = [], []
+
+    for client_id in range(total_clients):
+        start = client_id * samples_per_client
+        end = (client_id + 1) * samples_per_client
+        client_indices = indices[start:end]
+
+        client_data = Subset(ds_train, client_indices)
+        n_val = int(len(client_data) * val_ratio)
+        n_train = len(client_data) - n_val
+        train_subset, val_subset = random_split(client_data, [n_train, n_val],
+                                                generator=torch.Generator().manual_seed(seed))
+
+        shifted_train = DomainShiftedPathMNIST(train_subset, client_id)
+        shifted_val = DomainShiftedPathMNIST(val_subset, client_id)
+
+        train_loaders.append(DataLoader(shifted_train, batch_size=batch_size, shuffle=True, num_workers=4))
+        val_loaders.append(DataLoader(shifted_val, batch_size=batch_size, shuffle=False, num_workers=4))
+
+    # Test set is used as a clean (non-shifted) client: client_id = d*k
+    test_subset = ds_test
+    n_val = int(len(test_subset) * val_ratio)
+    n_train_0 = len(test_subset) - n_val
+    clean_val, clean_train_0 = random_split(test_subset, [n_val, n_train_0],
+                                         generator=torch.Generator().manual_seed(seed))
+
+    clean_val_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4)
+    clean_train_0_loader = DataLoader(clean_train_0, batch_size=batch_size, shuffle=False, num_workers=4)
+
+    val_loaders.append(clean_val_loader)  # Add clean validation client
+    train_loaders.append(clean_train_0_loader)
+    return train_loaders, val_loaders
+
 
 def create_domain_shifted_loaders(
    root_path,

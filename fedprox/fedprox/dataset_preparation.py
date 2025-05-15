@@ -80,6 +80,24 @@ class LazyPathMNIST(Dataset):
         return img, lbl
 
 
+class DomainShiftedPathMNIST(torch.utils.data.Dataset):
+    def __init__(self, base_ds, client_id, seed=42):
+        """
+        base_ds: any torch Dataset returning (img, label)
+        client_id: integer 0–5
+        """
+        self.base = base_ds
+        self.shift = SameModalityDomainShift(client_id, modality="CT", seed=seed)
+
+    def __len__(self):
+        return len(self.base)
+
+    def __getitem__(self, idx):
+        img, label = self.base[idx]
+        img = self.shift.apply_transform(img)
+        return img, label
+
+
 def create_pathmnist_scenario2_loaders(
  
     npz_path ,
@@ -105,22 +123,54 @@ def create_pathmnist_scenario2_loaders(
     train0, val0 = _split(ds_train, val_ratio)
     train1, val1 = _split(ds_test,  val_ratio)
 
-    # client loaders
-    train_loaders = [
-        DataLoader(train0, batch_size=batch_size, shuffle=True,
-                    pin_memory=torch.cuda.is_available(),
-    num_workers=4, drop_last=True),
-        DataLoader(train1, batch_size=batch_size, shuffle=True, pin_memory=torch.cuda.is_available(),
-    num_workers=4, drop_last=True)
+
+    train_dss = []
+    val_dss   = []
+
+    # Clients 0 & 1: the two original splits
+    train_dss.append(train0)   # client 0
+    val_dss.append(val0)    
+    train_dss.append(train1)   # client 1
+    val_dss.append(val1)
+
+    # Clients 2 & 3: two shifted versions of train0 & val0
+    for client_id in [2, 3]:
+      train_dss.append(DomainShiftedPathMNIST(train0, client_id))
+      val_dss.append(  DomainShiftedPathMNIST(val0,   client_id))
+
+    # Clients 4 & 5: two shifted versions of train1 & val1
+    for client_id in [4, 5]:
+      train_dss.append(DomainShiftedPathMNIST(train1, client_id))
+      val_dss.append(  DomainShiftedPathMNIST(val1,   client_id))
+
+
+    # 1) Original loaders (clients 0 and 1)
+    original_train_loaders = [
+    DataLoader(train0, batch_size=batch_size, shuffle=True,
+               pin_memory=torch.cuda.is_available(), num_workers=4, drop_last=True),
+    DataLoader(train1, batch_size=batch_size, shuffle=True,
+               pin_memory=torch.cuda.is_available(), num_workers=4, drop_last=True)
     ]
-    val_loaders = [
-        DataLoader(val0, batch_size=batch_size, shuffle=False,
-                    pin_memory=torch.cuda.is_available(),
-    num_workers=4),
-        DataLoader(val1, batch_size=batch_size, shuffle=False,
-                   pin_memory=torch.cuda.is_available(),
-    num_workers=4)
-    ]
+    original_val_loaders = [
+    DataLoader(val0, batch_size=batch_size, shuffle=False,
+               pin_memory=torch.cuda.is_available(), num_workers=4),
+    DataLoader(val1, batch_size=batch_size, shuffle=False,
+               pin_memory=torch.cuda.is_available(), num_workers=4)
+]
+
+    # 2) Domain-shifted loaders (clients 2–5)
+    shifted_train_loaders = [
+    DataLoader(ds, batch_size=batch_size, shuffle=True, pin_memory=True, num_workers=4)
+    for ds in train_dss
+]
+    shifted_val_loaders = [
+    DataLoader(ds, batch_size=batch_size, shuffle=False, pin_memory=True, num_workers=4)
+    for ds in val_dss
+]
+
+    # 3) Combine all clients into one array (clients 0–5)
+    train_loaders = original_train_loaders + shifted_train_loaders
+    val_loaders   = original_val_loaders + shifted_val_loaders
 
     # combined final test
     combined = ConcatDataset([val0, val1])
@@ -314,15 +364,7 @@ def create_domain_shifted_loaders(
                     seed=seed
                 )
           #print(f'dataset drichlet {datasets[0][0]}')    
-          """  
-          partition_size_valid = int(len(validset_base) / num_clients)
-          lengths_valid = [partition_size_valid] * num_clients
-          client_validsets = random_split(validset_base, lengths_valid, 
-                                              torch.Generator().manual_seed(seed))
-          New_split=True
-          datasets = [DomainShiftedDataset(dataset, client_id) for client_id, dataset in enumerate(datasets)]
-          client_validsets = [DomainShiftedDataset(client_validset, client_id) for client_id, client_validset in enumerate(client_validsets)]
-          """
+         
           partition_size_valid = len(validset_base) // num_clients  # Integer division
           remainder_valid = len(validset_base) % num_clients    # Remainder
           lengths_valid = [partition_size_valid] * num_clients
@@ -378,7 +420,6 @@ def get_default_transform():
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.5], std=[0.5])  # Grayscale normalization
     ])
-
 
 
 

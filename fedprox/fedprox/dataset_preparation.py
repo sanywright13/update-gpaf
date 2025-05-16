@@ -204,7 +204,7 @@ class DomainShiftedPathMNIST(Dataset):
 
 
 
-def create_pathmnist_domain_shift_loaders(
+def create_pathmnist_scenario2_loaders(
     npz_path,
     batch_size: int = 32,
     val_ratio: float = 0.1,
@@ -227,9 +227,6 @@ def create_pathmnist_domain_shift_loaders(
         return random_split(ds, [n_trn, n_val],
                             generator=torch.Generator().manual_seed(seed))
     
-    #The fisrt two partition
-    #train0, val0 = _split(ds_train, val_ratio)
-    #train1, val1 = _split(ds_test,  val_ratio)
     d=3
     k=20
     total_clients = d * k

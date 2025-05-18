@@ -261,10 +261,11 @@ def create_pathmnist_scenario2_loaders(
 
     clean_val_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4)
     clean_train_0_loader = DataLoader(clean_train_0, batch_size=batch_size, shuffle=False, num_workers=4)
+    clean_test_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4)
 
     val_loaders.append(clean_val_loader)  # Add clean validation client
     train_loaders.append(clean_train_0_loader)
-    return train_loaders, val_loaders
+    return train_loaders, val_loaders ,clean_test_loader
 
 
 def create_domain_shifted_loaders(

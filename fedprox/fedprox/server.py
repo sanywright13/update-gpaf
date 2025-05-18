@@ -75,7 +75,7 @@ class GPAFStrategy(FedAvg):
         self.num_domains = self.min_fit_clients
         self.batch_size=batch_size
         self.save_dir="visualizations"
-
+        
         print(f'num domain : {self.min_fit_clients}')
        
         #experiment_id = mlflow.create_experiment(experiment_name)
@@ -88,7 +88,6 @@ class GPAFStrategy(FedAvg):
                 "fraction_fit": fraction_fit
             })
          
-        print(f"Created MLflow run for server: {self.server_run_id}")
         #on_evaluate_config_fn: Optional[Callable[[int], Dict[str, Scalar]]] = None,
         # Initialize the generator and its optimizer here
         self.num_classes =num_classes

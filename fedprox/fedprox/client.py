@@ -46,7 +46,7 @@ class FederatedClient(fl.client.NumPyClient):
       run_id,
       feature_visualizer
       ,
-            device,batch_size):
+            device,batch_size,num_clients):
         self.net = net
         
         self.traindata = data
@@ -55,7 +55,7 @@ class FederatedClient(fl.client.NumPyClient):
         self.local_epochs=local_epochs
         self.client_id=client_id
         self.num_classes=9
-        self.num_clients=2
+        self.num_clients=num_clients
         self.batch_size=batch_size
         
         print(f"dd Batch size client side : {self.batch_size}")
@@ -283,8 +283,10 @@ save_dir="feature_visualizations"
             ,
             run_id,
             feature_visualizer,
-            device,batch_size
+            device,
+            batch_size,
 
+num_clients=num_clients
           )
 
          

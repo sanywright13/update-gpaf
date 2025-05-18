@@ -210,6 +210,7 @@ def create_pathmnist_scenario2_loaders(
     val_ratio: float = 0.1,
     seed: int = 42,
     device=None
+    , num_clients=None
 ):
 
     def build_transform():
@@ -229,8 +230,10 @@ def create_pathmnist_scenario2_loaders(
                             generator=torch.Generator().manual_seed(seed))
     
     d=3
-    k=20
-    total_clients = d * k
+    total_clients =  num_clients
+    d=3
+    k=total_clients/d
+    print(f'num client : {total_clients} and k is : {k}')
     samples_per_client = len(ds_train) // total_clients
     indices = np.random.permutation(len(ds_train))
 

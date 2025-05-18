@@ -254,14 +254,15 @@ def get_server_fn(mlflow=None):
  def server_fn(context: Context) -> ServerAppComponents:
     global strategy
     batch_size=32
+    num_clients=60
     if strategy=="fedavg":
       
       strategyi = FedAVGWithEval(
       fraction_fit=1.0,  # Train with 50% of available clients
       fraction_evaluate=0.5,  # Evaluate with all available clients
-      min_fit_clients=2,
-      min_evaluate_clients=2,
-      min_available_clients=2,
+      min_fit_clients=num_clients,
+      min_evaluate_clients=num_clients,
+      min_available_clients=num_clients,
  
       evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,  # Add this
        
@@ -287,8 +288,8 @@ def get_server_fn(mlflow=None):
         experiment_name,
         fraction_fit=1.0,  # Ensure all clients participate in training
         #fraction_evaluate=1.0,
-        min_fit_clients=2,  # Set minimum number of clients for training
-        min_evaluate_clients=2,
+        min_fit_clients=num_clients,  # Set minimum number of clients for training
+        min_evaluate_clients=num_clients,
         num_classes=9,
        batch_size=batch_size,
      

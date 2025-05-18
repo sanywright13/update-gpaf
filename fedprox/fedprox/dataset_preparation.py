@@ -208,7 +208,8 @@ def create_pathmnist_scenario2_loaders(
     npz_path,
     batch_size: int = 32,
     val_ratio: float = 0.1,
-    seed: int = 42
+    seed: int = 42,
+    device=None
 ):
 
     def build_transform():
@@ -249,8 +250,8 @@ def create_pathmnist_scenario2_loaders(
         shifted_train = DomainShiftedPathMNIST(train_subset, client_id)
         shifted_val = DomainShiftedPathMNIST(val_subset, client_id)
 
-        train_loaders.append(DataLoader(shifted_train, batch_size=batch_size, shuffle=True, num_workers=4))
-        val_loaders.append(DataLoader(shifted_val, batch_size=batch_size, shuffle=False, num_workers=4))
+        train_loaders.append(DataLoader(shifted_train, batch_size=batch_size, shuffle=True, num_workers=4, pin_memory=True))
+        val_loaders.append(DataLoader(shifted_val, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True))
 
     # Test set is used as a clean (non-shifted) client: client_id = d*k
     test_subset = ds_test
@@ -259,9 +260,9 @@ def create_pathmnist_scenario2_loaders(
     clean_val, clean_train_0 = random_split(test_subset, [n_val, n_train_0],
                                          generator=torch.Generator().manual_seed(seed))
 
-    clean_val_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4)
-    clean_train_0_loader = DataLoader(clean_train_0, batch_size=batch_size, shuffle=False, num_workers=4)
-    clean_test_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4)
+    clean_val_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
+    clean_train_0_loader = DataLoader(clean_train_0, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
+    clean_test_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
 
     val_loaders.append(clean_val_loader)  # Add clean validation client
     train_loaders.append(clean_train_0_loader)

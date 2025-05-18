@@ -144,7 +144,7 @@ save_dir="feature_visualizations_gpaf"
                 num_samples_list.append(fit_res.num_examples)
         # Cluster clients using cosine similarity between prototype vectors
         self.perform_clustering(server_round)
-        #print(f' client parameters: {client_parameters}')
+        print(f' client parameters')
         #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
 

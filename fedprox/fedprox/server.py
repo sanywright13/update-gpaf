@@ -199,7 +199,7 @@ save_dir="feature_visualizations_gpaf"
         save_path = os.path.join(self.save_dir, filename)
         plt.savefig(save_path, bbox_inches='tight', dpi=300)
         plt.close()  
-
+ 
     def aggregate_evaluate(self, server_round: int, results, failures):
         """Aggregate evaluation results."""
         if not results:

@@ -8,6 +8,8 @@ import base64
 import pickle
 from torch.distributions import Dirichlet, Categorical
 import torch
+from collections import defaultdict
+from sklearn.metrics import pairwise_distances
 from typing import List, Tuple, Optional, Dict, Callable, Union
 from flwr.common.typing import NDArrays, Scalar
 from hydra.utils import instantiate
@@ -111,8 +113,66 @@ save_dir="feature_visualizations_gpaf"
       """Return the sample size and required number of clients for evaluation."""
       num_clients = client_manager.num_available()
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
-    #1first run
+    
+    def _initialize_clusters(self, all_prototypes):
+        """Initialize cluster prototypes using first num_clusters clients"""
+        initial_prototypes = [all_prototypes[i] for i in range(self.num_clusters)]
+        return {
+            cluster_id: initial_prototypes[cluster_id]
+            for cluster_id in range(self.num_clusters)
+        }
 
+    
+    def _e_step(self, all_prototypes, client_ids):
+        """Hard assignment of clients to clusters"""
+        assignments = {}
+        for client_id, prototypes in zip(client_ids, all_prototypes):
+            min_dist = float('inf')
+            best_cluster = 0
+            
+            # Calculate distance to each cluster
+            for cluster_id in self.cluster_prototypes:
+                total_dist = 0
+                for class_id in prototypes:
+                    if class_id in self.cluster_prototypes[cluster_id]:
+                        # L2 distance between prototypes
+                        client_proto = prototypes[class_id]
+                        cluster_proto = self.cluster_prototypes[cluster_id][class_id]
+                        total_dist += np.linalg.norm(client_proto - cluster_proto)
+                
+                if total_dist < min_dist:
+                    min_dist = total_dist
+                    best_cluster = cluster_id
+                    
+            assignments[client_id] = best_cluster
+        return assignments
+
+    
+    def _m_step(self, all_prototypes, client_ids, assignments):
+        """Update cluster prototypes based on assignments"""
+        cluster_accumulators = defaultdict(lambda: defaultdict(list))
+        
+        # Accumulate prototypes per cluster and class
+        for client_id, prototypes in zip(client_ids, all_prototypes):
+            cluster_id = assignments[client_id]
+            for class_id, proto in prototypes.items():
+                cluster_accumulators[cluster_id][class_id].append(proto)
+                
+        # Compute mean prototypes
+        new_clusters = defaultdict(dict)
+        for cluster_id in cluster_accumulators:
+            for class_id in cluster_accumulators[cluster_id]:
+                protos = cluster_accumulators[cluster_id][class_id]
+                new_clusters[cluster_id][class_id] = np.mean(protos, axis=0)
+                
+        # Handle empty clusters (re-initialize with random client)
+        for cluster_id in range(self.num_clusters):
+            if cluster_id not in new_clusters:
+                random_client = np.random.choice(client_ids)
+                new_clusters[cluster_id] = all_prototypes[client_ids.index(random_client)]
+                
+        return new_clusters
+    
     def aggregate_fit(
         self,
         server_round: int,
@@ -134,19 +194,54 @@ save_dir="feature_visualizations_gpaf"
         self.client_prototypes = {}  # <-- ADD THIS LINE
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
-                prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
-                prototypes = pickle.loads(base64.b64decode(prototypes))
+                #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
+                #prototypes = pickle.loads(base64.b64decode(prototypes))
                 client_parameters = parameters_to_ndarrays(fit_res.parameters)
                 clients_params_list.append(client_parameters)
+                """
                 if prototypes:
                     self.client_prototypes[client_id] = prototypes
+                """
                 num_samples_list.append(fit_res.num_examples)
         # Cluster clients using cosine similarity between prototype vectors
         self.perform_clustering(server_round)
         print(f' client parameters')
         #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
-
+        
+        #*** compute the clustering algorithm ***#
+        # Extract prototypes from  clients
+        successful_clients = [r for r in results if r.status == flwr.common.Status.OK]
+        client_ids = [r.client_id for r in successful_clients]
+        prototypes = [r.metrics["prototypes"] for r in successful_clients]
+        # Convert prototypes to numpy arrays
+        proto_arrays = []
+        for p in prototypes:
+            proto_arrays.append({
+                cls: np.array(proto) 
+                for cls, proto in p.items()
+            })
+        
+        # Initialize clusters if first round
+        if self.cluster_prototypes is None:
+            self.cluster_prototypes = self._initialize_clusters(proto_arrays)
+            
+        # 4. EM Algorithm
+        # E-step: Assign clients to clusters
+        assignments = self._e_step(proto_arrays, client_ids)
+        
+        # M-step: Update cluster prototypes
+        self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments)
+        
+        # 5. Update client assignments
+        self.client_assignments.update(assignments)
+        
+        # 6. Prepare cluster prototypes for next round
+        for cluster_id in self.cluster_prototypes:
+            for class_id in self.cluster_prototypes[cluster_id]:
+                if isinstance(self.cluster_prototypes[cluster_id][class_id], np.ndarray):
+                    self.cluster_prototypes[cluster_id][class_id] = \
+                        self.cluster_prototypes[cluster_id][class_id].tolist()
         return ndarrays_to_parameters(aggregated_params),config
 
     def _fedavg_parameters(
@@ -171,6 +266,7 @@ save_dir="feature_visualizations_gpaf"
         aggregated_params = [param / total_samples for param in aggregated_params]
 
         return aggregated_params
+
     def perform_clustering(self,server_round):
         # Convert prototype dicts to flat vectors and compute pairwise similarities
         from sklearn.metrics.pairwise import cosine_similarity
@@ -250,6 +346,24 @@ save_dir="feature_visualizations_gpaf"
          
          
         return avg_accuracy, {"accuracy": avg_accuracy}
+
+    def configure_fit(self, server_round, parameters, client_manager):
+        """Select clients proportionally from each cluster"""
+        # Group clients by cluster
+        cluster_clients = defaultdict(list)
+        for client in client_manager.all().values():
+            if client.cid in self.client_assignments:
+                cluster_id = self.client_assignments[client.cid]
+                cluster_clients[cluster_id].append(client)
+                
+        # Select clients per cluster
+        selected = []
+        for cluster_id, clients in cluster_clients.items():
+            n_select = max(1, int(self.fraction_fit * len(clients)))
+            selected.extend(np.random.choice(clients, size=n_select, replace=False))
+            
+        return selected
+        
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:
@@ -275,6 +389,7 @@ save_dir="feature_visualizations_gpaf"
         if self.evaluate_fn is None:
             # No evaluation function provided
             return None
+      
 
   
 

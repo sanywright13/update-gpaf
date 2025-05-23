@@ -219,7 +219,7 @@ save_dir="feature_visualizations_gpaf"
         # Extract prototypes from  clients
         successful_clients = [r for r in results if r.status == flwr.common.Status.OK]
         client_ids = [r.client_id for r in successful_clients]
-        prototypes = [r.metrics["prototypes"] for r in successful_clients]
+        prototypes = [pickle.loads(base64.b64decode(r.metrics["prototypes"])) for r in successful_clients]
         print(f'prototypes: **** {prototypes} ****')
         # Convert prototypes to numpy arrays
         proto_arrays = []

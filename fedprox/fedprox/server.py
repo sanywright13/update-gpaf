@@ -211,15 +211,17 @@ save_dir="feature_visualizations_gpaf"
                 num_samples_list.append(fit_res.num_examples)
         # Cluster clients using cosine similarity between prototype vectors
         #self.perform_clustering(server_round)
-        #print(f' client parameters')
         #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
         
         #*** compute the clustering algorithm ***#
         # Extract prototypes from  clients
-        successful_clients = [r for r in results if r.status == flwr.common.Status.OK]
-        client_ids = [r.client_id for r in successful_clients]
-        prototypes = [pickle.loads(base64.b64decode(r.metrics["prototypes"])) for r in successful_clients]
+        #successful_clients = [r for r in results if r.status == flwr.common.Status.OK]
+        client_ids = [client.cid for client,_ in results]
+        print(f' client ids {client_ids}')
+
+        
+        prototypes = [pickle.loads(base64.b64decode(r.metrics["prototypes"])) for _,r in results]
         print(f'prototypes: **** {prototypes} ****')
         # Convert prototypes to numpy arrays
         proto_arrays = []

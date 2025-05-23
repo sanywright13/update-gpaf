@@ -218,11 +218,11 @@ save_dir="feature_visualizations_gpaf"
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
         #*** compute the clustering algorithm ***#
         client_ids = [client.cid for client,_ in results]
-        print(f' client ids {client_ids}')
+        #print(f' client ids {client_ids}')
 
         
         prototypes = [pickle.loads(base64.b64decode(r.metrics["prototypes"])) for _,r in results]
-        print(f'prototypes: **** {prototypes} ****')
+        #print(f'prototypes: **** {prototypes} ****')
         # Convert prototypes to numpy arrays
         proto_arrays = []
         for p in prototypes:

@@ -220,6 +220,7 @@ save_dir="feature_visualizations_gpaf"
         successful_clients = [r for r in results if r.status == flwr.common.Status.OK]
         client_ids = [r.client_id for r in successful_clients]
         prototypes = [r.metrics["prototypes"] for r in successful_clients]
+        print(f'prototypes: **** {prototypes} ****')
         # Convert prototypes to numpy arrays
         proto_arrays = []
         for p in prototypes:
@@ -352,7 +353,7 @@ save_dir="feature_visualizations_gpaf"
          
          
         return avg_accuracy, {"accuracy": avg_accuracy}
-
+    '''
     def configure_fit(self, server_round, parameters, client_manager):
         """Select clients proportionally from each cluster"""
         # Group clients by cluster
@@ -369,6 +370,7 @@ save_dir="feature_visualizations_gpaf"
             selected.extend(np.random.choice(clients, size=n_select, replace=False))
             
         return selected
+    '''
         
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

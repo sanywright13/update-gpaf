@@ -8,10 +8,13 @@ import base64
 import pickle
 from torch.distributions import Dirichlet, Categorical
 import torch
+from sklearn.manifold import TSNE
 from collections import defaultdict
 from sklearn.metrics import pairwise_distances
 from typing import List, Tuple, Optional, Dict, Callable, Union
 from flwr.common.typing import NDArrays, Scalar
+import matplotlib.pyplot as plt
+import numpy as np
 from hydra.utils import instantiate
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader
@@ -213,10 +216,7 @@ save_dir="feature_visualizations_gpaf"
         #self.perform_clustering(server_round)
         #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
-        
         #*** compute the clustering algorithm ***#
-        # Extract prototypes from  clients
-        #successful_clients = [r for r in results if r.status == flwr.common.Status.OK]
         client_ids = [client.cid for client,_ in results]
         print(f' client ids {client_ids}')
 
@@ -251,7 +251,63 @@ save_dir="feature_visualizations_gpaf"
                 if isinstance(self.cluster_prototypes[cluster_id][class_id], np.ndarray):
                     self.cluster_prototypes[cluster_id][class_id] = \
                         self.cluster_prototypes[cluster_id][class_id].tolist()
+
+        self._visualize_clusters(prototypes, client_ids, server_round)
         return ndarrays_to_parameters(aggregated_params),config
+    
+
+    def _visualize_clusters(self, prototypes, client_ids, server_round):
+        """Visualize client prototypes and cluster assignments using t-SNE."""
+        # Flatten prototypes (average across classes)
+        prototype_matrix = []
+        for client_prototypes in prototypes:
+            # Average all class-specific prototypes for a client
+            client_proto = np.mean(list(client_prototypes.values()), axis=0)
+            prototype_matrix.append(client_proto)
+        prototype_matrix = np.array(prototype_matrix)
+
+        # Project to 2D with t-SNE
+        tsne = TSNE(n_components=2, random_state=42)
+        projections = tsne.fit_transform(prototype_matrix)
+
+        # Get cluster assignments and domain labels
+        cluster_assignments = [self.client_assignments[cid] for cid in client_ids]
+        domain_labels = [self.client_domains[cid] for cid in client_ids]  # Optional
+
+        # Plot
+        plt.figure(figsize=(10, 6))
+        if domain_labels:  # Color by true domain (if available)
+            scatter = plt.scatter(
+                projections[:, 0], projections[:, 1], 
+                c=domain_labels, cmap='tab10', alpha=0.6, label='True Domains'
+            )
+            plt.legend(*scatter.legend_elements(), title="Domains")
+        else:  # Color by cluster assignments
+            plt.scatter(
+                projections[:, 0], projections[:, 1], 
+                c=cluster_assignments, cmap='tab10', alpha=0.6, label='Clusters'
+            )
+        
+        # Annotate cluster centers (optional)
+        if self.cluster_prototypes:
+            cluster_centers = []
+            for cluster_id in range(self.num_clusters):
+                # Average all class prototypes in the cluster
+                cluster_proto = np.mean(list(self.cluster_prototypes[cluster_id].values()), axis=0)
+                cluster_centers.append(cluster_proto)
+            cluster_centers = np.array(cluster_centers)
+            centers_proj = tsne.fit_transform(cluster_centers)
+            plt.scatter(
+                centers_proj[:, 0], centers_proj[:, 1], 
+                c='red', marker='X', s=200, label='Cluster Centers'
+            )
+        
+        plt.title(f"Cluster Visualization (Round {server_round})")
+        plt.xlabel("t-SNE 1")
+        plt.ylabel("t-SNE 2")
+        plt.legend()
+        plt.savefig(f"clusters_round_{server_round}.png")  # Save to file
+        plt.close()
 
     def _fedavg_parameters(
         self, params_list: List[List[np.ndarray]], num_samples_list: List[int]

@@ -205,7 +205,7 @@ class FederatedClient(fl.client.NumPyClient):
         {
            
             "prototypes": all_prototypes,
-            "features": all_features_serialized,
+            #"features": all_features_serialized,
             #"grads": grads_serialized
 
         

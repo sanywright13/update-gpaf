@@ -270,7 +270,7 @@ save_dir="feature_visualizations_gpaf"
 
       # Get cluster assignments
       cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]  # -1 = unassigned
-
+      print(f" cluster assignment {cluster_assignments}")
       # Create plot
       plt.figure(figsize=(12, 8))
       scatter = plt.scatter(

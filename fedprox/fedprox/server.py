@@ -62,6 +62,12 @@ class GPAFStrategy(FedAvg):
         self.min_fit_clients = min_fit_clients
         self.min_evaluate_clients = min_evaluate_clients
         self.min_available_clients = min_available_clients
+
+        #clusters parameters
+
+        self.num_clusters = 4
+        self.cluster_prototypes = None  # {cluster_id: {class_id: prototype}}
+        self.client_assignments = {}  # {client_id: cluster_id}
       
         experiment = mlflow.get_experiment_by_name(experiment_name)
         if experiment is None:

@@ -257,57 +257,41 @@ save_dir="feature_visualizations_gpaf"
     
 
     def _visualize_clusters(self, prototypes, client_ids, server_round):
-        """Visualize client prototypes and cluster assignments using t-SNE."""
-        # Flatten prototypes (average across classes)
-        prototype_matrix = []
-        for client_prototypes in prototypes:
-            # Average all class-specific prototypes for a client
-            client_proto = np.mean(list(client_prototypes.values()), axis=0)
-            prototype_matrix.append(client_proto)
-        prototype_matrix = np.array(prototype_matrix)
+      # Flatten prototypes (average across classes)
+      prototype_matrix = []
+      for client_prototypes in prototypes:
+        client_proto = np.mean(list(client_prototypes.values()), axis=0)
+        prototype_matrix.append(client_proto)
+      prototype_matrix = np.array(prototype_matrix)
 
-        # Project to 2D with t-SNE
-        tsne = TSNE(n_components=2, random_state=42)
-        projections = tsne.fit_transform(prototype_matrix)
+      # Project with t-SNE
+      tsne = TSNE(n_components=2, random_state=42)
+      projections = tsne.fit_transform(prototype_matrix)
 
-        # Get cluster assignments and domain labels
-        cluster_assignments = [self.client_assignments[cid] for cid in client_ids]
-        domain_labels = [self.client_domains[cid] for cid in client_ids]  # Optional
+      # Get cluster assignments
+      cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]  # -1 = unassigned
 
-        # Plot
-        plt.figure(figsize=(10, 6))
-        if domain_labels:  # Color by true domain (if available)
-            scatter = plt.scatter(
-                projections[:, 0], projections[:, 1], 
-                c=domain_labels, cmap='tab10', alpha=0.6, label='True Domains'
-            )
-            plt.legend(*scatter.legend_elements(), title="Domains")
-        else:  # Color by cluster assignments
-            plt.scatter(
-                projections[:, 0], projections[:, 1], 
-                c=cluster_assignments, cmap='tab10', alpha=0.6, label='Clusters'
-            )
-         
-        # Annotate cluster centers (optional)
-        if self.cluster_prototypes:
-            cluster_centers = []
-            for cluster_id in range(self.num_clusters):
-                # Average all class prototypes in the cluster
-                cluster_proto = np.mean(list(self.cluster_prototypes[cluster_id].values()), axis=0)
-                cluster_centers.append(cluster_proto)
-            cluster_centers = np.array(cluster_centers)
-            centers_proj = tsne.fit_transform(cluster_centers)
-            plt.scatter(
-                centers_proj[:, 0], centers_proj[:, 1], 
-                c='red', marker='X', s=200, label='Cluster Centers'
-            )
-        
-        plt.title(f"Cluster Visualization (Round {server_round})")
-        plt.xlabel("t-SNE 1")
-        plt.ylabel("t-SNE 2")
-        plt.legend()
-        plt.savefig(f"clusters_round_{server_round}.png")  # Save to file
-        plt.close()
+      # Create plot
+      plt.figure(figsize=(12, 8))
+      scatter = plt.scatter(
+        projections[:, 0], projections[:, 1], 
+        c=cluster_assignments, cmap='tab10', alpha=0.7
+     )
+    
+      # Annotate points with client IDs
+      for i, (x, y) in enumerate(projections):
+        plt.text(x, y, client_ids[i], fontsize=8, ha='center', va='bottom')
+    
+      # Add legend and labels
+      plt.legend(*scatter.legend_elements(), title="Cluster ID")
+      plt.title(f"Client Prototypes (Round {server_round})\nColors = Cluster ID, Labels = Client ID")
+      plt.xlabel("t-SNE 1")
+      plt.ylabel("t-SNE 2")
+    
+      # Save and display
+      plt.savefig(f"clusters_round_{server_round}.png", dpi=300, bbox_inches='tight')
+      plt.show()
+      plt.close()
 
     def _fedavg_parameters(
         self, params_list: List[List[np.ndarray]], num_samples_list: List[int]

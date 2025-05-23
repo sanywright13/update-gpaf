@@ -94,7 +94,7 @@ class FederatedClient(fl.client.NumPyClient):
 
      
         loss, accuracy = test_gpaf(self.net, self.validdata, self.device)
-
+        """
         # Extract features and labels
         
         val_features, val_labels = extract_features_and_labels(
@@ -125,11 +125,11 @@ class FederatedClient(fl.client.NumPyClient):
         labels_serialized = base64.b64encode(pickle.dumps(labels_np)).decode('utf-8')
         print(f"Client {self.client_id} sending features shape: {features_np.shape}")
         print(f"Client {self.client_id} sending labels shape: {labels_np.shape}")
-       
+        """
         print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
         return float(loss), len(self.validdata), {"accuracy": float(accuracy),
-        "features": features_serialized,
-        "labels": labels_serialized,
+        #"features": features_serialized,
+        #"labels": labels_serialized,
         }
     
     
@@ -145,7 +145,7 @@ class FederatedClient(fl.client.NumPyClient):
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size)
            
         # Extract features for server
-        
+        """
         features = []
         with torch.no_grad():
           for data, labels in self.traindata:
@@ -167,8 +167,8 @@ class FederatedClient(fl.client.NumPyClient):
         # Clear memory
         del features
         del all_features
-       
-
+        """
+   
         #protoype
         
         # === Prototype Extraction ===

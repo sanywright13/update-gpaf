@@ -204,8 +204,8 @@ save_dir="feature_visualizations_gpaf"
                 """
                 num_samples_list.append(fit_res.num_examples)
         # Cluster clients using cosine similarity between prototype vectors
-        self.perform_clustering(server_round)
-        print(f' client parameters')
+        #self.perform_clustering(server_round)
+        #print(f' client parameters')
         #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
         
@@ -323,7 +323,7 @@ save_dir="feature_visualizations_gpaf"
               self.current_labels[client_id] = labels_np
             
             print(f"Stored data for client {client_id}")
-           
+            
             self.mlflow.log_metrics({
                     f"accuracy_client_{client_id}": accuracy
                 }, step=server_round)

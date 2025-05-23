@@ -287,7 +287,7 @@ save_dir="feature_visualizations_gpaf"
                 projections[:, 0], projections[:, 1], 
                 c=cluster_assignments, cmap='tab10', alpha=0.6, label='Clusters'
             )
-        
+         
         # Annotate cluster centers (optional)
         if self.cluster_prototypes:
             cluster_centers = []

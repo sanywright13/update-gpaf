@@ -380,10 +380,27 @@ save_dir="feature_visualizations_gpaf"
                       
         # Calculate average accuracy
         avg_accuracy = sum(accuracies.values()) / len(accuracies)
-      
+        # ——— Prepare CSV logging ———
+        log_filename = f"client_acc_valid_{client_id}_loss_log.csv"
+        write_header = not os.path.exists(log_filename)
+        with open(log_filename, 'a', newline='') as csvfile:
+          writer = csv.writer(csvfile)
+          if write_header:
+            writer.writerow([
+                "round","accuracy_avg",
+               
+                ])
         
         if avg_accuracy > self.best_avg_accuracy:
+
           print(f'==visualization===')
+          # log to CSV
+          with open(log_filename, 'a', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([server_round, avg_accuracy])
+  
+    
+          '''
           self.best_avg_accuracy = avg_accuracy
           self.feature_visualizer.visualize_all_clients_by_class(
             features_dict=self.current_features,
@@ -392,6 +409,7 @@ save_dir="feature_visualizations_gpaf"
             epoch=server_round,
             stage="validation"
           )
+          '''
          
          
         return avg_accuracy, {"accuracy": avg_accuracy}

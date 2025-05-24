@@ -316,33 +316,7 @@ save_dir="feature_visualizations_gpaf"
 
         return aggregated_params
 
-    def perform_clustering(self,server_round):
-        # Convert prototype dicts to flat vectors and compute pairwise similarities
-        from sklearn.metrics.pairwise import cosine_similarity
- 
-        client_ids = list(self.client_prototypes.keys())
-        vectors = []
-
-        for cid in client_ids:
-            proto = self.client_prototypes[cid]
-            # Flatten all class prototypes into a single vector per client
-            flat_vec = torch.cat([v for k, v in sorted(proto.items())])
-            vectors.append(flat_vec.numpy())
-
-        similarity_matrix = cosine_similarity(vectors)
-        
-        # Optionally visualize:
-        import seaborn as sns
-        import matplotlib.pyplot as plt
-        sns.heatmap(similarity_matrix, xticklabels=client_ids, yticklabels=client_ids, cmap="viridis")
-        plt.title("Client Prototype Cosine Similarity")
-        #plt.show() 
-
-        # Save visualization
-        filename = f"global_local_comparison_epoch{server_round}.png"
-        save_path = os.path.join(self.save_dir, filename)
-        plt.savefig(save_path, bbox_inches='tight', dpi=300)
-        plt.close()  
+   
  
     def aggregate_evaluate(self, server_round: int, results, failures):
         """Aggregate evaluation results."""
@@ -381,7 +355,7 @@ save_dir="feature_visualizations_gpaf"
         # Calculate average accuracy
         avg_accuracy = sum(accuracies.values()) / len(accuracies)
         # ——— Prepare CSV logging ———
-        log_filename = f"client_acc_valid_{client_id}_loss_log.csv"
+        log_filename = f"clients_acc_valid_{client_id}_log.csv"
         write_header = not os.path.exists(log_filename)
         with open(log_filename, 'a', newline='') as csvfile:
           writer = csv.writer(csvfile)

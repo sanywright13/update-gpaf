@@ -254,7 +254,7 @@ def get_server_fn(mlflow=None):
  def server_fn(context: Context) -> ServerAppComponents:
     global strategy
     batch_size=32
-    num_clients=60
+    num_clients=30
     if strategy=="fedavg":
       
       strategyi = FedAVGWithEval(

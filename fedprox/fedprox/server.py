@@ -265,7 +265,10 @@ save_dir="feature_visualizations_gpaf"
       prototype_matrix = np.array(prototype_matrix)
 
       # Project with t-SNE
-      tsne = TSNE(n_components=2, random_state=42)
+      n_clients= len(prototype_matrix)
+      perplexity = min(30, max(1, n_clients - 1))  # Ensures 1 <= perplexity < n_clients
+
+      tsne = TSNE(n_components=2,  perplexity=perplexity,random_state=42 )
       projections = tsne.fit_transform(prototype_matrix)
 
       # Get cluster assignments

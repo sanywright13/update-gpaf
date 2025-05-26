@@ -522,7 +522,7 @@ def main(cfg: DictConfig) -> None:
 
 def data_load(cfg: DictConfig):
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+  
   trainloaders, valloaders, testloader = load_datasets(
         config=cfg.dataset_config,
         num_clients=cfg.num_clients,

@@ -231,7 +231,7 @@ def create_pathmnist_scenario2_loaders(
     
     d=3
     total_clients =  num_clients
-    d=3
+    
     k=total_clients/d
     print(f'num client : {total_clients} and k is : {k}')
     samples_per_client = len(ds_train) // total_clients

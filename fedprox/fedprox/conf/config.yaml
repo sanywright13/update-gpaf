@@ -1,6 +1,6 @@
 ---
 
-num_clients: 30 # total number of clients
+num_clients: 18 # total number of clients
 num_epochs: 2 # number of local epochs
 batch_size: 32
 num_rounds: 10

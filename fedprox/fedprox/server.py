@@ -390,24 +390,27 @@ save_dir="feature_visualizations_gpaf"
          
          
         return avg_accuracy, {"accuracy": avg_accuracy}
-    '''
+   
     def configure_fit(self, server_round, parameters, client_manager):
-        """Select clients proportionally from each cluster"""
-        # Group clients by cluster
-        cluster_clients = defaultdict(list)
-        for client in client_manager.all().values():
-            if client.cid in self.client_assignments:
-                cluster_id = self.client_assignments[client.cid]
-                cluster_clients[cluster_id].append(client)
-                
-        # Select clients per cluster
-        selected = []
-        for cluster_id, clients in cluster_clients.items():
-            n_select = max(1, int(self.fraction_fit * len(clients)))
-            selected.extend(np.random.choice(clients, size=n_select, replace=False))
-            
-        return selected
-    '''
+      # Sample a subset of clients for this round (e.g., 10% of available clients)
+      num_clients_per_round = int(self.fraction_fit * client_manager.num_available())
+      selected_clients = client_manager.sample(  # <-- Fix here
+        num_clients=num_clients_per_round,  # Example: 10% of clients
+        min_num_clients=4,  # Minimum clients per round
+      )
+
+      # Assign cluster-specific configs to the sampled clients
+      for client in selected_clients:
+        cluster_id = self.client_assignments[client.cid]
+        client_prototypes = self.cluster_prototypes[cluster_id]
+        N_j = {cls: self.cluster_class_counts[cluster_id][cls] for cls in client_prototypes}
+        client.config.update({
+            "global_prototypes": client_prototypes,
+            "N_j": N_j
+        })
+
+      return selected_clients  # <-- Return clients for the NEXT round
+  
         
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

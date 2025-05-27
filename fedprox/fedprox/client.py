@@ -141,8 +141,10 @@ class FederatedClient(fl.client.NumPyClient):
         #print(f'=== client training {config}')
         # Update local models with global parameters
         self.set_parameters(parameters)
-    
-        train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size)
+        global_prototypes = config["global_prototypes"]
+        N_j = config["N_j"]
+        print(f'number of class in cluster client {N_j}')
+        train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
            
         # Extract features for server
         """

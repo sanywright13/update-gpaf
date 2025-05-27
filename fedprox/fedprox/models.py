@@ -288,7 +288,7 @@ def train_gpaf( net: nn.Module,
     device: torch.device,
     client_id,
     epochs: int,
-  batch_size
+  batch_size,global_prototypes, N_j
     ):
 
 # j
@@ -296,12 +296,12 @@ def train_gpaf( net: nn.Module,
         
     train_one_epoch_gpaf(
         net, trainloader, device,client_id,
-            epochs,batch_size
+            epochs,batch_size,global_prototypes, N_j,
         )
 import csv
 #we must add a classifier that classifier into a binary categories
 #send back the classifier parameter to the server
-def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,verbose=False):
+def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,global_prototypes, N_j,verbose=False):
     """Train the network on the training set."""
     #criterion = torch.nn.CrossEntropyLoss()
     lr=0.00013914064388085564

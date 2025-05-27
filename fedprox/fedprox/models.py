@@ -352,6 +352,41 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
         f1_score.reset()
         correct, total, epoch_loss ,loss_sumi ,loss_sum = 0, 0, 0.0 , 0 , 0
         class_counts_client = defaultdict(int)
+
+        #compute local prototypes
+
+        # ==== Step 1: Compute local prototypes for regularization ====
+        net.eval()
+        prototypes = {}
+        class_sums = defaultdict(lambda: torch.zeros(net.feature_dim).to(DEVICE))  # Replace with actual feature_dim
+        class_counts = defaultdict(int)
+        with torch.no_grad():
+            for images, labels in trainloader:
+                images, labels = images.to(DEVICE), labels.to(DEVICE)
+                h, _, _ = net(images)  # Get encoder outputs
+                for l in torch.unique(labels):
+                    mask = (labels == l)
+                    if mask.any():
+                        features = h[mask]
+                        class_sums[l.item()] += features.sum(dim=0)
+                        class_counts[l.item()] += features.shape[0]
+        # Average prototypes per class
+        prototypes = {j: (class_sums[j] / class_counts[j]) for j in class_sums if class_counts[j] > 0}
+        net.train()
+
+        # ==== Step 2: Compute regularization term ====
+
+        reg_loss = 0.0
+        for j in prototypes:
+            if j in global_prototypes and j in N_j and N_j[j] > 0:
+                # L2 distance between local and global prototypes
+                distance = torch.norm(prototypes[j] - global_prototypes[j], p=2)
+                # Weight by |D_i,j| / N_j^k
+                reg_loss += (class_counts_client[j] / N_j[j]) * distance
+        reg_loss *= lambda_reg  # Apply regularization strength
+
+        # ==== Step 3: Training loop ====
+
         for batch_idx, batch in enumerate(trainloader):
 
             _, labels = batch
@@ -371,13 +406,13 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             optimizer.zero_grad()
             _,_,outputs = net(images)
 
-            loss = criterion(outputs, labels)
+            loss_cls = criterion(outputs, labels)
+            loss = loss_cls + (reg_loss / len(trainloader))
             loss.backward()
             optimizer.step()
             # Metrics
-            epoch_loss += loss
-            
-
+            #epoch_loss += loss
+            epoch_loss += loss_cls.item() * images.size(0)
             
             preds = torch.argmax(outputs, dim=1)
             accuracy.update(preds, labels)
@@ -392,7 +427,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
             
-
+        
         epoch_loss /= len(trainloader.dataset)
         epoch_acc = correct / total
         epoch_acc = accuracy.compute().item()

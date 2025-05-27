@@ -144,6 +144,20 @@ class FederatedClient(fl.client.NumPyClient):
         global_prototypes = config["global_prototypes"]
         N_j = config["N_j"]
         print(f'number of class in cluster client {N_j}')
+        #compute local prototypes
+
+        # Precompute client's class counts
+        class_counts_client = defaultdict(int)
+        for batch in self.traindata:
+          _, labels = batch
+          labels = labels.to(DEVICE)
+          unique_labels = torch.unique(labels)
+          for l in unique_labels:
+            mask = (labels == l)
+            class_counts_client[l.item()] += mask.sum().item()
+
+    
+
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
            
         # Extract features for server

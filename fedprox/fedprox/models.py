@@ -1,7 +1,7 @@
 """CNN model architecture, training, and testing functions for MNIST."""
 
 from typing import List, Tuple
-
+from collections import defaultdict
 import torch
 import torch.nn as nn
 from torch.cuda.amp import autocast, GradScaler
@@ -301,27 +301,59 @@ def train_gpaf( net: nn.Module,
 import csv
 #we must add a classifier that classifier into a binary categories
 #send back the classifier parameter to the server
-def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,global_prototypes, N_j,verbose=False):
+def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,global_prototypes, N_j,prototypes,verbose=False):
     """Train the network on the training set."""
     #criterion = torch.nn.CrossEntropyLoss()
     lr=0.00013914064388085564
     print(f" batch size at local model {batch_size}")
     DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+    lambda_reg=0.1
     print(f'Model on device: { DEVICE}')
 
-    print(f"CUDA available: {torch.cuda.is_available()}")
-    print(f"Device count: {torch.cuda.device_count()}")
-    print(f"Device name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'No CUDA available'}")
+    #before starting training extract local prototypes
 
+    # Hyperparameter for regularization strength
+    lambda_reg = 0.1  # Adjust as needed
+
+    # Precompute client's class counts
+    class_counts_client = defaultdict(int)
+    for batch in trainloader:
+        _, labels = batch
+        labels = labels.to(DEVICE)
+        unique_labels = torch.unique(labels)
+        for l in unique_labels:
+            mask = (labels == l)
+            class_counts_client[l.item()] += mask.sum().item()
+
+    for epoch in range(epochs):
+        # ... (existing training loop) ...
+
+        # After processing all batches, compute prototypes
+        net.eval()
+        class_sums = defaultdict(lambda: torch.zeros(net.feature_dim).to(DEVICE))  # Replace with actual feature_dim
+        class_counts = defaultdict(int)
+        with torch.no_grad():
+            for images, labels in trainloader:
+                images, labels = images.to(DEVICE), labels.to(DEVICE)
+                h, _, _ = net(images)  # Get features from the encoder
+                unique_labels = torch.unique(labels)
+                for l in unique_labels:
+                    mask = (labels == l)
+                    features_l = h[mask]
+                    if features_l.size(0) > 0:
+                        class_sums[l.item()] += features_l.sum(dim=0)
+                        class_counts[l.item()] += features_l.size(0)
+        prototypes = {
+            j: (class_sums[j] / class_counts[j]) 
+            for j in class_sums if class_counts[j] > 0
+        }
+
+        
     net.to(DEVICE)
-    
     num_clients=9
     optimizer= torch.optim.Adam(net.parameters(), lr=lr, weight_decay=1e-4)
-  
     criterion = nn.CrossEntropyLoss().to(DEVICE)  # Classification loss (for binary classification)
     net.train()
-   
     num_classes=9
     # Metrics (binary classification)
     accuracy = Accuracy(task="multiclass", num_classes=num_classes).to(device)
@@ -348,8 +380,12 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
         recall.reset()
         f1_score.reset()
         correct, total, epoch_loss ,loss_sumi ,loss_sum = 0, 0, 0.0 , 0 , 0
-        
+        class_counts_client = defaultdict(int)
         for batch_idx, batch in enumerate(trainloader):
+
+            _, labels = batch
+            labels = labels.to(DEVICE)
+            
             images, labels = batch
             images, labels = images.to(DEVICE , dtype=torch.float32 , non_blocking=True), labels.to(DEVICE  , dtype=torch.long , non_blocking=True)
          
@@ -360,23 +396,32 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
                     labels = labels.unsqueeze(0)  # Handle single sample
             
             batch_size = batch_size
-         
+            
             optimizer.zero_grad()
             _,_,outputs = net(images)
+
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()
             # Metrics
             epoch_loss += loss
-   
+            # Compute regularization loss
+            reg_loss = 0.0
+            for j in prototypes:
+              if j in global_prototypes and j in N_j and N_j[j] > 0:
+                distance = torch.norm(prototypes[j] - global_prototypes[j], p=2)
+                reg_loss += (class_counts_client[j] / N_j[j]) * distance
             # Update metrics
+
+            epoch_loss += lambda_reg * reg_loss.item()  # Assuming epoch_loss is already computed
+
             preds = torch.argmax(outputs, dim=1)
             accuracy.update(preds, labels)
             precision.update(preds, labels)
             recall.update(preds, labels)
             f1_score.update(preds, labels) 
             # Accumulate loss
-           
+            
             #loss += loss * labels.size(0)
             # Compute accuracy
             _, predicted = torch.max(outputs.data, 1)

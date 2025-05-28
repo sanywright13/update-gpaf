@@ -405,7 +405,7 @@ save_dir="feature_visualizations_gpaf"
     
       for client in selected_clients:
         # ROUND 1: No clusters yet
-        if server_round == 1:
+        if server_round == 0:
             config = {
                 "global_prototypes": {},
                 "N_j": {}

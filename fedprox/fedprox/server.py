@@ -391,43 +391,49 @@ save_dir="feature_visualizations_gpaf"
          
         return avg_accuracy, {"accuracy": avg_accuracy}
    
+
     def configure_fit(self, server_round, parameters, client_manager):
-      # Sample clients
+      # Sample clients for this round
       num_clients_per_round = int(self.fraction_fit * client_manager.num_available())
       selected_clients = client_manager.sample(
         num_clients=num_clients_per_round,
         min_num_clients=4,
       )
     
-      # ROUND 1: No clusters yet
-      if server_round == 1:
-        for client in selected_clients:
-            # Send empty config (no regularization)
-            client.config.update({
+      # Prepare configurations for each client
+      configurations = []
+    
+      for client in selected_clients:
+        # ROUND 1: No clusters yet
+        if server_round == 1:
+            config = {
                 "global_prototypes": {},
                 "N_j": {}
-            })
-        return selected_clients
-    
-      # ROUND 2+: Use clusters
-      for client in selected_clients:
-        # Handle unassigned clients (new or missed)
-        if client.cid not in self.client_assignments:
-            # Assign to random cluster or default cluster
-            cluster_id = np.random.randint(0, self.num_clusters)
-            self.client_assignments[client.cid] = cluster_id
+            }
+        else:
+            # Handle unassigned clients (new or missed)
+            if client.cid not in self.client_assignments:
+                # Assign to random cluster
+                cluster_id = np.random.randint(0, self.num_clusters)
+                self.client_assignments[client.cid] = cluster_id
+                
+            cluster_id = self.client_assignments[client.cid]
+            
+            # Get cluster-specific data
+            client_prototypes = self.cluster_prototypes.get(cluster_id, {})
+            N_j = {cls: self.cluster_class_counts.get(cluster_id, {}).get(cls, 1)
+                   for cls in client_prototypes}
+            
+            config = {
+                "global_prototypes": client_prototypes,
+                "N_j": N_j
+            }
         
-        cluster_id = self.client_assignments[client.cid]
-        client_prototypes = self.cluster_prototypes[cluster_id]
-        N_j = {cls: self.cluster_class_counts[cluster_id][cls] 
-               for cls in client_prototypes}
-        
-        client.config.update({
-            "global_prototypes": client_prototypes,
-            "N_j": N_j
-        })
+        # Create FitIns with parameters and config
+        fit_ins = flwr.common.FitIns(parameters, config)
+        configurations.append((client, fit_ins))
     
-      return selected_clients
+      return configurations
         
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

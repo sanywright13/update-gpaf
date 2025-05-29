@@ -225,7 +225,7 @@ save_dir="feature_visualizations_gpaf"
                 clients_params_list.append(client_parameters)
                 all_prototypes.append(pickle.loads(base64.b64decode(fit_res.metrics["prototypes"])))
                 client_ids.append(client_id)
-                class_counts_list.append(fit_res.metrics["class_counts"])  # Dict[class_id] = count
+                class_counts_list.append(pickle.loads(base64.b64decode(fit_res.metrics["class_counts"])))  # Dict[class_id] = count
 
                 """
                 if prototypes:
@@ -447,9 +447,17 @@ save_dir="feature_visualizations_gpaf"
             for cls in client_prototypes:
                 count = class_counts.get(cls, 1)  # Default to 1 to avoid division by zero
                 N_j[cls] = count
-            
+            # Convert numpy arrays in client_prototypes to lists for JSON serialization
+            client_prototypes_serializable = {
+              cls: proto.tolist() if isinstance(proto, np.ndarray) else proto
+           for cls, proto in client_prototypes.items()
+              }
+
+            # N_j should already be a dict of ints, so it's fine
+
+
             config = {
-                "global_prototypes": client_prototypes,
+                "global_prototypes": client_prototypes_serializable,
                 "N_j": N_j
             }
         

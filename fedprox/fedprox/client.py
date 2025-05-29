@@ -216,6 +216,8 @@ class FederatedClient(fl.client.NumPyClient):
             prototypes[class_id] = torch.zeros_like(h[0].cpu())
         
         all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
+        class_counts= base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
+
         # Convert to list-of-floats
         #all_prototypes = {cls: proto.tolist() for cls, proto in prototypes.items()}
 

@@ -219,6 +219,7 @@ class Model(nn.Module):
         basemodel = resnet18_breastmnist()
         self.features = nn.Sequential(*list(basemodel.children())[:-1])
         num_ftrs = basemodel.fc.in_features
+        self.feature_dim = num_ftrs  # ← ADD THIS LINE
       
 
         # projection MLP
@@ -321,7 +322,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
     # Metrics
     
     net.to(DEVICE)
-    num_clients=9
+    
     optimizer= torch.optim.Adam(net.parameters(), lr=lr, weight_decay=1e-4)
     criterion = nn.CrossEntropyLoss().to(DEVICE)  # Classification loss (for binary classification)
     #net.train()
@@ -360,30 +361,43 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
         prototypes = {}
         class_sums = defaultdict(lambda: torch.zeros(net.feature_dim).to(DEVICE))  # Replace with actual feature_dim
         class_counts = defaultdict(int)
+        class_embeddings = defaultdict(list)
         with torch.no_grad():
             for images, labels in trainloader:
                 images, labels = images.to(DEVICE), labels.to(DEVICE)
                 h, _, _ = net(images)  # Get encoder outputs
-                for l in torch.unique(labels):
-                    mask = (labels == l)
-                    if mask.any():
-                        features = h[mask]
-                        class_sums[l.item()] += features.sum(dim=0)
-                        class_counts[l.item()] += features.shape[0]
-        # Average prototypes per class
-        prototypes = {j: (class_sums[j] / class_counts[j]) for j in class_sums if class_counts[j] > 0}
-        net.train()
+                for i in range(labels.size(0)):
+                  label = labels[i].item()
+                  class_embeddings[label].append(h[i].cpu())  # Save on CPU to avoid GPU memory issues
+                  class_counts[label] += 1
+        # Compute prototypes
+        prototypes = {}
+        for class_id in range(num_classes):
+          if class_id in class_embeddings and len(class_embeddings[class_id]) > 0:
+            stacked = torch.stack(class_embeddings[class_id])  # Shape: [N_j, feature_dim]
+            prototypes[class_id] = stacked.mean(dim=0)          # Shape: [feature_dim]
+          else:
+            # Use zero vector if no sample for class in this client
+            prototypes[class_id] = torch.zeros_like(h[0].cpu())
+        
 
         # ==== Step 2: Compute regularization term ====
 
         reg_loss = 0.0
+        epsilon = 1e-8  # To avoid division by zero
         for j in prototypes:
-            if j in global_prototypes and j in N_j and N_j[j] > 0:
-                # L2 distance between local and global prototypes
-                distance = torch.norm(prototypes[j] - global_prototypes[j], p=2)
-                # Weight by |D_i,j| / N_j^k
-                reg_loss += (class_counts[j] / N_j[j]) * distance
-        reg_loss *= lambda_reg  # Apply regularization strength
+          if j in global_prototypes and j in N_j and N_j[j] > 0:
+            local_p = prototypes[j]
+            global_p = global_prototypes[j]
+
+            # L2 distance (or replace with cosine distance if preferred)
+            distance = torch.norm(local_p - global_p, p=2)
+
+            # Weighted by class contribution
+            weight = class_counts[j] / (N_j[j] + epsilon)
+            reg_loss += weight * distance
+
+        reg_loss *= lambda_reg  
 
         # ==== Step 3: Training loop ====
 
@@ -407,7 +421,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             _,_,outputs = net(images)
 
             loss_cls = criterion(outputs, labels)
-            loss = loss_cls + (reg_loss / len(trainloader))
+            loss = loss_cls + reg_loss 
             loss.backward()
             optimizer.step()
             # Metrics

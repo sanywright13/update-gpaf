@@ -159,6 +159,7 @@ class FederatedClient(fl.client.NumPyClient):
         #compute local prototypes
 
         # Precompute client's class counts
+        """
         class_counts_client = defaultdict(int)
         for batch in self.traindata:
           _, labels = batch
@@ -168,7 +169,7 @@ class FederatedClient(fl.client.NumPyClient):
             mask = (labels == l)
             class_counts_client[l.item()] += mask.sum().item()
 
-    
+        """
 
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
            
@@ -205,26 +206,28 @@ class FederatedClient(fl.client.NumPyClient):
         
         class_counts = defaultdict(int)
 
+        self.net.eval()
         with torch.no_grad():
           for batch in self.traindata:
             images, labels = batch
-            images, labels = images.to(DEVICE, dtype=torch.float32), labels.to(DEVICE, dtype=torch.long)
-            h, _, _ = self.net(images)  # Get encoder output (before projection head)
-            
-            for i in range(labels.size(0)):
-                label = labels[i].item()
-                class_embeddings[label].append(h[i].cpu())
-            for label in labels:
-              class_counts[int(label)] += 1
+            images = images.to(DEVICE, dtype=torch.float32)
+            labels = labels.to(DEVICE, dtype=torch.long)
 
-            
+            h, _, _ = self.net(images)  # h is encoder output (before projection head)
 
-        # Compute prototypes: mean of embeddings per class
+          for i in range(labels.size(0)):
+            label = labels[i].item()
+            class_embeddings[label].append(h[i].cpu())  # Save on CPU to avoid GPU memory issues
+            class_counts[label] += 1
+
+        # Compute prototypes
         prototypes = {}
         for class_id in range(self.num_classes):
           if class_id in class_embeddings and len(class_embeddings[class_id]) > 0:
-            prototypes[class_id] = torch.stack(class_embeddings[class_id]).mean(dim=0)
+            stacked = torch.stack(class_embeddings[class_id])  # Shape: [N_j, feature_dim]
+            prototypes[class_id] = stacked.mean(dim=0)          # Shape: [feature_dim]
           else:
+            # Use zero vector if no sample for class in this client
             prototypes[class_id] = torch.zeros_like(h[0].cpu())
         
         all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')

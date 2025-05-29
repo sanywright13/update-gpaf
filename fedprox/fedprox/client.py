@@ -94,42 +94,10 @@ class FederatedClient(fl.client.NumPyClient):
 
      
         loss, accuracy = test_gpaf(self.net, self.validdata, self.device)
-        """
-        # Extract features and labels
-        
-        val_features, val_labels = extract_features_and_labels(
-        self.net,
-        self.validdata,
-        self.device
-           )
-     
-        if val_features is not None:
-          self.client_features[self.client_id] = val_features
-          self.client_labels[self.client_id] = val_labels
-
-        with self.mlflow.start_run(run_id=self.run_id):  
-            print(f' config client {config.get("server_round")}')
-            self.mlflow.log_metrics({
-                f"client_{self.client_id}/eval_loss": float(loss),
-                f"client_{self.client_id}/eval_accuracy": float(accuracy),
-                #f"client_round":float(round_number),
-               # f"client_{self.client_id}/eval_samples": samples
-            }, step=config.get("server_round"))
-            # Also log in format for easier plotting
-        
-        #visualize all clients features per class
-        features_np = val_features.detach().cpu().numpy()
-        labels_np = val_labels.detach().cpu().numpy().reshape(-1)  # Ensure 1D array
-        # In client:
-        features_serialized = base64.b64encode(pickle.dumps(features_np)).decode('utf-8')
-        labels_serialized = base64.b64encode(pickle.dumps(labels_np)).decode('utf-8')
-        print(f"Client {self.client_id} sending features shape: {features_np.shape}")
-        print(f"Client {self.client_id} sending labels shape: {labels_np.shape}")
-        """
+       
         print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
         return float(loss), len(self.validdata), {"accuracy": float(accuracy),
-        #"features": features_serialized,
-        #"labels": labels_serialized,
+     
         }
     
     
@@ -154,51 +122,10 @@ class FederatedClient(fl.client.NumPyClient):
         int(cls): count
         for cls, count in N_j_loaded.items()
         }
-    
         print(f'number of class in cluster client {N_j}')
-        #compute local prototypes
-
-        # Precompute client's class counts
-        """
-        class_counts_client = defaultdict(int)
-        for batch in self.traindata:
-          _, labels = batch
-          labels = labels.to(DEVICE)
-          unique_labels = torch.unique(labels)
-          for l in unique_labels:
-            mask = (labels == l)
-            class_counts_client[l.item()] += mask.sum().item()
-
-        """
-
+      
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
-           
-        # Extract features for server
-        """
-        features = []
-        with torch.no_grad():
-          for data, labels in self.traindata:
 
-            data = data.to(self.device)
-            if labels.dim() > 1:
-                labels = labels.squeeze()
-                if labels.dim() == 0:
-                    labels = labels.unsqueeze(0)  # Handle single sample
-            labels_onehot = F.one_hot(labels.long(), num_classes=self.num_classes).float()
-
-            feat = self.encoder(data)
-            features.append(feat.cpu().numpy())
-    
-        # Concatenate all features
-        all_features = np.concatenate(features, axis=0)
-        all_features_serialized = base64.b64encode(pickle.dumps(all_features)).decode('utf-8')
-        
-        # Clear memory
-        del features
-        del all_features
-        """
-   
-        #protoype
         
         # === Prototype Extraction ===
         self.net.eval()
@@ -206,20 +133,16 @@ class FederatedClient(fl.client.NumPyClient):
         
         class_counts = defaultdict(int)
 
-        self.net.eval()
         with torch.no_grad():
           for batch in self.traindata:
             images, labels = batch
             images = images.to(DEVICE, dtype=torch.float32)
             labels = labels.to(DEVICE, dtype=torch.long)
-
             h, _, _ = self.net(images)  # h is encoder output (before projection head)
-
-          for i in range(labels.size(0)):
-            label = labels[i].item()
-            class_embeddings[label].append(h[i].cpu())  # Save on CPU to avoid GPU memory issues
-            class_counts[label] += 1
-
+            for i in range(labels.size(0)):
+              label = labels[i].item()
+              class_embeddings[label].append(h[i].cpu())  # Save on CPU to avoid GPU memory issues
+              class_counts[label] += 1
         # Compute prototypes
         prototypes = {}
         for class_id in range(self.num_classes):
@@ -235,20 +158,17 @@ class FederatedClient(fl.client.NumPyClient):
 
         # Convert to list-of-floats
         #all_prototypes = {cls: proto.tolist() for cls, proto in prototypes.items()}
+        print("prototypes type:", type(all_prototypes))
+        print("class_counts type:", type(class_counts))
 
         return (
-        self.get_parameters(),
-        len(self.traindata),
-        {
-           
-            "prototypes": all_prototypes,
-            "class_counts":class_counts,
-            #"features": all_features_serialized,
-            #"grads": grads_serialized
-
-        
-        }
-    )
+    self.get_parameters(),
+    len(self.traindata),
+    {
+        "prototypes": all_prototypes,     # str
+        "class_counts": class_counts      # str
+    }
+)
 
 
 

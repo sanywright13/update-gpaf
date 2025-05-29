@@ -382,7 +382,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
                 # L2 distance between local and global prototypes
                 distance = torch.norm(prototypes[j] - global_prototypes[j], p=2)
                 # Weight by |D_i,j| / N_j^k
-                reg_loss += (class_counts_client[j] / N_j[j]) * distance
+                reg_loss += (class_counts[j] / N_j[j]) * distance
         reg_loss *= lambda_reg  # Apply regularization strength
 
         # ==== Step 3: Training loop ====

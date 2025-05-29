@@ -190,16 +190,20 @@ class FederatedClient(fl.client.NumPyClient):
         # === Prototype Extraction ===
         self.net.eval()
         class_embeddings = defaultdict(list)
+        
+        class_counts = defaultdict(int)
 
         with torch.no_grad():
           for batch in self.traindata:
             images, labels = batch
             images, labels = images.to(DEVICE, dtype=torch.float32), labels.to(DEVICE, dtype=torch.long)
             h, _, _ = self.net(images)  # Get encoder output (before projection head)
-
+            
             for i in range(labels.size(0)):
                 label = labels[i].item()
                 class_embeddings[label].append(h[i].cpu())
+            for label in labels:
+              class_counts[int(label)] += 1
 
             
 
@@ -221,6 +225,7 @@ class FederatedClient(fl.client.NumPyClient):
         {
            
             "prototypes": all_prototypes,
+            "class_counts":class_counts,
             #"features": all_features_serialized,
             #"grads": grads_serialized
 

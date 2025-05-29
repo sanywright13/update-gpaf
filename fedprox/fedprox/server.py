@@ -447,22 +447,20 @@ save_dir="feature_visualizations_gpaf"
             for cls in client_prototypes:
                 count = class_counts.get(cls, 1)  # Default to 1 to avoid division by zero
                 N_j[cls] = count
-            # Convert numpy arrays in client_prototypes to lists for JSON serialization
-            client_prototypes_serializable = {
-              cls: proto.tolist() if isinstance(proto, np.ndarray) else proto
-           for cls, proto in client_prototypes.items()
-              }
-            N_j_serializable = {
-                str(cls): count 
-                for cls, count in N_j.items()
-            }
-
-            # N_j should already be a dict of ints, so it's fine
+          
 
 
+
+            # Serialize dictionaries to JSON strings
             config = {
-                "global_prototypes":json.dump(client_prototypes_serializable),
-                "N_j": json.dump(N_j_serializable)
+                "global_prototypes": json.dumps({
+                    str(cls): proto.tolist() 
+                    for cls, proto in client_prototypes.items()
+                }),
+                "N_j": json.dumps({
+                    str(cls): count 
+                    for cls, count in N_j.items()
+                })
             }
         
         configurations.append((client, flwr.common.FitIns(parameters, config)))

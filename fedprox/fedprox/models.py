@@ -421,7 +421,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             _,_,outputs = net(images)
 
             loss_cls = criterion(outputs, labels)
-            loss = loss_cls + reg_loss 
+            loss = loss_cls  
             loss.backward()
             optimizer.step()
             # Metrics

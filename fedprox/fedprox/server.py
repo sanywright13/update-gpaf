@@ -422,7 +422,7 @@ save_dir="feature_visualizations_gpaf"
       )
     
       configurations = []
-    
+      
       for client in selected_clients:
         # ROUND 1: No clusters yet
         if server_round == 1:

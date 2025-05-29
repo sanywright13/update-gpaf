@@ -71,7 +71,13 @@ class GPAFStrategy(FedAvg):
         self.num_clusters = 4
         self.cluster_prototypes = None  # {cluster_id: {class_id: prototype}}
         self.client_assignments = {}  # {client_id: cluster_id}
-      
+        
+        # Initialize as empty dictionaries
+        self.cluster_prototypes = {i: {} for i in range(self.num_clusters)}
+        self.cluster_class_counts = {i: defaultdict(int) for i in range(self.num_clusters)}
+        
+        
+        
         experiment = mlflow.get_experiment_by_name(experiment_name)
         if experiment is None:
          experiment_id = mlflow.create_experiment(experiment_name)
@@ -154,33 +160,40 @@ save_dir="feature_visualizations_gpaf"
                     best_cluster = cluster_id
                     
             assignments[client_id] = best_cluster
+            print(f"Client {client_id} assigned to Cluster {best_cluster}")
+
         return assignments
 
     
-    def _m_step(self, all_prototypes, client_ids, assignments):
-        """Update cluster prototypes based on assignments"""
-        cluster_accumulators = defaultdict(lambda: defaultdict(list))
-        
-        # Accumulate prototypes per cluster and class
-        for client_id, prototypes in zip(client_ids, all_prototypes):
-            cluster_id = assignments[client_id]
-            for class_id, proto in prototypes.items():
-                cluster_accumulators[cluster_id][class_id].append(proto)
-                
-        # Compute mean prototypes
-        new_clusters = defaultdict(dict)
-        for cluster_id in cluster_accumulators:
-            for class_id in cluster_accumulators[cluster_id]:
-                protos = cluster_accumulators[cluster_id][class_id]
-                new_clusters[cluster_id][class_id] = np.mean(protos, axis=0)
-                
-        # Handle empty clusters (re-initialize with random client)
-        for cluster_id in range(self.num_clusters):
-            if cluster_id not in new_clusters:
-                random_client = np.random.choice(client_ids)
-                new_clusters[cluster_id] = all_prototypes[client_ids.index(random_client)]
-                
-        return new_clusters
+    def _m_step(self, all_prototypes, client_ids, assignments, class_counts_list):
+      cluster_weighted_sum = defaultdict(lambda: defaultdict(lambda: np.zeros_like(next(iter(all_prototypes[0].values())))))
+      cluster_class_counts = defaultdict(lambda: defaultdict(int))
+
+      for i, (client_id, prototypes) in enumerate(zip(client_ids, all_prototypes)):
+        cluster_id = assignments[client_id]
+        class_counts = class_counts_list[i]
+
+        for class_id, proto in prototypes.items():
+            weight = class_counts.get(class_id, 0)
+            if weight > 0:
+                cluster_weighted_sum[cluster_id][class_id] += weight * proto
+                cluster_class_counts[cluster_id][class_id] += weight
+
+      new_clusters = defaultdict(dict)
+      for cluster_id in cluster_weighted_sum:
+        for class_id in cluster_weighted_sum[cluster_id]:
+            count = cluster_class_counts[cluster_id][class_id]
+            if count > 0:
+                new_clusters[cluster_id][class_id] = cluster_weighted_sum[cluster_id][class_id] / count
+            else:
+                # Optional: fallback to random or default value if no samples
+                new_clusters[cluster_id][class_id] = np.random.randn(*proto.shape)
+
+      # Update global class counts
+      self.cluster_class_counts = cluster_class_counts  # Used later in configure_fit
+
+      return new_clusters
+
     
     def aggregate_fit(
         self,
@@ -201,58 +214,66 @@ save_dir="feature_visualizations_gpaf"
         clients_params_list=[]
         num_samples_list=[]
         self.client_prototypes = {}  # <-- ADD THIS LINE
+        client_ids=[]
+        all_prototypes=[]
+        class_counts_list=[]
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
                 #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 #prototypes = pickle.loads(base64.b64decode(prototypes))
                 client_parameters = parameters_to_ndarrays(fit_res.parameters)
                 clients_params_list.append(client_parameters)
+                all_prototypes.append(pickle.loads(base64.b64decode(fit_res.metrics["prototypes"])))
+                client_ids.append(client_id)
+                class_counts_list.append(fit_res.metrics["class_counts"])  # Dict[class_id] = count
+
                 """
                 if prototypes:
                     self.client_prototypes[client_id] = prototypes
                 """
                 num_samples_list.append(fit_res.num_examples)
         # Cluster clients using cosine similarity between prototype vectors
-        #self.perform_clustering(server_round)
         #aggregated_params = super().aggregate_fit(server_round, client_parameters, failures)
         aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
-        #*** compute the clustering algorithm ***#
-        client_ids = [client.cid for client,_ in results]
         #print(f' client ids {client_ids}')
 
         
-        prototypes = [pickle.loads(base64.b64decode(r.metrics["prototypes"])) for _,r in results]
         #print(f'prototypes: **** {prototypes} ****')
         # Convert prototypes to numpy arrays
         proto_arrays = []
-        for p in prototypes:
+        for p in all_prototypes:
             proto_arrays.append({
                 cls: np.array(proto) 
                 for cls, proto in p.items()
             })
         
         # Initialize clusters if first round
-        if self.cluster_prototypes is None:
-            self.cluster_prototypes = self._initialize_clusters(proto_arrays)
-            
-        # 4. EM Algorithm
-        # E-step: Assign clients to clusters
-        assignments = self._e_step(proto_arrays, client_ids)
+        # ROUND 1: Initialize clusters
+        if server_round == 1:
+          self.cluster_prototypes = self._initialize_clusters(proto_arrays)
+
+    
+        # ROUND 2+: Run EM clustering
+        else:
+          
+          # 4. EM Algorithm
+          # E-step: Assign clients to clusters
+          assignments = self._e_step(proto_arrays, client_ids,)
         
-        # M-step: Update cluster prototypes
-        self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments)
+          # M-step: Update cluster prototypes
+          self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments, class_counts_list)
         
-        # 5. Update client assignments
-        self.client_assignments.update(assignments)
+          # 5. Update client assignments
+          self.client_assignments.update(assignments)
         
-        # 6. Prepare cluster prototypes for next round
-        for cluster_id in self.cluster_prototypes:
+          # 6. Prepare cluster prototypes for next round
+          for cluster_id in self.cluster_prototypes:
             for class_id in self.cluster_prototypes[cluster_id]:
                 if isinstance(self.cluster_prototypes[cluster_id][class_id], np.ndarray):
                     self.cluster_prototypes[cluster_id][class_id] = \
                         self.cluster_prototypes[cluster_id][class_id].tolist()
 
-        self._visualize_clusters(prototypes, client_ids, server_round)
+          self._visualize_clusters(all_prototypes, client_ids, server_round)
         return ndarrays_to_parameters(aggregated_params),config
     
 
@@ -393,45 +414,46 @@ save_dir="feature_visualizations_gpaf"
    
 
     def configure_fit(self, server_round, parameters, client_manager):
-      # Sample clients for this round
+      # Sample clients
       num_clients_per_round = int(self.fraction_fit * client_manager.num_available())
       selected_clients = client_manager.sample(
         num_clients=num_clients_per_round,
         min_num_clients=4,
       )
     
-      # Prepare configurations for each client
       configurations = []
     
       for client in selected_clients:
         # ROUND 1: No clusters yet
-        if server_round == 0:
+        if server_round == 1:
             config = {
                 "global_prototypes": {},
                 "N_j": {}
             }
         else:
-            # Handle unassigned clients (new or missed)
+            # Handle unassigned clients
             if client.cid not in self.client_assignments:
-                # Assign to random cluster
                 cluster_id = np.random.randint(0, self.num_clusters)
                 self.client_assignments[client.cid] = cluster_id
-                
+            
             cluster_id = self.client_assignments[client.cid]
             
-            # Get cluster-specific data
+            # Safely get cluster data with defaults
             client_prototypes = self.cluster_prototypes.get(cluster_id, {})
-            N_j = {cls: self.cluster_class_counts.get(cluster_id, {}).get(cls, 1)
-                   for cls in client_prototypes}
+            class_counts = self.cluster_class_counts.get(cluster_id, defaultdict(int))
+            
+            # Create N_j dictionary
+            N_j = {}
+            for cls in client_prototypes:
+                count = class_counts.get(cls, 1)  # Default to 1 to avoid division by zero
+                N_j[cls] = count
             
             config = {
                 "global_prototypes": client_prototypes,
                 "N_j": N_j
             }
         
-        # Create FitIns with parameters and config
-        fit_ins = flwr.common.FitIns(parameters, config)
-        configurations.append((client, fit_ins))
+        configurations.append((client, flwr.common.FitIns(parameters, config)))
     
       return configurations
         

@@ -452,13 +452,17 @@ save_dir="feature_visualizations_gpaf"
               cls: proto.tolist() if isinstance(proto, np.ndarray) else proto
            for cls, proto in client_prototypes.items()
               }
+            N_j_serializable = {
+                str(cls): count 
+                for cls, count in N_j.items()
+            }
 
             # N_j should already be a dict of ints, so it's fine
 
 
             config = {
-                "global_prototypes": client_prototypes_serializable,
-                "N_j": N_j
+                "global_prototypes":json.dump(client_prototypes_serializable),
+                "N_j": json.dump(N_j_serializable)
             }
         
         configurations.append((client, flwr.common.FitIns(parameters, config)))

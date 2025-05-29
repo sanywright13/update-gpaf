@@ -420,17 +420,19 @@ save_dir="feature_visualizations_gpaf"
         num_clients=num_clients_per_round,
         min_num_clients=4,
       )
+      print(f'clients per round {selected_clients}')
+
     
       configurations = []
       
       for client in selected_clients:
         # ROUND 1: No clusters yet
-        if server_round == 0:
+        if server_round == 1:
             config = {
     "global_prototypes": json.dumps({}),
     "N_j": json.dumps({})
 }
-            print(f'cccc')
+            print(f'config first round {config}')
         else:
             # Handle unassigned clients
             if client.cid not in self.client_assignments:

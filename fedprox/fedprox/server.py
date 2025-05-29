@@ -425,11 +425,12 @@ save_dir="feature_visualizations_gpaf"
       
       for client in selected_clients:
         # ROUND 1: No clusters yet
-        if server_round == 1:
+        if server_round == 0:
             config = {
-                "global_prototypes": {},
-                "N_j": {}
-            }
+    "global_prototypes": json.dumps({}),
+    "N_j": json.dumps({})
+}
+            print(f'cccc')
         else:
             # Handle unassigned clients
             if client.cid not in self.client_assignments:
@@ -452,6 +453,7 @@ save_dir="feature_visualizations_gpaf"
 
 
             # Serialize dictionaries to JSON strings
+
             config = {
                 "global_prototypes": json.dumps({
                     str(cls): proto.tolist() 

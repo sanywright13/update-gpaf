@@ -138,7 +138,7 @@ save_dir="feature_visualizations_gpaf"
 
     
 
-    def cosine_distance(a, b):
+    def cosine_distance(self,a, b):
       """Compute 1 - cosine similarity"""
       if norm(a) == 0 or norm(b) == 0:
         return 1.0  # Maximum distance if one is zero
@@ -464,9 +464,6 @@ save_dir="feature_visualizations_gpaf"
             for cls in client_prototypes:
                 count = class_counts.get(cls, 1)  # Default to 1 to avoid division by zero
                 N_j[cls] = count
-          
-
-
 
             # Serialize dictionaries to JSON strings
 

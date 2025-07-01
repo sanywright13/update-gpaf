@@ -466,7 +466,7 @@ save_dir="feature_visualizations_gpaf"
                 N_j[cls] = count
 
             # Serialize dictionaries to JSON strings
-
+            """
             config = {
                 "global_prototypes": json.dumps({
                     str(cls): proto.tolist() 
@@ -477,6 +477,8 @@ save_dir="feature_visualizations_gpaf"
                     for cls, count in N_j.items()
                 })
             }
+            """ 
+            config={}
         
         configurations.append((client, flwr.common.FitIns(parameters, config)))
     

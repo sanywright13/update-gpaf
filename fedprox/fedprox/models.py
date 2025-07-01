@@ -355,7 +355,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
         class_counts_client = defaultdict(int)
 
         #compute local prototypes
-
+        """
         # ==== Step 1: Compute local prototypes for regularization ====
         net.eval()
         prototypes = {}
@@ -398,7 +398,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             reg_loss += weight * distance
 
         reg_loss *= lambda_reg  
-
+        """
         # ==== Step 3: Training loop ====
         net.train()
         for batch_idx, batch in enumerate(trainloader):

@@ -6,6 +6,8 @@ import mlflow
 from torch.cuda.amp import autocast, GradScaler
 import base64
 import pickle
+from numpy.linalg import norm
+
 from torch.distributions import Dirichlet, Categorical
 import torch
 from sklearn.manifold import TSNE
@@ -105,7 +107,6 @@ class GPAFStrategy(FedAvg):
                 "fraction_fit": fraction_fit
             })
          
-        #on_evaluate_config_fn: Optional[Callable[[int], Dict[str, Scalar]]] = None,
         # Initialize the generator and its optimizer here
         self.num_classes =num_classes
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -121,8 +122,6 @@ class GPAFStrategy(FedAvg):
 
 save_dir="feature_visualizations_gpaf"
          )
-               
-   
          
     def num_evaluate_clients(self, client_manager: ClientManager) -> Tuple[int, int]:
       """Return the sample size and required number of clients for evaluation."""
@@ -138,31 +137,46 @@ save_dir="feature_visualizations_gpaf"
         }
 
     
-    def _e_step(self, all_prototypes, client_ids):
-        """Hard assignment of clients to clusters"""
-        assignments = {}
-        for client_id, prototypes in zip(client_ids, all_prototypes):
-            min_dist = float('inf')
-            best_cluster = 0
-            
-            # Calculate distance to each cluster
-            for cluster_id in self.cluster_prototypes:
-                total_dist = 0
-                for class_id in prototypes:
-                    if class_id in self.cluster_prototypes[cluster_id]:
-                        # L2 distance between prototypes
-                        client_proto = prototypes[class_id]
-                        cluster_proto = self.cluster_prototypes[cluster_id][class_id]
-                        total_dist += np.linalg.norm(client_proto - cluster_proto)
-                
-                if total_dist < min_dist:
-                    min_dist = total_dist
-                    best_cluster = cluster_id
-                    
-            assignments[client_id] = best_cluster
-            print(f"Client {client_id} assigned to Cluster {best_cluster}")
 
-        return assignments
+    def cosine_distance(a, b):
+      """Compute 1 - cosine similarity"""
+      if norm(a) == 0 or norm(b) == 0:
+        return 1.0  # Maximum distance if one is zero
+      return 1 - np.dot(a, b) / (norm(a) * norm(b))
+
+    def _e_step(self, all_prototypes, client_ids):
+      """Hard assignment of clients to clusters using cosine similarity"""
+      assignments = {}
+      for client_id, prototypes in zip(client_ids, all_prototypes):
+        min_dist = float('inf')
+        best_cluster = 0
+
+        for cluster_id in self.cluster_prototypes:
+            total_dist = 0
+            class_count = 0
+
+            for class_id in prototypes:
+                if class_id in self.cluster_prototypes[cluster_id]:
+                    client_proto = prototypes[class_id]
+                    cluster_proto = self.cluster_prototypes[cluster_id][class_id]
+
+                    # Use cosine distance instead of L2
+                    dist = self.cosine_distance(client_proto, cluster_proto)
+                    total_dist += dist
+                    class_count += 1
+
+            # Normalize distance by number of shared classes
+            if class_count > 0:
+                total_dist /= class_count
+
+            if total_dist < min_dist:
+                min_dist = total_dist
+                best_cluster = cluster_id
+
+        assignments[client_id] = best_cluster
+        print(f"Client {client_id} assigned to Cluster {best_cluster}")
+
+      return assignments
 
     
     def _m_step(self, all_prototypes, client_ids, assignments, class_counts_list):

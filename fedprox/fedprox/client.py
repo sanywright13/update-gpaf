@@ -99,10 +99,7 @@ class FederatedClient(fl.client.NumPyClient):
         return float(loss), len(self.validdata), {"accuracy": float(accuracy),
      
         }
-    
-    
-    
-   
+
     
     def fit(self, parameters, config):
         """Train local models using latest generator state."""

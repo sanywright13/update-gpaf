@@ -107,10 +107,11 @@ class FederatedClient(fl.client.NumPyClient):
         # Update local models with global parameters
         self.set_parameters(parameters)
         # Deserialize JSON strings
-        global_prototypes_loaded = json.loads(config["global_prototypes"])
+        #global_prototypes_loaded = json.loads(config["global_prototypes"])
         N_j_loaded = json.loads(config["N_j"])
     
         # Convert back to original format with integer class IDs
+        """
         global_prototypes = {
         int(cls): torch.tensor(proto, device=self.device, dtype=torch.float32)
         for cls, proto in global_prototypes_loaded.items()
@@ -120,7 +121,9 @@ class FederatedClient(fl.client.NumPyClient):
         for cls, count in N_j_loaded.items()
         }
         print(f'number of class in cluster client {N_j}')
-      
+        """
+        global_prototypes=None
+        N_j=None
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
 
         

@@ -313,6 +313,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
 
     #before starting training extract local prototypes
     # Precompute client's class counts (|D_i,j|)
+    """
     class_counts_client = defaultdict(int)
     for _, labels in trainloader:
         labels = labels.to(DEVICE)
@@ -320,7 +321,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             class_counts_client[l.item()] += (labels == l).sum().item()
 
     # Metrics
-    
+    """
     net.to(DEVICE)
     
     optimizer= torch.optim.Adam(net.parameters(), lr=lr, weight_decay=1e-4)

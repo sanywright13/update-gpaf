@@ -7,7 +7,8 @@ from torch.cuda.amp import autocast, GradScaler
 import base64
 import pickle
 from numpy.linalg import norm
-
+from matplotlib import cm
+from matplotlib.colors import ListedColormap
 from torch.distributions import Dirichlet, Categorical
 import torch
 from sklearn.manifold import TSNE
@@ -292,6 +293,8 @@ save_dir="feature_visualizations_gpaf"
         return ndarrays_to_parameters(aggregated_params),config
     
 
+    
+
     def _visualize_clusters(self, prototypes, client_ids, server_round):
       # Flatten prototypes (average across classes)
       prototype_matrix = []
@@ -301,34 +304,56 @@ save_dir="feature_visualizations_gpaf"
       prototype_matrix = np.array(prototype_matrix)
 
       # Project with t-SNE
-      n_clients= len(prototype_matrix)
-      print(f'hshsh clients is {n_clients}')
+      n_clients = len(prototype_matrix)
       perplexity = min(30, max(1, n_clients - 1))  # Ensures 1 <= perplexity < n_clients
-      print(f'perplexity clients is {perplexity}')
-      tsne = TSNE(n_components=2,  perplexity=perplexity,random_state=42 )
+      tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42)
       projections = tsne.fit_transform(prototype_matrix)
-   
+
       # Get cluster assignments
-      cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]  # -1 = unassigned
-      print(f" cluster assignment {cluster_assignments}")
-      # Create plot
+      cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]
+      print(f"Cluster assignments: {cluster_assignments}")
+
+      # Ensure unique, visually separable colors
+      unique_clusters = sorted(set(cluster_assignments))
+      num_clusters = len(unique_clusters)
+    
+      # Pick a large colormap if more than 10 clusters
+      base_cmap = cm.get_cmap("tab20", num_clusters)  # tab20 has 20 distinct colors
+      colors = [base_cmap(i) for i in range(num_clusters)]
+      color_map = ListedColormap(colors)
+
+      # Map cluster IDs to color indices
+      cluster_id_to_color_index = {cluster_id: idx for idx, cluster_id in enumerate(unique_clusters)}
+      color_indices = [cluster_id_to_color_index[cid] for cid in cluster_assignments]
+
+      # Plot
       plt.figure(figsize=(12, 8))
       scatter = plt.scatter(
-        projections[:, 0], projections[:, 1], 
-        c=cluster_assignments, cmap='tab10', alpha=0.7
-     )
-    
-      # Annotate points with client IDs
+        projections[:, 0],
+        projections[:, 1],
+        c=color_indices,
+        cmap=color_map,
+        alpha=0.7
+      )
+
+      # Annotate with client IDs
       for i, (x, y) in enumerate(projections):
         plt.text(x, y, client_ids[i], fontsize=8, ha='center', va='bottom')
-    
-      # Add legend and labels
-      plt.legend(*scatter.legend_elements(), title="Cluster ID")
+
+      # Custom legend
+      handles = []
+      labels = []
+      for cluster_id, color_index in cluster_id_to_color_index.items():
+        handles.append(plt.Line2D([0], [0], marker='o', color='w',
+                                  label=f'Cluster {cluster_id}',
+                                  markerfacecolor=colors[color_index], markersize=8))
+        labels.append(f'Cluster {cluster_id}')
+      plt.legend(handles=handles, title="Cluster ID")
+
+      #  Labels & Save
       plt.title(f"Client Prototypes (Round {server_round})\nColors = Cluster ID, Labels = Client ID")
       plt.xlabel("t-SNE 1")
       plt.ylabel("t-SNE 2")
-    
-      # Save and display
       plt.savefig(f"clusters_round_{server_round}.png", dpi=300, bbox_inches='tight')
       plt.show()
       plt.close()

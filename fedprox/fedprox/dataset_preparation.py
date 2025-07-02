@@ -230,7 +230,7 @@ def create_pathmnist_scenario2_loaders(
                             generator=torch.Generator().manual_seed(seed))
     
     d=3
-    total_clients =  num_clients
+    total_clients =  num_clients-1
     
     k=total_clients/d
     print(f'num client : {total_clients} and k is : {k}')

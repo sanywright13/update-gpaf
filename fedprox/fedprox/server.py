@@ -135,9 +135,6 @@ save_dir="feature_visualizations_gpaf"
             cluster_id: initial_prototypes[cluster_id]
             for cluster_id in range(self.num_clusters)
         }
-
-    
-
     def cosine_distance(self,a, b):
       """Compute 1 - cosine similarity"""
       if norm(a) == 0 or norm(b) == 0:
@@ -301,8 +298,9 @@ save_dir="feature_visualizations_gpaf"
 
       # Project with t-SNE
       n_clients= len(prototype_matrix)
+      print(f'hshsh clients is {n_clients}')
       perplexity = min(30, max(1, n_clients - 1))  # Ensures 1 <= perplexity < n_clients
-
+      print(f'perplexity clients is {perplexity}')
       tsne = TSNE(n_components=2,  perplexity=perplexity,random_state=42 )
       projections = tsne.fit_transform(prototype_matrix)
 

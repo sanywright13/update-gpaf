@@ -108,7 +108,7 @@ class FederatedClient(fl.client.NumPyClient):
         self.set_parameters(parameters)
         # Deserialize JSON strings
         #global_prototypes_loaded = json.loads(config["global_prototypes"])
-        N_j_loaded = json.loads(config["N_j"])
+        #N_j_loaded = json.loads(config["N_j"])
     
         # Convert back to original format with integer class IDs
         """

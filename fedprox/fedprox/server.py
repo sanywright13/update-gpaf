@@ -303,7 +303,7 @@ save_dir="feature_visualizations_gpaf"
       print(f'perplexity clients is {perplexity}')
       tsne = TSNE(n_components=2,  perplexity=perplexity,random_state=42 )
       projections = tsne.fit_transform(prototype_matrix)
-
+   
       # Get cluster assignments
       cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]  # -1 = unassigned
       print(f" cluster assignment {cluster_assignments}")

@@ -129,7 +129,7 @@ save_dir="feature_visualizations_gpaf"
       """Return the sample size and required number of clients for evaluation."""
       num_clients = client_manager.num_available()
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
-    """
+    '''
     def _initialize_clusters(self, all_prototypes):
         """Initialize cluster prototypes using first num_clusters clients"""
         initial_prototypes = [all_prototypes[i] for i in range(self.num_clusters)]
@@ -138,26 +138,25 @@ save_dir="feature_visualizations_gpaf"
             for cluster_id in range(self.num_clusters)
         }
 
-    """
+    '''
     def _initialize_clusters(self, all_prototypes):
-    """Randomly initialize cluster prototypes from diverse clients."""
-    num_clients = len(all_prototypes)
-    assert num_clients >= self.num_clusters, \
+      num_clients = len(all_prototypes)
+      assert num_clients >= self.num_clusters, \
         f"Need at least {self.num_clusters} clients to initialize clusters"
 
-    # Randomly sample clients (optional: sort by class diversity first)
-    sorted_protos = sorted(all_prototypes, key=lambda d: len(d), reverse=True)
-    selected_prototypes = sorted_protos[:self.num_clusters]
+      # Randomly sample clients (optional: sort by class diversity first)
+      sorted_protos = sorted(all_prototypes, key=lambda d: len(d), reverse=True)
+      selected_prototypes = sorted_protos[:self.num_clusters]
 
-    cluster_prototypes = {}
-    for cluster_id, proto_dict in enumerate(selected_prototypes):
+      cluster_prototypes = {}
+      for cluster_id, proto_dict in enumerate(selected_prototypes):
         cluster_prototypes[cluster_id] = {
             class_id: proto.copy()
             for class_id, proto in proto_dict.items()
         }
 
-    print(f"[Init] Cluster prototypes initialized from top-{self.num_clusters} diverse clients")
-    return cluster_prototypes
+      print(f"[Init] Cluster prototypes initialized from top-{self.num_clusters} diverse clients")
+      return cluster_prototypes
 
     def cosine_distance(self,a, b):
       """Compute 1 - cosine similarity"""

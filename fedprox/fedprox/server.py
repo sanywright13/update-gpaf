@@ -312,7 +312,7 @@ save_dir="feature_visualizations_gpaf"
 
           
         # Visualize every 3 rounds
-        if server_round % 5 == 0:
+        if server_round % 2 == 0:
             self._visualize_clusters(all_prototypes, client_ids, server_round)
         return ndarrays_to_parameters(aggregated_params),config
     

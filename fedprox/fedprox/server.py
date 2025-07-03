@@ -11,6 +11,8 @@ from matplotlib import cm
 from matplotlib.colors import ListedColormap
 from torch.distributions import Dirichlet, Categorical
 import torch
+import random
+
 from sklearn.manifold import TSNE
 from collections import defaultdict
 from sklearn.metrics import pairwise_distances
@@ -72,7 +74,6 @@ class GPAFStrategy(FedAvg):
         #clusters parameters
 
         self.num_clusters = 4
-        self.cluster_prototypes = None  # {cluster_id: {class_id: prototype}}
         self.client_assignments = {}  # {client_id: cluster_id}
         
         # Initialize as empty dictionaries
@@ -128,7 +129,7 @@ save_dir="feature_visualizations_gpaf"
       """Return the sample size and required number of clients for evaluation."""
       num_clients = client_manager.num_available()
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
-    
+    """
     def _initialize_clusters(self, all_prototypes):
         """Initialize cluster prototypes using first num_clusters clients"""
         initial_prototypes = [all_prototypes[i] for i in range(self.num_clusters)]
@@ -136,6 +137,28 @@ save_dir="feature_visualizations_gpaf"
             cluster_id: initial_prototypes[cluster_id]
             for cluster_id in range(self.num_clusters)
         }
+
+    """
+    def _initialize_clusters(self, all_prototypes):
+    """Randomly initialize cluster prototypes from diverse clients."""
+    num_clients = len(all_prototypes)
+    assert num_clients >= self.num_clusters, \
+        f"Need at least {self.num_clusters} clients to initialize clusters"
+
+    # Randomly sample clients (optional: sort by class diversity first)
+    sorted_protos = sorted(all_prototypes, key=lambda d: len(d), reverse=True)
+    selected_prototypes = sorted_protos[:self.num_clusters]
+
+    cluster_prototypes = {}
+    for cluster_id, proto_dict in enumerate(selected_prototypes):
+        cluster_prototypes[cluster_id] = {
+            class_id: proto.copy()
+            for class_id, proto in proto_dict.items()
+        }
+
+    print(f"[Init] Cluster prototypes initialized from top-{self.num_clusters} diverse clients")
+    return cluster_prototypes
+
     def cosine_distance(self,a, b):
       """Compute 1 - cosine similarity"""
       if norm(a) == 0 or norm(b) == 0:
@@ -262,33 +285,34 @@ save_dir="feature_visualizations_gpaf"
         
         # Initialize clusters if first round
         # ROUND 1: Initialize clusters
-        if server_round == 1:
+        if not self.client_assignments:
+          # First time clustering → initialize clusters
+          print("[Init] Performing first-time EM cluster initialization.")
           self.cluster_prototypes = self._initialize_clusters(proto_arrays)
-
     
         # ROUND 2+: Run EM clustering
-        else:
+        
           
-          # 4. EM Algorithm
-          # E-step: Assign clients to clusters
-          assignments = self._e_step(proto_arrays, client_ids,)
+        # 4. EM Algorithm
+        # E-step: Assign clients to clusters
+        assignments = self._e_step(proto_arrays, client_ids,)
         
-          # M-step: Update cluster prototypes
-          self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments, class_counts_list)
+        # M-step: Update cluster prototypes
+        self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments, class_counts_list)
         
-          # 5. Update client assignments
-          self.client_assignments.update(assignments)
+        # 5. Update client assignments
+        self.client_assignments.update(assignments)
         
-          # 6. Prepare cluster prototypes for next round
-          for cluster_id in self.cluster_prototypes:
+        # 6. Prepare cluster prototypes for next round
+        for cluster_id in self.cluster_prototypes:
             for class_id in self.cluster_prototypes[cluster_id]:
                 if isinstance(self.cluster_prototypes[cluster_id][class_id], np.ndarray):
                     self.cluster_prototypes[cluster_id][class_id] = \
                         self.cluster_prototypes[cluster_id][class_id].tolist()
 
           
-          # Visualize every 3 rounds
-          if server_round % 5 == 0:
+        # Visualize every 3 rounds
+        if server_round % 5 == 0:
             self._visualize_clusters(all_prototypes, client_ids, server_round)
         return ndarrays_to_parameters(aggregated_params),config
     
@@ -439,16 +463,7 @@ save_dir="feature_visualizations_gpaf"
             writer.writerow([server_round, avg_accuracy])
   
     
-          '''
-          self.best_avg_accuracy = avg_accuracy
-          self.feature_visualizer.visualize_all_clients_by_class(
-            features_dict=self.current_features,
-            labels_dict=self.current_labels,
-            accuracies=accuracies,
-            epoch=server_round,
-            stage="validation"
-          )
-          '''
+         
          
          
         return avg_accuracy, {"accuracy": avg_accuracy}

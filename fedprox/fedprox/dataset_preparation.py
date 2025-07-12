@@ -422,7 +422,7 @@ import numpy as np
 
 def makeBreastnistdata(root_path, prefix):
     # Set the root path to the Kaggle input directory
-    root_path = '/kaggle/input/'
+    root_path = '/kaggle/input/breastmnist/'
 
     print(f'Root path: {root_path}')
     medmnist_data = os.path.join(root_path, 'breastmnist.npz')

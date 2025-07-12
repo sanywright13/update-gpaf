@@ -420,7 +420,7 @@ def get_default_transform():
 def makeBreastnistdata(root_path, prefix):
   print(f' root path {root_path}')
   data_path=os.path.join(root_path,'dataset')
-  medmnist_data=os.path.join(data_path,'pneumoniamnist_128.npz')
+  medmnist_data=os.path.join(data_path,'breastmnist.npz')
   print(f'dataset path: {medmnist_data}')
   data=np.load(medmnist_data)
   if prefix=='train':

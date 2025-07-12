@@ -140,11 +140,13 @@ def load_datasets(  # pylint: disable=too-many-arguments
      
       for i,trainset in enumerate(trainset):
         
-        trainloaders.append(DataLoader(trainset, batch_size=batch_size, shuffle=True ,drop_last=True ,num_workers=num_workers))
-        valloaders.append(DataLoader(valsets[i], batch_size=batch_size,drop_last=True ,num_workers=num_workers # This will drop the incomplete last batch
+        trainloaders.append(DataLoader(trainset, batch_size=batch_size, shuffle=True ,num_workers=num_workers))
+        valloaders.append(DataLoader(valsets[i], batch_size=batch_size ,num_workers=num_workers # This will drop the incomplete last batch
 ))
     
       testloaders=DataLoader(testset, batch_size=batch_size)
+      print(f"Length of validation set for client 0: {len(valloaders[0].dataset)}")
+
       first_batch = next(iter(valloaders[0]))
       print(f'ffff sanaa: {len(valloaders)}')
       # If the batch is a tuple (e.g., input, label), unpack it

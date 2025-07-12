@@ -417,27 +417,37 @@ def get_default_transform():
 
 
 
+import os
+import numpy as np
+
 def makeBreastnistdata(root_path, prefix):
-  print(f' root path {root_path}')
-  data_path=os.path.join(root_path,'dataset')
-  medmnist_data=os.path.join(data_path,'breastmnist.npz')
-  print(f'dataset path: {medmnist_data}')
-  data=np.load(medmnist_data)
-  if prefix=='train':
-    train_data=data['train_images']
-    train_label=data['train_labels']
-    print(f'train_data shape:{train_data.shape}')
-    return train_data , train_label
-  elif prefix=='test':
-    val_data=data['test_images']
-    val_label=data['test_labels']
-    print( f'test data shape {val_data.shape}')
-    return val_data , val_label
-  elif prefix=='valid':
-    val_data=data['val_images']
-    val_label=data['val_labels']
-    print( f'valid data shape {val_data.shape}')
-    return val_data , val_label
+    # Set the root path to the Kaggle input directory
+    root_path = '/kaggle/input/breastmnist-dataset'
+
+    print(f'Root path: {root_path}')
+    medmnist_data = os.path.join(root_path, 'breastmnist.npz')
+    print(f'Dataset path: {medmnist_data}')
+    
+    data = np.load(medmnist_data)
+    
+    if prefix == 'train':
+        train_data = data['train_images']
+        train_label = data['train_labels']
+        print(f'Train data shape: {train_data.shape}')
+        return train_data, train_label
+
+    elif prefix == 'test':
+        test_data = data['test_images']
+        test_label = data['test_labels']
+        print(f'Test data shape: {test_data.shape}')
+        return test_data, test_label
+
+    elif prefix == 'valid':
+        val_data = data['val_images']
+        val_label = data['val_labels']
+        print(f'Valid data shape: {val_data.shape}')
+        return val_data, val_label
+
 #we define the data partitions of heterogeneity and domain shift
 #then the purpose of this code is split a dataset among a number of clients and choose the way of spliting if it is iid or no iid etc
 class BreastMnistDataset(data.Dataset):

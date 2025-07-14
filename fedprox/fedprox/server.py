@@ -70,7 +70,7 @@ class GPAFStrategy(FedAvg):
         self.min_fit_clients = min_fit_clients
         self.min_evaluate_clients = min_evaluate_clients
         self.min_available_clients = min_available_clients
-
+        
         #clusters parameters
 
         self.num_clusters = 4
@@ -254,8 +254,11 @@ save_dir="feature_visualizations_gpaf"
         class_counts_list=[]
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
+                sim_index = client_proxy.get_properties({})["simulation_index"]
                 #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 #prototypes = pickle.loads(base64.b64decode(prototypes))
+                print(f"Flower cid: {client_id}  ↔  Simulation client index: {sim_index}")
+
                 client_parameters = parameters_to_ndarrays(fit_res.parameters)
                 clients_params_list.append(client_parameters)
                 all_prototypes.append(pickle.loads(base64.b64decode(fit_res.metrics["prototypes"])))
@@ -312,97 +315,115 @@ save_dir="feature_visualizations_gpaf"
           
         # Visualize every 3 rounds
         if server_round % 2 == 0:
-            self._visualize_clusters(all_prototypes, client_ids, server_round)
+            self._visualize_clusters(all_prototypes, client_ids, server_round, true_domain_map=client_domain_map)
         return ndarrays_to_parameters(aggregated_params),config
     
 
     
 
-    def _visualize_clusters(self, prototypes, client_ids, server_round):
-      # Flatten prototypes (average across classes)
-      prototype_matrix = []
-      for client_prototypes in prototypes:
+    from sklearn.manifold import TSNE
+from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from matplotlib.colors import ListedColormap
+import numpy as np
+
+def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_map=None):
+    # 1. Flatten prototypes: one vector per client
+    prototype_matrix = []
+    for client_prototypes in prototypes:
         client_proto = np.mean(list(client_prototypes.values()), axis=0)
         prototype_matrix.append(client_proto)
-      prototype_matrix = np.array(prototype_matrix)
+    prototype_matrix = np.array(prototype_matrix)
 
-      # Project with t-SNE
-      n_clients = len(prototype_matrix)
-      perplexity = min(30, max(1, n_clients - 1))  # Ensures 1 <= perplexity < n_clients
-      tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42)
-      projections = tsne.fit_transform(prototype_matrix)
+    # 2. t-SNE projection
+    n_clients = len(prototype_matrix)
+    perplexity = min(30, max(1, n_clients - 1))
+    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42)
+    projections = tsne.fit_transform(prototype_matrix)
 
-      # Get cluster assignments
-      cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]
-      print(f"Cluster assignments: {cluster_assignments}")
+    # 3. Cluster assignments (predicted by your method)
+    cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]
+    unique_clusters = sorted(set(cluster_assignments))
+    num_clusters = len(unique_clusters)
 
-      # Ensure unique, visually separable colors
-      unique_clusters = sorted(set(cluster_assignments))
-      num_clusters = len(unique_clusters)
-    
-      # Pick a large colormap if more than 10 clusters
-      base_cmap = cm.get_cmap("tab20", num_clusters)  # tab20 has 20 distinct colors
-      colors = [base_cmap(i) for i in range(num_clusters)]
-      color_map = ListedColormap(colors)
+    # 4. Color map setup for clusters
+    base_cmap = cm.get_cmap("tab20", num_clusters)
+    colors = [base_cmap(i) for i in range(num_clusters)]
+    color_map = ListedColormap(colors)
+    cluster_id_to_color_index = {cluster_id: idx for idx, cluster_id in enumerate(unique_clusters)}
+    color_indices = [cluster_id_to_color_index[cid] for cid in cluster_assignments]
 
-      # Map cluster IDs to color indices
-      cluster_id_to_color_index = {cluster_id: idx for idx, cluster_id in enumerate(unique_clusters)}
-      color_indices = [cluster_id_to_color_index[cid] for cid in cluster_assignments]
+    # 5. Marker setup for true domains
+    markers = ['o', 's', '^', 'D', 'P', 'X']
+    domain_to_marker = {}
+    if true_domain_map:
+        unique_domains = sorted(set(true_domain_map.get(cid, "unknown") for cid in client_ids))
+        domain_to_marker = {dom: markers[i % len(markers)] for i, dom in enumerate(unique_domains)}
 
-      # Plot
-      plt.figure(figsize=(12, 8))
-      scatter = plt.scatter(
-        projections[:, 0],
-        projections[:, 1],
-        c=color_indices,
-        cmap=color_map,
-        alpha=0.7
-      )
+    # 6. Begin plotting
+    plt.figure(figsize=(12, 8))
 
-      # Annotate with client IDs
-      for i, (x, y) in enumerate(projections):
-        plt.text(x, y, client_ids[i], fontsize=8, ha='center', va='bottom')
+    for i, (x, y) in enumerate(projections):
+        client_id = client_ids[i]
+        cluster_id = cluster_assignments[i]
+        color_index = cluster_id_to_color_index[cluster_id]
 
-      # Custom legend
-      handles = []
-      labels = []
-      for cluster_id, color_index in cluster_id_to_color_index.items():
-        handles.append(plt.Line2D([0], [0], marker='o', color='w',
-                                  label=f'Cluster {cluster_id}',
-                                  markerfacecolor=colors[color_index], markersize=8))
-        labels.append(f'Cluster {cluster_id}')
-      plt.legend(handles=handles, title="Cluster ID")
+        if true_domain_map:
+            domain = true_domain_map.get(client_id, "unknown")
+            marker = domain_to_marker.get(domain, 'o')
+        else:
+            domain = "unknown"
+            marker = 'o'
 
-      #  Labels & Save
-      plt.title(f"Client Prototypes (Round {server_round})\nColors = Cluster ID, Labels = Client ID")
-      plt.xlabel("t-SNE 1")
-      plt.ylabel("t-SNE 2")
-      plt.savefig(f"clusters_round_{server_round}.png", dpi=300, bbox_inches='tight')
-      plt.show()
-      plt.close()
+        plt.scatter(
+            x, y,
+            c=[colors[color_index]],
+            marker=marker,
+            edgecolor='k',
+            s=100,
+            alpha=0.8
+        )
+        plt.text(x, y, str(client_id), fontsize=7, ha='center', va='bottom')
 
-    def _fedavg_parameters(
-        self, params_list: List[List[np.ndarray]], num_samples_list: List[int]
-    ) -> List[np.ndarray]:
-        """Aggregate parameters using FedAvg (weighted averaging)."""
-        if not params_list:
-            return []
+    # 7. Legends
+    # Cluster legend (colors)
+    cluster_handles = [
+        plt.Line2D([0], [0], marker='o', color='w', label=f'Cluster {cid}',
+                   markerfacecolor=colors[idx], markersize=8)
+        for cid, idx in cluster_id_to_color_index.items()
+    ]
 
-        print("==== aggregation===")
-        total_samples = sum(num_samples_list)
+    # Domain legend (markers)
+    domain_handles = []
+    if true_domain_map:
+        for dom, marker in domain_to_marker.items():
+            domain_handles.append(
+                plt.Line2D([0], [0], marker=marker, color='k', label=f'Domain: {dom}',
+                           markerfacecolor='gray', markersize=8, linestyle='None')
+            )
 
-        # Initialize aggregated parameters with zeros
-        aggregated_params = [np.zeros_like(param) for param in params_list[0]]
+    plt.legend(handles=cluster_handles + domain_handles, title="Cluster / Domain", bbox_to_anchor=(1.05, 1), loc='upper left')
 
-        # Weighted sum of parameters
-        for params, num_samples in zip(params_list, num_samples_list):
-            for i, param in enumerate(params):
-                aggregated_params[i] += param * num_samples
+    # 8. Plot aesthetics
+    plt.title(f"Client Prototypes (Round {server_round})\nColors = Cluster ID, Shapes = True Domain, Labels = Client ID")
+    plt.xlabel("t-SNE 1")
+    plt.ylabel("t-SNE 2")
+    plt.tight_layout()
+    plt.savefig(f"clusters_round_{server_round}.png", dpi=300, bbox_inches='tight')
+    plt.show()
+    plt.close()
 
-        # Weighted average of parameters
-        aggregated_params = [param / total_samples for param in aggregated_params]
+    # 9. Optional: Clustering quality metrics
+    if true_domain_map:
+        predicted_clusters = cluster_assignments
+        true_domains = [true_domain_map.get(cid, -1) for cid in client_ids]
 
-        return aggregated_params
+        ari = adjusted_rand_score(true_domains, predicted_clusters)
+        nmi = normalized_mutual_info_score(true_domains, predicted_clusters)
+
+        print(f"Clustering Quality: ARI = {ari:.3f}, NMI = {nmi:.3f}")
+
 
    
  
@@ -460,11 +481,7 @@ save_dir="feature_visualizations_gpaf"
           with open(log_filename, 'a', newline='') as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow([server_round, avg_accuracy])
-  
-    
-         
-         
-         
+ 
         return avg_accuracy, {"accuracy": avg_accuracy}
    
 

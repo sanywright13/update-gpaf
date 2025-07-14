@@ -238,7 +238,7 @@ def create_pathmnist_scenario2_loaders(
     indices = np.random.permutation(len(ds_train))
 
     train_loaders, val_loaders = [], []
-
+   
     for client_id in range(total_clients):
         start = client_id * samples_per_client
         end = (client_id + 1) * samples_per_client

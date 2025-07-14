@@ -249,12 +249,17 @@ def get_on_evaluate_config_fn():
         return config
 
     return evaluate_config
+
+NUM_CLIENTS_TOTAL = 18 # Total clients (17 for training, 1 for global test)
+
 def get_server_fn(mlflow=None):
  """Create server function with MLflow tracking."""
  def server_fn(context: Context) -> ServerAppComponents:
-    global strategy
+    global strategy , NUM_CLIENTS_TOTAL
     batch_size=32
     num_clients=18
+    num_clients = NUM_CLIENTS_TOTAL # Use global NUM_CLIENTS_TOTAL
+
     if strategy=="fedavg":
       
       strategyi = FedAVGWithEval(
@@ -321,7 +326,7 @@ def main(cfg: DictConfig) -> None:
     # print config structured as YAML
     print(OmegaConf.to_yaml(cfg))
 
-    trainloaders, valloaders, testloader=data_load(cfg)
+    trainloaders, valloaders, testloader , client_domain_mapping=data_load(cfg)
     # Print data distribution before visualization
    
      
@@ -348,6 +353,8 @@ def main(cfg: DictConfig) -> None:
     # If the batch is a tuple (e.g., input, label), unpack it
     #inputs, labels = first_batch[0], first_batch[1]
     #device = cfg.server_device
+    # CRUCIAL CHANGE: Initialize the client_id_assigner on the server
+    client_id_assigner = iter(range(NUM_CLIENTS_TOTAL))
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Main Server using device: {device}")
  
@@ -391,11 +398,7 @@ def main(cfg: DictConfig) -> None:
         valloaders=valloaders,
         num_rounds=cfg.num_rounds,
         learning_rate=cfg.learning_rate,
-        #change swim or resnet architecture
-       
-        experiment_name=experiment_name
-        ,strategy=strategy
- ,
+        experiment_name=experiment_name,strategy=strategy,
         device=device
        )
 
@@ -415,6 +418,8 @@ def main(cfg: DictConfig) -> None:
    
     # Start simulation
     server= ServerApp(server_fn=server_fn)
+    client_id_assigner = iter(range(NUM_CLIENTS_TOTAL))
+
     history = run_simulation(
         client_app=client,
         server_app=server ,
@@ -523,15 +528,15 @@ def main(cfg: DictConfig) -> None:
 def data_load(cfg: DictConfig):
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   
-  trainloaders, valloaders, testloader = load_datasets(
+  trainloaders, valloaders, testloader , client_domain_mapping = load_datasets(
         config=cfg.dataset_config,
-        num_clients=cfg.num_clients,
+        num_clients=NUM_CLIENTS_TOTAL,
         batch_size=cfg.batch_size,
         domain_shift=True,
         device = device
 
     )
-  return trainloaders, valloaders, testloader   
+  return trainloaders, valloaders, testloader , client_domain_mapping
 if __name__ == "__main__":
     
     main()

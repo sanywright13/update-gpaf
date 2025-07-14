@@ -229,6 +229,8 @@ save_dir="feature_visualizations_gpaf"
       return new_clusters
 
     
+
+    
     def aggregate_fit(
         self,
         server_round: int,
@@ -245,6 +247,9 @@ save_dir="feature_visualizations_gpaf"
             "server_round": server_round,
             
         }
+        # Load from the same file saved in the data pipeline
+        with open("client_domain_map.json", "r") as f:
+          client_domain_map = json.load(f)
         clients_params_list=[]
         print(f'server round is {server_round}')
         num_samples_list=[]
@@ -252,18 +257,21 @@ save_dir="feature_visualizations_gpaf"
         client_ids=[]
         all_prototypes=[]
         class_counts_list=[]
+        client_id_map = {}  # flower_cid -> simulation_index
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
                 sim_index = client_proxy.get_properties({})["simulation_index"]
                 #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 #prototypes = pickle.loads(base64.b64decode(prototypes))
                 print(f"Flower cid: {client_id}  ↔  Simulation client index: {sim_index}")
-
+                client_id_map[client_id] = sim_index
                 client_parameters = parameters_to_ndarrays(fit_res.parameters)
                 clients_params_list.append(client_parameters)
                 all_prototypes.append(pickle.loads(base64.b64decode(fit_res.metrics["prototypes"])))
                 client_ids.append(client_id)
                 class_counts_list.append(pickle.loads(base64.b64decode(fit_res.metrics["class_counts"])))  # Dict[class_id] = count
+                with open("cid_to_sim_index.json", "w") as f:
+                  json.dump(client_id_map, f, indent=2)
 
                 """
                 if prototypes:
@@ -314,8 +322,14 @@ save_dir="feature_visualizations_gpaf"
 
           
         # Visualize every 3 rounds
+
         if server_round % 2 == 0:
-            self._visualize_clusters(all_prototypes, client_ids, server_round, true_domain_map=client_domain_map)
+            true_domain_map = {
+    flower_cid: client_domain_map[client_id_map[flower_cid]]
+    for flower_cid in client_ids
+}
+
+            self._visualize_clusters(all_prototypes, client_ids, server_round, true_domain_map=true_domain_map)
         return ndarrays_to_parameters(aggregated_params),config
     
 

@@ -231,16 +231,19 @@ def create_pathmnist_scenario2_loaders(
     
     d=3
     total_clients =  num_clients-1
-    
+    save_domain_map_path= "client_domain_map.json"
     k=total_clients/d
     print(f'num client : {total_clients} and k is : {k}')
     samples_per_client = len(ds_train) // total_clients
     indices = np.random.permutation(len(ds_train))
-
+    domain_names = ['high_end', 'mid_range', 'older_model']
     train_loaders, val_loaders = [], []
-   
+    client_domain_map = {}
+
     for client_id in range(total_clients):
         start = client_id * samples_per_client
+        domain_index = client_id % 3
+        domain_name = ['high_end', 'mid_range', 'older_model'][domain_index]
         end = (client_id + 1) * samples_per_client
         client_indices = indices[start:end]
 
@@ -249,7 +252,10 @@ def create_pathmnist_scenario2_loaders(
         n_train = len(client_data) - n_val
         train_subset, val_subset = random_split(client_data, [n_train, n_val],
                                                 generator=torch.Generator().manual_seed(seed))
-
+        # Determine domain assignment
+        domain_index = client_id % d
+        domain_name = domain_names[domain_index]
+        client_domain_map[client_id] = domain_name
         shifted_train = DomainShiftedPathMNIST(train_subset, client_id)
         shifted_val = DomainShiftedPathMNIST(val_subset, client_id)
 
@@ -266,9 +272,14 @@ def create_pathmnist_scenario2_loaders(
     clean_val_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
     clean_train_0_loader = DataLoader(clean_train_0, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
     clean_test_loader = DataLoader(clean_val, batch_size=batch_size, shuffle=False, num_workers=4, pin_memory=True)
-
+    # Add clean client (as the last one)
+    clean_client_id = total_clients
     val_loaders.append(clean_val_loader)  # Add clean validation client
     train_loaders.append(clean_train_0_loader)
+    client_domain_map[clean_client_id] = "clean_test"
+    # Save domain map to JSON
+    with open(save_domain_map_path, "w") as f:
+        json.dump(client_domain_map, f, indent=2)
     return train_loaders, val_loaders ,clean_test_loader
 
 

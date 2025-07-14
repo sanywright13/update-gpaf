@@ -326,7 +326,7 @@ def main(cfg: DictConfig) -> None:
     # print config structured as YAML
     print(OmegaConf.to_yaml(cfg))
 
-    trainloaders, valloaders, testloader , client_domain_mapping=data_load(cfg)
+    trainloaders, valloaders, testloader =data_load(cfg)
     # Print data distribution before visualization
    
      

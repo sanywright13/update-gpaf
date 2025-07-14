@@ -354,7 +354,6 @@ def main(cfg: DictConfig) -> None:
     #inputs, labels = first_batch[0], first_batch[1]
     #device = cfg.server_device
     # CRUCIAL CHANGE: Initialize the client_id_assigner on the server
-    client_id_assigner = iter(range(NUM_CLIENTS_TOTAL))
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Main Server using device: {device}")
  
@@ -528,7 +527,7 @@ def main(cfg: DictConfig) -> None:
 def data_load(cfg: DictConfig):
   device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
   
-  trainloaders, valloaders, testloader , client_domain_mapping = load_datasets(
+  trainloaders, valloaders, testloader  = load_datasets(
         config=cfg.dataset_config,
         num_clients=NUM_CLIENTS_TOTAL,
         batch_size=cfg.batch_size,
@@ -536,7 +535,7 @@ def data_load(cfg: DictConfig):
         device = device
 
     )
-  return trainloaders, valloaders, testloader , client_domain_mapping
+  return trainloaders, valloaders, testloader 
 if __name__ == "__main__":
     
     main()

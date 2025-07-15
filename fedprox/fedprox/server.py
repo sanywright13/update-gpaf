@@ -338,9 +338,10 @@ save_dir="feature_visualizations_gpaf"
 
         if server_round % 2 == 0:
             true_domain_map = {
-    flower_cid: client_domain_map[client_id_map[flower_cid]]
-    for flower_cid in client_ids
+    flower_cid: client_domain_map[str(client_id_map[flower_cid])]
+    for flower_cid in client_id_map
 }
+
 
             self._visualize_clusters(all_prototypes, client_ids, server_round, true_domain_map=true_domain_map)
         return ndarrays_to_parameters(aggregated_params),config

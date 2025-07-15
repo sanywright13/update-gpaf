@@ -342,43 +342,43 @@ save_dir="feature_visualizations_gpaf"
     
 
 
-def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_map=None):
-    # 1. Flatten prototypes: one vector per client
-    prototype_matrix = []
-    for client_prototypes in prototypes:
+    def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_map=None):
+      # 1. Flatten prototypes: one vector per client
+      prototype_matrix = []
+      for client_prototypes in prototypes:
         client_proto = np.mean(list(client_prototypes.values()), axis=0)
         prototype_matrix.append(client_proto)
-    prototype_matrix = np.array(prototype_matrix)
+      prototype_matrix = np.array(prototype_matrix)
 
-    # 2. t-SNE projection
-    n_clients = len(prototype_matrix)
-    perplexity = min(30, max(1, n_clients - 1))
-    tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42)
-    projections = tsne.fit_transform(prototype_matrix)
+      # 2. t-SNE projection
+      n_clients = len(prototype_matrix)
+      perplexity = min(30, max(1, n_clients - 1))
+      tsne = TSNE(n_components=2, perplexity=perplexity, random_state=42)
+      projections = tsne.fit_transform(prototype_matrix)
 
-    # 3. Cluster assignments (predicted by your method)
-    cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]
-    unique_clusters = sorted(set(cluster_assignments))
-    num_clusters = len(unique_clusters)
+      # 3. Cluster assignments (predicted by your method)
+      cluster_assignments = [self.client_assignments.get(cid, -1) for cid in client_ids]
+      unique_clusters = sorted(set(cluster_assignments))
+      num_clusters = len(unique_clusters)
 
-    # 4. Color map setup for clusters
-    base_cmap = cm.get_cmap("tab20", num_clusters)
-    colors = [base_cmap(i) for i in range(num_clusters)]
-    color_map = ListedColormap(colors)
-    cluster_id_to_color_index = {cluster_id: idx for idx, cluster_id in enumerate(unique_clusters)}
-    color_indices = [cluster_id_to_color_index[cid] for cid in cluster_assignments]
+      # 4. Color map setup for clusters
+      base_cmap = cm.get_cmap("tab20", num_clusters)
+      colors = [base_cmap(i) for i in range(num_clusters)]
+      color_map = ListedColormap(colors)
+      cluster_id_to_color_index = {cluster_id: idx for idx, cluster_id in enumerate(unique_clusters)}
+      color_indices = [cluster_id_to_color_index[cid] for cid in cluster_assignments]
 
-    # 5. Marker setup for true domains
-    markers = ['o', 's', '^', 'D', 'P', 'X']
-    domain_to_marker = {}
-    if true_domain_map:
+      # 5. Marker setup for true domains
+      markers = ['o', 's', '^', 'D', 'P', 'X']
+      domain_to_marker = {}
+      if true_domain_map:
         unique_domains = sorted(set(true_domain_map.get(cid, "unknown") for cid in client_ids))
         domain_to_marker = {dom: markers[i % len(markers)] for i, dom in enumerate(unique_domains)}
 
-    # 6. Begin plotting
-    plt.figure(figsize=(12, 8))
+      # 6. Begin plotting
+      plt.figure(figsize=(12, 8))
 
-    for i, (x, y) in enumerate(projections):
+      for i, (x, y) in enumerate(projections):
         client_id = client_ids[i]
         cluster_id = cluster_assignments[i]
         color_index = cluster_id_to_color_index[cluster_id]
@@ -400,36 +400,36 @@ def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_
         )
         plt.text(x, y, str(client_id), fontsize=7, ha='center', va='bottom')
 
-    # 7. Legends
-    # Cluster legend (colors)
-    cluster_handles = [
+      # 7. Legends
+      # Cluster legend (colors)
+      cluster_handles = [
         plt.Line2D([0], [0], marker='o', color='w', label=f'Cluster {cid}',
                    markerfacecolor=colors[idx], markersize=8)
         for cid, idx in cluster_id_to_color_index.items()
     ]
 
-    # Domain legend (markers)
-    domain_handles = []
-    if true_domain_map:
+      # Domain legend (markers)
+      domain_handles = []
+      if true_domain_map:
         for dom, marker in domain_to_marker.items():
             domain_handles.append(
                 plt.Line2D([0], [0], marker=marker, color='k', label=f'Domain: {dom}',
                            markerfacecolor='gray', markersize=8, linestyle='None')
             )
 
-    plt.legend(handles=cluster_handles + domain_handles, title="Cluster / Domain", bbox_to_anchor=(1.05, 1), loc='upper left')
+      plt.legend(handles=cluster_handles + domain_handles, title="Cluster / Domain", bbox_to_anchor=(1.05, 1), loc='upper left')
 
-    # 8. Plot aesthetics
-    plt.title(f"Client Prototypes (Round {server_round})\nColors = Cluster ID, Shapes = True Domain, Labels = Client ID")
-    plt.xlabel("t-SNE 1")
-    plt.ylabel("t-SNE 2")
-    plt.tight_layout()
-    plt.savefig(f"clusters_round_{server_round}.png", dpi=300, bbox_inches='tight')
-    plt.show()
-    plt.close()
+      # 8. Plot aesthetics
+      plt.title(f"Client Prototypes (Round {server_round})\nColors = Cluster ID, Shapes = True Domain, Labels = Client ID")
+      plt.xlabel("t-SNE 1")
+      plt.ylabel("t-SNE 2")
+      plt.tight_layout()
+      plt.savefig(f"clusters_round_{server_round}.png", dpi=300, bbox_inches='tight')
+      plt.show()
+      plt.close()
 
-    # 9. Optional: Clustering quality metrics
-    if true_domain_map:
+      # 9. Optional: Clustering quality metrics
+      if true_domain_map:
         predicted_clusters = cluster_assignments
         true_domains = [true_domain_map.get(cid, -1) for cid in client_ids]
 
@@ -440,7 +440,7 @@ def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_
 
 
    
-     def _fedavg_parameters(
+    def _fedavg_parameters(
         self, params_list: List[List[np.ndarray]], num_samples_list: List[int]
     ) -> List[np.ndarray]:
         """Aggregate parameters using FedAvg (weighted averaging)."""

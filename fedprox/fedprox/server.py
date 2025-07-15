@@ -228,9 +228,7 @@ save_dir="feature_visualizations_gpaf"
 
       return new_clusters
 
-    
 
-    
     def aggregate_fit(
         self,
         server_round: int,
@@ -260,7 +258,12 @@ save_dir="feature_visualizations_gpaf"
         client_id_map = {}  # flower_cid -> simulation_index
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
-                sim_index = client_proxy.get_properties({})["simulation_index"]
+                sim_index = sim_index = client_proxy.get_properties(
+    {},                # empty config
+    timeout=10.0,      # required positional arg in GridClientProxy
+    group_id=None      # required positional arg (optional in content, required in position)
+)["simulation_index"]
+
                 #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 #prototypes = pickle.loads(base64.b64decode(prototypes))
                 print(f"Flower cid: {client_id}  ↔  Simulation client index: {sim_index}")

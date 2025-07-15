@@ -9,7 +9,7 @@ import torch
 import copy
 import csv
 from collections import defaultdict
-
+from flwr.common import Config
 import torch.nn.functional as F
 from flwr.common.typing import NDArrays, Scalar
 from hydra.utils import instantiate
@@ -79,9 +79,8 @@ class FederatedClient(fl.client.NumPyClient):
       self.net.load_state_dict(state_dict, strict=True)
 
     #get the updated model parameters from the local model return local model parameters
-    def get_properties(self, config):
-      print(f'"simulation_index": self.client_index')
-      return {"simulation_index": self.client_index}  # where self.client_index = cid from client_fn
+    def get_properties(self, config: Config) -> Dict[str, Scalar]:
+      return {"simulation_index": self.client_index}
 
     def get_parameters(self , config: Dict[str, Scalar] = None):
         return [val.cpu().numpy() for _, val in self.net.state_dict().items()]

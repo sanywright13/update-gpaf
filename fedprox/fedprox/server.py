@@ -11,6 +11,8 @@ from matplotlib import cm
 from matplotlib.colors import ListedColormap
 from torch.distributions import Dirichlet, Categorical
 import torch
+from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
+from matplotlib import cm
 import random
 from flwr.common import GetPropertiesIns
 import json
@@ -339,12 +341,6 @@ save_dir="feature_visualizations_gpaf"
 
     
 
-    from sklearn.manifold import TSNE
-from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
-import matplotlib.pyplot as plt
-from matplotlib import cm
-from matplotlib.colors import ListedColormap
-import numpy as np
 
 def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_map=None):
     # 1. Flatten prototypes: one vector per client
@@ -444,7 +440,29 @@ def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_
 
 
    
- 
+     def _fedavg_parameters(
+        self, params_list: List[List[np.ndarray]], num_samples_list: List[int]
+    ) -> List[np.ndarray]:
+        """Aggregate parameters using FedAvg (weighted averaging)."""
+        if not params_list:
+            return []
+
+        print("==== aggregation===")
+        total_samples = sum(num_samples_list)
+
+        # Initialize aggregated parameters with zeros
+        aggregated_params = [np.zeros_like(param) for param in params_list[0]]
+
+        # Weighted sum of parameters
+        for params, num_samples in zip(params_list, num_samples_list):
+            for i, param in enumerate(params):
+                aggregated_params[i] += param * num_samples
+
+        # Weighted average of parameters
+        aggregated_params = [param / total_samples for param in aggregated_params]
+
+        return aggregated_params
+
     def aggregate_evaluate(self, server_round: int, results, failures):
         """Aggregate evaluation results."""
         if not results:

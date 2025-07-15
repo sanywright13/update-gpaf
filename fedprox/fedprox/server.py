@@ -12,6 +12,7 @@ from matplotlib.colors import ListedColormap
 from torch.distributions import Dirichlet, Categorical
 import torch
 import random
+from flwr.common import GetPropertiesIns
 import json
 from sklearn.manifold import TSNE
 from collections import defaultdict
@@ -258,11 +259,11 @@ save_dir="feature_visualizations_gpaf"
         client_id_map = {}  # flower_cid -> simulation_index
         for client_proxy, fit_res in results:
                 client_id=client_proxy.cid
-                sim_index = sim_index = client_proxy.get_properties(
-    {},                # empty config
-    timeout=10.0,      # required positional arg in GridClientProxy
-    group_id=None      # required positional arg (optional in content, required in position)
-)["simulation_index"]
+                # Construct proper input
+                props_ins = GetPropertiesIns(config={})
+                props = client_proxy.get_properties(props_ins, timeout=10.0, group_id=None)
+                # Extract simulation index
+                sim_index = props.properties["simulation_index"]
 
                 #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 #prototypes = pickle.loads(base64.b64decode(prototypes))

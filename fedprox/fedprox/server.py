@@ -328,6 +328,13 @@ save_dir="feature_visualizations_gpaf"
 
           
         # Visualize every 3 rounds
+        print("client_id_map =", client_id_map)
+        print("client_domain_map =", client_domain_map)
+
+        for flower_cid in client_id_map:
+            sim_index = client_id_map[flower_cid]
+            if str(sim_index) not in client_domain_map:
+              print(f"[ERROR] sim_index {sim_index} not found in client_domain_map")
 
         if server_round % 2 == 0:
             true_domain_map = {

@@ -132,16 +132,7 @@ save_dir="feature_visualizations_gpaf"
       """Return the sample size and required number of clients for evaluation."""
       num_clients = client_manager.num_available()
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
-    '''
-    def _initialize_clusters(self, all_prototypes):
-        """Initialize cluster prototypes using first num_clusters clients"""
-        initial_prototypes = [all_prototypes[i] for i in range(self.num_clusters)]
-        return {
-            cluster_id: initial_prototypes[cluster_id]
-            for cluster_id in range(self.num_clusters)
-        }
-
-    '''
+   
     def _initialize_clusters(self, all_prototypes):
       num_clients = len(all_prototypes)
       assert num_clients >= self.num_clusters, \

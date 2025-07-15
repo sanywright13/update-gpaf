@@ -311,17 +311,6 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
     lambda_reg=0.1
     print(f'Model on device: { DEVICE}')
 
-    #before starting training extract local prototypes
-    # Precompute client's class counts (|D_i,j|)
-    """
-    class_counts_client = defaultdict(int)
-    for _, labels in trainloader:
-        labels = labels.to(DEVICE)
-        for l in torch.unique(labels):
-            class_counts_client[l.item()] += (labels == l).sum().item()
-
-    # Metrics
-    """
     net.to(DEVICE)
     
     optimizer= torch.optim.Adam(net.parameters(), lr=lr, weight_decay=1e-4)
@@ -355,51 +344,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
         correct, total, epoch_loss ,loss_sumi ,loss_sum = 0, 0, 0.0 , 0 , 0
         class_counts_client = defaultdict(int)
 
-        #compute local prototypes
-        """
-        # ==== Step 1: Compute local prototypes for regularization ====
-        net.eval()
-        prototypes = {}
-        class_sums = defaultdict(lambda: torch.zeros(net.feature_dim).to(DEVICE))  # Replace with actual feature_dim
-        class_counts = defaultdict(int)
-        class_embeddings = defaultdict(list)
-        with torch.no_grad():
-            for images, labels in trainloader:
-                images, labels = images.to(DEVICE), labels.to(DEVICE)
-                h, _, _ = net(images)  # Get encoder outputs
-                for i in range(labels.size(0)):
-                  label = labels[i].item()
-                  class_embeddings[label].append(h[i].cpu())  # Save on CPU to avoid GPU memory issues
-                  class_counts[label] += 1
-        # Compute prototypes
-        prototypes = {}
-        for class_id in range(num_classes):
-          if class_id in class_embeddings and len(class_embeddings[class_id]) > 0:
-            stacked = torch.stack(class_embeddings[class_id])  # Shape: [N_j, feature_dim]
-            prototypes[class_id] = stacked.mean(dim=0)          # Shape: [feature_dim]
-          else:
-            # Use zero vector if no sample for class in this client
-            prototypes[class_id] = torch.zeros_like(h[0].cpu())
-        
-
-        # ==== Step 2: Compute regularization term ====
-
-        reg_loss = 0.0
-        epsilon = 1e-8  # To avoid division by zero
-        for j in prototypes:
-          if j in global_prototypes and j in N_j and N_j[j] > 0:
-            local_p = prototypes[j]
-            global_p = global_prototypes[j]
-
-            # L2 distance (or replace with cosine distance if preferred)
-            distance = torch.norm(local_p - global_p, p=2)
-
-            # Weighted by class contribution
-            weight = class_counts[j] / (N_j[j] + epsilon)
-            reg_loss += weight * distance
-
-        reg_loss *= lambda_reg  
-        """
+       
         # ==== Step 3: Training loop ====
         net.train()
         for batch_idx, batch in enumerate(trainloader):
@@ -419,10 +364,28 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             batch_size = batch_size
             
             optimizer.zero_grad()
-            _,_,outputs = net(images)
+            embeddings,_,outputs = net(images)
 
             loss_cls = criterion(outputs, labels)
-            loss = loss_cls  
+
+            # --------- REGULARIZATION TERM ----------
+            with torch.no_grad():
+                local_prototypes = {}
+                for cls in labels.unique():
+                    mask = labels == cls
+                    if mask.sum() > 0:
+                        local_prototypes[int(cls)] = embeddings[mask].mean(dim=0)
+
+            reg_loss = 0.0
+            for cls, proto in local_prototypes.items():
+                if cls in global_prototypes:
+                    global_proto = global_prototypes[cls].to(DEVICE)
+                    reg_loss += torch.nn.functional.mse_loss(proto, global_proto)
+
+            loss = loss_cls + lambda_reg * reg_loss
+
+
+            #loss = loss_cls  
             loss.backward()
             optimizer.step()
             # Metrics

@@ -113,18 +113,12 @@ class FederatedClient(fl.client.NumPyClient):
         #N_j_loaded = json.loads(config["N_j"])
     
         # Convert back to original format with integer class IDs
-        """
+        
+        cluster_protos = config.get("cluster_prototypes", {})
         global_prototypes = {
-        int(cls): torch.tensor(proto, device=self.device, dtype=torch.float32)
-        for cls, proto in global_prototypes_loaded.items()
-        }
-        N_j = {
-        int(cls): count
-        for cls, count in N_j_loaded.items()
-        }
-        print(f'number of class in cluster client {N_j}')
-        """
-        global_prototypes=None
+        int(cls): torch.tensor(proto).to(self.device)
+        for cls, proto in cluster_protos.items()
+    }
         N_j=None
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
 

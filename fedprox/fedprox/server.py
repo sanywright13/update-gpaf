@@ -296,14 +296,9 @@ save_dir="feature_visualizations_gpaf"
           # First time clustering → initialize clusters
           print("[Init] Performing first-time EM cluster initialization.")
           self.cluster_prototypes = self._initialize_clusters(proto_arrays)
-    
-        # ROUND 2+: Run EM clustering
-        
-          
         # 4. EM Algorithm
         # E-step: Assign clients to clusters
         assignments = self._e_step(proto_arrays, client_ids,)
-        
         # M-step: Update cluster prototypes
         self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments, class_counts_list)
         
@@ -332,13 +327,34 @@ save_dir="feature_visualizations_gpaf"
     flower_cid: client_domain_map[str(client_id_map[flower_cid])]
     for flower_cid in client_id_map
 }
-
-
             self._visualize_clusters(all_prototypes, client_ids, server_round, true_domain_map=true_domain_map)
+        
+    
+        # 7. Build per-client config: map cid → cluster-level prototypes
+        cluster_proto_map = {}  # Flower client ID -> {class_id: global_proto}
+
+        for cid in client_ids:
+          cluster_id = self.client_assignments[cid]
+          cluster_protos = self.cluster_prototypes[cluster_id]
+
+          # Convert to list if necessary (ensure JSON serializable)
+          serializable_protos = {
+            str(cls): proto.tolist() if isinstance(proto, np.ndarray) else proto
+            for cls, proto in cluster_protos.items()
+          }
+
+          cluster_proto_map[cid] = {
+          "cluster_id": cluster_id,
+          "cluster_prototypes": serializable_protos,
+          }
+
+        # OPTIONAL: Save for debugging
+        with open("client_cluster_prototypes.json", "w") as f:
+          json.dump(cluster_proto_map, f, indent=2)
+
         return ndarrays_to_parameters(aggregated_params),config
     
 
-    
 
 
     def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_map=None):
@@ -521,61 +537,31 @@ save_dir="feature_visualizations_gpaf"
    
 
     def configure_fit(self, server_round, parameters, client_manager):
-      # Sample clients
-      num_clients_per_round = int(self.fraction_fit * client_manager.num_available())
-      selected_clients = client_manager.sample(
-        num_clients=num_clients_per_round,
-        min_num_clients=4,
-      )
-      print(f'clients per round {selected_clients}')
+      instructions = super().configure_fit(server_round, parameters, client_manager)
 
-    
-      configurations = []
-      
-      for client in selected_clients:
-        # ROUND 1: No clusters yet
-        if server_round == 1:
-            config = {
-    "global_prototypes": json.dumps({}),
-    "N_j": json.dumps({})
-}
-            print(f'config first round {config}')
-        else:
-            # Handle unassigned clients
-            if client.cid not in self.client_assignments:
-                cluster_id = np.random.randint(0, self.num_clusters)
-                self.client_assignments[client.cid] = cluster_id
-            
-            cluster_id = self.client_assignments[client.cid]
-            
-            # Safely get cluster data with defaults
-            client_prototypes = self.cluster_prototypes.get(cluster_id, {})
-            class_counts = self.cluster_class_counts.get(cluster_id, defaultdict(int))
-            
-            # Create N_j dictionary
-            N_j = {}
-            for cls in client_prototypes:
-                count = class_counts.get(cls, 1)  # Default to 1 to avoid division by zero
-                N_j[cls] = count
+      # Customize each client's config
+      new_instructions = []
+      for ins in instructions:
+        cid = ins.client.cid
+        if cid in self.cluster_assignments:
+            cluster_id = self.client_assignments[cid]
+            cluster_protos = self.cluster_prototypes[cluster_id]
 
-            # Serialize dictionaries to JSON strings
-            """
-            config = {
-                "global_prototypes": json.dumps({
-                    str(cls): proto.tolist() 
-                    for cls, proto in client_prototypes.items()
-                }),
-                "N_j": json.dumps({
-                    str(cls): count 
-                    for cls, count in N_j.items()
-                })
+            serializable_protos = {
+                str(cls): proto.tolist() if isinstance(proto, np.ndarray) else proto
+                for cls, proto in cluster_protos.items()
             }
-            """ 
-            config={}
-        
-        configurations.append((client, flwr.common.FitIns(parameters, config)))
-    
-      return configurations
+
+            # Add to config
+            ins.config["cluster_prototypes"] = serializable_protos
+            ins.config["cluster_id"] = cluster_id
+        else:
+            print(f"[Warning] No cluster assignment for client {cid}")
+
+        new_instructions.append(ins)
+
+      return new_instructions
+
         
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

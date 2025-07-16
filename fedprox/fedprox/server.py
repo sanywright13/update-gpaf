@@ -538,45 +538,36 @@ save_dir="feature_visualizations_gpaf"
         return avg_accuracy, {"accuracy": avg_accuracy}
    
 
-    def configure_fit(
-    self,
-    server_round: int,
-    parameters: Parameters,
-    client_manager: ClientManager,
-) -> List[Tuple[ClientProxy, FitIns]]:
-      """Configure training instructions for each selected client."""
-      # Sample clients
-      sample_size = min(self.fraction_fit * client_manager.num_available(), self.min_fit_clients)
-      clients = client_manager.sample(num_clients=int(sample_size), min_num_clients=self.min_fit_clients)
-      print(f'client selected are :: {sample_size} and {clients}')
-      fit_configurations = []
-      print("[DEBUG] Incoming client IDs:")
-      print([client.cid for client in clients])
-      
-      for client_proxy in clients:
-        cid = client_proxy.cid
+    def configure_fit(self, server_round: int, weights: Parameters, client_manager: ClientManager):
+      clients = client_manager.sample(num_clients=self.fraction_fit)
+      fit_ins_list = []
 
-        if cid not in self.client_assignments:
+      for client in clients:
+        cid = str(client.cid)  # Standardize format!
+        cluster_id = self.client_assignments.get(cid)
+
+        if cluster_id is None:
             print(f"[Warning] Client {cid} not found in cluster assignments.")
             continue
 
-        cluster_id = self.client_assignments[cid]
-        cluster_prototypes = self.cluster_prototypes.get(cluster_id, {})
+        # Get cluster prototype for this client
+        cluster_protos = self.cluster_prototypes.get(cluster_id, {})
+        serialized_protos = {
+            str(cls): proto for cls, proto in cluster_protos.items()
+        }
 
-        # Encode prototypes for safe transfer
-        encoded_prototypes = base64.b64encode(pickle.dumps(cluster_prototypes)).decode("utf-8")
-
-        # Configuration to send to the client
         config = {
             "server_round": server_round,
             "cluster_id": cluster_id,
-            "cluster_prototypes": encoded_prototypes,
+            "cluster_prototypes": pickle.dumps(serialized_protos),
         }
 
-        fit_ins = FitIns(parameters=parameters, config=config)
-        fit_configurations.append((client_proxy, fit_ins))
+        fit_ins_list.append((client, FitIns(weights, config)))
 
-      return fit_configurations
+      if not fit_ins_list:
+        print("[ERROR] No clients selected for training in this round.")
+      return fit_ins_list
+
 
         
     def configure_evaluate(

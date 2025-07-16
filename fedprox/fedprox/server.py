@@ -546,7 +546,7 @@ save_dir="feature_visualizations_gpaf"
       # Sample clients
       sample_size = min(self.fraction_fit * client_manager.num_available(), self.min_fit_clients)
       clients = client_manager.sample(num_clients=int(sample_size), min_num_clients=self.min_fit_clients)
-
+      print(f'client selected are :: {sample_size} and {clients}')
       fit_configurations = []
 
       for client_proxy in clients:

@@ -539,40 +539,40 @@ save_dir="feature_visualizations_gpaf"
     def configure_fit(
     self,
     server_round: int,
-    clients: List[Tuple[ClientProxy, FitIns]]
+    parameters: Parameters,
+    client_manager: ClientManager,
 ) -> List[Tuple[ClientProxy, FitIns]]:
+      """Configure training instructions for each selected client."""
+      # Sample clients
+      sample_size = min(self.fraction_fit * client_manager.num_available(), self.min_fit_clients)
+      clients = client_manager.sample(num_clients=int(sample_size), min_num_clients=self.min_fit_clients)
+
       fit_configurations = []
 
-      for client_proxy, fit_ins in clients:
+      for client_proxy in clients:
         cid = client_proxy.cid
 
-        # Find cluster assignment for this client
         if cid not in self.client_assignments:
-            print(f"[Warning] Client {cid} not in assignments. Skipping.")
+            print(f"[Warning] Client {cid} not found in cluster assignments.")
             continue
 
         cluster_id = self.client_assignments[cid]
         cluster_prototypes = self.cluster_prototypes.get(cluster_id, {})
 
-        # Encode prototypes (as base64-encoded pickle for transmission)
+        # Encode prototypes for safe transfer
         encoded_prototypes = base64.b64encode(pickle.dumps(cluster_prototypes)).decode("utf-8")
 
-        # Update config for this client
-        updated_config = fit_ins.config.copy()
-        updated_config["cluster_prototypes"] = encoded_prototypes
-        updated_config["cluster_id"] = cluster_id
-        updated_config["server_round"] = server_round
+        # Configuration to send to the client
+        config = {
+            "server_round": server_round,
+            "cluster_id": cluster_id,
+            "cluster_prototypes": encoded_prototypes,
+        }
 
-        # Create new FitIns with updated config
-        updated_fit_ins = FitIns(
-            parameters=fit_ins.parameters,
-            config=updated_config
-        )
-
-        fit_configurations.append((client_proxy, updated_fit_ins))
+        fit_ins = FitIns(parameters=parameters, config=config)
+        fit_configurations.append((client_proxy, fit_ins))
 
       return fit_configurations
-
 
         
     def configure_evaluate(

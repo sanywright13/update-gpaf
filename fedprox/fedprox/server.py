@@ -332,7 +332,9 @@ save_dir="feature_visualizations_gpaf"
     
         # 7. Build per-client config: map cid → cluster-level prototypes
         cluster_proto_map = {}  # Flower client ID -> {class_id: global_proto}
-
+        print("[DEBUG] Assigned clients:")
+        print(list(self.client_assignments.keys()))
+        
         for cid in client_ids:
           cluster_id = self.client_assignments[cid]
           cluster_protos = self.cluster_prototypes[cluster_id]
@@ -548,7 +550,9 @@ save_dir="feature_visualizations_gpaf"
       clients = client_manager.sample(num_clients=int(sample_size), min_num_clients=self.min_fit_clients)
       print(f'client selected are :: {sample_size} and {clients}')
       fit_configurations = []
-
+      print("[DEBUG] Incoming client IDs:")
+      print([client.cid for client in clients])
+      
       for client_proxy in clients:
         cid = client_proxy.cid
 

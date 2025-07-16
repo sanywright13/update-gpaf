@@ -536,31 +536,43 @@ save_dir="feature_visualizations_gpaf"
         return avg_accuracy, {"accuracy": avg_accuracy}
    
 
-    def configure_fit(self, server_round, parameters, client_manager):
-      instructions = super().configure_fit(server_round, parameters, client_manager)
+    def configure_fit(
+    self,
+    server_round: int,
+    clients: List[Tuple[ClientProxy, FitIns]]
+) -> List[Tuple[ClientProxy, FitIns]]:
+      fit_configurations = []
 
-      # Customize each client's config
-      new_instructions = []
-      for ins in instructions:
-        cid = ins.client.cid
-        if cid in self.cluster_assignments:
-            cluster_id = self.client_assignments[cid]
-            cluster_protos = self.cluster_prototypes[cluster_id]
+      for client_proxy, fit_ins in clients:
+        cid = client_proxy.cid
 
-            serializable_protos = {
-                str(cls): proto.tolist() if isinstance(proto, np.ndarray) else proto
-                for cls, proto in cluster_protos.items()
-            }
+        # Find cluster assignment for this client
+        if cid not in self.client_assignments:
+            print(f"[Warning] Client {cid} not in assignments. Skipping.")
+            continue
 
-            # Add to config
-            ins.config["cluster_prototypes"] = serializable_protos
-            ins.config["cluster_id"] = cluster_id
-        else:
-            print(f"[Warning] No cluster assignment for client {cid}")
+        cluster_id = self.client_assignments[cid]
+        cluster_prototypes = self.cluster_prototypes.get(cluster_id, {})
 
-        new_instructions.append(ins)
+        # Encode prototypes (as base64-encoded pickle for transmission)
+        encoded_prototypes = base64.b64encode(pickle.dumps(cluster_prototypes)).decode("utf-8")
 
-      return new_instructions
+        # Update config for this client
+        updated_config = fit_ins.config.copy()
+        updated_config["cluster_prototypes"] = encoded_prototypes
+        updated_config["cluster_id"] = cluster_id
+        updated_config["server_round"] = server_round
+
+        # Create new FitIns with updated config
+        updated_fit_ins = FitIns(
+            parameters=fit_ins.parameters,
+            config=updated_config
+        )
+
+        fit_configurations.append((client_proxy, updated_fit_ins))
+
+      return fit_configurations
+
 
         
     def configure_evaluate(

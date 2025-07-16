@@ -538,35 +538,54 @@ save_dir="feature_visualizations_gpaf"
         return avg_accuracy, {"accuracy": avg_accuracy}
    
 
-    def configure_fit(self, server_round: int, weights: Parameters, client_manager: ClientManager):
-      clients = client_manager.sample(num_clients=self.fraction_fit)
-      fit_ins_list = []
+    def configure_fit(
+    self,
+    server_round: int,
+    clients: List[ClientProxy],
+) -> List[Tuple[ClientProxy, FitIns]]:
+      print(f"[Server] Configuring round {server_round}")
 
+      # Use FedAvg for round 1
+      if server_round == 1 or not self.client_assignments:
+        print("[Server] Using FedAvg in round 1 or no cluster assignments yet.")
+        config = {"server_round": server_round}
+        parameters = self.latest_model
+        return [
+            (client, FitIns(parameters=parameters, config=config))
+            for client in clients
+        ]
+
+    # For later rounds, assign each client its cluster-level prototypes
+      instructions = []
       for client in clients:
-        cid = str(client.cid)  # Standardize format!
+        cid = str(client.cid)  # Ensure string for consistent dictionary access
         cluster_id = self.client_assignments.get(cid)
 
         if cluster_id is None:
             print(f"[Warning] Client {cid} not found in cluster assignments.")
-            continue
+            continue  # Skip clients without a cluster assignment
 
-        # Get cluster prototype for this client
+        # Gather the prototypes for the cluster
         cluster_protos = self.cluster_prototypes.get(cluster_id, {})
-        serialized_protos = {
-            str(cls): proto for cls, proto in cluster_protos.items()
-        }
+        encoded_proto = base64.b64encode(pickle.dumps(cluster_protos)).decode("utf-8")
 
         config = {
             "server_round": server_round,
+            "global_cluster_prototypes": encoded_proto,
             "cluster_id": cluster_id,
-            "cluster_prototypes": pickle.dumps(serialized_protos),
         }
 
-        fit_ins_list.append((client, FitIns(weights, config)))
+        instructions.append(
+            (client, FitIns(parameters=self.latest_model, config=config))
+        )
 
-      if not fit_ins_list:
-        print("[ERROR] No clients selected for training in this round.")
-      return fit_ins_list
+      if not instructions:
+        print("[Error] No clients could be configured. This will cancel the round.")
+      else:
+        print(f"[Server] Configured {len(instructions)} clients for training.")
+
+      return instructions
+
 
 
         

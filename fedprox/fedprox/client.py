@@ -114,7 +114,8 @@ class FederatedClient(fl.client.NumPyClient):
     
         # Convert back to original format with integer class IDs
         
-        cluster_protos = config.get("cluster_prototypes", {})
+        cluster_protos = config.get("global_cluster_prototypes", {})
+        print(f' global cluster prototypes {cluster_protos}')
         global_prototypes = {
         int(cls): torch.tensor(proto).to(self.device)
         for cls, proto in cluster_protos.items()

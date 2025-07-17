@@ -541,31 +541,31 @@ save_dir="feature_visualizations_gpaf"
     def configure_fit(
     self,
     server_round: int,
-    clients: List[ClientProxy],
+    parameters: Parameters,  # <--- Needed!
+    client_manager: ClientManager,
 ) -> List[Tuple[ClientProxy, FitIns]]:
       print(f"[Server] Configuring round {server_round}")
 
-      # Use FedAvg for round 1
+      available_clients = list(client_manager.all().values())
+
       if server_round == 1 or not self.client_assignments:
         print("[Server] Using FedAvg in round 1 or no cluster assignments yet.")
         config = {"server_round": server_round}
-        parameters = self.latest_model
         return [
             (client, FitIns(parameters=parameters, config=config))
-            for client in clients
+            for client in available_clients
         ]
 
-    # For later rounds, assign each client its cluster-level prototypes
       instructions = []
-      for client in clients:
-        cid = str(client.cid)  # Ensure string for consistent dictionary access
+      for client in available_clients:
+        cid = str(client.cid)
         cluster_id = self.client_assignments.get(cid)
 
         if cluster_id is None:
             print(f"[Warning] Client {cid} not found in cluster assignments.")
-            continue  # Skip clients without a cluster assignment
+            continue
 
-        # Gather the prototypes for the cluster
+        # Cluster-level prototypes
         cluster_protos = self.cluster_prototypes.get(cluster_id, {})
         encoded_proto = base64.b64encode(pickle.dumps(cluster_protos)).decode("utf-8")
 
@@ -575,17 +575,12 @@ save_dir="feature_visualizations_gpaf"
             "cluster_id": cluster_id,
         }
 
-        instructions.append(
-            (client, FitIns(parameters=self.latest_model, config=config))
-        )
+        instructions.append((client, FitIns(parameters=parameters, config=config)))
 
       if not instructions:
-        print("[Error] No clients could be configured. This will cancel the round.")
-      else:
-        print(f"[Server] Configured {len(instructions)} clients for training.")
+        print("[Error] No clients could be configured for this round!")
 
       return instructions
-
 
 
         

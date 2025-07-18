@@ -118,7 +118,7 @@ class FederatedClient(fl.client.NumPyClient):
         
           # Decode from base64 and unpickle
           cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
-          print(f"[Client] Failed to decode and load global_cluster_prototypes: {e}")
+          print(f"[Client] Failed to decode and load global_cluster_prototypes")
           cluster_protos = {}
         else:
           print("[Client] No global_cluster_prototypes found in config.")

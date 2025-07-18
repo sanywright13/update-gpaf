@@ -118,16 +118,11 @@ class FederatedClient(fl.client.NumPyClient):
         
           # Decode from base64 and unpickle
           cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
-          print(f"[Client] Failed to decode and load global_cluster_prototypes")
-          cluster_protos = {}
+          print("[Client] Successfully decoded global_cluster_prototypes")
         else:
           print("[Client] No global_cluster_prototypes found in config.")
           cluster_protos = {}
 
-
-
-        cluster_protos = config.get("global_cluster_prototypes", {})
-        print(f' global cluster prototypes {cluster_protos}')
         global_prototypes = {
         int(cls): torch.tensor(proto).to(self.device)
         for cls, proto in cluster_protos.items()

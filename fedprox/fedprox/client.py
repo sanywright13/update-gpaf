@@ -112,8 +112,20 @@ class FederatedClient(fl.client.NumPyClient):
         #global_prototypes_loaded = json.loads(config["global_prototypes"])
         #N_j_loaded = json.loads(config["N_j"])
     
-        # Convert back to original format with integer class IDs
+        encoded_proto_str = config.get("global_cluster_prototypes", None)
+
+        if encoded_proto_str is not None:
         
+          # Decode from base64 and unpickle
+          cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
+          print(f"[Client] Failed to decode and load global_cluster_prototypes: {e}")
+          cluster_protos = {}
+        else:
+          print("[Client] No global_cluster_prototypes found in config.")
+          cluster_protos = {}
+
+
+
         cluster_protos = config.get("global_cluster_prototypes", {})
         print(f' global cluster prototypes {cluster_protos}')
         global_prototypes = {
@@ -166,7 +178,6 @@ class FederatedClient(fl.client.NumPyClient):
         "class_counts": class_counts      # str
     }
 )
-
 
 
 def gen_client_fn(
@@ -279,7 +290,6 @@ num_clients=num_clients
         return numpy_client.to_client()
       
     return client_fn
-
 
 # Specify the resources each of your clients need
 # By default, each client will be allocated 1x CPU and 0x GPUs

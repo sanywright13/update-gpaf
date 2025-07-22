@@ -126,110 +126,106 @@ class FederatedClient(fl.client.NumPyClient):
             time.sleep(10)  # ping every 10 seconds
     
     def fit(self, parameters, config):
-      """Train local models using latest generator state."""
-      
-      round_number = config.get("server_round", -1)
-      # Send join timestamp
-      self.send_status(f"{self.server_url}/join", {
+     """Train local models using latest generator state."""
+     round_number = config.get("server_round", -1)
+
+     # Send join timestamp
+     self.send_status(f"{self.server_url}/join", {
+        "client_id": self.client_id,
+        "round": round_number,
+        "timestamp": datetime.now().isoformat()
+    })
+
+     # Start heartbeat background thread
+     stop_event = threading.Event()
+     heartbeat_thread = threading.Thread(target=self.heartbeat_loop, args=(self.client_id, round_number, stop_event))
+     heartbeat_thread.start()
+
+     try:
+        self.set_parameters(parameters)
+
+        encoded_proto_str = config.get("global_cluster_prototypes", None)
+        if encoded_proto_str is not None:
+            cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
+            print("[Client] Successfully decoded global_cluster_prototypes")
+        else:
+            print("[Client] No global_cluster_prototypes found in config.")
+            cluster_protos = {}
+
+        global_prototypes = {
+            int(cls): torch.tensor(proto).to(self.device)
+            for cls, proto in cluster_protos.items()
+        }
+
+        # Simulate dropout
+        if random.random() < 0.2:
+            raise RuntimeError("Simulated client crash")
+
+        # Training
+        N_j = None
+        train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
+
+        # Send leave timestamp
+        self.send_status(f"{self.server_url}/leave", {
             "client_id": self.client_id,
             "round": round_number,
             "timestamp": datetime.now().isoformat()
         })
 
-      # Start heartbeat background thread
-      stop_event = threading.Event()
-      heartbeat_thread = threading.Thread(target=self.heartbeat_loop, args=(self.client_id, round_number, stop_event))
-      heartbeat_thread.start()
-      try:
-        self.set_parameters(parameters)
-      
-        
-        
-        encoded_proto_str = config.get("global_cluster_prototypes", None)
-
-        if encoded_proto_str is not None:
-        
-          # Decode from base64 and unpickle
-          cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
-          print("[Client] Successfully decoded global_cluster_prototypes")
-          
-
-        else:
-          print("[Client] No global_cluster_prototypes found in config.")
-          cluster_protos = {}
-
-        global_prototypes = {
-        int(cls): torch.tensor(proto).to(self.device)
-        for cls, proto in cluster_protos.items()
-    }
-        N_j=None
-        # === SIMULATE DROPOUT HERE ===
-        if random.random() < 0.2:  # 20% chance to simulate a crash
-            raise RuntimeError("Simulated client crash")
-        train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
-        # Send leave timestamp
-        self.send_status(f"{self.server_url}/leave", {
-                "client_id": self.client_id,
-                "round": round_number,
-                "timestamp": datetime.now().isoformat()
-            })
-        
         # === Prototype Extraction ===
         self.net.eval()
         class_embeddings = defaultdict(list)
-        
         class_counts = defaultdict(int)
 
         with torch.no_grad():
-          for batch in self.traindata:
-            images, labels = batch
-            images = images.to(DEVICE, dtype=torch.float32)
-            labels = labels.to(DEVICE, dtype=torch.long)
-            h, _, _ = self.net(images)  # h is encoder output (before projection head)
-            for i in range(labels.size(0)):
-              label = labels[i].item()
-              class_embeddings[label].append(h[i].cpu())  # Save on CPU to avoid GPU memory issues
-              class_counts[label] += 1
+            for batch in self.traindata:
+                images, labels = batch
+                images = images.to(self.device, dtype=torch.float32)
+                labels = labels.to(self.device, dtype=torch.long)
+                h, _, _ = self.net(images)
+                for i in range(labels.size(0)):
+                    label = labels[i].item()
+                    class_embeddings[label].append(h[i].cpu())
+                    class_counts[label] += 1
+
         # Compute prototypes
         prototypes = {}
         for class_id in range(self.num_classes):
-          if class_id in class_embeddings and len(class_embeddings[class_id]) > 0:
-            stacked = torch.stack(class_embeddings[class_id])  # Shape: [N_j, feature_dim]
-            prototypes[class_id] = stacked.mean(dim=0)          # Shape: [feature_dim]
-          else:
-            # Use zero vector if no sample for class in this client
-            prototypes[class_id] = torch.zeros_like(h[0].cpu())
-        
-        all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
-        class_counts= base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
+            if class_id in class_embeddings:
+                stacked = torch.stack(class_embeddings[class_id])
+                prototypes[class_id] = stacked.mean(dim=0)
+            else:
+                prototypes[class_id] = torch.zeros_like(h[0].cpu())
 
-        # Convert to list-of-floats
-        #all_prototypes = {cls: proto.tolist() for cls, proto in prototypes.items()}
+        all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
+        class_counts = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
+
         print("prototypes type:", type(all_prototypes))
         print("class_counts type:", type(class_counts))
+
         return (
-    self.get_parameters(),
-    len(self.traindata),
-    {
-        "prototypes": all_prototypes,     # str
-        "class_counts": class_counts      # str
-    })
-      except Exception as e:
-            self.send_status(f"{self.server_url}/crash", {
-                "client_id": self.client_id,
-                "round": round_number,
-                "timestamp": datetime.now().isoformat(),
-                "error": str(e),
-                "trace": traceback.format_exc()
-            })
-            print("[Client] Training failed:", e)
+            self.get_parameters(),
+            len(self.traindata),
+            {
+                "prototypes": all_prototypes,
+                "class_counts": class_counts
+            }
+        )
 
+     except Exception as e:
+        self.send_status(f"{self.server_url}/crash", {
+            "client_id": self.client_id,
+            "round": round_number,
+            "timestamp": datetime.now().isoformat(),
+            "error": str(e),
+            "trace": traceback.format_exc()
+        })
+        print("[Client] Training failed:", e)
 
-      finally:
-            stop_event.set()
-            heartbeat_thread.join()
-      
-  
+     finally:
+        stop_event.set()
+        heartbeat_thread.join()
+
 
 
 

@@ -27,7 +27,7 @@ from hydra.utils import instantiate
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 import json
-from client_monitoring import CRACS_MDA, load_log_data
+from fedprox.client_monitoring import CRACS_MDA, load_log_data
 from flwr.server.strategy import Strategy,FedAvg
 from fedprox.models import test,test_gpaf 
 from flwr.server.strategy.aggregate import aggregate, weighted_loss_avg

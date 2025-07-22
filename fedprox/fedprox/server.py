@@ -27,6 +27,7 @@ from hydra.utils import instantiate
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader
 import json
+from client_monitoring import CRACS_MDA, load_log_data
 from flwr.server.strategy import Strategy,FedAvg
 from fedprox.models import test,test_gpaf 
 from flwr.server.strategy.aggregate import aggregate, weighted_loss_avg
@@ -555,7 +556,24 @@ save_dir="feature_visualizations_gpaf"
             (client, FitIns(parameters=parameters, config=config))
             for client in available_clients
         ]
-
+      log_data = load_log_data("client_logs_round_{}.json".format(server_round - 1))  # logs from last round
+      C = list(self.client_assignments.keys())
+      A, F, J = defaultdict(list), defaultdict(list), defaultdict(list)
+      selected_clients = CRACS_MDA(
+        C=C,
+        A=A,
+        F=F,
+        J=J,
+        r=server_round,
+        n=self.min_fit_clients,
+        m=self.memory_length,
+        T_min=60,
+        Clusters=self.clusters,  # {cluster_id: [client_ids]}
+        log_data=log_data
+    )
+      selected_client_proxies = [client_manager.clients[cid] for cid in selected_clients]
+      """
+    
       instructions = []
       for client in available_clients:
         cid = str(client.cid)
@@ -574,8 +592,11 @@ save_dir="feature_visualizations_gpaf"
             "global_cluster_prototypes": encoded_proto,
             "cluster_id": cluster_id,
         }
+        """
 
-        instructions.append((client, FitIns(parameters=parameters, config=config)))
+      #instructions.append((client, FitIns(parameters=parameters, config=config)))
+      print(f"selected clients {selected_client_proxies}")
+      instructions = [(client, FitIns(parameters, config={})) for client in selected_client_proxies]
 
       if not instructions:
         print("[Error] No clients could be configured for this round!")

@@ -221,6 +221,8 @@ class FederatedClient(fl.client.NumPyClient):
             "trace": traceback.format_exc()
         })
         print("[Client] Training failed:", e)
+        # 🛑 Fallback empty result to satisfy Flower
+        return self.get_parameters(), 0, {}
 
      finally:
         stop_event.set()

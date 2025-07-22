@@ -566,7 +566,16 @@ save_dir="feature_visualizations_gpaf"
         ]
       log_data = load_log_data("client_logs_round_{}.json".format(server_round - 1))  # logs from last round
       C = list(self.client_assignments.keys())
-      A, F, J = defaultdict(list), defaultdict(list), defaultdict(list)
+      # STEP 1: Ensure self.clusters is built from assignments
+      self.clusters = defaultdict(list)  # Reset clusters
+      for cid, cluster_id in self.client_assignments.items():
+        self.clusters[cluster_id].append(cid)
+      #A, F, J = defaultdict(list), defaultdict(list), defaultdict(list)
+      A = defaultdict(lambda: [])
+      F = defaultdict(lambda: [])
+      J = defaultdict(lambda: [])
+      
+
       selected_clients = CRACS_MDA(
         C=C,
         A=A,

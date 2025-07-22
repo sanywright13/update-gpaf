@@ -10,6 +10,7 @@ import copy
 import csv
 import threading
 import requests
+import random
 import time
 from datetime import datetime
 import traceback
@@ -142,7 +143,8 @@ class FederatedClient(fl.client.NumPyClient):
       try:
         self.set_parameters(parameters)
       
-    
+        
+        
         encoded_proto_str = config.get("global_cluster_prototypes", None)
 
         if encoded_proto_str is not None:
@@ -159,6 +161,9 @@ class FederatedClient(fl.client.NumPyClient):
         for cls, proto in cluster_protos.items()
     }
         N_j=None
+        # === SIMULATE DROPOUT HERE ===
+        if random.random() < 0.2:  # 20% chance to simulate a crash
+            raise RuntimeError("Simulated client crash")
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
         # Send leave timestamp
         self.send_status(f"{self.server_url}/leave", {

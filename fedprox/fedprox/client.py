@@ -62,7 +62,8 @@ class FederatedClient(fl.client.NumPyClient):
         self.num_classes=9
         self.num_clients=num_clients
         self.batch_size=batch_size
-        
+        self.server_url = "https://56192d9b19f8.ngrok-free.app/heartbeat/ping"
+
         print(f"dd Batch size client side : {self.batch_size}")
         # Move models to device
         self.net.to(self.device)
@@ -114,9 +115,8 @@ class FederatedClient(fl.client.NumPyClient):
             print(f"[Heartbeat] Failed to send {url} — {e}")
 
     def heartbeat_loop(self, client_id, round_number, stop_event):
-        server_url = "http://<server_ip>:5000/heartbeat/ping"
         while not stop_event.is_set():
-            self.send_status(server_url, {
+            self.send_status(self.server_url, {
                 "client_id": client_id,
                 "round": round_number,
                 "timestamp": datetime.now().isoformat()
@@ -124,13 +124,23 @@ class FederatedClient(fl.client.NumPyClient):
             time.sleep(10)  # ping every 10 seconds
     
     def fit(self, parameters, config):
-        """Train local models using latest generator state."""
-        #print(f'=== client training {config}')
-        # Update local models with global parameters
+      """Train local models using latest generator state."""
+      
+      round_number = config.get("server_round", -1)
+      # Send join timestamp
+      self.send_status(f"{self.server_url}/join", {
+            "client_id": self.client_id,
+            "round": round_number,
+            "timestamp": datetime.now().isoformat()
+        })
+
+      # Start heartbeat background thread
+      stop_event = threading.Event()
+      heartbeat_thread = threading.Thread(target=self.heartbeat_loop, args=(self.client_id, round_number, stop_event))
+      heartbeat_thread.start()
+      try:
         self.set_parameters(parameters)
-        # Deserialize JSON strings
-        #global_prototypes_loaded = json.loads(config["global_prototypes"])
-        #N_j_loaded = json.loads(config["N_j"])
+      
     
         encoded_proto_str = config.get("global_cluster_prototypes", None)
 
@@ -149,7 +159,12 @@ class FederatedClient(fl.client.NumPyClient):
     }
         N_j=None
         train_gpaf(self.net, self.traindata,self.device,self.client_id,self.local_epochs,self.batch_size,global_prototypes,N_j)
-
+        # Send leave timestamp
+        self.send_status(f"{self.server_url}/leave", {
+                "client_id": self.client_id,
+                "round": round_number,
+                "timestamp": datetime.now().isoformat()
+            })
         
         # === Prototype Extraction ===
         self.net.eval()
@@ -185,13 +200,27 @@ class FederatedClient(fl.client.NumPyClient):
         print("prototypes type:", type(all_prototypes))
         print("class_counts type:", type(class_counts))
 
-        return (
+      except Exception as e:
+            self.send_status(f"{self.server_url}/crash", {
+                "client_id": self.client_id,
+                "round": round_number,
+                "timestamp": datetime.now().isoformat(),
+                "error": str(e),
+                "trace": traceback.format_exc()
+            })
+            print("[Client] Training failed:", e)
+
+      finally:
+            stop_event.set()
+            heartbeat_thread.join()
+      return (
     self.get_parameters(),
     len(self.traindata),
     {
         "prototypes": all_prototypes,     # str
         "class_counts": class_counts      # str
     }
+  
 )
 
 

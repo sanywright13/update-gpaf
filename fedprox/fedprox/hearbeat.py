@@ -1,58 +1,35 @@
 from flask import Flask, request, jsonify
-from datetime import datetime
+from pyngrok import ngrok
+import threading
 
 app = Flask(__name__)
-heartbeat_log = {}
-crash_log = {}
-
-@app.route("/heartbeat/ping", methods=["POST"])
-def receive_ping():
-    data = request.get_json()
-    cid = data["client_id"]
-    round_ = data["round"]
-    timestamp = data["timestamp"]
-
-    heartbeat_log.setdefault(cid, []).append((round_, timestamp))
-    print(f"[Ping] Client {cid} Round {round_} @ {timestamp}")
-    return jsonify({"status": "received"}), 200
 
 @app.route("/heartbeat/join", methods=["POST"])
 def join():
-    data = request.get_json()
-    cid = data["client_id"]
-    round_ = data["round"]
-    timestamp = data["timestamp"]
-    print(f"[Join] Client {cid} started round {round_} at {timestamp}")
-    return jsonify({"status": "join recorded"}), 200
+    data = request.json
+    print(f"[JOIN] {data}")
+    return jsonify({"status": "received join"})
 
 @app.route("/heartbeat/leave", methods=["POST"])
 def leave():
-    data = request.get_json()
-    cid = data["client_id"]
-    round_ = data["round"]
-    timestamp = data["timestamp"]
-    print(f"[Leave] Client {cid} finished round {round_} at {timestamp}")
-    return jsonify({"status": "leave recorded"}), 200
+    data = request.json
+    print(f"[LEAVE] {data}")
+    return jsonify({"status": "received leave"})
+
+@app.route("/heartbeat/ping", methods=["POST"])
+def ping():
+    data = request.json
+    print(f"[PING] {data}")
+    return jsonify({"status": "received ping"})
 
 @app.route("/heartbeat/crash", methods=["POST"])
 def crash():
-    data = request.get_json()
-    cid = data["client_id"]
-    round_ = data["round"]
-    timestamp = data["timestamp"]
-    error = data.get("error", "Unknown")
-    trace = data.get("trace", "")
-    crash_log.setdefault(cid, []).append((round_, timestamp, error))
-    print(f"[Crash] Client {cid} crashed in round {round_} @ {timestamp}\n{error}\n{trace}")
-    return jsonify({"status": "crash recorded"}), 200
+    data = request.json
+    print(f"[CRASH] {data}")
+    return jsonify({"status": "received crash"})
 
-@app.route("/heartbeat/summary", methods=["GET"])
-def summary():
-    return jsonify({
-        "active_clients": list(heartbeat_log.keys()),
-        "heartbeat_log": heartbeat_log,
-        "crashes": crash_log
-    })
+# Start the Flask app with ngrok tunnel
+public_url = ngrok.connect(5000)
+print("🔥 Public ngrok URL:", public_url)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+app.run(port=5000)

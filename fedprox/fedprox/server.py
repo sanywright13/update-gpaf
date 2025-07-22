@@ -581,10 +581,9 @@ save_dir="feature_visualizations_gpaf"
     )
       selected_client_proxies = [client_manager.clients[cid] for cid in selected_clients]
       print(f" client selected in round {server_round} are {selected_clients}")
-      
-      """
-    
+     
       instructions = []
+      """
       for client in available_clients:
         cid = str(client.cid)
         cluster_id = self.client_assignments.get(cid)
@@ -602,8 +601,8 @@ save_dir="feature_visualizations_gpaf"
             "global_cluster_prototypes": encoded_proto,
             "cluster_id": cluster_id,
         }
-        """
-
+    
+      """
       #instructions.append((client, FitIns(parameters=parameters, config=config)))
       print(f"selected clients {selected_client_proxies}")
       instructions = [(client, FitIns(parameters, config={})) for client in selected_client_proxies]

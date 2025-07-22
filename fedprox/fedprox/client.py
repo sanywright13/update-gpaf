@@ -152,6 +152,8 @@ class FederatedClient(fl.client.NumPyClient):
           # Decode from base64 and unpickle
           cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
           print("[Client] Successfully decoded global_cluster_prototypes")
+          
+
         else:
           print("[Client] No global_cluster_prototypes found in config.")
           cluster_protos = {}
@@ -205,7 +207,13 @@ class FederatedClient(fl.client.NumPyClient):
         #all_prototypes = {cls: proto.tolist() for cls, proto in prototypes.items()}
         print("prototypes type:", type(all_prototypes))
         print("class_counts type:", type(class_counts))
-
+        return (
+    self.get_parameters(),
+    len(self.traindata),
+    {
+        "prototypes": all_prototypes,     # str
+        "class_counts": class_counts      # str
+    })
       except Exception as e:
             self.send_status(f"{self.server_url}/crash", {
                 "client_id": self.client_id,
@@ -216,18 +224,13 @@ class FederatedClient(fl.client.NumPyClient):
             })
             print("[Client] Training failed:", e)
 
+
       finally:
             stop_event.set()
             heartbeat_thread.join()
-      return (
-    self.get_parameters(),
-    len(self.traindata),
-    {
-        "prototypes": all_prototypes,     # str
-        "class_counts": class_counts      # str
-    }
+      
   
-)
+
 
 
 def gen_client_fn(

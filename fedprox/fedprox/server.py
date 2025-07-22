@@ -34,6 +34,7 @@ from flwr.server.strategy.aggregate import aggregate, weighted_loss_avg
 from flwr.server.client_proxy import ClientProxy
 from fedprox.features_visualization import extract_features_and_labels,StructuredFeatureVisualizer
 import csv
+import requests
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
@@ -74,7 +75,7 @@ class GPAFStrategy(FedAvg):
         self.min_fit_clients = min_fit_clients
         self.min_evaluate_clients = min_evaluate_clients
         self.min_available_clients = min_available_clients
-        
+        self.server_url=""
         #clusters parameters
 
         self.num_clusters = 4
@@ -354,7 +355,14 @@ save_dir="feature_visualizations_gpaf"
         # OPTIONAL: Save for debugging
         with open("client_cluster_prototypes.json", "w") as f:
           json.dump(cluster_proto_map, f, indent=2)
+        
 
+        # 🔁 At the end, trigger saving logs on Flask server
+        try:
+            r = requests.post(f"{self.server_url}/heartbeat/save_logs")
+            print("[Server] Log save status:", r.json())
+        except Exception as e:
+            print("[Server] Failed to save logs:", e)
         return ndarrays_to_parameters(aggregated_params),config
     
 
@@ -572,6 +580,8 @@ save_dir="feature_visualizations_gpaf"
         log_data=log_data
     )
       selected_client_proxies = [client_manager.clients[cid] for cid in selected_clients]
+      print(f" client selected in round {server_round} are {selected_clients}")
+      
       """
     
       instructions = []

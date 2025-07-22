@@ -8,6 +8,11 @@ import numpy as np
 import torch
 import copy
 import csv
+import threading
+import requests
+import time
+from datetime import datetime
+import traceback
 from collections import defaultdict
 from flwr.common import Config
 import torch.nn.functional as F
@@ -101,7 +106,22 @@ class FederatedClient(fl.client.NumPyClient):
         return float(loss), len(self.validdata), {"accuracy": float(accuracy),
      
         }
+    
+    def send_status(self, url, payload):
+        try:
+            requests.post(url, json=payload)
+        except Exception as e:
+            print(f"[Heartbeat] Failed to send {url} — {e}")
 
+    def heartbeat_loop(self, client_id, round_number, stop_event):
+        server_url = "http://<server_ip>:5000/heartbeat/ping"
+        while not stop_event.is_set():
+            self.send_status(server_url, {
+                "client_id": client_id,
+                "round": round_number,
+                "timestamp": datetime.now().isoformat()
+            })
+            time.sleep(10)  # ping every 10 seconds
     
     def fit(self, parameters, config):
         """Train local models using latest generator state."""

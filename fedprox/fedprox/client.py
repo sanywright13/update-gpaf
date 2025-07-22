@@ -62,7 +62,7 @@ class FederatedClient(fl.client.NumPyClient):
         self.num_classes=9
         self.num_clients=num_clients
         self.batch_size=batch_size
-        self.server_url = "https://54718f77015a.ngrok-free.app/"
+        self.server_url = "https://54718f77015a.ngrok-free.app/heartbeat"
 
 
         print(f"dd Batch size client side : {self.batch_size}")

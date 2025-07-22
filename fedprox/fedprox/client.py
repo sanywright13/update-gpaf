@@ -62,7 +62,8 @@ class FederatedClient(fl.client.NumPyClient):
         self.num_classes=9
         self.num_clients=num_clients
         self.batch_size=batch_size
-        self.server_url = "https://56192d9b19f8.ngrok-free.app/heartbeat/ping"
+        self.server_url = "https://54718f77015a.ngrok-free.app/"
+
 
         print(f"dd Batch size client side : {self.batch_size}")
         # Move models to device

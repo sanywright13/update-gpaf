@@ -34,7 +34,7 @@ def update_histories(A, F, J, log_data):
         while len(A[cid]) <= round_idx:
             A[cid].append(False)
         A[cid][round_idx] = True
-
+        #==================== can you explain what does the program do here =============
         if cid not in J:
             J[cid] = []
         while len(J[cid]) <= round_idx:

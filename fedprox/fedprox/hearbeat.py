@@ -40,6 +40,7 @@ def crash():
 def save_logs():
     for round_num, log_data in logs_by_round.items():
         filename = f"client_logs_round_{round_num}.json"
+        print(f'filename of data server {round_num}')
         with open(filename, "w") as f:
             json.dump(log_data, f, indent=2, default=str)
     return jsonify({"status": "all logs saved"})

@@ -366,7 +366,7 @@ save_dir="feature_visualizations_gpaf"
 
         # 🔁 At the end, trigger saving logs on Flask server
         try:
-            r = requests.post(f"{self.server_url}/heartbeat/save_logs")
+            r = requests.post(f"{self.server_url}/save_logs")
             print("[Server] Log save status:", r.json())
         except Exception as e:
             print("[Server] Failed to save logs:", e)

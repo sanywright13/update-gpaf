@@ -265,6 +265,12 @@ save_dir="feature_visualizations_gpaf"
                 #prototypes = pickle.loads(base64.b64decode(prototypes))
                 print(f"Flower cid: {client_id}  ↔  Simulation client index: {sim_index}")
                 client_id_map[client_id] = sim_index
+                metrics = fit_res.metrics
+                if "prototypes" not in metrics or "class_counts" not in metrics:
+                        print(f"[Warning] Client {client_proxy.cid} returned no prototype info. Skipping.")
+                        continue
+
+
                 client_parameters = parameters_to_ndarrays(fit_res.parameters)
                 clients_params_list.append(client_parameters)
                 all_prototypes.append(pickle.loads(base64.b64decode(fit_res.metrics["prototypes"])))

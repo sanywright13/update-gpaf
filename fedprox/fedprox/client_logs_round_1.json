@@ -1,0 +1,198 @@
+{
+  "joins": [
+    {
+      "client_id": 2,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:26.401522"
+    },
+    {
+      "client_id": 4,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:33.680733"
+    },
+    {
+      "client_id": 6,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:47.268017"
+    },
+    {
+      "client_id": 7,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:54.569353"
+    },
+    {
+      "client_id": 10,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:08.031178"
+    },
+    {
+      "client_id": 12,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:15.478248"
+    },
+    {
+      "client_id": 14,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:18.632127"
+    },
+    {
+      "client_id": 15,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:26.074257"
+    },
+    {
+      "client_id": 8,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:29.243061"
+    },
+    {
+      "client_id": 11,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:36.777029"
+    },
+    {
+      "client_id": 1,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:50.122265"
+    },
+    {
+      "client_id": 3,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:57.666461"
+    },
+    {
+      "client_id": 9,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:00.872222"
+    },
+    {
+      "client_id": 13,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:18.474872"
+    },
+    {
+      "client_id": 16,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:21.772387"
+    },
+    {
+      "client_id": 5,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:39.228085"
+    },
+    {
+      "client_id": 0,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:42.754151"
+    },
+    {
+      "client_id": 17,
+      "round": 1,
+      "timestamp": "2025-07-23T11:54:00.020023"
+    }
+  ],
+  "leaves": [
+    {
+      "client_id": 2,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:38.036236"
+    },
+    {
+      "client_id": 4,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:44.270670"
+    },
+    {
+      "client_id": 6,
+      "round": 1,
+      "timestamp": "2025-07-23T11:51:56.969027"
+    },
+    {
+      "client_id": 7,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:04.754946"
+    },
+    {
+      "client_id": 8,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:39.179204"
+    },
+    {
+      "client_id": 11,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:46.886907"
+    },
+    {
+      "client_id": 3,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:08.652091"
+    },
+    {
+      "client_id": 9,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:11.923149"
+    },
+    {
+      "client_id": 13,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:28.941256"
+    },
+    {
+      "client_id": 16,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:32.547749"
+    },
+    {
+      "client_id": 5,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:49.615444"
+    },
+    {
+      "client_id": 0,
+      "round": 1,
+      "timestamp": "2025-07-23T11:53:53.214614"
+    },
+    {
+      "client_id": 17,
+      "round": 1,
+      "timestamp": "2025-07-23T11:54:11.835858"
+    }
+  ],
+  "crashes": [
+    {
+      "client_id": 10,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:08.130921",
+      "error": "Simulated client crash",
+      "trace": "Traceback (most recent call last):\n  File \"/kaggle/working/update-gpaf/fedprox/fedprox/client.py\", line 162, in fit\n    raise RuntimeError(\"Simulated client crash\")\nRuntimeError: Simulated client crash\n"
+    },
+    {
+      "client_id": 12,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:15.581244",
+      "error": "Simulated client crash",
+      "trace": "Traceback (most recent call last):\n  File \"/kaggle/working/update-gpaf/fedprox/fedprox/client.py\", line 162, in fit\n    raise RuntimeError(\"Simulated client crash\")\nRuntimeError: Simulated client crash\n"
+    },
+    {
+      "client_id": 14,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:18.738060",
+      "error": "Simulated client crash",
+      "trace": "Traceback (most recent call last):\n  File \"/kaggle/working/update-gpaf/fedprox/fedprox/client.py\", line 162, in fit\n    raise RuntimeError(\"Simulated client crash\")\nRuntimeError: Simulated client crash\n"
+    },
+    {
+      "client_id": 15,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:26.187938",
+      "error": "Simulated client crash",
+      "trace": "Traceback (most recent call last):\n  File \"/kaggle/working/update-gpaf/fedprox/fedprox/client.py\", line 162, in fit\n    raise RuntimeError(\"Simulated client crash\")\nRuntimeError: Simulated client crash\n"
+    },
+    {
+      "client_id": 1,
+      "round": 1,
+      "timestamp": "2025-07-23T11:52:50.227700",
+      "error": "Simulated client crash",
+      "trace": "Traceback (most recent call last):\n  File \"/kaggle/working/update-gpaf/fedprox/fedprox/client.py\", line 162, in fit\n    raise RuntimeError(\"Simulated client crash\")\nRuntimeError: Simulated client crash\n"
+    }
+  ]
+}

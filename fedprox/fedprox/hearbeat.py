@@ -36,7 +36,7 @@ def crash():
     logs_by_round[data["round"]]["crashes"].append(data)
     return jsonify({"status": "received crash"})
 
-@app.route('/save_logs', methods=['POST'])
+@app.route('/heartbeat/save_logs', methods=['POST'])
 def save_logs():
     for round_num, log_data in logs_by_round.items():
         filename = f"client_logs_round_{round_num}.json"

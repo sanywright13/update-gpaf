@@ -78,7 +78,7 @@ class GPAFStrategy(FedAvg):
         self.min_fit_clients = min_fit_clients
         self.min_evaluate_clients = min_evaluate_clients
         self.min_available_clients = min_available_clients
-        self.server_url = "https://bac47c19001a.ngrok-free.app/heartbeat"
+        self.server_url = "https://0de90d72bac2.ngrok-free.app/heartbeat"
 
         #clusters parameters
 

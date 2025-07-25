@@ -312,7 +312,8 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
     print(f'Model on device: { DEVICE}')
 
     net.to(DEVICE)
-    
+    batch_losses = []  # During training collect batch-wise loss values
+
     optimizer= torch.optim.Adam(net.parameters(), lr=lr, weight_decay=1e-4)
     criterion = nn.CrossEntropyLoss().to(DEVICE)  # Classification loss (for binary classification)
     #net.train()
@@ -369,6 +370,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             loss_cls = criterion(outputs, labels)
 
             # --------- REGULARIZATION TERM ----------
+            """
             with torch.no_grad():
                 local_prototypes = {}
                 for cls in labels.unique():
@@ -381,9 +383,10 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
                 if cls in global_prototypes:
                     global_proto = global_prototypes[cls].to(DEVICE)
                     reg_loss += torch.nn.functional.mse_loss(proto, global_proto)
+            """
+            loss = loss_cls 
 
-            loss = loss_cls + lambda_reg * reg_loss
-
+            batch_losses.append(loss)
 
             #loss = loss_cls  
             loss.backward()
@@ -421,7 +424,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             writer.writerow([epoch+1, epoch_loss, epoch_acc])
     
 
-    #return grads
+    return batch_losses
 
 
 def test_gpaf(net, testloader,device,num_classes=9):

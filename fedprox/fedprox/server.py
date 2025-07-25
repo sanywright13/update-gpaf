@@ -41,6 +41,9 @@ import numpy as np
 from flwr.server.strategy import Strategy
 from flwr.server.client_manager import ClientManager
 import os
+from client_monitoring import update_histories
+from client_monitoring import T_hat
+
 from flwr.common import (
     EvaluateIns,
     EvaluateRes,
@@ -554,77 +557,69 @@ save_dir="feature_visualizations_gpaf"
         return avg_accuracy, {"accuracy": avg_accuracy}
    
 
-    def configure_fit(
-    self,
-    server_round: int,
-    parameters: Parameters,  # <--- Needed!
-    client_manager: ClientManager,
-) -> List[Tuple[ClientProxy, FitIns]]:
+    def configure_fit(self, server_round, parameters, client_manager):
       print(f"[Server] Configuring round {server_round}")
 
-      available_clients = list(client_manager.all().values())
-
       if server_round == 1 or not self.client_assignments:
-        print("[Server] Using FedAvg in round 1 or no cluster assignments yet.")
-        config = {"server_round": server_round}
-        return [
-            (client, FitIns(parameters=parameters, config=config))
-            for client in available_clients
-        ]
-      log_data = load_log_data("client_logs_round_{}.json".format(server_round - 1))  # logs from last round
-      C = list(self.client_assignments.keys())
-      # STEP 1: Ensure self.clusters is built from assignments
-      self.clusters = defaultdict(list)  # Reset clusters
-      for cid, cluster_id in self.client_assignments.items():
-        self.clusters[cluster_id].append(cid)
-      #A, F, J = defaultdict(list), defaultdict(list), defaultdict(list)
-      A = defaultdict(lambda: [])
-      F = defaultdict(lambda: [])
-      J = defaultdict(lambda: [])
+        return [(c, FitIns(parameters, {"server_round": server_round})) for c in client_manager.all().values()]
+
+      clusters = defaultdict(list)
+      for cid, cl in self.client_assignments.items():
+        clusters[cl].append(cid)
+
+      log_data = load_log_data(f"client_logs_round_{server_round-1}.json")
+
+      A, F, J = defaultdict(list), defaultdict(list), defaultdict(list)
+      update_histories(A, F, J, log_data)
+
+      T_max = sum(T_hat[c] for c in self.client_assignments) / len(self.client_assignments)
+
+      scores = {}
+      for cid in self.client_assignments:
+        U = self.stat_util.get(cid, 1.0)
+        T_hat_c = T_hat[cid]
+        t_avail = self.t_avail.get(cid, T_hat_c)
+        A_s = min(T_hat_c / (t_avail + self.beta * (t_avail - T_max)), 1.0)
+        s_count = self.selection_counts.get(cid, 0)
+        f_s = (self.v - s_count) / self.v if s_count < self.v else 1e-3
+   
+        scores[cid] = (A_s ** self.alpha) * (f_s ** self.beta) * (U ** self.gamma)
+        print(f"[Score Calc] Client {cid}:")
+        print(f"  U = {U:.3f}, T_hat = {T_hat_c:.2f}, t_avail = {t_avail:.2f}, T_max = {T_max:.2f}")
+        print(f"  A_s = {A_s:.3f}, f_s = {f_s:.3f}, Final Score = {scores[cid]:.4f}")
+
+
+      selected = []
+      for cl, members in clusters.items():
+        print(f"[Debug] Cluster {cl} has {len(members)} members: {members}")
+
+        k = max(1, int(self.min_fit_clients / len(clusters)))
+        topk = sorted(members, key=lambda c: scores.get(c, 0), reverse=True)[:k]
+        print(f"[Debug] Selected from Cluster {cl}: {topk}")
+
+        selected.extend(topk)
+        for c in topk:
+            self.selection_counts[c] = self.selection_counts.get(c, 0) + 1
       
 
-      selected_clients = CRACS_MDA(
-        C=C,
-        A=A,
-        F=F,
-        J=J,
-        r=server_round,
-        n=self.min_fit_clients,
-        m=self.memory_length,
-        T_min=60,
-        Clusters=self.clusters,  # {cluster_id: [client_ids]}
-        log_data=log_data
-    )
-      selected_client_proxies = [client_manager.clients[cid] for cid in selected_clients]
-      print(f" client selected in round {server_round} are {selected_clients}")
-     
+      print(f"[Fairness] Selection counts:")
+      for cid, count in self.selection_counts.items():
+        print(f"  Client {cid}: {count} times selected")
+
+
       instructions = []
-      """
-      for client in available_clients:
-        cid = str(client.cid)
-        cluster_id = self.client_assignments.get(cid)
+      for cid in selected:
+        client = client_manager.clients[cid]
+        config = {"server_round": server_round}
+        instructions.append((client, FitIns(parameters, config)))
+      
+      with open(f"debug_selection_round_{server_round}.json", "w") as f:
+        json.dump({
+        "assignments": self.client_assignments,
+        "selected": selected,
+        "scores": {cid: round(scores[cid], 4) for cid in selected}
+        }, f, indent=2)
 
-        if cluster_id is None:
-            print(f"[Warning] Client {cid} not found in cluster assignments.")
-            continue
-
-        # Cluster-level prototypes
-        cluster_protos = self.cluster_prototypes.get(cluster_id, {})
-        encoded_proto = base64.b64encode(pickle.dumps(cluster_protos)).decode("utf-8")
-
-        config = {
-            "server_round": server_round,
-            "global_cluster_prototypes": encoded_proto,
-            "cluster_id": cluster_id,
-        }
-    
-      """
-      #instructions.append((client, FitIns(parameters=parameters, config=config)))
-      print(f"selected clients {selected_client_proxies}")
-      instructions = [(client, FitIns(parameters, config={})) for client in selected_client_proxies]
-
-      if not instructions:
-        print("[Error] No clients could be configured for this round!")
 
       return instructions
 

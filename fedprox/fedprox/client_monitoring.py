@@ -5,6 +5,18 @@ from datetime import datetime
 from collections import defaultdict
 import random
 
+
+DEFAULT_TMAX = 600.0  # seconds
+EMA_ALPHA = 0.3
+T_hat = defaultdict(lambda: DEFAULT_TMAX)  # per-client smoothed estimate
+
+def update_adaptive_tmax(client_id, J):
+    latest = len(J[client_id]) - 1
+    join_time, leave_time = J[client_id][latest]
+    duration = (leave_time - join_time).total_seconds()
+    prev = T_hat[client_id]
+    T_hat[client_id] = EMA_ALPHA * duration + (1 - EMA_ALPHA) * prev
+
 def normalize_probabilities(W):
     total = sum(W.values())
     if total == 0:
@@ -27,34 +39,30 @@ def get_available_clients(clients, A, J, r, T_min):
 def update_histories(A, F, J, log_data):
     for entry in log_data.get("joins", []):
         cid = entry["client_id"]
-        round_idx = entry["round"]
-        timestamp = datetime.fromisoformat(entry["timestamp"])
-        if cid not in A:
-            A[cid] = []
-        while len(A[cid]) <= round_idx:
-            A[cid].append(False)
-        A[cid][round_idx] = True
-        #==================== can you explain what does the program do here =============
-        if cid not in J:
-            J[cid] = []
-        while len(J[cid]) <= round_idx:
-            J[cid].append((timestamp, timestamp))
-        J[cid][round_idx] = (timestamp, timestamp)
+        r = entry["round"]
+        ts = datetime.fromisoformat(entry["timestamp"])
+        A.setdefault(cid, []).extend([False] * (r + 1 - len(A[cid])))
+        A[cid][r] = True
+        J.setdefault(cid, []).extend([(ts, ts)] * (r + 1 - len(J[cid])))
+        J[cid][r] = (ts, ts)
 
     for entry in log_data.get("leaves", []):
         cid = entry["client_id"]
-        round_idx = entry["round"]
-        timestamp = datetime.fromisoformat(entry["timestamp"])
-        if cid in J and round_idx < len(J[cid]):
-            join_time, _ = J[cid][round_idx]
-            J[cid][round_idx] = (join_time, timestamp)
+        r = entry["round"]
+        ts = datetime.fromisoformat(entry["timestamp"])
+        if cid in J and r < len(J[cid]):
+            join, _ = J[cid][r]
+            J[cid][r] = (join, ts)
 
     for entry in log_data.get("crashes", []):
         cid = entry["client_id"]
-        round_idx = entry["round"]
-        if cid not in F:
-            F[cid] = []
-        F[cid].append(round_idx)
+        r = entry["round"]
+        F.setdefault(cid, []).append(r)
+
+    for cid in J:
+        if J[cid]:
+            update_adaptive_tmax(cid, J)
+            
 
 def load_log_data(filepath):
     with open(filepath, 'r') as f:

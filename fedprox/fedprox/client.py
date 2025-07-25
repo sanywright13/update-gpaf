@@ -143,7 +143,7 @@ class FederatedClient(fl.client.NumPyClient):
 
     
      self.set_parameters(parameters)
-
+     """
      encoded_proto_str = config.get("global_cluster_prototypes", None)
      if encoded_proto_str is not None:
             cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
@@ -157,7 +157,8 @@ class FederatedClient(fl.client.NumPyClient):
             for cls, proto in cluster_protos.items()
         }
 
-       
+     """
+     global_prototypes=None
      # Training
      N_j = None
      batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)

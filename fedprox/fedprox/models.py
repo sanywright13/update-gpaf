@@ -295,10 +295,11 @@ def train_gpaf( net: nn.Module,
 # j
     learning_rate=0.01
         
-    train_one_epoch_gpaf(
+    batch_losses=train_one_epoch_gpaf(
         net, trainloader, device,client_id,
             epochs,batch_size,global_prototypes, N_j,
         )
+    return batch_losses
 import csv
 #we must add a classifier that classifier into a binary categories
 #send back the classifier parameter to the server

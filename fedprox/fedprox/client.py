@@ -157,11 +157,7 @@ class FederatedClient(fl.client.NumPyClient):
             for cls, proto in cluster_protos.items()
         }
 
-        # Simulate dropout
-        """
-        if random.random() < 0.2:
-            raise RuntimeError("Simulated client crash")
-        """
+       
         # Training
         N_j = None
         batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
@@ -218,16 +214,10 @@ class FederatedClient(fl.client.NumPyClient):
         )
 
      except Exception as e:
-        self.send_status(f"{self.server_url}/crash", {
-            "client_id": self.client_id,
-            "round": round_number,
-            "timestamp": datetime.now().isoformat(),
-            "error": str(e),
-            "trace": traceback.format_exc()
-        })
+       
         print("[Client] Training failed:", e)
         # 🛑 Fallback empty result to satisfy Flower
-        return self.get_parameters(), 0, {}
+        
 
      finally:
         stop_event.set()

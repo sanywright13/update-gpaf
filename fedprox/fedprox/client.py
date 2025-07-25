@@ -158,9 +158,10 @@ class FederatedClient(fl.client.NumPyClient):
         }
 
         # Simulate dropout
+        """
         if random.random() < 0.2:
             raise RuntimeError("Simulated client crash")
-
+        """
         # Training
         N_j = None
         batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)

@@ -567,7 +567,8 @@ save_dir="feature_visualizations_gpaf"
       for cid, cl in self.client_assignments.items():
         clusters[cl].append(cid)
 
-      log_data = load_log_data(f"client_logs_round_{server_round-1}.json")
+      log_data = load_log_data(os.path.join("fedprox", f"client_logs_round_{server_round-1}.json"))
+
 
       A, F, J = defaultdict(list), defaultdict(list), defaultdict(list)
       update_histories(A, F, J, log_data)

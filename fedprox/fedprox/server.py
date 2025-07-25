@@ -41,8 +41,8 @@ import numpy as np
 from flwr.server.strategy import Strategy
 from flwr.server.client_manager import ClientManager
 import os
-from client_monitoring import update_histories
-from client_monitoring import T_hat
+from fedprox.client_monitoring import update_histories
+from fedprox.client_monitoring import T_hat
 
 from flwr.common import (
     EvaluateIns,

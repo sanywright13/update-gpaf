@@ -141,42 +141,39 @@ class FederatedClient(fl.client.NumPyClient):
      heartbeat_thread = threading.Thread(target=self.heartbeat_loop, args=(self.client_id, round_number, stop_event))
      heartbeat_thread.start()
 
-     try:
-        self.set_parameters(parameters)
+    
+     self.set_parameters(parameters)
 
-        encoded_proto_str = config.get("global_cluster_prototypes", None)
-        if encoded_proto_str is not None:
+     encoded_proto_str = config.get("global_cluster_prototypes", None)
+     if encoded_proto_str is not None:
             cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
             print("[Client] Successfully decoded global_cluster_prototypes")
-        else:
+     else:
             print("[Client] No global_cluster_prototypes found in config.")
             cluster_protos = {}
 
-        global_prototypes = {
+     global_prototypes = {
             int(cls): torch.tensor(proto).to(self.device)
             for cls, proto in cluster_protos.items()
         }
 
        
-        # Training
-        N_j = None
-        batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
-
-        loss_sq_mean = np.mean([loss**2 for loss in batch_losses])
-
-        # Send leave timestamp
-        self.send_status(f"{self.server_url}/leave", {
+     # Training
+     N_j = None
+     batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
+     loss_sq_mean = np.mean([loss**2 for loss in batch_losses])
+     # Send leave timestamp
+     self.send_status(f"{self.server_url}/leave", {
             "client_id": self.client_id,
             "round": round_number,
             "timestamp": datetime.now().isoformat()
         })
 
-        # === Prototype Extraction ===
-        self.net.eval()
-        class_embeddings = defaultdict(list)
-        class_counts = defaultdict(int)
-
-        with torch.no_grad():
+     # === Prototype Extraction ===
+     self.net.eval()
+     class_embeddings = defaultdict(list)
+     class_counts = defaultdict(int)
+     with torch.no_grad():
             for batch in self.traindata:
                 images, labels = batch
                 images = images.to(self.device, dtype=torch.float32)
@@ -187,22 +184,22 @@ class FederatedClient(fl.client.NumPyClient):
                     class_embeddings[label].append(h[i].cpu())
                     class_counts[label] += 1
 
-        # Compute prototypes
-        prototypes = {}
-        for class_id in range(self.num_classes):
+     # Compute prototypes
+     prototypes = {}
+     for class_id in range(self.num_classes):
             if class_id in class_embeddings:
                 stacked = torch.stack(class_embeddings[class_id])
                 prototypes[class_id] = stacked.mean(dim=0)
             else:
                 prototypes[class_id] = torch.zeros_like(h[0].cpu())
 
-        all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
-        class_counts = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
+     all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
+     class_counts = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
 
-        print("prototypes type:", type(all_prototypes))
-        print("class_counts type:", type(class_counts))
+     print("prototypes type:", type(all_prototypes))
+     print("class_counts type:", type(class_counts))
 
-        return (
+     return (
             self.get_parameters(),
             len(self.traindata),
             {
@@ -212,18 +209,6 @@ class FederatedClient(fl.client.NumPyClient):
             "data_size": len(self.traindata),
             }
         )
-
-     except Exception as e:
-       
-        print("[Client] Training failed:", e)
-        # 🛑 Fallback empty result to satisfy Flower
-        
-
-     finally:
-        stop_event.set()
-        heartbeat_thread.join()
-
-
 
 
 def gen_client_fn(

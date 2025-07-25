@@ -394,7 +394,7 @@ def train_one_epoch_gpaf(net,trainloader, DEVICE,client_id, epochs,batch_size,gl
             optimizer.step()
             # Metrics
             #epoch_loss += loss
-            epoch_loss += loss_cls.item() * images.size(0)
+            epoch_loss += loss.item() * images.size(0)
             #
             preds = torch.argmax(outputs, dim=1)
             accuracy.update(preds, labels)

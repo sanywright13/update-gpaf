@@ -89,7 +89,7 @@ class GPAFStrategy(FedAvg):
         self.cluster_prototypes = {i: {} for i in range(self.num_clusters)}
         self.cluster_class_counts = {i: defaultdict(int) for i in range(self.num_clusters)}
         
-        
+        self.stat_util = {}  # Track per-client statistical utility (for scoring)
         
         experiment = mlflow.get_experiment_by_name(experiment_name)
         if experiment is None:
@@ -263,12 +263,20 @@ save_dir="feature_visualizations_gpaf"
                 props = client_proxy.get_properties(props_ins, timeout=10.0, group_id=None)
                 # Extract simulation index
                 sim_index = props.properties["simulation_index"]
+                
 
                 #prototypes = fit_res.metrics.get("prototypes").encode('utf-8')
                 #prototypes = pickle.loads(base64.b64decode(prototypes))
                 print(f"Flower cid: {client_id}  ↔  Simulation client index: {sim_index}")
                 client_id_map[client_id] = sim_index
                 metrics = fit_res.metrics
+                # Make sure metrics are not empty and contain what you need
+                if "loss_sq_mean" in metrics and "data_size" in metrics:
+                    stat_util = metrics["data_size"] * metrics["loss_sq_mean"]
+                    self.stat_util[client_id] = stat_util
+                else:
+                    # fallback or warning
+                    self.stat_util[client_id] = 1.0  # neutral default
                 if "prototypes" not in metrics or "class_counts" not in metrics:
                         print(f"[Warning] Client {client_proxy.cid} returned no prototype info. Skipping.")
                         continue

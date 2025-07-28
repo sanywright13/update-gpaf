@@ -587,7 +587,20 @@ save_dir="feature_visualizations_gpaf"
  
         return avg_accuracy, {"accuracy": avg_accuracy}
    
-   
+    def _load_client_logs(self, server_round):
+        """Load client training logs from heartbeat server"""
+        try:
+            # Load training time data from your heartbeat logs
+            log_file = f"client_logs_round_{server_round-1}.json"
+            if os.path.exists(log_file):
+                with open(log_file, 'r') as f:
+                    logs = json.load(f)
+                return logs
+            return {}
+        except Exception as e:
+            print(f"[Warning] Could not load client logs: {e}")
+            return {}
+
     def _update_training_times(self, client_logs, participating_clients):
         """Update EMA training times for participating clients"""
         for client_id in participating_clients:
@@ -647,6 +660,7 @@ save_dir="feature_visualizations_gpaf"
             
             # Check if we have current and previous accuracy
             current_acc = getattr(self, '_current_accuracies', {}).get(client_id)
+            print(f'==== current acc {current_acc} =====')
             previous_acc = self.accuracy_history.get(client_id)
             
             if current_acc is not None and previous_acc is not None:
@@ -820,8 +834,16 @@ save_dir="feature_visualizations_gpaf"
             json.dump(debug_info, f, indent=2)
         
         return instructions
-
-
+    
+    # Example: store accuracies after aggregate_evaluate
+    def aggregate_evaluate(self, rnd, results, failures):
+      # results: List[Tuple[ClientProxy, EvaluateRes]]
+      self._current_accuracies = {}
+      for client, eval_res in results:
+        client_id = client.cid
+        if isinstance(eval_res.metrics, dict) and "accuracy" in eval_res.metrics:
+            self._current_accuracies[client_id] = eval_res.metrics["accuracy"]
+    
         
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

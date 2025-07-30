@@ -547,9 +547,9 @@ save_dir="feature_visualizations_gpaf"
     def aggregate_evaluate(
         self,
         server_round: int,
-        results: List[Tuple[fl.server.client_proxy.ClientProxy, fl.common.EvaluateRes]],
-        failures: List[Union[Tuple[fl.server.client_proxy.ClientProxy, fl.common.FitRes], Exception]],
-    ) -> Tuple[Optional[fl.common.Parameters], Dict[str, fl.common.Scalar]]:
+        results: List[Tuple[flwr.server.client_proxy.ClientProxy, flwr.common.EvaluateRes]],
+        failures: List[Union[Tuple[flwr.server.client_proxy.ClientProxy, flwr.common.FitRes], Exception]],
+    ) -> Tuple[Optional[flwr.common.Parameters], Dict[str, flwr.common.Scalar]]:
         print(f"[Server] Round {server_round}: {len(results)} clients evaluated, {len(failures)} failed evaluation.")
         
         aggregated_accuracy = 0.0
@@ -699,6 +699,9 @@ save_dir="feature_visualizations_gpaf"
         else:
             return 0.4, 0.6
 
+    
+        
+    
     def configure_fit(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
     ) -> List[Tuple[ClientProxy, FitIns]]:
@@ -792,6 +795,7 @@ save_dir="feature_visualizations_gpaf"
 
         # 6. Fallback: If not enough clients selected from clusters, pick from best overall remaining
         # This covers cases where clustering didn't yield enough clients or no clusters were formed.
+        """
         if len(selected_clients_cids) < self.min_fit_clients:
             remaining_clients_cids = [cid for cid in available_client_cids if cid not in selected_clients_cids]
             if remaining_clients_cids:
@@ -801,7 +805,7 @@ save_dir="feature_visualizations_gpaf"
                 additional_needed = self.min_fit_clients - len(selected_clients_cids)
                 selected_clients_cids.extend(remaining_sorted[:min(additional_needed, len(remaining_sorted))])
                 print(f"[CSMDA] Added {min(additional_needed, len(remaining_sorted))} clients from remaining pool to meet min_fit_clients.")
-        
+        """
         # Final sanity check: Ensure we don't select more clients than min_fit_clients
         # (or max available clients, though this should be handled by prior `min` calls)
         selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
@@ -832,55 +836,7 @@ save_dir="feature_visualizations_gpaf"
             
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
-    
-    # Example: store accuracies after aggregate_evaluate
-    def aggregate_evaluate(
-        self,
-        rnd: int,
-        results: List[Tuple[flwr.server.client_proxy.ClientProxy, flwr.common.EvaluateRes]],
-        failures: List[BaseException],
-    ) -> Optional[Tuple[float, Dict[str, float]]]: # Expected return type
-        """Aggregate evaluation results."""
-        if not results:
-            print(f"Server-side evaluation round {rnd}: No evaluation results received.")
-            return None # Or you could return (0.0, {}) if you always want a tuple
 
-        # Initialize aggregators outside the loop
-        total_examples = 0
-        weighted_accuracies = []
-        # No need for weighted_losses if you're not aggregating loss,
-        # but you still need a placeholder float to return.
-
-        self._current_accuracies = {} # Clear for the current round
-
-        # Iterate through all results to collect data for aggregation
-        for client, eval_res in results:
-            num_examples = eval_res.num_examples
-            client_id = client.cid
-
-            total_examples += num_examples
-
-            if isinstance(eval_res.metrics, dict) and "accuracy" in eval_res.metrics:
-                accuracy = eval_res.metrics["accuracy"]
-                # CORRECTED: Append to weighted_accuracies
-                weighted_accuracies.append(accuracy * num_examples)
-                self._current_accuracies[client_id] = accuracy # Store client accuracies
-                
-        # Calculate aggregated accuracy
-        aggregated_metrics = {}
-        if total_examples > 0 and weighted_accuracies: # weighted_accuracies will now be populated
-            aggregated_accuracy = sum(weighted_accuracies) / total_examples
-            aggregated_metrics["accuracy"] = aggregated_accuracy
-        else:
-            aggregated_metrics["accuracy"] = 0.0 # Default if no accuracy could be aggregated
-        
-        aggregated_loss_placeholder = 0.0
-
-        print(f"Server-side evaluation round {rnd}: aggregated_accuracy={aggregated_metrics.get('accuracy')}")
-
-        return aggregated_loss_placeholder, aggregated_metrics
-        
-    
         
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

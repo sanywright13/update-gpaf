@@ -91,12 +91,28 @@ class GPAFStrategy(FedAvg):
         self.cluster_class_counts = {i: defaultdict(int) for i in range(self.num_clusters)}
         
         
-        # CSMDA Client Selection Parameters
-        self.training_times = {}  # T_c(t) - EMA of training times
-        self.availability_scores = {}  # A_s[c] - reliability scores
-        self.fairness_boosts = {}  # ρ_c - dynamic boost factors
-        self.selection_counts = {}  # v_c - how many times each client selected
-        self.accuracy_history = {}  # previous accuracies for fairness boost
+        # CSMDA Client Selection Parameters (UPDATED)
+        self.training_times = defaultdict(float)
+        self.selection_counts = defaultdict(int)
+        self.accuracy_history = defaultdict(float)
+        self._current_accuracies = {}
+      
+
+
+        # NEW/MODIFIED FAIRNESS ATTRIBUTES
+        initial_target_selections= 3,
+        max_target_selections = 10,
+        reliability_lambda = 0.05,
+        acc_drop_threshold  = 0.005,
+        self.client_targets = defaultdict(lambda: initial_target_selections)
+        self.initial_target_selections = initial_target_selections
+        self.max_target_selections = max_target_selections
+        self.acc_drop_threshold = acc_drop_threshold
+
+        # NEW RELIABILITY ATTRIBUTE
+        self.reliability_lambda = reliability_lambda
+
+        self.phase_threshold = 30
         
         # CSMDA Hyperparameters
         self.alpha = 0.3  # EMA decay for training time

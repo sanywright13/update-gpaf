@@ -135,11 +135,12 @@ class FederatedClient(fl.client.NumPyClient):
         "round": round_number,
         "timestamp": datetime.now().isoformat()
     })
-
+     """
      # Start heartbeat background thread
      stop_event = threading.Event()
      heartbeat_thread = threading.Thread(target=self.heartbeat_loop, args=(self.client_id, round_number, stop_event))
      heartbeat_thread.start()
+     """
 
     
      self.set_parameters(parameters)

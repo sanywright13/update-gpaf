@@ -844,8 +844,8 @@ save_dir="feature_visualizations_gpaf"
                     for cls, proto in self.cluster_prototypes.get(cluster_id, {}).items()
                 }
                 client_config_for_fit["cluster_id"] = cluster_id
-                client_config_for_fit["cluster_prototypes"] = cluster_protos
-                client_config_for_fit["cluster_class_counts"] = dict(self.cluster_class_counts.get(cluster_id, {}))
+                #client_config_for_fit["cluster_prototypes"] = cluster_protos
+                #client_config_for_fit["cluster_class_counts"] = dict(self.cluster_class_counts.get(cluster_id, {}))
 
             instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
             self.selection_counts[client_id] += 1 # IMPORTANT: Increment selection count for fairness

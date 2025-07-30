@@ -839,10 +839,28 @@ save_dir="feature_visualizations_gpaf"
     def aggregate_evaluate(self, rnd, results, failures):
       # results: List[Tuple[ClientProxy, EvaluateRes]]
       self._current_accuracies = {}
+      total_examples =0
+      weighted_accuracies = []
       for client, eval_res in results:
+        num_examples = eval_res.num_examples
         client_id = client.cid
+        total_examples += num_examples
         if isinstance(eval_res.metrics, dict) and "accuracy" in eval_res.metrics:
             self._current_accuracies[client_id] = eval_res.metrics["accuracy"]
+    
+      # Calculate aggregated accuracy
+      aggregated_metrics = {}
+      aggregated_loss={}
+      if total_examples > 0 and weighted_accuracies:
+            aggregated_accuracy = sum(weighted_accuracies) / total_examples
+            aggregated_metrics["accuracy"] = aggregated_accuracy
+      else:
+            aggregated_metrics["accuracy"] = 0.0 # Or handle no accuracy received
+
+      print(f"Server-side evaluation round {rnd}: aggregated_accuracy={aggregated_metrics.get('accuracy')}")
+
+      return aggregated_loss,aggregated_metrics
+        
     
         
     def configure_evaluate(

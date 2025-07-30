@@ -291,10 +291,10 @@ def get_server_fn(mlflow=None):
       print(f'strategy of method {strategy}')
       strategyi = server.GPAFStrategy(
         experiment_name,
-        fraction_fit=1.0,  # Ensure all clients participate in training
+        fraction_fit=0.5,  # Ensure all clients participate in training
         #fraction_evaluate=1.0,
-        min_fit_clients=num_clients,  # Set minimum number of clients for training
-        min_evaluate_clients=num_clients,
+        min_fit_clients=10,  # Set minimum number of clients for training
+        min_evaluate_clients=10,
         num_classes=9,
        batch_size=batch_size,
      

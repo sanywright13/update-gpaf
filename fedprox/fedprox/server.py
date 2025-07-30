@@ -839,7 +839,7 @@ save_dir="feature_visualizations_gpaf"
     def aggregate_evaluate(
         self,
         rnd: int,
-        results: List[Tuple[fl.server.client_proxy.ClientProxy, fl.common.EvaluateRes]],
+        results: List[Tuple[flwr.server.client_proxy.ClientProxy, flwr.common.EvaluateRes]],
         failures: List[BaseException],
     ) -> Optional[Tuple[float, Dict[str, float]]]: # Expected return type
         """Aggregate evaluation results."""

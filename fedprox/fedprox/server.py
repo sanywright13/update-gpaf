@@ -100,10 +100,10 @@ class GPAFStrategy(FedAvg):
 
 
         # NEW/MODIFIED FAIRNESS ATTRIBUTES
-        initial_target_selections= 3,
-        max_target_selections = 10,
-        reliability_lambda = 0.05,
-        acc_drop_threshold  = 0.005,
+        initial_target_selections= 3
+        max_target_selections = 10
+        reliability_lambda = 0.05
+        acc_drop_threshold  = 0.005
         self.client_targets = defaultdict(lambda: initial_target_selections)
         self.initial_target_selections = initial_target_selections
         self.max_target_selections = max_target_selections

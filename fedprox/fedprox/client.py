@@ -315,7 +315,8 @@ num_clients=num_clients
           valloader = valloaders[int(cid)]
           latent_dim=128
           num_classes=9
-          model = EncoderClassifier(latent_dim=latent_dim, num_classes=num_classes)
+          #model = EncoderClassifier(latent_dim=latent_dim, num_classes=num_classes)
+          model = Model(out_dim=256, n_classes=9)
           numpy_client = FlowerClient(
             model, trainloader, valloader,num_epochs,
            cid,run_id,mlflow)

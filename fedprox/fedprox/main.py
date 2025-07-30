@@ -40,7 +40,7 @@ import torch
 import numpy as np
 from typing import List
 from torch.utils.data import DataLoader
-strategy="gpaf"
+strategy="fedavg"
 # approach gpaf : global generator with non domain and non contrastive loss
  # Create or get experiment
 experiment_name = "gpaf_noniid_pneu"
@@ -265,9 +265,9 @@ def get_server_fn(mlflow=None):
       strategyi = FedAVGWithEval(
       fraction_fit=1.0,  # Train with 50% of available clients
       fraction_evaluate=0.5,  # Evaluate with all available clients
-      min_fit_clients=num_clients,
-      min_evaluate_clients=num_clients,
-      min_available_clients=num_clients,
+      min_fit_clients=10,
+      min_evaluate_clients=10,
+      min_available_clients=10,
  
       evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,  # Add this
        
@@ -278,7 +278,7 @@ def get_server_fn(mlflow=None):
     elif strategy =="moon":
       print(f'strategy of method {strategy}')
       strategyi = MOONStrategy(
-        fraction_fit=1.0,  # Train with 50% of available clients
+        fraction_fit=0.5,  # Train with 50% of available clients
       fraction_evaluate=0.5,  # Evaluate with all available clients
       min_fit_clients=3,
       min_evaluate_clients=2,

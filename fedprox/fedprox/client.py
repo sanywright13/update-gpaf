@@ -407,7 +407,52 @@ class FlowerClient(NumPyClient):
             "labels": labels_serialized,
           }
     
-    
+    def train(self,net, trainloader, client_id,epochs: int, verbose=False):
+      """Train the network on the training set."""
+      
+      DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+      print(f'Model on device: { DEVICE}')
+      net.to(DEVICE)
+      criterion = torch.nn.CrossEntropyLoss().to(DEVICE)
+      lr=0.00013914064388085564
+      optimizer = torch.optim.Adam(net.parameters(),lr=lr,weight_decay=1e-4)
+      net.train()
+      # ——— Prepare CSV logging ———
+      log_filename = f"client_fedavgmod_train_{client_id}_loss_log.csv"
+      write_header = not os.path.exists(log_filename)
+      with open(log_filename, 'a', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        if write_header:
+            writer.writerow([
+                "epoch","train_loss",
+                "accuracy"
+            ])
+      for epoch in range(epochs):
+        correct, total, epoch_loss = 0, 0, 0.0
+        for batch in trainloader:
+            images, labels = batch
+            images, labels = images.to(DEVICE ,non_blocking=True), labels.to(DEVICE  , non_blocking=True)
+            labels=labels.long()
+            #print(f'label fedavg {labels}')
+            #labels=labels.unsqueeze(1)
+            optimizer.zero_grad()
+            outputs = net(images)
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+            # Metrics
+            epoch_loss += loss
+            total += labels.size(0)
+            correct += (torch.max(outputs.data, 1)[1] == labels).sum().item()
+        epoch_loss /= len(trainloader.dataset)
+        epoch_acc = correct / total
+        with open(log_filename, 'a', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([epoch+1, epoch_loss, epoch_acc])
+  
+        #save_client_model_moon(client_id, net)
+        print(f"Epoch {epoch+1}: train loss {epoch_loss}, accuracy {epoch_acc} of client : {client_id}")
+
     def test(self,net, testloader):
       """Evaluate the network on the entire test set."""
       DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")

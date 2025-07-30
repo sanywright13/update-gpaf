@@ -438,12 +438,7 @@ class FlowerClient(NumPyClient):
             optimizer.zero_grad()
             #outputs = net(images)
             embeddings,_,outputs = net(images)
-            print(f"DEBUG: Type of 'outputs' before criterion: {type(outputs)}")
-            if isinstance(outputs, tuple):
-                print(f"DEBUG: 'outputs' is a tuple! Its elements types: {[type(o) for o in outputs]}")
-                print(f"DEBUG: 'outputs' tuple content: {outputs}") # See what it holds
-                print(f"DEBUG: Shape of 'outputs' before criterion: {outputs.shape}") # This will fail if it's a tuple
-
+          
             loss = criterion(outputs, labels)
             loss.backward()
             optimizer.step()

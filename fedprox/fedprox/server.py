@@ -301,6 +301,20 @@ save_dir="feature_visualizations_gpaf"
                 else:
                     # fallback or warning
                     self.stat_util[client_id] = 1.0  # neutral default
+
+                training_duration = metrics.get("duration")
+                if training_duration is not None:
+                  ema_alpha = 0.3
+                  if client_id not in self.training_times:
+                    self.training_times[client_id] = training_duration
+                  else:
+                    self.training_times[client_id] = (
+                        ema_alpha * training_duration +
+                        (1 - ema_alpha) * self.training_times[client_id]
+                    )
+                else:
+                  print(f"[Warning] Client {client_id} did not report 'duration' in fit_res.metrics.")
+
                 if "prototypes" not in metrics or "class_counts" not in metrics:
                         print(f"[Warning] Client {client_proxy.cid} returned no prototype info. Skipping.")
                         continue
@@ -530,62 +544,60 @@ save_dir="feature_visualizations_gpaf"
 
         return aggregated_params
 
-    def aggregate_evaluate(self, server_round: int, results, failures):
-        """Aggregate evaluation results."""
-        if not results:
-            return None, {}
-       
-        accuracies = {}
-        self.current_features = {}
-        self.current_labels = {}
-        clients_ids=[]
-        # Extract all accuracies from evaluation
-        with self.mlflow.start_run(run_id=self.server_run_id):  
-
-         accuracies = {}
-         for client_proxy, eval_res in results:
-            client_id = client_proxy.cid
-            clients_ids.append(client_id)
-            accuracy = eval_res.metrics.get("accuracy", 0.0)
-            accuracies[f"client_{client_id}"] = accuracy
-            metrics = eval_res.metrics
-            # Get features and labels if available
-            if "features" in metrics and "labels" in metrics:
-              
-              features_np = pickle.loads(base64.b64decode(metrics.get("features").encode('utf-8')))
-              labels_np = pickle.loads(base64.b64decode(metrics.get("labels").encode('utf-8')))
-              self.current_features[client_id] = features_np
-              self.current_labels[client_id] = labels_np
-            
-            print(f"Stored data for client {client_id}")
-            
-            self.mlflow.log_metrics({
-                    f"accuracy_client_{client_id}": accuracy
-                }, step=server_round)
-
-                      
-        # Calculate average accuracy
-        avg_accuracy = sum(accuracies.values()) / len(accuracies)
-        # ——— Prepare CSV logging ———
-        log_filename = f"clients_acc_valid_{client_id}_log.csv"
-        write_header = not os.path.exists(log_filename)
-        with open(log_filename, 'a', newline='') as csvfile:
-          writer = csv.writer(csvfile)
-          if write_header:
-            writer.writerow([
-                "round","accuracy_avg",
-               
-                ])
+    def aggregate_evaluate(
+        self,
+        server_round: int,
+        results: List[Tuple[fl.server.client_proxy.ClientProxy, fl.common.EvaluateRes]],
+        failures: List[Union[Tuple[fl.server.client_proxy.ClientProxy, fl.common.FitRes], Exception]],
+    ) -> Tuple[Optional[fl.common.Parameters], Dict[str, fl.common.Scalar]]:
+        print(f"[Server] Round {server_round}: {len(results)} clients evaluated, {len(failures)} failed evaluation.")
         
-        if avg_accuracy > self.best_avg_accuracy:
+        aggregated_accuracy = 0.0
+        if results:
+            self._current_accuracies = {}
+            for client_proxy, res in results:
+                client_id = client_proxy.cid
+                if "accuracy" in res.metrics:
+                    client_accuracy = float(res.metrics["accuracy"])
+                    self._current_accuracies[client_id] = client_accuracy
+                    
+                    with self.mlflow.start_run(run_id=self.server_run_id):
+                        self.mlflow.log_metrics({
+                            f"accuracy_client_{client_id}": client_accuracy
+                        }, step=server_round)
+                else:
+                    print(f"[Warning] Client {client_id} did not report 'accuracy' in eval_res.metrics.")
 
-          print(f'==visualization===')
-          # log to CSV
-          with open(log_filename, 'a', newline='') as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([server_round, avg_accuracy])
- 
-        return avg_accuracy, {"accuracy": avg_accuracy}
+                if "features" in res.metrics and "labels" in res.metrics:
+                    try:
+                        features_np = pickle.loads(base64.b64decode(res.metrics.get("features").encode('utf-8')))
+                        labels_np = pickle.loads(base64.b64decode(res.metrics.get("labels").encode('utf-8')))
+                        pass
+                    except Exception as e:
+                        print(f"[Warning] Failed to decode features/labels for client {client_id}: {e}")
+
+            if self._current_accuracies:
+                aggregated_accuracy = sum(self._current_accuracies.values()) / len(self._current_accuracies)
+                print(f"[Server] Round {server_round}: Aggregated Average Accuracy: {aggregated_accuracy:.4f}")
+                with self.mlflow.start_run(run_id=self.server_run_id):
+                    self.mlflow.log_metrics({"avg_accuracy_global": aggregated_accuracy}, step=server_round)
+
+            if aggregated_accuracy > self.best_avg_accuracy:
+                self.best_avg_accuracy = aggregated_accuracy
+            
+            log_filename = "server_accuracy_log.csv"
+            write_header = not os.path.exists(log_filename)
+            with open(log_filename, 'a', newline='') as csvfile:
+                writer = csv.writer(csvfile)
+                if write_header:
+                    writer.writerow(["round", "avg_accuracy"])
+                writer.writerow([server_round, aggregated_accuracy])
+
+        else:
+            print(f"[Server] Round {server_round}: No evaluation results received.")
+            aggregated_accuracy = 0.0
+            
+        return None, {"accuracy": aggregated_accuracy}
    
     def _load_client_logs(self, server_round):
         """Load client training logs from heartbeat server"""
@@ -601,238 +613,224 @@ save_dir="feature_visualizations_gpaf"
             print(f"[Warning] Could not load client logs: {e}")
             return {}
 
-    def _update_training_times(self, client_logs, participating_clients):
-        """Update EMA training times for participating clients"""
-        for client_id in participating_clients:
-            if str(client_id) in client_logs:
-                # Calculate actual training time from logs
-                log_data = client_logs[str(client_id)]
-                if 'join_time' in log_data and 'leave_time' in log_data:
-                    join_time = datetime.fromisoformat(log_data['join_time'])
-                    leave_time = datetime.fromisoformat(log_data['leave_time'])
-                    actual_time = (leave_time - join_time).total_seconds()
-                    
-                    # Update EMA
-                    if client_id not in self.training_times:
-                        self.training_times[client_id] = actual_time
-                    else:
-                        self.training_times[client_id] = (
-                            self.alpha * actual_time + 
-                            (1 - self.alpha) * self.training_times[client_id]
-                        )
-                else:
-                    # Fallback: use default time if no logs
-                    if client_id not in self.training_times:
-                        self.training_times[client_id] = 60.0  # default 60 seconds
+    def _update_client_targets(self, server_round: int):
+        if not self._current_accuracies:
+            print(f"[Fairness Update] Round {server_round}: No current accuracies from previous round's evaluation to update targets.")
+            return
 
-
-    def _compute_reliability_scores(self, client_ids):
-        """Compute A_s[c] reliability scores"""
-        if not self.training_times:
-            # First round: everyone gets equal reliability
-            return {cid: 1.0 for cid in client_ids}
+        total_acc = sum(self._current_accuracies.values())
+        num_evaluated_clients = len(self._current_accuracies)
         
-        # Calculate T_max (average training time)
-        valid_times = [self.training_times[cid] for cid in client_ids if cid in self.training_times]
-        if not valid_times:
-            return {cid: 1.0 for cid in client_ids}
+        if num_evaluated_clients == 0:
+            print(f"[Fairness Update] Round {server_round}: No evaluated clients, cannot compute Avg_Acc_Global for target update.")
+            self._current_accuracies = {}
+            return
             
-        T_max = sum(valid_times) / len(valid_times)
-        
+        Avg_Acc_Global = total_acc / num_evaluated_clients
+        print(f"[Fairness Update] Round {server_round}: Global Average Accuracy (prev round): {Avg_Acc_Global:.4f}")
+
+        for client_id, current_acc in self._current_accuracies.items():
+            current_target = self.client_targets[client_id]
+
+            if current_acc < Avg_Acc_Global - self.acc_drop_threshold:
+                self.client_targets[client_id] = min(self.max_target_selections, current_target + 1)
+                print(f"[Fairness Update] Client {client_id}: Acc {current_acc:.4f} < Avg_Acc {Avg_Acc_Global:.4f}. Target increased from {current_target} to {self.client_targets[client_id]}")
+            else:
+                print(f"[Fairness Update] Client {client_id}: Acc {current_acc:.4f} >= Avg_Acc {Avg_Acc_Global:.4f}. Target remains {current_target}")
+
+        self._current_accuracies = {}
+
+    
+    def _compute_reliability_scores(self, client_ids: List[str]) -> Dict[str, float]:
         reliability_scores = {}
-        for client_id in client_ids:
-            T_c = self.training_times.get(client_id, T_max)  # Use average if no data
-            # A_s[c] = (T_max + ε - T_c) / (T_max + ε)
-            reliability_scores[client_id] = max(0.0, (T_max + self.epsilon * T_max - T_c) / (T_max + self.epsilon * T_max))
         
+        valid_times = [self.training_times[cid] for cid in client_ids 
+                       if self.training_times.get(cid, 0.0) > 0.0]
+
+        T_avg = sum(valid_times) / len(valid_times) if valid_times else 1.0
+
+        print(f"[Reliability] T_avg for current selection pool: {T_avg:.2f}s")
+
+        for client_id in client_ids:
+            T_c = self.training_times.get(client_id, T_avg)
+            penalty_term = max(0.0, T_c - T_avg)
+            score = np.exp(-self.reliability_lambda * penalty_term)
+            
+            reliability_scores[client_id] = float(min(1.0, max(0.0, score)))
+            
         return reliability_scores
 
-
-    def _update_fairness_boosts(self, server_round):
-        """Update fairness boost factors based on accuracy trends"""
-        if server_round % self.accuracy_eval_interval != 0 or server_round <= self.accuracy_eval_interval:
-            return
-        
-        # This should be called after aggregate_evaluate
-        for client_id in self.client_assignments:
-            if client_id not in self.fairness_boosts:
-                self.fairness_boosts[client_id] = 0.0
-            
-            # Check if we have current and previous accuracy
-            current_acc = getattr(self, '_current_accuracies', {}).get(client_id)
-            print(f'==== current acc {current_acc} =====')
-            previous_acc = self.accuracy_history.get(client_id)
-            
-            if current_acc is not None and previous_acc is not None:
-                if current_acc <= previous_acc:
-                    # Performance declined or stagnated - boost fairness
-                    self.fairness_boosts[client_id] += self.beta
-                else:
-                    # Performance improved - reduce boost
-                    self.fairness_boosts[client_id] = max(0.0, self.fairness_boosts[client_id] - self.beta/2)
-                
-                # Update history
-                self.accuracy_history[client_id] = current_acc
-
-
-    def _compute_fairness_scores(self, client_ids):
-        """Compute f_base[c] fairness scores"""
+    def _compute_fairness_scores(self, client_ids: List[str]) -> Dict[str, float]:
         fairness_scores = {}
         for client_id in client_ids:
-            # Initialize selection count if needed
-            if client_id not in self.selection_counts:
-                self.selection_counts[client_id] = 0
+            v_c = self.selection_counts.get(client_id, 0)
+            Target_c = self.client_targets.get(client_id, self.initial_target_selections)
+
+            if Target_c <= 0:
+                score = 0.0
+            else:
+                score = max(0.0, (Target_c - v_c) / Target_c)
             
-            # Initialize boost if needed
-            if client_id not in self.fairness_boosts:
-                self.fairness_boosts[client_id] = 0.0
+            fairness_scores[client_id] = float(score)
             
-            # f_base = max(0, (target - v_c) / target) + ρ_c
-            base_fairness = max(0.0, (self.target_selections - self.selection_counts[client_id]) / self.target_selections)
-            fairness_scores[client_id] = base_fairness + self.fairness_boosts[client_id]
-        
         return fairness_scores
 
 
-    def _compute_selection_scores(self, client_ids, server_round):
-        """Compute final CSMDA selection scores"""
-        # Get reliability and fairness scores
+    def _compute_global_selection_scores(self, client_ids: List[str], server_round: int) -> Dict[str, float]:
         reliability_scores = self._compute_reliability_scores(client_ids)
         fairness_scores = self._compute_fairness_scores(client_ids)
         
-        # Phase-adaptive weighting
-        if server_round <= self.phase_threshold:
-            w1, w2 = 0.7, 0.3  # Early phase: prioritize reliability
-        else:
-            w1, w2 = 0.4, 0.6  # Later phase: prioritize fairness
+        alpha_1, alpha_2 = self._adapt_weights(server_round)
         
-        # Compute final scores
         final_scores = {}
         for client_id in client_ids:
-            reliability = reliability_scores.get(client_id, 0.5)
-            fairness = fairness_scores.get(client_id, 0.5)
-            final_scores[client_id] = w1 * reliability + w2 * fairness
+            reliability = reliability_scores.get(client_id, 0.0)
+            fairness = fairness_scores.get(client_id, 0.0)
+            final_scores[client_id] = (alpha_1 * reliability) + (alpha_2 * fairness)
         
-        print(f"[CSMDA Round {server_round}] Weights: reliability={w1:.1f}, fairness={w2:.1f}")
-        for cid in client_ids[:5]:  # Print first 5 for debugging
+        print(f"[Global Score] Round {server_round}: Weights: reliability={alpha_1:.2f}, fairness={alpha_2:.2f}")
+        for cid in client_ids[:min(5, len(client_ids))]:
             print(f"  Client {cid}: R={reliability_scores.get(cid, 0):.3f}, F={fairness_scores.get(cid, 0):.3f}, Score={final_scores[cid]:.3f}")
         
         return final_scores
+    def _adapt_weights(self, server_round: int) -> Tuple[float, float]:
+        if server_round <= self.phase_threshold:
+            return 0.7, 0.3
+        else:
+            return 0.4, 0.6
 
-    def configure_fit(self, server_round, parameters, client_manager):
-        """CSMDA Client Selection Implementation - Apply selection within each cluster"""
-        print(f"[CSMDA] Configuring round {server_round}")
+    def configure_fit(
+        self, server_round: int, parameters: Parameters, client_manager: ClientManager
+    ) -> List[Tuple[ClientProxy, FitIns]]:
+        print(f"\n[CSMDA] Configuring round {server_round}")
         
-        # Get all available clients
-        available_clients = list(client_manager.all().keys())
+        # 1. Update Client Targets (Fairness) based on PREVIOUS round's evaluation accuracies
+        # This is CRUCIAL to make the fairness score dynamic based on performance.
+        self._update_client_targets(server_round)
+
+        # Get all currently available clients
+        available_client_cids = list(client_manager.all().keys())
         
-        # First round: random selection for initialization
+        if not available_client_cids:
+            print(f"[CSMDA] Round {server_round}: No clients available for selection.")
+            return []
+
+        # 2. First round or no assignments yet: random selection for initialization
+        # This part remains to kickstart clustering/assignment.
         if server_round == 1 or not self.client_assignments:
-            print("[CSMDA] First round - random selection for clustering initialization")
-            selected_clients = available_clients[:self.min_fit_clients]
+            print("[CSMDA] First round or no assignments - random selection for clustering initialization")
+            # Select min_fit_clients or all available if fewer
+            selected_clients_cids = available_client_cids[:min(self.min_fit_clients, len(available_client_cids))]
+            
             instructions = []
-            for client_id in selected_clients:
-                client = client_manager.all()[client_id]
+            for client_id in selected_clients_cids:
+                client_proxy = client_manager.all()[client_id]
                 config = {"server_round": server_round}
-                instructions.append((client, FitIns(parameters, config)))
+                instructions.append((client_proxy, FitIns(parameters, config)))
+                self.selection_counts[client_id] += 1 # Update selection count immediately
+            print(f"[CSMDA] Round {server_round}: Selected initial clients: {selected_clients_cids}")
             return instructions
         
-        # Load training logs and update times
-        client_logs = self._load_client_logs(server_round)
-        self._update_training_times(client_logs, available_clients)
+        # --- Main Selection Logic for subsequent rounds (Cluster-based) ---
         
-        # Update fairness boosts (every R rounds)
-        self._update_fairness_boosts(server_round)
-        
-        # Group clients by cluster
+        # 3. Group clients by cluster assignment
         clusters = defaultdict(list)
-        for client_id in available_clients:
+        for client_id in available_client_cids:
             if client_id in self.client_assignments:
                 cluster_id = self.client_assignments[client_id]
                 clusters[cluster_id].append(client_id)
             else:
-                # New client - assign to cluster with fewest members
-                min_cluster = min(clusters.keys(), key=lambda k: len(clusters[k]), default=0)
-                self.client_assignments[client_id] = min_cluster
-                clusters[min_cluster].append(client_id)
+                # Assign new/unassigned clients to an existing cluster (e.g., the one with fewest members)
+                if clusters:
+                    # Find the cluster with the fewest *assigned* clients
+                    min_cluster_id = min(clusters, key=lambda k: len(clusters[k]))
+                    self.client_assignments[client_id] = min_cluster_id
+                    clusters[min_cluster_id].append(client_id)
+                    print(f"[CSMDA] Client {client_id} (new/unassigned) added to cluster {min_cluster_id}.")
+                else:
+                    # This case should be rare after round 1, but handles clients if no clusters exist yet.
+                    # They will be part of the 'remaining_clients_cids' pool later.
+                    print(f"[CSMDA] Client {client_id} unassigned, no clusters exist yet. Will consider in fallback.")
+
+        # 4. Compute Global Selection Scores for *all* available clients
+        # These scores are needed for both cluster-wise selection and the fallback.
+        global_scores = self._compute_global_selection_scores(available_client_cids, server_round)
+
+        selected_clients_cids = []
         
-        # Determine how many clients to select per cluster
-        active_clusters = [cid for cid, clients in clusters.items() if clients]
-        clients_per_cluster = max(1, self.min_fit_clients // len(active_clusters))
-        #clients_per_cluster=3
-        selected_clients = []
+        # 5. Apply Cluster-based Selection: Select top-scoring clients from each cluster
+        active_clusters_with_clients = [c_id for c_id, clients in clusters.items() if clients]
         
-        # Apply CSMDA selection within each cluster independently
-        for cluster_id, cluster_clients in clusters.items():
-            if not cluster_clients:
-                continue
+        if active_clusters_with_clients:
+            # Determine target number of clients to select per cluster
+            # Ensure at least 1 client per cluster if min_fit_clients allows, otherwise distribute evenly.
+            clients_per_cluster_base = self.min_fit_clients // len(active_clusters_with_clients)
+            extra_clients = self.min_fit_clients % len(active_clusters_with_clients) # Distribute remainder
             
-            print(f"\n[CSMDA] Processing Cluster {cluster_id} with {len(cluster_clients)} clients")
-            
-            # Compute CSMDA scores ONLY for clients in this cluster
-            cluster_scores = self._compute_selection_scores(cluster_clients, server_round)
-        
-            # Select top clients from this cluster based on cluster-specific scores
-            cluster_clients_sorted = sorted(cluster_clients, 
-                                          key=lambda c: cluster_scores.get(c, 0), 
-                                          reverse=True)
-            
-            # Determine how many to select from this cluster
-            num_to_select = min(clients_per_cluster, len(cluster_clients))
-            cluster_selected = cluster_clients_sorted[:num_to_select]
-            selected_clients.extend(cluster_selected)
-  
-        # Handle case where we need more clients (fill from best remaining across all clusters)
-        if len(selected_clients) < self.min_fit_clients:
-            remaining_clients = [c for c in available_clients if c not in selected_clients]
-            if remaining_clients:
-                # Compute scores for remaining clients
-                remaining_scores = self._compute_selection_scores(remaining_clients, server_round)
-                remaining_sorted = sorted(remaining_clients, 
-                                        key=lambda c: remaining_scores.get(c, 0), 
+            print(f"[CSMDA] Base {clients_per_cluster_base} clients per cluster. Distributing {extra_clients} extras.")
+
+            for i, cluster_id in enumerate(active_clusters_with_clients):
+                cluster_clients = clusters[cluster_id]
+                
+                # Sort clients within this cluster by their global score
+                cluster_clients_sorted = sorted(cluster_clients, 
+                                                key=lambda cid: global_scores.get(cid, 0.0), 
+                                                reverse=True)
+                
+                # Determine number to select for this specific cluster
+                num_to_select_for_cluster = clients_per_cluster_base
+                if i < extra_clients: # Distribute extra clients to the first 'extra_clients' clusters
+                    num_to_select_for_cluster += 1
+                
+                # Ensure we don't try to select more clients than are available in the cluster
+                num_to_select_for_cluster = min(num_to_select_for_cluster, len(cluster_clients_sorted))
+                
+                selected_clients_cids.extend(cluster_clients_sorted[:num_to_select_for_cluster])
+                print(f"[CSMDA] Cluster {cluster_id}: Selected {num_to_select_for_cluster}/{len(cluster_clients)} clients.")
+        else:
+            print("[CSMDA] No active clusters with assigned clients to select from. Falling back to global selection.")
+
+        # 6. Fallback: If not enough clients selected from clusters, pick from best overall remaining
+        # This covers cases where clustering didn't yield enough clients or no clusters were formed.
+        if len(selected_clients_cids) < self.min_fit_clients:
+            remaining_clients_cids = [cid for cid in available_client_cids if cid not in selected_clients_cids]
+            if remaining_clients_cids:
+                remaining_sorted = sorted(remaining_clients_cids,
+                                        key=lambda cid: global_scores.get(cid, 0.0),
                                         reverse=True)
-                additional_needed = self.min_fit_clients - len(selected_clients)
-                selected_clients.extend(remaining_sorted[:additional_needed])
-                print(f"[CSMDA] Added {additional_needed} additional clients from remaining pool")
+                additional_needed = self.min_fit_clients - len(selected_clients_cids)
+                selected_clients_cids.extend(remaining_sorted[:min(additional_needed, len(remaining_sorted))])
+                print(f"[CSMDA] Added {min(additional_needed, len(remaining_sorted))} clients from remaining pool to meet min_fit_clients.")
         
-        # Update selection counts
-        for client_id in selected_clients:
-            self.selection_counts[client_id] = self.selection_counts.get(client_id, 0) + 1
+        # Final sanity check: Ensure we don't select more clients than min_fit_clients
+        # (or max available clients, though this should be handled by prior `min` calls)
+        selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
         
-        # Create instructions
+        if not selected_clients_cids:
+            print(f"[CSMDA] No clients selected for round {server_round}. Returning empty list.")
+            return []
+
+        # 7. Prepare FitIns for the chosen clients and update selection counts
         instructions = []
-        for client_id in selected_clients:
-            client = client_manager.all()[client_id]
-            config = {"server_round": server_round}
-            instructions.append((client, FitIns(parameters, config)))
-        
-        # Debug logging
-        print(f"\n[CSMDA] Final Selection Summary:")
-        print(f"  Total selected: {len(selected_clients)} clients for round {server_round}")
-        print(f"  Clients per cluster: {clients_per_cluster}")
-        
-        # Show selection distribution by cluster
-        selection_by_cluster = defaultdict(int)
-        for cid in selected_clients:
-            if cid in self.client_assignments:
-                selection_by_cluster[self.client_assignments[cid]] += 1
-        
-        for cluster_id, count in selection_by_cluster.items():
-            print(f"  Cluster {cluster_id}: {count} clients selected")
-        
-        # Save debug info with cluster-specific details
-        debug_info = {
-            "round": server_round,
-            "selected_clients": selected_clients,
-            "clients_per_cluster": clients_per_cluster,
-            "selection_by_cluster": dict(selection_by_cluster),
-            "cluster_assignments": {str(k): v for k, v in self.client_assignments.items()},
-            "selection_counts": {str(k): v for k, v in self.selection_counts.items()},
-        }
-        
-        with open(f"csmda_debug_round_{server_round}.json", "w") as f:
-            json.dump(debug_info, f, indent=2)
-        
+        for client_id in selected_clients_cids:
+            client_proxy = client_manager.all()[client_id]
+            client_config_for_fit = {"server_round": server_round}
+            
+            # Pass cluster information if available
+            if client_id in self.client_assignments:
+                cluster_id = self.client_assignments[client_id]
+                cluster_protos = {
+                    str(cls): proto.tolist() if isinstance(proto, np.ndarray) else proto
+                    for cls, proto in self.cluster_prototypes.get(cluster_id, {}).items()
+                }
+                client_config_for_fit["cluster_id"] = cluster_id
+                client_config_for_fit["cluster_prototypes"] = cluster_protos
+                client_config_for_fit["cluster_class_counts"] = dict(self.cluster_class_counts.get(cluster_id, {}))
+
+            instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
+            self.selection_counts[client_id] += 1 # IMPORTANT: Increment selection count for fairness
+            
+        print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
     
     # Example: store accuracies after aggregate_evaluate

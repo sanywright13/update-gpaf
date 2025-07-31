@@ -259,7 +259,7 @@ def get_server_fn(mlflow=None):
     batch_size=32
     num_clients=18
     num_clients = NUM_CLIENTS_TOTAL # Use global NUM_CLIENTS_TOTAL
-
+    NUM_CLIENTS_TO_TRAIN=10
     if strategy=="fedavg":
       
       strategyi = FedAVGWithEval(
@@ -291,9 +291,8 @@ def get_server_fn(mlflow=None):
       print(f'strategy of method {strategy}')
       strategyi = server.GPAFStrategy(
         experiment_name,
-        fraction_fit=0.5,  # Ensure all clients participate in training
-        #fraction_evaluate=1.0,
-        min_fit_clients=10,  # Set minimum number of clients for training
+         min_fit_clients=NUM_CLIENTS_TO_TRAIN,
+    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
         min_evaluate_clients=10,
         num_classes=9,
        batch_size=batch_size,

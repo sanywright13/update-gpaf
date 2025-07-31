@@ -262,7 +262,7 @@ def get_server_fn(mlflow=None):
     NUM_CLIENTS_TO_TRAIN=10
     if strategy=="fedavg":
       
-    strategyi = FedAVGWithEval(
+      strategyi = FedAVGWithEval(
         min_fit_clients=NUM_CLIENTS_TO_TRAIN,
         fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Training: 10 clients
         min_evaluate_clients=NUM_CLIENTS_TOTAL, # <--- Set this to ALL clients for evaluation

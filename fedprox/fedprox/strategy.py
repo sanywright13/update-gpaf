@@ -27,8 +27,7 @@ class FedAVGWithEval(FedAvg):
         fraction_fit: float = 10,
         fraction_evaluate: float = 1.0,
         min_fit_clients: int = 2,
-        min_evaluate_clients: int = 2,
-        min_available_clients: int = 3,
+        min_available_clients: int = 18,
         evaluate_metrics_aggregation_fn: Optional[MetricsAggregationFn] = None,
         **kwargs,
     ) -> None:
@@ -41,7 +40,7 @@ class FedAVGWithEval(FedAvg):
             evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,
             **kwargs,
         )
-     self.min_evaluate_clients=min_evaluate_clients
+     self.min_evaluate_clients=18
      self.min_available_clients=min_available_clients
      self.best_avg_accuracy=0.0
      self.feature_visualizer =StructuredFeatureVisualizer(

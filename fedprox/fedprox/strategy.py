@@ -40,7 +40,6 @@ class FedAVGWithEval(FedAvg):
             evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,
             **kwargs,
         )
-     self.min_evaluate_clients=18
      self.best_avg_accuracy=0.0
      self.feature_visualizer =StructuredFeatureVisualizer(
         num_clients=2,  # total number of clients
@@ -169,22 +168,14 @@ save_dir="feature_visualizations_moon"
             # No evaluation function provided
             return None
     def configure_evaluate(
-      self, server_round: int, parameters: Parameters, client_manager: ClientManager
-) -> List[Tuple[ClientProxy, EvaluateIns]]:
-      
-      """Configure the next round of evaluation."""
-   
-      #sample_size, min_num_clients = self.num_evaluate_clients(client_manager)
-      clients = client_manager.sample(
-        num_clients=self.min_available_clients, min_num_clients=self.min_evaluate_clients
-    )
-      evaluate_config = {"server_round": server_round}  # Pass the round number in config
-      # Create EvaluateIns for each client
-   
-      evaluate_ins = EvaluateIns(parameters, evaluate_config)
-     
-      # Return client-EvaluateIns pairs
-      return [(client, evaluate_ins) for client in clients]   
+        self, server_round: int, parameters: Parameters, client_manager: ClientManager
+    ) -> List[Tuple[ClientProxy, EvaluateIns]]:
+        """Configure the next round of evaluation."""
+        # This is the correct way to delegate to the base FedAvg's evaluation logic
+        # It will respect the self.fraction_evaluate and self.min_evaluate_clients
+        # that were correctly set in super().__init__
+        return super().configure_evaluate(server_round, parameters, client_manager)
+  
     
     def aggregate_evaluate(
         self,
@@ -235,6 +226,7 @@ save_dir="feature_visualizations_moon"
              
         # Calculate average accuracy
         avg_accuracy = sum(accuracies.values()) / len(accuracies)
+        print(f'evaluation acc : {avg_accuracy}')
         # Only visualize if we have all the data and accuracy improved
         #if avg_accuracy > self.best_avg_accuracy:
         print(f'==visualization===')

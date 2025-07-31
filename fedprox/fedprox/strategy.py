@@ -12,6 +12,7 @@ from flwr.common import (
     parameters_to_ndarrays,
 )
 import base64
+import csv
 import pickle
 import os
 from flwr.server.client_manager import ClientManager

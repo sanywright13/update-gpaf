@@ -37,12 +37,10 @@ class FedAVGWithEval(FedAvg):
             fraction_evaluate=fraction_evaluate,
             min_fit_clients=min_fit_clients,
             min_evaluate_clients=min_evaluate_clients,
-            min_available_clients=min_available_clients,
             evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,
             **kwargs,
         )
      self.min_evaluate_clients=18
-     self.min_available_clients=min_available_clients
      self.best_avg_accuracy=0.0
      self.feature_visualizer =StructuredFeatureVisualizer(
         num_clients=2,  # total number of clients

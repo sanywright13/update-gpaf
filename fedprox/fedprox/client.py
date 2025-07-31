@@ -375,34 +375,11 @@ class FlowerClient(NumPyClient):
     
     def evaluate(self, parameters, config):
        
-          server_round = config["server_round"]
+         
           #print(f"Client {self.client_id} round id after training: {server_round}")
           self.set_parameters(self.net, parameters)
           loss, accuracy = self.test(self.net, self.valloader)
-          print(f"Client {self.client_id} round id {server_round} , val accuracy: {accuracy}")
-          #print(f'****evaluation**** {mlflow}')
-          with self.mlflow.start_run(run_id=self.run_id):  
-            self.mlflow.log_metrics({
-                f"client_{self.client_id}/eval_loss": float(loss),
-                f"client_{self.client_id}/eval_accuracy": float(accuracy),
-               
-            }, step=config.get("server_round"))
-            # Also log in format for easier plotting
-          print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
-          # Extract features and labels
-          """
-          val_features, val_labels = extract_features_and_labels(
-          self.net,
-         self.valloader,
-          self.device
-           )
-          #visualize all clients features per class
-          features_np = val_features.detach().cpu().numpy()
-          labels_np = val_labels.detach().cpu().numpy().reshape(-1)  # Ensure 1D array
-          # In client:
-          features_serialized = base64.b64encode(pickle.dumps(features_np)).decode('utf-8')
-          labels_serialized = base64.b64encode(pickle.dumps(labels_np)).decode('utf-8')
-          """
+         
           return float(loss), len(self.valloader), {"accuracy": float(accuracy),
 
           }

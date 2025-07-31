@@ -27,7 +27,7 @@ class FedAVGWithEval(FedAvg):
         fraction_fit: float = 10,
         fraction_evaluate: float = 1.0,
         min_fit_clients: int = 2,
-        min_evaluate_clients=18
+        min_evaluate_clients=18,
 
         evaluate_metrics_aggregation_fn: Optional[MetricsAggregationFn] = None,
         **kwargs,

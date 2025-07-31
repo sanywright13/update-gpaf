@@ -266,7 +266,7 @@ def get_server_fn(mlflow=None):
       min_fit_clients=NUM_CLIENTS_TO_TRAIN,
     fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
       min_evaluate_clients=NUM_CLIENTS_TOTAL,
-      min_available_clients=10,
+    
  
       evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,  # Add this
        

@@ -262,16 +262,14 @@ def get_server_fn(mlflow=None):
     NUM_CLIENTS_TO_TRAIN=10
     if strategy=="fedavg":
       
-      strategyi = FedAVGWithEval(
-      min_fit_clients=NUM_CLIENTS_TO_TRAIN,
-    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
-      min_evaluate_clients=NUM_CLIENTS_TO_TRAIN,
-    
- 
-      evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,  # Add this
-       
-      on_evaluate_config_fn=get_on_evaluate_config_fn(),
-)
+    strategyi = FedAVGWithEval(
+        min_fit_clients=NUM_CLIENTS_TO_TRAIN,
+        fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Training: 10 clients
+        min_evaluate_clients=NUM_CLIENTS_TOTAL, # <--- Set this to ALL clients for evaluation
+        fraction_evaluate=1.0, # <--- Set this to 1.0 (100%) for ALL clients for evaluation
+        evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,
+        on_evaluate_config_fn=get_on_evaluate_config_fn(),
+    )
       print(f'strategy ggg {strategyi}')
     else: 
       print(f'strategy of method {strategy}')

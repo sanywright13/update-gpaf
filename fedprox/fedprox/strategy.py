@@ -29,7 +29,6 @@ class FedAVGWithEval(FedAvg):
         min_fit_clients: int = 2,
         min_evaluate_clients,
 
-        evaluate_metrics_aggregation_fn: Optional[MetricsAggregationFn] = None,
         **kwargs,
     ) -> None:
      super().__init__(
@@ -37,12 +36,10 @@ class FedAVGWithEval(FedAvg):
             fraction_evaluate=fraction_evaluate,
             min_fit_clients=min_fit_clients,
             min_evaluate_clients=min_evaluate_clients,
-            evaluate_metrics_aggregation_fn=evaluate_metrics_aggregation_fn,
             **kwargs,
         )
      self.best_avg_accuracy=0.0
      self.feature_visualizer =StructuredFeatureVisualizer(
-        num_clients=2,  # total number of clients
         num_classes=9,           # number of classes in your dataset
 
 save_dir="feature_visualizations_fedavg"
@@ -55,24 +52,17 @@ save_dir="feature_visualizations_fedavg"
         if self.evaluate_fn is None:
             # No evaluation function provided
             return None
-    def configure_evaluate(
-      self, server_round: int, parameters: Parameters, client_manager: ClientManager
-) -> List[Tuple[ClientProxy, EvaluateIns]]:
-      
-      """Configure the next round of evaluation."""
-   
-      #sample_size, min_num_clients = self.num_evaluate_clients(client_manager)
-      clients = client_manager.sample(
-        num_clients=self.min_available_clients, min_num_clients=self.min_evaluate_clients
-    )
-      evaluate_config = {"server_round": server_round}  # Pass the round number in config
-      # Create EvaluateIns for each client
-   
-      evaluate_ins = EvaluateIns(parameters, evaluate_config)
-     
-      # Return client-EvaluateIns pairs
-      return [(client, evaluate_ins) for client in clients]   
     
+     def configure_evaluate(
+        self, server_round: int, parameters: Parameters, client_manager: ClientManager
+    ) -> List[Tuple[ClientProxy, EvaluateIns]]:
+        """Configure the next round of evaluation."""
+        # This is the correct way to delegate to the base FedAvg's evaluation logic
+        # It will respect the self.fraction_evaluate and self.min_evaluate_clients
+        # that were correctly set in super().__init__
+        return super().configure_evaluate(server_round, parameters, client_manager)
+
+
     def aggregate_evaluate(
         self,
         server_round: int,

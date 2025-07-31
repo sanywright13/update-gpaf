@@ -53,7 +53,7 @@ save_dir="feature_visualizations_fedavg"
             # No evaluation function provided
             return None
     
-     def configure_evaluate(
+    def configure_evaluate(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
     ) -> List[Tuple[ClientProxy, EvaluateIns]]:
         """Configure the next round of evaluation."""

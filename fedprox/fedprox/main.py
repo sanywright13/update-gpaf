@@ -263,9 +263,8 @@ def get_server_fn(mlflow=None):
     if strategy=="fedavg":
       
       strategyi = FedAVGWithEval(
-      fraction_fit=1.0,  # Train with 50% of available clients
-      fraction_evaluate=0.5,  # Evaluate with all available clients
-      min_fit_clients=10,
+      min_fit_clients=NUM_CLIENTS_TO_TRAIN,
+    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
       min_evaluate_clients=10,
       min_available_clients=10,
  
@@ -292,7 +291,8 @@ def get_server_fn(mlflow=None):
       strategyi = server.GPAFStrategy(
         experiment_name,
          min_fit_clients=NUM_CLIENTS_TO_TRAIN,
-    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
+    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_TOTAL_CLIENTS, # Will be 10/18
+        min_fit_clients=10,  # Set minimum number of clients for training
         min_evaluate_clients=10,
         num_classes=9,
        batch_size=batch_size,

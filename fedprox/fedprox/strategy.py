@@ -13,6 +13,7 @@ from flwr.common import (
 )
 import base64
 import pickle
+import os
 from flwr.server.client_manager import ClientManager
 from fedprox.features_visualization import extract_features_and_labels,StructuredFeatureVisualizer
 from flwr.server.client_proxy import ClientProxy

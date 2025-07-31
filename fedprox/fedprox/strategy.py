@@ -39,11 +39,7 @@ class FedAVGWithEval(FedAvg):
             **kwargs,
         )
      self.best_avg_accuracy=0.0
-     self.feature_visualizer =StructuredFeatureVisualizer(
-        num_classes=9,           # number of classes in your dataset
-
-save_dir="feature_visualizations_fedavg"
-          )
+    
     def evaluate(
         self, server_round: int, parameters: Parameters
     ) -> Optional[Tuple[float, Dict[str, Scalar]]]:
@@ -86,15 +82,7 @@ save_dir="feature_visualizations_fedavg"
             accuracy = eval_res.metrics.get("accuracy", 0.0)
             accuracies[f"client_{client_id}"] = accuracy
             metrics = eval_res.metrics
-            # Get features and labels if available
-            if "features" in metrics and "labels" in metrics:
-              
-              features_np = pickle.loads(base64.b64decode(metrics.get("features").encode('utf-8')))
-              labels_np = pickle.loads(base64.b64decode(metrics.get("labels").encode('utf-8')))
-              self.current_features[client_id] = features_np
-              self.current_labels[client_id] = labels_np
-            
-            
+           
         # Calculate average accuracy
         avg_accuracy = sum(accuracies.values()) / len(accuracies)
         # Only visualize if we have all the data and accuracy improved
@@ -105,18 +93,7 @@ save_dir="feature_visualizations_fedavg"
                 if write_header:
                     writer.writerow(["round", "avg_accuracy"])
                 writer.writerow([server_round, avg_accuracy])
-        """
-        if avg_accuracy > self.best_avg_accuracy:
-          print(f'==visualization===')
-          self.best_avg_accuracy = avg_accuracy
-          self.feature_visualizer.visualize_all_clients_by_class(
-            features_dict=self.current_features,
-            labels_dict=self.current_labels,
-            accuracies=accuracies,
-            epoch=server_round,
-            stage="validation"
-          )
-        """
+       
         return avg_accuracy, {"accuracy": avg_accuracy}
 
 class MOONStrategy(FedAvg):

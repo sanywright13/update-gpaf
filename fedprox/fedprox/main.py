@@ -40,7 +40,7 @@ import torch
 import numpy as np
 from typing import List
 from torch.utils.data import DataLoader
-strategy="fedavg"
+strategy="gpaf"
 # approach gpaf : global generator with non domain and non contrastive loss
  # Create or get experiment
 experiment_name = "gpaf_noniid_pneu"
@@ -275,12 +275,11 @@ def get_server_fn(mlflow=None):
       strategyi = server.GPAFStrategy(
         experiment_name,
          min_fit_clients=NUM_CLIENTS_TO_TRAIN,
-    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_TOTAL_CLIENTS, # Will be 10/18
-        min_evaluate_clients=10,
+    fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
+        min_evaluate_clients=NUM_CLIENTS_TOTAL, # <--- Set this to ALL clients for evaluation
         num_classes=9,
        batch_size=batch_size,
-     
-        #on_fit_config_fn=fit_config_fn,
+
      
       )
 

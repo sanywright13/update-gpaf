@@ -449,6 +449,8 @@ class FlowerClient(NumPyClient):
             images, labels = images.to(DEVICE ,  non_blocking=True), labels.to(DEVICE  ,  non_blocking=True)
 
             #labels=labels.squeeze(1)
+            if not num_classes==9: 
+                  labels=labels.squeeze(1)
             
             #outputs = net(images)
             embeddings,_,outputs = net(images)

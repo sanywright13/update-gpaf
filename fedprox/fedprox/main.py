@@ -276,11 +276,10 @@ def get_server_fn(mlflow=None):
         experiment_name,
          min_fit_clients=NUM_CLIENTS_TO_TRAIN,
     fraction_fit=NUM_CLIENTS_TO_TRAIN / NUM_CLIENTS_TOTAL, # Will be 10/18
-        min_evaluate_clients=NUM_CLIENTS_TOTAL, # <--- Set this to ALL clients for evaluation
+        #min_evaluate_clients=NUM_CLIENTS_TOTAL, # <--- Set this to ALL clients for evaluation
         num_classes=9,
        batch_size=batch_size,
-
-     
+  
       )
 
     ######******Configure the server for 5 rounds of training###########

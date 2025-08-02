@@ -123,7 +123,58 @@ class FederatedClient(fl.client.NumPyClient):
                 "round": round_number,
                 "timestamp": datetime.now().isoformat()
             })
-            time.sleep(10)  # ping every 10 seconds
+           time.sleep(10)  # ping every 10 seconds
+
+    def train(self,net, trainloader, client_id,epochs: int, verbose=False):
+      """Train the network on the training set."""
+      
+      DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+      print(f'Model on device: { DEVICE}')
+      net.to(DEVICE)
+      criterion = torch.nn.CrossEntropyLoss().to(DEVICE)
+      lr=0.00013914064388085564
+      optimizer = torch.optim.Adam(net.parameters(),lr=lr,weight_decay=1e-4)
+      net.train()
+      # ——— Prepare CSV logging ———
+      log_filename = f"client_fedavgmod_train_{client_id}_loss_log.csv"
+      write_header = not os.path.exists(log_filename)
+      with open(log_filename, 'a', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        if write_header:
+            writer.writerow([
+                "epoch","train_loss",
+                "accuracy"
+            ])
+      for epoch in range(epochs):
+        correct, total, epoch_loss = 0, 0, 0.0
+        for batch in trainloader:
+            images, labels = batch
+            images, labels = images.to(DEVICE ,non_blocking=True), labels.to(DEVICE  , non_blocking=True)
+            labels=labels.long()
+
+            if labels.dim() > 1:
+                labels = labels.squeeze()
+                if labels.dim() == 0:
+                    labels = labels.unsqueeze(0)  # Handle single sample
+            
+            #print(f'label fedavg {labels}')
+            #labels=labels.unsqueeze(1)
+            optimizer.zero_grad()
+            #outputs = net(images)
+            embeddings,_,outputs = net(images)
+          
+            loss = criterion(outputs, labels)
+            loss.backward()
+            optimizer.step()
+            # Metrics
+            epoch_loss += loss
+            total += labels.size(0)
+            correct += (torch.max(outputs.data, 1)[1] == labels).sum().item()
+        epoch_loss /= len(trainloader.dataset)
+        epoch_acc = correct / total
+        with open(log_filename, 'a', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([epoch+1, epoch_loss, epoch_acc])
     
     def fit(self, parameters, config):
      """Train local models using latest generator state."""
@@ -156,9 +207,12 @@ class FederatedClient(fl.client.NumPyClient):
      global_prototypes=None
      # Training
      N_j = None
-     batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
-     loss_sq_mean = np.mean([loss.detach().cpu().item()**2 for loss in batch_losses])
+     #batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
+    self.train(self.net,self.traindata,,self.client_id,epochs=self.local_epochs)
+
+     #loss_sq_mean = np.mean([loss.detach().cpu().item()**2 for loss in batch_losses])
      # Send leave timestamp
+     
      self.send_status(f"{self.server_url}/leave", {
             "client_id": self.client_id,
             "round": round_number,

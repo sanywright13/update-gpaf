@@ -255,7 +255,6 @@ class FederatedClient(fl.client.NumPyClient):
             {
                 "prototypes": all_prototypes,
                 "class_counts": class_counts,
-                 "loss_sq_mean": loss_sq_mean,
             "data_size": len(self.traindata),
             }
         )

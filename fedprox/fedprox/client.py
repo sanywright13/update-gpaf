@@ -123,7 +123,7 @@ class FederatedClient(fl.client.NumPyClient):
                 "round": round_number,
                 "timestamp": datetime.now().isoformat()
             })
-           time.sleep(10)  # ping every 10 seconds
+            time.sleep(10)  # ping every 10 seconds
 
     def train(self,net, trainloader, client_id,epochs: int, verbose=False):
       """Train the network on the training set."""

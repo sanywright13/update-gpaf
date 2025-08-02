@@ -208,7 +208,7 @@ class FederatedClient(fl.client.NumPyClient):
      # Training
      N_j = None
      #batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
-    self.train(self.net,self.traindata,,self.client_id,epochs=self.local_epochs)
+     self.train(self.net,self.traindata,,self.client_id,epochs=self.local_epochs)
 
      #loss_sq_mean = np.mean([loss.detach().cpu().item()**2 for loss in batch_losses])
      # Send leave timestamp

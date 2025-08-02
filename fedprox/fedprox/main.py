@@ -40,7 +40,7 @@ import torch
 import numpy as np
 from typing import List
 from torch.utils.data import DataLoader
-strategy="fpag"
+strategy="gpaf"
 # approach gpaf : global generator with non domain and non contrastive loss
  # Create or get experiment
 experiment_name = "gpaf_noniid_pneu"

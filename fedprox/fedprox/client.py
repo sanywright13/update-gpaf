@@ -135,13 +135,7 @@ class FederatedClient(fl.client.NumPyClient):
         "round": round_number,
         "timestamp": datetime.now().isoformat()
     })
-     """
-     # Start heartbeat background thread
-     stop_event = threading.Event()
-     heartbeat_thread = threading.Thread(target=self.heartbeat_loop, args=(self.client_id, round_number, stop_event))
-     heartbeat_thread.start()
-     """
-
+   
     
      self.set_parameters(parameters)
      """
@@ -410,6 +404,12 @@ class FlowerClient(NumPyClient):
             images, labels = batch
             images, labels = images.to(DEVICE ,non_blocking=True), labels.to(DEVICE  , non_blocking=True)
             labels=labels.long()
+
+            if labels.dim() > 1:
+                labels = labels.squeeze()
+                if labels.dim() == 0:
+                    labels = labels.unsqueeze(0)  # Handle single sample
+            
             #print(f'label fedavg {labels}')
             #labels=labels.unsqueeze(1)
             optimizer.zero_grad()

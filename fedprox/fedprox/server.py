@@ -716,9 +716,8 @@ save_dir="feature_visualizations_gpaf"
             return 0.4, 0.6
 
     #fedavg evaluate_fit
-    
-        
-  
+      
+    '''
     def configure_fit(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
     ) -> List[Tuple[ClientProxy, FitIns]]:
@@ -854,7 +853,7 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
 
-   
+    '''
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:

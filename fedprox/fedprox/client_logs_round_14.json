@@ -1,0 +1,107 @@
+{
+  "joins": [
+    {
+      "client_id": 0,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:24.508389"
+    },
+    {
+      "client_id": 4,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:24.520911"
+    },
+    {
+      "client_id": 7,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:35.980744"
+    },
+    {
+      "client_id": 10,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:36.054292"
+    },
+    {
+      "client_id": 12,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:47.476741"
+    },
+    {
+      "client_id": 14,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:47.757513"
+    },
+    {
+      "client_id": 15,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:58.978215"
+    },
+    {
+      "client_id": 17,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:59.817760"
+    },
+    {
+      "client_id": 9,
+      "round": 14,
+      "timestamp": "2025-08-04T10:12:10.092416"
+    },
+    {
+      "client_id": 16,
+      "round": 14,
+      "timestamp": "2025-08-04T10:12:14.316245"
+    }
+  ],
+  "leaves": [
+    {
+      "client_id": 4,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:33.566193"
+    },
+    {
+      "client_id": 0,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:33.674634"
+    },
+    {
+      "client_id": 7,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:44.953754"
+    },
+    {
+      "client_id": 10,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:45.252240"
+    },
+    {
+      "client_id": 12,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:56.416332"
+    },
+    {
+      "client_id": 14,
+      "round": 14,
+      "timestamp": "2025-08-04T10:11:56.850716"
+    },
+    {
+      "client_id": 15,
+      "round": 14,
+      "timestamp": "2025-08-04T10:12:07.819507"
+    },
+    {
+      "client_id": 17,
+      "round": 14,
+      "timestamp": "2025-08-04T10:12:11.634891"
+    },
+    {
+      "client_id": 9,
+      "round": 14,
+      "timestamp": "2025-08-04T10:12:19.144502"
+    },
+    {
+      "client_id": 16,
+      "round": 14,
+      "timestamp": "2025-08-04T10:12:23.247920"
+    }
+  ],
+  "crashes": []
+}

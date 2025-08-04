@@ -1,0 +1,97 @@
+{
+  "joins": [
+    {
+      "client_id": 2,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:11.725903"
+    },
+    {
+      "client_id": 5,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:11.738457"
+    },
+    {
+      "client_id": 7,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:23.643110"
+    },
+    {
+      "client_id": 8,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:23.812352"
+    },
+    {
+      "client_id": 11,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:35.234522"
+    },
+    {
+      "client_id": 12,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:35.530749"
+    },
+    {
+      "client_id": 14,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:46.558205"
+    },
+    {
+      "client_id": 15,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:47.429187"
+    },
+    {
+      "client_id": 4,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:58.543448"
+    }
+  ],
+  "leaves": [
+    {
+      "client_id": 5,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:21.124022"
+    },
+    {
+      "client_id": 2,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:21.243885"
+    },
+    {
+      "client_id": 7,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:32.676155"
+    },
+    {
+      "client_id": 8,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:32.970648"
+    },
+    {
+      "client_id": 11,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:44.081747"
+    },
+    {
+      "client_id": 12,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:44.434634"
+    },
+    {
+      "client_id": 14,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:55.444035"
+    },
+    {
+      "client_id": 15,
+      "round": 7,
+      "timestamp": "2025-08-04T10:03:56.545201"
+    },
+    {
+      "client_id": 4,
+      "round": 7,
+      "timestamp": "2025-08-04T10:04:06.248027"
+    }
+  ],
+  "crashes": []
+}

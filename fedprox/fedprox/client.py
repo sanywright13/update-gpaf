@@ -63,7 +63,7 @@ class FederatedClient(fl.client.NumPyClient):
         self.num_classes=9
         self.num_clients=num_clients
         self.batch_size=batch_size
-        self.server_url = "https://add18b7094f7.ngrok-free.app/heartbeat"
+        self.server_url = "https://081cd74c373b.ngrok-free.app/heartbeat"
 
 
         print(f"dd Batch size client side : {self.batch_size}")
@@ -187,7 +187,8 @@ class FederatedClient(fl.client.NumPyClient):
         "timestamp": datetime.now().isoformat()
     })
    
-    
+     # --- FIX: Start a timer before training ---
+     start_time = time.time()
      self.set_parameters(parameters)
      """
      encoded_proto_str = config.get("global_cluster_prototypes", None)
@@ -248,7 +249,8 @@ class FederatedClient(fl.client.NumPyClient):
 
      print("prototypes type:", type(all_prototypes))
      print("class_counts type:", type(class_counts))
-
+     # --- FIX: Stop the timer after training ---
+     training_duration = time.time() - start_time
      return (
             self.get_parameters(),
             len(self.traindata),
@@ -256,6 +258,7 @@ class FederatedClient(fl.client.NumPyClient):
                 "prototypes": all_prototypes,
                 "class_counts": class_counts,
             "data_size": len(self.traindata),
+              "duration": training_duration, 
             }
         )
 

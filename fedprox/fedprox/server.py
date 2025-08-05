@@ -717,7 +717,7 @@ save_dir="feature_visualizations_gpaf"
 
     #fedavg evaluate_fit
       
-    '''
+   
     def configure_fit(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
     ) -> List[Tuple[ClientProxy, FitIns]]:
@@ -810,18 +810,7 @@ save_dir="feature_visualizations_gpaf"
             print("[CSMDA] No active clusters with assigned clients to select from. Falling back to global selection.")
 
         # 6. Fallback: If not enough clients selected from clusters, pick from best overall remaining
-        # This covers cases where clustering didn't yield enough clients or no clusters were formed.
-        """
-        if len(selected_clients_cids) < self.min_fit_clients:
-            remaining_clients_cids = [cid for cid in available_client_cids if cid not in selected_clients_cids]
-            if remaining_clients_cids:
-                remaining_sorted = sorted(remaining_clients_cids,
-                                        key=lambda cid: global_scores.get(cid, 0.0),
-                                        reverse=True)
-                additional_needed = self.min_fit_clients - len(selected_clients_cids)
-                selected_clients_cids.extend(remaining_sorted[:min(additional_needed, len(remaining_sorted))])
-                print(f"[CSMDA] Added {min(additional_needed, len(remaining_sorted))} clients from remaining pool to meet min_fit_clients.")
-        """
+       
         # Final sanity check: Ensure we don't select more clients than min_fit_clients
         # (or max available clients, though this should be handled by prior `min` calls)
         selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
@@ -853,7 +842,7 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
 
-    '''
+   
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:

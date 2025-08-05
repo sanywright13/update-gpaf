@@ -190,21 +190,7 @@ class FederatedClient(fl.client.NumPyClient):
      # --- FIX: Start a timer before training ---
      start_time = time.time()
      self.set_parameters(parameters)
-     """
-     encoded_proto_str = config.get("global_cluster_prototypes", None)
-     if encoded_proto_str is not None:
-            cluster_protos = pickle.loads(base64.b64decode(encoded_proto_str))
-            print("[Client] Successfully decoded global_cluster_prototypes")
-     else:
-            print("[Client] No global_cluster_prototypes found in config.")
-            cluster_protos = {}
-
-     global_prototypes = {
-            int(cls): torch.tensor(proto).to(self.device)
-            for cls, proto in cluster_protos.items()
-        }
-
-     """
+   
      global_prototypes=None
      # Training
      N_j = None

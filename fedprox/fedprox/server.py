@@ -559,7 +559,7 @@ save_dir="feature_visualizations_gpaf"
         aggregated_params = [param / total_samples for param in aggregated_params]
 
         return aggregated_params
-
+    
     def aggregate_evaluate(
         self,
         server_round: int,
@@ -628,6 +628,7 @@ save_dir="feature_visualizations_gpaf"
         except Exception as e:
             print(f"[Warning] Could not load client logs: {e}")
             return {}
+   
 
     def _update_client_targets(self, server_round: int):
         if not self._current_accuracies:
@@ -717,7 +718,7 @@ save_dir="feature_visualizations_gpaf"
 
     #fedavg evaluate_fit
       
-   
+    '''
     def configure_fit(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
     ) -> List[Tuple[ClientProxy, FitIns]]:
@@ -842,7 +843,7 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
 
-   
+    '''
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:

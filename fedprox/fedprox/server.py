@@ -131,6 +131,14 @@ class GPAFStrategy(FedAvg):
         self.batch_size = batch_size
         self.save_dir = "visualizations"
 
+        # --- REVISED: Straggler Simulation Setup ---
+        # Initialize an empty dictionary. It will be populated later.
+        self.client_straggler_profiles = {}
+        # Store the percentages, so we can use them later
+        self.permanent_straggler_percentage = 0.1
+        self.occasional_straggler_percentage = 0.2
+
+
         experiment = mlflow.get_experiment_by_name(experiment_name)
         if experiment is None:
          experiment_id = mlflow.create_experiment(experiment_name)
@@ -173,7 +181,33 @@ class GPAFStrategy(FedAvg):
 
 save_dir="feature_visualizations_gpaf"
          )
-         
+    def _setup_straggler_profiles(self, client_manager):
+        """
+        Assigns a straggler profile to each client based on the CIDs
+        provided by the ClientManager. This is a one-time operation.
+        """
+        if self.client_straggler_profiles:
+            # Profiles are already set, so do nothing.
+            return
+
+        all_client_cids = list(client_manager.all().keys())
+        num_clients = len(all_client_cids)
+        
+        num_permanent_stragglers = int(num_clients * self.permanent_straggler_percentage)
+        num_occasional_stragglers = int(num_clients * self.occasional_straggler_percentage)
+
+        shuffled_ids = random.sample(all_client_cids, num_clients)
+        
+        for i, cid in enumerate(shuffled_ids):
+            if i < num_permanent_stragglers:
+                self.client_straggler_profiles[cid] = "permanent"
+            elif i < num_permanent_stragglers + num_occasional_stragglers:
+                self.client_straggler_profiles[cid] = "occasional"
+            else:
+                self.client_straggler_profiles[cid] = "normal"
+        
+        print(f"Straggler Profiles Initialized: {num_permanent_stragglers} permanent, {num_occasional_stragglers} occasional.")
+
     def num_evaluate_clients(self, client_manager: ClientManager) -> Tuple[int, int]:
       """Return the sample size and required number of clients for evaluation."""
       num_clients = client_manager.num_available()
@@ -724,17 +758,24 @@ save_dir="feature_visualizations_gpaf"
     ) -> List[Tuple[ClientProxy, FitIns]]:
         print(f"\n[CSMDA] Configuring round {server_round}")
         
+        # --- NEW: Set up straggler profiles on the very first round ---
+        if not self.client_straggler_profiles:
+            self._setup_straggler_profiles(client_manager)
+        
         # 1. Update Client Targets (Fairness) based on PREVIOUS round's evaluation accuracies
-        # This is CRUCIAL to make the fairness score dynamic based on performance.
         self._update_client_targets(server_round)
 
         # Get all currently available clients
+        # 1. Update Client Targets (Fairness) based on PREVIOUS round's evaluation accuracies
+        # This is CRUCIAL to make the fairness score dynamic based on performance.
+
         available_client_cids = list(client_manager.all().keys())
         
         if not available_client_cids:
             print(f"[CSMDA] Round {server_round}: No clients available for selection.")
             return []
-
+        
+     
         # 2. First round or no assignments yet: random selection for initialization
         # This part remains to kickstart clustering/assignment.
         if server_round == 1 or not self.client_assignments:
@@ -821,6 +862,8 @@ save_dir="feature_visualizations_gpaf"
             return []
 
         # 7. Prepare FitIns for the chosen clients and update selection counts
+        # Now, we are in the final loop for preparing instructions, where we
+        # integrate the straggler logic using the now-populated dictionary.
         instructions = []
         for client_id in selected_clients_cids:
             client_proxy = client_manager.all()[client_id]
@@ -829,16 +872,22 @@ save_dir="feature_visualizations_gpaf"
             # Pass cluster information if available
             if client_id in self.client_assignments:
                 cluster_id = self.client_assignments[client_id]
-                cluster_protos = {
-                    str(cls): proto.tolist() if isinstance(proto, np.ndarray) else proto
-                    for cls, proto in self.cluster_prototypes.get(cluster_id, {}).items()
-                }
                 client_config_for_fit["cluster_id"] = cluster_id
-                #client_config_for_fit["cluster_prototypes"] = cluster_protos
-                #client_config_for_fit["cluster_class_counts"] = dict(self.cluster_class_counts.get(cluster_id, {}))
+            
+            # --- Integrated Straggler Logic using the correct CIDs ---
+            straggler_profile = self.client_straggler_profiles.get(client_id, "normal")
+            simulate_delay = False
+            if straggler_profile == "permanent":
+                simulate_delay = True
+            elif straggler_profile == "occasional":
+                if random.random() > 0.5: # 50% chance of a delay
+                    simulate_delay = True
+            
+            client_config_for_fit["simulate_delay"] = simulate_delay
+            # --- End of integrated logic ---
 
-            instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
-            self.selection_counts[client_id] += 1 # IMPORTANT: Increment selection count for fairness
+            instructions.append((client_proxy, fl.common.FitIns(parameters, client_config_for_fit)))
+            self.selection_counts[client_id] += 1
             
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions

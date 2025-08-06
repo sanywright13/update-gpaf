@@ -886,9 +886,9 @@ save_dir="feature_visualizations_gpaf"
             client_config_for_fit["simulate_delay"] = simulate_delay
             # --- End of integrated logic ---
 
-            instructions.append((client_proxy, fl.common.FitIns(parameters, client_config_for_fit)))
+            instructions.append((client_proxy, flwr.common.FitIns(parameters, client_config_for_fit)))
             self.selection_counts[client_id] += 1
-            
+
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
 

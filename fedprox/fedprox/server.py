@@ -751,6 +751,41 @@ save_dir="feature_visualizations_gpaf"
             return 0.4, 0.6
 
     #fedavg evaluate_fit
+
+    def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
+        """Override to inject straggler simulation logic."""
+
+        # Call the original FedAvg configure_fit to perform client selection
+        fit_ins = super().configure_fit(server_round, parameters, client_manager)
+
+        # On the first round, set up the straggler profiles
+        if server_round == 1:
+            self._setup_straggler_profiles(client_manager)
+            
+        # Get the selected client CIDs from the base method's result
+        selected_client_cids = [client.cid for client, _ in fit_ins]
+        
+        updated_fit_ins = []
+        for client_proxy, fit_ins_original in fit_ins:
+            client_id = client_proxy.cid
+            
+            # Get the straggler profile for this client
+            straggler_profile = self.client_straggler_profiles.get(client_id, "normal")
+            simulate_delay = False
+
+            if straggler_profile == "permanent":
+                simulate_delay = True
+            elif straggler_profile == "occasional":
+                if random.random() > 0.5: # 50% chance of a delay
+                    simulate_delay = True
+            
+            # Add the straggler flag to the client's configuration
+            config = fit_ins_original.config
+            config["simulate_delay"] = simulate_delay
+            
+            updated_fit_ins.append((client_proxy, FitIns(parameters, config)))
+            
+        return updated_fit_ins
       
     '''
     def configure_fit(

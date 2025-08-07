@@ -305,66 +305,80 @@ save_dir="feature_visualizations_gpaf"
 
       return new_clusters
     
-     # --- NEW METHOD: Periodically update client clusters ---
+    # --- NEW METHOD: Periodically update client clusters ---
     def _update_client_assignments(self, server_round: int, client_manager: ClientManager):
-        print(f"[Clustering] Starting periodic clustering update for round {server_round}")
+      """
+      Periodically fetches prototypes from all available clients and updates cluster assignments.
+    
+      This method decouples clustering from the fit aggregation step, ensuring that the 
+      clustering algorithm considers all clients, not just the selected ones from the
+      previous round.
+      """
+      print(f"[Clustering] Starting periodic clustering update for round {server_round}")
 
-        available_client_cids = list(client_manager.all().keys())
-        if not available_client_cids:
-            print("[Clustering] No clients available to cluster.")
-            return
+      available_client_proxies = client_manager.all()
+      if not available_client_proxies:
+        print("[Clustering] No clients available to cluster. 🤷")
+        return
 
-        # 1. Fetch prototypes from all available clients
-        all_prototypes = []
-        client_ids = []
-        class_counts_list = []
-        
-        # NOTE: This part assumes your client's get_properties function returns the prototypes.
-        # This is a key change needed on the client side.
-        for client_cid, client_proxy in client_manager.all().items():
-            try:
-                # Use a custom 'get_prototypes' instruction to fetch only prototypes
-                props = client_proxy.get_properties(GetPropertiesIns(config={"request": "prototypes"}), timeout=3600)
-                prototypes_encoded = props.properties.get("prototypes")
-                class_counts_encoded = props.properties.get("class_counts")
+      # 1. Fetch prototypes from ALL available clients
+      all_prototypes_list = []
+      client_ids_list = []
+      class_counts_list = []
+    
+      for client_cid, client_proxy in available_client_proxies.items():
+        try:
+            # We explicitly ask the client for its prototypes.
+            # FIX: Added 'group_id=None' to resolve the AttributeError.
+            props = client_proxy.get_properties(
+                ins=GetPropertiesIns(config={"request": "prototypes"}),
+                timeout=3600,
+                group_id=None
+            )
+            prototypes_encoded = props.properties.get("prototypes")
+            class_counts_encoded = props.properties.get("class_counts")
 
-                if prototypes_encoded and class_counts_encoded:
-                    prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
-                    class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
-                    
-                    all_prototypes.append(prototypes)
-                    client_ids.append(client_cid)
-                    class_counts_list.append(class_counts)
-                else:
-                    print(f"[Clustering] Client {client_cid} did not return prototypes. Skipping.")
-            except Exception as e:
-                print(f"[Clustering] Failed to get prototypes from client {client_cid}: {e}. Skipping.")
+            if prototypes_encoded and class_counts_encoded:
+                prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
+                class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
+                
+                all_prototypes_list.append(prototypes)
+                client_ids_list.append(client_cid)
+                class_counts_list.append(class_counts)
+            else:
+                print(f"[Clustering] Client {client_cid} did not return prototypes. Skipping. 😔")
+        except Exception as e:
+            print(f"[Clustering] Failed to get prototypes from client {client_cid}: {e}. Skipping. 😔")
 
-        if not all_prototypes:
-            print("[Clustering] No prototypes received from any client. Cannot cluster.")
-            return
+      if not all_prototypes_list:
+        print("[Clustering] No prototypes received from any client. Cannot cluster. 😢")
+        return
 
-        # 2. Convert prototypes to numpy arrays
-        proto_arrays = []
-        for p in all_prototypes:
-            proto_arrays.append({
-                cls: np.array(proto)
-                for cls, proto in p.items()
-            })
+      # 2. Convert prototypes to numpy arrays for clustering
+      proto_arrays = []
+      for p in all_prototypes_list:
+        proto_arrays.append({
+            cls: np.array(proto) 
+            for cls, proto in p.items()
+        })
+    
+      # 3. Perform EM Clustering on ALL collected prototypes
+      if not self.cluster_prototypes:
+        print("[Clustering] Initializing clusters for the first time. 🚀")
+        self.cluster_prototypes = self._initialize_clusters(proto_arrays)
+    
+      assignments = self._e_step(proto_arrays, client_ids_list)
+      self.cluster_prototypes = self._m_step(proto_arrays, client_ids_list, assignments, class_counts_list)
 
-        # 3. Perform EM Clustering on ALL collected prototypes
-        if not self.cluster_prototypes:
-            print("[Clustering] Initializing clusters for the first time.")
-            self.cluster_prototypes = self._initialize_clusters(proto_arrays)
-        
-        assignments = self._e_step(proto_arrays, client_ids)
-        self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments, class_counts_list)
+      # 4. Update the global client assignments map
+      self.client_assignments.clear()  # Clear old assignments
+      self.client_assignments.update(assignments)
+      print(f"[Clustering] Updated assignments for {len(self.client_assignments)} clients. ✅")
 
-        # 4. Update the global client assignments map
-        self.client_assignments.clear()  # Clear old assignments
-        self.client_assignments.update(assignments)
-        print(f"[Clustering] Updated assignments for {len(self.client_assignments)} clients.")
-        
+      # 5. Visualize clusters (if desired)
+      # The client_id_map and client_domain_map would be needed here for a visualization
+      if server_round % 2 == 0:
+         self._visualize_clusters(all_prototypes_list, client_ids_list, server_round)
 
 
     '''

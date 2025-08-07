@@ -92,14 +92,12 @@ class FederatedClient(fl.client.NumPyClient):
 
     #get the updated model parameters from the local model return local model parameters
     # In your client class
+    # In your client class, replace your old get_properties method with this:
     def get_properties(self, ins: fl.common.GetPropertiesIns) -> fl.common.GetPropertiesRes:
       """Returns client properties, including prototypes if requested."""
     
-      # Check if the server is asking for prototypes by checking ins.config
       if ins.config.get("request") == "prototypes":
-        # Check if prototypes have been stored from a previous round
         if hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None:
-            # Encode and return the stored prototypes
             all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
             class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
 
@@ -108,10 +106,8 @@ class FederatedClient(fl.client.NumPyClient):
                 "class_counts": class_counts_encoded
             })
         else:
-            # No prototypes stored yet, so return an empty response
             return fl.common.GetPropertiesRes(properties={})
 
-      # For other requests, return the default properties
       return fl.common.GetPropertiesRes(properties={
         "simulation_index": self.client_id
     })

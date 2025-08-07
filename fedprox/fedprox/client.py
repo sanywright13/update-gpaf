@@ -300,7 +300,8 @@ class FederatedClient(fl.client.Client):
      print("prototypes type:", type(all_prototypes))
      print("class_counts type:", type(class_counts_encoded))
      training_duration = time.time() - start_time
-
+     # Define the status object here
+     status = Status(code=Code.OK, message="Success")
      return FitRes(
         status=status,  # <-- ADD THIS
         parameters=self.get_parameters(config),

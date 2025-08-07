@@ -40,6 +40,7 @@ from flwr.common import (
     Scalar,
     ndarrays_to_parameters,
     parameters_to_ndarrays,
+    GetPropertiesRes, GetPropertiesIns, Code
 )
 import os
 from fedprox.models import train_gpaf,test_gpaf,init_net,train_moon,test_moon,save_client_model,load_client_model,Model
@@ -120,7 +121,7 @@ class FederatedClient(fl.client.Client):
             properties={}
         )
       
-      
+
       # For other requests, return a successful status with default properties
       return GetPropertiesRes(
       status=status,  # <-- ADD THIS

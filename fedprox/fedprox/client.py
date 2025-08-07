@@ -98,64 +98,42 @@ class FederatedClient(fl.client.Client):
 
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
       """Returns client properties, including prototypes if requested."""
-
-      # Define a status object for success
       status = Status(code=Code.OK, message="Success")
-  
       if ins.config.get("request") == "prototypes":
         if hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None:
-          all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
-          class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
-
-          return GetPropertiesRes(
-            status=status,  # <-- ADD THIS
-            properties={
-                "prototypes": all_prototypes_encoded,
-                "class_counts": class_counts_encoded
-            }
-          )
+            all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
+            class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
+            return GetPropertiesRes(
+                status=status,
+                properties={
+                    "prototypes": all_prototypes_encoded,
+                    "class_counts": class_counts_encoded
+                })
         else:
-          # If prototypes are not available, return a successful status with empty properties
-          return GetPropertiesRes(
-            status=status,  # <-- ADD THIS
-            properties={}
-        )
-      
+            return GetPropertiesRes(status=status, properties={})
+      return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
 
-      # For other requests, return a successful status with default properties
-      return GetPropertiesRes(
-      status=status,  # <-- ADD THIS
-      properties={
-          "simulation_index": self.client_id
-      }
-  )
-
-
-    
 
     # In your client class
 
-    def get_parameters(self, config: Config) -> Parameters:
-      """Return local model parameters as a Parameters object."""
-      # This line remains the same
-      ndarray_list = [val.cpu().numpy() for _, val in self.net.state_dict().items()]
+    # === THIS IS THE CORRECTED METHOD ===
+    def get_parameters(self, config: Config) -> GetParametersRes:
+        """Return local model parameters as a GetParametersRes object."""
+        ndarray_list = [val.cpu().numpy() for _, val in self.net.state_dict().items()]
+        parameters = ndarrays_to_parameters(ndarray_list)
+        return GetParametersRes(status=Status(code=Code.OK, message="Success"), parameters=parameters)
 
-      # Return the Parameters object directly, without the GetParametersRes wrapper
-      return ndarrays_to_parameters(ndarray_list)
     #second and call set_para  
-    def evaluate(self, parameters: NDArrays, config: Dict[str, Scalar]
-    ) -> Tuple[float, int, Dict]:
-        """Implement distributed evaluation for a given client."""
-        print(f'===evaluate client=== {type(parameters)}')
-        self.set_parameters(parameters)
-
-     
+    def evaluate(self, ins: EvaluateIns) -> EvaluateRes:
+        self.set_parameters(parameters_to_ndarrays(ins.parameters))
         loss, accuracy = test_gpaf(self.net, self.validdata, self.device)
-       
         print(f'client id : {self.client_id} and valid accuracy is {accuracy} and valid loss is : {loss}')
-        return float(loss), len(self.validdata), {"accuracy": float(accuracy),
-     
-        }
+        return EvaluateRes(
+            status=Status(code=Code.OK, message="Success"),
+            loss=float(loss),
+            num_examples=len(self.validdata),
+            metrics={"accuracy": float(accuracy)}
+        )
     
     def send_status(self, url, payload):
         try:
@@ -175,17 +153,7 @@ class FederatedClient(fl.client.Client):
  
 
     def train(self, net, trainloader, client_id, epochs: int, simulate_delay: bool, verbose=False):
-      """
-      Train the network on the training set with an optional simulated delay.
-      
-      Args:
-          net: The neural network to train.
-          trainloader: The data loader for the client's training data.
-          client_id: The unique ID of the client.
-          epochs: The number of local epochs to train for.
-          simulate_delay: A boolean flag to trigger the simulated straggler delay.
-          verbose: Optional verbosity flag.
-      """
+     
       
       DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
       print(f'Model on device: { DEVICE}')
@@ -245,26 +213,21 @@ class FederatedClient(fl.client.Client):
      config = ins.config
      round_number = config.get("server_round", -1)
      simulate_delay = config.get("simulate_delay", False) 
-
      self.send_status(f"{self.server_url}/join", {
         "client_id": self.client_id,
         "round": round_number,
         "timestamp": datetime.now().isoformat()
     })
-   
      start_time = time.time()
      self.set_parameters(parameters)
-   
      global_prototypes=None
      N_j = None
      self.train(self.net, self.traindata, self.client_id, epochs=self.local_epochs, simulate_delay=simulate_delay)
-     
      self.send_status(f"{self.server_url}/leave", {
             "client_id": self.client_id,
             "round": round_number,
             "timestamp": datetime.now().isoformat()
         })
-
      self.net.eval()
      class_embeddings = defaultdict(list)
      class_counts = defaultdict(int)
@@ -278,7 +241,6 @@ class FederatedClient(fl.client.Client):
                     label = labels[i].item()
                     class_embeddings[label].append(h[i].cpu())
                     class_counts[label] += 1
-
      prototypes = {}
      for class_id in range(self.num_classes):
             if class_id in class_embeddings:
@@ -286,22 +248,17 @@ class FederatedClient(fl.client.Client):
                 prototypes[class_id] = stacked.mean(dim=0)
             else:
                 prototypes[class_id] = torch.zeros_like(h[0].cpu())
- 
-
      self.prototypes_from_last_round = prototypes
      self.class_counts_from_last_round = class_counts
-
      all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
      class_counts_encoded = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
-
      print("prototypes type:", type(all_prototypes))
      print("class_counts type:", type(class_counts_encoded))
      training_duration = time.time() - start_time
-     # Define the status object here
      status = Status(code=Code.OK, message="Success")
      return FitRes(
-        status=status,  # <-- ADD THIS
-        parameters=self.get_parameters(config),
+        status=status,
+        parameters=self.get_parameters(config).parameters, # Access the Parameters object
         num_examples=len(self.traindata),
         metrics={
             "prototypes": all_prototypes,

@@ -119,7 +119,8 @@ class FederatedClient(fl.client.Client):
             status=status,  # <-- ADD THIS
             properties={}
         )
-
+      
+      
       # For other requests, return a successful status with default properties
       return GetPropertiesRes(
       status=status,  # <-- ADD THIS

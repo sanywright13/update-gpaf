@@ -935,11 +935,10 @@ save_dir="feature_visualizations_gpaf"
 
       # If this is the first round, the clients may not have prototypes yet.
       # In that case, fall back to random selection to initialize training.
-      # Step 3: Handle the first round / no prototypes case
+      # 3. Handle the first round/no prototypes case separately
       if not all_prototypes_list or len(all_prototypes_list) < self.num_clusters:
         print("[CSMDA] No or insufficient prototypes received. Performing initial random selection.")
         
-        # Select clients randomly for the first round
         num_to_select = min(self.min_fit_clients, len(available_client_cids))
         selected_clients_cids = random.sample(available_client_cids, num_to_select)
 
@@ -949,8 +948,10 @@ save_dir="feature_visualizations_gpaf"
             fit_ins = FitIns(parameters, {"server_round": server_round})
             instructions.append((client_proxy, fit_ins))
             self.selection_counts[client_id] += 1
+        
+        # This is the crucial fix: RETURN immediately after the initial selection.
+        return instructions
 
-      # 3. Perform Clustering using the collected prototypes
       # Re-use the existing clustering logic from aggregate_fit, but apply it here instead.
       print("[CSMDA] Performing clustering on all available clients.")
       # Initialize clusters if this is the first clustering run

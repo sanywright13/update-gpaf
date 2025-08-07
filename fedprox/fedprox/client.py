@@ -27,6 +27,8 @@ from flwr.common import ConfigsRecord, MetricsRecord, ParametersRecord ,Context,
 from  mlflow.tracking import MlflowClient
 import base64
 import pickle
+from flwr.common import Parameters, GetParametersRes, Status, Code, ndarrays_to_parameters
+
 from flwr.common import (
     EvaluateIns,
     EvaluateRes,
@@ -116,11 +118,16 @@ class FederatedClient(fl.client.Client):
     
 
     # In your client class
-    def get_parameters(self, config: Config) -> Parameters:
-      """Return local model parameters as a Parameters object."""
-      # Convert the list of NumPy arrays to a Parameters object
-      return fl.common.ndarrays_to_parameters([val.cpu().numpy() for _, val in self.net.state_dict().items()])
 
+
+    def get_parameters(self, config: Config) -> GetParametersRes:
+      """Return local model parameters as a GetParametersRes object."""
+      # Convert the list of NumPy arrays to a Parameters object
+      ndarray_list = [val.cpu().numpy() for _, val in self.net.state_dict().items()]
+      parameters = ndarrays_to_parameters(ndarray_list)
+
+      # Return the Parameters object inside a GetParametersRes object
+      return GetParametersRes(status=Status(code=Code.OK, message="Success"), parameters=parameters)
    
     #second and call set_para  
     def evaluate(self, parameters: NDArrays, config: Dict[str, Scalar]

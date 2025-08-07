@@ -79,6 +79,10 @@ class FederatedClient(fl.client.NumPyClient):
         # Initialize dictionaries to store features and labels
         self.client_features = {}  # Add this
         self.client_labels = {}    # Add this
+
+        # Initialize prototype and class count variables to None
+        self.prototypes_from_last_round = None
+        self.class_counts_from_last_round = None
        
     #update the local model with parameters received from the server
     def set_parameters(self, parameters: List[np.ndarray]):
@@ -87,8 +91,31 @@ class FederatedClient(fl.client.NumPyClient):
       self.net.load_state_dict(state_dict, strict=True)
 
     #get the updated model parameters from the local model return local model parameters
-    def get_properties(self, config: Config) -> Dict[str, Scalar]:
-      return {"simulation_index": self.client_id}
+    def get_properties(self, ins: fl.common.GetPropertiesIns) -> fl.common.GetPropertiesRes:
+      """Returns client properties, including prototypes if requested."""
+      # Check if the server is asking for prototypes
+      if ins.config.get("request") == "prototypes":
+        # Check if prototypes have been stored from a previous round
+        if hasattr(self, 'prototypes_from_last_round'):
+            # Encode and return the stored prototypes
+            all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
+            class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
+
+            return fl.common.GetPropertiesRes(properties={
+                "prototypes": all_prototypes_encoded,
+                "class_counts": class_counts_encoded
+            })
+        else:
+            # No prototypes stored yet, so return an empty response
+            return fl.common.GetPropertiesRes(properties={})
+
+      # For other requests, return the default properties
+      return fl.common.GetPropertiesRes(properties={
+        "simulation_index": self.client_id
+    })
+
+
+    
 
     def get_parameters(self , config: Dict[str, Scalar] = None):
         return [val.cpu().numpy() for _, val in self.net.state_dict().items()]
@@ -248,6 +275,11 @@ class FederatedClient(fl.client.NumPyClient):
                 prototypes[class_id] = stacked.mean(dim=0)
             else:
                 prototypes[class_id] = torch.zeros_like(h[0].cpu())
+ 
+
+     # === NEW: Store prototypes and class counts in instance variables ===
+     self.prototypes_from_last_round = prototypes
+     self.class_counts_from_last_round = class_counts
 
      all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
      class_counts = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')

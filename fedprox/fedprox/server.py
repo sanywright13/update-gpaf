@@ -131,6 +131,9 @@ class GPAFStrategy(FedAvg):
         self.batch_size = batch_size
         self.save_dir = "visualizations"
 
+        # === FIX: Add this line to initialize the cache ===
+        self.client_prototypes_cache = {} 
+
         # --- REVISED: Straggler Simulation Setup ---
         # Initialize an empty dictionary. It will be populated later.
         self.client_straggler_profiles = {}
@@ -1154,7 +1157,7 @@ save_dir="feature_visualizations_gpaf"
             
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
-        
+
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:

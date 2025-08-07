@@ -43,7 +43,7 @@ import os
 from fedprox.models import train_gpaf,test_gpaf,init_net,train_moon,test_moon,save_client_model,load_client_model,Model
 from fedprox.dataset_preparation import compute_label_counts, compute_label_distribution
 from fedprox.features_visualization import extract_features_and_labels,StructuredFeatureVisualizer
-class FederatedClient(fl.client.NumPyClient):
+class FederatedClient(fl.client.Client):
     def __init__(self, net, 
      data,validset,
      local_epochs,
@@ -216,33 +216,26 @@ class FederatedClient(fl.client.NumPyClient):
             writer = csv.writer(csvfile)
             writer.writerow([epoch+1, epoch_loss, epoch_acc])
 
-    def fit(self, parameters, config):
+    # === Corrected method signature for fit ===
+    def fit(self, ins: FitIns) -> FitRes:
      """Train local models using latest generator state."""
+     parameters = parameters_to_ndarrays(ins.parameters)
+     config = ins.config
      round_number = config.get("server_round", -1)
-     
-     # --- NEW: Retrieve straggler instruction from server config ---
      simulate_delay = config.get("simulate_delay", False) 
 
-
-     # Send join timestamp
      self.send_status(f"{self.server_url}/join", {
         "client_id": self.client_id,
         "round": round_number,
         "timestamp": datetime.now().isoformat()
     })
    
-     # --- FIX: Start a timer before training ---
      start_time = time.time()
      self.set_parameters(parameters)
    
      global_prototypes=None
-     # Training
      N_j = None
-     #batch_losses=train_gpaf(self.net, self.traindata, self.device, self.client_id, self.local_epochs, self.batch_size, global_prototypes, N_j)
      self.train(self.net, self.traindata, self.client_id, epochs=self.local_epochs, simulate_delay=simulate_delay)
-
-     #loss_sq_mean = np.mean([loss.detach().cpu().item()**2 for loss in batch_losses])
-     # Send leave timestamp
      
      self.send_status(f"{self.server_url}/leave", {
             "client_id": self.client_id,
@@ -250,7 +243,6 @@ class FederatedClient(fl.client.NumPyClient):
             "timestamp": datetime.now().isoformat()
         })
 
-     # === Prototype Extraction ===
      self.net.eval()
      class_embeddings = defaultdict(list)
      class_counts = defaultdict(int)
@@ -265,7 +257,6 @@ class FederatedClient(fl.client.NumPyClient):
                     class_embeddings[label].append(h[i].cpu())
                     class_counts[label] += 1
 
-     # Compute prototypes
      prototypes = {}
      for class_id in range(self.num_classes):
             if class_id in class_embeddings:
@@ -275,27 +266,26 @@ class FederatedClient(fl.client.NumPyClient):
                 prototypes[class_id] = torch.zeros_like(h[0].cpu())
  
 
-     # === NEW: Store prototypes and class counts in instance variables ===
      self.prototypes_from_last_round = prototypes
      self.class_counts_from_last_round = class_counts
 
      all_prototypes = base64.b64encode(pickle.dumps(prototypes)).decode('utf-8')
-     class_counts = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
+     class_counts_encoded = base64.b64encode(pickle.dumps(class_counts)).decode('utf-8')
 
      print("prototypes type:", type(all_prototypes))
-     print("class_counts type:", type(class_counts))
-     # --- FIX: Stop the timer after training ---
+     print("class_counts type:", type(class_counts_encoded))
      training_duration = time.time() - start_time
-     return (
-            self.get_parameters(),
-            len(self.traindata),
-            {
-                "prototypes": all_prototypes,
-                "class_counts": class_counts,
+
+     return FitRes(
+        parameters=self.get_parameters(config),
+        num_examples=len(self.traindata),
+        metrics={
+            "prototypes": all_prototypes,
+            "class_counts": class_counts_encoded,
             "data_size": len(self.traindata),
-              "duration": training_duration, 
-            }
-        )
+            "duration": training_duration, 
+        }
+    )
 
 
 def gen_client_fn(
@@ -357,27 +347,26 @@ save_dir="feature_visualizations"
           )
           #print(f'  ffghf {trainloader}')
           valloader = valloaders[int(cid)]
+          """
           for batch_idx, (data, target) in enumerate(valloader):
             print(f"Batch {batch_idx}, data shape: {data.shape}, target shape: {target.shape}")
             break  # Just check the first batch
-          numpy_client =  FederatedClient(
-            net,
-           
-            trainloader,
-            valloader,
-            num_epochs,
-            cid,
-            mlflow
-            ,
-            run_id,
-            feature_visualizer,
-            device,
-            batch_size,
+          """
+          # === Ensure you return an instance of FederatedClient ===
+          numpy_client= FederatedClient(
+                    net,
+                    trainloader,
+                    valloader,
+                    num_epochs,
+                    cid,
+                    mlflow,
+                    run_id,
+                    feature_visualizer,
+                    device,
+                    batch_size,
+                    num_clients=num_clients
+                )
 
-num_clients=num_clients
-          )
-
-         
         elif strategy =="moon":
           
           trainloader = trainloaders[int(cid)]

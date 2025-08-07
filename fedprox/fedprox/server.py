@@ -301,8 +301,70 @@ save_dir="feature_visualizations_gpaf"
       self.cluster_class_counts = cluster_class_counts  # Used later in configure_fit
 
       return new_clusters
+    
+     # --- NEW METHOD: Periodically update client clusters ---
+    def _update_client_assignments(self, server_round: int, client_manager: ClientManager):
+        print(f"[Clustering] Starting periodic clustering update for round {server_round}")
+
+        available_client_cids = list(client_manager.all().keys())
+        if not available_client_cids:
+            print("[Clustering] No clients available to cluster.")
+            return
+
+        # 1. Fetch prototypes from all available clients
+        all_prototypes = []
+        client_ids = []
+        class_counts_list = []
+        
+        # NOTE: This part assumes your client's get_properties function returns the prototypes.
+        # This is a key change needed on the client side.
+        for client_cid, client_proxy in client_manager.all().items():
+            try:
+                # Use a custom 'get_prototypes' instruction to fetch only prototypes
+                props = client_proxy.get_properties(GetPropertiesIns(config={"request": "prototypes"}), timeout=3600)
+                prototypes_encoded = props.properties.get("prototypes")
+                class_counts_encoded = props.properties.get("class_counts")
+
+                if prototypes_encoded and class_counts_encoded:
+                    prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
+                    class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
+                    
+                    all_prototypes.append(prototypes)
+                    client_ids.append(client_cid)
+                    class_counts_list.append(class_counts)
+                else:
+                    print(f"[Clustering] Client {client_cid} did not return prototypes. Skipping.")
+            except Exception as e:
+                print(f"[Clustering] Failed to get prototypes from client {client_cid}: {e}. Skipping.")
+
+        if not all_prototypes:
+            print("[Clustering] No prototypes received from any client. Cannot cluster.")
+            return
+
+        # 2. Convert prototypes to numpy arrays
+        proto_arrays = []
+        for p in all_prototypes:
+            proto_arrays.append({
+                cls: np.array(proto)
+                for cls, proto in p.items()
+            })
+
+        # 3. Perform EM Clustering on ALL collected prototypes
+        if not self.cluster_prototypes:
+            print("[Clustering] Initializing clusters for the first time.")
+            self.cluster_prototypes = self._initialize_clusters(proto_arrays)
+        
+        assignments = self._e_step(proto_arrays, client_ids)
+        self.cluster_prototypes = self._m_step(proto_arrays, client_ids, assignments, class_counts_list)
+
+        # 4. Update the global client assignments map
+        self.client_assignments.clear()  # Clear old assignments
+        self.client_assignments.update(assignments)
+        print(f"[Clustering] Updated assignments for {len(self.client_assignments)} clients.")
+        
 
 
+    '''
     def aggregate_fit(
         self,
         server_round: int,
@@ -469,7 +531,58 @@ save_dir="feature_visualizations_gpaf"
         except Exception as e:
             print("[Server] Failed to save logs:", e)
         return ndarrays_to_parameters(aggregated_params),config
-    
+    '''
+    # --- MODIFIED aggregate_fit: REMOVED CLUSTERING LOGIC ---
+    def aggregate_fit(
+        self,
+        server_round: int,
+        results: List[Tuple[ClientProxy, FitRes]],
+        failures: List[Union[Tuple[ClientProxy, FitRes], BaseException]],
+    ) -> Tuple[Optional[Parameters], Dict[str, Scalar]]:
+        """Aggregate results and update generator."""
+        print(f'results failure {failures}')
+        if not results:
+            return None, {}
+
+        # Log and process metrics from the clients
+        clients_params_list = []
+        num_samples_list = []
+        
+        for client_proxy, fit_res in results:
+            client_id = client_proxy.cid
+            metrics = fit_res.metrics
+            
+            # Update EMA training times and utility scores
+            if "duration" in metrics:
+                ema_alpha = 0.3
+                if client_id not in self.training_times:
+                    self.training_times[client_id] = metrics["duration"]
+                else:
+                    self.training_times[client_id] = (
+                        ema_alpha * metrics["duration"] +
+                        (1 - ema_alpha) * self.training_times[client_id]
+                    )
+            
+            if "loss_sq_mean" in metrics and "data_size" in metrics:
+                stat_util = metrics["data_size"] * metrics["loss_sq_mean"]
+                self.stat_util[client_id] = stat_util
+            
+            clients_params_list.append(parameters_to_ndarrays(fit_res.parameters))
+            num_samples_list.append(fit_res.num_examples)
+
+            # --- NEW: Cache prototypes from selected clients for potential future use ---
+            # This is optional but good practice to avoid re-fetching immediately
+            if "prototypes" in metrics and "class_counts" in metrics:
+                self.client_prototypes_cache[client_id] = {
+                    "prototypes": pickle.loads(base64.b64decode(metrics["prototypes"])),
+                    "class_counts": pickle.loads(base64.b64decode(metrics["class_counts"])),
+                }
+
+        # Perform parameter aggregation (FedAvg)
+        aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
+        
+        # Return aggregated parameters and an empty dictionary for metrics
+        return ndarrays_to_parameters(aggregated_params), {}
 
 
 
@@ -751,7 +864,7 @@ save_dir="feature_visualizations_gpaf"
             return 0.4, 0.6
 
     #fedavg evaluate_fit
-
+    '''
     def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
         """Override to inject straggler simulation logic."""
 
@@ -787,7 +900,7 @@ save_dir="feature_visualizations_gpaf"
             
         return updated_fit_ins
       
-    '''
+    
     def configure_fit(
         self, server_round: int, parameters: Parameters, client_manager: ClientManager
     ) -> List[Tuple[ClientProxy, FitIns]]:
@@ -927,7 +1040,121 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
     '''
-  
+    # --- MODIFIED configure_fit: ADDED CLUSTERING CALL ---
+    def configure_fit(
+        self, server_round: int, parameters: Parameters, client_manager: ClientManager
+    ) -> List[Tuple[ClientProxy, FitIns]]:
+        print(f"\n[CSMDA] Configuring round {server_round}")
+        
+        # --- NEW: Set up straggler profiles on the very first round ---
+        if not self.client_straggler_profiles:
+            self._setup_straggler_profiles(client_manager)
+            
+        # --- NEW: Periodically run the clustering on ALL clients ---
+        # We perform this at the start of a round to inform the selection process
+        clustering_interval = 5  # Example: Cluster every 5 rounds
+        if server_round == 1 or server_round % clustering_interval == 0:
+            self._update_client_assignments(server_round, client_manager)
+
+        # The rest of your configure_fit logic remains the same, but it now
+        # operates on a self.client_assignments dictionary that is always up-to-date
+        # for all available clients after a clustering round.
+
+        # 1. Update Client Targets (Fairness) based on PREVIOUS round's evaluation accuracies
+        self._update_client_targets(server_round)
+        available_client_cids = list(client_manager.all().keys())
+        if not available_client_cids:
+            return []
+        
+        # 2. First round or no assignments yet: random selection for initialization
+        if server_round == 1 or not self.client_assignments:
+            print("[CSMDA] First round or no assignments - random selection for clustering initialization")
+            selected_clients_cids = available_client_cids[:min(self.min_fit_clients, len(available_client_cids))]
+            
+            instructions = []
+            for client_id in selected_clients_cids:
+                client_proxy = client_manager.all()[client_id]
+                client_config_for_fit = {"server_round": server_round}
+                straggler_profile = self.client_straggler_profiles.get(client_id, "normal")
+                simulate_delay = False
+                if straggler_profile == "permanent":
+                    simulate_delay = True
+                elif straggler_profile == "occasional" and random.random() > 0.5:
+                    simulate_delay = True
+                client_config_for_fit["simulate_delay"] = simulate_delay
+                instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
+                self.selection_counts[client_id] += 1
+            print(f"[CSMDA] Round {server_round}: Selected initial clients: {selected_clients_cids}")
+            return instructions
+        
+        # --- Main Selection Logic for subsequent rounds (Cluster-based) ---
+        
+        # 3. Group clients by cluster assignment (now using the full, updated dictionary)
+        clusters = defaultdict(list)
+        for client_id in available_client_cids:
+            if client_id in self.client_assignments:
+                cluster_id = self.client_assignments[client_id]
+                clusters[cluster_id].append(client_id)
+            else:
+                # Fallback for new clients that joined since the last clustering round
+                if clusters:
+                    min_cluster_id = min(clusters, key=lambda k: len(clusters[k]))
+                    self.client_assignments[client_id] = min_cluster_id
+                    clusters[min_cluster_id].append(client_id)
+                    print(f"[CSMDA] Client {client_id} (new) added to cluster {min_cluster_id}.")
+                else:
+                    print(f"[CSMDA] Client {client_id} unassigned, no clusters exist yet.")
+
+        # 4. Compute Global Selection Scores for *all* available clients
+        global_scores = self._compute_global_selection_scores(available_client_cids, server_round)
+        selected_clients_cids = []
+        
+        # 5. Apply Cluster-based Selection
+        active_clusters_with_clients = [c_id for c_id, clients in clusters.items() if clients]
+        if active_clusters_with_clients:
+            clients_per_cluster_base = self.min_fit_clients // len(active_clusters_with_clients)
+            extra_clients = self.min_fit_clients % len(active_clusters_with_clients)
+            
+            for i, cluster_id in enumerate(active_clusters_with_clients):
+                cluster_clients = clusters[cluster_id]
+                cluster_clients_sorted = sorted(cluster_clients, key=lambda cid: global_scores.get(cid, 0.0), reverse=True)
+                num_to_select_for_cluster = clients_per_cluster_base
+                if i < extra_clients:
+                    num_to_select_for_cluster += 1
+                num_to_select_for_cluster = min(num_to_select_for_cluster, len(cluster_clients_sorted))
+                selected_clients_cids.extend(cluster_clients_sorted[:num_to_select_for_cluster])
+        else:
+            print("[CSMDA] No active clusters, falling back to global selection.")
+        
+        selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
+        if not selected_clients_cids:
+            return []
+
+        # 6. Prepare FitIns for the chosen clients and update selection counts
+        instructions = []
+        for client_id in selected_clients_cids:
+            client_proxy = client_manager.all()[client_id]
+            client_config_for_fit = {"server_round": server_round}
+            
+            if client_id in self.client_assignments:
+                cluster_id = self.client_assignments[client_id]
+                client_config_for_fit["cluster_id"] = cluster_id
+            
+            straggler_profile = self.client_straggler_profiles.get(client_id, "normal")
+            simulate_delay = False
+            if straggler_profile == "permanent":
+                simulate_delay = True
+            elif straggler_profile == "occasional":
+                if random.random() > 0.5:
+                    simulate_delay = True
+            
+            client_config_for_fit["simulate_delay"] = simulate_delay
+            instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
+            self.selection_counts[client_id] += 1
+            
+        print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
+        return instructions
+        
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:

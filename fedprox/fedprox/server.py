@@ -918,13 +918,17 @@ save_dir="feature_visualizations_gpaf"
         try:
             # FIX: Add the required 'group_id=None' argument
             get_protos_res = client_proxy.get_properties(get_protos_ins, timeout=10.0, group_id=None)
-            
+
             if get_protos_res.properties and "prototypes" in get_protos_res.properties:
                 prototypes = pickle.loads(base64.b64decode(get_protos_res.properties["prototypes"]))
                 class_counts = pickle.loads(base64.b64decode(get_protos_res.properties["class_counts"]))
                 all_prototypes_list.append(prototypes)
                 client_ids_with_protos.append(cid)
                 class_counts_list.append(class_counts)
+                print(f"Server successfully received prototypes from client {cid}.")
+
+            else:
+               print(f"Server received empty properties from client {cid}. of proto : {prototypes}")
         except Exception as e:
             # Log the specific error to help with debugging
             print(f"Failed to get prototypes from client {cid}: {e}")

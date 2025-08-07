@@ -240,6 +240,8 @@ class FederatedClient(fl.client.Client):
       # === CRITICAL FIX: Cache the unencoded prototypes and class counts ===
       self.prototypes_from_last_round = prototypes
       self.class_counts_from_last_round = class_counts
+
+      print(f"Client {self.client_id} successfully cached prototypes for {len(prototypes)} classes.")
     
       training_duration = time.time() - start_time
       status = Status(code=Code.OK, message="Success")
@@ -259,9 +261,14 @@ class FederatedClient(fl.client.Client):
     # The get_properties method remains the same and is now correct
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
       """Returns client properties, including prototypes if requested."""
+      
+      
       status = Status(code=Code.OK, message="Success")
+
       if ins.config.get("request") == "prototypes":
         if hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None:
+            print(f"Client {self.client_id}: Prototypes are available. Sending to server.")
+
             all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
             class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
             return GetPropertiesRes(
@@ -272,6 +279,8 @@ class FederatedClient(fl.client.Client):
                 })
         
         else:
+            print(f"Client {self.client_id}: ERROR! Prototypes are NOT available. Returning empty properties.")
+
             return GetPropertiesRes(status=status, properties={})
       return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
 

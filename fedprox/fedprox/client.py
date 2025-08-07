@@ -112,7 +112,7 @@ class FederatedClient(fl.client.Client):
         else:
             return GetPropertiesRes(status=status, properties={})
       return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
-
+ 
 
     # In your client class
 

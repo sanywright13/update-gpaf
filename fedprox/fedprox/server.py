@@ -891,7 +891,7 @@ save_dir="feature_visualizations_gpaf"
     '''
 
     
-    
+  
     def configure_fit(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, FitIns]]:
@@ -900,7 +900,6 @@ save_dir="feature_visualizations_gpaf"
       # 1. Update Client Targets (Fairness)
       self._update_client_targets(server_round)
 
-      # Get all currently available clients
       all_clients = client_manager.all()
       available_client_cids = list(all_clients.keys())
 
@@ -913,28 +912,23 @@ save_dir="feature_visualizations_gpaf"
       all_prototypes_list = []
       client_ids_with_protos = []
       class_counts_list = []
-
-      # Prepare GetPropertiesIns with a special request flag
       get_protos_ins = GetPropertiesIns(config={"request": "prototypes"})
 
-      # This loop gathers prototypes from every available client
       for cid, client_proxy in all_clients.items():
         try:
-            # Use the get_properties method to get prototypes
-            get_protos_res = client_proxy.get_properties(get_protos_ins, timeout=10.0)
-            if get_protos_res.properties:
-                # Decode the prototypes and class counts
+            # FIX: Add the required 'group_id=None' argument
+            get_protos_res = client_proxy.get_properties(get_protos_ins, timeout=10.0, group_id=None)
+            
+            if get_protos_res.properties and "prototypes" in get_protos_res.properties:
                 prototypes = pickle.loads(base64.b64decode(get_protos_res.properties["prototypes"]))
                 class_counts = pickle.loads(base64.b64decode(get_protos_res.properties["class_counts"]))
-
                 all_prototypes_list.append(prototypes)
                 client_ids_with_protos.append(cid)
                 class_counts_list.append(class_counts)
         except Exception as e:
+            # Log the specific error to help with debugging
             print(f"Failed to get prototypes from client {cid}: {e}")
 
-      # If this is the first round, the clients may not have prototypes yet.
-      # In that case, fall back to random selection to initialize training.
       # 3. Handle the first round/no prototypes case separately
       if not all_prototypes_list or len(all_prototypes_list) < self.num_clusters:
         print("[CSMDA] No or insufficient prototypes received. Performing initial random selection.")
@@ -949,40 +943,34 @@ save_dir="feature_visualizations_gpaf"
             instructions.append((client_proxy, fit_ins))
             self.selection_counts[client_id] += 1
         
-        # This is the crucial fix: RETURN immediately after the initial selection.
         return instructions
 
-      # Re-use the existing clustering logic from aggregate_fit, but apply it here instead.
+      # --- The code below will ONLY run after the first round, once prototypes are available ---
+
+      # 4. Perform Clustering using the collected prototypes
       print("[CSMDA] Performing clustering on all available clients.")
-      # Initialize clusters if this is the first clustering run
       if server_round == 1 or not self.client_assignments:
         self.cluster_prototypes = self._initialize_clusters(all_prototypes_list)
     
-      # E-step: assign clients to clusters
       self.client_assignments = self._e_step(all_prototypes_list, client_ids_with_protos)
-
-      # M-step: update cluster prototypes
       self.cluster_prototypes = self._m_step(all_prototypes_list, client_ids_with_protos, self.client_assignments, class_counts_list)
 
-      # 4. Group clients by cluster assignment
+      # 5. Group clients by cluster assignment
       clusters = defaultdict(list)
       for client_id in available_client_cids:
-        # Only consider clients that were part of the clustering process
         if client_id in self.client_assignments:
             cluster_id = self.client_assignments[client_id]
             clusters[cluster_id].append(client_id)
         else:
-            # Handle clients that didn't send prototypes (e.g., they didn't train in the last round)
-            # You can assign them to a default cluster or ignore them for this round.
+            # Fallback for clients without a prototype
             pass
     
-      # 5. Compute Global Selection Scores for *all* available clients
+      # 6. Compute Global Selection Scores for *all* available clients
       global_scores = self._compute_global_selection_scores(available_client_cids, server_round)
 
       selected_clients_cids = []
     
-      # 6. Apply Cluster-based Selection
-      # This logic remains the same.
+      # 7. Apply Cluster-based Selection
       active_clusters_with_clients = [c_id for c_id, clients in clusters.items() if clients]
       if active_clusters_with_clients:
         clients_per_cluster_base = self.min_fit_clients // len(active_clusters_with_clients)
@@ -994,18 +982,13 @@ save_dir="feature_visualizations_gpaf"
             num_to_select = min(clients_per_cluster_base + (1 if i < extra_clients else 0), len(cluster_clients_sorted))
             selected_clients_cids.extend(cluster_clients_sorted[:num_to_select])
 
-      # Finalize selection list to match min_fit_clients
       selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
     
-      # 7. Prepare FitIns for the chosen clients and update selection counts
+      # 8. Prepare FitIns for the chosen clients and update selection counts
       instructions = []
       for client_id in selected_clients_cids:
         client_proxy = all_clients[client_id]
         client_config_for_fit = {"server_round": server_round}
-        
-        # Pass cluster info if needed
-        # (Your original code commented this out, but it's where you'd put it)
-
         instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
         self.selection_counts[client_id] += 1
     

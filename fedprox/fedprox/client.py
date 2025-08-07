@@ -93,26 +93,40 @@ class FederatedClient(fl.client.Client):
       self.net.load_state_dict(state_dict, strict=True)
 
     #get the updated model parameters from the local model return local model parameters
-    # In your client class
     # In your client class, replace your old get_properties method with this:
-    def get_properties(self, ins: fl.common.GetPropertiesIns) -> fl.common.GetPropertiesRes:
+
+    def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
       """Returns client properties, including prototypes if requested."""
-    
+
+      # Define a status object for success
+      status = Status(code=Code.OK, message="Success")
+  
       if ins.config.get("request") == "prototypes":
         if hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None:
-            all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
-            class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
+          all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
+          class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
 
-            return fl.common.GetPropertiesRes(properties={
+          return GetPropertiesRes(
+            status=status,  # <-- ADD THIS
+            properties={
                 "prototypes": all_prototypes_encoded,
                 "class_counts": class_counts_encoded
-            })
+            }
+          )
         else:
-            return fl.common.GetPropertiesRes(properties={})
+          # If prototypes are not available, return a successful status with empty properties
+          return GetPropertiesRes(
+            status=status,  # <-- ADD THIS
+            properties={}
+        )
 
-      return fl.common.GetPropertiesRes(properties={
-        "simulation_index": self.client_id
-    })
+      # For other requests, return a successful status with default properties
+      return GetPropertiesRes(
+      status=status,  # <-- ADD THIS
+      properties={
+          "simulation_index": self.client_id
+      }
+  )
 
 
     

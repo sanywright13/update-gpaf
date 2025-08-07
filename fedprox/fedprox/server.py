@@ -1228,7 +1228,7 @@ save_dir="feature_visualizations_gpaf"
       print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
       return instructions
 
-    def _get_client_properties(self, client: fl.server.client_proxy.ClientProxy):
+    def _get_client_properties(self, client: flwr.server.client_proxy.ClientProxy):
       """Helper to get properties from a client with a dedicated message."""
       return client.get_properties(fl.common.GetPropertiesIns(config={"request": "prototypes"}), timeout=30)
     

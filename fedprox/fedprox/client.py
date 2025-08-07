@@ -270,6 +270,7 @@ class FederatedClient(fl.client.Client):
                     "prototypes": all_prototypes_encoded,
                     "class_counts": class_counts_encoded
                 })
+        
         else:
             return GetPropertiesRes(status=status, properties={})
       return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})

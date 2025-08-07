@@ -135,16 +135,13 @@ class FederatedClient(fl.client.Client):
 
     # In your client class
 
-
-    def get_parameters(self, config: Config) -> GetParametersRes:
-      """Return local model parameters as a GetParametersRes object."""
-      # Convert the list of NumPy arrays to a Parameters object
+    def get_parameters(self, config: Config) -> Parameters:
+      """Return local model parameters as a Parameters object."""
+      # This line remains the same
       ndarray_list = [val.cpu().numpy() for _, val in self.net.state_dict().items()]
-      parameters = ndarrays_to_parameters(ndarray_list)
 
-      # Return the Parameters object inside a GetParametersRes object
-      return GetParametersRes(status=Status(code=Code.OK, message="Success"), parameters=parameters)
-   
+      # Return the Parameters object directly, without the GetParametersRes wrapper
+      return ndarrays_to_parameters(ndarray_list)
     #second and call set_para  
     def evaluate(self, parameters: NDArrays, config: Dict[str, Scalar]
     ) -> Tuple[float, int, Dict]:

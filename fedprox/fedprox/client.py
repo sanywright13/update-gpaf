@@ -302,6 +302,7 @@ class FederatedClient(fl.client.Client):
      training_duration = time.time() - start_time
 
      return FitRes(
+        status=status,  # <-- ADD THIS
         parameters=self.get_parameters(config),
         num_examples=len(self.traindata),
         metrics={

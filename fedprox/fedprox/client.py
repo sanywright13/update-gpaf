@@ -115,9 +115,11 @@ class FederatedClient(fl.client.Client):
 
     
 
-    def get_parameters(self , config: Dict[str, Scalar] = None):
-        return [val.cpu().numpy() for _, val in self.net.state_dict().items()]
-
+    # In your client class
+    def get_parameters(self, config: Config) -> Parameters:
+      """Return local model parameters as a Parameters object."""
+      # Convert the list of NumPy arrays to a Parameters object
+      return fl.common.ndarrays_to_parameters([val.cpu().numpy() for _, val in self.net.state_dict().items()])
 
    
     #second and call set_para  

@@ -886,115 +886,89 @@ save_dir="feature_visualizations_gpaf"
         return instructions
     '''
 
+    # --- ENHANCED configure_fit: Robust client selection ---
     def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
-     print(f"\n[CSMDA] Configuring round {server_round}")
+        print(f"\n[CSMDA] Configuring round {server_round}")
+        all_clients = client_manager.all()
+        available_client_cids = list(all_clients.keys())
 
-     all_clients = client_manager.all()
-     available_client_cids = list(all_clients.keys())
+        if not available_client_cids:
+            print(f"[CSMDA] Round {server_round}: No clients available for selection.")
+            return []
 
-     if not available_client_cids:
-        print(f"[CSMDA] Round {server_round}: No clients available for selection.")
-        return []
+        clients_with_prototypes = []
+        clients_without_prototypes = []
+        all_prototypes_list = []
+        client_ids_with_protos = []
+        class_counts_list = []
 
-     # === FIXED LOGIC: Separate Round 1 from all other rounds ===
-     # In round 1, we must perform a simple random selection to allow clients
-     # to train and generate their initial prototypes.
-     if server_round == 1:
-        print("[CSMDA] Round 1: Performing initial random selection to generate prototypes for the next round.")
-        num_to_select = min(self.min_fit_clients, len(available_client_cids))
-        selected_clients_cids = random.sample(available_client_cids, num_to_select)
+        # Request prototypes from ALL available clients
+        for cid, client_proxy in all_clients.items():
+            try:
+                get_protos_res = client_proxy.get_properties(
+                    ins=GetPropertiesIns(config={"request": "prototypes"}), 
+                    timeout=10.0, 
+                    group_id=None
+                )
+                
+                prototypes_encoded = get_protos_res.properties.get("prototypes")
+                class_counts_encoded = get_protos_res.properties.get("class_counts")
+
+                if prototypes_encoded and class_counts_encoded:
+                    prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
+                    class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
+                    all_prototypes_list.append(prototypes)
+                    client_ids_with_protos.append(cid)
+                    class_counts_list.append(class_counts)
+                    clients_with_prototypes.append(cid)
+                else:
+                    clients_without_prototypes.append(cid)
+            except Exception as e:
+                clients_without_prototypes.append(cid)
+
+        selected_clients_cids = []
+
+        # Strategy 1: Perform clustering-based selection on clients with prototypes
+        if len(clients_with_prototypes) >= self.num_clusters and server_round > 1:
+            self.client_assignments = self._e_step(all_prototypes_list, client_ids_with_protos)
+            self.cluster_prototypes = self._m_step(all_prototypes_list, client_ids_with_protos, self.client_assignments, class_counts_list)
+            
+            clusters = defaultdict(list)
+            for client_id in clients_with_prototypes:
+                clusters[self.client_assignments[client_id]].append(client_id)
+            
+            global_scores = self._compute_global_selection_scores(clients_with_prototypes, server_round)
+            
+            num_to_select_from_clusters = max(0, self.min_fit_clients - len(clients_without_prototypes))
+            active_clusters = [c_id for c_id, clients in clusters.items() if clients]
+            if active_clusters:
+                clients_per_cluster_base = num_to_select_from_clusters // len(active_clusters)
+                extra_clients = num_to_select_from_clusters % len(active_clusters)
+                
+                for i, cluster_id in enumerate(active_clusters):
+                    cluster_clients = clusters[cluster_id]
+                    cluster_clients_sorted = sorted(cluster_clients, key=lambda cid: global_scores.get(cid, 0.0), reverse=True)
+                    num_to_select = min(clients_per_cluster_base + (1 if i < extra_clients else 0), len(cluster_clients_sorted))
+                    selected_clients_cids.extend(cluster_clients_sorted[:num_to_select])
+
+        # Strategy 2: Fallback or mixed selection
+        num_to_select_randomly = self.min_fit_clients - len(selected_clients_cids)
+        if num_to_select_randomly > 0 and clients_without_prototypes:
+            selected_clients_cids.extend(random.sample(clients_without_prototypes, min(num_to_select_randomly, len(clients_without_prototypes))))
+
+        if not selected_clients_cids and available_client_cids:
+            num_to_select = min(self.min_fit_clients, len(available_client_cids))
+            selected_clients_cids = random.sample(available_client_cids, num_to_select)
 
         instructions = []
         for client_id in selected_clients_cids:
             client_proxy = all_clients[client_id]
-            fit_ins = FitIns(parameters, {"server_round": server_round})
-            instructions.append((client_proxy, fit_ins))
+            client_config_for_fit = {"server_round": server_round}
+            instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
             self.selection_counts[client_id] += 1
-        
+      
+        print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
         return instructions
-    
-     # === All other rounds (server_round > 1) proceed with your full methodology ===
-     # We can now assume that clients have prototypes from the previous round.
-    
-     # 1. Request Prototypes from ALL available clients
-     print(f"[CSMDA] Round {server_round}: Requesting prototypes from all available clients for clustering.")
-     all_prototypes_list = []
-     client_ids_with_protos = []
-     class_counts_list = []
-    
-     for cid, client_proxy in all_clients.items():
-        try:
-            # We can now safely assume clients have prototypes from round 1
-            get_protos_res = client_proxy.get_properties(
-                ins=GetPropertiesIns(config={"request": "prototypes"}), 
-                timeout=10.0, 
-                group_id=None
-            )
-            
-            prototypes_encoded = get_protos_res.properties.get("prototypes")
-            class_counts_encoded = get_protos_res.properties.get("class_counts")
-
-            if prototypes_encoded and class_counts_encoded:
-                prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
-                class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
-                
-                all_prototypes_list.append(prototypes)
-                client_ids_with_protos.append(cid)
-                class_counts_list.append(class_counts)
-                print(f"Server successfully received prototypes from client {cid}.")
-            else:
-                print(f"Server received empty properties from client {cid}. Skipping.")
-        except Exception as e:
-            print(f"Failed to get prototypes from client {cid}: {e}. Skipping.")
-
-     # 2. Handle cases with insufficient prototypes for clustering
-     if not all_prototypes_list or len(all_prototypes_list) < self.num_clusters:
-        print("[CSMDA] Insufficient prototypes for clustering. Performing random selection as fallback.")
-        num_to_select = min(self.min_fit_clients, len(available_client_cids))
-        selected_clients_cids = random.sample(available_client_cids, num_to_select)
-     else:
-        # 3. Perform Clustering using the collected prototypes
-        print("[CSMDA] Performing clustering on all available clients.")
-        if server_round == 2 or not self.client_assignments:
-            self.cluster_prototypes = self._initialize_clusters(all_prototypes_list)
-    
-        self.client_assignments = self._e_step(all_prototypes_list, client_ids_with_protos)
-        self.cluster_prototypes = self._m_step(all_prototypes_list, client_ids_with_protos, self.client_assignments, class_counts_list)
-        
-        # 4. Group clients by cluster assignment and compute scores
-        clusters = defaultdict(list)
-        for client_id in available_client_cids:
-            if client_id in self.client_assignments:
-                clusters[self.client_assignments[client_id]].append(client_id)
-            else:
-                pass
-        
-        global_scores = self._compute_global_selection_scores(available_client_cids, server_round)
-        
-        # 5. Apply Cluster-based Selection
-        selected_clients_cids = []
-        active_clusters_with_clients = [c_id for c_id, clients in clusters.items() if clients]
-        if active_clusters_with_clients:
-            clients_per_cluster_base = self.min_fit_clients // len(active_clusters_with_clients)
-            extra_clients = self.min_fit_clients % len(active_clusters_with_clients)
-            
-            for i, cluster_id in enumerate(active_clusters_with_clients):
-                cluster_clients = clusters[cluster_id]
-                cluster_clients_sorted = sorted(cluster_clients, key=lambda cid: global_scores.get(cid, 0.0), reverse=True)
-                num_to_select = min(clients_per_cluster_base + (1 if i < extra_clients else 0), len(cluster_clients_sorted))
-                selected_clients_cids.extend(cluster_clients_sorted[:num_to_select])
-
-     # 6. Prepare FitIns for the chosen clients and update selection counts
-     selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
-     instructions = []
-     for client_id in selected_clients_cids:
-        client_proxy = all_clients[client_id]
-        client_config_for_fit = {"server_round": server_round}
-        instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
-        self.selection_counts[client_id] += 1
-  
-     print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
-     return instructions
    
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

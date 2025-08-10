@@ -264,14 +264,14 @@ class FederatedClient(fl.client.Client):
         if ins.config.get("request") == "prototypes":
             if hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None:
                 print(f"==========Client {self.client_id}: Prototypes are available. Sending to server.========")
+                """
                 prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
-                class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
                 return GetPropertiesRes(
                     status=status,
                     properties={
                         "prototypes": prototypes_encoded,
-                        "class_counts": class_counts_encoded
                     })
+                """
             else:
                 print(f"Client {self.client_id}: ERROR! Prototypes are NOT available. Returning empty properties.")
                 return GetPropertiesRes(status=status, properties={})

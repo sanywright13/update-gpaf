@@ -194,7 +194,7 @@ class FederatedClient(fl.client.Client):
         start_time = time.time()
         
         # Train the model
-        self.train(self.net, self.traindata, self.device, epochs=self.local_epochs)
+        self.train(self.net, self.traindata, self.client_id, epochs=self.local_epochs, simulate_delay=simulate_delay)
         
         training_duration = time.time() - start_time
 

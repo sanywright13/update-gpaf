@@ -704,11 +704,12 @@ save_dir="feature_visualizations_gpaf"
         if server_round <= self.phase_threshold:
             return 0.7, 0.3
         else:
+          return 0.4,0.6
   
 
     #fedavg evaluate_fit
     '''
-    def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
+      def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
         """Override to inject straggler simulation logic."""
 
         # Call the original FedAvg configure_fit to perform client selection

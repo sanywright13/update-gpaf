@@ -307,13 +307,7 @@ save_dir="feature_visualizations_gpaf"
     
     # --- NEW METHOD: Periodically update client clusters ---
     def _update_client_assignments(self, server_round: int, client_manager: ClientManager):
-      """
-      Periodically fetches prototypes from all available clients and updates cluster assignments.
-    
-      This method decouples clustering from the fit aggregation step, ensuring that the 
-      clustering algorithm considers all clients, not just the selected ones from the
-      previous round.
-      """
+      
       print(f"[Clustering] Starting periodic clustering update for round {server_round}")
 
       available_client_proxies = client_manager.all()
@@ -387,36 +381,36 @@ save_dir="feature_visualizations_gpaf"
     results: List[Tuple[ClientProxy, FitRes]],
     failures: List[Union[Tuple[ClientProxy, FitRes], BaseException]],
 ) -> Tuple[Optional[Parameters], Dict[str, Scalar]]:
-      """
-      Aggregates model parameters from selected clients and logs their training metrics.
-    
-      This function's primary role is to combine the model updates from the current
-      round's participants. The clustering and selection logic are handled in
-      the `configure_fit` method.
-      """
       print(f'results failure: {failures}')
       if not results:
-        # Handle the case where no clients returned results.
         print("No clients returned results. Aggregation skipped.")
         return None, {}
 
       clients_params_list = []
       num_samples_list = []
-    
+  
+      # To compute the global T_max, we'll need a list of durations from this round
+      current_round_durations = []
+
       for client_proxy, fit_res in results:
         client_id = client_proxy.cid
         metrics = fit_res.metrics
         
-        # 1. Update EMA training times and utility scores
+        # 1. Update EWMA for client-specific training time (T_c)
         if "duration" in metrics:
+            duration = metrics["duration"]
             ema_alpha = 0.3
             if client_id not in self.training_times:
-                self.training_times[client_id] = metrics["duration"]
+                # Initialize T_c for new clients
+                self.training_times[client_id] = duration
             else:
+                # Update T_c using EWMA
                 self.training_times[client_id] = (
-                    ema_alpha * metrics["duration"] +
+                    ema_alpha * duration +
                     (1 - ema_alpha) * self.training_times[client_id]
                 )
+            # Add duration to the list for global T_max calculation
+            current_round_durations.append(duration)
         
         if "loss_sq_mean" in metrics and "data_size" in metrics:
             stat_util = metrics["data_size"] * metrics["loss_sq_mean"]
@@ -426,13 +420,22 @@ save_dir="feature_visualizations_gpaf"
         clients_params_list.append(parameters_to_ndarrays(fit_res.parameters))
         num_samples_list.append(fit_res.num_examples)
 
-      # 3. Perform parameter aggregation (FedAvg)
+      # 3. Update the global T_max using EWMA after processing all clients
+      # This ensures a stable, long-term average
+      if current_round_durations:
+        current_avg_duration = sum(current_round_durations) / len(current_round_durations)
+        ewma_decay = 0.1 # A smaller decay for a more stable global average
+        if self.global_T_max == 0.0:
+            self.global_T_max = current_avg_duration
+        else:
+            self.global_T_max = (1 - ewma_decay) * self.global_T_max + ewma_decay * current_avg_duration
+
+      # 4. Perform parameter aggregation (FedAvg)
       aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
-    
-      # 4. Return aggregated parameters and an empty dictionary for metrics
-      # Note: Metrics from this round could be returned here if needed, but for simplicity
-      # and consistency with your draft, we return an empty dict.
+  
+      # 5. Return aggregated parameters and metrics
       return ndarrays_to_parameters(aggregated_params), {}
+
 
 
     def _visualize_clusters(self, prototypes, client_ids, server_round, true_domain_map=None):
@@ -625,74 +628,64 @@ save_dir="feature_visualizations_gpaf"
             print(f"[Warning] Could not load client logs: {e}")
             return {}
    
-
-    def _update_client_targets(self, server_round: int):
-        if not self._current_accuracies:
-            print(f"[Fairness Update] Round {server_round}: No current accuracies from previous round's evaluation to update targets.")
-            return
-
-        total_acc = sum(self._current_accuracies.values())
-        num_evaluated_clients = len(self._current_accuracies)
-        
-        if num_evaluated_clients == 0:
-            print(f"[Fairness Update] Round {server_round}: No evaluated clients, cannot compute Avg_Acc_Global for target update.")
-            self._current_accuracies = {}
-            return
+    def _update_training_times(self, fit_results: List[Tuple[ClientProxy, FitRes]]):
+        """Update the training times and the global T_max using EWMA."""
+        for client_proxy, fit_res in fit_results:
+            duration = fit_res.metrics.get("duration", 0.0)
+            client_id = str(client_proxy.cid)
             
-        Avg_Acc_Global = total_acc / num_evaluated_clients
-        print(f"[Fairness Update] Round {server_round}: Global Average Accuracy (prev round): {Avg_Acc_Global:.4f}")
-
-        for client_id, current_acc in self._current_accuracies.items():
-            current_target = self.client_targets[client_id]
-
-            if current_acc < Avg_Acc_Global - self.acc_drop_threshold:
-                self.client_targets[client_id] = min(self.max_target_selections, current_target + 1)
-                print(f"[Fairness Update] Client {client_id}: Acc {current_acc:.4f} < Avg_Acc {Avg_Acc_Global:.4f}. Target increased from {current_target} to {self.client_targets[client_id]}")
+            # Store the latest training time
+            self.training_times[client_id] = duration
+            
+            # Update the global T_max using EWMA
+            if self.global_T_max == 0.0:
+                self.global_T_max = duration
             else:
-                print(f"[Fairness Update] Client {client_id}: Acc {current_acc:.4f} >= Avg_Acc {Avg_Acc_Global:.4f}. Target remains {current_target}")
+                self.global_T_max = (1 - self.ewma_decay) * self.global_T_max + self.ewma_decay * duration
 
-        self._current_accuracies = {}
-
-    
     def _compute_reliability_scores(self, client_ids: List[str]) -> Dict[str, float]:
+        """Computes reliability scores based on training duration relative to a stable T_max."""
         reliability_scores = {}
         
-        valid_times = [self.training_times[cid] for cid in client_ids 
-                       if self.training_times.get(cid, 0.0) > 0.0]
-
-        T_avg = sum(valid_times) / len(valid_times) if valid_times else 1.0
-
-        print(f"[Reliability] T_avg for current selection pool: {T_avg:.2f}s")
+        # Use the global, stable EWMA T_max
+        T_max = self.global_T_max if self.global_T_max > 0 else 1.0
 
         for client_id in client_ids:
-            T_c = self.training_times.get(client_id, T_avg)
-            penalty_term = max(0.0, T_c - T_avg)
+            T_c = self.training_times.get(client_id, T_max) # Default to T_max for new clients
+            penalty_term = max(0.0, T_c - T_max)
             score = np.exp(-self.reliability_lambda * penalty_term)
             
-            reliability_scores[client_id] = float(min(1.0, max(0.0, score)))
+            reliability_scores[client_id] = float(score)
             
         return reliability_scores
 
-    def _compute_fairness_scores(self, client_ids: List[str]) -> Dict[str, float]:
+    def _compute_fairness_scores(self, client_ids: List[str], server_round: int) -> Dict[str, float]:
+        """Computes fairness scores using the new sigmoid-based formulation."""
         fairness_scores = {}
+        T_total = server_round # Use current round number as T_total
+        n = len(self.selection_counts) # Total number of clients who have participated
+        
+        if n == 0:
+            return {cid: 0.5 for cid in client_ids} # Neutral score if no history
+            
         for client_id in client_ids:
             v_c = self.selection_counts.get(client_id, 0)
-            Target_c = self.client_targets.get(client_id, self.initial_target_selections)
-
-            if Target_c <= 0:
-                score = 0.0
-            else:
-                score = max(0.0, (Target_c - v_c) / Target_c)
+            
+            # Use the sigmoid-based score
+            ideal_selections = T_total / n
+            R_c = v_c / ideal_selections if ideal_selections > 0 else 0
+            
+            score = 1 / (1 + np.exp(self.fairness_k * (R_c - 1)))
             
             fairness_scores[client_id] = float(score)
             
         return fairness_scores
-
-
+    
     def _compute_global_selection_scores(self, client_ids: List[str], server_round: int) -> Dict[str, float]:
         reliability_scores = self._compute_reliability_scores(client_ids)
-        fairness_scores = self._compute_fairness_scores(client_ids)
+        fairness_scores = self._compute_fairness_scores(client_ids, server_round)
         
+        # Adapt weights over time
         alpha_1, alpha_2 = self._adapt_weights(server_round)
         
         final_scores = {}
@@ -706,11 +699,12 @@ save_dir="feature_visualizations_gpaf"
             print(f"  Client {cid}: R={reliability_scores.get(cid, 0):.3f}, F={fairness_scores.get(cid, 0):.3f}, Score={final_scores[cid]:.3f}")
         
         return final_scores
+
     def _adapt_weights(self, server_round: int) -> Tuple[float, float]:
         if server_round <= self.phase_threshold:
             return 0.7, 0.3
         else:
-            return 0.4, 0.6
+  
 
     #fedavg evaluate_fit
     '''
@@ -890,15 +884,10 @@ save_dir="feature_visualizations_gpaf"
         return instructions
     '''
 
-    
-  
     def configure_fit(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, FitIns]]:
       print(f"\n[CSMDA] Configuring round {server_round}")
-
-      # 1. Update Client Targets (Fairness)
-      self._update_client_targets(server_round)
 
       all_clients = client_manager.all()
       available_client_cids = list(all_clients.keys())
@@ -907,7 +896,7 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] Round {server_round}: No clients available for selection.")
         return []
 
-      # 2. Request Prototypes from ALL available clients
+      # Request Prototypes from ALL available clients
       print("[CSMDA] Requesting prototypes from all available clients for clustering.")
       all_prototypes_list = []
       client_ids_with_protos = []
@@ -916,24 +905,21 @@ save_dir="feature_visualizations_gpaf"
 
       for cid, client_proxy in all_clients.items():
         try:
-            # FIX: Add the required 'group_id=None' argument
-            get_protos_res = client_proxy.get_properties(get_protos_ins, timeout=10.0, group_id=None)
+          get_protos_res = client_proxy.get_properties(get_protos_ins, timeout=10.0, group_id=None)
 
-            if get_protos_res.properties and "prototypes" in get_protos_res.properties:
-                prototypes = pickle.loads(base64.b64decode(get_protos_res.properties["prototypes"]))
-                class_counts = pickle.loads(base64.b64decode(get_protos_res.properties["class_counts"]))
-                all_prototypes_list.append(prototypes)
-                client_ids_with_protos.append(cid)
-                class_counts_list.append(class_counts)
-                print(f"Server successfully received prototypes from client {cid}.")
-
-            else:
-               print(f"Server received empty properties from client {cid}. of proto : {prototypes}")
+          if get_protos_res.properties and "prototypes" in get_protos_res.properties:
+              prototypes = pickle.loads(base64.b64decode(get_protos_res.properties["prototypes"]))
+              class_counts = pickle.loads(base64.b64decode(get_protos_res.properties["class_counts"]))
+              all_prototypes_list.append(prototypes)
+              client_ids_with_protos.append(cid)
+              class_counts_list.append(class_counts)
+              print(f"Server successfully received prototypes from client {cid}.")
+          else:
+              print(f"Server received empty properties from client {cid}. Skipping.")
         except Exception as e:
-            # Log the specific error to help with debugging
-            print(f"Failed to get prototypes from client {cid}: {e}")
+          print(f"Failed to get prototypes from client {cid}: {e}. Skipping.")
 
-      # 3. Handle the first round/no prototypes case separately
+      # Handle the first round/no prototypes case separately
       if not all_prototypes_list or len(all_prototypes_list) < self.num_clusters:
         print("[CSMDA] No or insufficient prototypes received. Performing initial random selection.")
         
@@ -946,40 +932,36 @@ save_dir="feature_visualizations_gpaf"
             fit_ins = FitIns(parameters, {"server_round": server_round})
             instructions.append((client_proxy, fit_ins))
             self.selection_counts[client_id] += 1
-        
         return instructions
 
-      # --- The code below will ONLY run after the first round, once prototypes are available ---
-
-      # 4. Perform Clustering using the collected prototypes
+      # Perform Clustering using the collected prototypes
       print("[CSMDA] Performing clustering on all available clients.")
       if server_round == 1 or not self.client_assignments:
         self.cluster_prototypes = self._initialize_clusters(all_prototypes_list)
-    
+  
       self.client_assignments = self._e_step(all_prototypes_list, client_ids_with_protos)
       self.cluster_prototypes = self._m_step(all_prototypes_list, client_ids_with_protos, self.client_assignments, class_counts_list)
 
-      # 5. Group clients by cluster assignment
+      # Group clients by cluster assignment
       clusters = defaultdict(list)
       for client_id in available_client_cids:
         if client_id in self.client_assignments:
-            cluster_id = self.client_assignments[client_id]
-            clusters[cluster_id].append(client_id)
+            clusters[self.client_assignments[client_id]].append(client_id)
         else:
             # Fallback for clients without a prototype
             pass
-    
-      # 6. Compute Global Selection Scores for *all* available clients
+  
+      # Compute Global Selection Scores for *all* available clients
       global_scores = self._compute_global_selection_scores(available_client_cids, server_round)
 
       selected_clients_cids = []
-    
-      # 7. Apply Cluster-based Selection
+  
+      # Apply Cluster-based Selection
       active_clusters_with_clients = [c_id for c_id, clients in clusters.items() if clients]
       if active_clusters_with_clients:
         clients_per_cluster_base = self.min_fit_clients // len(active_clusters_with_clients)
         extra_clients = self.min_fit_clients % len(active_clusters_with_clients)
-        
+      
         for i, cluster_id in enumerate(active_clusters_with_clients):
             cluster_clients = clusters[cluster_id]
             cluster_clients_sorted = sorted(cluster_clients, key=lambda cid: global_scores.get(cid, 0.0), reverse=True)
@@ -987,25 +969,22 @@ save_dir="feature_visualizations_gpaf"
             selected_clients_cids.extend(cluster_clients_sorted[:num_to_select])
 
       selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
-    
-      # 8. Prepare FitIns for the chosen clients and update selection counts
+  
+      # Prepare FitIns for the chosen clients and update selection counts
       instructions = []
       for client_id in selected_clients_cids:
         client_proxy = all_clients[client_id]
         client_config_for_fit = {"server_round": server_round}
         instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
         self.selection_counts[client_id] += 1
-    
+  
       print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
       return instructions
-
    
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:
-      
-      """Configure the next round of evaluation."""
-     
+           
       sample_size, min_num_clients = self.num_evaluate_clients(client_manager)
       clients = client_manager.sample(
         num_clients=sample_size, min_num_clients=min_num_clients
@@ -1016,7 +995,8 @@ save_dir="feature_visualizations_gpaf"
       evaluate_ins = EvaluateIns(parameters, evaluate_config)
      
       # Return client-EvaluateIns pairs
-      return [(client, evaluate_ins) for client in clients]   
+      return [(client, evaluate_ins) for client in clients]
+
     def evaluate(
         self, server_round: int, parameters: Parameters
     ) -> Optional[Tuple[float, Dict[str, Scalar]]]:

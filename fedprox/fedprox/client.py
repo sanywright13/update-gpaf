@@ -260,31 +260,35 @@ class FederatedClient(fl.client.Client):
 
     # The get_properties method remains the same and is now correct
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
-      """Returns client properties, including prototypes if requested."""
-      
-      
-      status = Status(code=Code.OK, message="Success")
+     """Returns client properties, including prototypes if requested."""
+    
+     status = Status(code=Code.OK, message="Success")
 
-      if ins.config.get("request") == "prototypes":
+     if ins.config.get("request") == "prototypes":
+        # CRITICAL FIX: Check if the attribute exists AND is not None
         if hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None:
             print(f"Client {self.client_id}: Prototypes are available. Sending to server.")
 
-            all_prototypes_encoded = base64.b64encode(pickle.dumps(self.prototypes_from_last_round)).decode('utf-8')
-            class_counts_encoded = base64.b64encode(pickle.dumps(self.class_counts_from_last_round)).decode('utf-8')
+            # Ensure you're using the correct attribute name
+            prototypes_to_send = self.prototypes_from_last_round
+            class_counts_to_send = self.class_counts_from_last_round
+
+            # Serialize and encode the data
+            prototypes_encoded = base64.b64encode(pickle.dumps(prototypes_to_send)).decode('utf-8')
+            class_counts_encoded = base64.b64encode(pickle.dumps(class_counts_to_send)).decode('utf-8')
+
             return GetPropertiesRes(
                 status=status,
                 properties={
-                    "prototypes": all_prototypes_encoded,
+                    "prototypes": prototypes_encoded,
                     "class_counts": class_counts_encoded
                 })
-        
         else:
             print(f"Client {self.client_id}: ERROR! Prototypes are NOT available. Returning empty properties.")
-
             return GetPropertiesRes(status=status, properties={})
-      return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
 
-
+     # Return other properties if the request is not for prototypes
+     return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
 
 def gen_client_fn(
     num_clients: int,

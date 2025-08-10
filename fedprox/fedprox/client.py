@@ -186,55 +186,79 @@ class FederatedClient(fl.client.Client):
 
     # === Corrected method signature for fit ===
     def fit(self, ins: FitIns) -> FitRes:
-        parameters = parameters_to_ndarrays(ins.parameters)
-        config = ins.config
-        round_number = config.get("server_round", -1)
-        
-        self.set_parameters(parameters)
-        start_time = time.time()
-        
-        # Train the model
-        self.train(self.net, self.traindata, self.client_id, epochs=self.local_epochs, simulate_delay=None)
-        
-        training_duration = time.time() - start_time
+      """Train local models using latest generator state."""
+      parameters = parameters_to_ndarrays(ins.parameters)
+      config = ins.config
+      round_number = config.get("server_round", -1)
+      simulate_delay = config.get("simulate_delay", False)
+    
+      # Send join timestamp
+      self.send_status(f"{self.server_url}/join", {
+        "client_id": self.client_id,
+        "round": round_number,
+        "timestamp": datetime.now().isoformat()
+      })
+    
+      start_time = time.time()
+      self.set_parameters(parameters)
+      global_prototypes = None
+      N_j = None
+    
+      self.train(self.net, self.traindata, self.client_id, epochs=self.local_epochs, simulate_delay=simulate_delay)
+    
+      # Send leave timestamp
+      self.send_status(f"{self.server_url}/leave", {
+        "client_id": self.client_id,
+        "round": round_number,
+        "timestamp": datetime.now().isoformat()
+      })
+    
+      # === Prototype Extraction ===
+      self.net.eval()
+      class_embeddings = defaultdict(list)
+      class_counts = defaultdict(int)
+      with torch.no_grad():
+        for batch in self.traindata:
+            images, labels = batch
+            images = images.to(self.device, dtype=torch.float32)
+            labels = labels.to(self.device, dtype=torch.long)
+            h, _, _ = self.net(images)
+            for i in range(labels.size(0)):
+                label = labels[i].item()
+                class_embeddings[label].append(h[i].cpu())
+                class_counts[label] += 1
+    
+      # Compute prototypes
+      prototypes = {}
+      for class_id in range(self.num_classes):
+        if class_id in class_embeddings:
+            stacked = torch.stack(class_embeddings[class_id])
+            prototypes[class_id] = stacked.mean(dim=0)
+        else:
+            prototypes[class_id] = torch.zeros_like(h[0].cpu())
+    
+      # === CRITICAL FIX: Cache the unencoded prototypes and class counts ===
+      self.prototypes_from_last_round = prototypes
+      self.class_counts_from_last_round = class_counts
 
-        # --- NEW LOGIC: Generate and cache prototypes after training ---
-        self.net.eval()
-        class_embeddings = defaultdict(list)
-        class_counts = defaultdict(int)
-        with torch.no_grad():
-            for images, labels in self.traindata:
-                images = images.to(self.device, dtype=torch.float32)
-                labels = labels.to(self.device, dtype=torch.long)
-                features = self.net.feature_extractor(images)
-                for i in range(labels.size(0)):
-                    label = labels[i].item()
-                    class_embeddings[label].append(features[i].cpu())
-                    class_counts[label] += 1
-        
-        # Compute prototypes
-        prototypes = {}
-        for class_id in range(self.num_classes):
-            if class_id in class_embeddings:
-                stacked = torch.stack(class_embeddings[class_id])
-                prototypes[class_id] = stacked.mean(dim=0)
-            else:
-                prototypes[class_id] = torch.zeros_like(features[0].cpu())
-        
-        # Cache the unencoded prototypes and class counts
-        self.prototypes_from_last_round = prototypes
-        self.class_counts_from_last_round = class_counts
-        
-        print(f"Client {self.client_id} successfully cached prototypes for {len(prototypes)} classes.")
-        
-        # Return the aggregated parameters and other metrics
-        return FitRes(
-            status=Status(code=Code.OK, message="Success"),
-            parameters=self.get_parameters(config).parameters,
-            num_examples=len(self.traindata),
-            metrics={"duration": training_duration}
-        )
+      print(f"Client {self.client_id} successfully cached prototypes for {len(prototypes)} classes.")
+    
+      training_duration = time.time() - start_time
+      status = Status(code=Code.OK, message="Success")
+    
+      return FitRes(
+        status=status,
+        parameters=self.get_parameters(config).parameters,
+        num_examples=len(self.traindata),
+        # === REMOVED REDUNDANT PROTOTYPE METRICS ===
+        # The server gets these via get_properties, not FitRes.
+        metrics={
+            "data_size": len(self.traindata),
+            "duration": training_duration,
+        }
+    )
 
+    # The get_properties method remains the same and is now correct
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
         status = Status(code=Code.OK, message="Success")
         if ins.config.get("request") == "prototypes":
@@ -252,6 +276,7 @@ class FederatedClient(fl.client.Client):
                 print(f"Client {self.client_id}: ERROR! Prototypes are NOT available. Returning empty properties.")
                 return GetPropertiesRes(status=status, properties={})
         return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
+
 
 def gen_client_fn(
     num_clients: int,

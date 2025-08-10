@@ -85,7 +85,8 @@ class GPAFStrategy(FedAvg):
 
         self.num_clusters = 4
         self.client_assignments = {}  # {client_id: cluster_id}
-        
+        self.global_T_max = 0.0  # <--- THIS IS THE FIX
+
         # Initialize as empty dictionaries
         self.cluster_prototypes = {i: {} for i in range(self.num_clusters)}
         self.cluster_class_counts = {i: defaultdict(int) for i in range(self.num_clusters)}

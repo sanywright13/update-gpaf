@@ -276,7 +276,7 @@ class FederatedClient(fl.client.Client):
                 print(f"Client {self.client_id}: ERROR! Prototypes are NOT available. Returning empty properties.")
                 return GetPropertiesRes(status=status, properties={})
         return GetPropertiesRes(status=status, properties={"simulation_index": self.client_id})
-
+ 
 
 def gen_client_fn(
     num_clients: int,

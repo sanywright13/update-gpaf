@@ -186,7 +186,7 @@ class FederatedClient(fl.client.Client):
 
     # === Corrected method signature for fit ===
     def fit(self, ins: FitIns) -> FitRes:
-      """Train local models using latest generator state."""
+     """Train local models using latest generator state."""
      try:
       parameters = parameters_to_ndarrays(ins.parameters)
       config = ins.config

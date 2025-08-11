@@ -888,7 +888,7 @@ save_dir="feature_visualizations_gpaf"
 
     # --- ENHANCED configure_fit: Robust client selection ---
     def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
-   
+    
      print(f"\n[CSMDA] Configuring round {server_round}")
      all_clients = client_manager.all()
      available_client_cids = list(all_clients.keys())
@@ -903,6 +903,7 @@ save_dir="feature_visualizations_gpaf"
      client_ids_with_protos = []
      class_counts_list = []
 
+     print(f"[CSMDA] Round {server_round}: Collecting prototype status from all clients...")
      # Step 1: Request properties from all clients to identify their status
      for cid, client_proxy in all_clients.items():
         try:
@@ -922,10 +923,13 @@ save_dir="feature_visualizations_gpaf"
                 client_ids_with_protos.append(cid)
                 class_counts_list.append(class_counts)
                 clients_with_prototypes.append(cid)
+                print(f"[CSMDA] ✅ Client {cid} successfully sent prototypes.")
             else:
                 clients_without_prototypes.append(cid)
+                print(f"[CSMDA] ❌ Client {cid} has no prototypes yet.")
         except Exception as e:
             clients_without_prototypes.append(cid)
+            print(f"[CSMDA] ⚠️ Failed to get properties from client {cid}: {e}")
 
      selected_clients_cids = []
 
@@ -959,14 +963,17 @@ save_dir="feature_visualizations_gpaf"
      # Step 3: Prioritize clients without prototypes (new priority)
      if remaining_to_select > 0 and clients_without_prototypes:
         num_to_initiate = min(remaining_to_select, len(clients_without_prototypes))
-        selected_clients_cids.extend(random.sample(clients_without_prototypes, num_to_initiate))
-        print(f"[CSMDA] Round {server_round}: Initiating {num_to_initiate} clients without prototypes.")
+        initial_selection = random.sample(clients_without_prototypes, num_to_initiate)
+        selected_clients_cids.extend(initial_selection)
+        print(f"[CSMDA] ➡️ Initiating {num_to_initiate} clients without prototypes: {initial_selection}")
         
      # Step 4: Fallback random selection if not enough clients were selected
      remaining_to_select = self.min_fit_clients - len(selected_clients_cids)
      if remaining_to_select > 0:
         unselected_cids = [cid for cid in available_client_cids if cid not in selected_clients_cids]
-        selected_clients_cids.extend(random.sample(unselected_cids, min(remaining_to_select, len(unselected_cids))))
+        fallback_selection = random.sample(unselected_cids, min(remaining_to_select, len(unselected_cids)))
+        selected_clients_cids.extend(fallback_selection)
+        print(f"[CSMDA] ➡️ Fallback: Selected {len(fallback_selection)} additional clients: {fallback_selection}")
 
      # Finalize the list of selected clients
      selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
@@ -978,9 +985,9 @@ save_dir="feature_visualizations_gpaf"
         instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
         self.selection_counts[client_id] += 1
     
-     print(f"[CSMDA] Round {server_round}: Final selected clients: {selected_clients_cids}")
+     print(f"[CSMDA] ✅ Round {server_round}: Final selected clients: {selected_clients_cids}")
      return instructions
-   
+
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager
 ) -> List[Tuple[ClientProxy, EvaluateIns]]:

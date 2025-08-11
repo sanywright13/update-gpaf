@@ -886,10 +886,10 @@ save_dir="feature_visualizations_gpaf"
         return instructions
     '''
 
-    # --- ENHANCED configure_fit: Robust client selection ---
     def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
+     """Enhanced client selection with robust prototype handling."""
     
-     print(f"\n[CSMDA] Configuring round {server_round}")
+     print(f"\n[CSMDA] ========== Configuring round {server_round} ==========")
      all_clients = client_manager.all()
      available_client_cids = list(all_clients.keys())
 
@@ -897,95 +897,197 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] Round {server_round}: No clients available for selection.")
         return []
 
+     # Initialize collections for client categorization
      clients_with_prototypes = []
      clients_without_prototypes = []
      all_prototypes_list = []
      client_ids_with_protos = []
      class_counts_list = []
 
-     print(f"[CSMDA] Round {server_round}: Collecting prototype status from all clients...")
-     # Step 1: Request properties from all clients to identify their status
-     for cid, client_proxy in all_clients.items():
+     print(f"[CSMDA] Round {server_round}: Collecting prototype status from {len(available_client_cids)} clients...")
+    
+     # Step 1: Collect prototypes from all available clients with timeout handling
+     for cid in available_client_cids:
+        client_proxy = all_clients[cid]
         try:
+            # Request prototypes with timeout
             get_protos_res = client_proxy.get_properties(
                 ins=GetPropertiesIns(config={"request": "prototypes"}), 
-                timeout=10.0, 
+                timeout=15.0,  # Increased timeout
                 group_id=None
             )
             
             prototypes_encoded = get_protos_res.properties.get("prototypes")
             class_counts_encoded = get_protos_res.properties.get("class_counts")
 
+            # Validate that both prototypes and class_counts are present
             if prototypes_encoded and class_counts_encoded:
-                prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
-                class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
-                all_prototypes_list.append(prototypes)
-                client_ids_with_protos.append(cid)
-                class_counts_list.append(class_counts)
-                clients_with_prototypes.append(cid)
-                print(f"[CSMDA] ✅ Client {cid} successfully sent prototypes.")
+                try:
+                    # Decode prototypes and class counts
+                    prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
+                    class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
+                    
+                    # Validate decoded data
+                    if isinstance(prototypes, dict) and isinstance(class_counts, dict):
+                        all_prototypes_list.append(prototypes)
+                        client_ids_with_protos.append(cid)
+                        class_counts_list.append(class_counts)
+                        clients_with_prototypes.append(cid)
+                        
+                        print(f"[CSMDA] ✅ Client {cid}: Successfully received prototypes "
+                              f"(classes: {list(prototypes.keys())}, counts: {class_counts})")
+                    else:
+                        clients_without_prototypes.append(cid)
+                        print(f"[CSMDA] ❌ Client {cid}: Invalid prototype data format")
+                        
+                except (pickle.UnpicklingError, base64.binascii.Error, ValueError) as decode_error:
+                    clients_without_prototypes.append(cid)
+                    print(f"[CSMDA] ❌ Client {cid}: Failed to decode prototypes - {decode_error}")
+                    
             else:
                 clients_without_prototypes.append(cid)
-                print(f"[CSMDA] ❌ Client {cid} has no prototypes yet.")
+                missing_items = []
+                if not prototypes_encoded:
+                    missing_items.append("prototypes")
+                if not class_counts_encoded:
+                    missing_items.append("class_counts")
+                print(f"[CSMDA] ⚠️ Client {cid}: Missing {', '.join(missing_items)}")
+                
         except Exception as e:
             clients_without_prototypes.append(cid)
-            print(f"[CSMDA] ⚠️ Failed to get properties from client {cid}: {e}")
+            print(f"[CSMDA] ⚠️ Client {cid}: Communication failed - {e}")
+
+     print(f"[CSMDA] Prototype collection summary:")
+     print(f"  - Clients with prototypes: {len(clients_with_prototypes)} {clients_with_prototypes}")
+     print(f"  - Clients without prototypes: {len(clients_without_prototypes)} {clients_without_prototypes}")
 
      selected_clients_cids = []
-
-     # Step 2: Use clustering and scoring for clients with prototypes (new priority)
      remaining_to_select = self.min_fit_clients
-     if remaining_to_select > 0 and len(clients_with_prototypes) >= self.num_clusters:
-        if server_round > 1: # Only cluster after the first round
-            self.client_assignments = self._e_step(all_prototypes_list, client_ids_with_protos)
-            self.cluster_prototypes = self._m_step(all_prototypes_list, client_ids_with_protos, self.client_assignments, class_counts_list)
+
+     # Step 2: Prioritized selection strategy
+    
+     # Priority 1: Clients without prototypes (need initial training)
+     if remaining_to_select > 0 and clients_without_prototypes:
+        # Select ALL clients without prototypes first (up to remaining limit)
+        num_to_initiate = min(remaining_to_select, len(clients_without_prototypes))
+        initial_selection = random.sample(clients_without_prototypes, num_to_initiate) \
+                           if num_to_initiate < len(clients_without_prototypes) \
+                           else clients_without_prototypes
         
+        selected_clients_cids.extend(initial_selection)
+        remaining_to_select -= len(initial_selection)
+        
+        print(f"[CSMDA] 🚀 Priority 1 - Initiating {len(initial_selection)} clients without prototypes: {initial_selection}")
+
+     # Priority 2: Clustering-based selection for clients with prototypes
+     if remaining_to_select > 0 and len(clients_with_prototypes) > 0:
+        
+        # Only perform clustering if we have enough clients and it's not the first round
+        if server_round > 1 and len(clients_with_prototypes) >= self.num_clusters:
+            print(f"[CSMDA] 🔄 Performing EM clustering on {len(clients_with_prototypes)} clients...")
+            
+            # Perform clustering
+            self.client_assignments = self._e_step(all_prototypes_list, client_ids_with_protos)
+            self.cluster_prototypes = self._m_step(
+                all_prototypes_list, 
+                client_ids_with_protos, 
+                self.client_assignments, 
+                class_counts_list
+            )
+            
+            print(f"[CSMDA] Clustering results: {self.client_assignments}")
+        
+        # Organize clients by clusters
         clusters = defaultdict(list)
         for client_id in clients_with_prototypes:
-            cluster_id = self.client_assignments.get(client_id, random.choice(range(self.num_clusters)))
+            if client_id in selected_clients_cids:
+                continue  # Skip already selected clients
+                
+            cluster_id = self.client_assignments.get(
+                client_id, 
+                random.choice(range(self.num_clusters))
+            )
             clusters[cluster_id].append(client_id)
         
+        # Compute selection scores
         global_scores = self._compute_global_selection_scores(clients_with_prototypes, server_round)
         
-        active_clusters = [c_id for c_id, clients in clusters.items() if clients]
-        if active_clusters:
+        # Select clients from each active cluster
+        active_clusters = [c_id for c_id, cluster_clients in clusters.items() if cluster_clients]
+        
+        if active_clusters and remaining_to_select > 0:
             clients_per_cluster_base = remaining_to_select // len(active_clusters)
             extra_clients = remaining_to_select % len(active_clusters)
             
+            print(f"[CSMDA] 📊 Cluster-based selection from {len(active_clusters)} active clusters:")
+            print(f"  - Base clients per cluster: {clients_per_cluster_base}")
+            print(f"  - Extra clients to distribute: {extra_clients}")
+            
             for i, cluster_id in enumerate(active_clusters):
                 cluster_clients = clusters[cluster_id]
-                cluster_clients_sorted = sorted(cluster_clients, key=lambda cid: global_scores.get(cid, 0.0), reverse=True)
-                num_to_select_from_cluster = min(clients_per_cluster_base + (1 if i < extra_clients else 0), len(cluster_clients_sorted))
-                selected_clients_cids.extend(cluster_clients_sorted[:num_to_select_from_cluster])
+                
+                # Sort by global scores (higher is better)
+                cluster_clients_sorted = sorted(
+                    cluster_clients, 
+                    key=lambda cid: global_scores.get(cid, 0.0), 
+                    reverse=True
+                )
+                
+                # Calculate number to select from this cluster
+                num_to_select_from_cluster = min(
+                    clients_per_cluster_base + (1 if i < extra_clients else 0),
+                    len(cluster_clients_sorted)
+                )
+                
+                cluster_selection = cluster_clients_sorted[:num_to_select_from_cluster]
+                selected_clients_cids.extend(cluster_selection)
+                
+                print(f"  - Cluster {cluster_id}: Selected {len(cluster_selection)}/{len(cluster_clients)} "
+                      f"clients: {cluster_selection}")
         
         remaining_to_select = self.min_fit_clients - len(selected_clients_cids)
 
-     # Step 3: Prioritize clients without prototypes (new priority)
-     if remaining_to_select > 0 and clients_without_prototypes:
-        num_to_initiate = min(remaining_to_select, len(clients_without_prototypes))
-        initial_selection = random.sample(clients_without_prototypes, num_to_initiate)
-        selected_clients_cids.extend(initial_selection)
-        print(f"[CSMDA] ➡️ Initiating {num_to_initiate} clients without prototypes: {initial_selection}")
-        
-     # Step 4: Fallback random selection if not enough clients were selected
-     remaining_to_select = self.min_fit_clients - len(selected_clients_cids)
+     # Step 3: Fallback random selection if still need more clients
      if remaining_to_select > 0:
         unselected_cids = [cid for cid in available_client_cids if cid not in selected_clients_cids]
-        fallback_selection = random.sample(unselected_cids, min(remaining_to_select, len(unselected_cids)))
-        selected_clients_cids.extend(fallback_selection)
-        print(f"[CSMDA] ➡️ Fallback: Selected {len(fallback_selection)} additional clients: {fallback_selection}")
+        
+        if unselected_cids:
+            num_fallback = min(remaining_to_select, len(unselected_cids))
+            fallback_selection = random.sample(unselected_cids, num_fallback)
+            selected_clients_cids.extend(fallback_selection)
+            
+            print(f"[CSMDA] 🎲 Fallback selection: {len(fallback_selection)} clients: {fallback_selection}")
 
-     # Finalize the list of selected clients
+     # Step 4: Final validation and instruction preparation
      selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
     
+     if len(selected_clients_cids) < self.min_fit_clients:
+        print(f"[CSMDA] ⚠️ Warning: Only selected {len(selected_clients_cids)} clients "
+              f"out of required {self.min_fit_clients}")
+
+     # Prepare instructions for selected clients
      instructions = []
      for client_id in selected_clients_cids:
+        if client_id not in all_clients:
+            print(f"[CSMDA] ❌ Error: Client {client_id} no longer available")
+            continue
+            
         client_proxy = all_clients[client_id]
-        client_config_for_fit = {"server_round": server_round}
+        client_config_for_fit = {
+            "server_round": server_round,
+            "total_rounds": getattr(self, 'total_rounds', 100),  # Add if available
+        }
+        
         instructions.append((client_proxy, FitIns(parameters, client_config_for_fit)))
+        
+        # Update selection count for fairness tracking
         self.selection_counts[client_id] += 1
-    
-     print(f"[CSMDA] ✅ Round {server_round}: Final selected clients: {selected_clients_cids}")
+
+     print(f"[CSMDA] ✅ Round {server_round} FINAL SELECTION: {len(instructions)} clients")
+     print(f"     Selected clients: {[cid for cid in selected_clients_cids if cid in all_clients]}")
+     print(f"     Selection counts so far: {dict(self.selection_counts)}")
+     print(f"[CSMDA] ========== End of round {server_round} configuration ==========\n")
+
      return instructions
 
     def configure_evaluate(

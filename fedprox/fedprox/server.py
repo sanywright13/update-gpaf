@@ -97,6 +97,8 @@ class GPAFStrategy(FedAvg):
         self.selection_counts = defaultdict(int)
         self.accuracy_history = defaultdict(float)
         self._current_accuracies = {}
+        # In server class
+        self.client_prototype_history = defaultdict(dict)  # {client_id: {round: prototypes}}
       
 
 

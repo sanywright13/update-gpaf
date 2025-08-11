@@ -187,6 +187,7 @@ class FederatedClient(fl.client.Client):
     # === Corrected method signature for fit ===
     def fit(self, ins: FitIns) -> FitRes:
       """Train local models using latest generator state."""
+     try:
       parameters = parameters_to_ndarrays(ins.parameters)
       config = ins.config
       round_number = config.get("server_round", -1)
@@ -257,6 +258,11 @@ class FederatedClient(fl.client.Client):
             "duration": training_duration,
         }
     )
+     except Exception as e:
+        # This will catch any error and print it before the client crashes
+        print(f"Client {self.client_id} CRITICAL FAILURE during fit round {round_number}: {e}")
+        # Raising the exception is important so Flower knows the client failed
+        raise e
 
     # The get_properties method remains the same and is now correct
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:

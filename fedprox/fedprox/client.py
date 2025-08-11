@@ -186,38 +186,43 @@ class FederatedClient(fl.client.Client):
 
     # === Corrected method signature for fit ===
     def fit(self, ins: FitIns) -> FitRes:
-     """Train local models using latest generator state."""
+     """Train local models using latest generator state with enhanced debugging."""
      try:
         parameters = parameters_to_ndarrays(ins.parameters)
         config = ins.config
         round_number = config.get("server_round", -1)
         simulate_delay = config.get("simulate_delay", False)
-    
+        
+        print(f"🔥 DEBUG: Client {self.client_id} starting fit() for round {round_number}")
+        
         # Send join timestamp
         self.send_status(f"{self.server_url}/join", {
             "client_id": self.client_id,
             "round": round_number,
             "timestamp": datetime.now().isoformat()
         })
-    
+        
         start_time = time.time()
         self.set_parameters(parameters)
-    
+        
+        print(f"🔥 DEBUG: Client {self.client_id} starting training...")
         self.train(self.net, self.traindata, self.client_id, epochs=self.local_epochs, simulate_delay=simulate_delay)
-    
+        print(f"🔥 DEBUG: Client {self.client_id} completed training")
+        
         # Send leave timestamp
         self.send_status(f"{self.server_url}/leave", {
             "client_id": self.client_id,
             "round": round_number,
             "timestamp": datetime.now().isoformat()
         })
-    
-        # === Prototype Extraction ===
-        self._extract_and_cache_prototypes()
-    
+        
+        # === ENHANCED Prototype Extraction with DEBUG ===
+        print(f"🔥 DEBUG: Client {self.client_id} starting prototype extraction...")
+        self._extract_and_cache_prototypes_debug(round_number)
+        
         training_duration = time.time() - start_time
         status = Status(code=Code.OK, message="Success")
-    
+        
         return FitRes(
             status=status,
             parameters=self.get_parameters(config).parameters,
@@ -228,78 +233,119 @@ class FederatedClient(fl.client.Client):
             }
         )
      except Exception as e:
-        print(f"Client {self.client_id} CRITICAL FAILURE during fit round {round_number}: {e}")
+        print(f"🔥 ERROR: Client {self.client_id} CRITICAL FAILURE during fit round {round_number}: {e}")
+        import traceback
+        traceback.print_exc()
         raise e
 
-    def _extract_and_cache_prototypes(self):
-     """Extract and cache prototypes from current model state."""
+    def _extract_and_cache_prototypes_debug(self, round_number):
+     """Extract and cache prototypes with enhanced debugging."""
+     print(f"🔥 DEBUG: Client {self.client_id} - Starting prototype extraction for round {round_number}")
+    
      self.net.eval()
      class_embeddings = defaultdict(list)
      class_counts = defaultdict(int)
     
+     total_samples = 0
+    
      with torch.no_grad():
-        for batch in self.traindata:
+        for batch_idx, batch in enumerate(self.traindata):
+            if batch_idx == 0:
+                print(f"🔥 DEBUG: Client {self.client_id} - Processing first batch, batch size: {len(batch[0])}")
+            
             images, labels = batch
             images = images.to(self.device, dtype=torch.float32)
             labels = labels.to(self.device, dtype=torch.long)
+            
+            # Forward pass to get embeddings
             h, _, _ = self.net(images)
             
             for i in range(labels.size(0)):
                 label = labels[i].item()
                 class_embeddings[label].append(h[i].cpu())
                 class_counts[label] += 1
+                total_samples += 1
+    
+     print(f"🔥 DEBUG: Client {self.client_id} - Processed {total_samples} samples")
+     print(f"🔥 DEBUG: Client {self.client_id} - Classes found: {list(class_embeddings.keys())}")
+     print(f"🔥 DEBUG: Client {self.client_id} - Class counts: {dict(class_counts)}")
     
      # Compute prototypes
      prototypes = {}
+     embedding_dim = None
+    
      for class_id in range(self.num_classes):
         if class_id in class_embeddings:
             stacked = torch.stack(class_embeddings[class_id])
             prototypes[class_id] = stacked.mean(dim=0)
+            if embedding_dim is None:
+                embedding_dim = prototypes[class_id].shape[0]
+                print(f"🔥 DEBUG: Client {self.client_id} - Embedding dimension: {embedding_dim}")
         else:
-            # Use zero vector for missing classes
-            if len(class_embeddings) > 0:
-                # Get prototype dimension from existing embeddings
+            # Handle missing classes
+            if embedding_dim is not None:
+                prototypes[class_id] = torch.zeros(embedding_dim)
+            elif len(class_embeddings) > 0:
+                # Get dimension from any existing embedding
                 sample_embedding = next(iter(class_embeddings.values()))[0]
                 prototypes[class_id] = torch.zeros_like(sample_embedding)
+                if embedding_dim is None:
+                    embedding_dim = sample_embedding.shape[0]
             else:
-                # Fallback: extract one sample to get dimensions
-                with torch.no_grad():
-                    sample_batch = next(iter(self.traindata))
-                    sample_images = sample_batch[0][:1].to(self.device, dtype=torch.float32)
-                    sample_h, _, _ = self.net(sample_images)
-                    prototypes[class_id] = torch.zeros_like(sample_h[0].cpu())
+                print(f"🔥 ERROR: Client {self.client_id} - No embeddings found, cannot determine dimension!")
+                return
     
      # Cache prototypes and class counts
      self.prototypes_from_last_round = prototypes
-     self.class_counts_from_last_round = dict(class_counts)  # Convert defaultdict to regular dict
+     self.class_counts_from_last_round = dict(class_counts)
     
-     print(f"Client {self.client_id} successfully cached prototypes for {len(prototypes)} classes.")
-     print(f"Class counts: {dict(class_counts)}")
+     print(f"🔥 DEBUG: Client {self.client_id} - Successfully cached prototypes for {len(prototypes)} classes")
+     print(f"🔥 DEBUG: Client {self.client_id} - Prototype shapes: {[(k, v.shape) for k, v in prototypes.items() if hasattr(v, 'shape')]}")
+     print(f"🔥 DEBUG: Client {self.client_id} - hasattr prototypes_from_last_round: {hasattr(self, 'prototypes_from_last_round')}")
+     print(f"🔥 DEBUG: Client {self.client_id} - prototypes_from_last_round is not None: {getattr(self, 'prototypes_from_last_round', None) is not None}")
 
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
-     """Send prototypes and class counts to server when requested."""
+     """Send prototypes and class counts to server when requested with enhanced debugging."""
+    
+     print(f"🔥 DEBUG: Client {self.client_id} - get_properties called with config: {ins.config}")
+    
      status = Status(code=Code.OK, message="Success")
     
      if ins.config.get("request") == "prototypes":
-        # Check if we have cached prototypes from previous training
-        if (hasattr(self, 'prototypes_from_last_round') and 
-            self.prototypes_from_last_round is not None and
-            hasattr(self, 'class_counts_from_last_round') and
-            self.class_counts_from_last_round is not None):
-            
+        print(f"🔥 DEBUG: Client {self.client_id} - Server requesting prototypes")
+        
+        # Enhanced debugging
+        has_prototypes = hasattr(self, 'prototypes_from_last_round')
+        has_class_counts = hasattr(self, 'class_counts_from_last_round')
+        prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
+        counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
+        
+        print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
+        print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
+        print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
+        print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
+        
+        if prototypes_not_none and counts_not_none:
             try:
-                # Encode prototypes and class counts
-                prototypes_encoded = base64.b64encode(
-                    pickle.dumps(self.prototypes_from_last_round)
-                ).decode('utf-8')
+                print(f"🔥 DEBUG: Client {self.client_id} - Attempting to encode prototypes...")
                 
-                class_counts_encoded = base64.b64encode(
-                    pickle.dumps(self.class_counts_from_last_round)
-                ).decode('utf-8')
+                # Test serialization first
+                prototypes_bytes = pickle.dumps(self.prototypes_from_last_round)
+                class_counts_bytes = pickle.dumps(self.class_counts_from_last_round)
                 
-                print(f"Client {self.client_id}: Successfully sending prototypes and class counts to server.")
+                print(f"🔥 DEBUG: Client {self.client_id} - Serialization successful")
+                print(f"🔥 DEBUG: Client {self.client_id} - Prototypes size: {len(prototypes_bytes)} bytes")
+                print(f"🔥 DEBUG: Client {self.client_id} - Class counts size: {len(class_counts_bytes)} bytes")
                 
-                return GetPropertiesRes(
+                # Base64 encode
+                prototypes_encoded = base64.b64encode(prototypes_bytes).decode('utf-8')
+                class_counts_encoded = base64.b64encode(class_counts_bytes).decode('utf-8')
+                
+                print(f"🔥 DEBUG: Client {self.client_id} - Encoding successful")
+                print(f"🔥 DEBUG: Client {self.client_id} - Encoded prototypes length: {len(prototypes_encoded)}")
+                print(f"🔥 DEBUG: Client {self.client_id} - Encoded class_counts length: {len(class_counts_encoded)}")
+                
+                response = GetPropertiesRes(
                     status=status,
                     properties={
                         "prototypes": prototypes_encoded,
@@ -307,14 +353,20 @@ class FederatedClient(fl.client.Client):
                     }
                 )
                 
+                print(f"🔥 DEBUG: Client {self.client_id} - Successfully created GetPropertiesRes with prototypes")
+                return response
+                
             except Exception as e:
-                print(f"Client {self.client_id}: Error encoding prototypes: {e}")
+                print(f"🔥 ERROR: Client {self.client_id} - Error encoding prototypes: {e}")
+                import traceback
+                traceback.print_exc()
                 return GetPropertiesRes(status=status, properties={})
         else:
-            print(f"Client {self.client_id}: No prototypes available yet (hasn't participated in training).")
+            print(f"🔥 DEBUG: Client {self.client_id} - No prototypes available yet (hasn't participated in training)")
             return GetPropertiesRes(status=status, properties={})
     
      # Default response for other property requests
+     print(f"🔥 DEBUG: Client {self.client_id} - Returning default properties")
      return GetPropertiesRes(
         status=status, 
         properties={"simulation_index": str(self.client_id)}

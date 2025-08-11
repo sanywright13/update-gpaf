@@ -87,6 +87,16 @@ class FederatedClient(fl.client.Client):
         # Initialize prototype and class count variables to None
         self.prototypes_from_last_round = None
         self.class_counts_from_last_round = None
+
+        #prototypes
+        self.prototype_dir = Path(f"./prototype_cache")
+        self.prototype_dir.mkdir(exist_ok=True)
+        # File paths for this specific client
+        self.prototype_file = self.prototype_dir / f"client_{self.client_id}_prototypes.pkl"
+        self.counts_file = self.prototype_dir / f"client_{self.client_id}_counts.pkl"
+        print(f"🔥 DEBUG: Client {self.client_id} initialized with persistent storage at {self.prototype_dir}")
+        # Load existing prototypes if available
+        self._load_prototypes_from_disk()
        
     #update the local model with parameters received from the server
     def set_parameters(self, parameters: List[np.ndarray]):
@@ -94,16 +104,7 @@ class FederatedClient(fl.client.Client):
       state_dict = OrderedDict({k: torch.tensor(v) for k, v in params_dict})
       self.net.load_state_dict(state_dict, strict=True)
     
-    #prototypes
-    # Create persistent storage directory
-    self.prototype_dir = Path(f"./prototype_cache")
-    self.prototype_dir.mkdir(exist_ok=True)
-    # File paths for this specific client
-    self.prototype_file = self.prototype_dir / f"client_{self.client_id}_prototypes.pkl"
-    self.counts_file = self.prototype_dir / f"client_{self.client_id}_counts.pkl"
-    print(f"🔥 DEBUG: Client {self.client_id} initialized with persistent storage at {self.prototype_dir}")
-    # Load existing prototypes if available
-    self._load_prototypes_from_disk()
+    
     
 
     # === THIS IS THE CORRECTED METHOD ===

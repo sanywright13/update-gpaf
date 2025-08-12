@@ -220,23 +220,32 @@ save_dir="feature_visualizations_gpaf"
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
    
     def _initialize_clusters(self, all_prototypes):
-      num_clients = len(all_prototypes)
-      assert num_clients >= self.num_clusters, \
+     """Initialize clusters with proper NumPy array handling"""
+     num_clients = len(all_prototypes)
+     assert num_clients >= self.num_clusters, \
         f"Need at least {self.num_clusters} clients to initialize clusters"
 
-      # Randomly sample clients (optional: sort by class diversity first)
-      sorted_protos = sorted(all_prototypes, key=lambda d: len(d), reverse=True)
-      selected_prototypes = sorted_protos[:self.num_clusters]
+     # Randomly sample clients (optional: sort by class diversity first)
+     sorted_protos = sorted(all_prototypes, key=lambda d: len(d), reverse=True)
+     selected_prototypes = sorted_protos[:self.num_clusters]
 
-      cluster_prototypes = {}
-      for cluster_id, proto_dict in enumerate(selected_prototypes):
-        cluster_prototypes[cluster_id] = {
-            class_id: proto.copy()
-            for class_id, proto in proto_dict.items()
-        }
+     cluster_prototypes = {}
+     for cluster_id, proto_dict in enumerate(selected_prototypes):
+        cluster_prototypes[cluster_id] = {}
+        for class_id, proto in proto_dict.items():
+            # Ensure consistent numpy array format
+            if hasattr(proto, 'numpy'):
+                proto_np = proto.numpy()
+            elif hasattr(proto, 'detach'):
+                proto_np = proto.detach().cpu().numpy()
+            else:
+                proto_np = np.array(proto)
+            
+            # Ensure float32 dtype for consistency
+            cluster_prototypes[cluster_id][class_id] = proto_np.astype(np.float32).copy()
 
-      print(f"[Init] Cluster prototypes initialized from top-{self.num_clusters} diverse clients")
-      return cluster_prototypes
+     print(f"[Init] Cluster prototypes initialized from top-{self.num_clusters} diverse clients")
+     return cluster_prototypes
 
     def cosine_distance(self,a, b):
       """Compute 1 - cosine similarity"""
@@ -280,33 +289,67 @@ save_dir="feature_visualizations_gpaf"
 
     
     def _m_step(self, all_prototypes, client_ids, assignments, class_counts_list):
-      cluster_weighted_sum = defaultdict(lambda: defaultdict(lambda: np.zeros_like(next(iter(all_prototypes[0].values())))))
-      cluster_class_counts = defaultdict(lambda: defaultdict(int))
+     """Fixed M-step with proper NumPy array handling"""
+    
+     # Get a sample prototype to determine the correct shape
+     sample_proto = None
+     for prototypes in all_prototypes:
+        if prototypes:
+            sample_proto = next(iter(prototypes.values()))
+            break
+    
+     if sample_proto is None:
+        print("Warning: No prototypes found to determine shape")
+        return defaultdict(dict)
+    
+     # Convert to numpy if it's a torch tensor
+     if hasattr(sample_proto, 'numpy'):
+        sample_proto = sample_proto.numpy()
+     elif hasattr(sample_proto, 'detach'):
+        sample_proto = sample_proto.detach().cpu().numpy()
+    
+     # Initialize with explicit numpy zeros
+     cluster_weighted_sum = defaultdict(lambda: defaultdict(lambda: np.zeros(sample_proto.shape, dtype=np.float32)))
+     cluster_class_counts = defaultdict(lambda: defaultdict(int))
 
-      for i, (client_id, prototypes) in enumerate(zip(client_ids, all_prototypes)):
+     for i, (client_id, prototypes) in enumerate(zip(client_ids, all_prototypes)):
         cluster_id = assignments[client_id]
         class_counts = class_counts_list[i]
 
         for class_id, proto in prototypes.items():
             weight = class_counts.get(class_id, 0)
             if weight > 0:
-                cluster_weighted_sum[cluster_id][class_id] += weight * proto
+                # Convert proto to numpy array if needed
+                if hasattr(proto, 'numpy'):
+                    proto_np = proto.numpy()
+                elif hasattr(proto, 'detach'):
+                    proto_np = proto.detach().cpu().numpy()
+                else:
+                    proto_np = np.array(proto)
+                
+                # Ensure proto_np is float32
+                proto_np = proto_np.astype(np.float32)
+                
+                # Use explicit addition instead of +=
+                weighted_proto = weight * proto_np
+                cluster_weighted_sum[cluster_id][class_id] = cluster_weighted_sum[cluster_id][class_id] + weighted_proto
                 cluster_class_counts[cluster_id][class_id] += weight
 
-      new_clusters = defaultdict(dict)
-      for cluster_id in cluster_weighted_sum:
+     new_clusters = defaultdict(dict)
+     for cluster_id in cluster_weighted_sum:
         for class_id in cluster_weighted_sum[cluster_id]:
             count = cluster_class_counts[cluster_id][class_id]
             if count > 0:
                 new_clusters[cluster_id][class_id] = cluster_weighted_sum[cluster_id][class_id] / count
             else:
-                # Optional: fallback to random or default value if no samples
-                new_clusters[cluster_id][class_id] = np.random.randn(*proto.shape)
+                # Fallback to random initialization with correct shape
+                new_clusters[cluster_id][class_id] = np.random.randn(*sample_proto.shape).astype(np.float32)
 
-      # Update global class counts
-      self.cluster_class_counts = cluster_class_counts  # Used later in configure_fit
-
-      return new_clusters
+     # Update global class counts
+     self.cluster_class_counts = cluster_class_counts
+    
+     print(f"[M-step] Updated {len(new_clusters)} clusters with {sum(len(c) for c in new_clusters.values())} class prototypes")
+     return new_clusters
     
     # --- NEW METHOD: Periodically update client clusters ---
     def _update_client_assignments(self, server_round: int, client_manager: ClientManager):

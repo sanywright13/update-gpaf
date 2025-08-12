@@ -292,84 +292,86 @@ class FederatedClient(fl.client.Client):
             self.class_counts_from_last_round = None
     
     def _extract_and_cache_prototypes_debug(self, round_number):
-        """Extract and cache prototypes with persistent storage."""
-        print(f"🔥 DEBUG: Client {self.client_id} - Starting prototype extraction for round {round_number}")
-        
-        self.net.eval()
-        class_embeddings = defaultdict(list)
-        class_counts = defaultdict(int)
-        
-        total_samples = 0
-        
-        with torch.no_grad():
-            for batch_idx, batch in enumerate(self.traindata):
-                if batch_idx == 0:
-                    print(f"🔥 DEBUG: Client {self.client_id} - Processing first batch, batch size: {len(batch[0])}")
-                
-                images, labels = batch
-                images = images.to(self.device, dtype=torch.float32)
-                labels = labels.to(self.device, dtype=torch.long)
-                
-                # Forward pass to get embeddings
-                h, _, _ = self.net(images)
-                
-                for i in range(labels.size(0)):
-                    label = labels[i].item()
-                    class_embeddings[label].append(h[i].cpu())
-                    class_counts[label] += 1
-                    total_samples += 1
-        
-        print(f"🔥 DEBUG: Client {self.client_id} - Processed {total_samples} samples")
-        print(f"🔥 DEBUG: Client {self.client_id} - Classes found: {list(class_embeddings.keys())}")
-        print(f"🔥 DEBUG: Client {self.client_id} - Class counts: {dict(class_counts)}")
-        
-        # Compute prototypes
-        prototypes = {}
-        embedding_dim = None
-        
-        for class_id in range(self.num_classes):
-            if class_id in class_embeddings:
-                stacked = torch.stack(class_embeddings[class_id])
-                prototypes[class_id] = stacked.mean(dim=0)
+     """Extract and cache prototypes with consistent NumPy format."""
+     print(f"🔥 DEBUG: Client {self.client_id} - Starting prototype extraction for round {round_number}")
+    
+     self.net.eval()
+     class_embeddings = defaultdict(list)
+     class_counts = defaultdict(int)
+    
+     total_samples = 0
+    
+     with torch.no_grad():
+        for batch_idx, batch in enumerate(self.traindata):
+            if batch_idx == 0:
+                print(f"🔥 DEBUG: Client {self.client_id} - Processing first batch, batch size: {len(batch[0])}")
+            
+            images, labels = batch
+            images = images.to(self.device, dtype=torch.float32)
+            labels = labels.to(self.device, dtype=torch.long)
+            
+            # Forward pass to get embeddings
+            h, _, _ = self.net(images)
+            
+            for i in range(labels.size(0)):
+                label = labels[i].item()
+                # Convert to CPU and numpy immediately
+                class_embeddings[label].append(h[i].detach().cpu().numpy())
+                class_counts[label] += 1
+                total_samples += 1
+    
+     print(f"🔥 DEBUG: Client {self.client_id} - Processed {total_samples} samples")
+     print(f"🔥 DEBUG: Client {self.client_id} - Classes found: {list(class_embeddings.keys())}")
+     print(f"🔥 DEBUG: Client {self.client_id} - Class counts: {dict(class_counts)}")
+    
+     # Compute prototypes as NumPy arrays
+     prototypes = {}
+     embedding_dim = None
+    
+     for class_id in range(self.num_classes):
+        if class_id in class_embeddings:
+            # Stack as numpy arrays and compute mean
+            stacked = np.stack(class_embeddings[class_id])
+            prototypes[class_id] = stacked.mean(axis=0).astype(np.float32)
+            if embedding_dim is None:
+                embedding_dim = prototypes[class_id].shape[0]
+                print(f"🔥 DEBUG: Client {self.client_id} - Embedding dimension: {embedding_dim}")
+        else:
+            # Handle missing classes with numpy zeros
+            if embedding_dim is not None:
+                prototypes[class_id] = np.zeros(embedding_dim, dtype=np.float32)
+            elif len(class_embeddings) > 0:
+                # Get dimension from any existing embedding
+                sample_embedding = next(iter(class_embeddings.values()))[0]
+                prototypes[class_id] = np.zeros_like(sample_embedding, dtype=np.float32)
                 if embedding_dim is None:
-                    embedding_dim = prototypes[class_id].shape[0]
-                    print(f"🔥 DEBUG: Client {self.client_id} - Embedding dimension: {embedding_dim}")
+                    embedding_dim = sample_embedding.shape[0]
             else:
-                # Handle missing classes
-                if embedding_dim is not None:
-                    prototypes[class_id] = torch.zeros(embedding_dim)
-                elif len(class_embeddings) > 0:
-                    # Get dimension from any existing embedding
-                    sample_embedding = next(iter(class_embeddings.values()))[0]
-                    prototypes[class_id] = torch.zeros_like(sample_embedding)
-                    if embedding_dim is None:
-                        embedding_dim = sample_embedding.shape[0]
-                else:
-                    print(f"🔥 ERROR: Client {self.client_id} - No embeddings found, cannot determine dimension!")
-                    return
-        
-        # Cache prototypes and class counts IN MEMORY
-        self.prototypes_from_last_round = prototypes
-        self.class_counts_from_last_round = dict(class_counts)
-        
-        # IMMEDIATELY save to disk for persistence
-        self._save_prototypes_to_disk()
-        
-        print(f"🔥 DEBUG: Client {self.client_id} - Successfully cached and saved prototypes for {len(prototypes)} classes")
-        print(f"🔥 DEBUG: Client {self.client_id} - Prototype shapes: {[(k, v.shape) for k, v in prototypes.items() if hasattr(v, 'shape')]}")
-        
-        # Verify persistence
-        has_prototypes = hasattr(self, 'prototypes_from_last_round')
-        has_class_counts = hasattr(self, 'class_counts_from_last_round')
-        prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
-        counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
-        
-        print(f"🔥 DEBUG: Client {self.client_id} - POST-SAVE verification:")
-        print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
-        print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
-        print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
-        print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
-
+                print(f"🔥 ERROR: Client {self.client_id} - No embeddings found, cannot determine dimension!")
+                return
+    
+     # Cache prototypes and class counts IN MEMORY
+     self.prototypes_from_last_round = prototypes
+     self.class_counts_from_last_round = dict(class_counts)
+    
+     # IMMEDIATELY save to disk for persistence
+     self._save_prototypes_to_disk()
+    
+     print(f"🔥 DEBUG: Client {self.client_id} - Successfully cached and saved prototypes for {len(prototypes)} classes")
+     print(f"🔥 DEBUG: Client {self.client_id} - Prototype shapes: {[(k, v.shape) for k, v in prototypes.items()]}")
+    
+     # Verify persistence
+     has_prototypes = hasattr(self, 'prototypes_from_last_round')
+     has_class_counts = hasattr(self, 'class_counts_from_last_round')
+     prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
+     counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
+    
+     print(f"🔥 DEBUG: Client {self.client_id} - POST-SAVE verification:")
+     print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
+     print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
+     print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
+     print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
+    
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
         """Send prototypes and class counts to server when requested with persistent storage fallback."""
         

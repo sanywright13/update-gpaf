@@ -528,6 +528,7 @@ save_dir="feature_visualizations_gpaf"
             
         for client_id in client_ids:
             v_c = self.selection_counts.get(client_id, 0)
+            print(f'==== v_c number of selection in round {T_total} is. : {v_c} === from the total clients {n}=')
             
             # Use the sigmoid-based score
             ideal_selections = T_total / n

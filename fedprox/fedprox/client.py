@@ -229,7 +229,7 @@ class FederatedClient(fl.client.Client):
             "timestamp": datetime.now().isoformat()
         })
         
-        # === CRITICAL: Always extract and cache prototypes after training ===
+        # === ENHANCED Prototype Extraction with DEBUG ===
         print(f"🔥 DEBUG: Client {self.client_id} starting prototype extraction...")
         self._extract_and_cache_prototypes_debug(round_number)
         
@@ -251,82 +251,6 @@ class FederatedClient(fl.client.Client):
         traceback.print_exc()
         raise e
 
-    def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
-     """Send prototypes and class counts to server when requested with robust fallback."""
-    
-     print(f"🔥 DEBUG: Client {self.client_id} - get_properties called with config: {ins.config}")
-    
-     status = Status(code=Code.OK, message="Success")
-    
-     if ins.config.get("request") == "prototypes":
-        print(f"🔥 DEBUG: Client {self.client_id} - Server requesting prototypes")
-        
-        # ALWAYS try to reload from disk first
-        self._load_prototypes_from_disk()
-        
-        # Enhanced debugging
-        has_prototypes = hasattr(self, 'prototypes_from_last_round')
-        has_class_counts = hasattr(self, 'class_counts_from_last_round')
-        prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
-        counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
-        
-        print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
-        print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
-        print(f"🔥 DEBUG: Client {self.client_id} - prototype file exists: {self.prototype_file.exists()}")
-        
-        if prototypes_not_none and counts_not_none:
-            try:
-                print(f"🔥 DEBUG: Client {self.client_id} - Attempting to encode prototypes...")
-                
-                # Test serialization first
-                prototypes_bytes = pickle.dumps(self.prototypes_from_last_round)
-                class_counts_bytes = pickle.dumps(self.class_counts_from_last_round)
-                
-                print(f"🔥 DEBUG: Client {self.client_id} - Serialization successful")
-                print(f"🔥 DEBUG: Client {self.client_id} - Prototypes size: {len(prototypes_bytes)} bytes")
-                
-                # Base64 encode
-                prototypes_encoded = base64.b64encode(prototypes_bytes).decode('utf-8')
-                class_counts_encoded = base64.b64encode(class_counts_bytes).decode('utf-8')
-                
-                print(f"🔥 DEBUG: Client {self.client_id} - Encoding successful")
-                
-                response = GetPropertiesRes(
-                    status=status,
-                    properties={
-                        "prototypes": prototypes_encoded,
-                        "class_counts": class_counts_encoded,
-                        "has_prototypes": "true",  # Explicit flag
-                        "client_trained": "true"   # Mark as trained
-                    }
-                )
-                
-                print(f"🔥 DEBUG: Client {self.client_id} - Successfully created GetPropertiesRes with prototypes")
-                return response
-                
-            except Exception as e:
-                print(f"🔥 ERROR: Client {self.client_id} - Error encoding prototypes: {e}")
-                import traceback
-                traceback.print_exc()
-        
-        # If no prototypes available, return empty but mark status
-        print(f"🔥 DEBUG: Client {self.client_id} - No prototypes available, returning empty response")
-        return GetPropertiesRes(
-            status=status, 
-            properties={
-                "has_prototypes": "false",
-                "client_trained": "false"
-            }
-        )
-    
-     # Default response for other property requests
-     print(f"🔥 DEBUG: Client {self.client_id} - Returning default properties")
-     return GetPropertiesRes(
-        status=status, 
-        properties={"simulation_index": str(self.client_id)}
-     )
-
-  
     def _save_prototypes_to_disk(self):
         """Save prototypes and class counts to disk for persistence."""
         try:
@@ -335,7 +259,11 @@ class FederatedClient(fl.client.Client):
                     pickle.dump(self.prototypes_from_last_round, f)
                 print(f"🔥 DEBUG: Client {self.client_id} - Saved prototypes to {self.prototype_file}")
             
-           
+            if hasattr(self, 'class_counts_from_last_round') and self.class_counts_from_last_round is not None:
+                with open(self.counts_file, 'wb') as f:
+                    pickle.dump(self.class_counts_from_last_round, f)
+                print(f"🔥 DEBUG: Client {self.client_id} - Saved class counts to {self.counts_file}")
+                
         except Exception as e:
             print(f"🔥 ERROR: Client {self.client_id} - Failed to save prototypes: {e}")
     
@@ -350,7 +278,14 @@ class FederatedClient(fl.client.Client):
                 self.prototypes_from_last_round = None
                 print(f"🔥 DEBUG: Client {self.client_id} - No existing prototypes on disk")
             
-           
+            if self.counts_file.exists():
+                with open(self.counts_file, 'rb') as f:
+                    self.class_counts_from_last_round = pickle.load(f)
+                print(f"🔥 DEBUG: Client {self.client_id} - Loaded class counts from disk")
+            else:
+                self.class_counts_from_last_round = None
+                print(f"🔥 DEBUG: Client {self.client_id} - No existing class counts on disk")
+                
         except Exception as e:
             print(f"🔥 ERROR: Client {self.client_id} - Failed to load prototypes: {e}")
             self.prototypes_from_last_round = None
@@ -431,10 +366,86 @@ class FederatedClient(fl.client.Client):
      prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
      counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
     
+     print(f"🔥 DEBUG: Client {self.client_id} - POST-SAVE verification:")
      print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
+     print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
      print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
+     print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
     
-   
+    def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
+        """Send prototypes and class counts to server when requested with persistent storage fallback."""
+        
+        print(f"🔥 DEBUG: Client {self.client_id} - get_properties called with config: {ins.config}")
+        
+        status = Status(code=Code.OK, message="Success")
+        
+        if ins.config.get("request") == "prototypes":
+            print(f"🔥 DEBUG: Client {self.client_id} - Server requesting prototypes")
+            
+            # FIRST: Try to reload from disk if memory is empty
+            if not (hasattr(self, 'prototypes_from_last_round') and self.prototypes_from_last_round is not None):
+                print(f"🔥 DEBUG: Client {self.client_id} - Prototypes not in memory, attempting to reload from disk...")
+                self._load_prototypes_from_disk()
+            
+            # Enhanced debugging
+            has_prototypes = hasattr(self, 'prototypes_from_last_round')
+            has_class_counts = hasattr(self, 'class_counts_from_last_round')
+            prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
+            counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
+            
+            print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
+            print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
+            print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
+            print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
+            print(f"🔥 DEBUG: Client {self.client_id} - prototype file exists: {self.prototype_file.exists()}")
+            print(f"🔥 DEBUG: Client {self.client_id} - counts file exists: {self.counts_file.exists()}")
+            
+            if prototypes_not_none and counts_not_none:
+                try:
+                    print(f"🔥 DEBUG: Client {self.client_id} - Attempting to encode prototypes...")
+                    
+                    # Test serialization first
+                    prototypes_bytes = pickle.dumps(self.prototypes_from_last_round)
+                    class_counts_bytes = pickle.dumps(self.class_counts_from_last_round)
+                    
+                    print(f"🔥 DEBUG: Client {self.client_id} - Serialization successful")
+                    print(f"🔥 DEBUG: Client {self.client_id} - Prototypes size: {len(prototypes_bytes)} bytes")
+                    print(f"🔥 DEBUG: Client {self.client_id} - Class counts size: {len(class_counts_bytes)} bytes")
+                    
+                    # Base64 encode
+                    prototypes_encoded = base64.b64encode(prototypes_bytes).decode('utf-8')
+                    class_counts_encoded = base64.b64encode(class_counts_bytes).decode('utf-8')
+                    
+                    print(f"🔥 DEBUG: Client {self.client_id} - Encoding successful")
+                    print(f"🔥 DEBUG: Client {self.client_id} - Encoded prototypes length: {len(prototypes_encoded)}")
+                    print(f"🔥 DEBUG: Client {self.client_id} - Encoded class_counts length: {len(class_counts_encoded)}")
+                    
+                    response = GetPropertiesRes(
+                        status=status,
+                        properties={
+                            "prototypes": prototypes_encoded,
+                            "class_counts": class_counts_encoded,
+                        }
+                    )
+                    
+                    print(f"🔥 DEBUG: Client {self.client_id} - Successfully created GetPropertiesRes with prototypes")
+                    return response
+                    
+                except Exception as e:
+                    print(f"🔥 ERROR: Client {self.client_id} - Error encoding prototypes: {e}")
+                    import traceback
+                    traceback.print_exc()
+                    return GetPropertiesRes(status=status, properties={})
+            else:
+                print(f"🔥 DEBUG: Client {self.client_id} - No prototypes available (neither in memory nor on disk)")
+                return GetPropertiesRes(status=status, properties={})
+        
+        # Default response for other property requests
+        print(f"🔥 DEBUG: Client {self.client_id} - Returning default properties")
+        return GetPropertiesRes(
+            status=status, 
+            properties={"simulation_index": str(self.client_id)}
+        )
 def gen_client_fn(
     num_clients: int,
     num_rounds: int,

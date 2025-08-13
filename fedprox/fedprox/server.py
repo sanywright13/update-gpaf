@@ -277,7 +277,7 @@ save_dir="feature_visualizations_gpaf"
         # 2. Extract model parameters and number of samples
         clients_params_list.append(parameters_to_ndarrays(fit_res.parameters))
         num_samples_list.append(fit_res.num_examples)
-      if self.default=='gpaf':
+      if default1=='gpaf':
        # 3. Update the global T_max using EWMA after processing all clients
        # This ensures a stable, long-term average
        if current_round_durations:

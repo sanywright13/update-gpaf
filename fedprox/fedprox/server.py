@@ -57,7 +57,7 @@ from flwr.common import (
     ndarrays_to_parameters,
     parameters_to_ndarrays,
 )
-default1='fedavg'
+default1='gpaf'
 class GPAFStrategy(FedAvg):
     def __init__(
         self,

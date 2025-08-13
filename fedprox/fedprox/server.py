@@ -71,7 +71,7 @@ class GPAFStrategy(FedAvg):
         batch_size=13,
         
    evaluate_metrics_aggregation_fn: Optional[MetricsAggregationFn] = None,
-  
+  default='gpaf'
     ) -> None:
         super().__init__()
         self.fraction_fit = fraction_fit
@@ -82,7 +82,7 @@ class GPAFStrategy(FedAvg):
         self.server_url = "https://add18b7094f7.ngrok-free.app/heartbeat"
         self.fairness_k=2
         #clusters parameters
-
+        self.default=default
         self.num_clusters = 4
         self.client_assignments = {}  # {client_id: cluster_id}
         self.global_T_max = 0.0  # <--- THIS IS THE FIX
@@ -275,10 +275,10 @@ save_dir="feature_visualizations_gpaf"
         # 2. Extract model parameters and number of samples
         clients_params_list.append(parameters_to_ndarrays(fit_res.parameters))
         num_samples_list.append(fit_res.num_examples)
-
-      # 3. Update the global T_max using EWMA after processing all clients
-      # This ensures a stable, long-term average
-      if current_round_durations:
+      if self.default=='gpaf':
+       # 3. Update the global T_max using EWMA after processing all clients
+       # This ensures a stable, long-term average
+       if current_round_durations:
         current_avg_duration = sum(current_round_durations) / len(current_round_durations)
         ewma_decay = 0.1 # A smaller decay for a more stable global average
         if self.global_T_max == 0.0:
@@ -286,8 +286,8 @@ save_dir="feature_visualizations_gpaf"
         else:
             self.global_T_max = (1 - ewma_decay) * self.global_T_max + ewma_decay * current_avg_duration
 
-      # 4. Perform parameter aggregation (FedAvg)
-      aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
+       # 4. Perform parameter aggregation (FedAvg)
+       aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
   
       # 5. Return aggregated parameters and metrics
       return ndarrays_to_parameters(aggregated_params), {}
@@ -391,7 +391,7 @@ save_dir="feature_visualizations_gpaf"
         print(f"Clustering Quality: ARI = {ari:.3f}, NMI = {nmi:.3f}")
 
 
-   
+    
     def _fedavg_parameters(
         self, params_list: List[List[np.ndarray]], num_samples_list: List[int]
     ) -> List[np.ndarray]:
@@ -990,8 +990,8 @@ save_dir="feature_visualizations_gpaf"
                 self.selection_counts[client_id] = self.selection_counts.get(client_id, 0) + 1
         
         return instructions
-
-    def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
+    if self.default=='gpaf':
+     def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
         """
         Literature-inspired progressive client selection strategy.
         """
@@ -1040,6 +1040,42 @@ save_dir="feature_visualizations_gpaf"
         print(f"[CSMDA] ========== End Round {server_round} ==========\n")
 
         return instructions
+    else:
+      #fedavg randomly selection
+      def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
+        """Override to inject straggler simulation logic."""
+
+        # Call the original FedAvg configure_fit to perform client selection
+        fit_ins = super().configure_fit(server_round, parameters, client_manager)
+
+        # On the first round, set up the straggler profiles
+        if server_round == 1:
+            self._setup_straggler_profiles(client_manager)
+            
+        # Get the selected client CIDs from the base method's result
+        selected_client_cids = [client.cid for client, _ in fit_ins]
+        
+        updated_fit_ins = []
+        for client_proxy, fit_ins_original in fit_ins:
+            client_id = client_proxy.cid
+            
+            # Get the straggler profile for this client
+            straggler_profile = self.client_straggler_profiles.get(client_id, "normal")
+            simulate_delay = False
+
+            if straggler_profile == "permanent":
+                simulate_delay = True
+            elif straggler_profile == "occasional":
+                if random.random() > 0.5: # 50% chance of a delay
+                    simulate_delay = True
+            
+            # Add the straggler flag to the client's configuration
+            config = fit_ins_original.config
+            config["simulate_delay"] = simulate_delay
+            
+            updated_fit_ins.append((client_proxy, FitIns(parameters, config)))
+            
+        return updated_fit_ins
 
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

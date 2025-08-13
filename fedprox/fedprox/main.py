@@ -279,7 +279,7 @@ def get_server_fn(mlflow=None):
         min_evaluate_clients=NUM_CLIENTS_TOTAL, # <--- Set this to ALL clients for evaluation
         num_classes=9,
        batch_size=batch_size,
-  
+  default='fedavg'
       )
 
     ######******Configure the server for 5 rounds of training###########

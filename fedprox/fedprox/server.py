@@ -82,7 +82,8 @@ class GPAFStrategy(FedAvg):
         self.server_url = "https://add18b7094f7.ngrok-free.app/heartbeat"
         self.fairness_k=2
         #clusters parameters
-        global default=default
+        global default1
+        default1=default
         self.num_clusters = 4
         self.client_assignments = {}  # {client_id: cluster_id}
         self.global_T_max = 0.0  # <--- THIS IS THE FIX

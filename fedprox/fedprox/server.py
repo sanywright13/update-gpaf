@@ -82,7 +82,7 @@ class GPAFStrategy(FedAvg):
         self.server_url = "https://add18b7094f7.ngrok-free.app/heartbeat"
         self.fairness_k=2
         #clusters parameters
-        self.default=default
+        global default=default
         self.num_clusters = 4
         self.client_assignments = {}  # {client_id: cluster_id}
         self.global_T_max = 0.0  # <--- THIS IS THE FIX
@@ -990,7 +990,7 @@ save_dir="feature_visualizations_gpaf"
                 self.selection_counts[client_id] = self.selection_counts.get(client_id, 0) + 1
         
         return instructions
-    if self.default=='gpaf':
+    if default=='gpaf':
      def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
         """
         Literature-inspired progressive client selection strategy.
@@ -1042,6 +1042,7 @@ save_dir="feature_visualizations_gpaf"
         return instructions
     else:
       #fedavg randomly selection
+      print('==========================fedavg=============')
       def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
         """Override to inject straggler simulation logic."""
 

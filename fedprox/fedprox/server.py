@@ -83,7 +83,7 @@ class GPAFStrategy(FedAvg):
         self.fairness_k=2
         #clusters parameters
         global default1
-        default1=default
+        default1='fedavg'
         self.num_clusters = 4
         self.client_assignments = {}  # {client_id: cluster_id}
         self.global_T_max = 0.0  # <--- THIS IS THE FIX
@@ -991,7 +991,7 @@ save_dir="feature_visualizations_gpaf"
                 self.selection_counts[client_id] = self.selection_counts.get(client_id, 0) + 1
         
         return instructions
-    if default=='gpaf':
+    if default1=='gpaf':
      def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
         """
         Literature-inspired progressive client selection strategy.

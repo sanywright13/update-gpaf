@@ -288,8 +288,8 @@ save_dir="feature_visualizations_gpaf"
         else:
             self.global_T_max = (1 - ewma_decay) * self.global_T_max + ewma_decay * current_avg_duration
 
-       # 4. Perform parameter aggregation (FedAvg)
-       aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
+      # 4. Perform parameter aggregation (FedAvg)
+      aggregated_params = self._fedavg_parameters(clients_params_list, num_samples_list)
   
       # 5. Return aggregated parameters and metrics
       return ndarrays_to_parameters(aggregated_params), {}

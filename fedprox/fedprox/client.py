@@ -273,7 +273,7 @@ class FederatedClient(fl.client.Client):
             if self.prototype_file.exists():
                 with open(self.prototype_file, 'rb') as f:
                     self.prototypes_from_last_round = pickle.load(f)
-                print(f"🔥 DEBUG: Client {self.client_id} - Loaded prototypes from disk")
+                print(f"🔥 DEBUG: Client {self.client_id} - Loaded prototypes from disk {self.prototype_file}")
             else:
                 self.prototypes_from_last_round = None
                 print(f"🔥 DEBUG: Client {self.client_id} - No existing prototypes on disk")

@@ -322,7 +322,6 @@ class FederatedClient(fl.client.Client):
     
      print(f"🔥 DEBUG: Client {self.client_id} - Processed {total_samples} samples")
      print(f"🔥 DEBUG: Client {self.client_id} - Classes found: {list(class_embeddings.keys())}")
-     print(f"🔥 DEBUG: Client {self.client_id} - Class counts: {dict(class_counts)}")
     
      # Compute prototypes as NumPy arrays
      prototypes = {}
@@ -366,11 +365,8 @@ class FederatedClient(fl.client.Client):
      prototypes_not_none = has_prototypes and self.prototypes_from_last_round is not None
      counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
     
-     print(f"🔥 DEBUG: Client {self.client_id} - POST-SAVE verification:")
      print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
-     print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
      print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
-     print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
     
     def get_properties(self, ins: GetPropertiesIns) -> GetPropertiesRes:
         """Send prototypes and class counts to server when requested with persistent storage fallback."""
@@ -394,11 +390,8 @@ class FederatedClient(fl.client.Client):
             counts_not_none = has_class_counts and self.class_counts_from_last_round is not None
             
             print(f"🔥 DEBUG: Client {self.client_id} - has_prototypes: {has_prototypes}")
-            print(f"🔥 DEBUG: Client {self.client_id} - has_class_counts: {has_class_counts}")
             print(f"🔥 DEBUG: Client {self.client_id} - prototypes_not_none: {prototypes_not_none}")
-            print(f"🔥 DEBUG: Client {self.client_id} - counts_not_none: {counts_not_none}")
             print(f"🔥 DEBUG: Client {self.client_id} - prototype file exists: {self.prototype_file.exists()}")
-            print(f"🔥 DEBUG: Client {self.client_id} - counts file exists: {self.counts_file.exists()}")
             
             if prototypes_not_none and counts_not_none:
                 try:
@@ -408,17 +401,13 @@ class FederatedClient(fl.client.Client):
                     prototypes_bytes = pickle.dumps(self.prototypes_from_last_round)
                     class_counts_bytes = pickle.dumps(self.class_counts_from_last_round)
                     
-                    print(f"🔥 DEBUG: Client {self.client_id} - Serialization successful")
                     print(f"🔥 DEBUG: Client {self.client_id} - Prototypes size: {len(prototypes_bytes)} bytes")
-                    print(f"🔥 DEBUG: Client {self.client_id} - Class counts size: {len(class_counts_bytes)} bytes")
                     
                     # Base64 encode
                     prototypes_encoded = base64.b64encode(prototypes_bytes).decode('utf-8')
                     class_counts_encoded = base64.b64encode(class_counts_bytes).decode('utf-8')
                     
-                    print(f"🔥 DEBUG: Client {self.client_id} - Encoding successful")
                     print(f"🔥 DEBUG: Client {self.client_id} - Encoded prototypes length: {len(prototypes_encoded)}")
-                    print(f"🔥 DEBUG: Client {self.client_id} - Encoded class_counts length: {len(class_counts_encoded)}")
                     
                     response = GetPropertiesRes(
                         status=status,

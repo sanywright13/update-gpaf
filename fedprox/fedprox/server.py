@@ -221,147 +221,7 @@ save_dir="feature_visualizations_gpaf"
       num_clients = client_manager.num_available()
       return max(int(num_clients * self.fraction_evaluate), self.min_evaluate_clients), self.min_available_clients
    
-    
-
-    def cosine_distance(self,a, b):
-      """Compute 1 - cosine similarity"""
-      if norm(a) == 0 or norm(b) == 0:
-        return 1.0  # Maximum distance if one is zero
-      return 1 - np.dot(a, b) / (norm(a) * norm(b))
-
-   
-    def _m_step(self, all_prototypes, client_ids, assignments, class_counts_list):
-     """Fixed M-step with proper NumPy array handling"""
-    
-     # Get a sample prototype to determine the correct shape
-     sample_proto = None
-     for prototypes in all_prototypes:
-        if prototypes:
-            sample_proto = next(iter(prototypes.values()))
-            break
-    
-     if sample_proto is None:
-        print("Warning: No prototypes found to determine shape")
-        return defaultdict(dict)
-    
-     # Convert to numpy if it's a torch tensor
-     if hasattr(sample_proto, 'numpy'):
-        sample_proto = sample_proto.numpy()
-     elif hasattr(sample_proto, 'detach'):
-        sample_proto = sample_proto.detach().cpu().numpy()
-    
-     # Initialize with explicit numpy zeros
-     cluster_weighted_sum = defaultdict(lambda: defaultdict(lambda: np.zeros(sample_proto.shape, dtype=np.float32)))
-     cluster_class_counts = defaultdict(lambda: defaultdict(int))
-
-     for i, (client_id, prototypes) in enumerate(zip(client_ids, all_prototypes)):
-        cluster_id = assignments[client_id]
-        class_counts = class_counts_list[i]
-
-        for class_id, proto in prototypes.items():
-            weight = class_counts.get(class_id, 0)
-            if weight > 0:
-                # Convert proto to numpy array if needed
-                if hasattr(proto, 'numpy'):
-                    proto_np = proto.numpy()
-                elif hasattr(proto, 'detach'):
-                    proto_np = proto.detach().cpu().numpy()
-                else:
-                    proto_np = np.array(proto)
-                
-                # Ensure proto_np is float32
-                proto_np = proto_np.astype(np.float32)
-                
-                # Use explicit addition instead of +=
-                weighted_proto = weight * proto_np
-                cluster_weighted_sum[cluster_id][class_id] = cluster_weighted_sum[cluster_id][class_id] + weighted_proto
-                cluster_class_counts[cluster_id][class_id] += weight
-
-     new_clusters = defaultdict(dict)
-     for cluster_id in cluster_weighted_sum:
-        for class_id in cluster_weighted_sum[cluster_id]:
-            count = cluster_class_counts[cluster_id][class_id]
-            if count > 0:
-                new_clusters[cluster_id][class_id] = cluster_weighted_sum[cluster_id][class_id] / count
-            else:
-                # Fallback to random initialization with correct shape
-                new_clusters[cluster_id][class_id] = np.random.randn(*sample_proto.shape).astype(np.float32)
-
-     # Update global class counts
-     self.cluster_class_counts = cluster_class_counts
-    
-     print(f"[M-step] Updated {len(new_clusters)} clusters with {sum(len(c) for c in new_clusters.values())} class prototypes")
-     return new_clusters
-    
-    # --- NEW METHOD: Periodically update client clusters ---
-    def _update_client_assignments(self, server_round: int, client_manager: ClientManager):
-      
-      print(f"[Clustering] Starting periodic clustering update for round {server_round}")
-
-      available_client_proxies = client_manager.all()
-      if not available_client_proxies:
-        print("[Clustering] No clients available to cluster. 🤷")
-        return
-
-      # 1. Fetch prototypes from ALL available clients
-      all_prototypes_list = []
-      client_ids_list = []
-      class_counts_list = []
-    
-      for client_cid, client_proxy in available_client_proxies.items():
-        try:
-            # We explicitly ask the client for its prototypes.
-            # FIX: Added 'group_id=None' to resolve the AttributeError.
-            props = client_proxy.get_properties(
-                ins=GetPropertiesIns(config={"request": "prototypes"}),
-                timeout=3600,
-                group_id=None
-            )
-            prototypes_encoded = props.properties.get("prototypes")
-            class_counts_encoded = props.properties.get("class_counts")
-
-            if prototypes_encoded and class_counts_encoded:
-                prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
-                class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
-                
-                all_prototypes_list.append(prototypes)
-                client_ids_list.append(client_cid)
-                class_counts_list.append(class_counts)
-            else:
-                print(f"[Clustering] Client {client_cid} did not return prototypes. Skipping. 😔")
-        except Exception as e:
-            print(f"[Clustering] Failed to get prototypes from client {client_cid}: {e}. Skipping. 😔")
-
-      if not all_prototypes_list:
-        print("[Clustering] No prototypes received from any client. Cannot cluster. 😢")
-        return
-
-      # 2. Convert prototypes to numpy arrays for clustering
-      proto_arrays = []
-      for p in all_prototypes_list:
-        proto_arrays.append({
-            cls: np.array(proto) 
-            for cls, proto in p.items()
-        })
-    
-      # 3. Perform EM Clustering on ALL collected prototypes
-      if not self.cluster_prototypes:
-        print("[Clustering] Initializing clusters for the first time. 🚀")
-        self.cluster_prototypes = self._initialize_clusters(proto_arrays)
-    
-      assignments = self._e_step(proto_arrays, client_ids_list)
-      self.cluster_prototypes = self._m_step(proto_arrays, client_ids_list, assignments, class_counts_list)
-
-      # 4. Update the global client assignments map
-      self.client_assignments.clear()  # Clear old assignments
-      self.client_assignments.update(assignments)
-      print(f"[Clustering] Updated assignments for {len(self.client_assignments)} clients. ✅")
-
-      # 5. Visualize clusters (if desired)
-      # The client_id_map and client_domain_map would be needed here for a visualization
-      if server_round % 2 == 0:
-         self._visualize_clusters(all_prototypes_list, client_ids_list, server_round)
-
+ 
     # --- MODIFIED aggregate_fit: REMOVED CLUSTERING LOGIC ---
     def aggregate_fit(
       self,
@@ -694,299 +554,484 @@ save_dir="feature_visualizations_gpaf"
         else:
           return 0.4,0.6
 
+    def _categorize_clients(self, all_client_ids: List[str]) -> Dict[str, List[str]]:
+        """Categorize clients based on participation history."""
+        categories = {
+            'experienced': [],
+            'new': [],
+            'occasional': []
+        }
+        
+        for client_id in all_client_ids:
+            participation_count = self.selection_counts.get(client_id, 0)
+            
+            if participation_count >= self.min_participation_for_clustering:
+                categories['experienced'].append(client_id)
+            elif participation_count == 0:
+                categories['new'].append(client_id)
+            else:
+                categories['occasional'].append(client_id)
+        
+        return categories
 
-    def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
-     """Enhanced client selection with proper global clustering methodology."""
-    
-     print(f"\n[CSMDA] ========== Configuring round {server_round} ==========")
-     all_clients = client_manager.all()
-     available_client_cids = list(all_clients.keys())
+    def _bootstrap_selection(self, all_clients: Dict, server_round: int) -> List[Tuple[ClientProxy, FitIns]]:
+        """Bootstrap phase: diverse random selection to build client profiles."""
+        print(f"[CSMDA] Bootstrap Round {server_round}: Building client diversity")
+        
+        available_clients = list(all_clients.keys())
+        
+        # Ensure diversity in bootstrap selection
+        selected_clients = []
+        
+        # Priority 1: Include some new clients
+        new_clients = [cid for cid in available_clients if self.selection_counts.get(cid, 0) == 0]
+        if new_clients:
+            new_selection_count = min(len(new_clients), max(1, self.min_fit_clients // 2))
+            selected_clients.extend(random.sample(new_clients, new_selection_count))
+        
+        # Priority 2: Fill with random selection from remaining
+        remaining_needed = self.min_fit_clients - len(selected_clients)
+        remaining_clients = [cid for cid in available_clients if cid not in selected_clients]
+        
+        if remaining_clients and remaining_needed > 0:
+            additional_selection = random.sample(
+                remaining_clients, 
+                min(remaining_needed, len(remaining_clients))
+            )
+            selected_clients.extend(additional_selection)
+        
+        print(f"[Bootstrap] Selected {len(selected_clients)} clients: {selected_clients}")
+        
+        return self._create_fit_instructions(selected_clients, all_clients, server_round)
 
-     if not available_client_cids:
-        print(f"[CSMDA] Round {server_round}: No clients available for selection.")
-        return []
+    def _hybrid_selection(
+        self, 
+        categories: Dict[str, List[str]], 
+        all_clients: Dict, 
+        server_round: int
+    ) -> List[Tuple[ClientProxy, FitIns]]:
+        """Hybrid selection combining clustering for experienced clients and opportunities for new ones."""
+        
+        print(f"[CSMDA] Hybrid Selection Round {server_round}")
+        print(f"  - Experienced: {len(categories['experienced'])} clients")
+        print(f"  - New: {len(categories['new'])} clients")  
+        print(f"  - Occasional: {len(categories['occasional'])} clients")
+        
+        selected_clients = []
+        
+        # Stage 1: Core selection from experienced clients using clustering
+        if len(categories['experienced']) >= self.num_clusters:
+            core_slots = int((1 - self.opportunity_ratio) * self.min_fit_clients)
+            core_selection = self._cluster_based_selection(
+                categories['experienced'], 
+                all_clients, 
+                core_slots, 
+                server_round
+            )
+            selected_clients.extend(core_selection)
+            print(f"[Hybrid] Core clustering selection: {len(core_selection)} clients")
+        
+        # Stage 2: Opportunity selection for new clients
+        opportunity_slots = int(self.opportunity_ratio * self.min_fit_clients)
+        if categories['new'] and opportunity_slots > 0:
+            opportunity_count = min(opportunity_slots, len(categories['new']))
+            opportunity_selection = random.sample(categories['new'], opportunity_count)
+            selected_clients.extend(opportunity_selection)
+            print(f"[Hybrid] Opportunity selection: {len(opportunity_selection)} new clients")
+        
+        # Stage 3: Fill remaining slots
+        remaining_slots = self.min_fit_clients - len(selected_clients)
+        if remaining_slots > 0:
+            remaining_pool = (categories['occasional'] + categories['experienced'] + 
+                            [c for c in categories['new'] if c not in selected_clients])
+            remaining_candidates = [c for c in remaining_pool if c not in selected_clients]
+            
+            if remaining_candidates:
+                remaining_count = min(remaining_slots, len(remaining_candidates))
+                remaining_selection = random.sample(remaining_candidates, remaining_count)
+                selected_clients.extend(remaining_selection)
+                print(f"[Hybrid] Remaining slots: {len(remaining_selection)} clients")
+        
+        return self._create_fit_instructions(selected_clients, all_clients, server_round)
 
-     # Step 1: Collect prototypes from ALL available clients
-     all_prototypes_list = []
-     all_client_ids = []
-     class_counts_list = []
-     clients_with_prototypes = []
-     clients_without_prototypes = []
 
-     print(f"[CSMDA] Round {server_round}: Collecting prototypes from ALL {len(available_client_cids)} clients...")
-    
-     for cid in available_client_cids:
-        client_proxy = all_clients[cid]
-        try:
-            get_protos_res = client_proxy.get_properties(
-                ins=GetPropertiesIns(config={"request": "prototypes"}), 
-                timeout=15.0,
-                group_id=None
+    def _cluster_based_selection(
+        self, 
+        experienced_clients: List[str], 
+        all_clients: Dict, 
+        num_to_select: int,
+        server_round: int
+    ) -> List[str]:
+        """Apply clustering only to experienced clients with meaningful prototypes."""
+        
+        print(f"[Clustering] Processing {len(experienced_clients)} experienced clients")
+        
+        # Collect prototypes only from experienced clients
+        prototypes_list = []
+        client_ids_with_protos = []
+        
+        for client_id in experienced_clients:
+            client_proxy = all_clients[client_id]
+            try:
+                get_protos_res = client_proxy.get_properties(
+                    ins=GetPropertiesIns(config={"request": "prototypes"}), 
+                    timeout=15.0,
+                    group_id=None
+                )
+                
+                prototypes_encoded = get_protos_res.properties.get("prototypes")
+                
+                if prototypes_encoded:
+                    prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
+                    if isinstance(prototypes, dict) and prototypes:
+                        prototypes_list.append(prototypes)
+                        client_ids_with_protos.append(client_id)
+                        
+            except Exception as e:
+                print(f"[Clustering] ⚠️ Client {client_id}: {e}")
+                continue
+        
+        print(f"[Clustering] Got prototypes from {len(client_ids_with_protos)} clients")
+        
+        if len(client_ids_with_protos) >= self.num_clusters:
+            # Perform clustering
+            if not self.cluster_prototypes:
+                print("[Clustering] Initializing clusters")
+                self.cluster_prototypes = self._initialize_clusters(prototypes_list)
+            
+            # Update clustering
+            assignments = self._e_step(prototypes_list, client_ids_with_protos)
+            self.cluster_prototypes = self._m_step(
+                prototypes_list, 
+                client_ids_with_protos, 
+                assignments
             )
             
-            prototypes_encoded = get_protos_res.properties.get("prototypes")
-            class_counts_encoded = get_protos_res.properties.get("class_counts")
+            # Update global assignments
+            for client_id, cluster_id in assignments.items():
+                self.client_assignments[client_id] = cluster_id
+            
+            # Distribute selection across clusters
+            return self._distribute_selection_across_clusters(
+                client_ids_with_protos, assignments, num_to_select, server_round
+            )
+        else:
+            print("[Clustering] Not enough clients for clustering, using score-based selection")
+            scores = self._compute_global_selection_scores(experienced_clients, server_round)
+            sorted_clients = sorted(experienced_clients, key=lambda c: scores.get(c, 0), reverse=True)
+            return sorted_clients[:num_to_select]
 
-            if prototypes_encoded and class_counts_encoded:
-                try:
-                    prototypes = pickle.loads(base64.b64decode(prototypes_encoded))
-                    class_counts = pickle.loads(base64.b64decode(class_counts_encoded))
-                    
-                    if isinstance(prototypes, dict) and isinstance(class_counts, dict):
-                        all_prototypes_list.append(prototypes)
-                        all_client_ids.append(cid)
-                        class_counts_list.append(class_counts)
-                        clients_with_prototypes.append(cid)
-                        
-                        print(f"[CSMDA] ✅ Client {cid}: Prototypes received "
-                              f"(classes: {list(prototypes.keys())})")
-                    else:
-                        clients_without_prototypes.append(cid)
-                        print(f"[CSMDA] ❌ Client {cid}: Invalid prototype format")
-                        
-                except Exception as decode_error:
-                    clients_without_prototypes.append(cid)
-                    print(f"[CSMDA] ❌ Client {cid}: Decode error - {decode_error}")
-                    
-            else:
-                clients_without_prototypes.append(cid)
-                print(f"[CSMDA] ⚠️ Client {cid}: No prototypes available")
-                
-        except Exception as e:
-            clients_without_prototypes.append(cid)
-            print(f"[CSMDA] ⚠️ Client {cid}: Communication failed - {e}")
-
-     print(f"[CSMDA] Prototype collection summary:")
-     print(f"  - Clients with prototypes: {len(clients_with_prototypes)}")
-     print(f"  - Clients without prototypes: {len(clients_without_prototypes)}")
-
-     # Step 2: GLOBAL CLUSTERING of ALL clients with prototypes
-     if len(clients_with_prototypes) >= self.num_clusters:
-        print(f"[CSMDA] 🔄 Performing GLOBAL EM clustering on ALL {len(clients_with_prototypes)} clients with prototypes...")
+    def _distribute_selection_across_clusters(
+        self, 
+        client_ids: List[str], 
+        assignments: Dict[str, int], 
+        num_to_select: int,
+        server_round: int
+    ) -> List[str]:
+        """Distribute selection quota across clusters based on global scores."""
         
-        # Initialize cluster prototypes if not done before
-        if not hasattr(self, 'cluster_prototypes') or not self.cluster_prototypes:
-            print("[CSMDA] Initializing cluster prototypes for the first time")
-            self.cluster_prototypes = self._initialize_clusters(all_prototypes_list)
-        
-        # Perform global clustering on ALL clients with prototypes
-        global_assignments = self._e_step(all_prototypes_list, all_client_ids)
-        self.cluster_prototypes = self._m_step(
-            all_prototypes_list, 
-            all_client_ids, 
-            global_assignments, 
-            class_counts_list
-        )
-        
-        # Update GLOBAL client assignments (maintain for all clients)
-        for client_id, cluster_id in global_assignments.items():
-            self.client_assignments[client_id] = cluster_id
-        
-        print(f"[CSMDA] Global clustering results:")
-        for cluster_id in range(self.num_clusters):
-            cluster_clients = [cid for cid, clust in self.client_assignments.items() if clust == cluster_id]
-            print(f"  - Cluster {cluster_id}: {len(cluster_clients)} clients: {cluster_clients}")
-    
-     else:
-        print(f"[CSMDA] ⚠️ Not enough clients with prototypes ({len(clients_with_prototypes)}) for clustering (need {self.num_clusters})")
-        # Assign random clusters to available clients
-        for cid in clients_with_prototypes:
-            if cid not in self.client_assignments:
-                self.client_assignments[cid] = random.randint(0, self.num_clusters - 1)
-
-     # Step 3: Client Selection Strategy
-     selected_clients_cids = []
-    
-     # Priority 1: Always include some clients without prototypes (for initialization)
-     if clients_without_prototypes:
-        num_init_clients = min(len(clients_without_prototypes), max(1, self.min_fit_clients // 4))
-        init_selection = random.sample(clients_without_prototypes, num_init_clients)
-        selected_clients_cids.extend(init_selection)
-        print(f"[CSMDA] 🚀 Selected {len(init_selection)} clients for initialization: {init_selection}")
-    
-     remaining_to_select = self.min_fit_clients - len(selected_clients_cids)
-    
-     # Priority 2: Cluster-based selection from clients with prototypes
-     if remaining_to_select > 0 and clients_with_prototypes:
-        # Organize clients by their cluster assignments
+        # Group clients by cluster
         clusters = defaultdict(list)
-        for client_id in clients_with_prototypes:
-            if client_id in selected_clients_cids:
-                continue  # Skip already selected
-                
-            cluster_id = self.client_assignments.get(client_id, 0)  # Default to cluster 0
+        for client_id in client_ids:
+            cluster_id = assignments.get(client_id, 0)
             clusters[cluster_id].append(client_id)
         
-        print(f"[CSMDA] 📊 Cluster organization for selection:")
-        for cluster_id, cluster_clients in clusters.items():
-            print(f"  - Cluster {cluster_id}: {len(cluster_clients)} available clients")
+        # Compute selection scores
+        global_scores = self._compute_global_selection_scores(client_ids, server_round)
         
-        # Compute selection scores for ALL clients with prototypes
-        global_scores = self._compute_global_selection_scores(clients_with_prototypes, server_round)
-        
-        # Distribute selection quota across active clusters
-        active_clusters = [c_id for c_id, cluster_clients in clusters.items() if cluster_clients]
+        # Distribute selection across active clusters
+        active_clusters = list(clusters.keys())
+        selected_clients = []
         
         if active_clusters:
-            clients_per_cluster = max(1, remaining_to_select // len(active_clusters))
-            extra_clients = remaining_to_select % len(active_clusters)
-            
-            print(f"[CSMDA] Selection strategy:")
-            print(f"  - Active clusters: {len(active_clusters)}")
-            print(f"  - Base clients per cluster: {clients_per_cluster}")
-            print(f"  - Extra clients to distribute: {extra_clients}")
+            base_per_cluster = max(1, num_to_select // len(active_clusters))
+            extra_selections = num_to_select % len(active_clusters)
             
             for i, cluster_id in enumerate(active_clusters):
                 cluster_clients = clusters[cluster_id]
                 
-                # Sort by selection scores (higher is better)
+                # Sort by selection scores
                 cluster_clients_sorted = sorted(
-                    cluster_clients, 
-                    key=lambda cid: global_scores.get(cid, 0.0), 
+                    cluster_clients,
+                    key=lambda c: global_scores.get(c, 0),
                     reverse=True
                 )
                 
-                # Select top clients from this cluster
-                num_from_cluster = min(
-                    clients_per_cluster + (1 if i < extra_clients else 0),
+                # Select from this cluster
+                selections_from_cluster = min(
+                    base_per_cluster + (1 if i < extra_selections else 0),
                     len(cluster_clients_sorted)
                 )
                 
-                cluster_selection = cluster_clients_sorted[:num_from_cluster]
-                selected_clients_cids.extend(cluster_selection)
+                cluster_selection = cluster_clients_sorted[:selections_from_cluster]
+                selected_clients.extend(cluster_selection)
                 
-                print(f"  - Cluster {cluster_id}: Selected {len(cluster_selection)} clients: {cluster_selection}")
-                
-                # Show top scores for debugging
-                for cid in cluster_selection[:3]:  # Show top 3
-                    score = global_scores.get(cid, 0.0)
-                    print(f"    * Client {cid}: score = {score:.3f}")
-    
-     # Step 4: Final adjustments
-     selected_clients_cids = selected_clients_cids[:self.min_fit_clients]
-    
-     # Prepare FitIns for selected clients
-     instructions = []
-     for client_id in selected_clients_cids:
-        if client_id in all_clients:
-            client_proxy = all_clients[client_id]
-            client_config = {
-                "server_round": server_round,
-                "total_rounds": getattr(self, 'total_rounds', 100),
-            }
-            
-            instructions.append((client_proxy, FitIns(parameters, client_config)))
-            
-            # Update selection count for fairness
-            self.selection_counts[client_id] = self.selection_counts.get(client_id, 0) + 1
-
-     print(f"[CSMDA] ✅ Round {server_round} FINAL SELECTION:")
-     print(f"  - Total selected: {len(instructions)} clients")
-     print(f"  - Selected clients: {[inst[0].cid for inst in instructions]}")
-     print(f"  - Current cluster assignments: {dict(self.client_assignments)}")
-     print(f"[CSMDA] ========== End of round {server_round} configuration ==========\n")
-
-     return instructions
-
-    def _initialize_clusters(self, all_prototypes):
-     """Initialize clusters with proper NumPy array handling and better diversity."""
-     num_clients = len(all_prototypes)
-     assert num_clients >= self.num_clusters, \
-        f"Need at least {self.num_clusters} clients to initialize clusters, got {num_clients}"
-
-     # Calculate diversity score for each client (number of classes with data)
-     client_diversity = []
-     for i, proto_dict in enumerate(all_prototypes):
-        diversity = len([v for v in proto_dict.values() if np.linalg.norm(v) > 0])
-        client_diversity.append((i, diversity))
-    
-     # Sort by diversity (descending) and select top diverse clients
-     client_diversity.sort(key=lambda x: x[1], reverse=True)
-     selected_indices = [idx for idx, _ in client_diversity[:self.num_clusters]]
-
-     cluster_prototypes = {}
-     for cluster_id, client_idx in enumerate(selected_indices):
-        proto_dict = all_prototypes[client_idx]
-        cluster_prototypes[cluster_id] = {}
+                print(f"[Distribution] Cluster {cluster_id}: {len(cluster_selection)} clients selected")
         
-        for class_id, proto in proto_dict.items():
-            # Ensure consistent numpy array format
-            if hasattr(proto, 'numpy'):
-                proto_np = proto.numpy()
-            elif hasattr(proto, 'detach'):
-                proto_np = proto.detach().cpu().numpy()
-            else:
-                proto_np = np.array(proto)
-            
-            cluster_prototypes[cluster_id][class_id] = proto_np.astype(np.float32).copy()
+        return selected_clients[:num_to_select]
 
-     print(f"[Init] Initialized {self.num_clusters} clusters from most diverse clients")
-     print(f"[Init] Selected client indices: {selected_indices}")
-     print(f"[Init] Client diversities: {[div for _, div in client_diversity[:self.num_clusters]]}")
-    
-     return cluster_prototypes
-
-    def _e_step(self, all_prototypes, client_ids):
-     """Enhanced E-step with better debugging and distance calculation."""
-     if not hasattr(self, 'cluster_prototypes') or not self.cluster_prototypes:
-        print("[E-step] ERROR: No cluster prototypes available!")
-        return {}
-    
-     assignments = {}
-    
-     print(f"[E-step] Assigning {len(client_ids)} clients to {len(self.cluster_prototypes)} clusters")
-    
-     for client_idx, (client_id, prototypes) in enumerate(zip(client_ids, all_prototypes)):
-        min_dist = float('inf')
-        best_cluster = 0
-        cluster_distances = {}
-
-        for cluster_id in self.cluster_prototypes:
-            total_dist = 0
-            shared_classes = 0
-
-            for class_id in prototypes:
-                if class_id in self.cluster_prototypes[cluster_id]:
-                    client_proto = prototypes[class_id]
-                    cluster_proto = self.cluster_prototypes[cluster_id][class_id]
-
-                    # Ensure both are numpy arrays
-                    if not isinstance(client_proto, np.ndarray):
-                        client_proto = np.array(client_proto)
-                    if not isinstance(cluster_proto, np.ndarray):
-                        cluster_proto = np.array(cluster_proto)
-
-                    # Calculate cosine distance
-                    dist = self.cosine_distance(client_proto, cluster_proto)
-                    total_dist += dist
-                    shared_classes += 1
-
-            # Average distance over shared classes
-            if shared_classes > 0:
-                avg_dist = total_dist / shared_classes
-            else:
-                avg_dist = 1.0  # Maximum distance if no shared classes
-                
-            cluster_distances[cluster_id] = avg_dist
-
-            if avg_dist < min_dist:
-                min_dist = avg_dist
-                best_cluster = cluster_id
-
-        assignments[client_id] = best_cluster
+    def _initialize_clusters(self, all_prototypes: List[Dict]) -> Dict:
+        """Initialize clusters using K-means++ style approach for better diversity."""
+        num_clients = len(all_prototypes)
+        assert num_clients >= self.num_clusters
         
-        # Debug output for first few clients
-        if client_idx < 3:
-            print(f"[E-step] Client {client_id} distances: {cluster_distances} -> Cluster {best_cluster}")
+        print(f"[Init] Initializing {self.num_clusters} clusters from {num_clients} clients")
+        
+        cluster_prototypes = {}
+        selected_indices = []
+        
+        # First cluster: random selection
+        first_idx = random.randint(0, num_clients - 1)
+        selected_indices.append(first_idx)
+        
+        # Subsequent clusters: select diverse clients
+        for cluster_id in range(1, self.num_clusters):
+            max_min_dist = -1
+            best_idx = 0
+            
+            for client_idx, proto_dict in enumerate(all_prototypes):
+                if client_idx in selected_indices:
+                    continue
+                    
+                # Find minimum distance to existing cluster centers
+                min_dist_to_centers = float('inf')
+                for existing_idx in selected_indices:
+                    dist = self._calculate_client_distance(proto_dict, all_prototypes[existing_idx])
+                    min_dist_to_centers = min(min_dist_to_centers, dist)
+                
+                # Select client with maximum minimum distance
+                if min_dist_to_centers > max_min_dist:
+                    max_min_dist = min_dist_to_centers
+                    best_idx = client_idx
+                    
+            selected_indices.append(best_idx)
+        
+        # Initialize cluster prototypes
+        for cluster_id, client_idx in enumerate(selected_indices):
+            proto_dict = all_prototypes[client_idx]
+            cluster_prototypes[cluster_id] = {}
+            
+            for class_id, proto in proto_dict.items():
+                # Ensure numpy array format
+                if hasattr(proto, 'numpy'):
+                    proto_np = proto.numpy()
+                elif hasattr(proto, 'detach'):
+                    proto_np = proto.detach().cpu().numpy()
+                else:
+                    proto_np = np.array(proto)
+                
+                # Add small noise to break ties
+                proto_np = proto_np + np.random.normal(0, 0.01, proto_np.shape)
+                cluster_prototypes[cluster_id][class_id] = proto_np.astype(np.float32).copy()
 
-     # Summary statistics
-     cluster_counts = defaultdict(int)
-     for cluster_id in assignments.values():
-        cluster_counts[cluster_id] += 1
-    
-     print(f"[E-step] Assignment summary: {dict(cluster_counts)}")
-    
-     return assignments
+        print(f"[Init] Initialized clusters from clients: {selected_indices}")
+        return cluster_prototypes
+
+    def _calculate_client_distance(self, proto_dict1: Dict, proto_dict2: Dict) -> float:
+        """Calculate distance between two client prototype dictionaries."""
+        total_dist = 0
+        shared_classes = 0
+        
+        for class_id in proto_dict1:
+            if class_id in proto_dict2:
+                proto1 = np.array(proto_dict1[class_id])
+                proto2 = np.array(proto_dict2[class_id])
+                dist = self.cosine_distance(proto1, proto2)
+                total_dist += dist
+                shared_classes += 1
+        
+        return total_dist / max(1, shared_classes)
+
+    def _e_step(self, all_prototypes: List[Dict], client_ids: List[str]) -> Dict[str, int]:
+        """Enhanced E-step with better debugging and tie-breaking."""
+        if not self.cluster_prototypes:
+            print("[E-step] ERROR: No cluster prototypes available!")
+            return {}
+        
+        assignments = {}
+        
+        print(f"[E-step] Assigning {len(client_ids)} clients to {len(self.cluster_prototypes)} clusters")
+        
+        for client_idx, (client_id, prototypes) in enumerate(zip(client_ids, all_prototypes)):
+            cluster_distances = {}
+            
+            for cluster_id in self.cluster_prototypes:
+                total_dist = 0
+                shared_classes = 0
+
+                for class_id in prototypes:
+                    if class_id in self.cluster_prototypes[cluster_id]:
+                        client_proto = np.array(prototypes[class_id])
+                        cluster_proto = self.cluster_prototypes[cluster_id][class_id]
+
+                        dist = self.cosine_distance(client_proto, cluster_proto)
+                        total_dist += dist
+                        shared_classes += 1
+
+                # Average distance with coverage penalty
+                if shared_classes > 0:
+                    avg_dist = total_dist / shared_classes
+                    coverage_penalty = 1.0 - (shared_classes / len(prototypes))
+                    avg_dist += 0.1 * coverage_penalty
+                else:
+                    avg_dist = 1.0
+                    
+                cluster_distances[cluster_id] = avg_dist
+
+            # Find best cluster with tie-breaking
+            sorted_clusters = sorted(cluster_distances.items(), key=lambda x: (x[1], x[0]))
+            best_cluster = sorted_clusters[0][0]
+            assignments[client_id] = best_cluster
+            
+            # Debug for first few clients
+            if client_idx < 3:
+                distances_str = {k: f"{v:.4f}" for k, v in cluster_distances.items()}
+                print(f"[E-step] Client {client_id}: {distances_str} → Cluster {best_cluster}")
+
+        # Summary and warning
+        cluster_counts = defaultdict(int)
+        for cluster_id in assignments.values():
+            cluster_counts[cluster_id] += 1
+        
+        print(f"[E-step] Assignment summary: {dict(cluster_counts)}")
+        
+        if len(set(assignments.values())) == 1:
+            print("[E-step] ⚠️ WARNING: All clients assigned to same cluster!")
+            # Force diversity
+            if len(assignments) >= self.num_clusters:
+                client_list = list(assignments.keys())
+                for i in range(min(self.num_clusters, len(client_list))):
+                    assignments[client_list[i]] = i
+                print(f"[E-step] Applied forced diversity")
+        
+        return assignments
+
+    def _m_step(self, all_prototypes: List[Dict], client_ids: List[str], assignments: Dict[str, int]) -> Dict:
+        """M-step: Update cluster prototypes."""
+        new_cluster_prototypes = {}
+        
+        for cluster_id in range(self.num_clusters):
+            cluster_clients = [cid for cid in client_ids if assignments.get(cid) == cluster_id]
+            
+            if cluster_clients:
+                # Collect prototypes for this cluster
+                cluster_proto_dicts = []
+                for client_id in cluster_clients:
+                    client_idx = client_ids.index(client_id)
+                    cluster_proto_dicts.append(all_prototypes[client_idx])
+                
+                # Average prototypes by class
+                new_cluster_prototypes[cluster_id] = {}
+                all_classes = set()
+                for proto_dict in cluster_proto_dicts:
+                    all_classes.update(proto_dict.keys())
+                
+                for class_id in all_classes:
+                    class_protos = []
+                    for proto_dict in cluster_proto_dicts:
+                        if class_id in proto_dict:
+                            proto = np.array(proto_dict[class_id])
+                            class_protos.append(proto)
+                    
+                    if class_protos:
+                        avg_proto = np.mean(class_protos, axis=0)
+                        new_cluster_prototypes[cluster_id][class_id] = avg_proto.astype(np.float32)
+            else:
+                # Keep old prototype if no clients assigned
+                if cluster_id in self.cluster_prototypes:
+                    new_cluster_prototypes[cluster_id] = self.cluster_prototypes[cluster_id]
+        
+        return new_cluster_prototypes
+
+    def cosine_distance(self, vec1: np.ndarray, vec2: np.ndarray) -> float:
+        """Improved cosine distance with numerical stability."""
+        vec1 = vec1.flatten()
+        vec2 = vec2.flatten()
+        
+        norm1 = np.linalg.norm(vec1)
+        norm2 = np.linalg.norm(vec2)
+        
+        if norm1 == 0 or norm2 == 0:
+            return 1.0
+        
+        similarity = np.dot(vec1, vec2) / (norm1 * norm2)
+        similarity = np.clip(similarity, -1.0, 1.0)
+        
+        return 1.0 - similarity
+
+    def _create_fit_instructions(
+        self, 
+        selected_client_ids: List[str], 
+        all_clients: Dict, 
+        server_round: int
+    ) -> List[Tuple[ClientProxy, FitIns]]:
+        """Create FitIns for selected clients."""
+        instructions = []
+        
+        for client_id in selected_client_ids:
+            if client_id in all_clients:
+                client_proxy = all_clients[client_id]
+                client_config = {
+                    "server_round": server_round,
+                    "total_rounds": getattr(self, 'total_rounds', 100),
+                }
+                
+                instructions.append((client_proxy, FitIns(self.current_parameters, client_config)))
+                
+                # Update selection count
+                self.selection_counts[client_id] = self.selection_counts.get(client_id, 0) + 1
+        
+        return instructions
+
+    def configure_fit(self, server_round: int, parameters: Parameters, client_manager: ClientManager) -> List[Tuple[ClientProxy, FitIns]]:
+        """
+        Literature-inspired progressive client selection strategy.
+        """
+        print(f"\n[CSMDA] ========== Round {server_round} Configuration ==========")
+        
+        self.current_parameters = parameters
+        all_clients = client_manager.all()
+        available_client_ids = list(all_clients.keys())
+
+        if not available_client_ids:
+            print(f"[CSMDA] No clients available for round {server_round}")
+            return []
+
+        print(f"[CSMDA] Available clients: {len(available_client_ids)}")
+        
+        # Categorize clients by experience level
+        categories = self._categorize_clients(available_client_ids)
+        
+        print(f"[CSMDA] Client categories:")
+        for category, clients in categories.items():
+            print(f"  - {category.capitalize()}: {len(clients)} clients")
+
+        # Selection strategy based on system maturity
+        if (server_round <= self.bootstrap_rounds or 
+            len(categories['experienced']) < self.num_clusters):
+            # Bootstrap phase
+            instructions = self._bootstrap_selection(all_clients, server_round)
+        else:
+            # Mature phase with hybrid selection
+            instructions = self._hybrid_selection(categories, all_clients, server_round)
+
+        # Statistics
+        self.round_stats[server_round] = {
+            'total_available': len(available_client_ids),
+            'selected': len(instructions),
+            'categories': {k: len(v) for k, v in categories.items()},
+            'selection_strategy': 'bootstrap' if server_round <= self.bootstrap_rounds else 'hybrid'
+        }
+
+        selected_cids = [inst[0].cid for inst in instructions]
+        print(f"[CSMDA] ✅ Round {server_round} Final Selection:")
+        print(f"  - Selected: {len(instructions)} clients: {selected_cids}")
+        print(f"  - Strategy: {self.round_stats[server_round]['selection_strategy']}")
+        if hasattr(self, 'client_assignments') and self.client_assignments:
+            print(f"  - Cluster assignments: {dict(self.client_assignments)}")
+        print(f"[CSMDA] ========== End Round {server_round} ==========\n")
+
+        return instructions
 
     def configure_evaluate(
       self, server_round: int, parameters: Parameters, client_manager: ClientManager

@@ -57,7 +57,7 @@ from flwr.common import (
     ndarrays_to_parameters,
     parameters_to_ndarrays,
 )
-
+default1='fedavg'
 class GPAFStrategy(FedAvg):
     def __init__(
         self,
@@ -83,7 +83,8 @@ class GPAFStrategy(FedAvg):
         self.fairness_k=2
         #clusters parameters
         global default1
-        default1='fedavg'
+        
+        
         self.num_clusters = 4
         self.client_assignments = {}  # {client_id: cluster_id}
         self.global_T_max = 0.0  # <--- THIS IS THE FIX

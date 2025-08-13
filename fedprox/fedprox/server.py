@@ -500,7 +500,7 @@ save_dir="feature_visualizations_gpaf"
                 self.global_T_max = duration
             else:
                 self.global_T_max = (1 - self.ewma_decay) * self.global_T_max + self.ewma_decay * duration
-
+    '''
     def _compute_reliability_scores(self, client_ids: List[str]) -> Dict[str, float]:
         """Computes reliability scores based on training duration relative to a stable T_max."""
         reliability_scores = {}
@@ -516,9 +516,8 @@ save_dir="feature_visualizations_gpaf"
             reliability_scores[client_id] = float(score)
             
         return reliability_scores
-
+    
     def _compute_fairness_scores(self, client_ids: List[str], server_round: int) -> Dict[str, float]:
-        """Computes fairness scores using the new sigmoid-based formulation."""
         fairness_scores = {}
         T_total = server_round # Use current round number as T_total
         n = len(self.selection_counts) # Total number of clients who have participated
@@ -539,6 +538,39 @@ save_dir="feature_visualizations_gpaf"
             fairness_scores[client_id] = float(score)
             
         return fairness_scores
+    '''
+    def _compute_reliability_scores(self, client_ids: List[str]) -> Dict[str, float]:
+     """
+     Smooth reciprocal reliability scoring.
+     R_c = T_max / (T_c + T_max)
+     """
+     reliability_scores = {}
+     T_max = self.global_T_max if self.global_T_max > 0 else 1.0
+    
+     for client_id in client_ids:
+        T_c = self.training_times.get(client_id, T_max)
+        
+        # Smooth reciprocal reliability score
+        score = T_max / (T_c + T_max)
+        reliability_scores[client_id] = score
+    
+     return reliability_scores
+    
+    def _compute_fairness_scores(self, client_ids: List[str], server_round: int) -> Dict[str, float]:
+     """Smooth reciprocal fairness scoring without discontinuities."""
+     fairness_scores = {}
+    
+     for client_id in client_ids:
+        v_c = self.selection_counts.get(client_id, 0)
+        ideal_selections = server_round / len(client_ids) if len(client_ids) > 0 else 1
+        R_sel = v_c / max(1, ideal_selections)
+        print(f'==== v_c number of selection in round {len(client_ids)} is. : {v_c} === from the total clients {n}=')
+
+        # Smooth reciprocal fairness: F_c = 1 / (1 + R_sel)
+        score = 1.0 / (1.0 + R_sel)
+        fairness_scores[client_id] = score
+    
+     return fairness_scores
     
     def _compute_global_selection_scores(self, client_ids: List[str], server_round: int) -> Dict[str, float]:
         reliability_scores = self._compute_reliability_scores(client_ids)

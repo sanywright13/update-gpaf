@@ -101,10 +101,11 @@ class GPAFStrategy(FedAvg):
         self._current_accuracies = {}
         # In server class
         min_participation_for_clustering=3
+        bootstrap_rounds=5
         self.client_prototype_history = defaultdict(dict)  # {client_id: {round: prototypes}}
         self.min_participation_for_clustering = min_participation_for_clustering
 
-
+        self.bootstrap_rounds = bootstrap_rounds
 
         # NEW/MODIFIED FAIRNESS ATTRIBUTES
         initial_target_selections= 3
